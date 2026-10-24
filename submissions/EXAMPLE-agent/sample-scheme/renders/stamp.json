@@ -1,0 +1,68 @@
+{
+  "input_sha256": "1ea6dc1896c4fbe57cdafcd6422f9cc363126f9142959783ec3d741316a1a624",
+  "width": 1800,
+  "height": 1125,
+  "generator": "scripts/render_views.py 1.0.0",
+  "files": {
+    "master-aerial.png": {
+      "sha256": "c9cd2cf9ade5440640ac99e8664a3a855ccb9e413ad40b40cc7cba428320266c",
+      "label": "Master design - aerial",
+      "time": "day"
+    },
+    "city-aerial.png": {
+      "sha256": "a0582f8a1f29ed46c737c42658887f8c421f5b5fc82f456a6319ac0fcc601bfa",
+      "label": "The city - aerial",
+      "time": "day"
+    },
+    "city-evening.png": {
+      "sha256": "d65ec24a017e6f70bc363265da1af3a0a79c1562f7245268419a0c9832ad877d",
+      "label": "The city - evening",
+      "time": "evening"
+    },
+    "N01-aerial.png": {
+      "sha256": "46fe20bc3631ddf7b4262398b309a18f3928638cbd1ea3d88db5f8dab9e8581e",
+      "label": "N01 - aerial",
+      "time": "day"
+    },
+    "N01-eye-day.png": {
+      "sha256": "b3e5afc88e06e0af2b7d2f4a98d553055920b0a88027c706b8ae4c4ae88c78f8",
+      "label": "N01 - eye level, day",
+      "time": "day"
+    },
+    "N01-eye-night.png": {
+      "sha256": "9e62e93d37921c76e82c9241dcde51eba27fae2cd589cdf22f27b1b9b1464a55",
+      "label": "N01 - eye level, night",
+      "time": "night"
+    },
+    "N02-aerial.png": {
+      "sha256": "038a9fb7241288035637ad197985be3721a080e1def41d71b5b1b9d6cb3988f8",
+      "label": "N02 - aerial",
+      "time": "day"
+    },
+    "N02-eye-day.png": {
+      "sha256": "d58479d2d86ccdcacae6976d1f03ddc5085b78f2ead0ad080d73a5394c6853f1",
+      "label": "N02 - eye level, day",
+      "time": "day"
+    },
+    "N02-eye-evening.png": {
+      "sha256": "035ed412bb815a219999e0bd680f54a852ff7e7a1ca5cff2448fbabd0b71bb20",
+      "label": "N02 - eye level, evening",
+      "time": "evening"
+    },
+    "N10-aerial.png": {
+      "sha256": "e86fb8b8461e592f922148f6a16b8f90c0a3becb7fce038632fef0b17b8b0b96",
+      "label": "N10 - aerial",
+      "time": "day"
+    },
+    "N10-eye-day.png": {
+      "sha256": "a066231861cd017fe8d07b9191e4b66465548e905a05e0480b3d4a37c6dab1a1",
+      "label": "N10 - eye level, day",
+      "time": "day"
+    },
+    "N10-eye-evening.png": {
+      "sha256": "a0d46136bb584cfc88e00404954c28eb1e5ac1de607eb8c1233fb7a83c14b2e3",
+      "label": "N10 - eye level, evening",
+      "time": "evening"
+    }
+  }
+}
