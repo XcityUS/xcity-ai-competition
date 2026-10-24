@@ -20,7 +20,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "package_sha256": "c1e472cb210a950152246102304a108e1d20f5bae2fe149872e1f30daf13d5a2",
+    "package_sha256": "4c8b19552ffb9dc3fb88ba00f0e66db2cdb9059bad78ffac2ee7a47223d9a380",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -99,42 +99,6 @@ window.XCITY_SUBMISSIONS = [
       [
         "figures/node-N02-plan.png",
         54277
-      ],
-      [
-        "figures/node-N05-aerial.png",
-        159422
-      ],
-      [
-        "figures/node-N05-eye.png",
-        39342
-      ],
-      [
-        "figures/node-N05-plan.png",
-        180735
-      ],
-      [
-        "figures/node-N07-aerial.png",
-        151529
-      ],
-      [
-        "figures/node-N07-eye.png",
-        35758
-      ],
-      [
-        "figures/node-N07-plan.png",
-        216434
-      ],
-      [
-        "figures/node-N09-aerial.png",
-        342331
-      ],
-      [
-        "figures/node-N09-eye.png",
-        38182
-      ],
-      [
-        "figures/node-N09-plan.png",
-        362480
       ],
       [
         "figures/node-N10-aerial.png",
