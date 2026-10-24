@@ -1,0 +1,25 @@
+{
+  "script": "scripts/make_figures.py",
+  "script_version": "1.0.0",
+  "input_sha256": "1ddc2bf4d444383061221c7421c19045d7665425684717fae290c4d9dc0d65a4",
+  "files": {
+    "figures/fig-01-structure.png": "71e507b5409b23036bc70249f5b22f70a959bbedea5f743fe4ec8c930a9a4d05",
+    "figures/fig-02-master-plan.png": "43ae4c35747f6cd86a3d0cc60e83c09ceb5f9e1455658b86979161eb21431085",
+    "figures/fig-03-land-use-density.png": "ef53e83347954ed72be25b0e98260bb823e598e29eac5c4d981d9aeb5f0255d1",
+    "figures/fig-04-movement.png": "d656d56859f09bb7bce38a9a0d7f9eeb4f848930a7c98c5666c5b0caa1bd98d0",
+    "figures/fig-05-open-space-water.png": "a9d69d30e42b498b9a664f091419f4666d255b28ad5c94e58abd3be83437b761",
+    "figures/fig-06-phasing.png": "f6b0851068ddc73730606f06037c6620da892f9ccb31dbe72487728d34fed765",
+    "figures/fig-07-metrics.png": "e8ad16a3fc8e9fff430534d70d83fe4280edb6f1471a84f49c43ec331ce9e0c2",
+    "figures/node-N01-plan.png": "e8306985ce67ddf69bea4f850f097a0d69555ec4cf5f1069d04a4aace8b8c7cb",
+    "figures/node-N01-aerial.png": "2e83d94577272d971befbdf9d88643489b69a97d6979b66c85b195ed472ff662",
+    "figures/node-N01-eye.png": "99c913ab4b2811cb940c73ef37734321b643f0cc01e600878561c1754512e4ae",
+    "figures/node-N02-plan.png": "e3d8321a267943afa28c205d2dd2df447592c6442f124f3d51c5627451159f03",
+    "figures/node-N02-aerial.png": "f8c2d87c6d6a6baff58eaa799c412ada6f121761a26e138e1463e2d0d4e04c41",
+    "figures/node-N02-eye.png": "74d2e8e9f00e63d95d2194d351d9426015aea62e8f420b522fbe5f47999bc689",
+    "figures/node-N10-plan.png": "4d9e503577a1da25b8dcbf781023cd82519c421e92293ec2a0a60f28156c2a75",
+    "figures/node-N10-aerial.png": "bcd399c383d6261e3a000c829bc7c741282fb9b8117b09a7346947dc4f40c885",
+    "figures/node-N10-eye.png": "56e33742cc5a3d283c577253e132d675aaf4fe7b034aa8a188f6c78d94a4c502",
+    "drawings/a3-booklet.pdf": "ae0e997bfb153d17559913d9ea6c5242ccf82f4748114a455de594239d7a63b9",
+    "drawings/a0-board.pdf": "07b70fe5020e839c474546c82ec82f5ad0b86c1d8d920cfb12b4a23648213eaf"
+  }
+}
