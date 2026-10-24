@@ -2217,6 +2217,12 @@ def main():
         compress_pdf_images(os.path.join(ddir, "a0-board.pdf"))
         written.append(os.path.join(ddir, "a0-board.pdf"))
         print("  drawings/a0-board.pdf")
+    # node figures left over from nodes the package no longer has (a scheme that changed its three nodes)
+    import glob
+    for old in glob.glob(os.path.join(fdir, "node-*-*.png")):
+        if old not in written:
+            os.remove(old)
+            print("  removed stale %s" % os.path.relpath(old, pkg.dir))
     stamp = {
         "script": "scripts/make_figures.py", "script_version": xc.SCRIPT_VERSION, "input_sha256": pkg.input_hash,
         "files": {os.path.relpath(p, pkg.dir).replace(os.sep, "/"): xc.sha256_file(p) for p in written},
