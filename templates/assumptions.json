@@ -1,0 +1,11 @@
+{
+  "_note": "Every value you used that the organiser did not supply, with its basis. Cite the id from metrics.json (assumption) or proposal.md.",
+  "assumptions": [
+    {
+      "id": "A-01",
+      "topic": "What this is about",
+      "value": "The value you used, with its unit",
+      "basis": "Why this value: a calculation, a benchmark, a cited source id"
+    }
+  ]
+}

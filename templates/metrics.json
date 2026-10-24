@@ -1,0 +1,145 @@
+{
+  "_note": "One entry per figure. evidence: computed | sourced | assumed | indicative | declared (brief/requirements.json). computed needs computed_from; sourced needs source (an id in sources.json or a site-package SRC-*); assumed needs assumption (an id in assumptions.json); declared (a figure the scheme chooses) needs a note. Replace every null. Get the computed values with: python scripts/compute_metrics.py <package>.",
+  "metrics": [
+    {
+      "key": "master_area_km2",
+      "value": null,
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/master_area.geojson"
+    },
+    {
+      "key": "site_coverage_pct",
+      "value": null,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "gfa_m2",
+      "value": null,
+      "unit": "m2",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "far",
+      "value": null,
+      "unit": "ratio",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "open_space_pct",
+      "value": null,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/land_use.geojson"
+    },
+    {
+      "key": "human_machine_interfaces",
+      "value": null,
+      "unit": "count",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "structure_km2",
+      "value": null,
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/structure.geojson"
+    },
+    {
+      "key": "hourly_cfe_match_pct",
+      "value": null,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "peak_it_load_mw",
+      "value": null,
+      "unit": "MW",
+      "evidence": "declared",
+      "note": "How the scheme arrives at this figure"
+    },
+    {
+      "key": "annual_water_demand_m3",
+      "value": null,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "water_domestic_m3",
+      "value": null,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "water_compute_m3",
+      "value": null,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "water_agriculture_m3",
+      "value": null,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "water_landscape_m3",
+      "value": null,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "water_industry_m3",
+      "value": null,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "wue_l_per_kwh",
+      "value": null,
+      "unit": "L/kWh",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "machine_traffic_rule",
+      "value": null,
+      "unit": "enum",
+      "evidence": "declared",
+      "note": "How the scheme arrives at this figure"
+    },
+    {
+      "key": "jobs_phase1",
+      "value": null,
+      "unit": "jobs",
+      "evidence": "declared",
+      "note": "How the scheme arrives at this figure"
+    },
+    {
+      "key": "residents_phase1",
+      "value": null,
+      "unit": "persons",
+      "evidence": "declared",
+      "note": "How the scheme arrives at this figure"
+    },
+    {
+      "key": "dwellings_phase1",
+      "value": null,
+      "unit": "units",
+      "evidence": "declared",
+      "note": "How the scheme arrives at this figure"
+    }
+  ]
+}

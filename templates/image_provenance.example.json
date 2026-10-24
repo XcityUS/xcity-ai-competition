@@ -1,0 +1,18 @@
+{
+  "images": [
+    {
+      "path": "media/N05-eye-day.jpg",
+      "node_id": "N05",
+      "view": "eye_level",
+      "model": "Name and version of the image model or 3D tool",
+      "prompt": "The full prompt, not shortened",
+      "generated_at": "2026-11-01",
+      "post_processing": "none | retouch | composite",
+      "post_processing_note": "",
+      "reference_images": "own_work",
+      "reference_images_note": "Control image renders/N05-eye-day.png, drawn by scripts/render_views.py from this package's geometry.",
+      "control_image": "renders/N05-eye-day.png",
+      "caption": "Rendered from the massing view N05-eye-day; illustrates the geometry, not evidence."
+    }
+  ]
+}

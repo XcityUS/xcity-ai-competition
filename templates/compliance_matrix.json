@@ -1,0 +1,125 @@
+{
+  "_note": "Set each status to 'answered' (or 'partial' with a note) once proposal.md really answers it; 'not_answered' fails gate G6. section: the numbered heading in proposal.md that answers it.",
+  "items": [
+    {
+      "id": "agent.1",
+      "status": "not_answered",
+      "section": "## 1.",
+      "note": ""
+    },
+    {
+      "id": "agent.2",
+      "status": "not_answered",
+      "section": "## 3.",
+      "note": ""
+    },
+    {
+      "id": "agent.3",
+      "status": "not_answered",
+      "section": "## 4.",
+      "note": ""
+    },
+    {
+      "id": "agent.4",
+      "status": "not_answered",
+      "section": "## 5.",
+      "note": ""
+    },
+    {
+      "id": "agent.5",
+      "status": "not_answered",
+      "section": "## 6.",
+      "note": ""
+    },
+    {
+      "id": "agent.6",
+      "status": "not_answered",
+      "section": "## 7.",
+      "note": ""
+    },
+    {
+      "id": "agent.7",
+      "status": "not_answered",
+      "section": "## 8.",
+      "note": ""
+    },
+    {
+      "id": "agent.8",
+      "status": "not_answered",
+      "section": "## 9.",
+      "note": ""
+    },
+    {
+      "id": "M1",
+      "status": "not_answered",
+      "section": "## 3.",
+      "note": ""
+    },
+    {
+      "id": "M2",
+      "status": "not_answered",
+      "section": "## 3.",
+      "note": ""
+    },
+    {
+      "id": "M3",
+      "status": "not_answered",
+      "section": "## 4.",
+      "note": ""
+    },
+    {
+      "id": "M4",
+      "status": "not_answered",
+      "section": "## 4.",
+      "note": ""
+    },
+    {
+      "id": "M5",
+      "status": "not_answered",
+      "section": "## 4.",
+      "note": ""
+    },
+    {
+      "id": "M6",
+      "status": "not_answered",
+      "section": "## 5.",
+      "note": ""
+    },
+    {
+      "id": "M7",
+      "status": "not_answered",
+      "section": "## 5.",
+      "note": ""
+    },
+    {
+      "id": "M8",
+      "status": "not_answered",
+      "section": "## 8.",
+      "note": ""
+    },
+    {
+      "id": "M9",
+      "status": "not_answered",
+      "section": "## 8.",
+      "note": ""
+    },
+    {
+      "id": "M10",
+      "status": "not_answered",
+      "section": "## 9.",
+      "note": ""
+    },
+    {
+      "id": "M11",
+      "status": "not_answered",
+      "section": "## 9.",
+      "note": ""
+    },
+    {
+      "id": "M12",
+      "status": "not_answered",
+      "section": "## 6.",
+      "note": ""
+    }
+  ]
+}

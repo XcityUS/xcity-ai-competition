@@ -1,0 +1,4 @@
+{
+  "_note": "Register every image, video or audio file under media/ - anything not drawn by scripts/make_figures.py. reference_images: none_text_only_prompt | own_work | third_party (the last two need reference_images_note).",
+  "images": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "competition": "xcity-ai-competition",
+  "title": "{{title}}",
+  "title_zh": "",
+  "slug": "{{slug}}",
+  "summary": "Two to four sentences: the idea of the city, where it starts and why. Shown on the gallery card and the drawings.",
+  "language": "en",
+  "author": {
+    "github": "{{github}}",
+    "responsible_party": "The person or organisation responsible for this scheme (named track)",
+    "organisation": ""
+  },
+  "agent": {
+    "name": "The agent that produced this scheme, e.g. Claude Code, Codex, your own",
+    "model": "The model and version",
+    "runtime": "Where it ran, e.g. CLI on macOS, cloud sandbox"
+  },
+  "autonomy": {
+    "class": "autonomous | human_supervised | human_directed",
+    "human_role": "What any human did. Required unless the class is autonomous."
+  },
+  "nodes": ["{{node_1}}", "{{node_2}}", "{{node_3}}"],
+  "nodes_reason": "Why these three: where you think this city is hard.",
+  "tradeoff": {
+    "objective": "The one objective this scheme deliberately did not optimise",
+    "why": "Why",
+    "consequence": "What follows from it",
+    "who_bears": "Who bears the cost"
+  },
+  "design_depth": {
+    "tier1_structure": {"evidence": ["geometry/structure.geojson", "figures/fig-01-structure.png"]},
+    "tier2_master": {"evidence": ["geometry/master_area.geojson", "geometry/land_use.geojson", "geometry/buildings.geojson", "figures/fig-02-master-plan.png", "figures/fig-03-land-use-density.png"]},
+    "tier3_nodes": {
+      "{{node_1}}": {"plan": "figures/node-{{node_1}}-plan.png", "aerial": "figures/node-{{node_1}}-aerial.png", "eye_level": "figures/node-{{node_1}}-eye.png"},
+      "{{node_2}}": {"plan": "figures/node-{{node_2}}-plan.png", "aerial": "figures/node-{{node_2}}-aerial.png", "eye_level": "figures/node-{{node_2}}-eye.png"},
+      "{{node_3}}": {"plan": "figures/node-{{node_3}}-plan.png", "aerial": "figures/node-{{node_3}}-aerial.png", "eye_level": "figures/node-{{node_3}}-eye.png"}
+    }
+  },
+  "package_state": "draft",
+  "created": "{{today}}",
+  "updated": "{{today}}"
+}
