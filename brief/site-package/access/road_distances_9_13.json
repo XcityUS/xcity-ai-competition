@@ -1,0 +1,60 @@
+{
+ "note": "Shortest geodesic distance (km) from the site boundary (parcels 9 + 13) to each road. Computed from roads_osm.geojson and scope_9_13.geojson.",
+ "roads": {
+  "RN40": {
+   "km": 27.6,
+   "site_point": [
+    -68.3461,
+    -30.7277
+   ],
+   "road_point": [
+    -68.633,
+    -30.7074
+   ]
+  },
+  "RP510": {
+   "km": 35.6,
+   "site_point": [
+    -67.6527,
+    -31.1132
+   ],
+   "road_point": [
+    -67.2958,
+    -31.0211
+   ]
+  },
+  "RN20": {
+   "km": 40.7,
+   "site_point": [
+    -68.2751,
+    -31.2295
+   ],
+   "road_point": [
+    -68.4735,
+    -31.555
+   ]
+  },
+  "RN141": {
+   "km": 47.3,
+   "site_point": [
+    -67.7384,
+    -31.1729
+   ],
+   "road_point": [
+    -67.6952,
+    -31.5979
+   ]
+  },
+  "RN150": {
+   "km": 52.9,
+   "site_point": [
+    -68.145,
+    -30.6764
+   ],
+   "road_point": [
+    -68.2499,
+    -30.2081
+   ]
+  }
+ }
+}
