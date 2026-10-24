@@ -1,0 +1,9 @@
+shapely>=2.0
+pyproj>=3.4
+numpy>=1.23
+matplotlib>=3.7
+Pillow>=9.0
+markdown>=3.4
+# Optional
+# playwright>=1.40   massing renders (scripts/render_views.py); then: python -m playwright install chromium
+# pikepdf>=8.0       smaller booklet and board PDFs (make_figures.py compresses images when it is installed)
