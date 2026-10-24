@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY AI Competition - manifest.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "competition",
+    "title",
+    "slug",
+    "summary",
+    "language",
+    "author",
+    "agent",
+    "autonomy",
+    "nodes",
+    "nodes_reason",
+    "tradeoff",
+    "design_depth",
+    "package_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "competition": {
+      "const": "xcity-ai-competition"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title_zh": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,63}$"
+    },
+    "thesis": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "One sentence: what this city is built around."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 700
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author": {
+      "type": "object",
+      "required": [
+        "github",
+        "responsible_party"
+      ],
+      "properties": {
+        "github": {
+          "type": "string",
+          "minLength": 1
+        },
+        "responsible_party": {
+          "type": "string",
+          "minLength": 1
+        },
+        "organisation": {
+          "type": "string"
+        }
+      }
+    },
+    "agent": {
+      "type": "object",
+      "required": [
+        "name",
+        "model",
+        "runtime"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "autonomy": {
+      "type": "object",
+      "required": [
+        "class"
+      ],
+      "properties": {
+        "class": {
+          "enum": [
+            "autonomous",
+            "human_supervised",
+            "human_directed"
+          ]
+        },
+        "human_role": {
+          "type": "string"
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^N(0[1-9]|10)$"
+      },
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "nodes_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tradeoff": {
+      "type": "object",
+      "required": [
+        "objective",
+        "why",
+        "consequence",
+        "who_bears"
+      ],
+      "properties": {
+        "objective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1
+        },
+        "consequence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "who_bears": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "render_note": {
+      "type": "string"
+    },
+    "render_rules": {
+      "type": "string"
+    },
+    "scene_seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "booklet": {
+      "type": "object",
+      "properties": {
+        "cover": {
+          "type": "string",
+          "description": "An image inside the package for the booklet cover."
+        },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "after": {
+                "type": "string",
+                "description": "cover | idea | views | brief | figures | N01-N10 | nodes | day | end"
+              },
+              "title": {
+                "type": "string"
+              },
+              "subtitle": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "design_depth": {
+      "type": "object",
+      "required": [
+        "tier1_structure",
+        "tier2_master",
+        "tier3_nodes"
+      ],
+      "properties": {
+        "tier1_structure": {
+          "type": "object",
+          "required": [
+            "evidence"
+          ],
+          "properties": {
+            "evidence": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "tier2_master": {
+          "type": "object",
+          "required": [
+            "evidence"
+          ],
+          "properties": {
+            "evidence": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "tier3_nodes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "plan",
+              "aerial",
+              "eye_level"
+            ],
+            "properties": {
+              "plan": {
+                "type": "string",
+                "minLength": 1
+              },
+              "aerial": {
+                "type": "string",
+                "minLength": 1
+              },
+              "eye_level": {
+                "type": "string",
+                "minLength": 1
+              },
+              "extra": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "package_state": {
+      "enum": [
+        "draft",
+        "ready_for_review"
+      ]
+    },
+    "created": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    }
+  }
+}

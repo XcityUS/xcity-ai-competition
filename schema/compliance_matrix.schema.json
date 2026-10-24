@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY AI Competition - compliance_matrix.json",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "section"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^(agent\\.[1-8]|M([1-9]|1[0-2]))$"
+          },
+          "status": {
+            "enum": [
+              "answered",
+              "partial",
+              "not_answered"
+            ]
+          },
+          "section": {
+            "type": "string",
+            "pattern": "^##\\s*\\d+\\."
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

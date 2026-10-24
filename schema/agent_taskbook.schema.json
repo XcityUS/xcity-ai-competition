@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY AI Competition - agent_taskbook.json",
+  "type": "object",
+  "required": [
+    "tasks"
+  ],
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "required",
+          "expects",
+          "answers_in"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^agent\\.[1-8]$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "expects": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "answers_in": {
+            "type": "string",
+            "pattern": "^##\\s*\\d+\\.$"
+          }
+        }
+      }
+    }
+  }
+}

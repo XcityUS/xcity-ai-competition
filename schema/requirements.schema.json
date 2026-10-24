@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY AI Competition - requirements.json",
+  "type": "object",
+  "required": [
+    "evidence_tags",
+    "mandatory",
+    "computed_metrics",
+    "systems",
+    "land_uses",
+    "networks"
+  ]
+}

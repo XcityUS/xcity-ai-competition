@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY AI Competition - image_provenance.json",
+  "type": "object",
+  "required": [
+    "images"
+  ],
+  "properties": {
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "model",
+          "prompt",
+          "generated_at",
+          "post_processing",
+          "reference_images",
+          "caption"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^media/"
+          },
+          "node_id": {
+            "type": "string"
+          },
+          "view": {
+            "enum": [
+              "aerial",
+              "eye_level",
+              "plan",
+              "section",
+              "other"
+            ]
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "generated_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "post_processing": {
+            "enum": [
+              "none",
+              "retouch",
+              "composite"
+            ]
+          },
+          "post_processing_note": {
+            "type": "string"
+          },
+          "reference_images": {
+            "enum": [
+              "none_text_only_prompt",
+              "own_work",
+              "third_party"
+            ]
+          },
+          "reference_images_note": {
+            "type": "string"
+          },
+          "control_image": {
+            "type": "string",
+            "pattern": "^renders/[A-Za-z0-9_.-]+\\.png$",
+            "description": "The massing render this image was made from (scripts/render_views.py). Gate G10 checks it exists and is current."
+          },
+          "caption": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

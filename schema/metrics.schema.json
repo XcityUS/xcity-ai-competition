@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY AI Competition - metrics.json",
+  "type": "object",
+  "required": [
+    "metrics"
+  ],
+  "properties": {
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "value",
+          "unit",
+          "evidence"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": [
+              "number",
+              "string",
+              "object"
+            ]
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "enum": [
+              "computed",
+              "sourced",
+              "assumed",
+              "indicative",
+              "declared"
+            ]
+          },
+          "computed_from": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "assumption": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "evidence": {
+                  "const": "computed"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "computed_from"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "evidence": {
+                  "const": "sourced"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "source"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "evidence": {
+                  "const": "assumed"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "assumption"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "evidence": {
+                  "const": "indicative"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "source"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "evidence": {
+                  "const": "declared"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "note"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
