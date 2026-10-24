@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "S-01",
+      "title": "Photovoltaic Geographical Information System (PVGIS)",
+      "publisher": "European Commission, Joint Research Centre",
+      "url": "https://joint-research-centre.ec.europa.eu/photovoltaic-geographical-information-system-pvgis_en",
+      "accessed": "2026-10-24",
+      "used_for": "Tool named for verifying the PV yield assumption A-05"
+    },
+    {
+      "id": "S-02",
+      "title": "NASA POWER Data Access Viewer",
+      "publisher": "NASA",
+      "url": "https://power.larc.nasa.gov/docs/tutorials/data-access-viewer/quick-start/",
+      "accessed": "2026-10-24",
+      "used_for": "Named for hourly irradiance and temperature to size storage and cooling hours (A-04, A-06)"
+    },
+    {
+      "id": "S-03",
+      "title": "INPRES-CIRSOC 103 - Argentine seismic design code",
+      "publisher": "INPRES / CIRSOC",
+      "url": "",
+      "accessed": "",
+      "used_for": "Seismic design basis (A-14); edition to be confirmed"
+    }
+  ]
+}

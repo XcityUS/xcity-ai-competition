@@ -1,0 +1,112 @@
+{
+  "assumptions": [
+    {
+      "id": "A-01",
+      "topic": "Water source",
+      "value": "Alluvial groundwater wellfield up the fan, 2,186,952 m3/yr fresh in phase one (about 69 L/s); 1,412,340 m3/yr more is reclaimed wastewater",
+      "basis": "No water right is supplied by the organiser and recharge is unknown, so phase two is gated on measured drawdown rather than on a yield we cannot know."
+    },
+    {
+      "id": "A-02",
+      "topic": "Phase-one IT load",
+      "value": "40 MW: two 20 MW halls; pads for two more reserved on the terrace for phase two",
+      "basis": "Sized so that the PV and storage can carry the city first and the campus second, islanded."
+    },
+    {
+      "id": "A-03",
+      "topic": "Grid",
+      "value": "No grid connection in phase one; the city runs as an islanded microgrid",
+      "basis": "Grid capacity is not supplied; the nearest road (RN 20) is 40.7 km beyond the site and no transmission line is assumed."
+    },
+    {
+      "id": "A-04",
+      "topic": "Cooling",
+      "value": "Dry coolers with adiabatic assist above 35 C (about 500 h/yr): WUE 0.20 L/kWh, PUE 1.25",
+      "basis": "Water binds, power does not; dry cooling gives up about 0.1 of PUE to save most of the water. WUE per IT kWh."
+    },
+    {
+      "id": "A-05",
+      "topic": "PV yield",
+      "value": "2,150 kWh/kWp/yr, single-axis tracking, 2 ha per MWp",
+      "basis": "Order of magnitude for the high-irradiance Andean piedmont at 31.1 S; to be replaced by a PVGIS run (S-01)."
+    },
+    {
+      "id": "A-06",
+      "topic": "Storage",
+      "value": "1,000 MWh lithium iron phosphate, round-trip efficiency 88%",
+      "basis": "Carries the city's night load (about 15 MW) and the campus at 70% for 13 hours with margin."
+    },
+    {
+      "id": "A-07",
+      "topic": "Hourly matching and availability",
+      "value": "100% physical hourly carbon-free supply; the city is served first; compute available 85% of hours at full load",
+      "basis": "Day: 11 h at full load. Night: 13 h at 70% from storage. Winter cloud: batch work curtailed. 11 x 100% + 13 x 70% = 84% of full-load hours."
+    },
+    {
+      "id": "A-08",
+      "topic": "Domestic water and reuse",
+      "value": "130 L per person per day; 80% returns as wastewater; 90% of it reused",
+      "basis": "Metered supply, greywater separation and low-flow fittings in an arid new city; San Juan's own consumption is far higher and is not the benchmark."
+    },
+    {
+      "id": "A-09",
+      "topic": "Agricultural, landscape and industrial water",
+      "value": "Orchards 226 ha at 4,000 m3/ha/yr deficit drip; greenhouses 14 ha at 8,000; north terrace 338 ha of jojoba and algarrobo at 600 (establishment); irrigated streets, patios and squares 50 ha at 6,000; industry 60,000 m3/yr",
+      "basis": "Orchards and street trees run on reclaimed water through the acequias; the river park, north slope and PV fields are unirrigated desert planting."
+    },
+    {
+      "id": "A-10",
+      "topic": "Dwellings and household size",
+      "value": "85 m2 gross per dwelling; 2.4 persons per dwelling; mixed-use blocks two thirds residential",
+      "basis": "Courtyard houses and flats of 55-120 m2 for a young city with families."
+    },
+    {
+      "id": "A-11",
+      "topic": "Phase-one jobs",
+      "value": "7891 jobs located in the city: Compute campus operations and security 140; PV, batteries and the microgrid 120; Greenhouses 141; Orchards, acequias and landscape crews 420; Agri-processing, cold store and packing 260; Workshops: PV and robot maintenance for the whole site's fields, fabrication, repair 900; Freight cross-dock and autonomous fleet 220; Water reclamation and the bluff tank 60; Schools 790; Kindergartens and health posts 420; Clinic 260; Training college (robotics, agronomy, water) 180; Town hall, open-data office and administration 280; Library, culture, media school 120; Markets, shops, cafes and food 2200; Arrival hall, guesthouse and visitors 260; Personal and home care 700; Lead-zone field operations living in the city 420",
+      "basis": "Staffing ratios per facility; the construction workforce of phase two is temporary and excluded."
+    },
+    {
+      "id": "A-12",
+      "topic": "Wind",
+      "value": "Zonda from the west to north-west, hot and dry, several days a year; ordinary winds not assumed",
+      "basis": "Wind data is not supplied; to be checked against SMN San Juan Aero observations before phase two."
+    },
+    {
+      "id": "A-13",
+      "topic": "Waste-heat demand",
+      "value": "Greenhouse night heating about 1.2 GWh/ha/yr; hot water for the civic quarter and the market about 8 GWh/yr: about 25 GWh of about 300 GWh IT energy",
+      "basis": "The campus is 2.4 km from the nearest homes, so heat goes only to the greenhouses beside it and, by an insulated main down the bluff, to the civic quarter."
+    },
+    {
+      "id": "A-14",
+      "topic": "Seismic design",
+      "value": "Highest seismic zone of INPRES-CIRSOC 103 assumed; buildings of six floors or fewer, most of two to four; regular, short-span courtyard blocks in reinforced concrete frames or confined masonry",
+      "basis": "San Juan is among the most seismically active provinces; edition and zone to be confirmed (S-03)."
+    },
+    {
+      "id": "A-15",
+      "topic": "Long-term size",
+      "value": "Four oasis cities of about 40,000 each on the Line, about 160,000 people",
+      "basis": "Each city stays within a 2.5 km walk across and within reach of its own wellfield; size is limited by water, not land."
+    },
+    {
+      "id": "A-16",
+      "topic": "Machine traffic rule",
+      "value": "combined: separated on the 600 m machine grid; shared at walking pace on the acequia streets; people only in the lanes",
+      "basis": "Freight and shuttles never need the lanes; doorstep delivery uses the acequia streets; every crossing of a machine street is a marked interface."
+    },
+    {
+      "id": "A-17",
+      "topic": "City energy demand",
+      "value": "About 153 GWh/yr for the city (2,000 kWh per resident plus 70 GWh non-residential), 372 GWh/yr for the campus at PUE 1.25",
+      "basis": "All-electric city with heat pumps and an electric fleet; to be replaced by an hourly load model."
+    },
+    {
+      "id": "A-18",
+      "topic": "Flood",
+      "value": "The lower terrace stands 4-15 m above the wash bed and outside the DEM flood-sensitive band; storm water from the bluff is led round the city in two swales to the river park",
+      "basis": "Flood peaks are not supplied; the city is placed out of the band instead of being raised inside it."
+    }
+  ]
+}

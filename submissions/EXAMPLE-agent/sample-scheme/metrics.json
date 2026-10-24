@@ -1,0 +1,210 @@
+{
+  "metrics": [
+    {
+      "key": "master_area_km2",
+      "value": 36.4802,
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/master_area.geojson"
+    },
+    {
+      "key": "site_coverage_pct",
+      "value": 2.917,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "gfa_m2",
+      "value": 2309984.5,
+      "unit": "m2",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "far",
+      "value": 0.0633,
+      "unit": "ratio",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "open_space_pct",
+      "value": 9.906,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/land_use.geojson"
+    },
+    {
+      "key": "human_machine_interfaces",
+      "value": 30,
+      "unit": "count",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "shaded_pedestrian_pct",
+      "value": 89.497,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "structure_km2",
+      "value": {
+        "agri_production": 642.078,
+        "energy_compute": 58.384,
+        "industry": 29.978,
+        "living": 20.833,
+        "port": 3.272,
+        "reserve": 898.835
+      },
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/structure.geojson"
+    },
+    {
+      "key": "hourly_cfe_match_pct",
+      "value": 100,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-07",
+      "note": "Physical and islanded: PV and batteries are the only source. The cost is carried by the compute campus as 85% availability; the city is served first in every hour."
+    },
+    {
+      "key": "compute_availability_pct",
+      "value": 85,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-07"
+    },
+    {
+      "key": "peak_it_load_mw",
+      "value": 40,
+      "unit": "MW",
+      "evidence": "declared",
+      "note": "Two 20 MW halls on the upper terrace; no grid connection assumed in phase one (A-03)."
+    },
+    {
+      "key": "pv_capacity_mwp",
+      "value": 410,
+      "unit": "MWp",
+      "evidence": "declared",
+      "note": "390 MWp of trackers on 782 ha of the upper terrace at 2 ha/MWp, plus 20 MWp on canopies and roofs in the city."
+    },
+    {
+      "key": "storage_mwh",
+      "value": 1000,
+      "unit": "MWh",
+      "evidence": "declared",
+      "note": "Two 500 MWh battery halls beside the substation (A-06)."
+    },
+    {
+      "key": "pue",
+      "value": 1.25,
+      "unit": "ratio",
+      "evidence": "assumed",
+      "assumption": "A-04"
+    },
+    {
+      "key": "wue_l_per_kwh",
+      "value": 0.2,
+      "unit": "L/kWh",
+      "evidence": "assumed",
+      "assumption": "A-04"
+    },
+    {
+      "key": "waste_heat_reuse_pct",
+      "value": 9,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-13"
+    },
+    {
+      "key": "annual_water_demand_m3",
+      "value": 3599292,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-01"
+    },
+    {
+      "key": "water_domestic_m3",
+      "value": 1961583,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-08"
+    },
+    {
+      "key": "water_compute_m3",
+      "value": 59568,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-04"
+    },
+    {
+      "key": "water_agriculture_m3",
+      "value": 1218141,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-09"
+    },
+    {
+      "key": "water_landscape_m3",
+      "value": 300000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-09"
+    },
+    {
+      "key": "water_industry_m3",
+      "value": 60000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-09",
+      "note": "Includes panel cleaning (robotic dry cleaning, two wet washes a year)."
+    },
+    {
+      "key": "water_reuse_pct",
+      "value": 90,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-08",
+      "note": "Share of treated wastewater reused: 1,412,340 m3/yr back into the acequias, orchards and groves."
+    },
+    {
+      "key": "machine_traffic_rule",
+      "value": "combined",
+      "unit": "enum",
+      "evidence": "declared",
+      "note": "Separated on the 600 m machine grid; shared at walking pace on the 300 m acequia streets; people only in the lanes (A-16)."
+    },
+    {
+      "key": "jobs_phase1",
+      "value": 7891,
+      "unit": "jobs",
+      "evidence": "declared",
+      "note": "Sum of the phase-one programme by facility (A-11)."
+    },
+    {
+      "key": "residents_phase1",
+      "value": 41340,
+      "unit": "persons",
+      "evidence": "declared",
+      "note": "Dwellings recomputed from buildings.geojson times 2.4 persons per dwelling (A-10)."
+    },
+    {
+      "key": "dwellings_phase1",
+      "value": 17224,
+      "unit": "units",
+      "evidence": "declared",
+      "note": "Residential GFA plus two thirds of mixed-use GFA, recomputed from buildings.geojson, at 85 m2 gross per dwelling."
+    },
+    {
+      "key": "long_term_residents",
+      "value": 160000,
+      "unit": "persons",
+      "evidence": "declared",
+      "note": "Four oasis cities of about 40,000 on the Line, each limited by its own water (A-15)."
+    }
+  ]
+}

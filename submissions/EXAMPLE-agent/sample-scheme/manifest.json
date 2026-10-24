@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "competition": "xcity-ai-competition",
+  "title": "Terrace Oasis: a city that grows its own shade beside the first fields",
+  "title_zh": "台地绿洲：在第一片农光田旁长出树荫的城市",
+  "slug": "sample-scheme",
+  "summary": "Reference example, not an entry. The first city stands on the flat terrace directly east of the lead zone, between the fields and a 30 m bluff, facing the Andes. About 41,340 people live in low courtyard houses on a 300 m grid; every street is an acequia street, shaded by trees watered by gravity from a tank on the bluff; machines keep to their own 600 m grid. Across the site, four oasis cities hang on one corridor, the Line, from the RN 20 gate to the port in the east. The city gives up growth speed, not water.",
+  "language": "en",
+  "author": {
+    "github": "EXAMPLE-agent",
+    "responsible_party": "XCITY organiser - reference example",
+    "organisation": "XCITY"
+  },
+  "agent": {
+    "name": "Claude (Cowork)",
+    "model": "claude-opus-5-5",
+    "runtime": "Cloud sandbox, Python 3, this repository's scripts only"
+  },
+  "autonomy": {
+    "class": "human_supervised",
+    "human_role": "The organiser's design lead commissioned a reference example, asked that it answer all three scales as a city rather than a compute town, confirmed the three key nodes the agent proposed (N01, N02, N10), and chose the image tool. The agent made every design decision and wrote every file; no human edited the package."
+  },
+  "nodes": [
+    "N01",
+    "N02",
+    "N10"
+  ],
+  "nodes_reason": "Arrival (N01) decides what the city says it is; housing (N02) is where heat, earthquakes, water and robots meet every day; the main square (N10) has to work at 45 C and in the Zonda. If these three work for people, the rest of the plan is arithmetic.",
+  "tradeoff": {
+    "objective": "Growth speed: the city does not grow faster than its measured water allows",
+    "why": "Nobody knows the aquifer's recharge. A city sized on hope is the one irreversible mistake a desert city can make.",
+    "consequence": "Phase two waits for 24 months of published drawdown data and a second licence; land and housing come to market more slowly; some people who want to move in wait.",
+    "who_bears": "The developer and investors, through slower returns, and households on the waiting list; not the aquifer and not the people already living here."
+  },
+  "design_depth": {
+    "tier1_structure": {
+      "evidence": [
+        "geometry/structure.geojson",
+        "figures/fig-01-structure.png"
+      ]
+    },
+    "tier2_master": {
+      "evidence": [
+        "geometry/master_area.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "figures/fig-02-master-plan.png",
+        "figures/fig-03-land-use-density.png"
+      ]
+    },
+    "tier3_nodes": {
+      "N01": {
+        "plan": "figures/node-N01-plan.png",
+        "aerial": "figures/node-N01-aerial.png",
+        "eye_level": "figures/node-N01-eye.png"
+      },
+      "N02": {
+        "plan": "figures/node-N02-plan.png",
+        "aerial": "figures/node-N02-aerial.png",
+        "eye_level": "figures/node-N02-eye.png"
+      },
+      "N10": {
+        "plan": "figures/node-N10-plan.png",
+        "aerial": "figures/node-N10-aerial.png",
+        "eye_level": "figures/node-N10-eye.png"
+      }
+    }
+  },
+  "package_state": "ready_for_review",
+  "created": "2026-10-24",
+  "updated": "2026-10-24",
+  "render_note": "A compact low-rise city of courtyard houses on a regular grid of 300 m superblocks with tree-lined streets and narrow irrigation channels, a central square under a solar canopy, olive orchards and poplar windbreaks to the west against the agrivoltaic fields, solar fields, greenhouses and a small data campus on the terrace beyond a low bluff to the east.",
+  "render_rules": "No private cars anywhere in the city: the streets carry only people, bicycles, small white delivery robots and white driverless electric shuttles.",
+  "scene_seed": 3658308874,
+  "thesis": "When machines take over much of the work, a desert city should be built around being outside together: shade and water first, and growth only as fast as the water allows.",
+  "booklet": {
+    "cover": "media/city-evening.jpg",
+    "pages": [
+      {
+        "path": "pages/identity.png",
+        "after": "idea",
+        "title": "Identity: names, mark and colour",
+        "subtitle": "Agent task 1 · drawn by the agent with tools/make_pages.py"
+      }
+    ]
+  }
+}
