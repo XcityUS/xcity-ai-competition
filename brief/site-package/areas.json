@@ -1,0 +1,67 @@
+{
+ "note_en": "Every area quoted anywhere in this repository comes from this file. Geodesic areas on WGS 84 for polygons; raster counts (60 m cells) for terrain classes.",
+ "note_zh": "仓库里引用的所有面积都以本文件为准。多边形面积为 WGS 84 椭球面积；地形分类为 60 m 栅格计数。",
+ "figures": [
+  {
+   "key": "site",
+   "km2": 1656.4,
+   "basis": "scope_9_13.geojson, geodesic",
+   "say": "1,656 km²"
+  },
+  {
+   "key": "parcel_9",
+   "km2": 1483.8,
+   "basis": "parcels_9_13.geojson, geodesic"
+  },
+  {
+   "key": "parcel_13",
+   "km2": 172.5,
+   "basis": "parcels_9_13.geojson, geodesic"
+  },
+  {
+   "key": "lead_zone_outline",
+   "km2": 13.9,
+   "basis": "lead_zone.geojson, three fields, geodesic"
+  },
+  {
+   "key": "lead_zone_arrays",
+   "km2": 12.0,
+   "basis": "lead_zone.geojson, panel arrays only"
+  },
+  {
+   "key": "slope_lt_2pct",
+   "km2": 1183.3,
+   "basis": "terrain_summary_9_13.json"
+  },
+  {
+   "key": "slope_2_5pct",
+   "km2": 182.2,
+   "basis": "terrain_summary_9_13.json"
+  },
+  {
+   "key": "slope_5_15pct",
+   "km2": 131.8,
+   "basis": "terrain_summary_9_13.json"
+  },
+  {
+   "key": "slope_15_25pct",
+   "km2": 31.3,
+   "basis": "terrain_summary_9_13.json"
+  },
+  {
+   "key": "slope_ge_25pct",
+   "km2": 126.7,
+   "basis": "terrain_summary_9_13.json"
+  },
+  {
+   "key": "flood_sensitive",
+   "km2": 503.4,
+   "basis": "terrain_summary_9_13.json"
+  },
+  {
+   "key": "flat_lt2pct_not_flood",
+   "km2": 686.4,
+   "basis": "terrain_summary_9_13.json"
+  }
+ ]
+}

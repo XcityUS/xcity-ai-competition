@@ -1,0 +1,128 @@
+{
+ "profile": "data-package",
+ "name": "xcity-ai-competition-site-package",
+ "title": "XCITY AI Competition - site package (parcels 9 and 13)",
+ "version": "1.0.0",
+ "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
+ "sources_file": "sources.json",
+ "resources": [
+  {
+   "name": "parcels_9_13",
+   "path": "boundaries/parcels_9_13.geojson",
+   "mediatype": "application/geo+json",
+   "description": "Parcels 9 and 13, exact",
+   "hash": "sha256:d219b31461fab0629b8ae2447deefb377a2cb6683ae83eecfec427ae3079af93",
+   "source": "SRC-KML"
+  },
+  {
+   "name": "scope_9_13",
+   "path": "boundaries/scope_9_13.geojson",
+   "mediatype": "application/geo+json",
+   "description": "Site boundary (union)",
+   "hash": "sha256:620f9495f0271946e6882b5a8e4e4e3bb8c11c21f1c2026a6fa7fb0fb26b51b1",
+   "source": "SRC-KML"
+  },
+  {
+   "name": "lead_zone",
+   "path": "lead-zone/lead_zone.geojson",
+   "mediatype": "application/geo+json",
+   "description": "Lead zone fields 01-03 (fixed)",
+   "hash": "sha256:8b6443faf4b715e5ee0a7cc7765f1271d8091b6fd38a771b456c8e1eae3e2932",
+   "source": "SRC-LEAD"
+  },
+  {
+   "name": "roads_osm",
+   "path": "access/roads_osm.geojson",
+   "mediatype": "application/geo+json",
+   "description": "Regional roads",
+   "hash": "sha256:8082c6a9fc466097e7fc8412e5a5e40a57583925dffaa1b9ef2f183e47df6c87",
+   "source": "SRC-OSM"
+  },
+  {
+   "name": "road_distances",
+   "path": "access/road_distances_9_13.json",
+   "mediatype": "application/json",
+   "description": "Site-to-road distances",
+   "hash": "sha256:03edd1376fd3ba0464a828fa533f584532f8ba8f4280806fc8f4b2463eb45e78",
+   "source": "SRC-OSM"
+  },
+  {
+   "name": "channels",
+   "path": "water/channels_dem.geojson",
+   "mediatype": "application/geo+json",
+   "description": "DEM-derived seasonal channels",
+   "hash": "sha256:bcc3ff8caad4c83a5187d674b893079da7361c8487bd94ae524566c7ad711283",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "flood_sensitive",
+   "path": "water/flood_sensitive_dem.geojson",
+   "mediatype": "application/geo+json",
+   "description": "DEM-derived flood-sensitive band",
+   "hash": "sha256:67cda090c40e1413820600d658d4c0216c77bd62abe9c8b6c3429b9ab75ca4c4",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "dem",
+   "path": "terrain/dem_9_13_utm19s_60m.tif",
+   "mediatype": "image/tiff",
+   "description": "Elevation, 60 m, EPSG:32719",
+   "hash": "sha256:b5bb324a63800a9ccac4992a79d25ed5a153d3a7c2223a500d114bbb8d7115a4",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "dem_png",
+   "path": "terrain/dem_9_13_utm19s_60m.png",
+   "mediatype": "image/png",
+   "description": "Elevation as 16-bit PNG (metres), same grid as the DEM",
+   "hash": "sha256:068b49d9be9bb08a01c67a71b7be02bd720e47bbaf4891070c2a6673bc51755c",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "hillshade",
+   "path": "terrain/hillshade_9_13.png",
+   "mediatype": "image/png",
+   "description": "Hillshade in EPSG:4326 for basemaps",
+   "hash": "sha256:4b51340d8586f417a9a2ab70dabac338dc33285df9beecbca66a3c1fb43ab59e",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "hillshade_utm",
+   "path": "terrain/hillshade_9_13_utm.png",
+   "mediatype": "image/png",
+   "description": "Hillshade in EPSG:32719 (same grid as the DEM)",
+   "hash": "sha256:f875b5dd0249eb1c347d1e239d588c6495a531294e8a445c1d1bd44a71a6fa28",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "terrain_summary",
+   "path": "terrain/terrain_summary_9_13.json",
+   "mediatype": "application/json",
+   "description": "Slope, flood and elevation figures",
+   "hash": "sha256:23a931cf35212207cd8034dd0d4a8126e3e72a5a41bfcebab90dd9dde03178eb",
+   "source": "SRC-DEM"
+  },
+  {
+   "name": "indicative_systems",
+   "path": "zoning/indicative_systems_9_13.json",
+   "mediatype": "application/json",
+   "description": "Five systems, indicative",
+   "hash": "sha256:d9f1a8d4f4d163f390372998cc3d8e0bc1799a4fdcfee41a8011d9fa9e9aab06",
+   "source": "SRC-XCITY-INDICATIVE"
+  },
+  {
+   "name": "design_nodes",
+   "path": "nodes/design_nodes.json",
+   "mediatype": "application/json",
+   "description": "Ten key nodes - choose three",
+   "hash": "sha256:d2f9674c8450418829de491c897820658ade875b571c59b55477ef53706e8248"
+  },
+  {
+   "name": "areas",
+   "path": "areas.json",
+   "mediatype": "application/json",
+   "description": "Every area figure, one place",
+   "hash": "sha256:4c8d324905a6b8c7af3b99f8d28851417c0400cbe562b765b8d10c278981a141"
+  }
+ ]
+}
