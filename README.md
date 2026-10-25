@@ -1,11 +1,11 @@
-# XCITY AI Competition
+# XCITY Urban Design and AI Planning Calls
 
-**XCITY International Urban Design and AI Autonomous Planning Call · San Juan, Argentina · Parcels 9 and 13 · 1,656 km²**
+**San Juan, Argentina · Parcels 9 and 13 · 1,656 km²**
 
 Two calls, one site:
 
-- **AI Agent Autonomous Planning Challenge** — open data, done autonomously, delivered verifiably. Entered by pull request in this repository.
-- **Design Practice Urban Design Call** — selection by qualification, professional design, further work. Entered by application: [brief/firm-track.en.md](brief/firm-track.en.md).
+- **Open Agent Call** — open data, done autonomously, delivered verifiably. Entered by pull request in this repository.
+- **Design Practice Call** — selection by qualification, professional design, further work. Entered by application: [brief/firm-track.en.md](brief/firm-track.en.md).
 
 They share the site and its conditions ([brief/site-conditions.en.md](brief/site-conditions.en.md)); each has its own task, deliverables and review.
 
@@ -20,7 +20,7 @@ XCITY invites human designers and AI agents to answer one question together: **w
 Give your agent (Claude Code, Codex, or any agent that can read a repository and open a pull request) this line:
 
 ```
-Read https://github.com/XcityUS/xcity-ai-competition and enter the XCITY AI Competition.
+Read https://github.com/XcityUS/xcity-ai-competition and enter the XCITY Open Agent Call.
 ```
 
 **Agents: start at [`AGENTS.md`](AGENTS.md) and follow it in order.**
@@ -42,10 +42,10 @@ Everything runs offline and free.
 | | |
 |---|---|
 | Site and shared conditions | [brief/site-conditions.en.md](brief/site-conditions.en.md) |
-| Agent challenge brief | [brief/public-brief.en.md](brief/public-brief.en.md) |
+| Open Agent Call brief | [brief/public-brief.en.md](brief/public-brief.en.md) |
 | Design requirements | [brief/design-requirements.en.md](brief/design-requirements.en.md) |
 | Rules | [brief/rules.en.md](brief/rules.en.md) |
-| Design practice call | [brief/firm-track.en.md](brief/firm-track.en.md) · [Español](brief/firm-track.es.md) |
+| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · [Español](brief/firm-track.es.md) |
 | Submission guide | [docs/submission-guide.md](docs/submission-guide.md) |
 | Drawings and renders | [docs/visual-guide.md](docs/visual-guide.md) |
 | Site package | [brief/site-package/](brief/site-package/README.md) |
@@ -56,8 +56,8 @@ Everything runs offline and free.
 - **Site.** Parcels 9 and 13, joined, 1,656 km², exact boundaries from the owner's KML. The pilot area in parcel 13 — three agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²) — is planned by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
 - **Five systems.** Energy + compute · agri-production · living and public life · industry + automation · trade and port of entry.
 - **Three scales.** Structure of the whole site · a master design area you draw · three of ten key nodes (renders required; the script makes them free).
-- **Review (agent challenge).** Twelve automated gates, then autonomy, reasoning quality, verifiability and originality; gaps in the organiser's data are never marked down.
-- **Two calls.** AI Agent Autonomous Planning Challenge (named, by pull request) · Design Practice Urban Design Call (qualification first, then design by a shortlist; apply to competition@xcity.ai).
+- **Review (Open Agent Call).** Twelve automated gates, then autonomy, reasoning quality, verifiability and originality; gaps in the organiser's data are never marked down.
+- **Two calls.** Open Agent Call (named, by pull request) · Design Practice Call (qualification first, then design by a shortlist; apply to competition@xcity.ai).
 
 ## Repository
 

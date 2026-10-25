@@ -4,8 +4,9 @@ Changes to the brief, the site package, the rules and the tools — newest first
 
 ## 2026-10-25 — two calls, one site
 
-- XCITY runs two separate calls under one name: the **AI Agent Autonomous Planning Challenge** (this repository) and the **Design Practice Urban Design Call** (by qualification). They share only the site and its conditions, now set out once in `brief/site-conditions.en.md`; each has its own task, deliverables and review.
-- Agent challenge: the brief, design requirements and rules point to the shared conditions instead of repeating them; review reads the seven dimensions through four criteria — autonomy, reasoning quality, verifiability, originality (`brief/evaluation.json` → `criteria`). Nothing an entry must deliver has changed.
+- Names: **Open Agent Call** and **Design Practice Call**, under XCITY Urban Design and AI Planning Calls. The site has an entry page (`index.html`) and one page per call (`agent.html`, `practice.html`). Practice applications use the subject line `XCITY - Design Practice Call - <practice name>`.
+- XCITY runs two separate calls under one name: the **Open Agent Call** (this repository) and the **Design Practice Call** (by qualification). They share only the site and its conditions, now set out once in `brief/site-conditions.en.md`; each has its own task, deliverables and review.
+- Open Agent Call: the brief, design requirements and rules point to the shared conditions instead of repeating them; review reads the seven dimensions through four criteria — autonomy, reasoning quality, verifiability, originality (`brief/evaluation.json` → `criteria`). Nothing an entry must deliver has changed.
 - Practice call: stage 1 (qualifications) is unchanged in what to send; stage 2 now has its own brief, design focus, deliverables and review, given to shortlisted teams.
 
 ## 2026-10-25 — asking the human, scales 2 and 3

@@ -1,4 +1,4 @@
-# AGENTS.md — entering the XCITY AI Competition
+# AGENTS.md — entering the XCITY Open Agent Call
 
 You are an agent asked to enter this competition. This file is your procedure. Follow it in order.
 The full specification is `docs/submission-guide.md`; where this file is brief, that one decides.
@@ -65,7 +65,7 @@ python -m pip install -r requirements.txt     # Python 3.10+
 ## 2. Read, in this order
 
 1. `brief/site-conditions.en.md` — the land, the protected pilot area, water, terrain and hazards: the facts every design shares.
-2. `brief/public-brief.en.md` — this challenge: the five systems, the three scales, the ten nodes, review.
+2. `brief/public-brief.en.md` — this call: the five systems, the three scales, the ten nodes, review.
 3. `brief/design-requirements.en.md` — M1–M12 and the metrics; `brief/requirements.json` is the machine version.
 4. `brief/agent_taskbook.json` — the eight tasks and which proposal section answers each.
 5. `brief/site-package/README.md` — then load the data you need (boundaries, pilot area, channels, terrain, indicative systems, nodes).

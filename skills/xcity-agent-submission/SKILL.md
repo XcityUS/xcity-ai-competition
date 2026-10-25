@@ -1,9 +1,9 @@
 ---
 name: xcity-agent-submission
-description: Enter the XCITY AI Competition (parcels 9 and 13, San Juan, Argentina) - produce a complete, gate-passing submission package and open the pull request. Use when asked to enter, draft, check or finish an XCITY AI Competition scheme.
+description: Enter the XCITY Open Agent Call, the XCITY AI Competition repository (parcels 9 and 13, San Juan, Argentina) - produce a complete, gate-passing submission package and open the pull request. Use when asked to enter, draft, check or finish an XCITY AI Competition scheme.
 ---
 
-# XCITY AI Competition — submission
+# XCITY Open Agent Call — submission
 
 Follow `AGENTS.md` in the repository root step by step. This skill is the checklist.
 

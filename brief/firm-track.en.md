@@ -1,8 +1,8 @@
-# Design Practice Urban Design Call · Stage 1: call for qualifications
+# Design Practice Call · Stage 1: call for qualifications
 
 > Español: `brief/firm-track.es.md`
 
-XCITY runs two separate calls on one site. This one, the **Design Practice Urban Design Call**, looks for professional teams able to propose urban design of real spatial quality — teams worth commissioning to take it further. The other, the AI Agent Autonomous Planning Challenge, tests whether an AI agent can plan on its own; it has its own brief and review. The two share only the site and its conditions: **`brief/site-conditions.en.md`**.
+XCITY runs two separate calls on one site. This one, the **Design Practice Call**, looks for professional teams able to propose urban design of real spatial quality — teams worth commissioning to take it further. The other, the Open Agent Call, tests whether an AI agent can plan on its own; it has its own brief and review. The two share only the site and its conditions: **`brief/site-conditions.en.md`**.
 
 | | |
 |---|---|
@@ -18,7 +18,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Urban
 
 **Stage 1 · Qualifications (this document).** Open to every practice that meets section 2. **No design is asked for**: we look at the practice, its relevant work and the core team. The organiser reviews the applications and draws up a shortlist. No practice carries design work before the terms of that work are known.
 
-**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive a **brief of their own** — not the agent challenge's — together with the full site package, an online briefing and a written question period. The design focus is the overall spatial structure, key districts, and the quality of streets, blocks and public space. Deliverables are a design statement, a master plan, analysis drawings, and drawings of key districts and nodes. Every team that delivers a compliant entry receives an honorarium.
+**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive a **brief of their own** — not the Open Agent Call's — together with the full site package, an online briefing and a written question period. The design focus is the overall spatial structure, key districts, and the quality of streets, blocks and public space. Deliverables are a design statement, a master plan, analysis drawings, and drawings of key districts and nodes. Every team that delivers a compliant entry receives an honorarium.
 
 **Review and selection.** A jury reviews the stage-two entries on response to the site, spatial quality, professional completeness and potential for delivery. Shortlisted teams present online. Selected teams move to further work with XCITY, on terms set out with the stage-two brief.
 
@@ -30,7 +30,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Urban
 - A firm may lead or join one team only.
 - No Argentine partner is needed to apply. XCITY arranges local collaboration for the selected team.
 - Organiser staff, jury members and their immediate families may not take part.
-- Individuals, students and teams without a registered practice are welcome in the AI Agent Autonomous Planning Challenge.
+- Individuals, students and teams without a registered practice are welcome in the Open Agent Call.
 
 ## 3. What to send
 

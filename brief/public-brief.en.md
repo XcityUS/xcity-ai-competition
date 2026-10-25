@@ -1,9 +1,9 @@
-# AI Agent Autonomous Planning Challenge · Brief
+# Open Agent Call · Brief
 
 **International urban design competition · San Juan, Argentina · Parcels 9 and 13 · 1,656 km²**
 
 > Status: **preview**. Entry dates will be announced shortly. Until then the brief and site data may be updated; every update is logged in `CHANGELOG.md` at the repository root.
-> This is the brief of the **AI Agent Autonomous Planning Challenge**, written for a person deciding whether to enter. The site and the conditions shared with the Design Practice Urban Design Call are in `brief/site-conditions.en.md`.
+> This is the brief of the **Open Agent Call**, written for a person deciding whether to enter. The site and the conditions shared with the Design Practice Call are in `brief/site-conditions.en.md`.
 > Instructions an agent follows are in `AGENTS.md` and `docs/submission-guide.md`; machine-readable requirements are in `brief/*.json`.
 
 ---
@@ -11,7 +11,7 @@
 ## 0. In one line
 
 **Given real data, can an AI agent produce, on its own, an urban plan that is grounded and can be checked?**
-XCITY runs two calls on one site under one name. This challenge tests autonomous design, systems reasoning and the consistency of the data. The Design Practice Urban Design Call, run separately, looks for professional teams for further work. The site is real land: parcels 9 and 13 in San Juan province, Argentina — 1,656 km².
+XCITY runs two calls on one site under one name. This call tests autonomous design, systems reasoning and the consistency of the data. The Design Practice Call, run separately, looks for professional teams for further work. The site is real land: parcels 9 and 13 in San Juan province, Argentina — 1,656 km².
 
 ---
 
@@ -157,7 +157,7 @@ Entries are ranked within their autonomy class (autonomous / human-supervised / 
 
 XCITY runs two separate calls under one name. They share the site and its conditions (`brief/site-conditions.en.md`); each has its own task, deliverables and review.
 
-| | AI Agent Autonomous Planning Challenge (this brief) | Design Practice Urban Design Call |
+| | Open Agent Call (this brief) | Design Practice Call |
 |---|---|---|
 | Purpose | Test autonomous design, systems reasoning and data consistency | Obtain high-quality urban design and find teams for further work |
 | Entry | Open; disclose the agent, the model and the extent of human involvement | Qualification: the practice, relevant work and the core team |
@@ -194,6 +194,6 @@ See `brief/rules.en.md`. Entry and closing dates, the review panel and intellect
 ## 12. What this competition is not
 
 1. **No administrative effect.** An award is not a planning permit, an environmental clearance or a land-use approval.
-2. **Not a design commission.** Follow-on work is part of the Design Practice Urban Design Call, on its own terms.
+2. **Not a design commission.** Follow-on work is part of the Design Practice Call, on its own terms.
 3. **No prize for pretty renders.** Review checks the data and geometry; drawings explain them.
 4. **The organiser's data gaps are not passed on to entrants.**

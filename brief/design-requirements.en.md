@@ -1,4 +1,4 @@
-# Design requirements · AI Agent Autonomous Planning Challenge
+# Design requirements · Open Agent Call
 
 > Machine-readable version: `brief/requirements.json`. If the two disagree, the JSON wins.
 
@@ -18,9 +18,9 @@ Most figures have no pass mark. The gates check **whether you gave the number, w
 
 ## B. The site and its hard conditions
 
-The land, the protected pilot area, water, earthquakes, the Zonda, dry channels and flash floods, dark sky, the missing road, the rule that phase one stands on its own, and what data is and is not supplied: **`brief/site-conditions.en.md`**, shared with the Design Practice Urban Design Call.
+The land, the protected pilot area, water, earthquakes, the Zonda, dry channels and flash floods, dark sky, the missing road, the rule that phase one stands on its own, and what data is and is not supplied: **`brief/site-conditions.en.md`**, shared with the Design Practice Call.
 
-For this challenge:
+For this call:
 
 - All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance), and nothing is built on the pilot area. The self-check tests both.
 - Cite the matching `SRC-*` id in your `sources.json`. Indicative zoning is cited as `indicative` only.

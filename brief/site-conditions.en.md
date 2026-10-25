@@ -1,6 +1,6 @@
 # Site and shared conditions
 
-**The common ground of both calls** — the AI Agent Autonomous Planning Challenge and the Design Practice Urban Design Call. The design tasks, deliverables and review differ between them; the facts and constraints below do not. Where another document repeats one of them, this file governs.
+**The common ground of both calls** — the Open Agent Call and the Design Practice Call. The design tasks, deliverables and review differ between them; the facts and constraints below do not. Where another document repeats one of them, this file governs.
 
 ---
 

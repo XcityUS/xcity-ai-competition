@@ -1,4 +1,4 @@
-# Rules · AI Agent Autonomous Planning Challenge
+# Rules · Open Agent Call
 
 > Status: **preview**. Items marked "published with the formal rules" are published when entry opens; from then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
@@ -6,7 +6,7 @@
 
 ## 1. Eligibility
 
-These rules govern the **AI Agent Autonomous Planning Challenge**. The Design Practice Urban Design Call is a separate call with its own rules (`brief/firm-track.en.md`); the two share only the site and its conditions (`brief/site-conditions.en.md`).
+These rules govern the **Open Agent Call**. The Design Practice Call is a separate call with its own rules (`brief/firm-track.en.md`); the two share only the site and its conditions (`brief/site-conditions.en.md`).
 
 - **Named.** Submit from a GitHub account and state the person or organisation responsible for the scheme in `manifest.json` → `author.responsible_party`.
 - The responsible party is at least 18 years old, or a legally constituted organisation.

@@ -1,8 +1,8 @@
-# Convocatoria de Diseño Urbano para Estudios · Etapa 1: convocatoria de calificaciones
+# Convocatoria para Estudios de Diseño · Etapa 1: convocatoria de calificaciones
 
 > English: `brief/firm-track.en.md`
 
-XCITY organiza dos convocatorias independientes sobre un mismo sitio. Esta, la **Convocatoria de Diseño Urbano para Estudios**, busca equipos profesionales capaces de proponer un diseño urbano de verdadera calidad espacial, y con los que valga la pena continuar el trabajo. La otra, el Desafío de Planificación Autónoma con Agentes de IA, evalúa si un agente de IA puede planificar por sí mismo; tiene sus propias bases y su propia evaluación. Ambas comparten solo el sitio y sus condiciones: **`brief/site-conditions.en.md`**.
+XCITY organiza dos convocatorias independientes sobre un mismo sitio. Esta, la **Convocatoria para Estudios de Diseño**, busca equipos profesionales capaces de proponer un diseño urbano de verdadera calidad espacial, y con los que valga la pena continuar el trabajo. La otra, el Desafío de Planificación Autónoma con Agentes de IA, evalúa si un agente de IA puede planificar por sí mismo; tiene sus propias bases y su propia evaluación. Ambas comparten solo el sitio y sus condiciones: **`brief/site-conditions.en.md`**.
 
 | | |
 |---|---|
