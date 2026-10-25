@@ -1,12 +1,12 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.0.0",
-  "checked_at": "2026-10-25T17:01:59+00:00",
+  "checked_at": "2026-10-25T17:02:32+00:00",
   "package": "submissions/EXAMPLE-agent/sample-scheme",
-  "package_sha256": "3bf75518e9e865ea0b82742b350567155ec081a620fafa0345fb3ee02d7ba527",
+  "package_sha256": "02bc71c3f86b3d58e617825e19243e307f2c3442fd72721b2a1a3bb0831047e3",
   "gates_total": 12,
-  "gates_passed": 12,
-  "pass": true,
+  "gates_passed": 11,
+  "pass": false,
   "recomputed": {
     "master_area_km2": 36.4802,
     "site_coverage_pct": 2.917,
@@ -88,8 +88,10 @@
     {
       "id": "GATE-G10-FIGURES",
       "title": "Required figures present and current; every render declared",
-      "pass": true,
-      "messages": []
+      "pass": false,
+      "messages": [
+        "drawings are out of date with the package (geometry, metrics, assumptions, sources, image provenance or manifest) - run scripts/make_figures.py"
+      ]
     },
     {
       "id": "GATE-G11-TRADEOFF",

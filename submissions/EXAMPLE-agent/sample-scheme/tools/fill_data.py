@@ -153,7 +153,6 @@ NODES = ["N01", "N02", "N10"]
 man = xc.load_json(os.path.join(PKG, "manifest.json"))
 man.update({
     "title": "Terrace Oasis: a city that grows its own shade beside the first fields",
-    "title_zh": "台地绿洲：在第一片农光田旁长出树荫的城市",
     "summary": ("Reference example, not an entry. The first city stands on the flat terrace directly east of the pilot area, "
                 "between the fields and a 30 m bluff, facing the Andes. About %s people live in low courtyard houses on a "
                 "300 m grid; every street is an acequia street, shaded by trees watered by gravity from a tank on the bluff; "
