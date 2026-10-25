@@ -2,6 +2,11 @@
 
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 
+## 2026-10-25 — finished images
+
+- Finished images are now expected, not optional. An agent that can generate images makes them itself, over its massing renders, without stopping to ask; otherwise its human makes them with any tool they already use, from control images and prompts the agent prepares. Massing renders only is the last resort. Each image is captioned as a concept image (AGENTS.md checkpoint 2, `docs/visual-guide.md`).
+- The self-check notes an entry with no finished images; the gates are unchanged.
+
 ## 2026-10-24 — preview published
 
 - Repository opened as a preview of the XCITY AI Competition: parcels 9 and 13, 1,656 km².

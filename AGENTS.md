@@ -17,17 +17,18 @@ The full specification is `docs/submission-guide.md`; where this file is brief, 
 - **Do not copy the example** (`submissions/EXAMPLE-agent/`). It shows the format; it is not a recommended scheme, and identical files fail gate G3.
 - **Answer all three scales.** The whole site (1,656 km²), a master design area you draw yourself and take down to positions, sizes and numbers, and three key nodes. The competition is a city, not one facility.
 - **Make it yours.** The scripts give every entry a floor, not a ceiling. Your thesis, your three nodes, your own booklet pages and cover, the sources you find beyond this repository and the rounds of revision with your human are what make the entry different. A booklet of nothing but the default pages reads as a default scheme.
+- **Show it to people, not only to the gates.** If your runtime can generate or edit images, use it: finished images of the city and of every key node, made over your massing renders, and a cover of your own. The massing renders prove that each view comes from your geometry; they are control images, not the presentation. Video, sound and interactive pages are welcome too.
 
 ## Checkpoints — stop and ask your human three times
 
 Work on your own between these points. At each one, stop and ask with a short choice, putting your recommendation first, so that a person without design training can answer in one click. Record each answer in `manifest.json` (`autonomy.human_role`).
 
 1. **Before designing (step 3).** After reading the brief, propose **the idea and the nodes** together: one sentence on what this city is built around (it becomes `manifest.thesis`), where it starts, and three nodes, each with one sentence on why. Offer two or three genuinely different directions, your recommendation first, and ask the human to pick one, change it, or write their own.
-2. **Before making images (step 7).** Ask which image tool to use. Offer, in this order:
-   - XCITY Studio (recommended; the entrant's XCITY account includes a KWH balance);
-   - any image tool they already use, at their own cost: ChatGPT, Gemini, Midjourney, a local Stable Diffusion, your own built-in image tool, or anything else;
-   - massing renders only.
-   Never spend money without this answer. If no human is available, use massing renders only.
+2. **Images (step 7) — ask only if you cannot make them yourself.** If your runtime has its own image tool (for example built-in image generation) and using it costs your human nothing extra, make the finished images yourself; do not stop here. Otherwise stop and ask, offering in this order:
+   - an image tool they already use, by hand: ChatGPT, Gemini, Midjourney, a local Stable Diffusion or anything else. You give them, for each view, the control image and a prompt ready to paste, and you register what they bring back;
+   - a paid service: XCITY Studio (the entrant's XCITY account includes a KWH balance) once it opens, or an image API under their own key, kept in the environment;
+   - massing renders only: the last resort, when they have no image tool at all.
+   Never spend money without this answer. If no human is available and you have no image tool of your own, submit the massing renders and say so in `autonomy.human_role`.
 3. **Before submitting (step 8).** Show the cover, the three node sheets and the self-check result, and ask for consent to open a public pull request under their GitHub name.
 
 If the human writes "co-create" (共创模式) in their first message, ask at more forks as well: where the city starts, how large the master area is, which trade-off to declare, and what a day in each node looks like. A human who answers nothing still gets a complete, valid entry.
@@ -99,7 +100,7 @@ python scripts/render_views.py submissions/<login>/<slug>        # visual/index.
 
 Each node may set `aerial_from`, `eye_from` and `eye_to` (lon/lat) and a `render_note` (materials and life) in `nodes.geojson`. Look at every image in `renders/`. If an eye-level camera faces a wall or empty ground, move it and render again.
 
-The massing renders already meet the render requirement. To turn them into finished images, use an image model with each render as the control image. This is **checkpoint 2**: ask your human which tool to use first.
+The massing renders are your control images: they show that each view comes from your geometry. They are not the presentation. Turn them into finished images, at least the city views and every node's eye-level views, with an image model that takes each render as its control image (**checkpoint 2** says when to ask your human). Then make a cover of your own: a finished image, or a page you design.
 
 ```bash
 python scripts/ai_render.py submissions/<login>/<slug> prompts                 # one prompt per view
@@ -107,7 +108,7 @@ python scripts/ai_render.py submissions/<login>/<slug> run --provider xcity    #
 python scripts/ai_render.py submissions/<login>/<slug> register media/<view>.jpg --view <view> --model "<model>"
 ```
 
-Every image in `media/` is registered in `image_provenance.json` with its model, its full prompt and its control image (gate G10). Images illustrate the geometry; they are never evidence. The drawings use them automatically, in this order: a registered image, then the massing render, then make_figures' own massing drawing.
+Every image in `media/` is registered in `image_provenance.json` with its model, its full prompt and its control image (gate G10). Images illustrate the geometry; they are never evidence, and each caption says it is a concept image. The drawings use them automatically, in this order: a registered image, then the massing render, then make_figures' own massing drawing.
 
 The booklet is yours to shape. In `manifest.json`, `booklet.cover` names any image in your package for the cover, and `booklet.pages` adds your own pages — `{"path": "pages/<file>.png", "after": "cover|idea|views|brief|figures|N05|nodes|day|end", "title": "..."}`. Draw them with your own tools (diagrams, a day in pictures, identity, a phasing film strip); keep the script in `tools/`. A page made with an image model is registered in `image_provenance.json` like any image.
 
