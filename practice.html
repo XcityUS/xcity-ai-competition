@@ -765,4 +765,107 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
   secs.forEach(function(s){if(s)io.observe(s)});
 })();
 </script>
-</body></html>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest("[data-copy]");
+  if (!b) return;
+  var el = document.querySelector(b.getAttribute("data-copy"));
+  if (!el) return;
+  var lang = document.documentElement.getAttribute("data-lang") || "en";
+  var part = el.querySelector("." + lang + "-only");
+  var t = (part || el).textContent;
+  var done = function () {
+    var old = b.innerHTML; b.textContent = {en: "Copied", es: "Copiado", zh: "已复制"}[lang] || "Copied"; b.classList.add("done");
+    setTimeout(function () { b.innerHTML = old; b.classList.remove("done"); }, 1600);
+  };
+  // clipboard API is unavailable on file:// and in some embeds; fall back rather than fail
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(t).then(done, function () { legacy(t, done); });
+    } else { legacy(t, done); }
+  } catch (err) { legacy(t, done); }
+});
+function legacy(t, done) {
+  try {
+    var ta = document.createElement("textarea");
+    ta.value = t; ta.setAttribute("readonly", ""); ta.style.position = "fixed";
+    ta.style.opacity = "0"; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); document.body.removeChild(ta); done();
+  } catch (err) { /* leave the line selectable; it is still readable */ }
+}
+(function(){
+  var t=document.getElementById('galTrack');
+  if(!t) return;
+  var p=document.getElementById('galPrev'), n=document.getElementById('galNext');
+  function step(){ var c=t.querySelector('.gc');
+    return c ? c.getBoundingClientRect().width+16 : 340; }
+  function sync(){
+    var max=t.scrollWidth-t.clientWidth-2;
+    if(p) p.disabled = t.scrollLeft<=2;
+    if(n) n.disabled = t.scrollLeft>=max;
+  }
+  if(p) p.addEventListener('click',function(){
+    t.scrollBy({left:-step(),behavior:'smooth'});});
+  if(n) n.addEventListener('click',function(){
+    t.scrollBy({left:step(),behavior:'smooth'});});
+  t.addEventListener('scroll',sync,{passive:true});
+  window.addEventListener('resize',sync);
+  sync();
+})();
+(function(){
+  var f=document.getElementById('signupForm');
+  if(f){
+    var mail=f.getAttribute('data-to')||'';
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var i=document.getElementById('signupEmail'), m=document.getElementById('signupMsg');
+      var v=(i.value||'').trim(), ok=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v);
+      i.setAttribute('aria-invalid', ok?'false':'true');
+      m.hidden=false;
+      if(!ok){ m.textContent='请填写一个可用的邮箱地址。'; return; }
+      if(mail){
+        m.textContent='正在打开邮件客户端，发送即完成登记。';
+        window.location.href='mailto:'+mail+'?subject='
+          +encodeURIComponent('XCITY 征集 · 登记关注')
+          +'&body='+encodeURIComponent(v);
+      } else {
+        m.textContent='收到。报名邮箱公布后，这一栏会直接提交；'
+          +'在此之前请通过页面底部的联系方式与我们联系。';
+      }
+    });
+  }
+})();
+(function(){
+  var items=document.querySelectorAll('.zlist .zac');
+  if(!items.length) return;
+  var map=document.querySelector('.smap');
+  function show(k){if(map) map.setAttribute('data-active',k||'');}
+  items.forEach(function(it){
+    var hd=it.querySelector('.zhd'), bd=it.querySelector('.zb');
+    if(!hd||!bd) return;
+    hd.addEventListener('click',function(){
+      var open=it.classList.contains('on');
+      items.forEach(function(x){
+        x.classList.remove('on');
+        var b=x.querySelector('.zb'), h=x.querySelector('.zhd');
+        if(b) b.hidden=true;
+        if(h) h.setAttribute('aria-expanded','false');
+      });
+      if(!open){it.classList.add('on');bd.hidden=false;
+        hd.setAttribute('aria-expanded','true');}
+      show(open?'':it.getAttribute('data-sys'));
+    });
+    hd.addEventListener('mouseenter',function(){show(it.getAttribute('data-sys'));});
+    hd.addEventListener('mouseleave',function(){
+      var o=document.querySelector('.zlist .zac.on');show(o?o.getAttribute('data-sys'):'');});
+  });
+  document.querySelectorAll('.smap .sys').forEach(function(g){
+    function pick(){
+      var it=document.querySelector('.zlist .zac[data-sys="'+g.getAttribute('data-sys')+'"]');
+      if(it && !it.classList.contains('on')) it.querySelector('.zhd').click();
+    }
+    g.addEventListener('click',pick);
+    g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick();}});
+  });
+})();
+</script></body></html>
