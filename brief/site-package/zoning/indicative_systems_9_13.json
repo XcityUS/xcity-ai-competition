@@ -70,13 +70,17 @@
     [
      -67.8132,
      -30.9646
+    ],
+    [
+     -68.1,
+     -31.2
     ]
    ],
    "halo_km": 3,
    "label_zh": "居住 · 散布全场，每处数千人",
    "label_en": "Living · scattered across the site",
-   "basis_zh": "距一级以上沟道 0.8–4 km（近水）、坡度 <3%、高出沟底 >4 m（避洪），彼此间距 ≥13 km，避开算力、产业与试点区。",
-   "basis_en": "0.8-4 km from a primary channel (near water), slope < 3%, more than 4 m above the channel bed (clear of flood), at least 13 km apart, away from compute, industry and the pilot area.",
+   "basis_zh": "距一级以上沟道 0.8–4 km（近水）、坡度 <3%、高出沟底 >4 m（避洪），彼此间距 ≥13 km，避开算力、产业与试点区。第五处（-68.10, -31.20）不按上述条件推算：它标的是主办方规划的生活区，位置为近似。",
+   "basis_en": "0.8-4 km from a primary channel (near water), slope < 3%, more than 4 m above the channel bed (clear of flood), at least 13 km apart, away from compute, industry and the pilot area. The fifth point (-68.10, -31.20) is not derived from these conditions: it marks the organiser's planned living area, and its position is approximate.",
    "later_phase": false
   },
   "industry": {
