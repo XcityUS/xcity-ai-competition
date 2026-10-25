@@ -26,7 +26,7 @@
    "name": "lead_zone",
    "path": "lead-zone/lead_zone.geojson",
    "mediatype": "application/geo+json",
-   "description": "Lead zone fields 01-03 (fixed)",
+   "description": "Pilot area fields 01-03 (fixed)",
    "hash": "sha256:8b6443faf4b715e5ee0a7cc7765f1271d8091b6fd38a771b456c8e1eae3e2932",
    "source": "SRC-LEAD"
   },

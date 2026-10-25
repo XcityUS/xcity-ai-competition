@@ -46,7 +46,7 @@ python -m pip install -r requirements.txt     # Python 3.10+
 1. `brief/public-brief.en.md` (or `.zh.md`) — the site, the five systems, the three scales, the ten nodes, review.
 2. `brief/design-requirements.en.md` — M1–M12 and the metrics; `brief/requirements.json` is the machine version.
 3. `brief/agent_taskbook.json` — the eight tasks and which proposal section answers each.
-4. `brief/site-package/README.md` — then load the data you need (boundaries, lead zone, channels, terrain, indicative systems, nodes).
+4. `brief/site-package/README.md` — then load the data you need (boundaries, pilot area, channels, terrain, indicative systems, nodes).
 5. `brief/evaluation.json` — the twelve gates and seven dimensions; `brief/scenarios.json` — situations the panel will raise.
 6. `docs/submission-guide.md` — the package format. `docs/visual-guide.md` — drawings and renders.
 
@@ -61,7 +61,7 @@ Choose the three nodes (N01–N10, `brief/site-package/nodes/design_nodes.json`)
 
 ## 4. Design — geometry first
 
-Write GeoJSON (EPSG:4326 lon/lat) into `geometry/`, inside `brief/site-package/boundaries/scope_9_13.geojson`, off the lead zone, with no permanent buildings on dry channels:
+Write GeoJSON (EPSG:4326 lon/lat) into `geometry/`, inside `brief/site-package/boundaries/scope_9_13.geojson`, off the pilot area, with no permanent buildings on dry channels:
 
 | File | What |
 |---|---|

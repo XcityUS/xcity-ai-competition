@@ -419,10 +419,10 @@ def check(pkg_path, write=True):
                 g9.fail("%s feature %d lies outside the site (by %.3f %s)" % (name, i, amt, "km²" if over.area else "km"))
     for i, (p, g) in enumerate(geo.get("buildings", [])):
         if xc.to_utm(g).intersection(lead_u).area > 1:
-            g9.fail("buildings feature %d is on the lead zone, which is not open to design" % i)
+            g9.fail("buildings feature %d is on the pilot area, which is not open to design" % i)
     for i, (p, g) in enumerate(geo.get("land_use", [])):
         if p.get("use") not in ("agriculture", "energy") and xc.to_utm(g).intersection(lead_u).area > 100:
-            g9.fail("land_use feature %d (%s) overlaps the lead zone; only agriculture or energy may" % (i, p.get("use")))
+            g9.fail("land_use feature %d (%s) overlaps the pilot area; only agriculture or energy may" % (i, p.get("use")))
     ch = [(p, xc.to_utm(g).buffer(30 if p.get("class") == "main" else 15)) for p, g in xc.channels()]
     hits = 0
     for i, (p, g) in enumerate(geo.get("buildings", [])):
@@ -439,7 +439,7 @@ def check(pkg_path, write=True):
     crossing = sum(1 for p, g in geo.get("movement", []) if g.geom_type.endswith("LineString")
                    and xc.to_utm(g).intersection(lead_u).length > 20)
     if crossing:
-        g9.note("%d movement lines run across the lead zone - listed for the reviewers; the lead zone is not open to "
+        g9.note("%d movement lines run across the pilot area - listed for the reviewers; the pilot area is not open to "
                 "design" % crossing)
     if hits:
         g9.note("%d buildings touch a DEM-derived channel - listed for the reviewers; the brief forbids permanent "

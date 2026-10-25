@@ -35,8 +35,8 @@ XCITY is not adding AI to the city we have. It is an attempt to derive a city ag
 | | |
 |---|---|
 | Parcel 9 | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
-| Parcel 13 | 172.5 km². The lead zone is inside it |
-| Lead zone | Three agrivoltaic fields (01–03), 13.9 km² of outline, built first by XCITY, **not open to design** |
+| Parcel 13 | 172.5 km². The pilot area is inside it |
+| Pilot area | Three agrivoltaic fields (01–03), 13.9 km² of outline, built first by XCITY, **not open to design** |
 | Slope < 2% | 1,183 km²; of which 686 km² is outside the flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
 | Flood-sensitive | 503 km², along the seasonal channels |
@@ -52,7 +52,7 @@ This is neither a blank sheet to imagine freely on, nor a brief that only asks f
 - **The Zonda.** A dry, hot, strong, dust-laden downslope wind. It hits PV yield and cleaning water, air-cooled intakes and outdoor life at once. State the scheme's stance: block, channel, or step aside.
 - **Dry channels.** Seasonal channels on the alluvial fan are dry most of the time and flood within minutes of an upstream storm. **No permanent construction on a dry channel.**
 - **No road.** There is no existing national road on site; the access corridor is itself phase-one construction work.
-- **A running agrivoltaic system.** Under the lead-zone arrays is a symbiotic system of jojoba, rosemary, forage cactus and alpaca; its layout is fixed. The city grows beside it.
+- **A running agrivoltaic system.** Under the pilot-area arrays is a symbiotic system of jojoba, rosemary, forage cactus and alpaca; its layout is fixed. The city grows beside it.
 
 ---
 
@@ -76,7 +76,7 @@ Indicative positions for each system are in `brief/site-package/zoning/indicativ
 | | Area | Depth | What it answers |
 |---|---|---|---|
 | **1 · Overall study** | All of parcels 9 and 13 | Structural | How the five systems are arranged, where the city starts and which way it grows. Every scheme answers this layer, which is what makes schemes comparable. |
-| **2 · Master design** | **Drawn by you** | Full urban design — the body of the scheme | Real positions, dimensions and figures, not a coloured zoning map. Where you draw it is itself a design judgement: write down how water, slope, wind, the way out and the lead zone pushed you there. Phasing lives here. Land use, floor area, heights and density must be recomputable from the submitted geometry. |
+| **2 · Master design** | **Drawn by you** | Full urban design — the body of the scheme | Real positions, dimensions and figures, not a coloured zoning map. Where you draw it is itself a design judgement: write down how water, slope, wind, the way out and the pilot area pushed you there. Phasing lives here. Land use, floor area, heights and density must be recomputable from the submitted geometry. |
 | **3 · Key nodes** | Three of ten | Detailed — **renders required** | Take each to where you can see how people use it: at least one aerial and one eye-level view, plus a plan or section. Which three you choose says where you think this city is hard. |
 
 ### The ten key nodes

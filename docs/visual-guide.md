@@ -54,7 +54,7 @@ Each prompt asks the model to keep the control image's camera, footprints, heigh
 
 | File | Content |
 |---|---|
-| `fig-01-structure.png` | Whole site: the six systems with their recomputed areas, lead zone, channels, master area, nodes |
+| `fig-01-structure.png` | Whole site: the six systems with their recomputed areas, pilot area, channels, master area, nodes |
 | `fig-02-master-plan.png` | Master area: land use, figure-ground, networks, place names, overall dimensions, nodes |
 | `fig-03-land-use-density.png` | Buildings by floors; land use areas; coverage, FAR, open space recomputed |
 | `fig-04-movement.png` | People, machine and shared networks; every interface numbered |

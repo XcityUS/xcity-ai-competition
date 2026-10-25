@@ -73,7 +73,7 @@
    "id": "GATE-G9-BOUNDARIES",
    "title": "Site boundaries respected",
    "title_zh": "场地边界合规",
-   "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the lead zone. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
+   "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
    "automated": false,
    "partly_manual": true
   },

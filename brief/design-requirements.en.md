@@ -26,9 +26,9 @@ Most figures have no pass mark. The gates check **whether you gave the number, w
 | Parcel 9 | 1,483.8 km² | Owner KML | Exact |
 | Parcel 13 | 172.5 km² | Owner KML | Exact |
 | Together (the site) | 1,656.4 km² (quoted as 1,656 km²) | Union | Exact |
-| Lead zone (not open to design) | 13.9 km² | XCITY | — |
+| Pilot area (not open to design) | 13.9 km² | XCITY | — |
 
-All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance) and nothing may be built on the lead zone.
+All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance) and nothing may be built on the pilot area.
 
 ### B.2 Supplied
 
@@ -57,7 +57,7 @@ These are design constraints, not background. A scheme that shows no trace of th
 3. **Dry channels and flash floods.** **No permanent construction on a dry channel.** Mark the flood corridors in your geometry and state the basis for their width. Terrain-derived channels are in `site-package/water/channels_dem.geojson`; the self-check lists any building that touches one for the reviewers.
 4. **Dark sky.** Give a night-lighting and light-pollution strategy.
 5. **No road.** The access corridor is part of phase-one works; draw it.
-6. **The lead zone and its under-panel system.** Unchanged; the city grows beside it.
+6. **The pilot area and its under-panel system.** Unchanged; the city grows beside it.
 
 ---
 

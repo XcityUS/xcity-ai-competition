@@ -11,7 +11,7 @@
 
 ## 2. Site reading · 场地解读
 
-> Read the site before you design it: water, slope, the Pie de Palo range, the Zonda, seismic risk, the dry channels, the lead zone, the 27.6 km to the nearest road. Which of these decided your structure, and how? A scheme that would look the same on another site scores low on D1.
+> Read the site before you design it: water, slope, the Pie de Palo range, the Zonda, seismic risk, the dry channels, the pilot area, the 27.6 km to the nearest road. Which of these decided your structure, and how? A scheme that would look the same on another site scores low on D1.
 
 ![Structure](figures/fig-01-structure.png)
 
@@ -37,7 +37,7 @@
 
 ## 7. Urban form · 城市形态
 
-> agent.6. Three scales. (1) The whole site: where the five systems sit. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the lead zone pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses parcel 9 (with the range and its eastern wing) and parcel 13 (with the lead zone).
+> agent.6. Three scales. (1) The whole site: where the five systems sit. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses parcel 9 (with the range and its eastern wing) and parcel 13 (with the pilot area).
 
 ![Master plan](figures/fig-02-master-plan.png)
 

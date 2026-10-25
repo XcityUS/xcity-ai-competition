@@ -11,7 +11,7 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 |---|---|---|
 | `boundaries/parcels_9_13.geojson` | 9 号、13 号地块各自的边界 · the two parcels | 精确，取自业主 KML · exact, owner KML |
 | `boundaries/scope_9_13.geojson` | 两块地的并集 = 竞赛场地 · their union = the site | 精确 · exact |
-| `lead-zone/lead_zone.geojson` | 先行区 01–03，13 号地块内，最先建设，**不在设计范围内** · lead zone, built first, **not open to design** | 主办方提供 · organiser |
+| `lead-zone/lead_zone.geojson` | 先行区 01–03，13 号地块内，最先建设，**不在设计范围内** · pilot area, built first, **not open to design** | 主办方提供 · organiser |
 | `access/roads_osm.geojson` | 场外最近的国道与省道 · nearest national and provincial roads | OpenStreetMap |
 | `access/road_distances_9_13.json` | 场地边界到各条道路的最短距离 · shortest distance from the site to each road | 由上两者计算 · computed |
 | `water/channels_dem.geojson` | 由地形推算的季节性沟道（汇水 ≥100 km²）· seasonal channels derived from the DEM (upstream area ≥ 100 km²) | 推算，非测绘 · derived, not surveyed |
@@ -29,7 +29,7 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 | | |
 |---|---|
 | 场地面积 Site | 1,656 km²（9 号 1,483.8 · 13 号 172.5） |
-| 先行区 Lead zone | 3 片，外轮廓 13.9 km²，13 号地块内 · three fields, 13.9 km², inside parcel 13 |
+| 先行区 Pilot area | 3 片，外轮廓 13.9 km²，13 号地块内 · three fields, 13.9 km², inside parcel 13 |
 | 坡度 <2% Slope <2% | 1,183 km² |
 | 坡度 ≥25%（山地）Slope ≥25% | 127 km²，主要是 9 号地块东南的 Pie de Palo 山地 · mostly the Pie de Palo range |
 | 洪泛敏感带 Flood-sensitive | 503 km² |
@@ -63,4 +63,4 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 
 - 地形派生数据：produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.
 - 道路：© OpenStreetMap contributors, ODbL 1.0.
-- 地块边界、先行区与意向分区：由 XCITY 提供，仅用于本次竞赛；不是地籍记录，不得用于法律用途。 · Parcel boundaries, lead zone and indicative zoning are provided by XCITY for this competition only; not a cadastral record and not for legal use.
+- 地块边界、先行区与意向分区：由 XCITY 提供，仅用于本次竞赛；不是地籍记录，不得用于法律用途。 · Parcel boundaries, pilot area and indicative zoning are provided by XCITY for this competition only; not a cadastral record and not for legal use.

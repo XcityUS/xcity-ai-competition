@@ -1,12 +1,12 @@
 {
  "type": "FeatureCollection",
- "name": "Lead zone - three agrivoltaic fields inside parcel 13",
+ "name": "Pilot area - three agrivoltaic fields inside parcel 13",
  "features": [
   {
    "type": "Feature",
    "properties": {
     "id": "LZ-01",
-    "name_en": "Lead zone field 01",
+    "name_en": "Pilot area field 01",
     "name_zh": "先行区 01",
     "arrays": 1000,
     "array_area_km2": 4.0,
@@ -129,7 +129,7 @@
    "type": "Feature",
    "properties": {
     "id": "LZ-02",
-    "name_en": "Lead zone field 02",
+    "name_en": "Pilot area field 02",
     "name_zh": "先行区 02",
     "arrays": 1000,
     "array_area_km2": 4.0,
@@ -184,7 +184,7 @@
    "type": "Feature",
    "properties": {
     "id": "LZ-03",
-    "name_en": "Lead zone field 03",
+    "name_en": "Pilot area field 03",
     "name_zh": "先行区 03",
     "arrays": 1000,
     "array_area_km2": 4.0,

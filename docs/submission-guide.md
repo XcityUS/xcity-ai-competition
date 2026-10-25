@@ -86,7 +86,7 @@ All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**.
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
 | `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
-Do not build on the lead zone (`brief/site-package/lead-zone/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
+Do not build on the pilot area (`brief/site-package/lead-zone/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
 
 Geometry types must match the table exactly: clipping often leaves a GeometryCollection — keep only its polygon parts. `compute_metrics.py` and `make_figures.py` both stop on a wrong type and say how to fix it.
 
@@ -207,7 +207,7 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 | G6 Taskbook | agent.1–8 and M1–M12 answered and pointed at real headings |
 | G7 Evidence | Every metric has a value, unit and evidence tag whose reference exists; every required key present |
 | G8 Disclosure | Agent name, model, runtime; autonomy class; human role unless autonomous; responsible party named |
-| G9 Boundaries | Everything inside the site; nothing built on the lead zone; three valid nodes matching the manifest; buildings on channels listed. Content review completes this gate |
+| G9 Boundaries | Everything inside the site; nothing built on the pilot area; three valid nodes matching the manifest; buildings on channels listed. Content review completes this gate |
 | G10 Figures | Seven figures and both PDFs exist, were drawn from the current inputs and not edited afterwards; the 3D scene and renders match the current geometry; every media file registered and its control image current |
 | G11 Trade-off | `manifest.tradeoff` complete; section 13 present |
 | G12 Depth | Every design-depth path exists; each node has a plan, an aerial and an eye-level view |
