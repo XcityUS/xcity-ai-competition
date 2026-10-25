@@ -2,7 +2,7 @@
  "id": "XCITY-INDICATIVE-SYSTEMS-9-13",
  "version": 1,
  "status": "indicative - a direction, not a land-use boundary",
- "note_zh": "五个城市系统在 9 号与 13 号地块内的意向位置：点是倾向落位，later_phase=true 表示预留、后期建设；halo_km 是大致范围，不是用地边界。只有先行区（lead-zone/）是确定的。方案可以采纳、修改或推翻这些意向，但须说明理由。引用时证据标签用 indicative，不得写成实测或已批准。",
+ "note_zh": "五个城市系统在 9 号与 13 号地块内的意向位置：点是倾向落位，later_phase=true 表示预留、后期建设；halo_km 是大致范围，不是用地边界。只有试点区（lead-zone/）是确定的。方案可以采纳、修改或推翻这些意向，但须说明理由。引用时证据标签用 indicative，不得写成实测或已批准。",
  "note_en": "Indicative positions for the five urban systems inside parcels 9 and 13. A point is where a system leans; later_phase=true means land held for a later phase; halo_km is a rough extent, not a land-use boundary. Only the pilot area (lead-zone/) is fixed. A scheme may adopt, move or overturn any of these, and says why. When you cite them, tag the evidence 'indicative' - never measured or approved.",
  "systems": {
   "compute": {
@@ -75,7 +75,7 @@
    "halo_km": 3,
    "label_zh": "居住 · 散布全场，每处数千人",
    "label_en": "Living · scattered across the site",
-   "basis_zh": "距一级以上沟道 0.8–4 km（近水）、坡度 <3%、高出沟底 >4 m（避洪），彼此间距 ≥13 km，避开算力、产业与先行区。",
+   "basis_zh": "距一级以上沟道 0.8–4 km（近水）、坡度 <3%、高出沟底 >4 m（避洪），彼此间距 ≥13 km，避开算力、产业与试点区。",
    "basis_en": "0.8-4 km from a primary channel (near water), slope < 3%, more than 4 m above the channel bed (clear of flood), at least 13 km apart, away from compute, industry and the pilot area.",
    "later_phase": false
   },
