@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22994911819488,
+            -31.14926873031184
+          ],
+          [
+            -68.21683620216777,
+            -31.14918965447604
+          ]
+        ]
+      },
+      "properties": {
+        "status": "proposal_for_review",
+        "name": "Living spine / proposed new pedestrian link",
+        "network": "people",
+        "shaded": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21583173012084,
+          -31.143769967530545
+        ]
+      },
+      "properties": {
+        "status": "proposal_for_review",
+        "name": "Arrival at an existing registered interface",
+        "kind": "arrival_candidate"
+      }
+    }
+  ]
+}

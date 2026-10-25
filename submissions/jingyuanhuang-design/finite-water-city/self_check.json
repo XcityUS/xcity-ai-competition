@@ -1,0 +1,107 @@
+{
+  "script": "scripts/self_check_submission.py",
+  "script_version": "1.0.0",
+  "checked_at": "2026-10-25T19:18:02+00:00",
+  "package": "submissions/jingyuanhuang-design/finite-water-city",
+  "package_sha256": "7e60362b077db157057846d69e9e1999ec30827e4c28ece36a404109b78326d5",
+  "gates_total": 12,
+  "gates_passed": 12,
+  "pass": true,
+  "recomputed": {
+    "master_area_km2": 12.008,
+    "site_coverage_pct": 1.342,
+    "gfa_m2": 311343.1,
+    "far": 0.0259,
+    "open_space_pct": 58.754,
+    "human_machine_interfaces": 7,
+    "shaded_pedestrian_pct": 84.429,
+    "structure_km2": {
+      "agri_production": 536.327,
+      "energy_compute": 232.555,
+      "industry": 1.045,
+      "living": 9.512,
+      "port": 1.199,
+      "reserve": 875.744
+    }
+  },
+  "gates": [
+    {
+      "id": "GATE-G1-PACKAGE",
+      "title": "Package completeness and schema validity",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G2-PATH",
+      "title": "Path ownership - only your own submission directory",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "In a pull request, CI also checks that nothing outside this directory changed (scripts/check_pr_paths.py)."
+      ]
+    },
+    {
+      "id": "GATE-G3-SAMPLE-DATA",
+      "title": "Example and indicative data not presented as fact",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G4-RECONCILE",
+      "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G5-OFFLINE",
+      "title": "HTML artefacts make no network calls",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G6-TASKBOOK",
+      "title": "All eight agent tasks and twelve mandatory requirements answered",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G7-EVIDENCE",
+      "title": "Every quantitative claim carries an evidence tag",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G8-DISCLOSURE",
+      "title": "Autonomy disclosure present and consistent",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G9-BOUNDARIES",
+      "title": "Site boundaries respected",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "Content review by the organiser completes this gate (prohibited items B1-B5)."
+      ]
+    },
+    {
+      "id": "GATE-G10-FIGURES",
+      "title": "Required figures present and current; every render declared",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G11-TRADEOFF",
+      "title": "Declared trade-off present and complete",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G12-DEPTH",
+      "title": "Declared design depth points at evidence that exists",
+      "pass": true,
+      "messages": []
+    }
+  ]
+}

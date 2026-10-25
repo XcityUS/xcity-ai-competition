@@ -1,0 +1,179 @@
+{
+  "metrics": [
+    {
+      "key": "master_area_km2",
+      "value": 12.008,
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/master_area.geojson"
+    },
+    {
+      "key": "site_coverage_pct",
+      "value": 1.342,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "gfa_m2",
+      "value": 311343.1,
+      "unit": "m2",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "far",
+      "value": 0.0259,
+      "unit": "ratio",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "open_space_pct",
+      "value": 58.754,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/land_use.geojson"
+    },
+    {
+      "key": "human_machine_interfaces",
+      "value": 7,
+      "unit": "count",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "shaded_pedestrian_pct",
+      "value": 84.429,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "structure_km2",
+      "value": {
+        "agri_production": 536.327,
+        "energy_compute": 232.555,
+        "industry": 1.045,
+        "living": 9.512,
+        "port": 1.199,
+        "reserve": 875.744
+      },
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/structure.geojson"
+    },
+    {
+      "key": "hourly_cfe_match_pct",
+      "value": 72.993,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-ENERGY"
+    },
+    {
+      "key": "peak_it_load_mw",
+      "value": 12,
+      "unit": "MW",
+      "evidence": "assumed",
+      "assumption": "A-COOL"
+    },
+    {
+      "key": "annual_water_demand_m3",
+      "value": 1000000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "water_domestic_m3",
+      "value": 140160,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-RATES"
+    },
+    {
+      "key": "water_compute_m3",
+      "value": 1576.8,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-COOL"
+    },
+    {
+      "key": "water_agriculture_m3",
+      "value": 778263.2,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-RATES"
+    },
+    {
+      "key": "water_landscape_m3",
+      "value": 20000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-RETURN"
+    },
+    {
+      "key": "water_industry_m3",
+      "value": 60000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-RETURN"
+    },
+    {
+      "key": "wue_l_per_kwh",
+      "value": 0.02,
+      "unit": "L/kWh",
+      "evidence": "assumed",
+      "assumption": "A-COOL"
+    },
+    {
+      "key": "pue",
+      "value": 1.25,
+      "unit": "ratio",
+      "evidence": "assumed",
+      "assumption": "A-COOL"
+    },
+    {
+      "key": "water_reuse_pct",
+      "value": 20,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-RETURN"
+    },
+    {
+      "key": "waste_heat_reuse_pct",
+      "value": 5,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-HEAT"
+    },
+    {
+      "key": "jobs_phase1",
+      "value": 1200,
+      "unit": "jobs",
+      "evidence": "declared",
+      "note": "Programme staffing across six work groups; see section 6"
+    },
+    {
+      "key": "residents_phase1",
+      "value": 2400,
+      "unit": "persons",
+      "evidence": "declared",
+      "note": "960 units times assumed household size 2.5"
+    },
+    {
+      "key": "dwellings_phase1",
+      "value": 960,
+      "unit": "units",
+      "evidence": "declared",
+      "note": "96 residential bars with ten dwellings each"
+    },
+    {
+      "key": "machine_traffic_rule",
+      "value": "separated",
+      "unit": "enum",
+      "evidence": "declared",
+      "note": "Service perimeter; public routes meet machines only at seven interlocked gated crossings"
+    }
+  ]
+}

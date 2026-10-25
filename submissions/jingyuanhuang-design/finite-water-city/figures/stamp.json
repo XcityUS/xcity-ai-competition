@@ -1,0 +1,25 @@
+{
+  "script": "scripts/make_figures.py",
+  "script_version": "1.0.0",
+  "input_sha256": "d06d3eef21794f13e220cb2b19857ef77361e51192ecf764362ddc923e107709",
+  "files": {
+    "figures/fig-01-structure.png": "43c9af15c32bca185ccd5b921fe8c8eb832df19a30c646b2c2c1ef20f9e4eafe",
+    "figures/fig-02-master-plan.png": "4f1cfe766501d7087c658819659be6e98d16bde87f7adb71060c988c99c1b866",
+    "figures/fig-03-land-use-density.png": "49b597fee1031832cf566808ce4761923cb80d5874867824ab1c5b5edfaf190a",
+    "figures/fig-04-movement.png": "20c1c00257367d65e77ede37b53401ebc161e33d232e344a698f5eff5e20404c",
+    "figures/fig-05-open-space-water.png": "1b6adaba56dd9bf1792d6cd74a24fc62b5aa84e5af704ad2e2df8d6091bf92ab",
+    "figures/fig-06-phasing.png": "640048426bae144bdfbbcb82de3a54e8da235ee4fc9a3f682c76c74021c72f50",
+    "figures/fig-07-metrics.png": "2474b05b72e4b2583ffab78a10a7d6203a40afa3a37a0344095aa2c1517bba78",
+    "figures/node-N05-plan.png": "5d12b5b6d8ca836b95758d87313020b2e28d432c1a62694e22c22b914d00117f",
+    "figures/node-N05-aerial.png": "55da5192b867b13ecfed976543ade1f287183a7e2b90c1f1f3eecc0e9fa8c5e5",
+    "figures/node-N05-eye.png": "72172dda015357576b07d0476bab4b2ed4abd950d3c2790d4ef6ef94a1569785",
+    "figures/node-N07-plan.png": "b482adf777a59c979f4d794ace572e0663990c81814715dca470f7aa8a41a228",
+    "figures/node-N07-aerial.png": "fa0ef1856dbfe197ad2dd338bf2f09cb44cb149764680aa59edfec54400f64d4",
+    "figures/node-N07-eye.png": "50eb97678db5f907dc81827432a812dc70779a50357814278dbb50d8e147d6e8",
+    "figures/node-N10-plan.png": "9e737dce29a50086926c300f29943a8a1124c1da9256b293453dbd1333dd7d28",
+    "figures/node-N10-aerial.png": "b049ed101638464ae3dae731f40f1f2f83eb9c6da076ee63bc8c2bba23ef73db",
+    "figures/node-N10-eye.png": "10357ff5d98a5421dff6bb6b38f40ebfda7726acd229c7ff6b8ea246ba5e2a84",
+    "drawings/a3-booklet.pdf": "58e839348e0eddfb1477f0a585fe35af5828a2a5833fb86367075c4e6843faa0",
+    "drawings/a0-board.pdf": "7cb3feb12a783fab0fa6df0b932c6ec963094518d8d002163f056a6cbc39ec7e"
+  }
+}
