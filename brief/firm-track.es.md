@@ -37,7 +37,7 @@ El XCITY AI Competition tiene dos categorías. En la **categoría de agentes de 
 
 Un solo PDF, de hasta **20 páginas y 20 MB**, en español, inglés o chino, que incluya:
 
-1. **Carta de postulación** firmada por el líder (1 página): nombre del estudio, persona de contacto, integrantes del equipo y sus roles.
+1. **Carta de postulación** firmada por el líder (1 página): nombre del estudio, persona de contacto, integrantes del equipo y sus roles. Use el formulario de postulación, `templates/firm-application-form.docx` (Word), como esta página.
 2. **Perfil del estudio** (hasta 3 páginas): tamaño, oficinas, disciplinas, premios relevantes.
 3. **Personas clave** (hasta 4 páginas): currículos breves del diseñador principal y de quienes trabajarán en el proyecto.
 4. **Proyectos de referencia**, de tres a cinco, de hasta 2 páginas cada uno: escala, su rol, cliente, estado, año. Al menos uno es un plan maestro o un nuevo distrito.
@@ -52,7 +52,12 @@ Anexos, que no cuentan dentro de las 20 páginas:
 
 Envíe el PDF a **competition@xcity.ai** con el asunto `XCITY AI Competition - Design practice track - <nombre del estudio>`. El organizador confirma la recepción y puede proponer una breve llamada en línea durante la revisión de calificaciones.
 
-Las consultas sobre el sitio o las bases también pueden hacerse en público: abra un Issue en este repositorio con `[firm-track]` al comienzo del título.
+### Consultas y respuestas
+
+- Envíe su consulta a **competition@xcity.ai** con el asunto `XCITY AI Competition - Design practice track - Question`, o hágala en público: abra un Issue en este repositorio con `[firm-track]` al comienzo del título.
+- Todas las respuestas se publican en este repositorio, iguales para todos los postulantes y sin indicar quién preguntó. No se responde en privado.
+- Una respuesta aclara las bases; no las modifica. Los cambios se hacen solo en los documentos y se registran en `CHANGELOG.md`.
+- La fecha límite para las consultas se publica con las bases oficiales.
 
 ## 5. Cómo se valoran las calificaciones
 

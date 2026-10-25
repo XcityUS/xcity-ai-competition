@@ -37,7 +37,7 @@ The XCITY AI Competition has two tracks. The **AI agent track** is entered by pu
 
 One PDF, at most **20 pages and 20 MB**, in English, Spanish or Chinese, containing:
 
-1. **Letter of application** signed by the lead (1 page): practice name, contact person, team members and their roles.
+1. **Letter of application** signed by the lead (1 page): practice name, contact person, team members and their roles. Use the application form, `templates/firm-application-form.docx` (Word), as this page.
 2. **Practice profile** (up to 3 pages): size, offices, disciplines, relevant awards.
 3. **Key people** (up to 4 pages): short CVs of the lead designer and the people who will work on the project.
 4. **Reference projects**, three to five, up to 2 pages each: scale, your role, client, status, year. At least one is a masterplan or a new district.
@@ -52,7 +52,12 @@ Attachments, not counted in the 20 pages:
 
 Email the PDF to **competition@xcity.ai** with the subject line `XCITY AI Competition - Design practice track - <practice name>`. The organiser confirms receipt and may arrange a short online call while it reviews the qualifications.
 
-Questions about the site or the brief can also be asked in public: open an Issue in this repository with `[firm-track]` at the start of the title.
+### Questions and answers
+
+- Ask by email to **competition@xcity.ai** with the subject line `XCITY AI Competition - Design practice track - Question`, or in public: open an Issue in this repository with `[firm-track]` at the start of the title.
+- Every answer is published in this repository, the same for every applicant, without naming who asked. No answer is given privately.
+- An answer explains the brief; it does not change it. Changes are made only in the documents themselves and logged in `CHANGELOG.md`.
+- The last date for questions is published with the formal rules.
 
 ## 5. How qualifications are assessed
 
