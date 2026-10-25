@@ -1,242 +1,281 @@
 {
- "$schema": "../schema/evaluation.schema.json",
- "version": 2,
- "note_en": "Gates are pass/fail and are checked before any scoring: a gate is never traded off against a good idea. Scoring asks only about decisions - anything that can be satisfied by including a topic is a gate, not a score. The weight of each of the seven dimensions is published with the formal brief.",
- "weights_status": "announced with the formal brief",
- "gates": [
-  {
-   "id": "GATE-G1-PACKAGE",
-   "title": "Package completeness and schema validity",
-   "checks": "Every required file is present and every JSON file parses and has the required fields.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G2-PATH",
-   "title": "Path ownership - only your own submission directory",
-   "checks": "The package sits at submissions/<github-login>/<proposal-slug>/, manifest.author.github equals <github-login>, and a pull request changes nothing outside that directory.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G3-SAMPLE-DATA",
-   "title": "Example and indicative data not presented as fact",
-   "checks": "No file is copied from the example submission, and nothing taken from the organiser's indicative material is tagged as measured or approved.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G4-RECONCILE",
-   "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
-   "checks": "Every metric tagged computed is recomputed from geometry/ and must agree within 2%; the water breakdown must add up to the total.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G5-OFFLINE",
-   "title": "HTML artefacts make no network calls",
-   "checks": "No .html file loads anything from the network: no CDN, map tiles, web fonts, API calls or iframes.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G6-TASKBOOK",
-   "title": "All eight agent tasks and twelve mandatory requirements answered",
-   "checks": "compliance_matrix.json lists agent.1-agent.8 and M1-M12, each with a status and a pointer to a heading that exists in proposal.md.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G7-EVIDENCE",
-   "title": "Every quantitative claim carries an evidence tag",
-   "checks": "Every metric has a unit and an evidence tag; sourced and assumed metrics point at an id that exists in sources.json or assumptions.json.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G8-DISCLOSURE",
-   "title": "Autonomy disclosure present and consistent",
-   "checks": "manifest.json names the agent and model and declares the autonomy class; any class other than autonomous describes the human role.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G9-BOUNDARIES",
-   "title": "Site boundaries respected",
-   "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
-   "automated": false,
-   "partly_manual": true
-  },
-  {
-   "id": "GATE-G10-FIGURES",
-   "title": "Required figures present and current; every render declared",
-   "checks": "The seven figures and the two PDF drawings exist and were made from the geometry as submitted (their stamp matches); every image under media/ is registered in image_provenance.json with tool, prompt, date, post-processing and reference images.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G11-TRADEOFF",
-   "title": "Declared trade-off present and complete",
-   "checks": "manifest.tradeoff states the objective not optimised, why, the consequence and who bears it, and proposal.md has section 13.",
-   "automated": true,
-   "partly_manual": false
-  },
-  {
-   "id": "GATE-G12-DEPTH",
-   "title": "Declared design depth points at evidence that exists",
-   "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view.",
-   "automated": true,
-   "partly_manual": false
-  }
- ],
- "blocking_conditions": [
-  {
-   "id": "B1",
-   "title": "Personal data, confidential material, or non-public spatial data"
-  },
-  {
-   "id": "B2",
-   "title": "Fabricated official endorsement, approval or statutory conclusion"
-  },
-  {
-   "id": "B3",
-   "title": "Discriminatory or harmful content"
-  },
-  {
-   "id": "B4",
-   "title": "Off-topic material"
-  },
-  {
-   "id": "B5",
-   "title": "Modifying files outside the entrant's own submission directory"
-  }
- ],
- "dimensions": [
-  {
-   "id": "D1",
-   "title_en": "Relevance to the brief and the site",
-   "public_en": "Whether the scheme answers the conditions of San Juan rather than applying a generic urban model to them. <b>Seismic risk, the Zonda, dry riverbeds, the water constraint and the existing agricultural system should have a substantive effect on spatial structure and design decisions.</b>",
-   "asks": "Not 'does it mention San Juan'. Does the scheme change when the site changes - seismicity, the Zonda, the dry washes, the water allocation, the three agricultural layers already on the ground? Would this plan be different somewhere else?",
-   "weight": null
-  },
-  {
-   "id": "D2",
-   "title_en": "Energy, compute and water reasoning",
-   "public_en": "How the scheme handles the mutual constraints between energy, compute and water: which balance it chooses, whether that choice rests on stated quantities, <b>and whether the cost of it is identified and carried in the design.</b>",
-   "asks": "Energy, compute and water cannot all be optimised at once. Which trade-off did this scheme take, is it quantified with units and a stated basis, and is its cost accepted rather than assumed away? Presence of the numbers is GATE-G7; this dimension scores the choice.",
-   "weight": null
-  },
-  {
-   "id": "D3",
-   "title_en": "Originality and AI-urbanism innovation",
-   "public_en": "Whether the scheme proposes a concept, mechanism or scenario of independent value, rather than repeating an existing smart-city or future-city template. <b>Originality is compared across the field once every entry has been reviewed.</b>",
-   "asks": "A genuine new concept, mechanism or scenario. Scored ONLY after the whole field has been read: an idea that many entries reached independently earns no originality credit for any of them. See anti_convergence AC2.",
-   "weight": null
-  },
-  {
-   "id": "D4",
-   "title_en": "Feasibility and phasing",
-   "public_en": "Whether the first phase stands on its own, and whether the phases after it rest on clear triggers, infrastructure capacity and real demand. <b>Not whether phasing is shown, but whether each phase forms a complete and sustainable piece of city.</b>",
-   "asks": "Not 'is there a phasing diagram' - that is GATE-G6. If phase one were built and nothing followed, would it still be a place? What has to be true for phase two to start, and who makes it true?",
-   "weight": null
-  },
-  {
-   "id": "D5",
-   "title_en": "Public interest and inclusivity",
-   "public_en": "How the scheme answers the needs of different users and groups, and whether it recognises the exclusions it may produce. <b>What matters is whether those effects are identified, stated and answered in the design.</b>",
-   "asks": "Not 'are residents mentioned'. Who does this scheme exclude, does it know that it does, and is that exclusion argued or accidental?",
-   "weight": null
-  },
-  {
-   "id": "D6",
-   "title_en": "Risk, compliance and data governance",
-   "public_en": "Whether the scheme identifies the risks that belong to this site and to the running of these systems, and proposes spatial, technical or governance answers to them. <b>What matters is the reasoning on high-likelihood, high-impact risk, and who decides and answers for it when things go wrong.</b>",
-   "asks": "Not a list of risks. Which failure mode is actually likely here, what does the plan do when it happens, and who decides? Boundary compliance itself is GATE-G9.",
-   "weight": null
-  },
-  {
-   "id": "D7",
-   "title_en": "Declared trade-off",
-   "public_en": "Every entry states <b>one objective it did not optimise for</b>, why, what follows from it, and who carries the cost. <b>Not whether a trade-off exists, but whether it is real, defensible and clearly stated.</b>",
-   "asks": "Every submission must state one thing it deliberately did not optimise, why, and who bears the cost. Presence of the declaration is a gate; whether the trade-off is real and honestly priced is the score. Replaces 'expression completeness', which our gates already check in full (G1, G7, G10) and which rewards form-filling.",
-   "weight": null
-  }
- ],
- "autonomy_classes": {
-  "note": "Entries are ranked within their autonomy class, not across classes.",
-  "classes": [
-   "autonomous",
-   "human_supervised",
-   "human_directed"
+  "$schema": "../schema/evaluation.schema.json",
+  "version": 2,
+  "note_en": "Gates are pass/fail and are checked before any scoring: a gate is never traded off against a good idea. Scoring asks only about decisions - anything that can be satisfied by including a topic is a gate, not a score. The weight of each of the seven dimensions is published with the formal brief. This file reviews the AI Agent Autonomous Planning Challenge; the Design Practice Urban Design Call is reviewed on its own criteria.",
+  "weights_status": "announced with the formal brief",
+  "gates": [
+    {
+      "id": "GATE-G1-PACKAGE",
+      "title": "Package completeness and schema validity",
+      "checks": "Every required file is present and every JSON file parses and has the required fields.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G2-PATH",
+      "title": "Path ownership - only your own submission directory",
+      "checks": "The package sits at submissions/<github-login>/<proposal-slug>/, manifest.author.github equals <github-login>, and a pull request changes nothing outside that directory.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G3-SAMPLE-DATA",
+      "title": "Example and indicative data not presented as fact",
+      "checks": "No file is copied from the example submission, and nothing taken from the organiser's indicative material is tagged as measured or approved.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G4-RECONCILE",
+      "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
+      "checks": "Every metric tagged computed is recomputed from geometry/ and must agree within 2%; the water breakdown must add up to the total.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G5-OFFLINE",
+      "title": "HTML artefacts make no network calls",
+      "checks": "No .html file loads anything from the network: no CDN, map tiles, web fonts, API calls or iframes.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G6-TASKBOOK",
+      "title": "All eight agent tasks and twelve mandatory requirements answered",
+      "checks": "compliance_matrix.json lists agent.1-agent.8 and M1-M12, each with a status and a pointer to a heading that exists in proposal.md.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G7-EVIDENCE",
+      "title": "Every quantitative claim carries an evidence tag",
+      "checks": "Every metric has a unit and an evidence tag; sourced and assumed metrics point at an id that exists in sources.json or assumptions.json.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G8-DISCLOSURE",
+      "title": "Autonomy disclosure present and consistent",
+      "checks": "manifest.json names the agent and model and declares the autonomy class; any class other than autonomous describes the human role.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G9-BOUNDARIES",
+      "title": "Site boundaries respected",
+      "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
+      "automated": false,
+      "partly_manual": true
+    },
+    {
+      "id": "GATE-G10-FIGURES",
+      "title": "Required figures present and current; every render declared",
+      "checks": "The seven figures and the two PDF drawings exist and were made from the geometry as submitted (their stamp matches); every image under media/ is registered in image_provenance.json with tool, prompt, date, post-processing and reference images.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G11-TRADEOFF",
+      "title": "Declared trade-off present and complete",
+      "checks": "manifest.tradeoff states the objective not optimised, why, the consequence and who bears it, and proposal.md has section 13.",
+      "automated": true,
+      "partly_manual": false
+    },
+    {
+      "id": "GATE-G12-DEPTH",
+      "title": "Declared design depth points at evidence that exists",
+      "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view.",
+      "automated": true,
+      "partly_manual": false
+    }
   ],
-  "definitions": {
-   "autonomous": "The agent made every design decision and wrote every file; a human at most gave the starting instruction and opened the pull request.",
-   "human_supervised": "The agent made the design decisions and wrote the files; a human set the task, reviewed, or asked for changes, without writing design content.",
-   "human_directed": "A human made or dictated design decisions (layout, programme, key numbers) or edited the content; the agent executed and documented."
-  }
- },
- "process": [
-  {
-   "stage": 1,
-   "name": "Automated gate",
-   "actor": "CI",
-   "output": "self_check.json"
-  },
-  {
-   "stage": 2,
-   "name": "Pre-examination",
-   "actor": "Review secretariat",
-   "output": "Technical findings report - reports, does not vote"
-  },
-  {
-   "stage": 3,
-   "name": "Panel scoring",
-   "actor": "Review panel",
-   "output": "Scorecard against D1-D7",
-   "note": "D1, D2, D4, D5, D6, D7 are scored entry by entry. D3 is scored in a second pass, after the whole field has been read, so that convergence is visible when it is priced."
-  },
-  {
-   "stage": 4,
-   "name": "Verification round",
-   "actor": "Review panel",
-   "output": "May reinstate a previously eliminated entry"
-  },
-  {
-   "stage": 5,
-   "name": "Reproduction before award",
-   "actor": "Review secretariat",
-   "output": "Top entries re-run under observation"
-  },
-  {
-   "stage": 6,
-   "name": "Publication",
-   "actor": "Organiser",
-   "output": "Gallery, panel report, all entries public"
-  }
- ],
- "anti_convergence": {
-  "note": "A script-checked competition invites writing for the script. Three structural devices, none of which depend on the panel's restraint.",
-  "devices": [
-   {
-    "id": "AC1",
-    "title": "Presence checks are gates, never scores",
-    "detail": "If a criterion can be satisfied by including a section, it is a gate. Gates cannot make schemes converge: they remove non-answers, they do not select among answers. Scoring asks only about decisions."
-   },
-   {
-    "id": "AC2",
-    "title": "Originality is scored relative to the field",
-    "detail": "D3 is scored only after the whole field has been read. An idea proposed independently by many entries earns no originality credit for any of them. This is the only device that structurally penalises convergence rather than merely discouraging it."
-   },
-   {
-    "id": "AC3",
-    "title": "Every submission must declare what it gave up",
-    "detail": "D7. Presence of the declaration is a gate; whether the trade-off is real and its cost genuinely accepted is the score. A scheme that claims to be best on all seven dimensions has made no choices, and says so."
-   }
+  "blocking_conditions": [
+    {
+      "id": "B1",
+      "title": "Personal data, confidential material, or non-public spatial data"
+    },
+    {
+      "id": "B2",
+      "title": "Fabricated official endorsement, approval or statutory conclusion"
+    },
+    {
+      "id": "B3",
+      "title": "Discriminatory or harmful content"
+    },
+    {
+      "id": "B4",
+      "title": "Off-topic material"
+    },
+    {
+      "id": "B5",
+      "title": "Modifying files outside the entrant's own submission directory"
+    }
   ],
-  "diagnostic": "Convergence arising from the SITE is a finding, not a failure: if forty independent agents put compute near the substation and housing south of the wash, the site has a strong logic and XCITY has learned it. Convergence arising from the BRIEF is a failure. The test distinguishes them: site-driven convergence agrees on layout and differs on mechanism; brief-driven convergence agrees on section headings and differs on nothing."
- },
- "organiser_data_gaps": {
-  "rule_en": "A gap in the data the organiser supplied is never a reason to mark an entry down. An entrant who declares the value used and where it came from in assumptions.json has met the requirement; the panel may not deduct from completeness or feasibility because the organiser did not supply an official figure.",
-  "checked_by": "gates check that a declaration exists, not that the number is official"
- }
+  "criteria": [
+    {
+      "id": "C1",
+      "title_en": "Autonomy",
+      "read_through": [
+        "autonomy_classes",
+        "rule 4 disclosure"
+      ],
+      "note_en": "Entries are ranked within their autonomy class."
+    },
+    {
+      "id": "C2",
+      "title_en": "Reasoning quality",
+      "read_through": [
+        "D1",
+        "D2",
+        "D4",
+        "D5",
+        "D6",
+        "D7"
+      ]
+    },
+    {
+      "id": "C3",
+      "title_en": "Verifiability",
+      "read_through": [
+        "gates",
+        "evidence tags",
+        "numbers recomputed from geometry"
+      ]
+    },
+    {
+      "id": "C4",
+      "title_en": "Originality",
+      "read_through": [
+        "D3"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "D1",
+      "title_en": "Relevance to the brief and the site",
+      "public_en": "Whether the scheme answers the conditions of San Juan rather than applying a generic urban model to them. <b>Seismic risk, the Zonda, dry riverbeds, the water constraint and the existing agricultural system should have a substantive effect on spatial structure and design decisions.</b>",
+      "asks": "Not 'does it mention San Juan'. Does the scheme change when the site changes - seismicity, the Zonda, the dry washes, the water allocation, the three agricultural layers already on the ground? Would this plan be different somewhere else?",
+      "weight": null
+    },
+    {
+      "id": "D2",
+      "title_en": "Energy, compute and water reasoning",
+      "public_en": "How the scheme handles the mutual constraints between energy, compute and water: which balance it chooses, whether that choice rests on stated quantities, <b>and whether the cost of it is identified and carried in the design.</b>",
+      "asks": "Energy, compute and water cannot all be optimised at once. Which trade-off did this scheme take, is it quantified with units and a stated basis, and is its cost accepted rather than assumed away? Presence of the numbers is GATE-G7; this dimension scores the choice.",
+      "weight": null
+    },
+    {
+      "id": "D3",
+      "title_en": "Originality and AI-urbanism innovation",
+      "public_en": "Whether the scheme proposes a concept, mechanism or scenario of independent value, rather than repeating an existing smart-city or future-city template. <b>Originality is compared across the field once every entry has been reviewed.</b>",
+      "asks": "A genuine new concept, mechanism or scenario. Scored ONLY after the whole field has been read: an idea that many entries reached independently earns no originality credit for any of them. See anti_convergence AC2.",
+      "weight": null
+    },
+    {
+      "id": "D4",
+      "title_en": "Feasibility and phasing",
+      "public_en": "Whether the first phase stands on its own, and whether the phases after it rest on clear triggers, infrastructure capacity and real demand. <b>Not whether phasing is shown, but whether each phase forms a complete and sustainable piece of city.</b>",
+      "asks": "Not 'is there a phasing diagram' - that is GATE-G6. If phase one were built and nothing followed, would it still be a place? What has to be true for phase two to start, and who makes it true?",
+      "weight": null
+    },
+    {
+      "id": "D5",
+      "title_en": "Public interest and inclusivity",
+      "public_en": "How the scheme answers the needs of different users and groups, and whether it recognises the exclusions it may produce. <b>What matters is whether those effects are identified, stated and answered in the design.</b>",
+      "asks": "Not 'are residents mentioned'. Who does this scheme exclude, does it know that it does, and is that exclusion argued or accidental?",
+      "weight": null
+    },
+    {
+      "id": "D6",
+      "title_en": "Risk, compliance and data governance",
+      "public_en": "Whether the scheme identifies the risks that belong to this site and to the running of these systems, and proposes spatial, technical or governance answers to them. <b>What matters is the reasoning on high-likelihood, high-impact risk, and who decides and answers for it when things go wrong.</b>",
+      "asks": "Not a list of risks. Which failure mode is actually likely here, what does the plan do when it happens, and who decides? Boundary compliance itself is GATE-G9.",
+      "weight": null
+    },
+    {
+      "id": "D7",
+      "title_en": "Declared trade-off",
+      "public_en": "Every entry states <b>one objective it did not optimise for</b>, why, what follows from it, and who carries the cost. <b>Not whether a trade-off exists, but whether it is real, defensible and clearly stated.</b>",
+      "asks": "Every submission must state one thing it deliberately did not optimise, why, and who bears the cost. Presence of the declaration is a gate; whether the trade-off is real and honestly priced is the score. Replaces 'expression completeness', which our gates already check in full (G1, G7, G10) and which rewards form-filling.",
+      "weight": null
+    }
+  ],
+  "autonomy_classes": {
+    "note": "Entries are ranked within their autonomy class, not across classes.",
+    "classes": [
+      "autonomous",
+      "human_supervised",
+      "human_directed"
+    ],
+    "definitions": {
+      "autonomous": "The agent made every design decision and wrote every file; a human at most gave the starting instruction and opened the pull request.",
+      "human_supervised": "The agent made the design decisions and wrote the files; a human set the task, reviewed, or asked for changes, without writing design content.",
+      "human_directed": "A human made or dictated design decisions (layout, programme, key numbers) or edited the content; the agent executed and documented."
+    }
+  },
+  "process": [
+    {
+      "stage": 1,
+      "name": "Automated gate",
+      "actor": "CI",
+      "output": "self_check.json"
+    },
+    {
+      "stage": 2,
+      "name": "Pre-examination",
+      "actor": "Review secretariat",
+      "output": "Technical findings report - reports, does not vote"
+    },
+    {
+      "stage": 3,
+      "name": "Panel scoring",
+      "actor": "Review panel",
+      "output": "Scorecard against D1-D7",
+      "note": "D1, D2, D4, D5, D6, D7 are scored entry by entry. D3 is scored in a second pass, after the whole field has been read, so that convergence is visible when it is priced."
+    },
+    {
+      "stage": 4,
+      "name": "Verification round",
+      "actor": "Review panel",
+      "output": "May reinstate a previously eliminated entry"
+    },
+    {
+      "stage": 5,
+      "name": "Reproduction before award",
+      "actor": "Review secretariat",
+      "output": "Top entries re-run under observation"
+    },
+    {
+      "stage": 6,
+      "name": "Publication",
+      "actor": "Organiser",
+      "output": "Gallery, panel report, all entries public"
+    }
+  ],
+  "anti_convergence": {
+    "note": "A script-checked competition invites writing for the script. Three structural devices, none of which depend on the panel's restraint.",
+    "devices": [
+      {
+        "id": "AC1",
+        "title": "Presence checks are gates, never scores",
+        "detail": "If a criterion can be satisfied by including a section, it is a gate. Gates cannot make schemes converge: they remove non-answers, they do not select among answers. Scoring asks only about decisions."
+      },
+      {
+        "id": "AC2",
+        "title": "Originality is scored relative to the field",
+        "detail": "D3 is scored only after the whole field has been read. An idea proposed independently by many entries earns no originality credit for any of them. This is the only device that structurally penalises convergence rather than merely discouraging it."
+      },
+      {
+        "id": "AC3",
+        "title": "Every submission must declare what it gave up",
+        "detail": "D7. Presence of the declaration is a gate; whether the trade-off is real and its cost genuinely accepted is the score. A scheme that claims to be best on all seven dimensions has made no choices, and says so."
+      }
+    ],
+    "diagnostic": "Convergence arising from the SITE is a finding, not a failure: if forty independent agents put compute near the substation and housing south of the wash, the site has a strong logic and XCITY has learned it. Convergence arising from the BRIEF is a failure. The test distinguishes them: site-driven convergence agrees on layout and differs on mechanism; brief-driven convergence agrees on section headings and differs on nothing."
+  },
+  "organiser_data_gaps": {
+    "rule_en": "A gap in the data the organiser supplied is never a reason to mark an entry down. An entrant who declares the value used and where it came from in assumptions.json has met the requirement; the panel may not deduct from completeness or feasibility because the organiser did not supply an official figure.",
+    "checked_by": "gates check that a declaration exists, not that the number is official"
+  }
 }

@@ -2,6 +2,12 @@
 
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 
+## 2026-10-25 — two calls, one site
+
+- XCITY runs two separate calls under one name: the **AI Agent Autonomous Planning Challenge** (this repository) and the **Design Practice Urban Design Call** (by qualification). They share only the site and its conditions, now set out once in `brief/site-conditions.en.md`; each has its own task, deliverables and review.
+- Agent challenge: the brief, design requirements and rules point to the shared conditions instead of repeating them; review reads the seven dimensions through four criteria — autonomy, reasoning quality, verifiability, originality (`brief/evaluation.json` → `criteria`). Nothing an entry must deliver has changed.
+- Practice call: stage 1 (qualifications) is unchanged in what to send; stage 2 now has its own brief, design focus, deliverables and review, given to shortlisted teams.
+
 ## 2026-10-25 — asking the human, scales 2 and 3
 
 - Pilot area: now two parts, both planned by XCITY and not open to design — the three agrivoltaic fields and the living quarter, phase 1 (2.48 km², south of parcel 13, outline only: `brief/site-package/pilot-area/pilot_living_area.geojson`). The self-check tests geometry against both. The approximate fifth living point is removed from the indicative systems.

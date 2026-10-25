@@ -1,15 +1,14 @@
-# Design practice track · Call for qualifications
+# Design Practice Urban Design Call · Stage 1: call for qualifications
 
 > Español: `brief/firm-track.es.md`
 
-The XCITY AI Competition has two tracks. The **AI agent track** is entered by pull request in this repository. The **design practice track**, described here, is for urban design, planning and architecture practices: the same site, the same brief and the same question, answered by a named team. Entry is by qualification.
+XCITY runs two separate calls on one site. This one, the **Design Practice Urban Design Call**, looks for professional teams able to propose urban design of real spatial quality — teams worth commissioning to take it further. The other, the AI Agent Autonomous Planning Challenge, tests whether an AI agent can plan on its own; it has its own brief and review. The two share only the site and its conditions: **`brief/site-conditions.en.md`**.
 
 | | |
 |---|---|
 | Organiser | XCITY |
-| Site | Parcels 9 and 13, San Juan, Argentina — 1,656 km² (`brief/site-package/`) |
-| Brief | The same as the agent track: `brief/public-brief.en.md`, `brief/design-requirements.en.md` |
-| Procedure | Two stages: qualifications, then design by a shortlist |
+| Site | Parcels 9 and 13, San Juan, Argentina — 1,656 km². Shared conditions: `brief/site-conditions.en.md`; data: `brief/site-package/` |
+| Procedure | Two stages: qualifications first; design by a shortlist |
 | Languages | English, Spanish or Chinese |
 | Contact | competition@xcity.ai |
 
@@ -17,11 +16,11 @@ The XCITY AI Competition has two tracks. The **AI agent track** is entered by pu
 
 ## 1. Procedure
 
-**Stage 1 · Expression of interest and qualifications.** Open to every practice that meets section 2. No design is asked for: we look at the team, its experience and its thinking. The organiser reviews the submissions and draws up a shortlist.
+**Stage 1 · Qualifications (this document).** Open to every practice that meets section 2. **No design is asked for**: we look at the practice, its relevant work and the core team. The organiser reviews the applications and draws up a shortlist. No practice carries design work before the terms of that work are known.
 
-**Stage 2 · Design.** Shortlisted teams receive the stage-two brief, the full site package and an online briefing, with a written question period. They answer the same site and the same three scales as the agent track: the structure of the whole site, a master design area they draw themselves, and three of the ten key nodes, rendered. Every team that delivers a compliant entry receives an honorarium.
+**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive a **brief of their own** — not the agent challenge's — together with the full site package, an online briefing and a written question period. The design focus is the overall spatial structure, key districts, and the quality of streets, blocks and public space. Deliverables are a design statement, a master plan, analysis drawings, and drawings of key districts and nodes. Every team that delivers a compliant entry receives an honorarium.
 
-**Review and selection.** A jury reviews the entries across the same seven dimensions as the agent track (`brief/evaluation.json`); the two tracks are ranked separately. Shortlisted teams present their entries online.
+**Review and selection.** A jury reviews the stage-two entries on response to the site, spatial quality, professional completeness and potential for delivery. Shortlisted teams present online. Selected teams move to further work with XCITY, on terms set out with the stage-two brief.
 
 ## 2. Who can apply
 
@@ -31,7 +30,7 @@ The XCITY AI Competition has two tracks. The **AI agent track** is entered by pu
 - A firm may lead or join one team only.
 - No Argentine partner is needed to apply. XCITY arranges local collaboration for the selected team.
 - Organiser staff, jury members and their immediate families may not take part.
-- Individuals, students and teams without a registered practice are welcome on the agent track.
+- Individuals, students and teams without a registered practice are welcome in the AI Agent Autonomous Planning Challenge.
 
 ## 3. What to send
 
@@ -50,13 +49,13 @@ Attachments, not counted in the 20 pages:
 
 ## 4. How to apply
 
-Email the PDF to **competition@xcity.ai** with the subject line `XCITY AI Competition - Design practice track - <practice name>`. The organiser confirms receipt and may arrange a short online call while it reviews the qualifications.
+Email the PDF to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - <practice name>`. The organiser confirms receipt and may arrange a short online call while it reviews the qualifications.
 
 ### Questions and answers
 
-- Ask by email to **competition@xcity.ai** with the subject line `XCITY AI Competition - Design practice track - Question`, or in public: open an Issue in this repository with `[firm-track]` at the start of the title.
+- Ask by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Question`, or in public: open an Issue in this repository with `[firm-track]` at the start of the title.
 - Every answer is published in this repository, the same for every applicant, without naming who asked. No answer is given privately.
-- An answer explains the brief; it does not change it. Changes are made only in the documents themselves and logged in `CHANGELOG.md`.
+- An answer explains the call; it does not change it. Changes are made only in the documents themselves and logged in `CHANGELOG.md`.
 - The last date for questions is published with the formal rules.
 
 ## 5. How qualifications are assessed
@@ -68,8 +67,8 @@ Email the PDF to **competition@xcity.ai** with the subject line `XCITY AI Compet
 
 ## 6. Published with the formal rules
 
-The submission deadline, the size of the shortlist, the jury, the honorarium and what follows for the selected team are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
+The application deadline, the size of the shortlist, the stage-two timeline, the jury, the honorarium, intellectual property, and the terms of further work for the selected team are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
 ## 7. Materials
 
-Everything in this repository is open to practices now: the brief, the site package, the drawing scripts and the self-check. Download it all at <https://github.com/XcityUS/xcity-ai-competition/archive/refs/heads/main.zip>.
+The site conditions and the site package are open to practices now; the stage-two brief goes to the shortlisted teams. Download it all at <https://github.com/XcityUS/xcity-ai-competition/archive/refs/heads/main.zip>.

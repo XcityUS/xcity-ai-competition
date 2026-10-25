@@ -1,4 +1,4 @@
-# Design requirements · XCITY AI Competition
+# Design requirements · AI Agent Autonomous Planning Challenge
 
 > Machine-readable version: `brief/requirements.json`. If the two disagree, the JSON wins.
 
@@ -16,47 +16,16 @@ Most figures have no pass mark. The gates check **whether you gave the number, w
 
 ---
 
-## B. The site: what you get and what you don't
+## B. The site and its hard conditions
 
-### B.1 Extent
+The land, the protected pilot area, water, earthquakes, the Zonda, dry channels and flash floods, dark sky, the missing road, the rule that phase one stands on its own, and what data is and is not supplied: **`brief/site-conditions.en.md`**, shared with the Design Practice Urban Design Call.
 
-| | Area | Source | Confidence |
-|---|---|---|---|
-| Parcel 9 | 1,483.8 km² | Owner KML | Exact |
-| Parcel 13 | 172.5 km² | Owner KML | Exact |
-| Together (the site) | 1,656.4 km² (quoted as 1,656 km²) | Union | Exact |
-| Pilot area (not open to design) | 13.9 km² of fields + 2.48 km² living quarter | XCITY | — |
+For this challenge:
 
-All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance) and nothing may be built on the pilot area.
-
-### B.2 Supplied
-
-See `brief/site-package/README.md`. Cite the matching `SRC-*` id in your `sources.json`. Indicative zoning (`zoning/indicative_systems_9_13.json`) is cited as `indicative` only — never measured or approved.
-
-### B.3 Not supplied
-
-| Data | Held by |
-|---|---|
-| Official cadastre | Dirección de Geodesia y Catastro, San Juan |
-| Grid connection and capacity | Provincial utility |
-| Water rights and abstraction | Provincial water authority |
-| Seismic code edition | INPRES / CIRSOC |
-| Climate series | See `site-package/climate/README.md` |
-
-**You may assume — in `assumptions.json`, with the value, its source and the reason. An undeclared assumption counts as invention.** **A gap in the data the organiser supplied is never a reason to mark an entry down.**
-
----
-
-## C. Hard conditions of the site
-
-These are design constraints, not background. A scheme that shows no trace of them scores low on D1.
-
-1. **Earthquakes.** State the structural system and seismic strategy and what they do to heights, spacing and refuge space.
-2. **The Zonda.** State the stance — block, channel or step aside — and carry it into street orientation, sections and equipment intakes.
-3. **Dry channels and flash floods.** **No permanent construction on a dry channel.** Mark the flood corridors in your geometry and state the basis for their width. Terrain-derived channels are in `site-package/water/channels_dem.geojson`; the self-check lists any building that touches one for the reviewers.
-4. **Dark sky.** Give a night-lighting and light-pollution strategy.
-5. **No road.** The access corridor is part of phase-one works; draw it.
-6. **The pilot area and its under-panel system.** Unchanged; the city grows beside it.
+- All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance), and nothing is built on the pilot area. The self-check tests both.
+- Cite the matching `SRC-*` id in your `sources.json`. Indicative zoning is cited as `indicative` only.
+- **You may assume — in `assumptions.json`, with the value, its source and the reason. An undeclared assumption counts as invention.**
+- The hard conditions are design constraints, not background. A scheme that shows no trace of them scores low on D1. Mark the flood corridors in your geometry and state the basis for their width; draw the access corridor as phase-one works.
 
 ---
 

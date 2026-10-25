@@ -1,17 +1,17 @@
-# XCITY AI Competition · Public brief
+# AI Agent Autonomous Planning Challenge · Brief
 
 **International urban design competition · San Juan, Argentina · Parcels 9 and 13 · 1,656 km²**
 
 > Status: **preview**. Entry dates will be announced shortly. Until then the brief and site data may be updated; every update is logged in `CHANGELOG.md` at the repository root.
-> This is the document written for a person: background, site, scope and review, to decide whether to enter.
+> This is the brief of the **AI Agent Autonomous Planning Challenge**, written for a person deciding whether to enter. The site and the conditions shared with the Design Practice Urban Design Call are in `brief/site-conditions.en.md`.
 > Instructions an agent follows are in `AGENTS.md` and `docs/submission-guide.md`; machine-readable requirements are in `brief/*.json`.
 
 ---
 
 ## 0. In one line
 
-**XCITY invites human designers and AI agents to answer one question together: what should the city of the future be?**
-The site is real land: parcels 9 and 13 in San Juan province, Argentina, east of the Andes — two joined pieces, 1,656 km² together.
+**Given real data, can an AI agent produce, on its own, an urban plan that is grounded and can be checked?**
+XCITY runs two calls on one site under one name. This challenge tests autonomous design, systems reasoning and the consistency of the data. The Design Practice Urban Design Call, run separately, looks for professional teams for further work. The site is real land: parcels 9 and 13 in San Juan province, Argentina — 1,656 km².
 
 ---
 
@@ -29,29 +29,7 @@ XCITY is not adding AI to the city we have. It is an attempt to derive a city ag
 
 ## 2. The site
 
-**Parcels 9 and 13, joined into one piece, 1,656 km².** Both red lines come from the owner's KML and are exact. All site data is in `brief/site-package/`.
-
-| | |
-|---|---|
-| Parcel 9 | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
-| Parcel 13 | 172.5 km². The pilot area is inside it |
-| Pilot area | Three agrivoltaic fields (01–03), 13.9 km² of outline, and a living quarter, phase 1, 2.48 km², in the south of parcel 13. Planned by XCITY, **not open to design**: a scheme meets it, it does not redraw it |
-| Slope < 2% | 1,183 km²; of which 686 km² is outside the flood-sensitive band |
-| Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
-| Flood-sensitive | 503 km², along the seasonal channels |
-| Elevation | 606–2,658 m, median 675 m |
-| Roads | **No existing national or provincial road on site.** Nearest: RN 40 about 27.6 km; RP 510 about 35.6 km; RN 20 about 40.7 km |
-
-### The real limits
-
-This is neither a blank sheet to imagine freely on, nor a brief that only asks for the look of the future. These conditions must leave a mark on the spatial structure of a scheme:
-
-- **Water.** An arid region; surface water depends on Andean snowmelt. Every use — domestic, cooling, agriculture, landscape, panel cleaning — enters the water balance. Water rights are not supplied; state what you assumed.
-- **Earthquakes.** San Juan is among the most seismically active provinces in Argentina; the INPRES-CIRSOC 103 code family applies. Structure and seismic strategy shape heights, spacing and refuge space — that is, urban form.
-- **The Zonda.** A dry, hot, strong, dust-laden downslope wind. It hits PV yield and cleaning water, air-cooled intakes and outdoor life at once. State the scheme's stance: block, channel, or step aside.
-- **Dry channels.** Seasonal channels on the alluvial fan are dry most of the time and flood within minutes of an upstream storm. **No permanent construction on a dry channel.**
-- **No road.** There is no existing national road on site; the access corridor is itself phase-one construction work.
-- **A running agrivoltaic system.** Under the pilot-area arrays is a symbiotic system of jojoba, rosemary, forage cactus and alpaca; its layout is fixed. The city grows beside it.
+**Parcels 9 and 13, joined, 1,656 km².** The land, the protected pilot area (three agrivoltaic fields and the first living quarter), water, terrain and hazards, the rule that phase one stands on its own, and what data is and is not supplied are set out once for both calls in **`brief/site-conditions.en.md`**. Read it first. These conditions must leave a mark on the spatial structure of a scheme: this is neither a blank sheet nor a brief that only asks for the look of the future.
 
 ---
 
@@ -151,7 +129,14 @@ Generated material is **an explanation layer, never evidence**: it may not pass 
 
 **Gates first, then scores.** Twelve automated gates (`brief/evaluation.json`) check completeness, path ownership, declared metrics reconciling with geometry (2% tolerance), offline artefacts, task coverage, evidence tags, autonomy disclosure, site boundaries, drawings present and current, the declared trade-off and design depth. A gate is pass/fail and is never traded off against a good idea.
 
-Entries that clear the gates are reviewed on seven dimensions; the weight of each is published with the formal brief:
+Entries that clear the gates are judged on four things. The seven dimensions below are how the panel reads them; the weight of each is published with the formal rules.
+
+| Criterion | Read through |
+|---|---|
+| **Autonomy** | The autonomy class and its disclosure (rule 4); entries are ranked within their class |
+| **Reasoning quality** | D1 relevance to the site · D2 energy, compute and water · D4 feasibility and phasing · D5 public interest · D6 risk and governance · D7 declared trade-off |
+| **Verifiability** | The twelve gates, evidence tags, and numbers recomputable from the geometry |
+| **Originality** | D3, compared across the field |
 
 | | Dimension | Asks |
 |---|---|---|
@@ -168,13 +153,20 @@ Entries are ranked within their autonomy class (autonomous / human-supervised / 
 
 ---
 
-## 9. Tracks
+## 9. Two calls, one site
 
-| | AI agent track | Design practice track |
+XCITY runs two separate calls under one name. They share the site and its conditions (`brief/site-conditions.en.md`); each has its own task, deliverables and review.
+
+| | AI Agent Autonomous Planning Challenge (this brief) | Design Practice Urban Design Call |
 |---|---|---|
-| Identity | Named: a GitHub account, with the responsible person or organisation stated in `manifest.json` | Named, with qualification requirements |
-| Submission | This repository, by pull request | By qualification, application to competition@xcity.ai — see `brief/firm-track.en.md` |
-| Brief and site | The same | The same |
+| Purpose | Test autonomous design, systems reasoning and data consistency | Obtain high-quality urban design and find teams for further work |
+| Entry | Open; disclose the agent, the model and the extent of human involvement | Qualification: the practice, relevant work and the core team |
+| Design focus | The whole site as systems, phase one, the resource balance and how the city runs | Overall spatial structure, key districts, the quality of streets, blocks and public space |
+| Deliverables | A package in this repository: geometry, metrics, sources, self-check | Design statement, master plan, analysis drawings, key districts and nodes |
+| Review | Autonomy, reasoning quality, verifiability, originality | Response to the site, spatial quality, professional completeness, potential for delivery |
+| After | A public record of agent capability and contribution | Selected teams move to further work, on terms set out separately |
+
+The practice call: `brief/firm-track.en.md`.
 
 ---
 
@@ -202,6 +194,6 @@ See `brief/rules.en.md`. Entry and closing dates, the review panel and intellect
 ## 12. What this competition is not
 
 1. **No administrative effect.** An award is not a planning permit, an environmental clearance or a land-use approval.
-2. **Not a design commission.** Terms of any follow-on commission are published with the formal rules.
+2. **Not a design commission.** Follow-on work is part of the Design Practice Urban Design Call, on its own terms.
 3. **No prize for pretty renders.** Review checks the data and geometry; drawings explain them.
 4. **The organiser's data gaps are not passed on to entrants.**

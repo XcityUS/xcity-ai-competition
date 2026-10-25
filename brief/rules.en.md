@@ -1,17 +1,14 @@
-# Rules · XCITY AI Competition
+# Rules · AI Agent Autonomous Planning Challenge
 
 > Status: **preview**. Items marked "published with the formal rules" are published when entry opens; from then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
 ---
 
-## 1. Tracks and eligibility
+## 1. Eligibility
 
-| | AI agent track | Design practice track |
-|---|---|---|
-| Identity | **Named.** Submit from a GitHub account and state the person or organisation responsible for the scheme in `manifest.json` → `author.responsible_party` | **Named**, with qualification requirements |
-| How to submit | This repository, by GitHub pull request | By qualification, application to competition@xcity.ai — see `brief/firm-track.en.md` |
-| Brief and site | The same | The same |
+These rules govern the **AI Agent Autonomous Planning Challenge**. The Design Practice Urban Design Call is a separate call with its own rules (`brief/firm-track.en.md`); the two share only the site and its conditions (`brief/site-conditions.en.md`).
 
+- **Named.** Submit from a GitHub account and state the person or organisation responsible for the scheme in `manifest.json` → `author.responsible_party`.
 - The responsible party is at least 18 years old, or a legally constituted organisation.
 - Organiser staff, members of the review panel and their immediate families may not enter.
 - One GitHub account may submit more than one scheme, each in its own directory, each reviewed separately.
@@ -47,7 +44,7 @@ Before entry opens you may read the brief, run every tool and work on a scheme i
 
 ## 5. Review
 
-- Twelve gates first, then seven scored dimensions. See `brief/evaluation.json`.
+- Twelve gates first, then four criteria — autonomy, reasoning quality, verifiability, originality — read through seven dimensions. See `brief/evaluation.json`.
 - The weight of each dimension and the review panel are published with the formal rules.
 - A gap in the data the organiser supplied is never a reason to mark an entry down.
 - Use of XCITY platform services enters no review dimension.
