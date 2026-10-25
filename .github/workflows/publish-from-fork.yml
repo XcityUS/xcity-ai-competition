@@ -1,0 +1,65 @@
+name: publish-from-fork
+
+# Maintainer changes are prepared on a fork and published here without a manual merge.
+# Every 15 minutes (or on demand from the Actions tab) this takes the `publish` branch of
+# jingyuanhuang-design/xcity-ai-competition and fast-forwards `main` to it, if and only if:
+#   - main is an ancestor of that branch (nothing on main is overwritten or rewritten), and
+#   - the example scheme still passes the twelve gates.
+# The push uses GITHUB_TOKEN, which cannot change files under .github/workflows/, so this
+# workflow cannot widen its own permissions. To stop it, disable it in the Actions tab.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-from-fork
+  cancel-in-progress: false
+
+env:
+  SOURCE_REPO: https://github.com/jingyuanhuang-design/xcity-ai-competition.git
+  SOURCE_BRANCH: publish
+
+jobs:
+  publish:
+    if: github.repository == 'XcityUS/xcity-ai-competition'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Fetch the publish branch
+        id: fetch
+        run: |
+          if ! git fetch --no-tags "$SOURCE_REPO" "$SOURCE_BRANCH:refs/remotes/source/$SOURCE_BRANCH"; then
+            echo "no publish branch yet"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          src=$(git rev-parse "refs/remotes/source/$SOURCE_BRANCH")
+          if [ "$src" = "$(git rev-parse HEAD)" ]; then
+            echo "main is up to date"; echo "go=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if ! git merge-base --is-ancestor HEAD "$src"; then
+            echo "::error::the publish branch does not build on main; rebase it on main first"; exit 1
+          fi
+          echo "src=$src" >> "$GITHUB_OUTPUT"; echo "go=true" >> "$GITHUB_OUTPUT"
+          git log --oneline HEAD.."$src"
+      - name: Check out the new main
+        if: steps.fetch.outputs.go == 'true'
+        run: git merge --ff-only "${{ steps.fetch.outputs.src }}"
+      - uses: actions/setup-python@v5
+        if: steps.fetch.outputs.go == 'true'
+        with:
+          python-version: "3.11"
+      - name: Example scheme passes the twelve gates
+        if: steps.fetch.outputs.go == 'true'
+        run: |
+          python -m pip install -r requirements.txt
+          python scripts/self_check_submission.py submissions/EXAMPLE-agent/sample-scheme --no-write
+      - name: Publish
+        if: steps.fetch.outputs.go == 'true'
+        run: git push origin HEAD:main
