@@ -1,0 +1,27 @@
+{
+  "status": "planning_review_only",
+  "public_submission": "withheld_by_user",
+  "source_geometry_sha256": {
+    "buildings.geojson": "a054286f1ee16db6e79700fbf4c05b294c34b19256a827f65b75e1bce89efabc",
+    "land_use.geojson": "8a7e7216959308ad384c0e96ed18e8bdd43d30169a6ee19a13036c8cc8fa46bc",
+    "master_area.geojson": "0a65c055377ba7b56eb666acc0e518a8c3d070a2dd6382a827086abbe1b118da",
+    "movement.geojson": "451a4e8b6f821d091393c2ee47840ef636abaff3dba66356fad581931afb7d67",
+    "nodes.geojson": "f61fe574ef0f0fd160ce0d698e8f6dd97de13e9c5a0593a2855df5539a7e12bf",
+    "phasing.geojson": "563cbe31b6a6a0c2343bda54ce50ebe1a2c69b8313fa32534b5173a639265081",
+    "structure.geojson": "6ebb7cad69a25385a537cfe2c0ccf7310ba60356bd48b84a8939351ed6942f20"
+  },
+  "combined_source_sha256": "e860fd28c37213a3f6a01d5619b0b7f034cbd3a68f58d865d48e7ca139159315",
+  "checks": {
+    "source_geometry_unchanged": "PASS",
+    "four_groups_240_dwellings_each": "PASS",
+    "total_dwellings_960": "PASS",
+    "proposed_axis_inside_master": "PASS",
+    "proposed_axis_no_permanent_building_intersection": "PASS"
+  },
+  "limitations": [
+    "New connection is a separate review proposal, not adopted geometry.",
+    "Arrival uses an existing registered interface; stopping, waiting and safety details remain to design.",
+    "Facility capacity, thermal comfort, flood protection and access engineering are not validated."
+  ],
+  "user_feedback": "Overall layout unclear; user declined public submission and requested revision."
+}

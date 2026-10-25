@@ -3,5 +3,12 @@
   "version": 1,
   "status": "call_not_open",
   "note_en": "Merge is not publication. A scheme appears in the gallery only when the review team records it here with the sha256 of the version it reviewed (scripts/self_check_submission.py prints it). If the package changes afterwards, the entry no longer matches and is not shown until it is reviewed again.",
-  "published": []
+  "published": [
+    {
+      "path": "submissions/jingyuanhuang-design/finite-water-city",
+      "reviewed_package_sha256": "7e60362b077db157057846d69e9e1999ec30827e4c28ece36a404109b78326d5",
+      "published_at": "2026-10-25",
+      "featured": false
+    }
+  ]
 }

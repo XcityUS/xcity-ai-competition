@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": "agent.1",
+      "status": "answered",
+      "section": "## 1.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.2",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.3",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.4",
+      "status": "answered",
+      "section": "## 5.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.5",
+      "status": "answered",
+      "section": "## 6.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.6",
+      "status": "answered",
+      "section": "## 7.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.7",
+      "status": "answered",
+      "section": "## 8.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "agent.8",
+      "status": "answered",
+      "section": "## 9.",
+      "note": "Design answer with declared limits"
+    },
+    {
+      "id": "M1",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M2",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M3",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M4",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M5",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M6",
+      "status": "answered",
+      "section": "## 5.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M7",
+      "status": "answered",
+      "section": "## 5.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M8",
+      "status": "answered",
+      "section": "## 8.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M9",
+      "status": "answered",
+      "section": "## 8.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M10",
+      "status": "answered",
+      "section": "## 9.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M11",
+      "status": "answered",
+      "section": "## 9.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    },
+    {
+      "id": "M12",
+      "status": "answered",
+      "section": "## 6.",
+      "note": "Scenario assumptions disclosed; no approval claimed"
+    }
+  ]
+}
