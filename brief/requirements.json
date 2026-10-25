@@ -261,5 +261,5 @@
   ],
   "scope_en": "Unless a requirement says otherwise, M1-M12 describe phase one at full build-out and full occupancy. Long-term figures may be added under keys of your own (e.g. long_term_residents).",
   "scope_zh": "除非另有说明，M1–M12 描述的是一期全部建成、满员入住时的状态。远期数字可以用自己的键另行声明（如 long_term_residents）。",
-  "structure_note_en": "structure.geojson areas are land areas. The brief's system percentages are planning weight, not land share, so they will not match. The lead zone counts as agri_production."
+  "structure_note_en": "structure.geojson areas are land areas. The brief's system percentages are planning weight, not land share, so they will not match. The pilot area counts as agri_production."
 }

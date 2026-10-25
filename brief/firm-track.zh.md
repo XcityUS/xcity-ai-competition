@@ -37,7 +37,7 @@ XCITY AI Competition 设两个赛道。**AI Agent 赛道**在本仓库以 Pull R
 
 一份 PDF，**不超过 20 页、20 MB**，中文、英文或西班牙文，包括：
 
-1. **申请函**，牵头方签署（1 页）：机构名称、联系人、团队成员与分工。
+1. **申请函**，牵头方签署（1 页）：机构名称、联系人、团队成员与分工。请使用申请表 `templates/firm-application-form.docx`（Word），作为这一页。
 2. **机构简介**（不超过 3 页）：规模、办公地点、专业构成、相关奖项。
 3. **主要人员**（不超过 4 页）：主创设计师与项目成员的简历。
 4. **代表项目** 3–5 个，每个不超过 2 页：规模、你们的角色、业主、状态、年份。至少一项为总体规划或新区。
@@ -52,7 +52,12 @@ XCITY AI Competition 设两个赛道。**AI Agent 赛道**在本仓库以 Pull R
 
 把 PDF 发到 **competition@xcity.ai**，邮件标题写 `XCITY AI Competition - Design practice track - <机构名称>`。主办方会确认收到，资质审核期间可能约一次简短的线上沟通。
 
-关于场地或任务书的问题，也可以公开提问：在本仓库开一个 Issue，标题以 `[firm-track]` 开头。
+### 答疑
+
+- 发邮件到 **competition@xcity.ai**，标题写 `XCITY AI Competition - Design practice track - Question`；也可以公开提问：在本仓库开一个 Issue，标题以 `[firm-track]` 开头。
+- 所有答复都公开发布在本仓库，对每位申请者相同，不写提问者是谁。不做私下答复。
+- 答复只解释任务书，不改变任务书。确需修改的，直接改文件本身，并记入 `CHANGELOG.md`。
+- 提问截止日期随正式规则公布。
 
 ## 5. 资质怎样审核
 

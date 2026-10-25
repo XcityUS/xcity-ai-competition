@@ -50,8 +50,8 @@ Everything runs offline and free. 一切离线、免费运行。
 
 ## 竞赛一览 · At a glance
 
-- **场地 Site.** 9 号与 13 号地块，两块相连，共 1,656 km²，边界取自业主 KML，精确。13 号地块内的先行区（三片光伏农业区，13.9 km²）由 XCITY 最先建设，不在设计范围内。场内没有既有国道，最近的 RN 40 约 27.6 km。
-  Parcels 9 and 13, joined, 1,656 km², exact boundaries from the owner's KML. The lead zone in parcel 13 (three agrivoltaic fields, 13.9 km²) is built first by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
+- **场地 Site.** 9 号与 13 号地块，两块相连，共 1,656 km²，边界取自业主 KML，精确。13 号地块内的试点区（三片光伏农业区，13.9 km²）由 XCITY 最先建设，不在设计范围内。场内没有既有国道，最近的 RN 40 约 27.6 km。
+  Parcels 9 and 13, joined, 1,656 km², exact boundaries from the owner's KML. The pilot area in parcel 13 (three agrivoltaic fields, 13.9 km²) is built first by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
 - **五个城市系统 Five systems.** 能源与算力 · 农业生产 · 居住与公共生活 · 产业与自动化 · 对外贸易与口岸。 Energy + compute · agri-production · living and public life · industry + automation · trade and port of entry.
 - **三个尺度 Three scales.** 整片场地的结构 · 自行划定的总体设计范围 · 十选三重点节点（必须渲染，脚本可免费生成）。 Structure of the whole site · a master design area you draw · three of ten key nodes (renders required; the script makes them free).
 - **评审 Review.** 先过十二道自动门禁，再按七个维度评分；主办方没有提供的数据不扣分。 Twelve automated gates, then seven scored dimensions; gaps in the organiser's data are never marked down.
@@ -62,7 +62,7 @@ Everything runs offline and free. 一切离线、免费运行。
 ```
 AGENTS.md                  the procedure for agents
 brief/                     brief, requirements, rules, taskbook, evaluation, awards, scenarios
-brief/site-package/        boundaries, lead zone, terrain, channels, roads, indicative systems, nodes
+brief/site-package/        boundaries, pilot area, terrain, channels, roads, indicative systems, nodes
 docs/                      submission guide, visual guide, maintainer workflow
 templates/                 proposal template and data templates
 schema/                    JSON schemas

@@ -12,7 +12,7 @@ Follow `AGENTS.md` in the repository root step by step. This skill is the checkl
 1. `pip install -r requirements.txt`
 2. Read `brief/public-brief.en.md`, `brief/design-requirements.en.md`, `brief/agent_taskbook.json`, `brief/site-package/README.md`, `docs/submission-guide.md`.
 3. **Checkpoint 1:** propose two or three directions — a one-sentence thesis, where the city starts, three nodes with one reason each — recommendation first, and ask the human. Then `python scripts/scaffold_submission.py --login <login> --slug <slug> --title "<title>" --nodes <three of N01-N10>`
-4. Write the seven geometry files (EPSG:4326, inside the site, off the lead zone, no buildings on dry channels). Mark every human-machine at-grade crossing as a Point with `kind: interface`.
+4. Write the seven geometry files (EPSG:4326, inside the site, off the pilot area, no buildings on dry channels). Mark every human-machine at-grade crossing as a Point with `kind: interface`.
 5. Recompute: `python scripts/compute_metrics.py <pkg>` and copy the computed values into `metrics.json`; fix any geometry problem it reports.
 6. Fill every other metric with an evidence tag (`declared` + note for figures the scheme chooses); every assumption in `assumptions.json`, every source in `sources.json`. The five water parts add up to the total. M1–M12 are phase one at full occupancy.
 7. Write `proposal.md` (14 numbered sections, ≥ 1,500 words, no template lines left) and `compliance_matrix.json` (agent.1–8, M1–M12 → `## N.`).

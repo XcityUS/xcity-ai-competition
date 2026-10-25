@@ -341,7 +341,7 @@ def footer(fig, pkg, fs=1.0):
         pkg.login, pkg.slug, T(a.get("responsible_party", "")), T(ag.get("name", "")), T(ag.get("model", "")),
         au.get("class", ""))
     right = "scripts/make_figures.py v%s  ·  input %s" % (xc.SCRIPT_VERSION, pkg.input_hash[:12])
-    src = ("Sources: parcels and lead zone - XCITY (owner KML); terrain and channels - produced using Copernicus "
+    src = ("Sources: parcels and pilot area - XCITY (owner KML); terrain and channels - produced using Copernicus "
            "WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS "
            "by the European Union and ESA; all rights reserved; roads (c) OpenStreetMap contributors. Everything else: "
            "this submission's own geometry.")
@@ -418,7 +418,7 @@ def panel_structure(pkg, ax, compact=False):
     items = [("patch", SYSTEM_COLORS.get(s, "#999"), "%s  %s km²" % (SYSTEM_LABEL.get(s, s), fmt(round(v, 1))))
              for s, v in sorted(km2.items(), key=lambda kv: -kv[1])]
     items += [("line", RED, "Site boundary (1,656 km²)", {"lw": 1.4}),
-              ("patch", "#E4C87A", "Lead zone - fixed, not designed", "#8A7440"),
+              ("patch", "#E4C87A", "Pilot area - fixed, not designed", "#8A7440"),
               ("line", INK, "Master design area", {"lw": 1.6, "ls": "--"}),
               ("line", WATER, "Seasonal channels (DEM-derived)", {"lw": 1.2}),
               ("marker", GOLD, "Key nodes")]

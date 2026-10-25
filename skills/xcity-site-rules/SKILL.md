@@ -1,6 +1,6 @@
 ---
 name: xcity-site-rules
-description: Site facts and hard constraints for parcels 9 and 13 of the XCITY AI Competition - boundaries, lead zone, channels, terrain, roads, the five systems and their indicative siting. Use while designing or checking an XCITY scheme's geometry.
+description: Site facts and hard constraints for parcels 9 and 13 of the XCITY AI Competition - boundaries, pilot area, channels, terrain, roads, the five systems and their indicative siting. Use while designing or checking an XCITY scheme's geometry.
 ---
 
 # XCITY site rules — parcels 9 and 13
@@ -12,7 +12,7 @@ All data: `brief/site-package/` (EPSG:4326 unless stated). All areas: `brief/sit
 | | |
 |---|---|
 | Site | 1,656 km² = parcel 9 (1,483.8) + parcel 13 (172.5); exact boundaries from owner KML |
-| Lead zone | 3 agrivoltaic fields, 13.9 km², inside parcel 13; built first; **not open to design** |
+| Pilot area | 3 agrivoltaic fields, 13.9 km², inside parcel 13; built first; **not open to design** |
 | Slope < 2% | 1,183 km² (686 km² of it outside the flood-sensitive band) |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range in the south-east of parcel 9 |
 | Flood-sensitive | 503 km² along the DEM-derived channels |
@@ -23,9 +23,9 @@ All data: `brief/site-package/` (EPSG:4326 unless stated). All areas: `brief/sit
 ## Hard rules (checked)
 
 1. All geometry inside `boundaries/scope_9_13.geojson` (50 m tolerance) — gate G9.
-2. No building on the lead zone; only `agriculture` or `energy` land use may overlap it — gate G9.
+2. No building on the pilot area; only `agriculture` or `energy` land use may overlap it — gate G9.
 3. No permanent construction on a dry channel; buildings touching `water/channels_dem.geojson` are listed for the reviewers.
-4. The lead-zone under-panel system (jojoba, rosemary, forage cactus, alpaca) is unchanged; tall and climbing crops (pistachio, olive, vine) stay out of the arrays.
+4. The pilot-area under-panel system (jojoba, rosemary, forage cactus, alpaca) is unchanged; tall and climbing crops (pistachio, olive, vine) stay out of the arrays.
 
 ## Conditions every scheme answers
 
