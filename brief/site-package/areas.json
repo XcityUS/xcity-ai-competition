@@ -28,6 +28,11 @@
    "basis": "pilot_area.geojson, panel arrays only"
   },
   {
+   "key": "pilot_living_outline",
+   "km2": 2.48,
+   "basis": "pilot_living_area.geojson, phase 1 outline, geodesic"
+  },
+  {
    "key": "slope_lt_2pct",
    "km2": 1183.3,
    "basis": "terrain_summary_9_13.json"

@@ -31,6 +31,14 @@
    "source": "SRC-PILOT"
   },
   {
+   "name": "pilot_living_area",
+   "path": "pilot-area/pilot_living_area.geojson",
+   "mediatype": "application/geo+json",
+   "description": "Pilot area living quarter, phase 1 (outline)",
+   "hash": "sha256:010b4f153b54afd0dbeb3ff3159a288eb72789b37591dde42095559acc7728e7",
+   "source": "SRC-PILOT"
+  },
+  {
    "name": "roads_osm",
    "path": "access/roads_osm.geojson",
    "mediatype": "application/geo+json",
@@ -107,7 +115,7 @@
    "path": "zoning/indicative_systems_9_13.json",
    "mediatype": "application/json",
    "description": "Five systems, indicative",
-   "hash": "sha256:75179ae0781aa9d8961b44dec5510f40065c6ef28b1bd4bf74a7d5c161e68dd3",
+   "hash": "sha256:f7d466fd6267f63246f72a1d4a841c194191051c3ea0f07e4f4eae54479f6d64",
    "source": "SRC-XCITY-INDICATIVE"
   },
   {
@@ -122,7 +130,7 @@
    "path": "areas.json",
    "mediatype": "application/json",
    "description": "Every area figure, one place",
-   "hash": "sha256:ce07af1c08c491d1be0690f703df1038c1386419fecd7768e29a64fd7e330c0f"
+   "hash": "sha256:b6a7b510e214051bffcfd9920144883aad0aec3bee00d74fc6f2bc25a2af80da"
   }
  ]
 }

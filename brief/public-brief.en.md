@@ -35,7 +35,7 @@ XCITY is not adding AI to the city we have. It is an attempt to derive a city ag
 |---|---|
 | Parcel 9 | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
 | Parcel 13 | 172.5 km². The pilot area is inside it |
-| Pilot area | Three agrivoltaic fields (01–03), 13.9 km² of outline, built first by XCITY, **not open to design** |
+| Pilot area | Three agrivoltaic fields (01–03), 13.9 km² of outline, and a living quarter, phase 1, 2.48 km², in the south of parcel 13. Planned by XCITY, **not open to design**: a scheme meets it, it does not redraw it |
 | Slope < 2% | 1,183 km²; of which 686 km² is outside the flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
 | Flood-sensitive | 503 km², along the seasonal channels |

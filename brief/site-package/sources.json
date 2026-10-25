@@ -13,11 +13,12 @@
   },
   {
    "id": "SRC-PILOT",
-   "title": "Pilot area fields 01-03",
+   "title": "Pilot area: fields 01-03 and the living quarter, phase 1",
    "publisher": "XCITY",
    "licence": "Provided for use in the XCITY AI Competition.",
    "used_in": [
-    "pilot-area/pilot_area.geojson"
+    "pilot-area/pilot_area.geojson",
+    "pilot-area/pilot_living_area.geojson"
    ]
   },
   {

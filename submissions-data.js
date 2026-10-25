@@ -20,7 +20,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "package_sha256": "d0ccb6925457f1cec0f928e8a02f85b61aa47a9ee9645f7b03fa46a0007b3895",
+    "package_sha256": "c7fdf3e3c42aa61b1b28e68fe4ef7bffc21a0a7d57b1a1d9d730e8467ba7ce4e",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -42,15 +42,15 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3150828
+        3150989
       ],
       [
         "drawings/a3-booklet.pdf",
-        9311442
+        9311722
       ],
       [
         "figures/fig-01-structure.png",
-        1243775
+        1244215
       ],
       [
         "figures/fig-02-master-plan.png",
@@ -70,7 +70,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "figures/fig-06-phasing.png",
-        890004
+        890428
       ],
       [
         "figures/fig-07-metrics.png",

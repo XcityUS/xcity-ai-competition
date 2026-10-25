@@ -25,7 +25,7 @@ Most figures have no pass mark. The gates check **whether you gave the number, w
 | Parcel 9 | 1,483.8 km² | Owner KML | Exact |
 | Parcel 13 | 172.5 km² | Owner KML | Exact |
 | Together (the site) | 1,656.4 km² (quoted as 1,656 km²) | Union | Exact |
-| Pilot area (not open to design) | 13.9 km² | XCITY | — |
+| Pilot area (not open to design) | 13.9 km² of fields + 2.48 km² living quarter | XCITY | — |
 
 All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance) and nothing may be built on the pilot area.
 

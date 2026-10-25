@@ -8,7 +8,8 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 |---|---|---|
 | `boundaries/parcels_9_13.geojson` | the two parcels | exact, owner KML |
 | `boundaries/scope_9_13.geojson` | their union = the site | exact |
-| `pilot-area/pilot_area.geojson` | pilot area, built first, **not open to design** | organiser |
+| `pilot-area/pilot_area.geojson` | pilot area: the three agrivoltaic fields, **not open to design** | organiser |
+| `pilot-area/pilot_living_area.geojson` | pilot area: the living quarter, phase 1 (outline), **not open to design** | organiser |
 | `access/roads_osm.geojson` | nearest national and provincial roads | OpenStreetMap |
 | `access/road_distances_9_13.json` | shortest distance from the site to each road | computed |
 | `water/channels_dem.geojson` | seasonal channels derived from the DEM (upstream area ≥ 100 km²) | derived, not surveyed |
@@ -26,7 +27,7 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 | | |
 |---|---|
 | Site | 1,656 km² (parcel 9: 1,483.8 · parcel 13: 172.5) |
-| Pilot area | three fields, 13.9 km², inside parcel 13 |
+| Pilot area | three fields, 13.9 km², and a living quarter, phase 1, 2.48 km², inside parcel 13 |
 | Slope < 2% | 1,183 km² |
 | Slope ≥ 25% (mountain) | 127 km², mostly the Pie de Palo range in the south-east of parcel 9 |
 | Flood-sensitive | 503 km² |

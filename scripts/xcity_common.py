@@ -102,7 +102,10 @@ def site_boundary():
 
 
 def pilot_area():
-    return unary_union([g for _, g in features(os.path.join(SITE, "pilot-area", "pilot_area.geojson"))])
+    """The pilot area: the three agrivoltaic fields and the living quarter, both fixed, neither open to design."""
+    d = os.path.join(SITE, "pilot-area")
+    return unary_union([g for f in ("pilot_area.geojson", "pilot_living_area.geojson") if os.path.exists(os.path.join(d, f))
+                        for _, g in features(os.path.join(d, f))])
 
 
 def channels():

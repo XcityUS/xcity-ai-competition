@@ -4,6 +4,7 @@ Changes to the brief, the site package, the rules and the tools — newest first
 
 ## 2026-10-25 — asking the human, scales 2 and 3
 
+- Pilot area: now two parts, both planned by XCITY and not open to design — the three agrivoltaic fields and the living quarter, phase 1 (2.48 km², south of parcel 13, outline only: `brief/site-package/pilot-area/pilot_living_area.geojson`). The self-check tests geometry against both. The approximate fifth living point is removed from the indicative systems.
 - Checkpoint 1 asks only what is the human's to decide: whether they have an idea for the city ("you decide" is a full answer), and which three of the ten places they want to see. Design decisions are the agent's. Questions are in plain words: names, not codes (AGENTS.md, "How to ask").
 - Design requirements, new section F2: the master area should come from the site, not be a rectangle of convenience; each node is designed in full, so the massing renders already show how people use it.
 

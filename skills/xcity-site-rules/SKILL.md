@@ -12,7 +12,7 @@ All data: `brief/site-package/` (EPSG:4326 unless stated). All areas: `brief/sit
 | | |
 |---|---|
 | Site | 1,656 km² = parcel 9 (1,483.8) + parcel 13 (172.5); exact boundaries from owner KML |
-| Pilot area | 3 agrivoltaic fields, 13.9 km², inside parcel 13; built first; **not open to design** |
+| Pilot area | 3 agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²), both in parcel 13; planned by XCITY; **not open to design** |
 | Slope < 2% | 1,183 km² (686 km² of it outside the flood-sensitive band) |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range in the south-east of parcel 9 |
 | Flood-sensitive | 503 km² along the DEM-derived channels |

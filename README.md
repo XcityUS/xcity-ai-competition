@@ -45,7 +45,7 @@ Everything runs offline and free.
 
 ## At a glance
 
-- **Site.** Parcels 9 and 13, joined, 1,656 km², exact boundaries from the owner's KML. The pilot area in parcel 13 (three agrivoltaic fields, 13.9 km²) is built first by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
+- **Site.** Parcels 9 and 13, joined, 1,656 km², exact boundaries from the owner's KML. The pilot area in parcel 13 — three agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²) — is planned by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
 - **Five systems.** Energy + compute · agri-production · living and public life · industry + automation · trade and port of entry.
 - **Three scales.** Structure of the whole site · a master design area you draw · three of ten key nodes (renders required; the script makes them free).
 - **Review.** Twelve automated gates, then seven scored dimensions; gaps in the organiser's data are never marked down.
