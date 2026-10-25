@@ -12,12 +12,12 @@
    ]
   },
   {
-   "id": "SRC-LEAD",
+   "id": "SRC-PILOT",
    "title": "Pilot area fields 01-03",
    "publisher": "XCITY",
    "licence": "Provided for use in the XCITY AI Competition.",
    "used_in": [
-    "lead-zone/lead_zone.geojson"
+    "pilot-area/pilot_area.geojson"
    ]
   },
   {

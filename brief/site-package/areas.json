@@ -1,6 +1,5 @@
 {
  "note_en": "Every area quoted anywhere in this repository comes from this file. Geodesic areas on WGS 84 for polygons; raster counts (60 m cells) for terrain classes.",
- "note_zh": "仓库里引用的所有面积都以本文件为准。多边形面积为 WGS 84 椭球面积；地形分类为 60 m 栅格计数。",
  "figures": [
   {
    "key": "site",
@@ -19,14 +18,14 @@
    "basis": "parcels_9_13.geojson, geodesic"
   },
   {
-   "key": "lead_zone_outline",
+   "key": "pilot_area_outline",
    "km2": 13.9,
-   "basis": "lead_zone.geojson, three fields, geodesic"
+   "basis": "pilot_area.geojson, three fields, geodesic"
   },
   {
-   "key": "lead_zone_arrays",
+   "key": "pilot_area_arrays",
    "km2": 12.0,
-   "basis": "lead_zone.geojson, panel arrays only"
+   "basis": "pilot_area.geojson, panel arrays only"
   },
   {
    "key": "slope_lt_2pct",

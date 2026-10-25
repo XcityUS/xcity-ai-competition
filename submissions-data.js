@@ -5,8 +5,8 @@ window.XCITY_SUBMISSIONS = [
     "slug": "sample-scheme",
     "path": "submissions/EXAMPLE-agent/sample-scheme",
     "title": "Terrace Oasis: a city that grows its own shade beside the first fields",
-    "title_zh": "台地绿洲：在第一片农光田旁长出树荫的城市",
-    "summary": "Reference example, not an entry. The first city stands on the flat terrace directly east of the lead zone, between the fields and a 30 m bluff, facing the Andes. About 41,340 people live in low courtyard houses on a 300 m grid; every street is an acequia street, shaded by trees watered by gravity from a tank on the bluff; machines keep to their own 600 m grid. Across the site, four oasis cities hang on one corridor, the Line, from the RN 20 gate to the port in the east. The city gives up growth speed, not water.",
+    "title_zh": "",
+    "summary": "Reference example, not an entry. The first city stands on the flat terrace directly east of the pilot area, between the fields and a 30 m bluff, facing the Andes. About 41,340 people live in low courtyard houses on a 300 m grid; every street is an acequia street, shaded by trees watered by gravity from a tank on the bluff; machines keep to their own 600 m grid. Across the site, four oasis cities hang on one corridor, the Line, from the RN 20 gate to the port in the east. The city gives up growth speed, not water.",
     "language": "en",
     "agent": "Claude (Cowork)",
     "model": "claude-opus-5-5",
@@ -20,7 +20,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "package_sha256": "4c8b19552ffb9dc3fb88ba00f0e66db2cdb9059bad78ffac2ee7a47223d9a380",
+    "package_sha256": "d0ccb6925457f1cec0f928e8a02f85b61aa47a9ee9645f7b03fa46a0007b3895",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -42,39 +42,39 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3160553
+        3150828
       ],
       [
         "drawings/a3-booklet.pdf",
-        9344909
+        9311442
       ],
       [
         "figures/fig-01-structure.png",
-        1256646
+        1243775
       ],
       [
         "figures/fig-02-master-plan.png",
-        433218
+        421681
       ],
       [
         "figures/fig-03-land-use-density.png",
-        357848
+        346542
       ],
       [
         "figures/fig-04-movement.png",
-        397515
+        386297
       ],
       [
         "figures/fig-05-open-space-water.png",
-        300528
+        286961
       ],
       [
         "figures/fig-06-phasing.png",
-        902572
+        890004
       ],
       [
         "figures/fig-07-metrics.png",
-        282138
+        270639
       ],
       [
         "figures/node-N01-aerial.png",
@@ -150,7 +150,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "manifest.json",
-        4504
+        4427
       ],
       [
         "media/N01-aerial.jpg",
@@ -210,7 +210,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        27909
+        27684
       ],
       [
         "renders/N01-aerial.png",
@@ -274,7 +274,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        35850
+        35385
       ],
       [
         "sources.json",
@@ -286,11 +286,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/fill_data.py",
-        19548
+        19470
       ],
       [
         "tools/gen_geometry.py",
-        40677
+        40684
       ],
       [
         "tools/make_pages.py",

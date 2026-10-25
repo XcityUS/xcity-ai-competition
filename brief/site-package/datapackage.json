@@ -11,7 +11,7 @@
    "path": "boundaries/parcels_9_13.geojson",
    "mediatype": "application/geo+json",
    "description": "Parcels 9 and 13, exact",
-   "hash": "sha256:d219b31461fab0629b8ae2447deefb377a2cb6683ae83eecfec427ae3079af93",
+   "hash": "sha256:b6b6a45c87f66806712057da69868292945908a6425c7c13b1ae5e096ee4a6f4",
    "source": "SRC-KML"
   },
   {
@@ -19,16 +19,16 @@
    "path": "boundaries/scope_9_13.geojson",
    "mediatype": "application/geo+json",
    "description": "Site boundary (union)",
-   "hash": "sha256:620f9495f0271946e6882b5a8e4e4e3bb8c11c21f1c2026a6fa7fb0fb26b51b1",
+   "hash": "sha256:d1ba714fac3811ca51bbb4277b6e19ba8ceaacf24cc00b417c48b3bc1f458ce0",
    "source": "SRC-KML"
   },
   {
-   "name": "lead_zone",
-   "path": "lead-zone/lead_zone.geojson",
+   "name": "pilot_area",
+   "path": "pilot-area/pilot_area.geojson",
    "mediatype": "application/geo+json",
    "description": "Pilot area fields 01-03 (fixed)",
-   "hash": "sha256:8b6443faf4b715e5ee0a7cc7765f1271d8091b6fd38a771b456c8e1eae3e2932",
-   "source": "SRC-LEAD"
+   "hash": "sha256:fb8ff63d20f3cfd3c94891429944a92633d8dcff6f7437ecb9eda355ffafd4ba",
+   "source": "SRC-PILOT"
   },
   {
    "name": "roads_osm",
@@ -99,7 +99,7 @@
    "path": "terrain/terrain_summary_9_13.json",
    "mediatype": "application/json",
    "description": "Slope, flood and elevation figures",
-   "hash": "sha256:23a931cf35212207cd8034dd0d4a8126e3e72a5a41bfcebab90dd9dde03178eb",
+   "hash": "sha256:0d8580a1f95ad0e0c5bdbefec90c43b5f1262b8b8f32e3287c6b441569dcb12c",
    "source": "SRC-DEM"
   },
   {
@@ -107,7 +107,7 @@
    "path": "zoning/indicative_systems_9_13.json",
    "mediatype": "application/json",
    "description": "Five systems, indicative",
-   "hash": "sha256:d9f1a8d4f4d163f390372998cc3d8e0bc1799a4fdcfee41a8011d9fa9e9aab06",
+   "hash": "sha256:75179ae0781aa9d8961b44dec5510f40065c6ef28b1bd4bf74a7d5c161e68dd3",
    "source": "SRC-XCITY-INDICATIVE"
   },
   {
@@ -115,14 +115,14 @@
    "path": "nodes/design_nodes.json",
    "mediatype": "application/json",
    "description": "Ten key nodes - choose three",
-   "hash": "sha256:d2f9674c8450418829de491c897820658ade875b571c59b55477ef53706e8248"
+   "hash": "sha256:8b5080b837829fbc9c2229db112eb0677d03937893a31a546936fdf4ab284a4f"
   },
   {
    "name": "areas",
    "path": "areas.json",
    "mediatype": "application/json",
    "description": "Every area figure, one place",
-   "hash": "sha256:4c8d324905a6b8c7af3b99f8d28851417c0400cbe562b765b8d10c278981a141"
+   "hash": "sha256:ce07af1c08c491d1be0690f703df1038c1386419fecd7768e29a64fd7e330c0f"
   }
  ]
 }

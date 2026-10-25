@@ -124,7 +124,7 @@ class Pkg:
         self.geo = {k: [(p, u(g)) for p, g in v] for k, v in self.geo_ll.items()}
         self.site = u(xc.site_boundary())
         self.parcels = [(p, u(g)) for p, g in xc.features(os.path.join(xc.SITE, "boundaries", "parcels_9_13.geojson"))]
-        self.lead = u(xc.lead_zone())
+        self.lead = u(xc.pilot_area())
         self.channels = [(p, u(g)) for p, g in xc.channels()]
         ts = xc.site_json("terrain/terrain_summary_9_13.json")["files"]
         self.hs = np.array(Image.open(os.path.join(xc.SITE, "terrain", ts["hillshade_utm"])))
@@ -1138,7 +1138,7 @@ def draw_fig(pkg, key, num, title, sub, panel, size=A3):
 def draw_node_sheet(pkg, nid, size=A3):
     meta = pkg.node_meta.get(nid, {})
     p, g = pkg.nodes[nid]
-    fig = new_page(pkg, size, "NODE " + nid, "%s %s" % (meta.get("en", nid), ("· " + meta.get("zh", "")) if _CJK else ""),
+    fig = new_page(pkg, size, "NODE " + nid, "%s %s" % (meta.get("en", nid), ("· " + meta["zh"]) if _CJK and meta.get("zh") else ""),
                    p.get("name", "") or "Scale 3 · detailed design")
     pa, _ = view_image(pkg, "%s-aerial" % nid)
     pe, _ = view_image(pkg, "%s-eye-day" % nid)

@@ -6,7 +6,7 @@ Everything is built in UTM 19S (metres) and written as lon/lat GeoJSON.
 
 Scale 1  the whole site: a chain of oasis cities on one corridor ("the Line"), fields on the flats, PV and compute
          on the fans, mountain and washes kept as reserve.
-Scale 2  the first city, on the flat lower terrace directly east of the lead zone: a 300 m superblock grid of
+Scale 2  the first city, on the flat lower terrace directly east of the pilot area: a 300 m superblock grid of
          low courtyard housing, machines on a 600 m grid, acequia streets fed by gravity from a tank on the bluff.
 Scale 3  N01 arrival along the first fields, N02 a housing superblock, N10 the main square in heat and Zonda.
 """
@@ -28,7 +28,7 @@ GEO = os.path.join(PKG, "geometry")
 RND = random.Random(913)
 
 SITE = xc.to_utm(xc.site_boundary())
-LEAD = xc.to_utm(xc.lead_zone())
+LEAD = xc.to_utm(xc.pilot_area())
 CH = [(p, xc.to_utm(g)) for p, g in xc.channels()]
 FLOOD = unary_union([xc.to_utm(shape(f["geometry"])) for f in
                      xc.site_json("water/flood_sensitive_dem.geojson")["features"]])
@@ -341,7 +341,7 @@ sx0, sy0 = X0 + 4 * S, Y0 + 5 * S
 Bd(box(sx0 + 30, sy0 + 30, sx0 + 270, sy0 + 50), 1, "open_space", "Grandstand canopy", h=7, form="canopy")
 Bd(box(sx0 + 30, sy0 + 220, sx0 + 140, sy0 + 270), 2, "civic", "Sports hall", h=12)
 
-# ---- the edge with the lead zone: alameda windbreak strip and orchards
+# ---- the edge with the pilot area: alameda windbreak strip and orchards
 EDGE = box(572190, 6549000, X0, 6550780).difference(LEAD.buffer(15))
 L("open_space", EDGE, "Alameda: poplar windbreak and arrival walk along the first fields")
 L("agriculture", box(571500, 6547700, 572700, 6549000).difference(LEAD.buffer(15)),
@@ -450,10 +450,10 @@ for p, g in list(bldg):
         dropped.append(p.get("name"))
         bldg.remove((p, g))
 if dropped:
-    print("dropped buildings (lead zone, flood band or outside the master area):", dropped[:5], len(dropped))
+    print("dropped buildings (pilot area, flood band or outside the master area):", dropped[:5], len(dropped))
 for p, g in move:
     if g.intersects(LEAD.buffer(-1)):
-        print("WARNING route enters the lead zone:", p["name"])
+        print("WARNING route enters the pilot area:", p["name"])
 
 # ================================================================ scale 1: the whole site
 def rect_ll(lon, lat, w, h):
@@ -501,7 +501,7 @@ for sysname, g, nm in [("living", living, "Four oasis cities on the Line (long t
                        ("industry", industry, "The Line (power, water, data, autonomous freight), settlement and gateway industry"),
                        ("port", port, "Port of entry and free-trade yards (east wing)"),
                        ("energy_compute", energy, "PV on the fans, compute campuses"),
-                       ("agri_production", agri, "Agrivoltaics and irrigated fields on the flats, including the lead zone"),
+                       ("agri_production", agri, "Agrivoltaics and irrigated fields on the flats, including the pilot area"),
                        ("reserve", reserve, "Pie de Palo, the washes as river parks, steep ground and open desert")]:
     g = clean(g, 3e4)
     if not g.is_empty:
@@ -677,7 +677,7 @@ print("master %.2f km2, land %d, buildings %d, movement %d (+%d interfaces)" % (
                                                                                  len(bldg), len(move), len(inter)))
 print("phases", [round(g.area / 1e6, 1) for p, g in phasing])
 print("arrival road inside site km", round(ARR.intersection(SITE).length / 1000, 2),
-      "crosses lead zone:", ARR.intersection(LEAD.buffer(-1)).length)
+      "crosses pilot area:", ARR.intersection(LEAD.buffer(-1)).length)
 halls = [g for p, g in bldg if p.get("name", "").startswith("Data hall")]
 homes = [g for p, g in bldg if p["use"] == "residential"]
 print("halls to nearest homes m", round(min(h.distance(f) for h in halls for f in homes)))

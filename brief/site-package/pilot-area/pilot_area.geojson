@@ -5,9 +5,8 @@
   {
    "type": "Feature",
    "properties": {
-    "id": "LZ-01",
+    "id": "PA-01",
     "name_en": "Pilot area field 01",
-    "name_zh": "试点区 01",
     "arrays": 1000,
     "array_area_km2": 4.0,
     "outline_km2": 4.64,
@@ -128,9 +127,8 @@
   {
    "type": "Feature",
    "properties": {
-    "id": "LZ-02",
+    "id": "PA-02",
     "name_en": "Pilot area field 02",
-    "name_zh": "试点区 02",
     "arrays": 1000,
     "array_area_km2": 4.0,
     "outline_km2": 4.66,
@@ -183,9 +181,8 @@
   {
    "type": "Feature",
    "properties": {
-    "id": "LZ-03",
+    "id": "PA-03",
     "name_en": "Pilot area field 03",
-    "name_zh": "试点区 03",
     "arrays": 1000,
     "array_area_km2": 4.0,
     "outline_km2": 4.67,

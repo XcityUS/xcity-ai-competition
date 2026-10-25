@@ -2,7 +2,7 @@
 
 **Reference example — not a competition entry.** This package shows what a complete, gate-passing submission looks like and how it is displayed. It is one possible reading of the site, written to be argued with; copying any of it fails gate G3.
 
-## 1. Position · 定位
+## 1. Position
 
 If agents and robots take over much of the work, a city in this desert no longer has to be built around jobs and commuting. It should be built around what people will do with the time they get back: be outside together. Here that means two things that are scarce: shade and water.
 
@@ -16,21 +16,21 @@ The sentence a resident should be able to repeat is: *the water comes down our s
 
 **Visual standard.** One sans-serif family in two weights. Colour does a job: ochre for land and buildings, desert green for water and planting, slate for machine territory. Signs sit on the ground rather than on poles. The paving of a shaded street changes texture 20 m before every machine crossing.
 
-## 2. Site reading · 场地解读
+## 2. Site reading
 
 The site is 1,656 km², and most of it should not be built on. In this scheme 899 km² is reserve: the Pie de Palo range, the DEM-derived flood-sensitive band along the washes, steep ground and open desert. The city's question is not where there is land but where to start. Five readings decided it.
 
-1. **Start beside what already exists.** The lead zone, three agrivoltaic fields in the south-west of parcel 13, is built first by XCITY. The first city takes the ground directly east of field 03 and shares a 1.8 km edge with it. Its first jobs, its first maintenance yard and its first visitors are already there.
-2. **The terrace.** East of the lead zone the DEM shows a flat lower terrace, 2.1 × 1.8 km at 620–650 m, under 2% slope and outside the flood band. It is closed on four sides: the fields to the west, a bluff 20–30 m high to the east, a terrace slope to the north and the site boundary to the south. A city of courtyard blocks fits on it without grading.
+1. **Start beside what already exists.** The pilot area, three agrivoltaic fields in the south-west of parcel 13, is built first by XCITY. The first city takes the ground directly east of field 03 and shares a 1.8 km edge with it. Its first jobs, its first maintenance yard and its first visitors are already there.
+2. **The terrace.** East of the pilot area the DEM shows a flat lower terrace, 2.1 × 1.8 km at 620–650 m, under 2% slope and outside the flood band. It is closed on four sides: the fields to the west, a bluff 20–30 m high to the east, a terrace slope to the north and the site boundary to the south. A city of courtyard blocks fits on it without grading.
 3. **Water can run downhill.** The top of the bluff is at 673 m, 25–50 m above the city. A covered head tank there feeds every acequia by gravity. The city's own fall from east to west carries the water through the streets to the orchards, the way San Juan's own oasis works.
 4. **The road comes from the south.** The nearest national road, RN 20, is 40.7 km beyond the site's south-west tip, towards the city of San Juan. The arrival road runs 6.2 km inside the site, between field 01 and the boundary and then up the edge of the fields. It does not cross a single wash.
 5. **The Zonda comes from the west to north-west** (A-12). The fields, a double alameda of poplars along the west edge and a tree belt along the top of the north slope stand between the wind and the streets.
 
 ![Structure](figures/fig-01-structure.png)
 
-Across the whole site the six systems take, recomputed from `structure.geojson`: agri-production 642 km² (including the lead zone), energy and compute 58 km², industry and the Line 30 km², living 21 km², port 3 km² and reserve 899 km².
+Across the whole site the six systems take, recomputed from `structure.geojson`: agri-production 642 km² (including the pilot area), energy and compute 58 km², industry and the Line 30 km², living 21 km², port 3 km² and reserve 899 km².
 
-## 3. Energy and compute · 能源与算力
+## 3. Energy and compute
 
 **Siting.** The compute campus sits on the upper terrace beyond the bluff, 2.4 km from the nearest homes. That is far enough for noise and heat, and the bluff hides it. It overturns the organiser's indicative compute point, which leans to the west-central upland for cooling water. With dry cooling the campus does not need a channel. Putting it beside the first fields and the first city puts its power, its maintenance and its jobs where phase one is.
 
@@ -42,7 +42,7 @@ Across the whole site the six systems take, recomputed from `structure.geojson`:
 
 **Waste heat: 9%, and why so little.** Heat leaves the halls at 35–45 °C. It goes to the four greenhouses beside the campus (night heating in winter) and, by an insulated main down the bluff, to the hot water of the civic quarter and the market. That is about 25 GWh of about 300 GWh (A-13). The homes are 2.4 km away and a desert city needs heat only on winter nights. The scheme says so rather than inventing a summer use.
 
-## 4. Water · 水
+## 4. Water
 
 **Balance in phase one at full occupancy (m³ a year, assumed — A-01, A-04, A-08, A-09).**
 
@@ -73,7 +73,7 @@ Steps 1–6 save about 1.0 million m³ before anyone's tap is touched; step 7 cl
 
 ![Open space and water](figures/fig-05-open-space-water.png)
 
-## 5. Human and machine · 人与机器
+## 5. Human and machine
 
 Three networks, recomputed from `movement.geojson`: 39.8 km for people, 29.5 km for machines and 11.7 km shared.
 
@@ -92,7 +92,7 @@ The lanes stop short of the machine streets, so people cross only at the tables.
 
 ![Movement](figures/fig-04-movement.png)
 
-## 6. Programme and production · 功能与产业
+## 6. Programme and production
 
 **Phase one: 7,891 jobs in the city, 17,224 dwellings, 41,340 residents** (A-10, A-11).
 
@@ -104,7 +104,7 @@ The lanes stop short of the machine streets, so people cross only at the tables.
 | Personal and home care | 700 |
 | Orchards, acequias and landscape crews | 420 |
 | Kindergartens and health posts | 420 |
-| Lead-zone field operations, living in the city | 420 |
+| Pilot-area field operations, living in the city | 420 |
 | Town hall, open-data office and administration | 280 |
 | Agri-processing, cold store and packing | 260 |
 | Clinic | 260 |
@@ -132,7 +132,7 @@ This is the scheme's honest answer to *labour no longer defines the day*: the ci
 
 **What is produced, and for whom.** Compute services sold outward. Olive oil, pistachio and greenhouse vegetables, first for the city and then for San Juan. Jojoba and forage from the fields. Repair, refurbishment and small fabrication for the PV fields and robot fleets across the whole site keep the maintenance work, and its wages, inside the city.
 
-## 7. Urban form · 城市形态
+## 7. Urban form
 
 **Scale 1 — the whole site.** Four oasis cities in the long term, each of about 40,000 and each limited by its own water (A-15), strung on one corridor called *the Line*. The Line is a 300 m band carrying power, water, data and autonomous freight. It runs from the RN 20 gate north along the western valley to the north-west plain, across the north-centre and east along the band of flat ground to the port in the east wing and on towards RP 510:
 
@@ -143,7 +143,7 @@ This is the scheme's honest answer to *labour no longer defines the day*: the ci
 
 PV and compute take the gentle fans, at 2–4.5% slope. Agrivoltaics take the flats under 2%. The washes stay open as river parks. Pie de Palo stays mountain.
 
-**Scale 2 — the master design area, 36.5 km².** It runs from the lead zone's east edge to the upper terrace, and from the site boundary north to the north terrace. Inside it:
+**Scale 2 — the master design area, 36.5 km².** It runs from the pilot area's east edge to the upper terrace, and from the site boundary north to the north terrace. Inside it:
 
 - **The city** on the lower terrace: a grid of 7 × 6 superblocks of 300 m, 2.1 × 1.8 km.
 - **The edge with the fields:** orchards and the alameda along the west and south.
@@ -172,13 +172,13 @@ Recomputed from the geometry:
 
 **Climate logic.** Courtyards are the oldest answer to this climate. Their thermal mass carries the day–night swing, the bottom of the court stays shaded at noon, and their backs are turned to the Zonda. Streets run north–south and east–west, as in San Juan, so every acequia street has a shaded side at every hour. The trees sit on the channels and not in irrigated lawns.
 
-**The two parcels.** Parcel 13 holds the lead zone, the first city and its fields. Parcel 9 holds the Line, three of the four oases, the campuses and the east wing.
+**The two parcels.** Parcel 13 holds the pilot area, the first city and its fields. Parcel 9 holds the Line, three of the four oases, the campuses and the east wing.
 
 ![Master plan](figures/fig-02-master-plan.png)
 
 ![Land use and density](figures/fig-03-land-use-density.png)
 
-## 8. Governance and data · 治理与数据
+## 8. Governance and data
 
 **What the city measures.** Power generated, stored and used, by hour; compute load and availability; water abstracted per well, drawdown, treated, reused and released into each acequia; heat delivered; fleet movements at each interface.
 
@@ -197,7 +197,7 @@ Recomputed from the geometry:
 
 The order is published in the ledger, so nobody learns it during the fault.
 
-## 9. Phasing · 分期
+## 9. Phasing
 
 ![Phasing](figures/fig-06-phasing.png)
 
@@ -220,13 +220,13 @@ The order is published in the ledger, so nobody learns it during the fault.
 
 **Irreversible decisions in phase one, and why they are acceptable.**
 
-1. *Starting on the terrace beside the lead zone.* The first city's place fixes the Line's southern end and the arrival from San Juan. It is acceptable because the terrace is the one flood-free flat beside the fields that XCITY is building anyway.
+1. *Starting on the terrace beside the pilot area.* The first city's place fixes the Line's southern end and the arrival from San Juan. It is acceptable because the terrace is the one flood-free flat beside the fields that XCITY is building anyway.
 2. *The gravity acequias.* The tank's height and the street grades are set together; once the channels are laid the street levels cannot change. It is acceptable because the terrace's natural fall is what makes the system work without pumps.
 3. *The 600 m machine grid.* It fixes where freight and shuttles can ever go inside the city. It is acceptable because 300 m between machine streets keeps every door within reach and leaves the shaded streets to people.
 4. *Low courtyard blocks.* They set the density and the seismic class. It is acceptable because they work without air conditioning in this climate, and density can rise in the upper town.
 5. *The river park on the flood band.* Making it the city's park makes the corridor permanent, and that is the point.
 
-## 10. Key nodes · 重点节点
+## 10. Key nodes
 
 The three nodes are where the city's claims could fail for the people in it:
 
@@ -282,7 +282,7 @@ At 45 °C people sit under the canopy and in the grove. In a Zonda they go down 
 ![Aerial](figures/node-N10-aerial.png)
 ![Eye level](figures/node-N10-eye.png)
 
-## 11. Metrics and evidence · 指标与证据
+## 11. Metrics and evidence
 
 **Computed from the geometry (gate G4):** master area 36.48 km², site coverage 2.9%, GFA 2,309,985 m², FAR 0.06, open space 9.9%, 30 interfaces, shaded walking 89.5%, and the area per system across the site.
 
@@ -290,7 +290,7 @@ At 45 °C people sit under the canopy and in the grove. In a Zonda they go down 
 
 ![Metrics](figures/fig-07-metrics.png)
 
-## 12. Risks and failure modes · 风险与失效
+## 12. Risks and failure modes
 
 - **Wellfield decline** is the most likely failure, because nobody knows the aquifer's recharge. *Response:* monthly drawdown is published in the ledger; the curtailment ladder in section 4 applies; phase two cannot start while drawdown exceeds 0.5 m a year. *Who decides:* the water board, on the auditor's readings.
 - **Flash flood** is certain over the city's life. *Response:* the city is placed outside the flood-sensitive band, 4–15 m above the wash bed, rather than raised inside it (A-18). Storm water from the bluff is led round the city in two swales to the river park, and the river park is never built on. *Who decides:* the plan, in advance; the water board owns the swales.
@@ -298,7 +298,7 @@ At 45 °C people sit under the canopy and in the grove. In a Zonda they go down 
 - **Zonda and dust.** *Response:* the alameda and tree belt, courts and lanes for shelter, the wind gallery and sunken court in the square, panel cleaning after each event, and cooler intakes filtered and facing east. *Who decides:* the operators, on a shared forecast.
 - **The operator leaves** (section 8): the city keeps its power, the halls are convertible, and the greenhouses' heat is replaced by heat pumps.
 
-## 13. Declared trade-off · 取舍声明
+## 13. Declared trade-off
 
 **Objective not optimised:** growth speed. The city does not grow faster than its measured water allows.
 
@@ -308,9 +308,9 @@ At 45 °C people sit under the canopy and in the grove. In a Zonda they go down 
 
 **Who bears it:** the developer and investors, through slower returns, and households on the waiting list. The aquifer and the people already living here do not.
 
-## 14. Sources, assumptions and AI disclosure · 来源、假设与 AI 披露
+## 14. Sources, assumptions and AI disclosure
 
-**Organiser data used:** parcel boundaries and lead zone (SRC-KML, SRC-LEAD), terrain, channels and the flood-sensitive band (SRC-DEM, Copernicus WorldDEM-30), roads (SRC-OSM), and indicative systems (SRC-XCITY-INDICATIVE). The scheme follows the indicative living points for Oases 2–4 and deliberately does not follow the compute point.
+**Organiser data used:** parcel boundaries and pilot area (SRC-KML, SRC-PILOT), terrain, channels and the flood-sensitive band (SRC-DEM, Copernicus WorldDEM-30), roads (SRC-OSM), and indicative systems (SRC-XCITY-INDICATIVE). The scheme follows the indicative living points for Oases 2–4 and deliberately does not follow the compute point.
 
 **Sources:** PVGIS (S-01) and NASA POWER (S-02) are named as the tools for checking the PV yield, cooling hours and storage; INPRES-CIRSOC 103 (S-03) is named for seismic design. No figure has been taken from them yet. The values in this example are assumptions A-01 to A-18, each with its basis, and an entry would replace them with runs of those tools.
 

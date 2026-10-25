@@ -1,12 +1,10 @@
-# Submission guide · 提交指南
+# Submission guide
 
 The complete, formal description of a submission package: what goes where, what each file must contain, the commands, and what the twelve gates check. `AGENTS.md` is the short version of this document.
 
-提交包的完整说明：每个文件放在哪里、写什么、用什么命令、十二道门禁检查什么。`AGENTS.md` 是本文的简版。
-
 ---
 
-## 1. Setup · 环境
+## 1. Setup
 
 ```bash
 git clone https://github.com/XcityUS/xcity-ai-competition.git
@@ -19,7 +17,7 @@ Chinese text on the drawings needs a CJK font (e.g. `fonts-noto-cjk` on Linux); 
 
 ---
 
-## 2. The package · 提交包
+## 2. The package
 
 ```
 submissions/<github-login>/<proposal-slug>/
@@ -54,7 +52,7 @@ submissions/<github-login>/<proposal-slug>/
 
 ---
 
-## 3. Commands · 命令
+## 3. Commands
 
 | Step | Command |
 |---|---|
@@ -71,7 +69,7 @@ Run `render_views.py` again whenever the geometry changes, and `make_figures.py`
 
 ---
 
-## 4. Geometry · 几何
+## 4. Geometry
 
 All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**. Everything must lie inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance). Areas and lengths are computed geodesically on WGS 84 by the scripts; you never compute them yourself — you declare what the self-check will recompute.
 
@@ -86,7 +84,7 @@ All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**.
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
 | `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
-Do not build on the pilot area (`brief/site-package/lead-zone/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
+Do not build on the pilot area (`brief/site-package/pilot-area/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
 
 Geometry types must match the table exactly: clipping often leaves a GeometryCollection — keep only its polygon parts. `compute_metrics.py` and `make_figures.py` both stop on a wrong type and say how to fix it.
 
@@ -99,7 +97,6 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
   "schema_version": 1,
   "competition": "xcity-ai-competition",
   "title": "Scheme title",
-  "title_zh": "可选中文标题",
   "slug": "<proposal-slug>",
   "thesis": "One sentence: what this city is built around. Printed large on the booklet's idea page.",
   "summary": "Two to four sentences, up to 700 characters.",
@@ -149,7 +146,7 @@ Schema: `schema/manifest.schema.json`. A tier-3 view may point at your own rende
 - **evidence** is one of `computed`, `sourced`, `assumed`, `indicative`, `declared` (`brief/requirements.json`).
 - **Scope:** unless a requirement says otherwise, M1–M12 describe phase one at full build-out and occupancy; add long-term figures under keys of your own.
 - `computed` → `computed_from` names the geometry file; the self-check recomputes the value (2% tolerance; counts exact).
-- `sourced` → `source` is an id in your `sources.json`, or one of the site package ids (`SRC-KML`, `SRC-DEM`, `SRC-OSM`, `SRC-LEAD`, `SRC-XCITY-INDICATIVE`).
+- `sourced` → `source` is an id in your `sources.json`, or one of the site package ids (`SRC-KML`, `SRC-DEM`, `SRC-OSM`, `SRC-PILOT`, `SRC-XCITY-INDICATIVE`).
 - `assumed` → `assumption` is an id in your `assumptions.json`.
 - `indicative` → from the organiser's indicative material; name it in `source`.
 - `declared` → a figure the scheme chooses (IT load, jobs programme, dwellings, the machine rule); `note` says how the scheme arrives at it, and any external rate behind it goes in `assumptions.json`.
@@ -189,13 +186,13 @@ Start from `templates/proposal.template.md`. Keep the fourteen numbered headings
 
 ---
 
-## 10. Images, video, interactive pages · 图像、视频与交互网页
+## 10. Images, video, interactive pages
 
 See `docs/visual-guide.md`. In short: `render_views.py` draws the required node views for free; everything under `media/` is registered in `image_provenance.json`, with the render it was made from as `control_image`; any `.html` anywhere in the package must load nothing from the network (gate G5).
 
 ---
 
-## 11. The twelve gates · 十二道门禁
+## 11. The twelve gates
 
 | Gate | Checks |
 |---|---|
@@ -214,7 +211,7 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 
 ---
 
-## 12. Pull request · 提交 PR
+## 12. Pull request
 
 1. Fork the repository, create a branch, add only your directory.
 2. Run `python scripts/finalize_submission.py submissions/<login>/<slug>` until it prints PASS.

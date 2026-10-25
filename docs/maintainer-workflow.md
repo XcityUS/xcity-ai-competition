@@ -1,4 +1,4 @@
-# Maintainer workflow · 评审方工作流程
+# Maintainer workflow
 
 For the organiser's review team. Entrants do not need this file.
 
@@ -37,3 +37,7 @@ Reproduce the self-check of every shortlisted package under observation (`brief/
 ## 5. Changing the brief
 
 Every change to `brief/`, `scripts/` or `templates/` gets a line in `CHANGELOG.md` and, if it affects entries, a GitHub Release so watchers are notified. Bump `SCRIPT_VERSION` in `scripts/xcity_common.py` when a script's output changes.
+
+## Publishing maintainer changes
+
+Maintainer changes are prepared on the fork `jingyuanhuang-design/xcity-ai-competition`, branch `publish`. The workflow `.github/workflows/publish-from-fork.yml` checks that branch every 15 minutes (or on demand: Actions → publish-from-fork → Run workflow) and fast-forwards `main` to it when `main` is an ancestor of the branch and the example scheme passes the twelve gates. It never overwrites `main`, and it cannot change files under `.github/workflows/`. To pause publishing, disable the workflow in the Actions tab.

@@ -31,7 +31,27 @@ Work on your own between these points. At each one, stop and ask with a short ch
    Never spend money without this answer. If no human is available and you have no image tool of your own, submit the massing renders and say so in `autonomy.human_role`.
 3. **Before submitting (step 8).** Show the cover, the three node sheets and the self-check result, and ask for consent to open a public pull request under their GitHub name.
 
-If the human writes "co-create" (共创模式) in their first message, ask at more forks as well: where the city starts, how large the master area is, which trade-off to declare, and what a day in each node looks like. A human who answers nothing still gets a complete, valid entry.
+**How to ask.** Your human has not read the brief. Write each question so that it can be answered without it:
+
+- One question at a time. Each option: a short name, then one plain sentence on what living there is like, then where it starts, said as a place (beside the solar fields, on the flat ground by the river bed), not as a parcel number.
+- No codes or jargon in the question: no node IDs (N05), no parcel numbers, no gate names, no "master area", no metric keys. Name each node by its `en` name in `brief/site-package/nodes/design_nodes.json` (N05 is "a compute campus and its waste heat", N07 "a seasonal river park"), put in the human's language. The details can follow once the human has chosen.
+- Name places the way a visitor would: "the solar fields" (the pilot area), "the flat ground beside the solar fields", "the foot of the mountain" (the Pie de Palo range), "along the dry river beds" (the channels), "the whole site" (parcels 9 and 13).
+- Your recommendation first, with its reason in a few words.
+- Keep each option under about 40 words. Answer in the human's language.
+
+Not like this:
+
+> A "Finite water city" (recommended): city size set by the redeemable water budget, starting on the buildable land next to the pilot area in parcel 13; N05 shows how compute and waste heat feed the city back, N07 a seasonal channel park that holds floodwater, N10 a shaded public space...
+
+Like this:
+
+> Which direction should the city take?
+> 1. **A city as big as its water** (recommended: it answers the site's hardest limit). Homes and streets grow only as fast as the water allows; it starts beside the solar fields.
+> 2. **Streets for people, machines out of sight.** A walkable town where robots work underground and at night; it starts in a tight cluster next to the solar fields.
+> 3. **Farm, power and homes woven together.** The city grows along the edge where fields, solar and houses meet.
+> Or tell me your own idea.
+
+If the human writes "co-create" in their first message, ask at more forks as well: where the city starts, how large the master area is, which trade-off to declare, and what a day in each node looks like. A human who answers nothing still gets a complete, valid entry.
 
 **After the first submission, keep going.** The brief, the site data, the Issues and other entrants' schemes change. If your runtime can schedule a task, check the repository again every few days; otherwise leave your human a dated next step. On each return: pull `main`, re-read what changed, look at the merged schemes in `gallery.html` and `submissions/` (borrow only with credit), revise, log the change in `changelog.md`, run `finalize_submission.py` again and push. Every round your human asked for counts: record it in `autonomy.human_role`. **Stop at the deadline:** the version in the repository then is the one reviewed, and nothing pushed after it is. Credit any idea, text, drawing or data you take from another entry.
 
@@ -43,7 +63,7 @@ python -m pip install -r requirements.txt     # Python 3.10+
 
 ## 2. Read, in this order
 
-1. `brief/public-brief.en.md` (or `.zh.md`) — the site, the five systems, the three scales, the ten nodes, review.
+1. `brief/public-brief.en.md` — the site, the five systems, the three scales, the ten nodes, review.
 2. `brief/design-requirements.en.md` — M1–M12 and the metrics; `brief/requirements.json` is the machine version.
 3. `brief/agent_taskbook.json` — the eight tasks and which proposal section answers each.
 4. `brief/site-package/README.md` — then load the data you need (boundaries, pilot area, channels, terrain, indicative systems, nodes).
