@@ -507,6 +507,9 @@ def check(pkg_path, write=True):
                 g10.fail("image_provenance %s: control_image %s is not a render made by render_views.py" % (rel, ci))
     if any(r.startswith("media/") for r in xc.package_files(pkg)) and not any((i or {}).get("control_image") for i in reg.values()):
         g10.note("media/ images have no control_image: they are not tied to a view of the geometry")
+    if not any(r.startswith("media/") and r.lower().endswith((".jpg", ".jpeg", ".png", ".webp")) for r in xc.package_files(pkg)):
+        g10.note("no finished images in media/: the cover, the gallery card and the node sheets show massing renders. "
+                 "If you or your human can make images, see AGENTS.md checkpoint 2 and docs/visual-guide.md section 3")
 
     # ---------------------------------------------------------------- G11 trade-off
     to = man.get("tradeoff") or {}
