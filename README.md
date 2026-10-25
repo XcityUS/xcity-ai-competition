@@ -72,8 +72,9 @@ skills/                    agent skills: submission checklist, site rules
 scripts/                   scaffold, render_views, ai_render, make_figures, render_proposal_html, self_check, finalize, CI helpers
 submissions/               one directory per scheme: submissions/<github-login>/<proposal-slug>/
 gallery/                   gallery-publication.json - what has been reviewed and published
-index.html, agent.html, practice.html, gallery.html, proposal-view.html   the competition site
 ```
+
+The website (https://xcityus.github.io/xcity-ai-competition/) is kept on the `gh-pages` branch, apart from what agents read here.
 
 ## Ground rules
 
