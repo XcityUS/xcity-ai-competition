@@ -1,74 +1,104 @@
-# Convocatoria para Estudios de Diseño · Etapa 1: convocatoria de calificaciones
+# Convocatoria para Estudios de Diseño · Bases
 
-> English: `brief/firm-track.en.md`
+> English: `brief/firm-track.en.md` · Las mismas bases en PDF (inglés): `brief/design-practice-brief.en.pdf`. Si hay diferencias, rige la versión en inglés.
 
-XCITY organiza dos convocatorias independientes sobre un mismo sitio. Esta, la **Convocatoria para Estudios de Diseño**, busca equipos profesionales capaces de proponer un diseño urbano de verdadera calidad espacial, y con los que valga la pena continuar el trabajo. La otra, el Desafío de Planificación Autónoma con Agentes de IA, evalúa si un agente de IA puede planificar por sí mismo; tiene sus propias bases y su propia evaluación. Ambas comparten solo el sitio y sus condiciones: **`brief/site-conditions.en.md`**.
+XCITY organiza dos convocatorias independientes sobre un mismo sitio. Esta, la **Convocatoria para Estudios de Diseño**, busca estudios de diseño urbano y planificación capaces de proponer una ciudad de verdadera calidad espacial y de llevarla más lejos. La otra, la Open Agent Call, pone a prueba si un agente de IA puede planificar por sí mismo; tiene sus propias bases y su propia evaluación. Ambas comparten el sitio y sus condiciones (**`brief/site-conditions.en.md`**) y se evalúan y clasifican por separado.
 
 | | |
 |---|---|
 | Organizador | XCITY |
 | Sitio | Parcelas 9 y 13, San Juan, Argentina — 1.656 km². Condiciones comunes: `brief/site-conditions.en.md`; datos: `brief/site-package/` |
-| Procedimiento | Dos etapas: primero calificaciones; luego diseño por los seleccionados |
-| Idiomas | Español, inglés o chino |
+| Procedimiento | Dos etapas: primero calificaciones; diseño por los equipos preseleccionados |
+| Inscripción | Gratuita: postular y participar no tiene costo |
+| Idiomas | Etapa 1 en español, inglés o chino; etapa 2 en inglés |
 | Contacto | competition@xcity.ai |
 
 ---
 
-## 1. Procedimiento
+## 1. Qué busca XCITY con esta convocatoria
 
-**Etapa 1 · Calificaciones (este documento).** Abierta a todo estudio que cumpla la sección 2. **No se pide diseño**: se valoran el estudio, sus trabajos pertinentes y el equipo principal. El organizador revisa las postulaciones y elabora una lista de seleccionados. Ningún estudio asume trabajo de diseño antes de conocer sus condiciones.
+Un marco espacial para todo el sitio, una ciudad de primera fase capaz de funcionar por sí sola y un diseño urbano representativo que un equipo pueda seguir desarrollando. No un edificio aislado, un ejercicio de imagen ni una imagen del futuro.
 
-**Etapa 2 · Diseño, por los equipos seleccionados.** Los equipos seleccionados reciben **unas bases propias** — no las del desafío de agentes — junto con el paquete completo del sitio, una sesión informativa en línea y un período de consultas por escrito. El foco es la estructura espacial general, los distritos clave y la calidad de calles, manzanas y espacio público. Se entregan una memoria de diseño, un plan maestro, planos de análisis y planos de distritos y nodos clave. Todo equipo que entregue una propuesta conforme recibe un honorario.
+**Pregunta central.** Cuando la energía, el cómputo, los agentes y los robots pasan a ser la base de la producción, ¿cómo debe diseñarse la estructura, los usos y la vida pública de una ciudad nueva? Una propuesta responde a la vez: cómo se sostiene una ciudad basada en la energía solar y el cómputo en un terreno seco, sísmico y ventoso; cómo una economía con pocos empleos sostiene una ciudad con una vida pública completa; cómo comparten el espacio urbano las personas, los vehículos autónomos y los robots.
 
-**Evaluación y selección.** Un jurado evalúa las propuestas de la etapa 2 según la respuesta al sitio, la calidad espacial, la completitud profesional y el potencial de realización. Los equipos seleccionados presentan en línea. Los equipos elegidos continúan el trabajo con XCITY, en las condiciones fijadas con las bases de la etapa 2.
+## 2. Procedimiento
 
-## 2. Quién puede postular
+**Etapa 1 · Calificaciones.** Abierta a todo estudio que cumpla la sección 8. **No se pide diseño**: se evalúa el estudio, su obra pertinente y el equipo principal. El organizador revisa las postulaciones y elabora una lista corta. Ningún estudio asume trabajo de diseño antes de conocer sus condiciones.
 
-- El equipo lo encabeza un estudio legalmente constituido de diseño urbano, planificación urbana, arquitectura del paisaje o arquitectura.
-- El estudio líder ha realizado o dirigido, en los últimos quince años, al menos un plan maestro, nuevo distrito o nueva ciudad a escala de distrito (100 ha o más).
-- El equipo cubre diseño urbano, paisaje y ecología, energía e infraestructura, y agua. Los socios pueden nombrarse en la etapa 1 o completarse en la etapa 2.
-- Cada firma puede liderar o integrar un solo equipo.
-- No hace falta un socio argentino para postular. XCITY organiza la colaboración local del equipo seleccionado.
-- No pueden participar el personal del organizador, los miembros del jurado ni sus familiares directos.
-- Las personas individuales, los estudiantes y los equipos sin un estudio registrado son bienvenidos en el Desafío de Planificación Autónoma con Agentes de IA.
+**Etapa 2 · Diseño, por los equipos preseleccionados.** Reciben el paquete completo del sitio, una sesión informativa en línea y un período de consultas por escrito, y diseñan las cuatro capas de la sección 3. Cada equipo que entrega una propuesta conforme recibe un honorario.
 
-## 3. Qué enviar
+**Evaluación y selección.** Los equipos preseleccionados presentan en línea ante el jurado. Los equipos seleccionados pasan a un trabajo posterior con XCITY mediante un acuerdo separado.
 
-Un solo PDF, de hasta **20 páginas y 20 MB**, en español, inglés o chino, que incluya:
+## 3. Alcance: cuatro capas, un plan
 
-1. **Carta de postulación** firmada por el líder (1 página): nombre del estudio, persona de contacto, integrantes del equipo y sus roles. Use el formulario de postulación, `templates/firm-application-form.docx` (Word), como esta página.
-2. **Perfil del estudio** (hasta 3 páginas): tamaño, oficinas, disciplinas, premios relevantes.
-3. **Personas clave** (hasta 4 páginas): currículos breves del diseñador principal y de quienes trabajarán en el proyecto.
-4. **Proyectos de referencia**, de tres a cinco, de hasta 2 páginas cada uno: escala, su rol, cliente, estado, año. Al menos uno es un plan maestro o un nuevo distrito.
-5. **Declaración de enfoque** (hasta 2 páginas, sin diseño): cómo abordaría este sitio — agua, energía y cómputo, el sistema agrovoltaico ya en funcionamiento, las fases y, si las usa, cómo trabajaría con herramientas de IA.
+| Capa | Extensión | Decide | Profundidad |
+|---|---|---|---|
+| 1 · Todo el sitio | Los 1.656 km² | Dónde proteger, producir y construir; centros, corredores, capacidad y fases | Distritos y redes: posición, tamaño, vínculo y fundamento reales |
+| 2 · Primera fase | Trazada y justificada por el equipo | Dónde empieza la ciudad y cómo funciona por sí sola | Ordenamiento, servicios, infraestructura, primeras obras y ampliación |
+| 3 · Ampliación de diseño urbano | Elegida por el equipo dentro de la primera fase; sin superficie fija | Cómo el ordenamiento se convierte en calles, manzanas y espacio público | Manzanas, volúmenes, alturas, espacio público, interfaces y lineamientos |
+| 4 · Temas clave | Ubicados en las capas 1–3, con su fase | Cómo usan realmente el espacio las personas y las máquinas | Plantas, cortes, flujos y escenarios de operación |
 
-Anexos, que no cuentan dentro de las 20 páginas:
+**No es adecuado:** una propuesta que diseña bien un distrito y deja el resto del sitio como un diagrama de colores; temas clave que no se ubican en el plan que los contiene.
 
-- matrícula profesional o constancia de constitución legal;
-- una declaración firmada de que ningún integrante del equipo tiene conflicto de intereses con el organizador o el jurado.
+### Todo el sitio: diez decisiones
 
-## 4. Cómo postular
+1. Aptitud: qué se protege, qué se limita y qué es edificable, y por qué
+2. Estructura espacial: una ciudad o varios asentamientos, centros y dirección de crecimiento
+3. Marco de usos del suelo, amortiguamientos y reservas
+4. Población, empleos y capacidad por distrito
+5. Ecología, agua y espacio abierto
+6. Transporte, logística y el sistema persona–máquina
+7. Agua y servicios
+8. Energía, cómputo y comunicaciones
+9. Servicios públicos y centros
+10. Fases, reservas y orden de las obras
 
-Envíe el PDF a **competition@xcity.ai** con el asunto `XCITY - Design Practice Call - <nombre del estudio>`. El organizador confirma la recepción y puede proponer una breve llamada en línea durante la revisión de calificaciones.
+Profundidad: posición, tamaño, vínculo y fundamento; los edificios como capacidad y principios de forma. Los temas pueden compartir láminas, pero cada uno debe poder localizarse. Compare al menos dos maneras de iniciar la ciudad y explique por qué elige una.
 
-### Consultas y respuestas
+### Primera fase
 
-- Envíe su consulta a **competition@xcity.ai** con el asunto `XCITY - Design Practice Call - Question`, o hágala en público: abra un Issue en este repositorio con `[firm-track]` al comienzo del título.
-- Todas las respuestas se publican en este repositorio, iguales para todos los postulantes y sin indicar quién preguntó. No se responde en privado.
-- Una respuesta aclara las bases; no las modifica. Los cambios se hacen solo en los documentos y se registran en `CHANGELOG.md`.
-- La fecha límite para las consultas se publica con las bases oficiales.
+La primera fase resuelve vivienda, empleo, escuelas, salud y comercio, producción y mantenimiento, logística interna, acceso, energía, agua, reúso de aguas residuales, residuos y emergencias, y demuestra que funciona sin las fases siguientes. Las fases posteriores se activan por condiciones observables, no por fechas.
 
-## 5. Cómo se valoran las calificaciones
+**Escenario de referencia.** Todos los equipos trabajan con el mismo escenario de primera fase: **50.000 habitantes, 20.000 empleos, 200 MW de carga de cómputo, 1–3 GW de energía solar**. El agua para ese escenario no está asegurada: indique la fuente que supone. El tamaño a largo plazo lo argumenta la propuesta.
 
-1. Pertinencia de la experiencia para este proyecto — escala, clima, nuevo asentamiento, energía y agua.
-2. Calidad de los proyectos de referencia.
-3. La amplitud del equipo.
-4. La declaración de enfoque: ¿lee este sitio y no una ciudad genérica?
+**Ampliación de diseño urbano.** Elija un área de la ciudad de primera fase para llevarla a profundidad de diseño urbano: sin superficie fija, pero suficiente para poner a prueba un centro, vivienda típica y un borde productivo o de infraestructura.
 
-## 6. Se publica con las bases oficiales
+### Temas clave: tres en profundidad, ocho en principio
 
-La fecha límite de postulación, el número de equipos seleccionados, el calendario de la etapa 2, el jurado, el honorario, la propiedad intelectual y las condiciones del trabajo posterior para el equipo elegido se publican con las bases oficiales. Desde entonces rigen las bases oficiales, y los cambios se registran en `CHANGELOG.md`.
+Seis temas clave — **elija tres para desarrollar en profundidad**: llegada a la ciudad; comunidad residencial y prototipos; un lugar sereno al pie de la montaña; nodo logístico y puerta comercial; campus de cómputo y su calor residual; calles compartidas con vehículos sin conductor.
 
-## 7. Materiales
+Cinco temas estratégicos, más los tres temas clave no elegidos — **responda estos ocho en principio**: aterrizaje y estacionamiento de drones; agricultura solar y el borde de la ciudad; parques de cauces estacionales; lugares para el arte y la cultura; espacio público con calor, sol y viento.
 
-Las condiciones del sitio y el paquete del sitio están abiertos a los estudios desde ahora; las bases de la etapa 2 se entregan a los equipos seleccionados. Descárguelo todo en <https://github.com/XcityUS/xcity-ai-competition/archive/refs/heads/main.zip>.
+## 4. Condiciones dadas
+
+- **El área piloto no está abierta al diseño**: los campos agrovoltaicos 01–03 (13,9 km²) y el barrio residencial, fase 1 (2,48 km², solo contorno).
+- **El cómputo se ubica en clústeres POD**: centros de datos modulares de XCITY, cerca de los puntos de conexión solar; su disposición, caminos de servicio, calor residual y amortiguamientos son parte del diseño.
+- Las condiciones del sitio — agua, sismos, el Zonda, cauces secos, cielo oscuro, falta de camino, primera fase autónoma — están en `brief/site-conditions.en.md`.
+
+## 5. Qué enviar en la etapa 1
+
+Un solo PDF, de hasta **20 páginas y 20 MB**, en español, inglés o chino: carta de postulación con el formulario `templates/firm-application-form.docx` (1 página); perfil del estudio (hasta 3); personas clave (hasta 4); de tres a cinco proyectos de referencia (hasta 2 cada uno, al menos un plan maestro o nuevo distrito); declaración de enfoque sin diseño (hasta 2). Anexos, que no cuentan: matrícula profesional o constancia de constitución legal; declaración firmada de ausencia de conflicto de intereses.
+
+## 6. Qué entregar en la etapa 2
+
+Seis láminas A0 horizontales; un informe A3 de hasta 60 páginas con índice de requisitos a láminas; una memoria de hasta 800 palabras; una imagen de presentación; un libro de indicadores (XLSX, con unidad, alcance y fundamento) y archivos CAD / GIS. En inglés; las láminas no llevan nombre ni logotipo del estudio. Video y maqueta son opcionales; más páginas o medios no suman puntos.
+
+## 7. Criterios de evaluación
+
+**Etapa 1:** pertinencia de la experiencia, calidad de los proyectos de referencia, amplitud del equipo y declaración de enfoque. **Etapa 2:** el jurado verifica que la entrega esté completa y conforme, y luego evalúa: lectura del sitio y estructura espacial; sistemas y recursos; calidad urbana y espacial; fases y ejecución; coordinación profesional; presentación y comunicación. El peso de cada criterio se publica con las bases oficiales.
+
+## 8. Quién puede postular
+
+Equipos liderados por un estudio legalmente constituido de diseño urbano, planificación, arquitectura del paisaje o arquitectura; el líder completó o dirigió en los últimos quince años al menos un plan maestro, nuevo distrito o nueva ciudad de 100 ha o más; el equipo cubre diseño urbano, paisaje y ecología, energía e infraestructura, y agua. Cada firma lidera o integra un solo equipo; se aceptan consorcios. No hace falta socio argentino. No pueden participar el personal del organizador, los miembros del jurado ni sus familiares directos. Personas y estudiantes: bienvenidos en la Open Agent Call.
+
+## 9. Cómo postular
+
+**La inscripción es gratuita.** Envíe el PDF a **competition@xcity.ai** con el asunto `XCITY - Design Practice Call - <nombre del estudio>`. Consultas: asunto `XCITY - Design Practice Call - Question`, o un Issue en el repositorio que empiece por `[firm-track]`. Todas las respuestas se publican, iguales para todos.
+
+## 10. Honorario, jurado y condiciones
+
+Cada equipo preseleccionado que entrega una propuesta conforme recibe un honorario; los equipos seleccionados pasan a un trabajo posterior mediante acuerdo separado. Jurado de expertos en planificación, arquitectura, paisaje e infraestructura energética; no lo contacte. El trabajo debe ser original; puede usar herramientas de IA declarando cómo; no se afirma aprobación oficial alguna.
+
+## 11. Se publica con las bases oficiales
+
+Las fechas, el tamaño de la lista corta, el monto del honorario, los miembros del jurado, el peso de cada criterio, la autoría y la propiedad intelectual, y las condiciones del trabajo posterior.

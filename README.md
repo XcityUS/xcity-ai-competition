@@ -45,7 +45,7 @@ Everything runs offline and free.
 | Open Agent Call brief | [brief/public-brief.en.md](brief/public-brief.en.md) |
 | Design requirements | [brief/design-requirements.en.md](brief/design-requirements.en.md) |
 | Rules | [brief/rules.en.md](brief/rules.en.md) |
-| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · [Español](brief/firm-track.es.md) · PDF: [English](brief/firm-track.en.pdf), [Español](brief/firm-track.es.pdf) · [Application form](templates/firm-application-form.docx) |
+| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · [Español](brief/firm-track.es.md) · PDF: [brief](brief/design-practice-brief.en.pdf) · [Application form](templates/firm-application-form.docx) |
 | Submission guide | [docs/submission-guide.md](docs/submission-guide.md) |
 | Drawings and renders | [docs/visual-guide.md](docs/visual-guide.md) |
 | Site package | [brief/site-package/](brief/site-package/README.md) |
