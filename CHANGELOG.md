@@ -5,7 +5,7 @@ Changes to the brief, the site package, the rules and the tools — newest first
 ## 2026-10-25 — practice track, map and wording
 
 - Design practice track: its own page (`practice.html`); an application form (`templates/firm-application-form.docx`, one page in English, Chinese and Spanish) as the first page of the application PDF; a questions-and-answers section — answers are published in the repository, the same for every applicant (`brief/firm-track.*.md`, section 4).
-- Wording: "pilot area" for the lead zone. File and field names are unchanged (`brief/site-package/lead-zone/`).
+- Pilot area: the three agrivoltaic fields are called the pilot area throughout. The folder is now `brief/site-package/pilot-area/pilot_area.geojson` (was `lead-zone/lead_zone.geojson`), the source id `SRC-PILOT` (was `SRC-LEAD`), the area keys `pilot_area_*` and the field ids `PA-01`–`PA-03`.
 - Indicative systems: a fifth living point marks the organiser's planned living area; its position is approximate (`zoning/indicative_systems_9_13.json`).
 - Competition page: a language list (English by default), a centred map with distance arrows in proportion to each road's distance and a 10 km scale bar.
 

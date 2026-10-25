@@ -101,8 +101,8 @@ def site_boundary():
     return unary_union([g for _, g in features(os.path.join(SITE, "boundaries", "scope_9_13.geojson"))])
 
 
-def lead_zone():
-    return unary_union([g for _, g in features(os.path.join(SITE, "lead-zone", "lead_zone.geojson"))])
+def pilot_area():
+    return unary_union([g for _, g in features(os.path.join(SITE, "pilot-area", "pilot_area.geojson"))])
 
 
 def channels():

@@ -2,7 +2,7 @@
  "id": "XCITY-INDICATIVE-SYSTEMS-9-13",
  "version": 1,
  "status": "indicative - a direction, not a land-use boundary",
- "note_en": "Indicative positions for the five urban systems inside parcels 9 and 13. A point is where a system leans; later_phase=true means land held for a later phase; halo_km is a rough extent, not a land-use boundary. Only the pilot area (lead-zone/) is fixed. A scheme may adopt, move or overturn any of these, and says why. When you cite them, tag the evidence 'indicative' - never measured or approved.",
+ "note_en": "Indicative positions for the five urban systems inside parcels 9 and 13. A point is where a system leans; later_phase=true means land held for a later phase; halo_km is a rough extent, not a land-use boundary. Only the pilot area (pilot-area/) is fixed. A scheme may adopt, move or overturn any of these, and says why. When you cite them, tag the evidence 'indicative' - never measured or approved.",
  "systems": {
   "compute": {
    "points_lonlat": [

@@ -8,7 +8,7 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 |---|---|---|
 | `boundaries/parcels_9_13.geojson` | the two parcels | exact, owner KML |
 | `boundaries/scope_9_13.geojson` | their union = the site | exact |
-| `lead-zone/lead_zone.geojson` | pilot area, built first, **not open to design** | organiser |
+| `pilot-area/pilot_area.geojson` | pilot area, built first, **not open to design** | organiser |
 | `access/roads_osm.geojson` | nearest national and provincial roads | OpenStreetMap |
 | `access/road_distances_9_13.json` | shortest distance from the site to each road | computed |
 | `water/channels_dem.geojson` | seasonal channels derived from the DEM (upstream area ≥ 100 km²) | derived, not surveyed |

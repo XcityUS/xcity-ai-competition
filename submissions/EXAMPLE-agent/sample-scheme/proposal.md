@@ -20,15 +20,15 @@ The sentence a resident should be able to repeat is: *the water comes down our s
 
 The site is 1,656 km², and most of it should not be built on. In this scheme 899 km² is reserve: the Pie de Palo range, the DEM-derived flood-sensitive band along the washes, steep ground and open desert. The city's question is not where there is land but where to start. Five readings decided it.
 
-1. **Start beside what already exists.** The lead zone, three agrivoltaic fields in the south-west of parcel 13, is built first by XCITY. The first city takes the ground directly east of field 03 and shares a 1.8 km edge with it. Its first jobs, its first maintenance yard and its first visitors are already there.
-2. **The terrace.** East of the lead zone the DEM shows a flat lower terrace, 2.1 × 1.8 km at 620–650 m, under 2% slope and outside the flood band. It is closed on four sides: the fields to the west, a bluff 20–30 m high to the east, a terrace slope to the north and the site boundary to the south. A city of courtyard blocks fits on it without grading.
+1. **Start beside what already exists.** The pilot area, three agrivoltaic fields in the south-west of parcel 13, is built first by XCITY. The first city takes the ground directly east of field 03 and shares a 1.8 km edge with it. Its first jobs, its first maintenance yard and its first visitors are already there.
+2. **The terrace.** East of the pilot area the DEM shows a flat lower terrace, 2.1 × 1.8 km at 620–650 m, under 2% slope and outside the flood band. It is closed on four sides: the fields to the west, a bluff 20–30 m high to the east, a terrace slope to the north and the site boundary to the south. A city of courtyard blocks fits on it without grading.
 3. **Water can run downhill.** The top of the bluff is at 673 m, 25–50 m above the city. A covered head tank there feeds every acequia by gravity. The city's own fall from east to west carries the water through the streets to the orchards, the way San Juan's own oasis works.
 4. **The road comes from the south.** The nearest national road, RN 20, is 40.7 km beyond the site's south-west tip, towards the city of San Juan. The arrival road runs 6.2 km inside the site, between field 01 and the boundary and then up the edge of the fields. It does not cross a single wash.
 5. **The Zonda comes from the west to north-west** (A-12). The fields, a double alameda of poplars along the west edge and a tree belt along the top of the north slope stand between the wind and the streets.
 
 ![Structure](figures/fig-01-structure.png)
 
-Across the whole site the six systems take, recomputed from `structure.geojson`: agri-production 642 km² (including the lead zone), energy and compute 58 km², industry and the Line 30 km², living 21 km², port 3 km² and reserve 899 km².
+Across the whole site the six systems take, recomputed from `structure.geojson`: agri-production 642 km² (including the pilot area), energy and compute 58 km², industry and the Line 30 km², living 21 km², port 3 km² and reserve 899 km².
 
 ## 3. Energy and compute · 能源与算力
 
@@ -104,7 +104,7 @@ The lanes stop short of the machine streets, so people cross only at the tables.
 | Personal and home care | 700 |
 | Orchards, acequias and landscape crews | 420 |
 | Kindergartens and health posts | 420 |
-| Lead-zone field operations, living in the city | 420 |
+| Pilot-area field operations, living in the city | 420 |
 | Town hall, open-data office and administration | 280 |
 | Agri-processing, cold store and packing | 260 |
 | Clinic | 260 |
@@ -143,7 +143,7 @@ This is the scheme's honest answer to *labour no longer defines the day*: the ci
 
 PV and compute take the gentle fans, at 2–4.5% slope. Agrivoltaics take the flats under 2%. The washes stay open as river parks. Pie de Palo stays mountain.
 
-**Scale 2 — the master design area, 36.5 km².** It runs from the lead zone's east edge to the upper terrace, and from the site boundary north to the north terrace. Inside it:
+**Scale 2 — the master design area, 36.5 km².** It runs from the pilot area's east edge to the upper terrace, and from the site boundary north to the north terrace. Inside it:
 
 - **The city** on the lower terrace: a grid of 7 × 6 superblocks of 300 m, 2.1 × 1.8 km.
 - **The edge with the fields:** orchards and the alameda along the west and south.
@@ -172,7 +172,7 @@ Recomputed from the geometry:
 
 **Climate logic.** Courtyards are the oldest answer to this climate. Their thermal mass carries the day–night swing, the bottom of the court stays shaded at noon, and their backs are turned to the Zonda. Streets run north–south and east–west, as in San Juan, so every acequia street has a shaded side at every hour. The trees sit on the channels and not in irrigated lawns.
 
-**The two parcels.** Parcel 13 holds the lead zone, the first city and its fields. Parcel 9 holds the Line, three of the four oases, the campuses and the east wing.
+**The two parcels.** Parcel 13 holds the pilot area, the first city and its fields. Parcel 9 holds the Line, three of the four oases, the campuses and the east wing.
 
 ![Master plan](figures/fig-02-master-plan.png)
 
@@ -220,7 +220,7 @@ The order is published in the ledger, so nobody learns it during the fault.
 
 **Irreversible decisions in phase one, and why they are acceptable.**
 
-1. *Starting on the terrace beside the lead zone.* The first city's place fixes the Line's southern end and the arrival from San Juan. It is acceptable because the terrace is the one flood-free flat beside the fields that XCITY is building anyway.
+1. *Starting on the terrace beside the pilot area.* The first city's place fixes the Line's southern end and the arrival from San Juan. It is acceptable because the terrace is the one flood-free flat beside the fields that XCITY is building anyway.
 2. *The gravity acequias.* The tank's height and the street grades are set together; once the channels are laid the street levels cannot change. It is acceptable because the terrace's natural fall is what makes the system work without pumps.
 3. *The 600 m machine grid.* It fixes where freight and shuttles can ever go inside the city. It is acceptable because 300 m between machine streets keeps every door within reach and leaves the shaded streets to people.
 4. *Low courtyard blocks.* They set the density and the seismic class. It is acceptable because they work without air conditioning in this climate, and density can rise in the upper town.
@@ -310,7 +310,7 @@ At 45 °C people sit under the canopy and in the grove. In a Zonda they go down 
 
 ## 14. Sources, assumptions and AI disclosure · 来源、假设与 AI 披露
 
-**Organiser data used:** parcel boundaries and lead zone (SRC-KML, SRC-LEAD), terrain, channels and the flood-sensitive band (SRC-DEM, Copernicus WorldDEM-30), roads (SRC-OSM), and indicative systems (SRC-XCITY-INDICATIVE). The scheme follows the indicative living points for Oases 2–4 and deliberately does not follow the compute point.
+**Organiser data used:** parcel boundaries and pilot area (SRC-KML, SRC-PILOT), terrain, channels and the flood-sensitive band (SRC-DEM, Copernicus WorldDEM-30), roads (SRC-OSM), and indicative systems (SRC-XCITY-INDICATIVE). The scheme follows the indicative living points for Oases 2–4 and deliberately does not follow the compute point.
 
 **Sources:** PVGIS (S-01) and NASA POWER (S-02) are named as the tools for checking the PV yield, cooling hours and storage; INPRES-CIRSOC 103 (S-03) is named for seismic design. No figure has been taken from them yet. The values in this example are assumptions A-01 to A-18, each with its basis, and an entry would replace them with runs of those tools.
 

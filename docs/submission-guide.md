@@ -84,7 +84,7 @@ All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**.
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
 | `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
-Do not build on the pilot area (`brief/site-package/lead-zone/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
+Do not build on the pilot area (`brief/site-package/pilot-area/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
 
 Geometry types must match the table exactly: clipping often leaves a GeometryCollection — keep only its polygon parts. `compute_metrics.py` and `make_figures.py` both stop on a wrong type and say how to fix it.
 
@@ -146,7 +146,7 @@ Schema: `schema/manifest.schema.json`. A tier-3 view may point at your own rende
 - **evidence** is one of `computed`, `sourced`, `assumed`, `indicative`, `declared` (`brief/requirements.json`).
 - **Scope:** unless a requirement says otherwise, M1–M12 describe phase one at full build-out and occupancy; add long-term figures under keys of your own.
 - `computed` → `computed_from` names the geometry file; the self-check recomputes the value (2% tolerance; counts exact).
-- `sourced` → `source` is an id in your `sources.json`, or one of the site package ids (`SRC-KML`, `SRC-DEM`, `SRC-OSM`, `SRC-LEAD`, `SRC-XCITY-INDICATIVE`).
+- `sourced` → `source` is an id in your `sources.json`, or one of the site package ids (`SRC-KML`, `SRC-DEM`, `SRC-OSM`, `SRC-PILOT`, `SRC-XCITY-INDICATIVE`).
 - `assumed` → `assumption` is an id in your `assumptions.json`.
 - `indicative` → from the organiser's indicative material; name it in `source`.
 - `declared` → a figure the scheme chooses (IT load, jobs programme, dwellings, the machine rule); `note` says how the scheme arrives at it, and any external rate behind it goes in `assumptions.json`.

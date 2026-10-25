@@ -124,7 +124,7 @@ class Pkg:
         self.geo = {k: [(p, u(g)) for p, g in v] for k, v in self.geo_ll.items()}
         self.site = u(xc.site_boundary())
         self.parcels = [(p, u(g)) for p, g in xc.features(os.path.join(xc.SITE, "boundaries", "parcels_9_13.geojson"))]
-        self.lead = u(xc.lead_zone())
+        self.lead = u(xc.pilot_area())
         self.channels = [(p, u(g)) for p, g in xc.channels()]
         ts = xc.site_json("terrain/terrain_summary_9_13.json")["files"]
         self.hs = np.array(Image.open(os.path.join(xc.SITE, "terrain", ts["hillshade_utm"])))

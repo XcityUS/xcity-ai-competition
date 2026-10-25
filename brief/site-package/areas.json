@@ -18,14 +18,14 @@
    "basis": "parcels_9_13.geojson, geodesic"
   },
   {
-   "key": "lead_zone_outline",
+   "key": "pilot_area_outline",
    "km2": 13.9,
-   "basis": "lead_zone.geojson, three fields, geodesic"
+   "basis": "pilot_area.geojson, three fields, geodesic"
   },
   {
-   "key": "lead_zone_arrays",
+   "key": "pilot_area_arrays",
    "km2": 12.0,
-   "basis": "lead_zone.geojson, panel arrays only"
+   "basis": "pilot_area.geojson, panel arrays only"
   },
   {
    "key": "slope_lt_2pct",

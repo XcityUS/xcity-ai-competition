@@ -12,7 +12,7 @@
  },
  "flood_sensitive_km2": 503.4,
  "flat_lt2pct_not_flood_km2": 686.4,
- "lead_zone_km2": 13.9,
+ "pilot_area_km2": 13.9,
  "elevation_m": {
   "min": 606,
   "p5": 636,

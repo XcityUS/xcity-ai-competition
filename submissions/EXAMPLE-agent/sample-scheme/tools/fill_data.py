@@ -34,7 +34,7 @@ JOBS = [("Compute campus operations and security", 140), ("PV, batteries and the
         ("Training college (robotics, agronomy, water)", 180),
         ("Town hall, open-data office and administration", 280), ("Library, culture, media school", 120),
         ("Markets, shops, cafes and food", 2200), ("Arrival hall, guesthouse and visitors", 260),
-        ("Personal and home care", 700), ("Lead-zone field operations living in the city", 420)]
+        ("Personal and home care", 700), ("Pilot-area field operations living in the city", 420)]
 jobs = sum(n for _, n in JOBS)
 
 L_PER_DAY = 130
@@ -154,7 +154,7 @@ man = xc.load_json(os.path.join(PKG, "manifest.json"))
 man.update({
     "title": "Terrace Oasis: a city that grows its own shade beside the first fields",
     "title_zh": "台地绿洲：在第一片农光田旁长出树荫的城市",
-    "summary": ("Reference example, not an entry. The first city stands on the flat terrace directly east of the lead zone, "
+    "summary": ("Reference example, not an entry. The first city stands on the flat terrace directly east of the pilot area, "
                 "between the fields and a 30 m bluff, facing the Andes. About %s people live in low courtyard houses on a "
                 "300 m grid; every street is an acequia street, shaded by trees watered by gravity from a tank on the bluff; "
                 "machines keep to their own 600 m grid. Across the site, four oasis cities hang on one corridor, the Line, "

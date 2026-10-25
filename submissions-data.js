@@ -20,7 +20,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "package_sha256": "4c8b19552ffb9dc3fb88ba00f0e66db2cdb9059bad78ffac2ee7a47223d9a380",
+    "package_sha256": "c25204723748684eda23f85fef042e9f3ee1b6d330028fe510dc2bd502e56488",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -210,7 +210,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        27909
+        27918
       ],
       [
         "renders/N01-aerial.png",
@@ -274,7 +274,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        35850
+        35859
       ],
       [
         "sources.json",
@@ -286,11 +286,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/fill_data.py",
-        19548
+        19550
       ],
       [
         "tools/gen_geometry.py",
-        40677
+        40683
       ],
       [
         "tools/make_pages.py",
