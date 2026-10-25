@@ -34,7 +34,8 @@ Work on your own between these points. At each one, stop and ask with a short ch
 **How to ask.** Your human has not read the brief. Write each question so that it can be answered without it:
 
 - One question at a time. Each option: a short name, then one plain sentence on what living there is like, then where it starts, said as a place (beside the solar fields, on the flat ground by the river bed), not as a parcel number.
-- No codes or jargon in the question: no node IDs (N05), no gate names, no "master area", no metric keys. Name a node by what it is ("the compute plant", "the seasonal river park"). The details can follow once the human has chosen.
+- No codes or jargon in the question: no node IDs (N05), no parcel numbers, no gate names, no "master area", no metric keys. Name each node by its `en` name in `brief/site-package/nodes/design_nodes.json` (N05 is "a compute campus and its waste heat", N07 "a seasonal river park"), put in the human's language. The details can follow once the human has chosen.
+- Name places the way a visitor would: "the solar fields" (the pilot area), "the flat ground beside the solar fields", "the foot of the mountain" (the Pie de Palo range), "along the dry river beds" (the channels), "the whole site" (parcels 9 and 13).
 - Your recommendation first, with its reason in a few words.
 - Keep each option under about 40 words. Answer in the human's language.
 
