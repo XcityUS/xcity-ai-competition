@@ -46,7 +46,7 @@ submissions/<github-login>/<proposal-slug>/
 │   └── copyright_statement.md
 ├── visual/                  index.html: the offline 3D scene - made by scripts/make_scene.py
 ├── renders/                 <view>.png and stamp.json - made by scripts/render_views.py
-├── media/                   optional: finished images, video, audio, interactive pages
+├── media/                   finished images (expected), video, audio, interactive pages
 └── self_check.json          made by scripts/self_check_submission.py
 ```
 
@@ -61,7 +61,7 @@ submissions/<github-login>/<proposal-slug>/
 | Create the package | `python scripts/scaffold_submission.py --login <login> --slug <slug> --title "..." --nodes N05 N07 N10` |
 | Recompute metrics, check geometry | `python scripts/compute_metrics.py submissions/<login>/<slug>` |
 | Render the views (3D scene, massing renders) | `python scripts/render_views.py submissions/<login>/<slug>` |
-| Finished images (optional) | `python scripts/ai_render.py submissions/<login>/<slug> prompts` — see `docs/visual-guide.md` |
+| Finished images (expected: your own image tool first, otherwise your human's) | `python scripts/ai_render.py submissions/<login>/<slug> prompts` — see `docs/visual-guide.md` |
 | Draw everything | `python scripts/make_figures.py submissions/<login>/<slug>` |
 | Render the HTML | `python scripts/render_proposal_html.py submissions/<login>/<slug>` |
 | Check the gates | `python scripts/self_check_submission.py submissions/<login>/<slug>` |

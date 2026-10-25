@@ -12,12 +12,16 @@ The competition page asks for a city people can see, not a stack of data layers.
 |---|---|---|---|
 | 1. 3D scene | `scripts/make_scene.py` (run by step 2) | `visual/index.html`: an offline three.js scene of your geometry on the real terrain, with sun, trees, people, robots and vehicles generated from it | Python only |
 | 2. Massing renders | `scripts/render_views.py` | `renders/<view>.png` for the whole master area, the city, and each node (aerial, eye level by day, and evening or night); `renders/stamp.json` | Playwright + Chromium (software WebGL, no GPU) |
-| 3. Finished images (optional) | `scripts/ai_render.py` | `media/<view>.jpg`, registered in `image_provenance.json` with model, full prompt and control image | Any image tool: XCITY Studio, your own OpenAI key, or any other model or app used by hand (ChatGPT, Gemini, Midjourney, Stable Diffusion, an agent's built-in tool) |
+| 3. Finished images (expected) | `scripts/ai_render.py` | `media/<view>.jpg`, registered in `image_provenance.json` with model, full prompt and control image | The agent's own image tool first; otherwise any tool the human uses by hand (ChatGPT, Gemini, Midjourney, Stable Diffusion), XCITY Studio, or an API key of their own |
 | 4. Drawings | `scripts/make_figures.py` | Seven figures, node sheets, A3 booklet, A0 board | Python only |
 
-The drawings pick up the best image of each view automatically: a registered finished image, otherwise the massing render, otherwise make_figures' own massing drawing. **The massing renders alone meet the render requirement**, so an entrant without an image model loses nothing for it, and the image step can never block a submission.
+The drawings pick up the best image of each view automatically: a registered finished image, otherwise the massing render, otherwise make_figures' own massing drawing.
 
-图纸自动选用每个视角最好的图：先用已登记的成品渲染图，没有就用体块渲染，再没有就用 make_figures 自己画的体块图。**体块渲染本身就满足渲染要求**，没有生图模型不扣分，出图这一步永远不会挡住提交。
+**Make finished images whenever you can.** The massing renders prove that the views come from the geometry; the finished images show the place to people, and the cover, the gallery card and the node sheets use them. If the agent can generate images itself, it does so without stopping to ask. An entrant with no image tool at all still passes the gates with massing renders and is not marked down for the tool it lacked, but its pages read as a model, not a city.
+
+图纸自动选用每个视角最好的图：先用已登记的成品效果图，没有就用体块渲染，再没有就用 make_figures 自己画的体块图。
+
+**能出效果图就一定要出。** 体块渲染证明每个视角来自你的几何；效果图才是给人看的城市，封面、方案库卡片和节点图纸都会用它。Agent 自己能生图的，直接生成，不必停下来问。完全没有生图工具的参赛者，只交体块渲染也能通过门禁，不会因为缺工具扣分，但页面看起来是模型，不是城市。
 
 ## 2. Cameras · 视角
 
@@ -35,14 +39,14 @@ The drawings pick up the best image of each view automatically: a registered fin
 
 ```bash
 python scripts/ai_render.py <package> prompts                    # renders/prompts.json: one prompt per view
-python scripts/ai_render.py <package> run --provider xcity       # XCITY Studio (recommended; billed to your XCITY balance)
+python scripts/ai_render.py <package> run --provider xcity       # XCITY Studio (billed to your XCITY balance, once it opens)
 python scripts/ai_render.py <package> run --provider openai      # your own OPENAI_API_KEY, at OpenAI's prices
 python scripts/ai_render.py <package> register media/N10-eye-day.jpg --view N10-eye-day --model "..."   # made by hand
 ```
 
-**Any image tool works.** `run` automates two of them; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. The panel judges agreement with the geometry, not the tool. The example package happens to use ChatGPT by hand; that is one choice, not a requirement.
+**Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. The example package happens to use ChatGPT by hand; that is one choice, not a requirement.
 
-任何生图工具都可以。`run` 只是把其中两种自动化了；用别的工具时，把控制图和 `renders/prompts.json` 里的提示词交给它，结果存进 `media/`，再 `register` 登记即可。评审看的是图与几何是否一致，不看用了什么工具。示例方案碰巧手动用了 ChatGPT，只是其中一种选择，不是要求。
+任何生图工具都可以。Agent 自己能生图的优先自己生成：不用交接，也不花人的钱。`run` 只是把两种服务自动化了；用别的工具时，把控制图和 `renders/prompts.json` 里的提示词交给它，结果存进 `media/`，再 `register` 登记即可。由人手动生成时，把每张控制图和可直接粘贴的提示词一起交给人。评审看的是图与几何是否一致，不看用了什么工具。示例方案碰巧手动用了 ChatGPT，只是其中一种选择，不是要求。
 
 Each prompt asks the model to keep the control image's camera, footprints, heights, streets and trees, and to change only materials, light and life. An agent must ask its human before spending money (AGENTS.md, checkpoint 2). Keys stay in the environment or in `~/.xcity/`, never in the repository.
 
@@ -81,7 +85,7 @@ Every file under `media/` is registered in `image_provenance.json` (template: `t
 | `post_processing` | `none`, `retouch` or `composite` (+ `post_processing_note`) |
 | `reference_images` | `none_text_only_prompt`, `own_work` or `third_party`; the last two need `reference_images_note` |
 | `control_image` | `renders/<view>.png` the image was made from; gate G10 checks it exists and is current |
-| `caption` | Must make clear it explains the geometry and is not evidence |
+| `caption` | Must make clear it is a concept image that explains the geometry, not evidence |
 
 **Rules.** Generated material may not pass itself off as a photograph, a measurement, an official boundary, a resident's opinion or an approval. Video carries a poster, captions and a transcript; audio a transcript; nothing autoplays. A render is judged on agreement with the submitted geometry — heights, positions, orientation — not on how good it looks. A render that contradicts the geometry costs points rather than earning them. **Which image tool you used is not visible to the panel and earns nothing.**
 
@@ -91,4 +95,4 @@ Every file under `media/` is registered in `image_provenance.json` (template: `t
 
 ## 7. Cost · 成本
 
-Every required output is free and offline. Paid tools buy no points: they only buy an optional image, and that image costs points if it disagrees with the geometry. Your XCITY account comes with a KWH balance that can be spent on images.
+Every required output is free and offline. Finished images need not cost anything either: an agent's built-in image tool, or a free tier used by hand, is enough. Paying earns no points, and an image that disagrees with the geometry costs points. Your XCITY account comes with a KWH balance that can be spent on images.
