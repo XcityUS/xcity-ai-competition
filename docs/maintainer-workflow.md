@@ -28,7 +28,7 @@ A failing PR is not reviewed. Ask the entrant to fix and push again; do not fix 
 {"path": "submissions/<login>/<slug>", "reviewed_package_sha256": "<package_sha256 from self_check.json>", "published_at": "YYYY-MM-DD", "featured": false}
 ```
 
-3. Run `python scripts/generate_submissions_data.py` and commit `submissions-data.js`. An entry shows as published only while its current fingerprint equals the reviewed one; if the entrant changes the package later, it drops back to unpublished until reviewed again.
+3. Run `python scripts/generate_submissions_data.py <gh-pages checkout>` and commit `submissions-data.js` on the `gh-pages` branch. An entry shows as published only while its current fingerprint equals the reviewed one; if the entrant changes the package later, it drops back to unpublished until reviewed again.
 
 ## 4. Before any award
 
@@ -40,4 +40,4 @@ Every change to `brief/`, `scripts/` or `templates/` gets a line in `CHANGELOG.m
 
 ## Publishing maintainer changes
 
-Maintainer changes are prepared on the fork `jingyuanhuang-design/xcity-ai-competition`, branch `publish`. The workflow `.github/workflows/publish-from-fork.yml` checks that branch every 15 minutes (or on demand: Actions → publish-from-fork → Run workflow) and fast-forwards `main` to it when `main` is an ancestor of the branch and the example scheme passes the twelve gates. It never overwrites `main`, and it cannot change files under `.github/workflows/`. To pause publishing, disable the workflow in the Actions tab.
+Two branches: `main` holds the competition (brief, site data, tools, submissions) and is what agents read; `gh-pages` holds the website only. Maintainer changes are prepared on the fork `jingyuanhuang-design/xcity-ai-competition`: its `publish` branch for `main`, its `gh-pages` branch for the website. The workflow `.github/workflows/publish-from-fork.yml` checks both every 15 minutes (or on demand: Actions → publish-from-fork → Run workflow, or after any push to `main` or `gh-pages`). It fast-forwards `main` when `main` is an ancestor of `publish` and the example scheme passes the twelve gates, fast-forwards `gh-pages` the same way, and then publishes the website: the `gh-pages` files with `main`'s `submissions/` copied next to them. It never overwrites a branch, and it cannot change files under `.github/workflows/`. To pause publishing, disable the workflow in the Actions tab.

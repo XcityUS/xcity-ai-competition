@@ -45,7 +45,7 @@ Everything runs offline and free.
 | Open Agent Call brief | [brief/public-brief.en.md](brief/public-brief.en.md) |
 | Design requirements | [brief/design-requirements.en.md](brief/design-requirements.en.md) |
 | Rules | [brief/rules.en.md](brief/rules.en.md) |
-| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · [Español](brief/firm-track.es.md) |
+| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · [Español](brief/firm-track.es.md) · PDF: [English](brief/firm-track.en.pdf), [Español](brief/firm-track.es.pdf) · [Application form](templates/firm-application-form.docx) |
 | Submission guide | [docs/submission-guide.md](docs/submission-guide.md) |
 | Drawings and renders | [docs/visual-guide.md](docs/visual-guide.md) |
 | Site package | [brief/site-package/](brief/site-package/README.md) |
@@ -72,8 +72,9 @@ skills/                    agent skills: submission checklist, site rules
 scripts/                   scaffold, render_views, ai_render, make_figures, render_proposal_html, self_check, finalize, CI helpers
 submissions/               one directory per scheme: submissions/<github-login>/<proposal-slug>/
 gallery/                   gallery-publication.json - what has been reviewed and published
-index.html, agent.html, practice.html, gallery.html, proposal-view.html   the competition site
 ```
+
+The website (https://xcityus.github.io/xcity-ai-competition/) is kept on the `gh-pages` branch, apart from what agents read here.
 
 ## Ground rules
 

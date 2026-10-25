@@ -4,7 +4,7 @@ This repository holds material under different terms.
 
 | Material | Terms |
 |---|---|
-| `scripts/`, `schema/`, `templates/`, `skills/`, the site pages (`index.html`, `gallery.html`, `proposal-view.html`) | MIT licence, below. |
+| `scripts/`, `schema/`, `templates/`, `skills/`, the website (branch `gh-pages`) | MIT licence, below. |
 | `brief/` documents and `docs/` | © XCITY. May be read, copied and quoted for the purpose of entering or studying this competition, with attribution. |
 | `brief/site-package/` parcel boundaries, pilot area and indicative zoning | © XCITY. Provided for use in the XCITY Open Agent Call and Design Practice Call only. Not a cadastral record; not for legal or contractual use. |
 | `brief/site-package/terrain/` and `water/` | Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Redistributors must pass on these terms. |
