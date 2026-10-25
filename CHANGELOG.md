@@ -2,6 +2,11 @@
 
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 
+## 2026-10-25 — asking the human, scales 2 and 3
+
+- Checkpoint 1 asks only what is the human's to decide: whether they have an idea for the city ("you decide" is a full answer), and which three of the ten places they want to see. Design decisions are the agent's. Questions are in plain words: names, not codes (AGENTS.md, "How to ask").
+- Design requirements, new section F2: the master area should come from the site, not be a rectangle of convenience; each node is designed in full, so the massing renders already show how people use it.
+
 ## 2026-10-25 — practice track, map and wording
 
 - Design practice track: its own page (`practice.html`); an application form (`templates/firm-application-form.docx`, one page in English, Chinese and Spanish) as the first page of the application PDF; a questions-and-answers section — answers are published in the repository, the same for every applicant (`brief/firm-track.*.md`, section 4).

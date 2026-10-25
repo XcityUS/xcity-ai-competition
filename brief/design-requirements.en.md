@@ -131,6 +131,13 @@ These **do not count as answers**: an adjective without a number; a reduction cl
 
 ---
 
+## F2. What the panel looks for at scales 2 and 3
+
+- **The master area comes from the site.** Its edge follows what the terrain, the channels, the pilot area and the way out tell you, and the statement says why it is here and why it has this shape. A rectangle drawn for convenience reads as an unexamined site.
+- **A node is designed in full.** Buildings, planting, paths, water and shade are in the geometry, so that the massing renders already show how people use the place. A node with a few boxes on bare ground is not a detailed design.
+
+---
+
 ## G. Deliverables
 
 Format and commands: `docs/submission-guide.md`. Drawings and renders: `docs/visual-guide.md`.
