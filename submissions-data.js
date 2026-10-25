@@ -20,7 +20,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "package_sha256": "3bf75518e9e865ea0b82742b350567155ec081a620fafa0345fb3ee02d7ba527",
+    "package_sha256": "d0ccb6925457f1cec0f928e8a02f85b61aa47a9ee9645f7b03fa46a0007b3895",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -42,39 +42,39 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3151018
+        3150828
       ],
       [
         "drawings/a3-booklet.pdf",
-        9327217
+        9311442
       ],
       [
         "figures/fig-01-structure.png",
-        1243542
+        1243775
       ],
       [
         "figures/fig-02-master-plan.png",
-        421446
+        421681
       ],
       [
         "figures/fig-03-land-use-density.png",
-        346323
+        346542
       ],
       [
         "figures/fig-04-movement.png",
-        386069
+        386297
       ],
       [
         "figures/fig-05-open-space-water.png",
-        286855
+        286961
       ],
       [
         "figures/fig-06-phasing.png",
-        889771
+        890004
       ],
       [
         "figures/fig-07-metrics.png",
-        270413
+        270639
       ],
       [
         "figures/node-N01-aerial.png",
@@ -210,7 +210,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        27918
+        27684
       ],
       [
         "renders/N01-aerial.png",
@@ -274,7 +274,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        35859
+        35385
       ],
       [
         "sources.json",
@@ -286,7 +286,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/fill_data.py",
-        19550
+        19470
       ],
       [
         "tools/gen_geometry.py",
