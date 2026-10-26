@@ -34,8 +34,8 @@
   {
    "id": "AW-04",
    "status": "proposed",
-   "en": "Registering opens an account that already has KWH in it",
-   "en_body": "Submitting requires an XCITY account anyway. Open it through the call and it arrives with a balance of <b>KWH</b> — spendable on the marketplace for images, video and 3D. <b>Identical for everyone, unrelated to placing, invisible to the panel.</b> The amount is published with the brief."
+   "en": "Every eligible entry earns KWH credit",
+   "en_body": "Every entry that passes all twelve gates and is confirmed eligible by the review team receives <b>KWH credit</b>, <b>whatever its placing</b>. The credit carries a stated value in US dollars and can be used on the XCITY agent platform to generate images, video and 3D. <b>One credit per responsible party</b> (the person or organisation named in the manifest), however many schemes it submits; it goes to that party's XCITY account. The amount and how long it stays valid are published with the formal rules."
   },
   {
    "id": "AW-09",
