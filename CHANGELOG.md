@@ -2,12 +2,13 @@
 
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 
-## 2026-10-26 — Design Practice Call: initial ideas at stage one, a prize
+## 2026-10-26 — Design Practice Call: one application, a prize, stage-one site data
 
-- Stage one is now qualifications and initial ideas: practices that pass the qualification review receive the stage-one site package and send initial ideas of up to 10 pages (sketches and diagrams; no masterplan or rendering). Stage one stays free and unpaid; ideas not shortlisted remain the authors'.
-- Stage one is assessed on the initial ideas, relevant experience, the reference work and the range of the team; the highest-ranked practices may be interviewed online.
-- Besides the honorarium for every compliant stage-two entry, the winning team receives a prize. Amounts are published with the formal rules.
-- Registering interest can be done through a short form on the call's web page.
+- Stage one is one email with two PDFs: ① the application (form, proof of registration and licence, the actual team, relevant projects, declaration) and ② initial ideas of up to 10 pages (the reading of the site, the design direction and the way of working; no full masterplan or rendering). No registration step. Eligibility is checked first, then the team and the ideas; five are chosen.
+- The call is open to every practice, and XCITY may also invite practices to apply; every applicant follows the same requirements and criteria.
+- Eligibility no longer sets a fixed project size or period: a legally registered practice or consortium with the licence that applies where it is registered, and a team covering masterplanning, urban design and landscape.
+- Stage two: US$50,000 to each of the five for a compliant entry; US$50,000 more to one winner.
+- New application form (`templates/firm-application-form.docx`) and stage-one site data (`brief/design-practice-stage1-data.zip`: site and pilot-area boundaries as KMZ, DXF and SHP, analysis maps, read-me).
 
 ## 2026-10-25 — two calls, one site
 

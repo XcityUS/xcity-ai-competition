@@ -8,8 +8,9 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 |---|---|
 | Organiser | XCITY |
 | Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
-| Procedure | Two stages: one submission of qualifications and initial ideas; then design by a shortlist |
-| Registration | Free: there is no fee to apply or to take part |
+| Procedure | Two stages: one submission of the application and initial ideas; then paid design by five shortlisted practices |
+| Fees | None: there is no fee to apply or to take part |
+| Honorarium and prize | US$50,000 to each of the five for a compliant stage-two entry; US$50,000 more to one winner |
 | Languages | Stage 1 in English or Chinese; stage 2 in English |
 | Contact | competition@xcity.ai |
 
@@ -23,11 +24,13 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Qualifications and initial ideas.** Open to every practice that meets section 8, free of charge. Practices register, receive the application pack, and send **one submission**: the qualification documents and **initial ideas of up to 5 pages** — sketches and diagrams, not a full scheme. Eligibility is checked first; the ideas of eligible applicants are then read. The organiser draws up the shortlist from the ideas, the reference work and the team. Stage one is unpaid.
+**Stage 1 · Application and initial ideas.** Open to every practice that meets section 8, free of charge, with no registration. Download this brief, the application form and the stage-one site data, and send **two PDFs in one email**: the application, and **initial ideas of up to 10 pages**. The organiser checks eligibility first, then reviews the team and the ideas of eligible practices, and selects five. Stage one is unpaid.
 
-**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Every team that delivers a compliant entry receives an honorarium; the winning team also receives a prize.
+The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the five are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
 
-**Review and selection.** Shortlisted teams present online to the jury. Selected teams move to further work with XCITY under a separate agreement.
+**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Each of the five that delivers a compliant entry receives US$50,000; one winner receives a further US$50,000.
+
+**Review and selection.** Shortlisted teams present online to the jury. XCITY may invite the winning team to discuss further work under a separate agreement.
 
 ## 3. Scope: four layers, one plan
 
@@ -92,7 +95,9 @@ Each issue is placed in the whole-site plan and phase one, with its phase. Relat
 
 ## 5. What to send at stage 1
 
-One submission, in English or Chinese, by one deadline: the qualification documents below and the initial ideas. The application form and the list of documents are sent to each practice after it registers (section 9).
+One email to competition@xcity.ai with two PDFs, in English or Chinese.
+
+**① The application.** The application form (`templates/firm-application-form.docx`) is downloaded from the call's web page.
 
 | Document | What is checked |
 |---|---|
@@ -104,7 +109,7 @@ One submission, in English or Chinese, by one deadline: the qualification docume
 | Consortium agreement, if any | Members, lead and roles |
 | Declaration | The material is true, no one is in two teams, and any relation to the organiser or the jury is disclosed |
 
-**Initial ideas, with the application.** A PDF of **up to 5 pages** (a slide deck is fine), in English or Chinese. Suggested content:
+**② Initial ideas, up to 10 pages** (a slide deck is fine). Only the reading of the site, the design direction and the way of working. Suggested content:
 
 1. The reading of the site and the key questions: which conditions really shape the plan.
 2. The whole site and the five systems, as simple diagrams.
@@ -112,7 +117,7 @@ One submission, in English or Chinese, by one deadline: the qualification docume
 4. One representative spatial idea, as a sketch, diagram or section.
 5. Method and team: what you would verify once shortlisted, and who does what, including AI tools if you use them.
 
-Sketches, diagrams and relationship drawings are enough. **No masterplan, cost estimate or rendering is asked for**, and none earns marks. Ideas that are not shortlisted remain the authors' and are used only for selection; they are not adapted, built or published without the authors' consent.
+Sketches, diagrams and relationship drawings are enough. **No full masterplan or rendering is asked for**, and none earns marks. Ideas that are not shortlisted remain the authors' and are used only for selection; they are not adapted, built or published without the authors' consent.
 
 ## 6. What to submit at stage 2
 
@@ -131,7 +136,7 @@ Recommended board content: the whole site (the ten decisions); phase one and how
 
 ## 7. Evaluation criteria
 
-**Stage 1 · qualifications and initial ideas.** Eligibility is checked first; the ideas of ineligible applicants are not read. Eligible applications are then assessed on the initial ideas (does the reading of the site catch what matters; do the whole site, the five systems and phase one hold together), relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, and the range the team covers. The highest-ranked practices may be invited to an online interview with the lead designer.
+**Stage 1 · application and initial ideas.** Eligibility is checked first; the ideas of ineligible applicants are not read. Eligible applications are then assessed on the initial ideas (does the reading of the site catch what matters; do the whole site, the five systems and phase one hold together), relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, and the range the team covers. The highest-ranked practices may be invited to an online interview with the lead designer.
 
 **Stage 2 · scheme review.** Each entry is checked for completeness and compliance, then scored:
 
@@ -148,6 +153,8 @@ The weight of each criterion is published with the formal rules.
 
 ## 8. Who can apply
 
+The call is open to every practice; XCITY may also invite practices to apply. Every applicant follows the same submission requirements and review criteria, and five are chosen for stage two.
+
 - The applicant is a legally registered design practice or a consortium, holding the planning, architecture or landscape licence or business registration that applies where it is registered.
 - The team covers masterplanning, urban design, and landscape and ecology, and sets out how water, energy, transport and delivery expertise is brought in.
 - A consortium may meet the requirements together; a firm may lead or join one team only.
@@ -156,13 +163,13 @@ The weight of each criterion is published with the formal rules.
 
 ## 9. How to apply
 
-**Registration is free.** Three steps:
+**There is no fee and no registration.** Three steps:
 
-1. **Register.** Practice name, contact person and email, through the form under Register on the call's web page or by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Registration`.
-2. **Receive the pack.** A reply with a download link: the application notes, the application form (Word), the list of documents and the stage-one site data.
-3. **Submit once.** The qualification documents and the initial ideas together, by one deadline. Eligibility is checked first, then the ideas; five practices are chosen for the paid design stage.
+1. **Download** this brief, the application form (Word) and the stage-one site data (site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps) from the call's web page.
+2. **Prepare two PDFs:** ① the application form, proof of registration and licence, the team and relevant projects; ② initial ideas of up to 10 pages.
+3. **Submit once** to **competition@xcity.ai**, with the subject line `XCITY - Design Practice Call - Application - practice name`. The organiser confirms receipt.
 
-The deadline is published with the formal rules; registered practices are notified. The size of the shortlist and the amounts of the honorarium and the prize are published with the formal rules; already fixed: every shortlisted team that delivers a compliant stage-two entry receives an honorarium, and the winning team also receives a prize.
+One application, one shortlist notice, one design submission. Eligibility is still checked, as the first step of the review, not as a separate round. The deadline is published with the formal rules.
 
 ### Questions and answers
 
@@ -173,17 +180,17 @@ The deadline is published with the formal rules; registered practices are notifi
 
 ## 10. Honorarium, jury and terms
 
-- **Stage one** is unpaid. **Honorarium**: every shortlisted team that delivers a compliant stage-two entry receives one, whatever its placing. **Prize**: the winning team receives a prize on top of its honorarium. **Further work**: XCITY may invite the winning team to discuss further work under a separate agreement; winning is not itself a commission.
+- **Stage one** is unpaid. **Honorarium**: US$50,000 to each of the five shortlisted practices that delivers a compliant stage-two entry, whatever its placing. **Prize**: US$50,000 more to one winner. **Further work**: XCITY may invite the winning team to discuss further work under a separate agreement; winning is not itself a commission.
 - **Jury**: qualified experts in planning, architecture, landscape and energy infrastructure. Do not contact jury members about the call; doing so may lead to disqualification.
 - **Conduct**: work must be original and must not infringe the rights of others. AI tools may be used; disclose how, and the team stays responsible for the result. No claim of official approval, permit or statutory status.
 - **Publicity**: shortlisted and selected work may be shown on XCITY's website, in exhibitions and publications; every image, map and AI-generated element must be legally publishable.
 
 ## 11. Published with the formal rules
 
-The dates (application deadline, shortlist, briefing, submission, presentations, results), the size of the shortlist, the amount of the honorarium and of the prize, the jury members, the weight of each criterion, authorship and intellectual property, and the terms of further work are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
+The dates (application deadline, shortlist, briefing, submission, presentations, results), the jury members, the weight of each criterion, authorship and intellectual property, and the terms of further work are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
 ## 12. Materials
 
-- **Stage 1:** this brief; after registering, the pack: application notes, form, list of documents and the stage-one site package (site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps).
+- **Stage 1:** this brief, the application form (`templates/firm-application-form.docx`) and the stage-one site data (`brief/design-practice-stage1-data.zip`: site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps), all on the call's web page.
 - **Stage 2:** the full site package (boundaries, pilot area, terrain, channels, roads, indicative systems), an online briefing and written answers, for the shortlisted teams.
 - Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.
