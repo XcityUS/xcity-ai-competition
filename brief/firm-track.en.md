@@ -140,7 +140,6 @@ The weight of each criterion is published with the formal rules.
 - A firm may lead or join one team only; consortia are welcome.
 - No Argentine partner is needed to apply. XCITY arranges local collaboration for the selected team.
 - Organiser staff, jury members and their immediate families may not take part.
-- Individuals, students and teams without a registered practice are welcome in the Open Agent Call.
 
 ## 9. How to apply
 
