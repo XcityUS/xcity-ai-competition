@@ -23,7 +23,7 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Qualifications and initial ideas.** Open to every practice that meets section 8, free of charge. Qualifications are reviewed first. Practices that pass receive the stage-one site package and send **initial ideas of up to 10 pages**: sketches and diagrams, not a full scheme. The organiser draws up the shortlist from the ideas, the reference work and the team. Stage one is unpaid.
+**Stage 1 · Qualifications and initial ideas.** Open to every practice that meets section 8, free of charge. Practices register, receive the qualification application pack and send a formal application. Those who qualify receive the stage-one site package and send **initial ideas of up to 5 pages**: sketches and diagrams, not a full scheme. The organiser draws up the shortlist from the ideas, the reference work and the team. Stage one is unpaid.
 
 **Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Every team that delivers a compliant entry receives an honorarium; the winning team also receives a prize.
 
@@ -92,15 +92,19 @@ Each issue is placed in the whole-site plan and phase one, with its phase. Relat
 
 ## 5. What to send at stage 1
 
-One PDF, at most **20 pages and 20 MB**, in English or Chinese. The application form is page 1 and counts in the 20. It contains:
+**The qualification application**, in English or Chinese. The application form and the list of documents are sent to each practice after it registers (section 9).
 
-1. **The application form** (`templates/firm-application-form.docx`, 1 page) signed by the lead: practice name, contact person, team members and their roles.
-2. **Practice profile** (up to 3 pages): size, offices, disciplines, relevant awards.
-3. **Key people** (up to 4 pages): short CVs of the lead designer and the people who will work on the project.
-4. **Reference projects**, three to five, up to 2 pages each: scale, your role, client, status, year. At least one is a masterplan or a new district.
-Attached separately, not counted in the 20 pages: proof of professional registration or of legal constitution; a signed declaration that no member of the team has a conflict of interest with the organiser or the jury.
+| Document | What is checked |
+|---|---|
+| The completed application form (Word) | Practice, contact, how you apply, and the authorised representative |
+| Proof of legal registration | The practice exists and can take part and sign |
+| The professional licence or permit that applies | Where you practise; where practices are not graded, equivalent evidence and an explanation |
+| The actual team | Lead designer, key members, disciplines, and who really does the work |
+| Relevant projects | Place, size, year, status, and what the practice and the lead designer actually did; a portfolio can be part of this |
+| Consortium agreement, if any | Members, lead and roles |
+| Declaration | The material is true, no one is in two teams, and any relation to the organiser or the jury is disclosed |
 
-**Initial ideas, once qualified.** Practices that pass the qualification review send a second PDF of **up to 10 pages** (a slide deck is fine), in English or Chinese. Suggested content:
+**Initial ideas, once qualified.** Practices that pass the qualification review send a PDF of **up to 5 pages** (a slide deck is fine), in English or Chinese. Suggested content:
 
 1. The reading of the site and the key questions: which conditions really shape the plan.
 2. The whole site and the five systems, as simple diagrams.
@@ -144,16 +148,22 @@ The weight of each criterion is published with the formal rules.
 
 ## 8. Who can apply
 
-- The team is led by a legally constituted practice in urban design, urban planning, landscape architecture or architecture.
-- The lead has completed or led at least one masterplan, new district or new town at district scale (100 ha or more) in the last fifteen years.
-- The team covers urban design, landscape and ecology, energy and infrastructure, and water. Partners may be named at stage 1 or completed by stage 2.
-- A firm may lead or join one team only; consortia are welcome.
+- The applicant is a legally registered design practice or a consortium, holding the planning, architecture or landscape licence or business registration that applies where it is registered.
+- The team covers masterplanning, urban design, and landscape and ecology, and sets out how water, energy, transport and delivery expertise is brought in.
+- A consortium may meet the requirements together; a firm may lead or join one team only.
 - No Argentine partner is needed to apply. XCITY arranges local collaboration for the selected team.
 - Organiser staff, jury members and their immediate families may not take part.
 
 ## 9. How to apply
 
-**Registration is free.** **For now this is an expression of interest**: use the short form under Register interest on the call's web page, or email **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Expression of interest`. Formal applications open once the fees and the schedule are published with the formal rules; practices that have registered are notified. The size of the shortlist and the amounts of the honorarium and the prize are published with the formal rules; already fixed: every shortlisted team that delivers a compliant stage-two entry receives an honorarium, and the winning team also receives a prize.
+**Registration is free.** Four steps:
+
+1. **Register.** Practice name, contact person and email, through the form under Register on the call's web page or by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Registration`.
+2. **Receive the application pack.** The organiser replies with the application notes, the qualification application form (Word) and the list of documents.
+3. **Apply for qualification.** Fill in the form and send it with the documents in section 5 for review.
+4. **Send initial ideas.** Practices that qualify send initial ideas of up to 5 pages; five are chosen for the paid design stage.
+
+Formal applications open once the fees and the schedule are published with the formal rules; registered practices are notified. The size of the shortlist and the amounts of the honorarium and the prize are published with the formal rules; already fixed: every shortlisted team that delivers a compliant stage-two entry receives an honorarium, and the winning team also receives a prize.
 
 ### Questions and answers
 
@@ -175,6 +185,6 @@ The dates (application deadline, shortlist, briefing, submission, presentations,
 
 ## 12. Materials
 
-- **Stage 1:** this brief and the application form (`templates/firm-application-form.docx`); once qualified, the stage-one site package (site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps).
+- **Stage 1:** this brief; after registering, the qualification application pack (notes, form and list of documents); once qualified, the stage-one site package (site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps).
 - **Stage 2:** the full site package (boundaries, pilot area, terrain, channels, roads, indicative systems), an online briefing and written answers, for the shortlisted teams.
 - Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.
