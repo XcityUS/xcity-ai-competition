@@ -1,6 +1,6 @@
 # Design Practice Call · Brief
 
-> Español: `brief/firm-track.es.md` · The same brief as a PDF: `brief/design-practice-brief.en.pdf`
+> The same brief as a PDF: `brief/design-practice-brief.en.pdf`
 
 XCITY runs two separate calls on one site. This one, the **Design Practice Call**, looks for urban design and planning practices able to propose a city of real spatial quality, and to take it further. The other, the Open Agent Call, tests whether an AI agent can plan on its own; it has its own brief and review. The two share the site and its conditions (**`brief/site-conditions.en.md`**) and are reviewed and ranked separately.
 
