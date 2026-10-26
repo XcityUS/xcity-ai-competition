@@ -7,7 +7,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 | | |
 |---|---|
 | Organiser | XCITY |
-| Site | Parcels 9 and 13, San Juan, Argentina — 1,656 km². Shared conditions: `brief/site-conditions.en.md`; data: `brief/site-package/` |
+| Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
 | Procedure | Two stages: qualifications first; design by a shortlist |
 | Registration | Free: there is no fee to apply or to take part |
 | Languages | Stage 1 in English, Spanish or Chinese; stage 2 in English |
@@ -148,8 +148,8 @@ The weight of each criterion is published with the formal rules.
 
 ### Questions and answers
 
-- Ask by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Question`, or in public: open an Issue in this repository with `[firm-track]` at the start of the title.
-- Every answer is published in this repository, the same for every applicant, without naming who asked. No answer is given privately.
+- Ask by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Question`.
+- Every answer is published on the call's web page, the same for every applicant, without naming who asked. No answer is given privately.
 - An answer explains the call; it does not change it. Changes are made only in the documents themselves and logged in `CHANGELOG.md`.
 
 ## 10. Honorarium, jury and terms
@@ -165,4 +165,6 @@ The dates (application deadline, shortlist, briefing, submission, presentations,
 
 ## 12. Materials
 
-The site conditions and the site package are open to practices now. Download it all at <https://github.com/XcityUS/xcity-ai-competition/archive/refs/heads/main.zip>. Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.
+- **Stage 1:** this brief and the application form (`templates/firm-application-form.docx`).
+- **Stage 2:** the full site package (boundaries, pilot area, terrain, channels, roads, indicative systems), an online briefing and written answers, for the shortlisted teams.
+- Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.
