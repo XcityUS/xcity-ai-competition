@@ -10,7 +10,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 | Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
 | Procedure | Two stages: qualifications first; design by a shortlist |
 | Registration | Free: there is no fee to apply or to take part |
-| Languages | Stage 1 in English, Spanish or Chinese; stage 2 in English |
+| Languages | Stage 1 in English or Chinese; stage 2 in English |
 | Contact | competition@xcity.ai |
 
 ---
@@ -92,15 +92,15 @@ Each issue is placed in the whole-site plan and phase one, with its phase. Relat
 
 ## 5. What to send at stage 1
 
-One PDF, at most **20 pages and 20 MB**, in English, Spanish or Chinese, containing:
+One PDF, at most **20 pages and 20 MB**, in English or Chinese. The application form is page 1 and counts in the 20. It contains:
 
-1. **Letter of application** signed by the lead (1 page): practice name, contact person, team members and their roles. Use the application form, `templates/firm-application-form.docx` (Word), as this page.
+1. **The application form** (`templates/firm-application-form.docx`, 1 page) signed by the lead: practice name, contact person, team members and their roles.
 2. **Practice profile** (up to 3 pages): size, offices, disciplines, relevant awards.
 3. **Key people** (up to 4 pages): short CVs of the lead designer and the people who will work on the project.
 4. **Reference projects**, three to five, up to 2 pages each: scale, your role, client, status, year. At least one is a masterplan or a new district.
-5. **Approach statement** (up to 2 pages, no design): how you would meet this site — water, energy and compute, the agrivoltaic system already running, phasing, and how you would work with AI tools if you use them.
+5. **Approach statement** (up to 2 pages): your reading of the key issues of the site and the way you propose to work, including AI tools if you use them. **No design for this site is asked for at the qualification stage.**
 
-Attachments, not counted in the 20 pages: proof of professional registration or of legal constitution; a signed declaration that no member of the team has a conflict of interest with the organiser or the jury.
+Attached separately, not counted in the 20 pages: proof of professional registration or of legal constitution; a signed declaration that no member of the team has a conflict of interest with the organiser or the jury.
 
 ## 6. What to submit at stage 2
 
@@ -117,9 +117,9 @@ Video and physical models are optional. More pages or media earn no marks. File 
 
 ## 7. Evaluation criteria
 
-**Stage 1 · qualifications** are assessed on relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, the range the team covers, and the approach statement — does it read this site, not a generic city?
+**Stage 1 · qualifications** are assessed on relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, the range the team covers, and the approach statement — the reading of the site's key issues and the proposed way of working (no design asked for).
 
-**Stage 2 · the jury** checks that each entry is complete and compliant, then scores it:
+**Stage 2 · scheme review.** Each entry is checked for completeness and compliance, then scored:
 
 | Criterion | What the jury looks for |
 |---|---|
@@ -127,7 +127,7 @@ Video and physical models are optional. More pages or media earn no marks. File 
 | Systems and resources | Do water, energy, compute, population and services support each other, with a shortage scenario that changes the plan? |
 | Urban and spatial quality | Are streets, blocks, centres and public spaces worth living in, in this climate, for different people? |
 | Phasing and delivery | Can phase one be built and run on its own; are the first works, dependencies and triggers credible? |
-| Professional coordination | Do the disciplines meet at clear interfaces; can the team take it into further work? |
+| Interfaces and readiness for further work | Are the interfaces between disciplines clear? Is the scheme ready to be taken further? Are the questions still to be verified named? |
 | Presentation and communication | Are complex ideas clear, and consistent between drawings, figures and text? |
 
 The weight of each criterion is published with the formal rules.
@@ -144,12 +144,13 @@ The weight of each criterion is published with the formal rules.
 
 ## 9. How to apply
 
-**Registration is free.** Email the PDF to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - <practice name>`. The organiser confirms receipt and may arrange a short online call while it reviews the qualifications.
+**Registration is free.** **For now this is an expression of interest**: email **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Expression of interest`. Formal applications open once the fees and the schedule are published with the formal rules; practices that have registered are notified. The size of the shortlist, the amount of the honorarium and how prizes relate to further commissions are published with the formal rules; already fixed: every shortlisted team that delivers a compliant stage-two entry receives an honorarium, and selected teams move to further work under a separate agreement.
 
 ### Questions and answers
 
 - Ask by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Question`.
-- Every answer is published on the call's web page, the same for every applicant, without naming who asked. No answer is given privately.
+- Every explanation that affects the task, eligibility or review is published in writing on the call's web page, the same for every applicant, without naming who asked.
+- While qualifications are reviewed, the organiser may check facts about a practice's credentials with it online. Such a call gives no individual explanation of the task, eligibility or review.
 - An answer explains the call; it does not change it. Changes are made only in the documents themselves and logged in `CHANGELOG.md`.
 
 ## 10. Honorarium, jury and terms
