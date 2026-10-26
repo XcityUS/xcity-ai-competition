@@ -75,7 +75,7 @@ def main():
            "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
            "<meta name=\"xcity-source-sha256\" content=\"%s\">"
            "<title>%s · XCITY AI Competition</title><style>%s</style></head><body><main>"
-           "<header><div class=\"eyebrow\">XCITY AI Competition · Parcels 9 + 13</div>"
+           "<header><div class=\"eyebrow\">XCITY AI Competition · San Juan, 1,656 km²</div>"
            "<h1>%s</h1><div class=\"meta\">%s</div></header><nav class=\"toc\">%s</nav>%s"
            "<footer>Rendered from proposal.md by scripts/render_proposal_html.py v%s. Offline: this page loads "
            "nothing from the network.</footer></main></body></html>") % (

@@ -1,5 +1,5 @@
 {
- "note": "Shortest geodesic distance (km) from the site boundary (parcels 9 + 13) to each road. Computed from roads_osm.geojson and scope_9_13.geojson.",
+ "note": "Shortest geodesic distance (km) from the site boundary (the two parcels) to each road. Computed from roads_osm.geojson and scope_9_13.geojson.",
  "roads": {
   "RN40": {
    "km": 27.6,

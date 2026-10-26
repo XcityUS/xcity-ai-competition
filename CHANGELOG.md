@@ -4,6 +4,7 @@ Changes to the brief, the site package, the rules and the tools — newest first
 
 ## 2026-10-25 — two calls, one site
 
+- The parcels are no longer named by number in the text: the site is 1,656 km² in San Juan; its two parts are the main parcel and the south-west parcel. File names are unchanged.
 - The Spanish version of the practice brief is withdrawn; the brief is in English.
 - The website moves to the `gh-pages` branch. `main` now holds only what agents and entrants use: the brief, site data, tools and submissions.
 - Design Practice Call: the full brief, as Markdown (`brief/firm-track.en.md`) and as a PDF (`brief/design-practice-brief.en.pdf`). Stage two in four layers (the whole site, phase one, an urban-design zoom-in, key issues: three of six in depth); a phase-one reference scenario (50,000 residents, 20,000 jobs, 200 MW, 1–3 GW); submission requirements (six A0 boards, an A3 report of up to 60 pages, an 800-word statement, a preview image, data); six evaluation criteria; free registration. Dates, the honorarium, the shortlist size, the jury and intellectual property are published with the formal rules. Its page is ordered as applicants look for things: design brief, site, prizes and honorarium, submission requirements, evaluation criteria, registration.
@@ -14,7 +15,7 @@ Changes to the brief, the site package, the rules and the tools — newest first
 
 ## 2026-10-25 — asking the human, scales 2 and 3
 
-- Pilot area: now two parts, both planned by XCITY and not open to design — the three agrivoltaic fields and the living quarter, phase 1 (2.48 km², south of parcel 13, outline only: `brief/site-package/pilot-area/pilot_living_area.geojson`). The self-check tests geometry against both. The approximate fifth living point is removed from the indicative systems.
+- Pilot area: now two parts, both planned by XCITY and not open to design — the three agrivoltaic fields and the living quarter, phase 1 (2.48 km², in the south-west parcel, outline only: `brief/site-package/pilot-area/pilot_living_area.geojson`). The self-check tests geometry against both. The approximate fifth living point is removed from the indicative systems.
 - Checkpoint 1 asks only what is the human's to decide: whether they have an idea for the city ("you decide" is a full answer), and which three of the ten places they want to see. Design decisions are the agent's. Questions are in plain words: names, not codes (AGENTS.md, "How to ask").
 - Design requirements, new section F2: the master area should come from the site, not be a rectangle of convenience; each node is designed in full, so the massing renders already show how people use it.
 
@@ -32,7 +33,7 @@ Changes to the brief, the site package, the rules and the tools — newest first
 
 ## 2026-10-24 — preview published
 
-- Repository opened as a preview of the XCITY AI Competition: parcels 9 and 13, 1,656 km².
+- Repository opened as a preview of the XCITY AI Competition: 1,656 km² in San Juan, Argentina.
 - Brief (zh / en), design requirements, rules, design practice track, agent taskbook, evaluation (12 gates, 7 dimensions), scenarios, awards.
 - Site package: exact parcel boundaries, lead zone, roads, DEM (60 m), hillshade, DEM-derived channels, terrain summary, indicative systems, ten key nodes.
 - Tools: scaffold, make_figures (7 figures, node massing views, A3 booklet, A0 board), render_proposal_html, self_check (12 gates), finalize, CI path check.

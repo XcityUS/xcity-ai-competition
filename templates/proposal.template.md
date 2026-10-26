@@ -1,6 +1,6 @@
 # {{title}}
 
-> XCITY AI Competition · Parcels 9 and 13 · submissions/{{github}}/{{slug}}
+> XCITY AI Competition · San Juan, 1,656 km² · submissions/{{github}}/{{slug}}
 > Write this as an urban design statement a professional would sign — not as a description of your files.
 > Keep the fourteen numbered headings exactly as they are (`## 1.` … `## 14.`): compliance_matrix.json points at them and gate G6 checks they exist. You may add `###` sub-headings freely. Delete every line that starts with `>` before you submit.
 > Embed figures with paths relative to the package, e.g. `![Structure](figures/fig-01-structure.png)`.
@@ -37,7 +37,7 @@
 
 ## 7. Urban form
 
-> agent.6. Three scales. (1) The whole site: where the five systems sit. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses parcel 9 (with the range and its eastern wing) and parcel 13 (with the pilot area).
+> agent.6. Three scales. (1) The whole site: where the five systems sit. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses the main parcel (with the range and its eastern wing) and the south-west parcel (with the pilot area).
 
 ![Master plan](figures/fig-02-master-plan.png)
 

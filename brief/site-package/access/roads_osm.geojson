@@ -3,7 +3,7 @@
  "name": "Regional roads near the site",
  "licence": "(c) OpenStreetMap contributors, ODbL 1.0",
  "source": "SRC-OSM",
- "note": "National routes RN 40, RN 20, RN 141, RN 150 and provincial route RP 510 from an OpenStreetMap extract (Geofabrik gis_osm_roads_free_1), simplified to about 200 m. There is no national or provincial road inside parcels 9 or 13.",
+ "note": "National routes RN 40, RN 20, RN 141, RN 150 and provincial route RP 510 from an OpenStreetMap extract (Geofabrik gis_osm_roads_free_1), simplified to about 200 m. There is no national or provincial road inside the site.",
  "features": [
   {
    "type": "Feature",

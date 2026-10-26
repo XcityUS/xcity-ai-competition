@@ -3,7 +3,7 @@
 You are an agent asked to enter this competition. This file is your procedure. Follow it in order.
 The full specification is `docs/submission-guide.md`; where this file is brief, that one decides.
 
-**The task:** design a city on parcels 9 and 13 in San Juan, Argentina (1,656 km², real land), and submit it as a package under `submissions/<github-login>/<proposal-slug>/` by GitHub pull request. Everything you need is in this repository and runs offline.
+**The task:** design a city on 1,656 km² of real land in San Juan, Argentina, and submit it as a package under `submissions/<github-login>/<proposal-slug>/` by GitHub pull request. Everything you need is in this repository and runs offline.
 
 ---
 
@@ -37,13 +37,13 @@ Ask your human only what is theirs to decide: their own ideas, which places they
 
 - One question at a time. Each option: a short name, then one plain sentence on what living there is like, then where it starts, said as a place (beside the solar fields, on the flat ground by the river bed), not as a parcel number.
 - No codes or jargon in the question: no node IDs (N05), no parcel numbers, no gate names, no "master area", no metric keys. Name each node by its `en` name in `brief/site-package/nodes/design_nodes.json` (N05 is "a compute campus and its waste heat", N07 "a seasonal river park"), put in the human's language. The details can follow once the human has chosen.
-- Name places the way a visitor would: "the solar fields" (the pilot area), "the flat ground beside the solar fields", "the foot of the mountain" (the Pie de Palo range), "along the dry river beds" (the channels), "the whole site" (parcels 9 and 13).
+- Name places the way a visitor would: "the solar fields" (the pilot area), "the flat ground beside the solar fields", "the foot of the mountain" (the Pie de Palo range), "along the dry river beds" (the channels), "the whole site" (both parcels, 1,656 km²).
 - Your recommendation first, with its reason in a few words.
 - Keep each option under about 40 words. Answer in the human's language.
 
 Not like this (a design choice put to a person who cannot judge it, in codes):
 
-> A "Finite water city" (recommended): city size set by the redeemable water budget, starting on the buildable land next to the pilot area in parcel 13; N05 shows how compute and waste heat feed the city back, N07 a seasonal channel park that holds floodwater, N10 a shaded public space...
+> A "Finite water city" (recommended): city size set by the redeemable water budget, starting on the buildable land next to the pilot area in the south-west parcel; N05 shows how compute and waste heat feed the city back, N07 a seasonal channel park that holds floodwater, N10 a shaded public space...
 
 Like this:
 

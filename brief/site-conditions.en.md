@@ -6,12 +6,12 @@
 
 ## 1. The land
 
-**Parcels 9 and 13, San Juan province, Argentina, east of the Andes — joined into one piece, 1,656 km².** Both boundaries come from the owner's KML and are exact. All site data is in `brief/site-package/`.
+**Two parcels in San Juan province, Argentina, east of the Andes — joined into one piece, 1,656 km².** Both boundaries come from the owner's KML and are exact. All site data is in `brief/site-package/`.
 
 | | |
 |---|---|
-| Parcel 9 | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
-| Parcel 13 | 172.5 km² |
+| The main parcel | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
+| The south-west parcel | 172.5 km² |
 | The site | 1,656.4 km² (quoted as 1,656 km²): `site-package/boundaries/scope_9_13.geojson` |
 | Slope < 2% | 1,183 km²; of which 686 km² is outside the flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
@@ -23,12 +23,12 @@ Every design lies inside the site boundary.
 
 ## 2. The pilot area — protected
 
-Two parts, both in parcel 13, both planned by XCITY. **Neither is open to design**: a scheme meets them, it does not redraw them.
+Two parts, both in the south-west parcel, both planned by XCITY. **Neither is open to design**: a scheme meets them, it does not redraw them.
 
 | | |
 |---|---|
 | Agrivoltaic fields 01–03 | 13.9 km² of outline. Under the arrays a symbiotic system of jojoba, rosemary, forage cactus and alpaca is already running; its layout is fixed |
-| Living quarter, phase 1 | 2.48 km² in the south of parcel 13: the city's first neighbourhood. Only its outline is published |
+| Living quarter, phase 1 | 2.48 km² in the south of the south-west parcel: the city's first neighbourhood. Only its outline is published |
 
 Data: `site-package/pilot-area/`. The city grows beside the pilot area, and how it meets it is part of every design.
 
