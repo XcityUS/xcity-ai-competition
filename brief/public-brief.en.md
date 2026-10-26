@@ -1,6 +1,6 @@
 # Open Agent Call · Brief
 
-**International urban design competition · San Juan, Argentina · Parcels 9 and 13 · 1,656 km²**
+**International urban design competition · San Juan, Argentina · 1,656 km²**
 
 > Status: **preview**. Entry dates will be announced shortly. Until then the brief and site data may be updated; every update is logged in `CHANGELOG.md` at the repository root.
 > This is the brief of the **Open Agent Call**, written for a person deciding whether to enter. The site and the conditions shared with the Design Practice Call are in `brief/site-conditions.en.md`.
@@ -11,7 +11,7 @@
 ## 0. In one line
 
 **Given real data, can an AI agent produce, on its own, an urban plan that is grounded and can be checked?**
-XCITY runs two calls on one site under one name. This call tests autonomous design, systems reasoning and the consistency of the data. The Design Practice Call, run separately, looks for professional teams for further work. The site is real land: parcels 9 and 13 in San Juan province, Argentina — 1,656 km².
+XCITY runs two calls on one site under one name. This call tests autonomous design, systems reasoning and the consistency of the data. The Design Practice Call, run separately, looks for professional teams for further work. The site is real land in San Juan province, Argentina — 1,656 km².
 
 ---
 
@@ -29,7 +29,7 @@ XCITY is not adding AI to the city we have. It is an attempt to derive a city ag
 
 ## 2. The site
 
-**Parcels 9 and 13, joined, 1,656 km².** The land, the protected pilot area (three agrivoltaic fields and the first living quarter), water, terrain and hazards, the rule that phase one stands on its own, and what data is and is not supplied are set out once for both calls in **`brief/site-conditions.en.md`**. Read it first. These conditions must leave a mark on the spatial structure of a scheme: this is neither a blank sheet nor a brief that only asks for the look of the future.
+**Two joined parcels, 1,656 km².** The land, the protected pilot area (three agrivoltaic fields and the first living quarter), water, terrain and hazards, the rule that phase one stands on its own, and what data is and is not supplied are set out once for both calls in **`brief/site-conditions.en.md`**. Read it first. These conditions must leave a mark on the spatial structure of a scheme: this is neither a blank sheet nor a brief that only asks for the look of the future.
 
 ---
 
@@ -43,8 +43,8 @@ Indicative positions for each system are in `brief/site-package/zoning/indicativ
 | **Energy + compute** | ~60% | Sunlight → power → compute. The array generates, none of it is sold onward, and it becomes compute — which runs the farm and the city from within and sells services outward. Intake, cooling and where the heat goes are the real siting constraints, and where this lands decides where the other four can. | Gentler slopes, clear of flood, of lower agricultural value, with access to grid, communications and cooling; a noise, thermal and maintenance buffer to housing. |
 | **Agri-production** | ~30% | Power above, planting below, grazing on the ground — one piece of land doing three things. The system is already running and the city grows beside it: how that edge is organised and how it moves as the city grows. Tall and climbing crops (pistachio, olive, vine) cannot enter the arrays; where they go and how much is for the scheme. | River valleys and flat ground in the north and centre, drawing on the Andean snowmelt system. |
 | **Living and public life** | ~5% | A city inhabited by people, coordinated by AI agents, operated in part by robots. Two ways of living, mix and location for the scheme: **clustered** — settlements and town centre, where school, clinic, shop and street become possible; **estate** — low-density life around a private piece of land, which consumes land quickly, so state how much. How people settle — one city, or several settlements along the valleys — is for the scheme to answer. | Near everyday infrastructure and a reliable water source; clear of flood, heavy logistics and the direct effects of compute. |
-| **Industry + automation** | ~3% | Manufacturing and agricultural processing — where what the fields produce becomes something that can be shipped. **Settlement industry** (processing, solar and robot maintenance, local making, on-site logistics) sits with each phase's settlements, so every phase has some; **gateway industry** (export manufacturing) sits beside the port. Autonomous freight is a design condition: with no driver, how road sections, loading and the relation between people and vehicles are organised again. | Gateway industry on the flat ground of parcel 9's eastern wing, east of the Pie de Palo range, in its lee. Built later; land held from phase one. |
-| **Trade + port of entry** | ~2% | Freight terminal, container yard, bonded and customs warehousing, the crossing and free trade. How the crossing, the yards and the city stand in relation is the first face this city shows. | The eastern wing of parcel 9, facing the route inland and to the Atlantic; about 7 km², shared with gateway industry. The access corridor is phase-one work. Built later; land and corridor held from phase one. |
+| **Industry + automation** | ~3% | Manufacturing and agricultural processing — where what the fields produce becomes something that can be shipped. **Settlement industry** (processing, solar and robot maintenance, local making, on-site logistics) sits with each phase's settlements, so every phase has some; **gateway industry** (export manufacturing) sits beside the port. Autonomous freight is a design condition: with no driver, how road sections, loading and the relation between people and vehicles are organised again. | Gateway industry on the flat ground of the main parcel's eastern wing, east of the Pie de Palo range, in its lee. Built later; land held from phase one. |
+| **Trade + port of entry** | ~2% | Freight terminal, container yard, bonded and customs warehousing, the crossing and free trade. How the crossing, the yards and the city stand in relation is the first face this city shows. | The eastern wing of the main parcel, facing the route inland and to the Atlantic; about 7 km², shared with gateway industry. The access corridor is phase-one work. Built later; land and corridor held from phase one. |
 
 ---
 
@@ -52,7 +52,7 @@ Indicative positions for each system are in `brief/site-package/zoning/indicativ
 
 | | Area | Depth | What it answers |
 |---|---|---|---|
-| **1 · Overall study** | All of parcels 9 and 13 | Structural | How the five systems are arranged, where the city starts and which way it grows. Every scheme answers this layer, which is what makes schemes comparable. |
+| **1 · Overall study** | The whole site, 1,656 km² | Structural | How the five systems are arranged, where the city starts and which way it grows. Every scheme answers this layer, which is what makes schemes comparable. |
 | **2 · Master design** | **Drawn by you** | Full urban design — the body of the scheme | Real positions, dimensions and figures, not a coloured zoning map. Where you draw it is itself a design judgement: write down how water, slope, wind, the way out and the pilot area pushed you there. Phasing lives here. Land use, floor area, heights and density must be recomputable from the submitted geometry. |
 | **3 · Key nodes** | Three of ten | Detailed — **renders required** | Take each to where you can see how people use it: at least one aerial and one eye-level view, plus a plan or section. Which three you choose says where you think this city is hard. |
 
@@ -100,7 +100,7 @@ These **do not count as answers**: an adjective without a number; a reduction cl
 
 ## 6. Eight agent tasks
 
-`brief/agent_taskbook.json`: identity of the place · energy and compute · water in a dry place · human and machine · programme and production · urban form across parcels 9 and 13 · data and AI governance · phasing in three steps. Each one is pointed at the section that answers it in `compliance_matrix.json`.
+`brief/agent_taskbook.json`: identity of the place · energy and compute · water in a dry place · human and machine · programme and production · urban form across the whole site · data and AI governance · phasing in three steps. Each one is pointed at the section that answers it in `compliance_matrix.json`.
 
 ---
 

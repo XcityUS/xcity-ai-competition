@@ -320,7 +320,7 @@ def site_context(ax, pkg, lead=True):
 def new_page(pkg, size, num, title, subtitle=""):
     fig = plt.figure(figsize=size, facecolor=PAPER)
     fs = 1.0 if size == A3 else 2.4
-    fig.text(0.03, 0.965, "XCITY AI COMPETITION  ·  PARCELS 9 + 13  ·  SAN JUAN, ARGENTINA", fontsize=8 * fs,
+    fig.text(0.03, 0.965, "XCITY AI COMPETITION  ·  1,656 KM²  ·  SAN JUAN, ARGENTINA", fontsize=8 * fs,
              color=GOLD, fontweight="bold")
     t = T(pkg.title) + (("   " + T(pkg.title_zh)) if T(pkg.title_zh) else "")
     fig.text(0.03, 0.935, t, fontsize=15 * fs, color=INK, va="top", fontweight="bold")
@@ -410,7 +410,7 @@ def panel_structure(pkg, ax, compact=False):
                 fontweight="bold")
     for p, g in pkg.parcels:
         c = g.representative_point()
-        ax.text(c.x, c.y, "Parcel %s" % p.get("parcel_id"), fontsize=8 if not compact else 14, color=RED,
+        ax.text(c.x, c.y, p.get("name_en", ""), fontsize=8 if not compact else 14, color=RED,
                 alpha=.8, zorder=11, ha="center")
     frame(ax, fit_aspect(pkg.site.bounds, ax_aspect(ax)), pad=0.03)
     scalebar_north(ax, 8 if not compact else 16)
@@ -1060,7 +1060,7 @@ def _draw_node_views_massing(pkg, nid, ax_aerial, ax_eye):
 
 # ------------------------------------------------------------------------------- figure pages
 FIGS = [
-    ("fig-01-structure", "01", "Overall study - the five systems across parcels 9 and 13", "Scale 1 · structural",
+    ("fig-01-structure", "01", "Overall study - the five systems across the whole site", "Scale 1 · structural",
      panel_structure),
     ("fig-02-master-plan", "02", "Master design area - plan", "Scale 2 · figure-ground and land use", panel_master),
     ("fig-03-land-use-density", "03", "Land use and density", "Floors from buildings.geojson; metrics recomputed",

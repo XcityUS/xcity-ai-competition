@@ -2,7 +2,7 @@
  "id": "XCITY-INDICATIVE-SYSTEMS-9-13",
  "version": 1,
  "status": "indicative - a direction, not a land-use boundary",
- "note_en": "Indicative positions for the five urban systems inside parcels 9 and 13. A point is where a system leans; later_phase=true means land held for a later phase; halo_km is a rough extent, not a land-use boundary. Only the pilot area (pilot-area/) is fixed. A scheme may adopt, move or overturn any of these, and says why. When you cite them, tag the evidence 'indicative' - never measured or approved.",
+ "note_en": "Indicative positions for the five urban systems inside the site. A point is where a system leans; later_phase=true means land held for a later phase; halo_km is a rough extent, not a land-use boundary. Only the pilot area (pilot-area/) is fixed. A scheme may adopt, move or overturn any of these, and says why. When you cite them, tag the evidence 'indicative' - never measured or approved.",
  "systems": {
   "compute": {
    "points_lonlat": [
@@ -81,7 +81,7 @@
    ],
    "halo_km": 5,
    "label_en": "Industry · gateway industry east of the range beside the port, later; settlement industry with each settlement",
-   "basis_en": "Industry means making, processing and repair; logistics means moving, storing and transfer. Settlement industry (agricultural processing, solar and robot maintenance, local making, on-site logistics) sits with each phase's settlements and is not drawn as a point. Gateway industry (export manufacturing) sits beside the port of entry on parcel 9's eastern wing, in the lee of the Pie de Palo range. The nearest road, RP 510, is about 42 km from the eastern wing (35.6 km from the nearest point of the site boundary). Built later; its land is held from phase one.",
+   "basis_en": "Industry means making, processing and repair; logistics means moving, storing and transfer. Settlement industry (agricultural processing, solar and robot maintenance, local making, on-site logistics) sits with each phase's settlements and is not drawn as a point. Gateway industry (export manufacturing) sits beside the port of entry on the main parcel's eastern wing, in the lee of the Pie de Palo range. The nearest road, RP 510, is about 42 km from the eastern wing (35.6 km from the nearest point of the site boundary). Built later; its land is held from phase one.",
    "later_phase": true
   },
   "port": {
@@ -93,7 +93,7 @@
    ],
    "halo_km": 5,
    "label_en": "Port of entry · flat ground east of the range, later phase",
-   "basis_en": "Freight terminal, container yard, bonded and customs warehousing, port of entry, free trade. On the flat ground of parcel 9's eastern wing, east of the Pie de Palo range, facing the eastward route inland rather than the Chilean pass. About 7 km2 of continuous flat ground on this side, shared with gateway industry. RP 510 is about 42 km from the eastern wing (35.6 km from the nearest point of the site boundary). Built later; land and access corridor held from phase one.",
+   "basis_en": "Freight terminal, container yard, bonded and customs warehousing, port of entry, free trade. On the flat ground of the main parcel's eastern wing, east of the Pie de Palo range, facing the eastward route inland rather than the Chilean pass. About 7 km2 of continuous flat ground on this side, shared with gateway industry. RP 510 is about 42 km from the eastern wing (35.6 km from the nearest point of the site boundary). Built later; land and access corridor held from phase one.",
    "later_phase": true
   }
  },

@@ -1,11 +1,11 @@
 # Pilot area
 
-Two parts, both in parcel 13, both planned by XCITY. **Neither is open to design.**
+Two parts, both in the south-west parcel, both planned by XCITY. **Neither is open to design.**
 
 | File | What |
 |---|---|
 | `pilot_area.geojson` | Three agrivoltaic fields (01–03), 13.9 km² of outline, 1,000 arrays each |
-| `pilot_living_area.geojson` | The living quarter, phase 1: 2.48 km² in the south of parcel 13, about 11 km east of the fields. Housing in the west, estates in the east. Only its outline is published |
+| `pilot_living_area.geojson` | The living quarter, phase 1: 2.48 km² in the south of the south-west parcel, about 11 km east of the fields. Housing in the west, estates in the east. Only its outline is published |
 
 ## What a scheme must respect
 

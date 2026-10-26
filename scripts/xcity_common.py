@@ -97,7 +97,7 @@ def features(path):
 
 
 def site_boundary():
-    """Union of parcels 9 and 13, lon/lat."""
+    """Union of the two parcels (the whole site), lon/lat."""
     return unary_union([g for _, g in features(os.path.join(SITE, "boundaries", "scope_9_13.geojson"))])
 
 

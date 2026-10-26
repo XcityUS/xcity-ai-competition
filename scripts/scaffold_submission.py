@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import xcity_common as xc  # noqa: E402
 
 GEOMETRY_NOTES = {
-    "structure": "Scale 1, the whole site. Polygons covering parcels 9 and 13 at structural level. "
+    "structure": "Scale 1, the whole site. Polygons covering the whole site at structural level. "
                  "properties.system: energy_compute | agri_production | living | industry | port | reserve. "
                  "Optional: name, phase.",
     "master_area": "Scale 2. Exactly one Polygon (or MultiPolygon): the master design area you drew. Inside the site.",

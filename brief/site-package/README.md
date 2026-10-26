@@ -1,6 +1,6 @@
 # Site package
 
-**XCITY AI Competition · Parcels 9 and 13 · 1,656 km² · San Juan, Argentina**
+**XCITY AI Competition · 1,656 km² · San Juan, Argentina**
 
 Everything the organiser supplies about the site is in this folder. Coordinates are EPSG:4326 (WGS 84 lon/lat) unless a file says otherwise. Sources and licences: `sources.json`. File list and checksums: `datapackage.json`. Every area figure: `areas.json`.
 
@@ -26,10 +26,10 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 
 | | |
 |---|---|
-| Site | 1,656 km² (parcel 9: 1,483.8 · parcel 13: 172.5) |
-| Pilot area | three fields, 13.9 km², and a living quarter, phase 1, 2.48 km², inside parcel 13 |
+| Site | 1,656 km² (the main parcel: 1,483.8 · the south-west parcel: 172.5) |
+| Pilot area | three fields, 13.9 km², and a living quarter, phase 1, 2.48 km², inside the south-west parcel |
 | Slope < 2% | 1,183 km² |
-| Slope ≥ 25% (mountain) | 127 km², mostly the Pie de Palo range in the south-east of parcel 9 |
+| Slope ≥ 25% (mountain) | 127 km², mostly the Pie de Palo range in the south-east of the main parcel |
 | Flood-sensitive | 503 km² |
 | Flat and clear of flood | 686 km² |
 | Elevation | 606–2,658 m, median 675 m |

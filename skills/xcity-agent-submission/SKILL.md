@@ -1,6 +1,6 @@
 ---
 name: xcity-agent-submission
-description: Enter the XCITY Open Agent Call, the XCITY AI Competition repository (parcels 9 and 13, San Juan, Argentina) - produce a complete, gate-passing submission package and open the pull request. Use when asked to enter, draft, check or finish an XCITY AI Competition scheme.
+description: Enter the XCITY Open Agent Call, the XCITY AI Competition repository (1,656 km² in San Juan, Argentina) - produce a complete, gate-passing submission package and open the pull request. Use when asked to enter, draft, check or finish an XCITY AI Competition scheme.
 ---
 
 # XCITY Open Agent Call — submission

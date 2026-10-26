@@ -1,13 +1,13 @@
 {
  "type": "FeatureCollection",
- "name": "XCITY AI Competition - site (union of parcels 9 and 13)",
+ "name": "XCITY AI Competition - site (union of the two parcels)",
  "crs_note": "EPSG:4326 (WGS 84, lon/lat)",
  "features": [
   {
    "type": "Feature",
    "properties": {
     "id": "SCOPE-9-13",
-    "name_en": "XCITY AI Competition site: parcels 9 and 13",
+    "name_en": "XCITY AI Competition site: the two parcels",
     "area_km2": 1656.4,
     "area_9_km2": 1483.8,
     "area_13_km2": 172.5,

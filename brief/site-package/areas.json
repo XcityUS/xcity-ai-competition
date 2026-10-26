@@ -8,12 +8,12 @@
    "say": "1,656 km²"
   },
   {
-   "key": "parcel_9",
+   "key": "parcel_main",
    "km2": 1483.8,
    "basis": "parcels_9_13.geojson, geodesic"
   },
   {
-   "key": "parcel_13",
+   "key": "parcel_southwest",
    "km2": 172.5,
    "basis": "parcels_9_13.geojson, geodesic"
   },

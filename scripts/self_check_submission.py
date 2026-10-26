@@ -219,7 +219,7 @@ def check(pkg_path, write=True):
     if words < 1500:
         g1.fail("proposal.md has about %d words of its own (Chinese: two characters count as one word); a complete "
                 "statement needs at least 1,500" % words)
-    if re.search(r"^> (XCITY AI Competition · Parcels 9 and 13|Write this as an urban design statement)", prop, re.M):
+    if re.search(r"^> (XCITY AI Competition · San Juan, 1,656 km²|Write this as an urban design statement)", prop, re.M):
         g1.fail("proposal.md still contains the template header lines starting with '>'")
     cs = os.path.join(pkg, "report", "copyright_statement.md")
     if os.path.exists(cs):

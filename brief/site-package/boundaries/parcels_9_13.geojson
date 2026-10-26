@@ -1,13 +1,13 @@
 {
  "type": "FeatureCollection",
- "name": "XCITY AI Competition - parcels 9 and 13",
+ "name": "XCITY AI Competition - the two parcels",
  "crs_note": "EPSG:4326 (WGS 84, lon/lat)",
  "features": [
   {
    "type": "Feature",
    "properties": {
-    "parcel_id": "9",
-    "name_en": "Parcel 9",
+    "parcel_id": "main",
+    "name_en": "Main parcel",
     "area_km2": 1483.8,
     "geometry_source": "owner-supplied KML, vertices unmodified",
     "confidence": "exact"
@@ -207,8 +207,8 @@
   {
    "type": "Feature",
    "properties": {
-    "parcel_id": "13",
-    "name_en": "Parcel 13",
+    "parcel_id": "south-west",
+    "name_en": "South-west parcel",
     "area_km2": 172.5,
     "geometry_source": "owner-supplied KML, vertices unmodified",
     "confidence": "exact"

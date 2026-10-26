@@ -2,7 +2,7 @@
   "$schema": "../schema/agent_taskbook.schema.json",
   "version": 2,
   "competition": "XCITY AI Competition",
-  "site": "Parcels 9 and 13, San Juan, Argentina - 1,656 km2",
+  "site": "San Juan, Argentina - 1,656 km2",
   "note_en": "All eight tasks are mandatory. Each must appear in compliance_matrix.json with a status and a pointer to the section of proposal.md that answers it (the 'answers_in' heading number).",
   "tasks": [
     {
@@ -68,13 +68,13 @@
     },
     {
       "id": "agent.6",
-      "title": "Urban form across parcels 9 and 13",
+      "title": "Urban form across the whole site",
       "required": true,
       "expects": [
         "The structure of the whole site: where the five systems sit and why",
         "The master design area you drew yourself, why it is there, and its block structure, massing and density",
         "Public realm under desert conditions: shade, wind, water, ground surface",
-        "How the scheme uses the two parcels - parcel 9 with the Pie de Palo range and its eastern wing, parcel 13 with the pilot area"
+        "How the scheme uses the two parcels - the main parcel with the Pie de Palo range and its eastern wing, the south-west parcel with the pilot area"
       ],
       "answers_in": "## 7."
     },

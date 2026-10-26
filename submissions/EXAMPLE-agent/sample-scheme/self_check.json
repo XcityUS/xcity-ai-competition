@@ -1,9 +1,9 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.0.0",
-  "checked_at": "2026-10-25T19:14:41+00:00",
+  "checked_at": "2026-10-26T03:03:44+00:00",
   "package": "submissions/EXAMPLE-agent/sample-scheme",
-  "package_sha256": "c7fdf3e3c42aa61b1b28e68fe4ef7bffc21a0a7d57b1a1d9d730e8467ba7ce4e",
+  "package_sha256": "8b7ebb49cca5d99e758fd8e1fa3cf9617ead0fd1b12c7a490114546f35027ee8",
   "gates_total": 12,
   "gates_passed": 12,
   "pass": true,

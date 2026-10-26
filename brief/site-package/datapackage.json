@@ -1,7 +1,7 @@
 {
  "profile": "data-package",
  "name": "xcity-ai-competition-site-package",
- "title": "XCITY AI Competition - site package (parcels 9 and 13)",
+ "title": "XCITY AI Competition - site package (the two parcels)",
  "version": "1.0.0",
  "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
  "sources_file": "sources.json",
@@ -10,8 +10,8 @@
    "name": "parcels_9_13",
    "path": "boundaries/parcels_9_13.geojson",
    "mediatype": "application/geo+json",
-   "description": "Parcels 9 and 13, exact",
-   "hash": "sha256:b6b6a45c87f66806712057da69868292945908a6425c7c13b1ae5e096ee4a6f4",
+   "description": "The two parcels, exact",
+   "hash": "sha256:92d008306b3510bdef181126123a981476a121b0166a9a7881d98e8eab46e0ce",
    "source": "SRC-KML"
   },
   {
@@ -19,7 +19,7 @@
    "path": "boundaries/scope_9_13.geojson",
    "mediatype": "application/geo+json",
    "description": "Site boundary (union)",
-   "hash": "sha256:d1ba714fac3811ca51bbb4277b6e19ba8ceaacf24cc00b417c48b3bc1f458ce0",
+   "hash": "sha256:c58759a4942543c60f6e0aa6e35a4b1a7dd34030a03ce7202e3c829f9194c42e",
    "source": "SRC-KML"
   },
   {
@@ -27,7 +27,7 @@
    "path": "pilot-area/pilot_area.geojson",
    "mediatype": "application/geo+json",
    "description": "Pilot area fields 01-03 (fixed)",
-   "hash": "sha256:fb8ff63d20f3cfd3c94891429944a92633d8dcff6f7437ecb9eda355ffafd4ba",
+   "hash": "sha256:acc1f91588a62dc91d3fb5444dd125e62c8e5d89bd6b8346e0fa5834fd872edb",
    "source": "SRC-PILOT"
   },
   {
@@ -43,7 +43,7 @@
    "path": "access/roads_osm.geojson",
    "mediatype": "application/geo+json",
    "description": "Regional roads",
-   "hash": "sha256:8082c6a9fc466097e7fc8412e5a5e40a57583925dffaa1b9ef2f183e47df6c87",
+   "hash": "sha256:99a95cc87451bfd864f62314dcebf4ce4c07587a9bd3942bca03a069e8ae516a",
    "source": "SRC-OSM"
   },
   {
@@ -51,7 +51,7 @@
    "path": "access/road_distances_9_13.json",
    "mediatype": "application/json",
    "description": "Site-to-road distances",
-   "hash": "sha256:03edd1376fd3ba0464a828fa533f584532f8ba8f4280806fc8f4b2463eb45e78",
+   "hash": "sha256:1247d3419a4971c1155c773e248d989769db52c4d4fd81289c8b8962c38738db",
    "source": "SRC-OSM"
   },
   {
@@ -115,7 +115,7 @@
    "path": "zoning/indicative_systems_9_13.json",
    "mediatype": "application/json",
    "description": "Five systems, indicative",
-   "hash": "sha256:f7d466fd6267f63246f72a1d4a841c194191051c3ea0f07e4f4eae54479f6d64",
+   "hash": "sha256:5329adda39eec7083da149ee3dc99cd98ac068f8873191a3b030c8c79273f385",
    "source": "SRC-XCITY-INDICATIVE"
   },
   {
@@ -130,7 +130,7 @@
    "path": "areas.json",
    "mediatype": "application/json",
    "description": "Every area figure, one place",
-   "hash": "sha256:b6a7b510e214051bffcfd9920144883aad0aec3bee00d74fc6f2bc25a2af80da"
+   "hash": "sha256:1faf3dd41bd563ead13cd11c606ee4092e6dedd95c5be6c333dae80a016eec4c"
   }
  ]
 }
