@@ -2,6 +2,13 @@
 
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 
+## 2026-10-26 — Design Practice Call: initial ideas at stage one, a prize
+
+- Stage one is now qualifications and initial ideas: practices that pass the qualification review receive the stage-one site package and send initial ideas of up to 10 pages (sketches and diagrams; no masterplan or rendering). Stage one stays free and unpaid; ideas not shortlisted remain the authors'.
+- Stage one is assessed on the initial ideas, relevant experience, the reference work and the range of the team; the highest-ranked practices may be interviewed online.
+- Besides the honorarium for every compliant stage-two entry, the winning team receives a prize. Amounts are published with the formal rules.
+- Registering interest can be done through a short form on the call's web page.
+
 ## 2026-10-25 — two calls, one site
 
 - The parcels are no longer named by number in the text: the site is 1,656 km² in San Juan; its two parts are the main parcel and the south-west parcel. File names are unchanged.

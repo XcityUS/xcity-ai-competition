@@ -8,7 +8,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 |---|---|
 | Organiser | XCITY |
 | Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
-| Procedure | Two stages: qualifications first; design by a shortlist |
+| Procedure | Two stages: qualifications and initial ideas; then design by a shortlist |
 | Registration | Free: there is no fee to apply or to take part |
 | Languages | Stage 1 in English or Chinese; stage 2 in English |
 | Contact | competition@xcity.ai |
@@ -23,9 +23,9 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Qualifications.** Open to every practice that meets section 8. **No design is asked for**: we look at the practice, its relevant work and the core team. The organiser reviews the applications and draws up a shortlist. No practice carries design work before the terms of that work are known.
+**Stage 1 · Qualifications and initial ideas.** Open to every practice that meets section 8, free of charge. Qualifications are reviewed first. Practices that pass receive the stage-one site package and send **initial ideas of up to 10 pages**: sketches and diagrams, not a full scheme. The organiser draws up the shortlist from the ideas, the reference work and the team. Stage one is unpaid.
 
-**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Every team that delivers a compliant entry receives an honorarium.
+**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Every team that delivers a compliant entry receives an honorarium; the winning team also receives a prize.
 
 **Review and selection.** Shortlisted teams present online to the jury. Selected teams move to further work with XCITY under a separate agreement.
 
@@ -98,9 +98,17 @@ One PDF, at most **20 pages and 20 MB**, in English or Chinese. The application 
 2. **Practice profile** (up to 3 pages): size, offices, disciplines, relevant awards.
 3. **Key people** (up to 4 pages): short CVs of the lead designer and the people who will work on the project.
 4. **Reference projects**, three to five, up to 2 pages each: scale, your role, client, status, year. At least one is a masterplan or a new district.
-5. **Approach statement** (up to 2 pages): your reading of the key issues of the site and the way you propose to work, including AI tools if you use them. **No design for this site is asked for at the qualification stage.**
-
 Attached separately, not counted in the 20 pages: proof of professional registration or of legal constitution; a signed declaration that no member of the team has a conflict of interest with the organiser or the jury.
+
+**Initial ideas, once qualified.** Practices that pass the qualification review send a second PDF of **up to 10 pages** (a slide deck is fine), in English or Chinese. Suggested content:
+
+1. The reading of the site and the key questions: which conditions really shape the plan.
+2. The whole site and the five systems, as simple diagrams.
+3. How phase one starts: a first location or the principles for choosing it, and how it meets the pilot area.
+4. One representative spatial idea, as a sketch, diagram or section.
+5. Method and team: what you would verify once shortlisted, and who does what, including AI tools if you use them.
+
+Sketches, diagrams and relationship drawings are enough. **No masterplan, cost estimate or rendering is asked for**, and none earns marks. Ideas that are not shortlisted remain the authors' and are used only for selection; they are not adapted, built or published without the authors' consent.
 
 ## 6. What to submit at stage 2
 
@@ -119,7 +127,7 @@ Recommended board content: the whole site (the ten decisions); phase one and how
 
 ## 7. Evaluation criteria
 
-**Stage 1 · qualifications** are assessed on relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, the range the team covers, and the approach statement — the reading of the site's key issues and the proposed way of working (no design asked for).
+**Stage 1 · qualifications and initial ideas.** Eligibility is checked first. Applications are then assessed on the initial ideas (does the reading of the site catch what matters; do the whole site, the five systems and phase one hold together), relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, and the range the team covers. The highest-ranked practices may be invited to an online interview with the lead designer.
 
 **Stage 2 · scheme review.** Each entry is checked for completeness and compliance, then scored:
 
@@ -145,7 +153,7 @@ The weight of each criterion is published with the formal rules.
 
 ## 9. How to apply
 
-**Registration is free.** **For now this is an expression of interest**: email **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Expression of interest`. Formal applications open once the fees and the schedule are published with the formal rules; practices that have registered are notified. The size of the shortlist, the amount of the honorarium and how prizes relate to further commissions are published with the formal rules; already fixed: every shortlisted team that delivers a compliant stage-two entry receives an honorarium, and selected teams move to further work under a separate agreement.
+**Registration is free.** **For now this is an expression of interest**: use the short form under Register interest on the call's web page, or email **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Expression of interest`. Formal applications open once the fees and the schedule are published with the formal rules; practices that have registered are notified. The size of the shortlist and the amounts of the honorarium and the prize are published with the formal rules; already fixed: every shortlisted team that delivers a compliant stage-two entry receives an honorarium, and the winning team also receives a prize.
 
 ### Questions and answers
 
@@ -156,17 +164,17 @@ The weight of each criterion is published with the formal rules.
 
 ## 10. Honorarium, jury and terms
 
-- **Honorarium**: every shortlisted team that delivers a compliant stage-two entry receives one. **Further work**: selected teams move to further work with XCITY under a separate agreement.
+- **Stage one** is unpaid. **Honorarium**: every shortlisted team that delivers a compliant stage-two entry receives one, whatever its placing. **Prize**: the winning team receives a prize on top of its honorarium. **Further work**: XCITY may invite the winning team to discuss further work under a separate agreement; winning is not itself a commission.
 - **Jury**: qualified experts in planning, architecture, landscape and energy infrastructure. Do not contact jury members about the call; doing so may lead to disqualification.
 - **Conduct**: work must be original and must not infringe the rights of others. AI tools may be used; disclose how, and the team stays responsible for the result. No claim of official approval, permit or statutory status.
 - **Publicity**: shortlisted and selected work may be shown on XCITY's website, in exhibitions and publications; every image, map and AI-generated element must be legally publishable.
 
 ## 11. Published with the formal rules
 
-The dates (application deadline, shortlist, briefing, submission, presentations, results), the size of the shortlist, the amount of the honorarium, the jury members, the weight of each criterion, authorship and intellectual property, and the terms of further work are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
+The dates (application deadline, shortlist, briefing, submission, presentations, results), the size of the shortlist, the amount of the honorarium and of the prize, the jury members, the weight of each criterion, authorship and intellectual property, and the terms of further work are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
 ## 12. Materials
 
-- **Stage 1:** this brief and the application form (`templates/firm-application-form.docx`).
+- **Stage 1:** this brief and the application form (`templates/firm-application-form.docx`); once qualified, the stage-one site package (site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps).
 - **Stage 2:** the full site package (boundaries, pilot area, terrain, channels, roads, indicative systems), an online briefing and written answers, for the shortlisted teams.
 - Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.
