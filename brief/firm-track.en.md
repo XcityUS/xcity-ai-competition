@@ -115,6 +115,8 @@ Attached separately, not counted in the 20 pages: proof of professional registra
 
 Video and physical models are optional. More pages or media earn no marks. File formats, size limits, naming and the upload link are published with the formal rules.
 
+Recommended board content: the whole site (the ten decisions); phase one and how it runs on its own; the urban-design zoom-in (blocks, massing, public space); three key issues in depth and eight in principle; the balance of water, energy and compute; phasing, first works and conditions for delivery.
+
 ## 7. Evaluation criteria
 
 **Stage 1 · qualifications** are assessed on relevant experience (scale, climate, new settlement, energy and water), the quality of the reference work, the range the team covers, and the approach statement — the reading of the site's key issues and the proposed way of working (no design asked for).
