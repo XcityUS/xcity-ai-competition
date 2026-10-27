@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/open-city-ai/haidian/tree/main/skills/urban-design-ai-submission",
+  "read_on": "2026-10-26",
+  "adopted": [
+    "Human-readable design narrative separate from full evidence layer",
+    "Three nested scope levels and clear key-area locations",
+    "Each figure has a clear purpose; meaningful finished media rather than raw debug output"
+  ],
+  "not_imported": [
+    "Haidian site constraints and professional standards",
+    "Haidian JSON schema or bilingual gate",
+    "Community posting, account settings, automations or PR actions"
+  ],
+  "our_editorial_decision": "Six-page main booklet plus independent twenty-page technical appendix; no mandated six-page layout was found in the reference",
+  "geometry_changed": false
+}

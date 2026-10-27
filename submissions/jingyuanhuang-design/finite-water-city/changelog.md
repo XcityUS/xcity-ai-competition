@@ -8,3 +8,11 @@ Human declined public submission and identified unclear overall layout. Added re
 
 ## 2026-10-25 — Authorised public preview
 Human explicitly requested publication after reviewing the layout clarification. Added the four V2 planning diagrams to the booklet. Existing formal geometry is retained; orange dashed spine is still a separate design proposal, not a silently adopted route. Updated organiser source reference from SRC-LEAD to SRC-PILOT following upstream rename. Publishing in the author public fork on a dedicated preview branch; formal competition PR waits for entries to open.
+
+
+## 2026-10-26 — V3 whole-site revision
+Human requested our scheme be revised while other agents amend repository rules. Adopted connected whole-site structure, separate fixed living quarter, conditional four-town/two-compute/gateway system; distinguished flood sensitivity from permanent protection; replaced rectangular master boundary with wider source-shaped planning envelope, retaining initial buildings and declaring future-reserve depth. Regional routes/phasing and computed metrics reconciled. Corrected M1 to fully matched hours with reserve-only initial battery. Retired arbitrary 80km access and 7200-resident regional ceiling. Previous submitted inputs archived under reviews/whole-site-v3/previous-submitted. No public push in this revision.
+
+
+## 2026-10-26 — V6 complete presentation and updated-boundary migration
+Synced upstream c60cd1d: revised seam-closed organiser boundary, current grouped nodes, depth matrix and presentation contract. Recomputed regional/master geometry and metrics. Added 19 authored site/system/urban-design/node plan-section/operation/resource pages, three registered finished node aerials, full 14-section Chinese statement and independent evidence matrix. Replaced six-page main narrative with the complete design argument; kept raw controls and detail accounts in the technical appendix. User authorised public upload and render-cover replacement. Remaining resource, engineering, expansion-block and gateway-area gaps are explicit; no approval or content-review pass claimed.

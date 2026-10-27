@@ -1,0 +1,11 @@
+{
+  "structure_gap_m2": 231.06001459201798,
+  "structure_overlap_m2": 116.51677989959717,
+  "structure_outside_m2": 0.0,
+  "new_building_fixed_overlap_m2": 0.0,
+  "invalid_geographic": 0,
+  "invalid_projected": 0,
+  "regional_partition_tolerance_m2": 500,
+  "regional_partition_note": "Round-trip geometry repair leaves 231m2 gap and 117m2 summed overlap across a 1.655 billion m2 site; below declared 500m2 regional drafting tolerance. Not cadastral precision.",
+  "unresolved": "Added envelope is conditional reserve, not completed block design. Gateway below ~7km2 intent; water rights, fixed living-quarter demand and engineered road access remain unverified."
+}

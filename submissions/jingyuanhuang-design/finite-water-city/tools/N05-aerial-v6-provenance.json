@@ -1,0 +1,13 @@
+{
+  "path": "media/N05-aerial-v6.png",
+  "node_id": "N05",
+  "view": "aerial",
+  "model": "OpenAI built-in image generation; exact model version unavailable",
+  "prompt": "Use case: sketch-to-render. Transform this exact geometry-derived control into a finished architectural competition aerial of Agua Finita, San Juan desert. Preserve the exact camera, footprints, building heights, roof shapes, spacing, paths, roads, planting locations and relative scale. Change only material realism, light and a restrained human layer. Clear warm daylight; pale mineral plaster, muted metal, dry aggregate, sparse arid planting, architectural visualisation quality. No text, no labels, no watermark. No invented buildings, streets, mountains, water features, lawns or forest. This is a conceptual image, not a photograph or approval. Show the three long single-storey compute halls, their dry-cooling/service edge, four repair/drying workshops and the small heat-receiving pavilion exactly where the control places them. No decorative greenhouse or towers. Roof surfaces and architectural materials are realistic. People stay on existing public paths, freight in the service zone.",
+  "generated_at": "2026-10-26",
+  "post_processing": "none",
+  "reference_images": "own_work",
+  "reference_images_note": "Author's geometry-derived control renders/N05-aerial.png supplied; keep original camera and geometry. Conceptual presentation only.",
+  "control_image": "renders/N05-aerial.png",
+  "caption": "Finished conceptual aerial for N05; geometry remains authoritative, not a photograph or approval."
+}

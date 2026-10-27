@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "layout_version": 1,
+  "documents": {
+    "main": {
+      "path": "drawings/a3-booklet.pdf",
+      "pages": 31
+    },
+    "technical": {
+      "path": "drawings/a3-technical-appendix.pdf",
+      "pages": 17
+    }
+  },
+  "sections": [
+    {
+      "id": "whole_site",
+      "document": "main",
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "node_locator",
+      "document": "main",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "node:N05",
+      "document": "main",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "node:N07",
+      "document": "main",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "id": "node:N10",
+      "document": "main",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "id": "phasing",
+      "document": "main",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "key_metrics",
+      "document": "main",
+      "pages": [
+        28
+      ]
+    }
+  ],
+  "note": "Page-order and file checks only; design quality and image/geometry agreement require independent review."
+}

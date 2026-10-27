@@ -1,0 +1,113 @@
+{
+  "source_commit": "c60cd1d",
+  "crs": "EPSG:32719 regional calculation; outputs EPSG:4326",
+  "site_utm_km2": 1655.709389567692,
+  "area_account_km2": {
+    "fixed_agri": 13.892211232008629,
+    "fixed_living": 2.480783499017229,
+    "protect": 269.72379862872225,
+    "wash": 73.90964680447411,
+    "floodstudy": 421.4677031740237,
+    "dry": 193.48485095748714,
+    "compute": 10.305277935348375,
+    "localindustry": 0.6039950649090617,
+    "town": 24.136454674967965,
+    "energy": 175.6864112988207,
+    "gateway": 2.640963448926635,
+    "agri": 467.377292848982
+  },
+  "partition_gap_m2": 0.0,
+  "partition_overlap_m2": -3.814697265625e-06,
+  "proposal_fixed_overlap_m2": 0.0,
+  "master_km2": 40.562105830686264,
+  "routes": [
+    {
+      "name": "P1 首批街区接驳",
+      "from_id": "initial",
+      "to_id": "A",
+      "phase": "P1",
+      "length_km": 3.55,
+      "flood_band_km": 0.0,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P1 西侧接入",
+      "from_id": "entry",
+      "to_id": "A",
+      "phase": "P1",
+      "length_km": 1.62,
+      "flood_band_km": 0.41,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P1 既定生活区接驳",
+      "from_id": "living",
+      "to_id": "A",
+      "phase": "P1",
+      "length_km": 15.8,
+      "flood_band_km": 0.0,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P2 生产主轴南段",
+      "from_id": "A",
+      "to_id": "K1",
+      "phase": "P2",
+      "length_km": 34.66,
+      "flood_band_km": 6.96,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P2 北段生产主轴",
+      "from_id": "K1",
+      "to_id": "K2",
+      "phase": "P2",
+      "length_km": 11.71,
+      "flood_band_km": 3.2,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P2 西北生活支线",
+      "from_id": "K2",
+      "to_id": "B",
+      "phase": "P2",
+      "length_km": 16.74,
+      "flood_band_km": 6.4,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P2 北部生活支线",
+      "from_id": "K2",
+      "to_id": "C",
+      "phase": "P2",
+      "length_km": 7.87,
+      "flood_band_km": 0.0,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P3 绕山向东通道",
+      "from_id": "K1",
+      "to_id": "D",
+      "phase": "P3",
+      "length_km": 35.92,
+      "flood_band_km": 4.91,
+      "status": "300 m least-cost corridor; not road engineering"
+    },
+    {
+      "name": "P3 门户联系",
+      "from_id": "D",
+      "to_id": "E",
+      "phase": "P3",
+      "length_km": 18.33,
+      "flood_band_km": 1.01,
+      "status": "300 m least-cost corridor; not road engineering"
+    }
+  ],
+  "limits": [
+    "300m regional screening; source channels are DEM-derived, not surveyed",
+    "No water rights, grid connection, road right-of-way, soil or bridge approvals inferred",
+    "Production reservations are not irrigated or installed area; no new population promise",
+    "Gateway suitable reservation may be below indicative 7km2; remaining land is not forced into flood zone",
+    "This review does not replace canonical submission geometry or certify all twelve gates"
+  ]
+}

@@ -1,33 +1,17 @@
-# AGUA FINITA | 有限水城
+# AGUA FINITA｜有限水城
 
-**Public preview / 公开预览** · Jingyuan Huang · Codex · 2026-10-25
+**V6 完整修订 · Jingyuan Huang · 2026-10-26**
 
-这是 XCITY AI Competition 的预览作品。比赛目前尚未开放正式提交，本分支公开展示作品，不代表已正式参赛或进入主办方画廊。
+[完整中文方案与设计图文](report/proposal.html) · [主展示图册](drawings/a3-booklet.pdf) · [独立技术附件](drawings/a3-technical-appendix.pdf)
 
-The city grows only when its water ledger can support another complete neighbourhood. A first settlement beside the fixed agrivoltaic pilot gives water, shade and essential services priority over uninterrupted compute.
+![首批街区概念鸟瞰封面](media/cover-render-v5.png)
 
-## Read the layout / 先看布局
+全场地结构、首期总体、城市设计放大、三个节点及资源运行共同构成方案。主册保留正式diagram、平面、关键断面和成品鸟瞰／人视，原始体量对照与完整技术记录位于附件。六页V4仅为历史摘要，不再是主展示入口。
 
-![First settlement](reviews/layout-v2/02-master-layout.png)
+N05 算力与余热利用：南侧生产边缘；N07 季节河道公园：西北沟道边缘；N10 遮阴公共空间：住宅东侧公共核心。
 
-Four residential groups share the civic destination. Production sits south, the dry-wash reserve west, and photovoltaics east. Orange dashed lines are separately identified design proposals; building geometry and the formal movement network have not silently changed.
+[三节点定位](reviews/presentation-v4/node-locator.png) · [设计深度与待核问题](design_depth_matrix.json) · [自动合规结果](self_check.json)
 
-## Documents
+本版未声称工程或规划审批。当前严格筛选下东部门户候选约2.64km²，约7km²意向仍需核实；水权、既定生活区实际需求和道路水文工程未被虚构为已落实。自动通过不等于设计批准。
 
-- [A3 booklet / 完整图册](drawings/a3-booklet.pdf)
-- [A0 board / 总图](drawings/a0-board.pdf)
-- [Four-page layout clarification / 布局澄清](reviews/layout-v2/AGUA-FINITA-layout-v2.pdf)
-- [Design statement / 设计说明](proposal.md)
-- [Validation report / 自检结果](self_check.json)
-- [Image prompts and provenance](image_provenance.json)
-- Download this branch and open `visual/index.html` for the offline 3D scene, or `report/proposal.html` for the offline report.
-
-## Concept views
-
-![Civic shade commons](media/N10-eye-day.png)
-
-![City at evening](media/city-evening.png)
-
-Images illustrate the submitted geometry; they are not site photographs or measured evidence. Engineering, water rights, grid capacity and operating performance are disclosed assumptions. Review the full metrics and assumptions before interpreting the scheme.
-
-This preview changes only this author's submission directory. Formal entry and organiser gallery publication are separate later steps.
+参考海淀项目的人工阅读／证据分层组织方法并署名，未复制其空间方案。旧版快照在 reviews/ 中，当前几何与指标位于 geometry/ 与 metrics.json。

@@ -2,14 +2,14 @@
   "metrics": [
     {
       "key": "master_area_km2",
-      "value": 12.008,
+      "value": 40.5893,
       "unit": "km2",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "site_coverage_pct",
-      "value": 1.342,
+      "value": 0.397,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
@@ -23,14 +23,14 @@
     },
     {
       "key": "far",
-      "value": 0.0259,
+      "value": 0.0077,
       "unit": "ratio",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "open_space_pct",
-      "value": 58.754,
+      "value": 17.382,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/land_use.geojson"
@@ -52,12 +52,12 @@
     {
       "key": "structure_km2",
       "value": {
-        "agri_production": 536.327,
-        "energy_compute": 232.555,
-        "industry": 1.045,
-        "living": 9.512,
-        "port": 1.199,
-        "reserve": 875.744
+        "agri_production": 481.567,
+        "energy_compute": 186.111,
+        "industry": 1.081,
+        "living": 26.634,
+        "port": 2.165,
+        "reserve": 959.128
       },
       "unit": "km2",
       "evidence": "computed",
@@ -65,10 +65,12 @@
     },
     {
       "key": "hourly_cfe_match_pct",
-      "value": 72.993,
+      "value": 62.432,
       "unit": "%",
-      "evidence": "assumed",
-      "assumption": "A-ENERGY"
+      "evidence": "computed",
+      "assumption": "A-ENERGY",
+      "computed_from": "tools/hourly_dispatch.csv",
+      "note": "Fraction of 8760 hours with zero unmatched grid import; synthetic scenario, not measured performance"
     },
     {
       "key": "peak_it_load_mw",
@@ -173,7 +175,7 @@
       "value": "separated",
       "unit": "enum",
       "evidence": "declared",
-      "note": "Service perimeter; public routes meet machines only at seven interlocked gated crossings"
+      "note": "Separate public paths and regional/service corridors; 7 registered gated interfaces"
     }
   ]
 }
