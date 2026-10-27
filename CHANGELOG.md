@@ -1,3 +1,11 @@
+## 2026-10-26 · Simplified institution registration and email materials
+
+- Keep the two-track homepage free of institution-specific materials, dates and forms. Embed the brief contact form in the practice page only.
+- Before opening: register interest. Once open: apply on the practice page, receive the application form by email, and reply with the completed form, evidence and up-to-ten-page ideas PDF for stage-one review.
+- Remove public draft/upload steps and duplicated checklists. Preserve existing private management links and records.
+- Keep registration to 31 December 2026 and complete replies to 31 January 2027, both 23:59 UTC; select five in February. Automatic mail is not configured; operational sending remains manual until integrated.
+- Synchronise the bilingual full brief, previews and web guide.
+
 ## 2026-10-26 · Official application page, schedule and Agent presentation
 
 - Keep the application form at the official website's `application.html`; private intake/storage stays behind the API. Existing private management links remain compatible.

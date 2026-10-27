@@ -6,3 +6,4 @@
 .checklist{border:1px solid var(--line);padding:24px;margin-bottom:32px;background:var(--surface)}.checklist h3{margin-top:24px}.checklist li{margin-bottom:12px}.checklist ul{padding-left:22px}.checklist p{margin-bottom:0}
 
 .embedded .top,.embedded footer{display:none}.embedded .shell{padding:24px 0;max-width:none}.embedded body{overflow:hidden}.embedded .columns{gap:28px}
+.registration{max-width:900px}.registration h1{font-size:clamp(28px,3vw,36px);margin-bottom:12px}.registration .lead{font-size:15px;margin-bottom:24px}.registration .receipt{margin-top:28px}.simple-form{padding:24px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.embedded .registration{padding:0}.embedded .registration h1{margin-top:0}@media(max-width:600px){.field-grid{grid-template-columns:1fr}.simple-form{padding:20px 16px}}
