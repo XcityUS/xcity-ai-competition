@@ -32,7 +32,13 @@ def run_operating():
  save(f,'B03-hall-elevation')
 
  # Trial plot envelopes, showing service headlands and segregated visitor ground, not green planting.
- bb=(573000,6551090,573800,6551550);f,a=canvas(bb,(11,7));base(a,bb)
+ bb=(573000,6551090,573800,6551550);f,a=canvas(bb,(11,7));fill(a,box(*bb),'#D8CAB1')
+ for g,p in load(P/'geometry/courtyard_details.geojson'):fill(a,g,'#E6D9BD' if p['material']=='mineral_pavers' else '#BDB09B',edge=BG,lw=.4)
+ for g,p in bld:
+  if g.intersects(box(*bb)):fill(a,g,'#727B76')
+ for g,p in roads:
+  if g.geom_type.endswith('LineString') and g.intersects(box(*bb)):line(a,g.intersection(box(*bb)),RUST if p.get('network')=='people' else BLUE,.8)
+
  for g,p in assets:
   if p.get('id','').startswith('F-PV'):
    fill(a,g.buffer(2,cap_style=2),'#768E9D',alpha=.65)
@@ -48,9 +54,13 @@ def run_operating():
  label(a,Point(573400,6551105),'Alternating 2m forage / jojoba bands under panels; metered drip',7)
  label(a,Point(573050,6551220),'100 m\nheadland',7);label(a,Point(573750,6551220),'100 m\nheadland',7)
  label(a,Point(573400,6551295),'14 m clear lanes / 18 m pitch / fixed-tilt rows',7)
- label(a,Point(573400,6551340),'PUBLIC PROMENADE / isolated from farm lanes',7)
- label(a,Point(573400,6551500),'REAR FARM SERVICING / gated meter + valve interface',7)
+ label(a,Point(573350,6551331),'29m PUBLIC FORECOURT / connected entries',7)
+ label(a,Point(573350,6551313),'CONTINUOUS SHADED PROMENADE',6)
+ label(a,Point(573350,6551410),'REAR LOADING + MAINTENANCE / public access separate',7)
+ label(a,Point(573350,6551495),'EXISTING ARRIVAL LINK / reserve outside working apron',6)
  save(f,'C02-operating-plan')
+ import shutil
+ shutil.copy2(D/'C02-operating-plan.png',D/'C02-plan.png')
  f,a=plt.subplots(figsize=(12,5),facecolor=BG);a.set_facecolor(BG);a.axis('off');a.set(xlim=(-3,35),ylim=(-1.5,8));a.axhline(0,color=INK,lw=1)
  for x in [0,18]:
   a.plot([x,x+3.76],[3.12,4.48],color=BLUE,lw=5);a.plot([x+1.88,x+1.88],[0,3.8],color=INK,lw=1)

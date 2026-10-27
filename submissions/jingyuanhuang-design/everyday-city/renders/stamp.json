@@ -1,21 +1,21 @@
 {
-  "input_sha256": "6d6c21291780abcd7b366a521439d5468dd06f58b30de2b5cad3af935fa8accc",
+  "input_sha256": "63984bb9433bc4d19e402beea5ece8a8e5e73f75ad5842cda6f9fbea1d7bd7e8",
   "width": 2000,
   "height": 1250,
   "generator": "scripts/render_views.py 1.4.0",
   "files": {
     "city-overall.png": {
-      "sha256": "498650e644bc3c2ab4fc0b09df5cb5ae1cb47ee3349a3891671d7c19af2e6042",
+      "sha256": "92f91ff1913adfaa307807dbfe18e0119083781e4a97e938c9dfb695066c58f8",
       "label": "Complete southwest settlement system / full build-out",
       "time": "day"
     },
     "city-centre.png": {
-      "sha256": "8598342c08317e98533f39f092cc12f7cb5648972fdea7ebdd672502f43f0518",
+      "sha256": "afbe23eb9587d4d654319e61116f37ba80868e12fd9ee1cdfdfbfbc6c6675da8",
       "label": "Town civic band and living districts / local aerial",
       "time": "day"
     },
     "A01-aerial.png": {
-      "sha256": "02d58fff705ba7ee6016e77d7221d02471aceed90d9cd2523af584a0e18f6765",
+      "sha256": "b6fe1876ff404c8f7b972930fa9220f59cd153a9b8e53b73e4469fbf1428202b",
       "label": "A01 open-court housing / local aerial",
       "time": "day"
     },
@@ -25,23 +25,28 @@
       "time": "day"
     },
     "B03-aerial.png": {
-      "sha256": "4ae071469ea3b673626e92911a2abc7ecf119819bc9953fa53454fca756d6e48",
+      "sha256": "3081a702edc92b386104b6f6ba133088db9e4177a88142c4e17a292962386f76",
       "label": "B03 four modular industrial halls and repair / local aerial",
       "time": "day"
     },
     "B03-eye.png": {
-      "sha256": "8e5f202a60f420d249c62af7ed57bc614a42fa742ef1c5c2c21da3ed71b27db3",
+      "sha256": "e7a570563731e06dd199cd1d715686663cea4e578ddad8ff1873c033a48614a8",
       "label": "B03 protected worker spine / eye-level",
       "time": "day"
     },
     "C02-aerial.png": {
-      "sha256": "bcf7bfdac9cd6b0f6c34b1a6b8a3223ed55158f7d7fd123caf980250339a3d1d",
-      "label": "C02 new trial field and learning edge / local aerial",
+      "sha256": "3381ef0436c293f04db0a7aa71e54ed864e6f39e0a7a3a3587229efb0b6f0858",
+      "label": "C02 close local aerial / central crop rows and workshop forecourts; field ends cropped",
       "time": "day"
     },
     "C02-eye.png": {
-      "sha256": "152bdfb4b9502646623e8931567b3a1882d82da82bed342f678af233aae1fcc3",
-      "label": "C02 public shade edge facing new trial rows / eye-level",
+      "sha256": "c697612e18ce70025196405f7867059cd6692a7bed920be365d95a0b68e18c1a",
+      "label": "C02 occupied shade promenade and connected workshop forecourt / eye-level",
+      "time": "day"
+    },
+    "whole-site-aerial.png": {
+      "sha256": "bddd6aea52f140c5aff9624b65dbf4c89f1c2416bd55bd24b47fb5e6ae86d5ee",
+      "label": "Whole issued site / source boundary and seasonal-channel annotations / proposed works only",
       "time": "day"
     }
   }

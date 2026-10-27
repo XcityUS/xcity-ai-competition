@@ -1,0 +1,56 @@
+{
+  "tool": "OpenAI built-in imagegen",
+  "model": "Exact serving model unavailable",
+  "records": [
+    {
+      "path": "media/v3/C02-aerial.png",
+      "tool": "OpenAI built-in imagegen",
+      "model": "Exact serving model unavailable",
+      "prompt": "Create a polished photoreal architectural competition close oblique rendering from this exact control. Preserve camera, all crop row positions and road/building geometry. This is a CLOSE PARTIAL VIEW of the agrivoltaic farm and workshop edge: field ends and terrain may be cropped as in control. TWO and only two long farm-workshop buildings, pale warm masonry/metal facades, recessed regular doors and openings. White FLAT polygons around them are GROUND-LEVEL mineral-paved forecourts, gravel rear loading yards and field headlands, NOT roofs or extra buildings. The two workshops now sit29m behind the long narrow shade canopy; show connected visitor entries, textured paving, a few benches and outdoor learning tables, people walking between workshop doors and the shaded promenade. Keep trucks/pallets/equipment on the REAR side only. Eight raised photovoltaic rows fill foreground diagonally, with narrow forage and low pruned jojoba planted bands directly BELOW panels, wide dry maintenance lanes between rows. Modest muted crop green, visible drip lines, no lawn, no forest. Low permeable fence marks farm/public edge. Warm low sunlight, highly detailed production ground, believable scale. Resolve every part of frame with designed surfaces, panel details, architecture and activity; no broad undefined bare pad, no invented extra functions. No text/labels.\n\nRevision: Correct this architectural rendering against the supplied geometry control while retaining its camera, close framing, two workshops, public shade canopy, forecourts and realistic people/materials. Remove ALL invented planted trees, potted plants, decorative shrubs and irrigated landscape in or around the public forecourts and workshop yards, including plants emerging from roofs. These grounds must be mineral paving/gravel with benches, outdoor learning tables and people, not planted gardens. Natural small scrub can remain only OUTSIDE the designed campus on background desert. Agricultural crop plants remain ONLY in the narrow forage/jojoba bands UNDER the separate raised PV field rows; max1.2m pruned jojoba, dry wide service lanes. The long public canopy is opaque timber/concrete shade roof: NO PV on canopy or workshop roofs. Preserve exact two workshop footprints, separate rear loading, front29m forecourts and low fence. Do not add buildings. Keep image occupied and detailed through architecture, paving, seating, farm servicing and people rather than decorative planting. Do not change camera, crop or layout. No text or labels.",
+      "generated_at": "2026-10-27",
+      "post_processing": "None; PDF export uses JPEG encoding while original PNG is retained.",
+      "reference_images": "own_work",
+      "reference_images_note": "Own current geometry control and earlier own-work finish used for successive corrections; full prompts retained.",
+      "control_image": "renders/C02-aerial.png",
+      "caption": "C02 V3 close partial architectural view; field ends outside frame. Geometry-led illustration, not engineering evidence.",
+      "node_id": "C02",
+      "view": "aerial",
+      "sha256": "381ec0744d3ea4a6956fdd0fc5927b5c7fa6b3ff67844336e27bd59f65df8d3b",
+      "source_generated_file": "exec-9601c646-ba74-4aea-af40-1310659fbc8e.png",
+      "control_sha256": "3381ef0436c293f04db0a7aa71e54ed864e6f39e0a7a3a3587229efb0b6f0858"
+    },
+    {
+      "path": "media/v3/C02-eye.png",
+      "tool": "OpenAI built-in imagegen",
+      "model": "Exact serving model unavailable",
+      "prompt": "Finish this exact eye-level geometry control as photoreal architecture, camera unchanged. We stand UNDER the long opaque concrete/timber shade canopy on a paved public promenade. Preserve every column position, roof edge and two workshop footprints. On the RIGHT, the white plane is a GROUND-LEVEL29m public forecourt leading to farm workshop doors, not a raised wall or a building: show continuous warm mineral paving, four direct accessible entrance paths, a few learning tables and benches, small groups of visitors and staff, finely detailed pale-earth workshop facades with doors. On LEFT are separate raised photovoltaic rows with low jojoba shrubs and narrow forage strips beneath; retain dry working lanes, low wire farm fence and drip pipes. Canopy is plain opaque shade roof, absolutely NO solar modules on it. Rear farm servicing remains beyond buildings; no machinery among visitors. Closely framed, inhabited, precise spatial edges, warm daylight San Juan desert, no lawn, forest, new buildings, text or labels.\n\nRevision: Correct this architectural rendering against the supplied geometry control while retaining its camera, close framing, two workshops, public shade canopy, forecourts and realistic people/materials. Remove ALL invented planted trees, potted plants, decorative shrubs and irrigated landscape in or around the public forecourts and workshop yards, including plants emerging from roofs. These grounds must be mineral paving/gravel with benches, outdoor learning tables and people, not planted gardens. Natural small scrub can remain only OUTSIDE the designed campus on background desert. Agricultural crop plants remain ONLY in the narrow forage/jojoba bands UNDER the separate raised PV field rows; max1.2m pruned jojoba, dry wide service lanes. The long public canopy is opaque timber/concrete shade roof: NO PV on canopy or workshop roofs. Preserve exact two workshop footprints, separate rear loading, front29m forecourts and low fence. Do not add buildings. Keep image occupied and detailed through architecture, paving, seating, farm servicing and people rather than decorative planting. Do not change camera, crop or layout. No text or labels.\n\nFinal correction: Make one small correction to this rendering and leave everything else, including camera, architecture, crop rows, paving, canopy, people and benches exactly unchanged: REMOVE the forklift and all delivery pallets, cargo boxes and loading clutter from the PUBLIC forecourt by the workshop doors on the right. This side is visitor learning space, so replace those objects with a few simple workshop demonstration tables or clear mineral ground. All actual loading/vehicles occur behind the buildings and are not visible from this camera. No other changes, no trees, no new buildings, no text.",
+      "generated_at": "2026-10-27",
+      "post_processing": "None; PDF export uses JPEG encoding while original PNG is retained.",
+      "reference_images": "own_work",
+      "reference_images_note": "Own current geometry control and earlier own-work finish used for successive corrections; full prompts retained.",
+      "control_image": "renders/C02-eye.png",
+      "caption": "C02 V3 close partial architectural view; field ends outside frame. Geometry-led illustration, not engineering evidence.",
+      "node_id": "C02",
+      "view": "eye_level",
+      "sha256": "7bdd4db4330ed6c8b5a478482429a86417ba911a0b7dd71c8822a0a3f3d02b39",
+      "control_sha256": "c697612e18ce70025196405f7867059cd6692a7bed920be365d95a0b68e18c1a"
+    },
+    {
+      "path": "media/v3/city-overall.png",
+      "tool": "OpenAI built-in imagegen",
+      "model": "Exact serving model unavailable",
+      "prompt": "Make a minimal geometry update to the FIRST reference finished architectural model photograph using the SECOND reference current control. Keep the first image's camera, terrain, roads, town, exact FOUR small industrial halls in2x2, repair sheds, main solar field, model materials and all other details UNCHANGED. Edit ONLY the two farm-workshop buildings in the small partly cropped8-row field at the bottom: move them55m closer to their long public shade canopy, reducing the public forecourt depth to29m, as shown by the current control. Rear ground becomes a clear loading apron. Do not add rooftop PV anywhere; preserve unplanted mineral town ground and existing narrow crop strips under solar panels. No new buildings, trees, labels or water. This is a small location correction at the bottom of the image, not a redesign or re-render of the whole composition.",
+      "generated_at": "2026-10-27",
+      "post_processing": "None; PDF export uses JPEG encoding while original PNG is retained.",
+      "reference_images": "own_work",
+      "reference_images_note": "Own current geometry control and earlier own-work finish used for successive corrections; full prompts retained.",
+      "control_image": "renders/city-overall.png",
+      "caption": "V3 settlement-system model illustration; courtyard location revised to current geometry. Not a whole-territory view.",
+      "node_id": "",
+      "view": "aerial",
+      "sha256": "181b2476200a3776bbb36be7634fc73c676ed10f87daf58e1e1ac104520c0437",
+      "additional_reference": "reviews/redesign-v2/rejected/city-overall-planted-trees.png",
+      "control_sha256": "92f91ff1913adfaa307807dbfe18e0119083781e4a97e938c9dfb695066c58f8"
+    }
+  ]
+}

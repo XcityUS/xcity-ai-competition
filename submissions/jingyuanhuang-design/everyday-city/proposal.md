@@ -1,4 +1,4 @@
-# THE EVERYDAY CITY / V2
+# THE EVERYDAY CITY / V3
 
 ## 1. Design thesis
 
@@ -46,7 +46,7 @@ B03 occupies the southern Works campus. Four80x40m industrial data-centre halls 
 
 ## 12. C02 / Farm-learning edge
 
-C02 is a new800x500m campus outside both fixed pilots. Two service/training sheds face a long public shade promenade and eight explicit new trial PV rows, with farm/service access behind and to the side. Existing pilot interiors are unchanged. Alternating2m cultivation bands carry forage and pruned jojoba directly beneath raised4m-wide fixed-tilt panels. Panel centre height3.8m gives about3.1m minimum edge clearance;1.2m pruned jojoba and a2.5m-wide/2.6m-high farm vehicle are assumed envelopes. C02 row pitch18m leaves14m clear lanes and100m end headlands. The main field uses20m pitch. New bands total3.828ha forage and3.828ha jojoba. Metered drip laterals and shutoff valves are isolated from electrical servicing; visitor and machinery routes remain separate. Jojoba is wind-pollinated: an assumed1:8 male/female trial distribution along rows and both ends needs seasonal wind/flowering verification. Irrigation screening allowances4000m3/ha/year forage and2000 jojoba give22,968m3/year. Soil and lawful water gate planting; no commercial yield or already-planted condition is claimed. Protected pilot interiors remain unchanged. Trial PV is excluded from the main city energy account.
+C02 is a new800x500m campus outside both fixed pilots. Two service/training sheds face a long public shade promenade and eight explicit new trial PV rows, with farm/service access behind and to the side. Existing pilot interiors are unchanged. Alternating2m cultivation bands carry forage and pruned jojoba directly beneath raised4m-wide fixed-tilt panels. Panel centre height3.8m gives about3.1m minimum edge clearance;1.2m pruned jojoba and a2.5m-wide/2.6m-high farm vehicle are assumed envelopes. C02 row pitch18m leaves14m clear lanes and100m end headlands. The main field uses20m pitch. New bands total3.828ha forage and3.828ha jojoba. Metered drip laterals and shutoff valves are isolated from electrical servicing; visitor and machinery routes remain separate. Jojoba is wind-pollinated: an assumed1:8 male/female trial distribution along rows and both ends needs seasonal wind/flowering verification. Irrigation screening allowances4000m3/ha/year forage and2000 jojoba give22,968m3/year. Soil and lawful water gate planting; no commercial yield or already-planted condition is claimed. Protected pilot interiors remain unchanged. Trial PV is excluded from the main city energy account. V3 moves both workshop halls55m south toward the public canopy, making a continuous29m-deep public forecourt. Direct accessible entries and modelled seating connect the workshops to the now aligned shaded promenade. A separate west public approach avoids rear deliveries; loading and equipment staging use70m-deep rear aprons. No new buildings, jobs, planting or irrigation demand are added. The new close oblique view deliberately crops field ends: it is a local architectural view, not a whole-site overview. The entire800x500m node and its100m assumed end headlands remain legible in the plan.
 
 ## 13. Declared trade-off
 
@@ -71,3 +71,8 @@ Three phase-one commitments are costly or irreversible after construction: excav
 
 
 Operational drawings: reviews/redesign-v2/diagrams/B03-operating-plan.png and B03-module-group.png show the shared campus and module positions; C02-operating-plan.png and C02-operating-section.png show panel/crop/service compatibility; commissioning-P1.png through commissioning-P3.png distinguish operation and construction. geometry/crops.geojson is the new planting source; reviews/redesign-v2/agriculture-account.json reconciles planted area and water.
+
+
+### V3 representation and scope
+
+The formal source-based territorial axon retains the issued boundary, source terrain and seasonal-channel lines. Lines are source context, not constructed fences or permanent water. Substantial ground remains terrain/landscape or conditional reserve, not installed solar infill. The C02 cover is a close partial architectural view; its camera and frame are recorded in reviews/redesign-v2/camera-registry.json. Courtyard surfaces, entrance paths, benches, low farm/public fence and rear delivery apron are explicit geometry, not decorative image additions. All counts and water budgets remain the V2 scenarios; see reviews/redesign-v3/design-changes.json.

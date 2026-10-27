@@ -145,7 +145,7 @@
   renderer.outputEncoding = T.sRGBEncoding; renderer.physicallyCorrectLights = true;
   document.getElementById('view').appendChild(renderer.domElement);
   const scene = new T.Scene();
-  const camera = new T.PerspectiveCamera(50, 1.6, 0.3, 150000);
+  const camera = new T.PerspectiveCamera(50, 1.6, 0.3, 400000);
 
   const sky = new T.Sky(); sky.scale.setScalar(120000); scene.add(sky);
   const su = sky.material.uniforms;
@@ -262,7 +262,25 @@
   D.ground.forEach(gr => { if (gr.use !== 'reserve') flat(gr, gr.plaza ? GROUND.plaza : (GROUND[gr.use] || GROUND.open_space), 0.06, gr.use === 'energy' || gr.use === 'agriculture' ? 40 : 24); });
   const WASH = std({ map: TEX.gravel, color: 0xb5a693, roughness: 1 });
   (D.crop_bands || []).forEach(gr => flat(gr, new T.MeshStandardMaterial({color: gr.species === 'forage' ? 0x7d9258 : 0x9a876a, roughness:1}), .10, 10));
+  (D.court_surfaces || []).forEach(gr => flat(gr, new T.MeshStandardMaterial({color:gr.material === 'mineral_pavers' ? 0xc7b99e : gr.material === 'stabilised_gravel' ? 0xa69b85 : 0xb19b7c,roughness:1}), .18, 10));
   D.washes.forEach(w => flat(w, WASH, 0.04, 40));
+  // Source annotations, not invented water, setbacks or a constructed perimeter.
+  const territoryContext = new T.Group();
+  function sourceLine(coords, material) {
+    const pts = [];
+    for (let i = 1; i < coords.length; i++) {
+      const a = coords[i - 1], b = coords[i], n = Math.max(1, Math.ceil(Math.hypot(b[0]-a[0], b[1]-a[1]) / 120));
+      for (let j = 0; j < n; j++) { const t = j/n, x = a[0]+t*(b[0]-a[0]), y = a[1]+t*(b[1]-a[1]); pts.push(new T.Vector3(x, hAt(x,y)+8, -y)); }
+    }
+    if (coords.length) { const q=coords[coords.length-1]; pts.push(new T.Vector3(q[0],hAt(q[0],q[1])+8,-q[1])); }
+    const obj = new T.Line(new T.BufferGeometry().setFromPoints(pts), material); obj.computeLineDistances(); territoryContext.add(obj);
+  }
+  const boundaryMat = new T.LineBasicMaterial({color:0x823516, linewidth:2, depthTest:false});
+  (D.site_boundary || []).forEach(p => [p.outer,...p.holes].forEach(r => sourceLine([...r,r[0]],boundaryMat)));
+  const channelMat = new T.LineBasicMaterial({color:0x527e9c,depthTest:false});
+  (D.source_channels || []).forEach(r => sourceLine(r,channelMat));
+  territoryContext.renderOrder=100; territoryContext.visible=false; scene.add(territoryContext);
+
   const ROAD = { machine: std({ map: TEX.asphalt, roughness: 0.85 }),
                  people: std({ map: TEX.paving, roughness: 0.9 }),
                  shared: std({ map: TEX.pavers, roughness: 0.9 }),
@@ -345,9 +363,11 @@
   const pvRows = D.pv_rows, tilt = deg(D.pv_tilt || 20);
   const pvq = new T.Quaternion().setFromEuler(new T.Euler(-tilt, Math.PI / 2, 0));
   instanced(new T.BoxGeometry(4, 0.06, 1), pvMat, pvRows, (r, p, q, s) => { p.set(r[0], hAt(r[0], r[1]) + (r[3] || 1.7), -r[1]); q.copy(pvq); s.set(1, 1, r[2]); });
-  instanced(new T.BoxGeometry(0.1, 1, 0.1), postMat, pvRows, (r, p, q, s) => { p.set(r[0], hAt(r[0], r[1]) + (r[3] || 1.7) / 2, -r[1]); q.identity(); s.set(1, (r[3] || 1.7), r[2]); }, false);
+  instanced(new T.CylinderGeometry(.08,.08,1,6),postMat,D.pv_posts || [],(r,p,q,s)=>{p.set(r[0],hAt(r[0],r[1])+r[2]/2,-r[1]);q.identity();s.set(1,r[2],1);},false);
 
   instanced(new T.IcosahedronGeometry(1,1), new T.MeshStandardMaterial({color:0x77805b,roughness:1}), D.jojoba || [], (r,p,q,s)=>{p.set(r[0],hAt(r[0],r[1])+.6,-r[1]);q.identity();s.set(1,.6,1);});
+  instanced(new T.BoxGeometry(1,.45,.6),new T.MeshStandardMaterial({color:0x91785e,roughness:1}),D.court_benches || [],(r,p,q,s)=>{p.set(r[0],hAt(r[0],r[1])+.225,-r[1]);q.identity();s.set(r[2],1,1);});
+  (D.court_fences || []).forEach(line=>{const pts=line.map(r=>new T.Vector3(r[0],hAt(r[0],r[1])+.9,-r[1]));scene.add(new T.Line(new T.BufferGeometry().setFromPoints(pts),new T.LineBasicMaterial({color:0x75674d})));});
   // trees: 0 broad (algarrobo), 1 poplar (windbreaks), 2 olive (orchards); t = [x, y, size, rot, type]
   const ico = (r, d) => new T.IcosahedronGeometry(r, d);
   const crownBroad = mergeParts([
@@ -426,8 +446,10 @@
     sunLight.target.position.copy(target); sunLight.position.copy(target).add(su.sunPosition.value.clone().multiplyScalar(8000));
   }
   function applyView(v) {
+    territoryContext.visible = v.id === "whole-site-aerial";
     const sunv = D.suns[v.time] || D.suns.day;
     setSun(sunv.azimuth, sunv.elevation, v.time === 'night');
+    if (territoryContext.visible) { sky.visible=false; scene.background=new T.Color(0xece8dc); scene.fog.density=0; }
     camera.fov = v.fov; camera.position.set(v.pos[0], hAt(v.pos[0], v.pos[1]) + v.pos[2], -v.pos[1]);
     const tgt = new T.Vector3(v.target[0], hAt(v.target[0], v.target[1]) + v.target[2], -v.target[1]);
     camera.lookAt(tgt); camera.updateProjectionMatrix();

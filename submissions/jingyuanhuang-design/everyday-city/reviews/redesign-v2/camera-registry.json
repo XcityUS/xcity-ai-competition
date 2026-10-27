@@ -116,18 +116,18 @@
   {
     "id": "C02-aerial",
     "position_utm19s": [
-      574000,
-      6550800,
-      750
+      573740,
+      6551020,
+      340
     ],
     "target_utm19s": [
-      573400,
-      6551300,
+      573430,
+      6551290,
       0
     ],
-    "fov_degrees": 45,
+    "fov_degrees": 46,
     "aspect_ratio": 1.6,
-    "scope": "C02 new trial field and learning edge / local aerial",
+    "scope": "C02 close local aerial / central crop rows and workshop forecourts; field ends cropped",
     "phase": "Full build-out scenario; node core enabled in Phase 1",
     "control_image": "renders/C02-aerial.png",
     "geometry_source": "geometry/"
@@ -135,18 +135,18 @@
   {
     "id": "C02-eye",
     "position_utm19s": [
-      573410,
-      6551330,
+      573385,
+      6551313,
       1.7
     ],
     "target_utm19s": [
-      573290,
-      6551200,
+      573190,
+      6551335,
       2
     ],
     "fov_degrees": 63,
     "aspect_ratio": 1.6,
-    "scope": "C02 public shade edge facing new trial rows / eye-level",
+    "scope": "C02 occupied shade promenade and connected workshop forecourt / eye-level",
     "phase": "Full build-out scenario; node core enabled in Phase 1",
     "control_image": "renders/C02-eye.png",
     "geometry_source": "geometry/"

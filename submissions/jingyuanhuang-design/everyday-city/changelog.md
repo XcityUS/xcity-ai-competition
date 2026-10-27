@@ -21,3 +21,7 @@ Replaced the compact six-neighbourhood prototype with a complete phased town, in
 
 ## 2026-10-27 / Complete V2 operating and agrivoltaic revision
 Whole-site zoning, complete town, public services and road/landscape diagrams replace the withdrawn local compound. Compact modular campus, raised agrivoltaics with forage/jojoba crop geometry and22968m3/year assumed new irrigation, staged commissioning and construction isolation are coordinated with25-page design booklet, visual-first A0, eight concept views and separate technical appendix. Publication explicitly authorised by Jingyuan Huang; content remains not independently assessed.
+
+
+## 2026-10-27 / V3 farm forecourts and close framing
+User requested a composed, inhabited farm-edge view rather than isolated objects on an empty pad. Workshops move55m toward the public promenade;29m forecourts, seated shade, separated west public approach and70m rear loading aprons are explicit geometry. Close aerial/eye cameras show the central interface and crop field ends only where appropriate. Crop/IT/housing/jobs/water scenarios unchanged. Whole-site source-boundary/channel axon added. Public booklet26pages; table-free A0 and technical appendix refreshed. Direct publication remains authorised.

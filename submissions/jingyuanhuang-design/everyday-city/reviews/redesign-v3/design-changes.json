@@ -1,0 +1,15 @@
+{
+  "revision": "V3 / C02 courtyard and framing correction",
+  "building_shift_south_m": 55,
+  "public_forecourt_depth_m": 29,
+  "rear_apron_depth_m": 70,
+  "programme_change": "None: same2 halls,6000m2 each,70jobs total; same8 panel rows and crop bands; no additional irrigation",
+  "unbuilt_ground": {
+    "field_ends": "100m manoeuvring/service headlands, assumed",
+    "rear_edge": "Existing main arrival/service link retained; compact apron has actual loading purpose",
+    "outside_node": "Undeveloped terrain remains outside the close local frame"
+  },
+  "separation": "Public promenade and forecourts south of workshops; machinery deliveries north/rear. No new public/machine crossing.",
+  "proof": "geometry/courtyard_details.geojson and current movement/buildings/assets; all source-based",
+  "limits": "Detailed turning, accessibility, grading, fencing, drainage and agronomy require professional verification"
+}

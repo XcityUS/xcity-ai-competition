@@ -46,7 +46,7 @@
         "figures/fig-04-movement.png",
         "figures/fig-05-open-space-water.png",
         "figures/fig-08-node-location.png",
-        "media/v2/city-overall.png"
+        "media/v3/city-overall.png"
       ],
       "geometry": [
         "geometry/master_area.geojson",
@@ -216,8 +216,8 @@
       },
       "drawings": [
         "figures/node-C02-plan.png",
-        "media/v2/C02-aerial.png",
-        "media/v2/C02-eye.png",
+        "media/v3/C02-aerial.png",
+        "media/v3/C02-eye.png",
         "reviews/redesign-v2/diagrams/C02-section.png"
       ],
       "geometry": [
@@ -248,5 +248,10 @@
     "clearances": "reviews/redesign-v2/diagrams/C02-operating-section.png",
     "campus": "reviews/redesign-v2/diagrams/B03-operating-plan.png",
     "commissioning": "reviews/redesign-v2/diagrams/commissioning-P1.png"
+  },
+  "v3_spatial_evidence": {
+    "courtyards": "geometry/courtyard_details.geojson",
+    "terrain_axon": "reviews/redesign-v2/diagrams/whole-site-axon.png",
+    "changes": "reviews/redesign-v3/design-changes.json"
   }
 }
