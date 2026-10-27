@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "competition": "xcity-ai-competition",
+  "title": "THE EVERYDAY CITY",
+  "title_zh": "",
+  "slug": "everyday-city",
+  "summary": "A photovoltaic-agriculture-led territory with compact living, a reduced processing corridor and two small gateway reserves. V4 compares exclusive land and overlapping61% energy/31% agriculture coverage with the Whitepaper programme; retained terrain remains explicit. The complete southwest town and three detailed nodes retain their phased capacity scenarios.",
+  "language": "en",
+  "author": {
+    "github": "jingyuanhuang-design",
+    "responsible_party": "Jingyuan Huang",
+    "organisation": ""
+  },
+  "agent": {
+    "name": "Codex",
+    "model": "GPT-6 family; exact serving version unavailable",
+    "runtime": "Codex desktop on macOS"
+  },
+  "autonomy": {
+    "class": "human_directed",
+    "human_role": "Jingyuan Huang set housing/public-life priorities and directed a Whitepaper V7 functional-balance correction, with continued direct publication authorisation. Codex revised territorial zoning, gateway scale, functional accounts, diagrams and presentation; independent design review remains pending."
+  },
+  "nodes": [
+    "A01",
+    "B03",
+    "C02"
+  ],
+  "nodes_reason": "A01 tests shared housing ground; B03 tests a separately serviced productive campus; C02 tests a new public/farm interface outside fixed pilots.",
+  "tradeoff": {
+    "objective": "Maximum uninterrupted compute throughput and minimum productive-route length",
+    "why": "Independent housing, public life and a clear service boundary take precedence.",
+    "consequence": "Flexible IT output, additional maintenance and walking connections, shared-space funding obligations.",
+    "who_bears": "Compute investors and operators through interruption contracts; public-service funding must not depend on uninterrupted IT revenue."
+  },
+  "design_depth": {
+    "tier1_structure": {
+      "evidence": [
+        "geometry/structure.geojson",
+        "figures/fig-01-structure.png"
+      ]
+    },
+    "tier2_master": {
+      "evidence": [
+        "geometry/master_area.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "figures/fig-02-master-plan.png",
+        "figures/fig-04-movement.png"
+      ]
+    },
+    "tier3_nodes": {
+      "A01": {
+        "plan": "figures/node-A01-plan.png",
+        "aerial": "media/v2/A01-aerial.png",
+        "eye_level": "media/v2/A01-eye.png"
+      },
+      "B03": {
+        "plan": "figures/node-B03-plan.png",
+        "aerial": "media/v2/B03-aerial.png",
+        "eye_level": "media/v2/B03-eye.png"
+      },
+      "C02": {
+        "plan": "figures/node-C02-plan.png",
+        "aerial": "media/v3/C02-aerial.png",
+        "eye_level": "media/v3/C02-eye.png"
+      }
+    }
+  },
+  "package_state": "ready_for_review",
+  "created": "2026-10-27",
+  "updated": "2026-10-27",
+  "booklet": {
+    "cover": "media/v3/C02-aerial.png",
+    "pages": [],
+    "section_pages": {},
+    "cover_caption": "C02 / close local view of the farm-workshop edge; field ends outside frame"
+  },
+  "scene_generation": {
+    "procedural_vegetation": false,
+    "procedural_pv": false,
+    "illustrative_entourage": false
+  },
+  "scene_seed": 20261027,
+  "thesis": "Photovoltaic agriculture leads the territory; shared public life organises a compact town.",
+  "presentation_revision": "Everyday City V4 / whitepaper-led functional rebalance",
+  "public_display_status": "authorised_preview_not_design_approval",
+  "render_note": " | explicit-geometry-sha256:944661ba7850bbf4f27a3c6230d67cecc2d6a821329de57bda3ae3280284c148"
+}

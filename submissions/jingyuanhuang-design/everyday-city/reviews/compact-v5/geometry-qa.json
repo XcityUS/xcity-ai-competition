@@ -1,0 +1,41 @@
+{
+  "status": "targeted_self_review_not_engineering_approval",
+  "base_gap_m2": 47.38641256941082,
+  "base_outside_m2": 0.02483450354748129,
+  "base_overlap_excess_m2": 0.1772770881652832,
+  "retained_difference_m2": {
+    "D00-F": 0.0,
+    "D00-L": 0.0,
+    "D06": 1.8732561173442387e-07,
+    "D07": 0.0
+  },
+  "dwellings": {
+    "before": 7872,
+    "after": 7872
+  },
+  "jobs": {
+    "before": 2150,
+    "after": 2150
+  },
+  "operating_it_mw": {
+    "before": 8,
+    "after": 8
+  },
+  "town_buildings_unchanged_m2": 0.0,
+  "pv_rows": {
+    "before": 70,
+    "after": 70,
+    "length_before_m": 38279.99999999767,
+    "length_after_m": 38279.99999999523
+  },
+  "crop_ha": {
+    "before": 7.656000000134949,
+    "after": 7.65600000049742
+  },
+  "crop_outside_fields_m2": 3.137395776823485e-09,
+  "building_channel_screen_overlap_m2": 0.0,
+  "master_area_km2": 7.63680576650034,
+  "land_partition_gap_m2": 0.0,
+  "land_partition_overlap_m2": 3.2065436244010925e-06,
+  "remaining_checks": "Noise/thermal/fire buffers, civil grading, drainage crossings, utility isolation, vehicle swept paths and operating rights are unresolved.350/400m are layout assumptions, not approved standards."
+}

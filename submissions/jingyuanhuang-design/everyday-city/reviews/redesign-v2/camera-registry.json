@@ -2,18 +2,18 @@
   {
     "id": "city-overall",
     "position_utm19s": [
-      572100,
-      6550500,
-      2300
+      573000,
+      6552900,
+      1800
     ],
     "target_utm19s": [
-      574100,
-      6553000,
+      574300,
+      6554800,
       0
     ],
     "fov_degrees": 52,
     "aspect_ratio": 1.6,
-    "scope": "Complete southwest settlement system / full build-out",
+    "scope": "Compact southwest town edge and productive landscape / partial local view / full-build-out scenario",
     "phase": "Full build-out scenario; node core enabled in Phase 1",
     "control_image": "renders/city-overall.png",
     "geometry_source": "geometry/"
@@ -41,12 +41,12 @@
     "id": "A01-aerial",
     "position_utm19s": [
       574319.9999999997,
-      6554560.000000003,
+      6554560.000000002,
       260
     ],
     "target_utm19s": [
       574099.9999999997,
-      6554800.000000003,
+      6554800.000000002,
       0
     ],
     "fov_degrees": 46,
@@ -60,12 +60,12 @@
     "id": "A01-eye",
     "position_utm19s": [
       574071.9999999997,
-      6554770.000000003,
+      6554770.000000002,
       1.7
     ],
     "target_utm19s": [
       574107.9999999997,
-      6554850.000000003,
+      6554850.000000002,
       2
     ],
     "fov_degrees": 63,
@@ -79,12 +79,12 @@
     "id": "B03-aerial",
     "position_utm19s": [
       574950,
-      6552000,
+      6553050,
       580
     ],
     "target_utm19s": [
       574340,
-      6552460,
+      6553510,
       0
     ],
     "fov_degrees": 44,
@@ -98,12 +98,12 @@
     "id": "B03-eye",
     "position_utm19s": [
       574340,
-      6552373,
+      6553423,
       1.7
     ],
     "target_utm19s": [
       574210,
-      6552390,
+      6553440,
       3
     ],
     "fov_degrees": 64,
@@ -117,12 +117,12 @@
     "id": "C02-aerial",
     "position_utm19s": [
       573740,
-      6551020,
+      6552070,
       340
     ],
     "target_utm19s": [
       573430,
-      6551290,
+      6552340,
       0
     ],
     "fov_degrees": 46,
@@ -136,12 +136,12 @@
     "id": "C02-eye",
     "position_utm19s": [
       573385,
-      6551313,
+      6552363,
       1.7
     ],
     "target_utm19s": [
       573190,
-      6551335,
+      6552385,
       2
     ],
     "fov_degrees": 63,

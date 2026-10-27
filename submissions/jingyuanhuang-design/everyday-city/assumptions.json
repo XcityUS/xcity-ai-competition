@@ -65,6 +65,12 @@
       "topic": "Territorial allocation and resource gates",
       "value": "Five functions compared with whitepaper;21% terrain/drainage retained; overlapping agrivoltaic coverage not installed.",
       "basis": "Explicit V4 envelope design, functional-account.json; northern shared-field boundary follows declared6588km UTM service limit, not measured suitability or an installation schedule. No new population, MW or yield capacity."
+    },
+    {
+      "id": "V5-COMPACT",
+      "topic": "Compact productive interface",
+      "value": "350m gross estate/town separation,400m active campus;280m agrivoltaic band,30m service corridor,40m town-edge verge/street. Estate0.60km2; active0.35; reserve0.25.",
+      "basis": "Entrant spatial choice replacing unexplained1.1km gap. Noise/thermal/fire and highway/utility engineering pending; no universal clearance claimed. Same62 main rows and unchanged crop/water/IT/population/jobs."
     }
   ]
 }

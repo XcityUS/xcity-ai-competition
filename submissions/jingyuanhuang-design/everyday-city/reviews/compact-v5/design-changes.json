@@ -1,0 +1,21 @@
+{
+  "shift_north_m": 1050,
+  "gross_campus_km2": 0.6,
+  "active_campus_km2": 0.35,
+  "reserve_km2": 0.25,
+  "former_gross_campus_km2": 1.56,
+  "town_gross_edge_gap_m": 350,
+  "town_active_edge_gap_m": 400,
+  "main_pv_rows": 62,
+  "main_pv_line_m": 33480.0,
+  "crop_ha": 7.656000000134949,
+  "crop_water_m3y": 22968.000000484335,
+  "new_solar_gross_km2": 0.7472,
+  "productive_ground": {
+    "median_slope_pct": 1.1785113019775793,
+    "p95_slope_pct": 2.5
+  },
+  "road_building_conflicts": [],
+  "building_channel_buffer_overlap_m2": 0.0,
+  "claim": "Distances are entrant compact-layout choices, not certified noise/fire/thermal buffers. No new housing, jobs, IT MW, panel line length or crop area is created."
+}

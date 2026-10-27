@@ -4,7 +4,7 @@
   "title": "THE EVERYDAY CITY",
   "title_zh": "",
   "slug": "everyday-city",
-  "summary": "A photovoltaic-agriculture-led territory with compact living, a reduced processing corridor and two small gateway reserves. V4 compares exclusive land and overlapping61% energy/31% agriculture coverage with the Whitepaper programme; retained terrain remains explicit. The complete southwest town and three detailed nodes retain their phased capacity scenarios.",
+  "summary": "A photovoltaic-agriculture-led territory with compact living and separately serviced production. V5 removes the unresolved1.1km gap: existing solar/crop rows form the town interface, the gross works estate contracts to0.60km2 and the active campus sits400m from the town edge. Capacity and crop water remain unchanged scenarios.",
   "language": "en",
   "author": {
     "github": "jingyuanhuang-design",
@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Jingyuan Huang set housing/public-life priorities and directed a Whitepaper V7 functional-balance correction, with continued direct publication authorisation. Codex revised territorial zoning, gateway scale, functional accounts, diagrams and presentation; independent design review remains pending."
+    "human_role": "Jingyuan Huang directed the functional-balance correction and requested redesign of the unresolved gaps, with continued direct publication authorisation. Codex compacted the works, redistributed the same panel/crop inventory and regenerated coordinated drawings and local illustrations; independent design review remains pending."
   },
   "nodes": [
     "A01",
@@ -56,13 +56,13 @@
       },
       "B03": {
         "plan": "figures/node-B03-plan.png",
-        "aerial": "media/v2/B03-aerial.png",
-        "eye_level": "media/v2/B03-eye.png"
+        "aerial": "media/v5/B03-aerial.png",
+        "eye_level": "media/v5/B03-eye.png"
       },
       "C02": {
         "plan": "figures/node-C02-plan.png",
-        "aerial": "media/v3/C02-aerial.png",
-        "eye_level": "media/v3/C02-eye.png"
+        "aerial": "media/v5/C02-aerial.png",
+        "eye_level": "media/v5/C02-eye.png"
       }
     }
   },
@@ -70,7 +70,7 @@
   "created": "2026-10-27",
   "updated": "2026-10-27",
   "booklet": {
-    "cover": "media/v3/C02-aerial.png",
+    "cover": "media/v5/C02-aerial.png",
     "pages": [],
     "section_pages": {},
     "cover_caption": "C02 / close local view of the farm-workshop edge; field ends outside frame"
@@ -82,7 +82,7 @@
   },
   "scene_seed": 20261027,
   "thesis": "Photovoltaic agriculture leads the territory; shared public life organises a compact town.",
-  "presentation_revision": "Everyday City V4 / whitepaper-led functional rebalance",
+  "presentation_revision": "Everyday City V5 / compact productive interface and regenerated local views",
   "public_display_status": "authorised_preview_not_design_approval",
-  "render_note": " | explicit-geometry-sha256:944661ba7850bbf4f27a3c6230d67cecc2d6a821329de57bda3ae3280284c148"
+  "render_note": " | explicit-geometry-sha256:02de5f91e7e25346f6631af3b2b37866c96df2207093929b4780f231f138fced"
 }

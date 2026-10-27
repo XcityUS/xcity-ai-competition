@@ -38,7 +38,7 @@
     {
       "id": "overall_layout",
       "status": "partial",
-      "decision": "V4 whitepaper-led territory: exclusive land, overlapping agrivoltaic coverage, compact gateways and staged local works.",
+      "decision": "Compact productive interface, redistributed same solar/crop inventory and smaller works estate; current local views match relocated geometry.",
       "scope": {
         "extent": "Complete town and associated campuses",
         "phase": "P1-P3 capacity scenario"
@@ -48,9 +48,11 @@
         "figures/fig-04-movement.png",
         "figures/fig-05-open-space-water.png",
         "figures/fig-08-node-location.png",
-        "media/v3/city-overall.png",
+        "media/v5/city-overall.png",
         "reviews/redesign-v2/diagrams/functional-coverage.png",
-        "reviews/redesign-v2/diagrams/whole-site-axon.png"
+        "reviews/redesign-v2/diagrams/whole-site-axon.png",
+        "reviews/redesign-v2/diagrams/compact-interface-v5.png",
+        "reviews/redesign-v2/diagrams/before-after-v5.png"
       ],
       "geometry": [
         "geometry/master_area.geojson",
@@ -184,8 +186,8 @@
       },
       "drawings": [
         "figures/node-B03-plan.png",
-        "media/v2/B03-aerial.png",
-        "media/v2/B03-eye.png",
+        "media/v5/B03-aerial.png",
+        "media/v5/B03-eye.png",
         "reviews/redesign-v2/diagrams/B03-section.png"
       ],
       "geometry": [
@@ -220,8 +222,8 @@
       },
       "drawings": [
         "figures/node-C02-plan.png",
-        "media/v3/C02-aerial.png",
-        "media/v3/C02-eye.png",
+        "media/v5/C02-aerial.png",
+        "media/v5/C02-eye.png",
         "reviews/redesign-v2/diagrams/C02-section.png"
       ],
       "geometry": [

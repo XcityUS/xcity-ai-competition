@@ -18,15 +18,15 @@ for g,p in roads:
  if id.startswith('P-SPUR'):
   xx=float(id.split('-')[2]);yy=float(id.split('-')[3]);xx=xx if yy==6552050 else 574315 if xx==574250 else 574815
   g=LineString([(xx,6551950),(xx,6552030)]) if yy==6552050 else LineString([(xx,6553150),(xx,6552650)])
- if id=='REGIONAL-0':
+ if id=='REGIONAL-0' and not (P/'reviews/compact-v5/design-changes.json').exists():
   coords=list(g.coords);keep=next(i for i,v in enumerate(coords) if v[1]>=6554000);g=LineString([(573200,6553600),(573200,6554000)]+coords[keep:]);p['basis']='Retained original terrain-route study; southwest approach revised around new solar/compute parcels and joined to the public spine.'
  updated.append((g,p))
 scope=unary_union([g for g,p in load(R/'brief/site-package/boundaries/scope_9_13.geojson')]);fixed=unary_union([g for f in ['pilot_area.geojson','pilot_living_area.geojson'] for g,p in load(R/'brief/site-package/pilot-area'/f)])
 external=load(P/'context/external-access-study.geojson')[0][0];end=Point(list(external.coords)[0]);arrival=LineString([end.coords[0],(572500,6551100),(573050,6551550)]).intersection(scope).difference(fixed)
-updated=[(g,p) for g,p in updated if p.get('id') not in ['SW-ARRIVAL-LINK','REGIONAL-WEST-RESEARCH']]
-updated.append((arrival,dict(id='SW-ARRIVAL-LINK',name='Main southwest arrival / unsecured study',network='shared',road_class='primary',width_m=26,phase=1,shaded=False,study_only=True,secured=False,basis='Connect the retained external RN40 corridor-study boundary endpoint to the new public arrival; actual rights, flood crossings and gradients unverified.')))
+updated=[(g,p) for g,p in updated if p.get('id') not in ['SW-ARRIVAL-LINK','REGIONAL-WEST-RESEARCH']] if not (P/'reviews/compact-v5/design-changes.json').exists() else updated
+if not (P/'reviews/compact-v5/design-changes.json').exists():updated.append((arrival,dict(id='SW-ARRIVAL-LINK',name='Main southwest arrival / unsecured study',network='shared',road_class='primary',width_m=26,phase=1,shaded=False,study_only=True,secured=False,basis='Connect the retained external RN40 corridor-study boundary endpoint to the new public arrival; actual rights, flood crossings and gradients unverified.')))
 west=LineString([(580122.4,6574623.7),(577000,6578000),(574000,6582000),(570000,6588000)]).intersection(scope).difference(fixed)
-updated.append((west,dict(id='REGIONAL-WEST-RESEARCH',name='Western field-service study',network='shared',road_class='secondary',width_m=24,phase=3,shaded=False,study_only=True,secured=False,basis='Entrant access study serving the western dry-agriculture district; channel crossings/terrain/right-of-way unresolved, no built road claim.')))
+if not (P/'reviews/compact-v5/design-changes.json').exists():updated.append((west,dict(id='REGIONAL-WEST-RESEARCH',name='Western field-service study',network='shared',road_class='secondary',width_m=24,phase=3,shaded=False,study_only=True,secured=False,basis='Entrant access study serving the western dry-agriculture district; channel crossings/terrain/right-of-way unresolved, no built road claim.')))
 # Count both people/shared to machine contacts, with each unique coordinate once.
 cross=[]
 for a,pa in updated:

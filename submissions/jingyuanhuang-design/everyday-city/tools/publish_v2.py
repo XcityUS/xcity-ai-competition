@@ -14,9 +14,9 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph,Table,TableStyle
 from reportlab.lib.styles import ParagraphStyle
 from pypdf import PdfReader
-P=Path(__file__).resolve().parents[1];R=P.parents[2];O=P/'reviews/redesign-v2';D=O/'diagrams';M=P/'media/v2';OUT=R.parents[1]/'outputs/everyday-city-v4';OUT.mkdir(parents=True,exist_ok=True)
+P=Path(__file__).resolve().parents[1];R=P.parents[2];O=P/'reviews/redesign-v2';D=O/'diagrams';M=P/'media/v2';OUT=R.parents[1]/'outputs/everyday-city-v5';OUT.mkdir(parents=True,exist_ok=True)
 def view(id):
- v=P/'media/v3'/(id+'.png');return v if v.exists() else M/(id+'.png')
+ v=P/'media/v5'/(id+'.png');v=v if v.exists() else P/'media/v3'/(id+'.png');return v if v.exists() else M/(id+'.png')
 qa=json.loads((O/'design-account.json').read_text());program=qa['programme'];cams=json.loads((O/'camera-registry.json').read_text());BG='#F7F4EC';INK='#263F46';MUT='#6B766F';ACC='#B67351';BLUE='#356C86';GREEN='#91AA79'
 for name,w in [('Body','normal'),('Bold','bold')]:pdfmetrics.registerFont(TTFont(name,findfont(FontProperties(family='DejaVu Sans',weight=w))))
 W,H=420*mm,297*mm;style=ParagraphStyle('body',fontName='Body',fontSize=10,leading=14,textColor=HexColor(INK))
@@ -26,38 +26,38 @@ def para(c,x,y,w,s,size=10):
 
 def pic(c,p,x,y,w,h,cover=False):
  im=Image.open(p);iw,ih=im.size;scale=max(w*mm/iw,h*mm/ih) if cover else min(w*mm/iw,h*mm/ih);dw,dh=iw*scale,ih*scale;src=str(p)
- if Path(p).parent.name in ['v2','v3','renders']:
+ if Path(p).parent.name in ['v2','v3','v5','renders']:
   b=io.BytesIO();im.convert('RGB').save(b,format='JPEG',quality=95,subsampling=0);b.seek(0);src=ImageReader(b)
  c.saveState();q=c.beginPath();q.rect(x*mm,y*mm,w*mm,h*mm);c.clipPath(q,stroke=0,fill=0);c.drawImage(src,x*mm+(w*mm-dw)/2,y*mm+(h*mm-dh)/2,dw,dh,mask='auto');c.restoreState()
 def background(c,w=W,h=H):c.setFillColor(HexColor(BG));c.rect(0,0,w,h,fill=1,stroke=0)
 def head(c,title,sub=''):
  background(c);text(c,17,281,'THE EVERYDAY CITY / CITY DESIGN',9,True,ACC);text(c,17,263,title,22,True)
  if sub:para(c,17,252,386,sub,9)
-def footer(c,n):text(c,17,12,'JINGYUAN HUANG / 27 OCT 2026 / V4 / CONCEPT DESIGN',7,color=MUT);text(c,385,12,f'{n:02d}',8)
+def footer(c,n):text(c,17,12,'JINGYUAN HUANG / 27 OCT 2026 / V5 / CONCEPT DESIGN',7,color=MUT);text(c,385,12,f'{n:02d}',8)
 def table(c,x,y,w,rows,weights=None,size=9):
  sty=ParagraphStyle('cell',parent=style,fontSize=size,leading=size*1.3);data=[[Paragraph(html.escape(str(v)),sty) for v in row] for row in rows];weights=weights or [1]*len(rows[0]);t=Table(data,colWidths=[w*mm*v/sum(weights) for v in weights],repeatRows=1);t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),HexColor('#E5DCCB')),('GRID',(0,0),(-1,-1),.3,HexColor('#CAC7BB')),('VALIGN',(0,0),(-1,-1),'TOP'),('TOPPADDING',(0,0),(-1,-1),6),('BOTTOMPADDING',(0,0),(-1,-1),6)]));ww,hh=t.wrap(w*mm,2000);t.drawOn(c,x*mm,y*mm-hh)
 # Numeric scenario, kept separate from source claims and fixed-pilot demands.
 res=qa['residents'];jobs=qa['jobs'];dom=res*85*365/1000;civic=res*15*365/1000;work=jobs*35*300/1000+1000;compute=8*8760*1.3*.1;agri=22968;gross=dom+civic+work+compute+agri;reuse=100000;fresh=(gross-reuse)/.92
 resources=dict(domestic_gross_m3y=dom,civic_gross_m3y=civic,work_gross_m3y=work,compute_makeup_m3y=compute,gross_use_m3y=gross,reuse_m3y=reuse,fresh_abstraction_m3y=fresh,distribution_loss_fraction=.08,full_it_mw=8,pue_assumed=1.3,solar_mwp=26.784,solar_yield_kwh_kwp_y=1800,solar_mwh_y=26.784*1800,compute_mwh_y=8*1.3*8760,fixed_pilot_water='Additional and unknown; no supply entitlement confirmed',agriculture_m3y=agri,trial_irrigation='7.656ha new crop bands;22968m3/y assumed irrigation, no lawful supply or commercial yield established')
 (O/'resource-scenarios.json').write_text(json.dumps(resources,indent=2))
-main=P/'drawings/a3-booklet.pdf';c=canvas.Canvas(str(main),pagesize=(W,H));c.setTitle('THE EVERYDAY CITY | V4 city design');c.setAuthor('Jingyuan Huang');pages=[]
+main=P/'drawings/a3-booklet.pdf';c=canvas.Canvas(str(main),pagesize=(W,H));c.setTitle('THE EVERYDAY CITY | V5 city design');c.setAuthor('Jingyuan Huang');pages=[]
 def page(title,section,fn):
  n=len(pages)+1;fn(c);footer(c,n);c.showPage();pages.append(dict(page=n,title=title,section=section))
 def cover(c):
  background(c);text(c,17,269,'THE EVERYDAY CITY',30,True);text(c,17,256,'PHOTOVOLTAIC AGRICULTURE / COMPACT LIVING / PUBLIC LIFE',11,True,ACC);pic(c,view('C02-aerial'),17,42,386,203,True);text(c,20,47,'C02 / CONNECTED FARM-WORKSHOP EDGE / CLOSE PARTIAL AERIAL',7,True);para(c,17,33,385,'A continuous town of homes, schools and daily services. Production supports the city from its own campus. The cover shows the proposed farm-learning edge; the overall plan locates it within the productive landscape and town.',10)
 page('Cover','cover',cover)
 def thesis(c):
- head(c,'A productive territory with everyday public life','V4 corrects territorial function before composing local images. The town, production campuses and farm interface retain their actual coordinates.')
+ head(c,'A productive territory with everyday public life','V5 corrects territorial function before composing local images. The town, production campuses and farm interface retain their actual coordinates.')
  pic(c,D/'system-layout.png',17,29,165,210)
- for i,(t,b) in enumerate([('01 / Photovoltaic agriculture leads the territory','V4 covers the whole issued boundary. Agriculture and raised solar can share ground; the shared-field overlay is distinct from exclusive land and installed work. Mountain and drainage areas remain visible.'),('02 / Right-size industry and gateways','The former 252 km2 industrial and 292 km2 logistics regions contract to a48 km2 processing corridor and30 km2 of compact gateway reserves. No new jobs or cargo capacity is invented from their area.'),('03 / Compact living with independent services','The complete2.4 x2.4km town is a detailed urban enlargement within the larger living territory. Its local housing, schools, civic band and separate compute campus remain staged operating scenarios.')]):
+ for i,(t,b) in enumerate([('01 / Photovoltaic agriculture leads the territory','V5 covers the whole issued boundary. Agriculture and raised solar can share ground; the shared-field overlay is distinct from exclusive land and installed work. Mountain and drainage areas remain visible.'),('02 / Right-size industry and gateways','The former 252 km2 industrial and 292 km2 logistics regions contract to a48 km2 processing corridor and30 km2 of compact gateway reserves. No new jobs or cargo capacity is invented from their area.'),('03 / Compact living with independent services','The complete2.4 x2.4km town is a detailed urban enlargement within the larger living territory. Its local housing, schools, civic band and separate compute campus remain staged operating scenarios.')]):
   y=231-i*64;text(c,201,y,t,13,True);para(c,201,y-10,197,b,11)
 page('The organising decision','argument',thesis)
 def whole(c):
- head(c,'A productive territory with compact living','V4 / exclusive base land on the issued boundary. Fixed pilots and retained mountains/drainage remain explicit; hatching marks conditional solar/crop co-use.')
+ head(c,'A productive territory with compact living','V5 / exclusive base land on the issued boundary. Fixed pilots and retained mountains/drainage remain explicit; hatching marks conditional solar/crop co-use.')
  pic(c,D/'whole-site.png',17,28,386,218)
-page('V4 whole-site zoning','whole_site',whole)
+page('V5 whole-site zoning','whole_site',whole)
 def balance(c):
- head(c,'Respond to the whitepaper; distinguish the accounts','Reference ~60/30/5/3/2 is strategic. V4 compares functional coverage separately from exclusive land and current works.')
+ head(c,'Respond to the whitepaper; distinguish the accounts','Reference ~60/30/5/3/2 is strategic. V5 compares functional coverage separately from exclusive land and current works.')
  pic(c,D/'functional-coverage.png',17,28,386,218)
 page('Whitepaper and functional balance','whole_site',balance)
 def territorialaxon(c):
@@ -65,20 +65,28 @@ def territorialaxon(c):
  pic(c,D/'whole-site-axon.png',17,29,386,210)
 page('Source-based territorial axon','whole_site',territorialaxon)
 
+def compact(c):
+ head(c,'Replace the missing middle with an operating interface','V5 / same housing, jobs, IT load and crop-net area. Move production1,050m north, shrink the estate, redistribute existing rows; do not fill the picture with invented capacity.')
+ pic(c,D/'compact-interface-v5.png',17,28,386,218)
+page('Compact productive interface','overall_layout',compact)
+def comparison(c):
+ head(c,'The land arrangement changed, not just the crop','Same scale before and after / current layout trial; noise, heat, fire and utility constraints remain to be checked.')
+ pic(c,D/'before-after-v5.png',17,28,386,218)
+page('Before and after / spatial correction','overall_layout',comparison)
 def ground(c):
  head(c,'Choose a coherent town, then accept its distances','The earlier compact all-functions rectangle is withdrawn. The new scheme keeps the southwest access basin while giving housing a complete and independently serviced urban footprint.')
  pic(c,D/'system-layout.png',17,27,180,215)
- items=[('The selected urban ground',f"Town: {qa['town_km2']:.2f} km2; median screened slope {qa['town_ground_screen']['median_slope_pct']}%, 95th percentile {qa['town_ground_screen']['p95_slope_pct']}%. Three housing cells touching the preliminary flood screen are held without capacity."),('The cost of an independent campus','A compact co-location could shorten utilities and staff trips. The selected 1.1 km edge separation protects coherent residential streets and permits an operating boundary, but adds bus, utility and maintenance obligations.'),('What could reverse this decision','Geotechnical conditions, a lawful access corridor, measured noise/dust, utility connection costs or actual demand may change the town or campus boundary. The 150 m channel test is a declared screening distance, not a statutory setback.')]
+ items=[('The selected urban ground',f"Town: {qa['town_km2']:.2f} km2; median screened slope {qa['town_ground_screen']['median_slope_pct']}%, 95th percentile {qa['town_ground_screen']['p95_slope_pct']}%. Three housing cells touching the preliminary flood screen are held without capacity."),('The compact interface replaces the unresolved gap','A compact co-location could shorten utilities and staff trips. The350m gross edge and400m active-campus distance contain the north agrivoltaic interface, service corridor and dry town verge. This is a compact layout trial; noise, heat and fire review can change it.'),('What could reverse this decision','Geotechnical conditions, a lawful access corridor, measured noise/dust, utility connection costs or actual demand may change the town or campus boundary. The 150 m channel test is a declared screening distance, not a statutory setback.')]
  for i,(t,b) in enumerate(items):y=229-i*66;text(c,215,y,t,13,True);para(c,215,y-10,187,b,10)
 page('Ground and alternative','site_reading',ground)
 def system(c):
- head(c,'One settlement system, several operating territories','City scale / true relative coordinates / all phases. The study footprint totals 8.635 km2; it is distinct from the full competition territory.')
+ head(c,'One settlement system, several operating territories','City scale / true relative coordinates / all phases. The study footprint totals 7.6368 km2; it is distinct from the full competition territory.')
  pic(c,D/'system-layout.png',17,29,185,210)
  for i,(t,b) in enumerate([('TOWN / residents and public life','Homes, shops, care and schools are organised by living district. The civic band is a shared destination; the north-south dry commons is public ground, not a lake.'),('WORKS / production and utility services','Four industrial data-centre halls at2 MW operating IT each are released 2 + 1 + 1. Repair, metered local drying trials and utilities have their own servicing. The adjacent 26.784 MWp PV scenario is conditional on module layout and grid study.'),('FARM / public learning and testing','Two farm-service sheds and a public shade promenade face eight new trial rows. Their small trial capacity is excluded from the main city PV account; crop bands have an explicit assumed water budget; commercial yields remain uncredited.')]):y=230-i*65;text(c,218,y,t,12,True);para(c,218,y-10,184,b,10)
 page('Complete system layout','overall_layout',system)
 def overall(c):
- head(c,'The town and its productive edges','Complete southwestern settlement / hypothetical full build-out / finished architectural-model concept; original camera control retained. This image does not depict the entire competition territory.')
- pic(c,view('city-overall'),17,31,386,207);para(c,17,26,386,'The town, independent productive campus, solar study and farm-learning edge retain their actual relative coordinates. Distant territorial districts remain in the full-site plan rather than being invented into the view.',8)
+ head(c,'The town and its productive edges','V5 compact southwestern town edge and production interface / partial local frame / full-build-out scenario. Newly registered camera; not the entire territory or every outlying facility.')
+ pic(c,view('city-overall'),17,31,386,207);para(c,17,26,386,'The north agrivoltaic band and compact campus meet the town edge at their actual coordinates. The C02 farm-learning node lies outside this partial frame; its location and views remain separate.',8)
 page('Overall spatial view','overall_layout',overall)
 def thematic(title,file,body,section):
  def draw(c):head(c,title);pic(c,D/(file+'.png'),17,29,255,217);para(c,291,231,111,body,11)
@@ -111,7 +119,7 @@ for nid,title,sub in NODES:
  page(nid+' eye plan section','node:'+nid,experience)
  if nid=='B03':
   def operation(c):
-   head(c,'B03 / compact modules and shared campus services','0.35 km2 serviced campus within1.56 km2 gross estate;1.21 km2 is unserviced future reserve with no capacity credit.')
+   head(c,'B03 / compact modules and shared campus services','0.35 km2 serviced campus within0.60 km2 gross estate;0.25 km2 is unserviced future reserve with no capacity credit.')
    pic(c,D/'B03-operating-plan.png',17,29,185,210);pic(c,D/'B03-module-group.png',215,164,188,70);pic(c,D/'B03-hall-elevation.png',215,116,188,43)
    para(c,215,108,187,'Four 80 x40m industrial halls each contain eight conceptual integrated equipment bays. Operating IT is assumed 250kW/position: P1/P2/P3 = 4/6/8 MW. Public XPOD reference: 6 racks x 56 kW =336 kW simple rack nameplate;1 MW power-block rating is not 1 MW IT.<br/><br/>50 m side gaps and 60 m between-row service space reserve delivery, replacement, shared plant/fibre/thermal routes and worker shade. Vendor layout, fire access and crane envelopes remain engineering checks. Heat rejection is provided; local drying earns no useful-heat credit yet.',10)
   page('B03 modules and operating interfaces','node:B03',operation)
@@ -150,12 +158,12 @@ def trade(c):
   x=17 if i%2==0 else 218;y=229 if i<2 else 125;text(c,x,y,t,13,True);para(c,x,y-12,184,b,11)
 page('Choices and next verification','conclusion',trade);c.save()
 # A0: only spatial diagrams, selected capacities and short conditional stage captions. No table() call.
-a0=P/'drawings/a0-board.pdf';c=canvas.Canvas(str(a0),pagesize=(1189*mm,841*mm));c.setTitle('THE EVERYDAY CITY | V4 A0');background(c,1189*mm,841*mm)
+a0=P/'drawings/a0-board.pdf';c=canvas.Canvas(str(a0),pagesize=(1189*mm,841*mm));c.setTitle('THE EVERYDAY CITY | V5 A0');background(c,1189*mm,841*mm)
 text(c,25,806,'THE EVERYDAY CITY',48,True);text(c,25,785,'PHOTOVOLTAIC AGRICULTURE / COMPACT LIVING / DISTINCT LAND, COVERAGE AND CONSTRUCTION ACCOUNTS',17,True,ACC)
 pic(c,D/'whole-site.png',25,355,670,416)
-text(c,720,771,'FUNCTIONAL COVERAGE / SHARED LAND IS NOT ADDED TWICE',14,True);pic(c,D/'functional-coverage.png',710,552,450,209)
-text(c,720,537,'SOUTHWEST TOWN + WORKS / LOCAL VIEW',14,True);pic(c,view('city-overall'),710,358,450,170,True)
-for x,file,title in [(25,'city-composite','COMPACT TOWN + CIVIC BAND'),(260,'city-mobility','STREETS + MOVEMENT'),(495,'city-landscape','DRY COMMONS + SHADE')]:
+text(c,720,771,'FUNCTIONAL COVERAGE / SHARED LAND IS NOT ADDED TWICE',14,True);pic(c,D/'functional-coverage.png',710,617,450,144)
+text(c,720,608,'V5 COMPACT TOWN EDGE + PRODUCTIVE INTERFACE',14,True);pic(c,view('city-overall'),710,345,450,255,False)
+for x,file,title in [(25,'city-composite','COMPACT TOWN + CIVIC BAND'),(260,'city-mobility','STREETS + MOVEMENT'),(495,'compact-interface-v5','V5 CONNECTED PRODUCTIVE INTERFACE')]:
  text(c,x,341,title,12,True);pic(c,D/(file+'.png'),x,233,220,101)
 text(c,735,341,'CONDITIONAL LOCAL CONSTRUCTION / TERRITORIES ARE NOT BUILT',12,True)
 for xx,ph in zip([735,879,1023],[1,2,3]):
@@ -164,15 +172,15 @@ for xx,ph in zip([735,879,1023],[1,2,3]):
 text(c,25,224,'THREE LOCATED PLACES / A01 WEST HOUSING / B03 SOUTHERN WORKS / C02 NEW FARM-LEARNING CAMPUS',14,True)
 for x,(nid,title,sub) in zip([25,416,807],NODES):
  text(c,x,207,nid+' / '+title,15,True);pic(c,view(nid+'-aerial'),x,89,181,108,True);pic(c,view(nid+'-eye'),x+186,89,181,108,True);text(c,x,82,'LOCAL AERIAL',8,True);text(c,x+186,82,'EYE LEVEL',8,True);para(c,x,71,365,sub,10)
-para(c,25,35,1135,'7,872 homes / 19,680 residents are full-build-out design capacities, not proven demand. Town-to-compute edge separation: 1.1 km; no residential heat pipe. Green diagram links are proposed dry-landscape/walking/shade opportunities, not mature trees. All images are illustrative finishes over registered geometry controls. Full source, phase and resource accounts are in the technical appendix; no spreadsheet tables appear on this board.',10)
-text(c,1018,19,'JINGYUAN HUANG / V4 / 27 OCT 2026',9,True);c.save()
+para(c,25,35,1135,'7,872 homes / 19,680 residents are full-build-out design capacities, not proven demand. Town-to-compute edge separation: 350 m; no residential heat pipe. Green diagram links are proposed dry-landscape/walking/shade opportunities, not mature trees. All images are illustrative finishes over registered geometry controls. Full source, phase and resource accounts are in the technical appendix; no spreadsheet tables appear on this board.',10)
+text(c,1018,19,'JINGYUAN HUANG / V5 / 27 OCT 2026',9,True);c.save()
 # Technical appendix: controls and accounts do not compete with the finished public narrative.
-tech=P/'drawings/a3-technical-appendix.pdf';c=canvas.Canvas(str(tech),pagesize=(W,H));c.setTitle('THE EVERYDAY CITY | V4 technical appendix');tc=0
+tech=P/'drawings/a3-technical-appendix.pdf';c=canvas.Canvas(str(tech),pagesize=(W,H));c.setTitle('THE EVERYDAY CITY | V5 technical appendix');tc=0
 
 def endtech():
  global tc
  tc+=1;footer(c,tc);c.showPage()
-head(c,'Technical record: boundaries, ground and limits','Version V4. Planar UTM19S figures are distinguished from geodesic machine metrics. Screening data is preliminary; image review is not engineering certification.')
+head(c,'Technical record: boundaries, ground and limits','Version V5. Planar UTM19S figures are distinguished from geodesic machine metrics. Screening data is preliminary; image review is not engineering certification.')
 rows=[['Test / capacity','Value / method']]+[[k,str(qa[k])] for k in ['whole_site_km2','master_km2','town_km2','dwellings','residents','jobs','housing_blocks','school_places','building_fixed_overlap_m2','building_channel_screen_overlap_m2','building_flood_screen_overlap_m2','base_gap_m2','base_overlap_m2','land_partition_gap_m2']];table(c,17,235,386,rows,[1,1],9);endtech()
 head(c,'Exclusive territorial account','Gross area and current district edge logic; fixed context is unchanged and is not counted again as new development.')
 rows=[['District / primary use','Area km2','Edge / basis']]+[[v['id']+' / '+v['name']+' / '+v['primary_use'],f"{v['area_km2']:.3f}",v['edge_logic']] for v in qa['regions']];table(c,17,235,386,rows,[1.4,.4,2.2],8);endtech()
@@ -182,7 +190,7 @@ rows=[['Function','Reference %','Exclusive km2 / %','Overlapping coverage km2 / 
 for k in ba['reference_pct']:
  v=ba['exclusive_including_fixed'][k];w=ba['functional_coverage'][k];rows.append([k,str(ba['reference_pct'][k]),f"{v['km2']:.2f} / {v['pct']:.2f}",f"{w['km2']:.2f} / {w['pct']:.2f}"])
 rows.append(['Retained terrain/drainage','separate',f"{ba['retained_km2']:.2f} / 20.93",'not energy installations']);table(c,17,235,386,rows,[1.1,.6,1.1,1.5],10)
-para(c,17,134,385,'<b>Overlap.</b> Solar/agriculture co-use376.06km2 including fixed pilot context. This is counted once in exclusive land; functional coverage does not sum to100%.<br/><br/><b>Operating scale.</b> Current detailed study8.635km2, town5.76km2, new crops7.656ha; no additional residents, IT MW, solar capacity or crop yield from gross territorial labels.<br/><br/><b>Future water consequence.</b> A35% net crop/gross ratio at an assumed3,000m3/ha/year over the new362.17km2 shared-field candidate, excluding the fixed pilot, implies about38.0million m3/year of additional future water. This is neither supplied nor included in current operating demand. Resource, soil, grid, access and demand gates precede each field/campus release.<br/><br/><b>Spatial correction.</b> Industry contracts from251.93 to48.17km2 along the transfer corridor; gateways from291.98 to29.56km2 in two compact approach/junction reservations. Most allocated land is unserviced and has no throughput or employment credit.',10)
+para(c,17,134,385,'<b>Overlap.</b> Solar/agriculture co-use376.06km2 including fixed pilot context. This is counted once in exclusive land; functional coverage does not sum to100%.<br/><br/><b>Operating scale.</b> Current detailed study7.6368km2, town5.76km2, new crops7.656ha; no additional residents, IT MW, solar capacity or crop yield from gross territorial labels.<br/><br/><b>Future water consequence.</b> A35% net crop/gross ratio at an assumed3,000m3/ha/year over the new362.17km2 shared-field candidate, excluding the fixed pilot, implies about38.0million m3/year of additional future water. This is neither supplied nor included in current operating demand. Resource, soil, grid, access and demand gates precede each field/campus release.<br/><br/><b>Spatial correction.</b> Industry contracts from251.93 to48.17km2 along the transfer corridor; gateways from291.98 to29.56km2 in two compact approach/junction reservations. Most allocated land is unserviced and has no throughput or employment credit.',10)
 endtech()
 head(c,'Complete construction capacity account','New / cumulative capacities, from current building inventory; household ratio 2.5 is assumed. Regional research districts receive no invented resident or job capacity.')
 rows=[['Phase','Homes new / total','Residents new / total','Jobs new / total','Objective']]+[[p['phase'],f"{p['new_dwellings']} / {p['cumulative_dwellings']}",f"{p['new_residents']:g} / {p['cumulative_residents']:g}",f"{p['new_jobs']} / {p['cumulative_jobs']}",p['objective']] for p in program];table(c,17,235,386,rows,[.4,.8,.9,.8,2],9)
@@ -201,5 +209,5 @@ para(c,17,232,385,'<b>Issued sources.</b> Scope and fixed pilots: brief/site-pac
 sections=[]
 for key in ['whole_site','node_locator','node:A01','node:B03','node:C02','phasing','key_metrics']:sections.append(dict(id=key,document='main',pages=[p['page'] for p in pages if p['section']==key]))
 (P/'drawings/presentation-index.json').write_text(json.dumps(dict(schema_version=1,layout_version=2,documents=dict(main=dict(path='drawings/a3-booklet.pdf',pages=len(pages)),technical=dict(path='drawings/a3-technical-appendix.pdf',pages=tc)),sections=sections,pages=pages,note='Visual-first A0; no dense tables. Detailed accounts and controls are separate. No design approval.'),indent=2))
-for src,name in [(main,'everyday-city-v4-booklet.pdf'),(a0,'everyday-city-v4-a0.pdf'),(tech,'everyday-city-v4-technical-appendix.pdf')]:shutil.copy2(src,OUT/name)
+for src,name in [(main,'everyday-city-v5-booklet.pdf'),(a0,'everyday-city-v5-a0.pdf'),(tech,'everyday-city-v5-technical-appendix.pdf')]:shutil.copy2(src,OUT/name)
 print('DELIVERED',len(pages),'main pages,',tc,'technical pages; outputs',OUT)

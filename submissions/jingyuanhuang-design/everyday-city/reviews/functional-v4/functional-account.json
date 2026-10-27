@@ -1,5 +1,5 @@
 {
-  "version": "V4",
+  "version": "V5",
   "scope_km2": 1657.8435417846936,
   "reference_pct": {
     "energy_compute": 60,
@@ -10,55 +10,55 @@
   },
   "exclusive_including_fixed": {
     "agri_production": {
-      "km2": 515.1062384831752,
-      "pct": 31.070859553408493
+      "km2": 515.50623848319,
+      "pct": 31.094987282589997
     },
     "living": {
-      "km2": 82.47575111798646,
-      "pct": 4.974881467354879
+      "km2": 80.99105111799277,
+      "pct": 4.88532536856914
     },
     "retained": {
-      "km2": 346.9512332869903,
-      "pct": 20.927863489065565
+      "km2": 346.95123328699026,
+      "pct": 20.92786348906556
     },
     "port": {
-      "km2": 29.560386397979318,
-      "pct": 1.783062493711386
+      "km2": 29.560386397979045,
+      "pct": 1.7830624937113693
     },
     "industry": {
-      "km2": 48.167537921150355,
-      "pct": 2.905433275645377
+      "km2": 48.16753792115401,
+      "pct": 2.9054332756455974
     },
     "energy_compute": {
-      "km2": 635.5823945773963,
-      "pct": 38.337899720813354
+      "km2": 636.6724414829486,
+      "pct": 38.40365061214167
     }
   },
   "functional_coverage": {
     "energy_compute": {
-      "km2": 1011.6469119299803,
-      "pct": 61.021856793610766
+      "km2": 1013.1369599766224,
+      "pct": 61.111735482949435
     },
     "agri_production": {
-      "km2": 515.106238483175,
-      "pct": 31.070859553408493
+      "km2": 516.2534384831902,
+      "pct": 31.140057880699374
     },
     "living": {
-      "km2": 82.47575111798646,
-      "pct": 4.974881467354879
+      "km2": 80.99105111799277,
+      "pct": 4.88532536856914
     },
     "industry": {
-      "km2": 48.167537921150355,
-      "pct": 2.905433275645377
+      "km2": 48.16753792115401,
+      "pct": 2.905433275645597
     },
     "port": {
-      "km2": 29.560386397979318,
-      "pct": 1.783062493711386
+      "km2": 29.560386397979048,
+      "pct": 1.7830624937113693
     }
   },
-  "solar_agriculture_overlap_km2": 376.0645173525831,
-  "retained_km2": 346.9512332869903,
-  "new_works_scope_km2": 8.635,
+  "solar_agriculture_overlap_km2": 377.21171735771634,
+  "retained_km2": 346.95123328699026,
+  "new_works_scope_km2": 7.636805766502252,
   "net_new_crop_ha": 7.656,
   "new_crop_irrigation_m3y": 22968,
   "local_capacity_change": false,
@@ -66,5 +66,6 @@
   "resource_gate": "Future shared-field candidate excludes the fixed13.89km2 pilot. At a declared35% crop-net/gross ratio and3000m3/ha/year blended allowance, cultivating the362.17km2 candidate would require about38.0million m3/year of additional indicative water. This is not supplied or secured and is excluded from current operating demand.",
   "fixed_pilots_unchanged": true,
   "new_co_use_candidate_km2": 362.1723061205913,
-  "official_advisory": "organiser-advisory.json / corrected upstream analyser after26eedc2/e890a76"
+  "official_advisory": "organiser-advisory.json / corrected upstream analyser after26eedc2/e890a76",
+  "local_compact_revision": "V5: active campus400m from town edge, gross campus350m;0.60km2 estate,0.25km2 unserviced reserve; solar/crop totals unchanged."
 }

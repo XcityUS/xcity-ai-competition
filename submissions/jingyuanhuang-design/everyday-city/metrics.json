@@ -2,7 +2,7 @@
   "metrics": [
     {
       "key": "master_area_km2",
-      "value": 8.6407,
+      "value": 7.6419,
       "unit": "km2",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
@@ -16,35 +16,35 @@
     },
     {
       "key": "site_coverage_pct",
-      "value": 7.96,
+      "value": 9.001,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "gfa_m2",
-      "value": 1629631.6,
+      "value": 1629631.7,
       "unit": "m2",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "far",
-      "value": 0.1886,
+      "value": 0.2133,
       "unit": "ratio",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "open_space_pct",
-      "value": 11.368,
+      "value": 12.854,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/land_use.geojson"
     },
     {
       "key": "human_machine_interfaces",
-      "value": 5,
+      "value": 6,
       "unit": "count",
       "evidence": "computed",
       "computed_from": "geometry/movement.geojson"
@@ -59,10 +59,10 @@
     {
       "key": "structure_km2",
       "value": {
-        "agri_production": 1030.896,
-        "energy_compute": 1696.371,
+        "agri_production": 1032.444,
+        "energy_compute": 1698.942,
         "industry": 48.197,
-        "living": 165.061,
+        "living": 162.089,
         "port": 59.156,
         "reserve": 347.136
       },
@@ -76,11 +76,11 @@
         "agriculture": 40.03,
         "civic": 50.84,
         "compute": 35.02,
-        "energy": 78.05,
-        "infrastructure": 127.33,
+        "energy": 74.77,
+        "infrastructure": 126.79,
         "mixed_use": 11.3,
         "open_space": 98.23,
-        "reserve": 143.67,
+        "reserve": 47.61,
         "residential": 279.6
       },
       "unit": "mixed",
@@ -92,7 +92,7 @@
       "value": {
         "people": 8.931,
         "machine": 9.214,
-        "shared": 198.975
+        "shared": 198.824
       },
       "unit": "mixed",
       "evidence": "computed",

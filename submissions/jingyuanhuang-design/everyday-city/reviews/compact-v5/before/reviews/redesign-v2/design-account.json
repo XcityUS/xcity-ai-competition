@@ -1,0 +1,261 @@
+{
+  "source_boundary": "brief/site-package/boundaries/scope_9_13.geojson",
+  "whole_site_km2": 1657.8435417846936,
+  "master_km2": 8.635,
+  "town_km2": 5.76,
+  "dwellings": 7872,
+  "residents": 19680.0,
+  "jobs": 2150,
+  "housing_blocks": 99,
+  "school_places": 3100,
+  "building_fixed_overlap_m2": 0.0,
+  "building_channel_screen_overlap_m2": 0.0,
+  "building_flood_screen_overlap_m2": 0.0,
+  "base_gap_m2": 0.0,
+  "base_overlap_m2": 5.0067901611328125e-06,
+  "town_ground_screen": {
+    "median_slope_pct": 1.18,
+    "p95_slope_pct": 4.25
+  },
+  "productive_ground_screen": {
+    "median_slope_pct": 2.36,
+    "p95_slope_pct": 7.69
+  },
+  "town_to_compute_edge_m": 1100.0,
+  "interfaces": 5,
+  "school_capacity_basis": "Two southern schools x 750 places plus four northern schools x 400; assumed, need 15% of population; demographics/funding review required",
+  "land_partition_gap_m2": 0.0,
+  "programme": [
+    {
+      "phase": 1,
+      "new_dwellings": 1776,
+      "cumulative_dwellings": 1776,
+      "new_residents": 4440.0,
+      "cumulative_residents": 4440.0,
+      "new_jobs": 905,
+      "cumulative_jobs": 905,
+      "period": "Years 0-5 scenario",
+      "objective": "Complete western neighbourhood, civic core, utilities and first productive halls",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "basis": "computed building inventory; assumed 2.5 residents per dwelling"
+    },
+    {
+      "phase": 2,
+      "new_dwellings": 2112,
+      "cumulative_dwellings": 3888,
+      "new_residents": 5280.0,
+      "cumulative_residents": 9720.0,
+      "new_jobs": 805,
+      "cumulative_jobs": 1710,
+      "period": "Years 5-10 conditional",
+      "objective": "Eastern living district and additional productive capacity",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "basis": "computed building inventory; assumed 2.5 residents per dwelling"
+    },
+    {
+      "phase": 3,
+      "new_dwellings": 3984,
+      "cumulative_dwellings": 7872,
+      "new_residents": 9960.0,
+      "cumulative_residents": 19680.0,
+      "new_jobs": 440,
+      "cumulative_jobs": 2150,
+      "period": "Years 10-20 conditional",
+      "objective": "Northern neighbourhoods and final staged halls",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "basis": "computed building inventory; assumed 2.5 residents per dwelling"
+    }
+  ],
+  "regions": [
+    {
+      "id": "D00-F",
+      "district_id": "D00-F",
+      "name": "Fixed agrivoltaic pilot",
+      "primary_use": "fixed_context",
+      "system": "agri_production",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Exact issued boundary; forage and jojoba retained; no redesign or new capacity credited.",
+      "area_km2": 13.892211232006002,
+      "status": "fixed_context"
+    },
+    {
+      "id": "D00-L",
+      "district_id": "D00-L",
+      "name": "Fixed living pilot",
+      "primary_use": "fixed_context",
+      "system": "living",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Exact issued living outline; no redesign.",
+      "area_km2": 2.480783499017229,
+      "status": "fixed_context"
+    },
+    {
+      "id": "D07",
+      "district_id": "D07",
+      "name": "Mountain stewardship",
+      "primary_use": "ecology",
+      "system": "reserve",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Retained source-DEM steep/high terrain interpretation; not reclassified as energy to meet a target.",
+      "area_km2": 269.72307274872566,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D06",
+      "district_id": "D06",
+      "name": "Drainage and dry landscape links",
+      "primary_use": "reserve",
+      "system": "reserve",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Retained seasonal-drainage/landscape account; not a lake or statutory exclusion; detailed suitability remains unresolved.",
+      "area_km2": 77.22816053826466,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D05-W",
+      "district_id": "D05-W",
+      "name": "Western arrival and trade reserve",
+      "primary_use": "logistics",
+      "system": "port",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Western approach to retained SW public/regional spine; angular edge is an entrant service boundary, not cadastre. First gate is access-only; no customs or throughput entitlement.",
+      "area_km2": 16.96929927233458,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D05-E",
+      "district_id": "D05-E",
+      "name": "Eastern domestic transfer reserve",
+      "primary_use": "logistics",
+      "system": "port",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Compact junction of regional east-west spine and south-east branch. Domestic consolidation only; does not claim a Chilean border port or approved highway connection.",
+      "area_km2": 12.591087125644737,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D01",
+      "district_id": "D01",
+      "name": "Southwest living and civic territory",
+      "primary_use": "mixed_use",
+      "system": "living",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Compact town plus future public-service catchment at SW arrival. Northeast service limit is pulled back from prior basin; excludes separate works/farm parcels. Only the existing 5.76km2 town carries population capacity.",
+      "area_km2": 79.99496761896923,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D04",
+      "district_id": "D04",
+      "name": "Central processing and repair corridor",
+      "primary_use": "industry",
+      "system": "energy_compute",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "A declared 3.2km-wide operating corridor along the first15.5km of the proposed central transfer route. Replaces 252km2 general industry. Width is a service-envelope choice, not a road ROW or buildable-area result; no new operating capacity credited.",
+      "area_km2": 48.167537921150355,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D02",
+      "district_id": "D02",
+      "name": "Western and central agricultural territory",
+      "primary_use": "agriculture",
+      "system": "agri_production",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Western alluvial-fan study expanded into the central valley/service catchment released from general industry. Edges follow declared field-service envelopes; soils, lawful irrigation and flood design must qualify actual fields. Not all land is irrigated.",
+      "area_km2": 501.2140272511691,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D03-S",
+      "district_id": "D03-S",
+      "name": "Southern energy and compute works",
+      "primary_use": "energy",
+      "system": "energy_compute",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Separate existing proposed compute and solar parcels south of town; land released from the old living basin remains an energy/service study, not housing capacity.",
+      "area_km2": 15.867935011130642,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D03-N",
+      "district_id": "D03-N",
+      "name": "Northern solar-energy territory",
+      "primary_use": "energy",
+      "system": "energy_compute",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Retains northern shoulder allocation served by northern route study. No cultivation credit without a separate crop/water design.",
+      "area_km2": 188.3517235295482,
+      "status": "declared_conditional_allocation_not_installed"
+    },
+    {
+      "id": "D03-E",
+      "district_id": "D03-E",
+      "name": "Central and eastern energy territory",
+      "primary_use": "energy",
+      "system": "energy_compute",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Released former oversized industrial/logistics regions now form the main conditional solar-energy/service territory, outside retained mountain/drainage units. Future field subdivisions follow access/drainage studies; polygon area is neither panel area nor power capacity.",
+      "area_km2": 431.3627360367174,
+      "status": "declared_conditional_allocation_not_installed"
+    }
+  ],
+  "land_use_km2": {
+    "reserve": 1.21,
+    "school": 0.169344,
+    "infrastructure": 1.272504,
+    "dry_park": 0.42336,
+    "terrain_review": 0.225792,
+    "energy": 0.78,
+    "daily_centre": 0.112896,
+    "residential": 2.794176,
+    "agriculture": 0.4,
+    "compute": 0.35,
+    "civic": 0.338688,
+    "open_space": 0.55824
+  },
+  "road_building_centerline_conflicts": [],
+  "qa_note": "Road centreline tests only; swept paths, widths, accessible route junctions and emergency engineering need professional review.",
+  "active_compute_campus_km2": 0.35,
+  "productive_gross_estate_km2": 1.56,
+  "unserviced_productive_reserve_km2": 1.21,
+  "module_positions": 32,
+  "module_operating_it_kw_assumed": 250,
+  "module_rack_nameplate_kw_reference": 336,
+  "power_block_nameplate_kw_reference": 1000,
+  "plant_gap_logic": "50m horizontal group gap and60m between-row zone reserve delivery, plant/fibre/thermal service and separated worker shade. Dimensions are entrant assumptions pending supplier/fire/thermal review.",
+  "land_partition_note": "Exclusive partition verified after removing duplicate reserve records; geometric self-check passes."
+}

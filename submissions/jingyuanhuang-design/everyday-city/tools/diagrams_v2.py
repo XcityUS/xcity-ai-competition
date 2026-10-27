@@ -15,7 +15,7 @@ load=lambda f:[(transform(T,shape(x['geometry'])),x['properties']) for x in json
 land=load(P/'geometry/land_use.geojson');land=[(g,dict(p,use=p.get('programme_use',p['use']))) for g,p in land];bld=load(P/'geometry/buildings.geojson');roads=load(P/'geometry/movement.geojson');regions=[(g,p) for g,p in load(P/'geometry/structure.geojson') if p.get('plan_role')=='base_zoning'];nodes=load(P/'geometry/nodes.geojson');dist=load(O/'districts.geojson');scope=load(R/'brief/site-package/boundaries/scope_9_13.geojson');ch=load(R/'brief/site-package/water/channels_dem.geojson');fixed=load(R/'brief/site-package/pilot-area/pilot_area.geojson')+load(R/'brief/site-package/pilot-area/pilot_living_area.geojson');assets=load(P/'geometry/assets.geojson')
 BG='#F7F4EC';INK='#263F46';BLUE='#356C86';RUST='#BC7652';GREEN='#9BB77A';GREY='#DEDCD3';COL={'residential':'#E8CA86','civic':'#C37A68','school':'#8CB2C0','daily_centre':'#C897B5','dry_park':'#A8BF87','terrain_review':'#D9D9CF','infrastructure':'#BDC5C7','open_space':'#DAD9C7','compute':'#889DB0','industry':'#B29A88','agriculture':'#B9C992','energy':'#C4AD74'}
 RC={'D03-S':'#DFCC89','D03-N':'#DFCC89','D03-E':'#DFCC89','D05-W':'#B7A4BF','D05-E':'#B7A4BF','D00-F':'#A69779','D00-L':'#B59B84','D01':'#DEB397','D02':'#B6C693','D03':'#DFCC89','D04':'#A4BDC1','D05':'#B7A4BF','D06':'#E3E0D2','D07':'#C5CBBE'}
-PC={1:'#C18361',2:'#9FB48C',3:'#88A8BD'};TOWN=(573250,6554150,575950,6556850);SYSTEM=(572700,6550800,576150,6557000)
+PC={1:'#C18361',2:'#9FB48C',3:'#88A8BD'};TOWN=(573250,6554150,575950,6556850);SYSTEM=(572700,6551850,576150,6557000)
 def poly(g):
  if g.is_empty:return
  if g.geom_type=='Polygon':yield g
@@ -65,7 +65,7 @@ def run():
  f,a=canvas(SYSTEM,(7,10));base(a,SYSTEM)
  for g,p in dist:line(a,g,RUST,1.2);label(a,g,p['id'],9)
  for g,p in nodes:line(a,g,RUST,1.6);label(a,g,p['node_id'],10)
- label(a,Point(574500,6553700),'1.1 km town / estate; 1.45 km active campus\nNo residential heat pipe credited',8)
+ label(a,Point(574500,6554120),'350 m town / estate; 400 m active campus\nNo residential heat pipe credited',8)
  save(f,'system-layout')
  for mode,name in [('land','city-composite'),('mobility','city-mobility'),('green','city-landscape'),('phase','city-phasing')]:
   f,a=canvas(TOWN);base(a,TOWN,mode)
@@ -96,9 +96,9 @@ def run():
   elif nid=='B03':
    for q,pr in bld:
     if q.intersects(g) and pr['use']=='compute':label(a,q,'2 MW IT\nP'+str(pr['phase']),7)
-   label(a,Point(574600,6552320),'SEPARATE WORKER SHADE ROUTE',8)
+   label(a,Point(574600,6553370),'SEPARATE WORKER SHADE ROUTE',8)
   else:
-   label(a,Point(573400,6551200),'NEW TRIAL ROWS\nNo irrigation right assumed',8);label(a,Point(573400,6551500),'TRAINING / FARM SERVICE',8)
+   label(a,Point(573400,6552250),'NEW TRIAL ROWS\nNo irrigation right assumed',8);label(a,Point(573400,6552550),'TRAINING / FARM SERVICE',8)
   save(f,nid+'-plan')
  # Geometry-derived, unexaggerated sectional relationships in metres.
  for nid in ['A01','B03','C02']:

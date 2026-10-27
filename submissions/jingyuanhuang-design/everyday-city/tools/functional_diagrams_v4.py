@@ -33,7 +33,7 @@ for q in poly(dual):
  a.add_patch(PathPatch(MP(v,co),facecolor='none',edgecolor='#847A47',lw=0,hatch='///',alpha=.55))
 decorate(a)
 f.text(.04,.96,'A PRODUCTIVE TERRITORY, WITH COMPACT LIVING',fontsize=18,fontweight='bold',color=INK)
-f.text(.04,.925,'Whole issued site / V4 exclusive base land + co-use overlay / all allocations are resource-gated',fontsize=10,color=INK)
+f.text(.04,.925,'Whole issued site / V5 exclusive base land + co-use overlay / all allocations are resource-gated',fontsize=10,color=INK)
 for i,k in enumerate(['energy_compute','agri_production','living','industry','port','retained']):
  y=.84-i*.106;v=account['exclusive_including_fixed'][k];f.patches.append(Rectangle((.72,y),.018,.025,transform=f.transFigure,facecolor=CC[k],edgecolor='none'));f.text(.75,y+.013,NM[k],fontsize=10,fontweight='bold',color=INK);f.text(.75,y-.012,f"{v['km2']:,.1f} km²  /  {v['pct']:.1f}% exclusive",fontsize=10,color=INK)
 f.text(.72,.18,'HATCH / solar + crop co-use candidate\n362.2 km² new + 13.9 km² fixed context\nDo not add it to base land.',fontsize=9,color=INK,linespacing=1.5)
@@ -43,14 +43,14 @@ f.savefig(D/'whole-site.png',dpi=190,facecolor=BG);plt.close(f)
 # Distinct coverage plates: they answer an overlapping-functions question, not recoloured base land.
 f=plt.figure(figsize=(14,8.6),facecolor=BG);f.text(.04,.955,'FIVE FUNCTIONS / THREE DIFFERENT ACCOUNTS',fontsize=18,fontweight='bold',color=INK)
 f.text(.04,.915,'Whitepaper reference is strategic; exclusive land and overlapping coverage must not be confused.',fontsize=10,color=INK)
-for j,(sys,title) in enumerate([('energy_compute','ENERGY COVERAGE / 61.0%'),('agri_production','AGRICULTURE / 31.1%'),('retained','RETAINED / 20.9%')]):
+for j,(sys,title) in enumerate([('energy_compute','ENERGY COVERAGE / 61.1%'),('agri_production','AGRICULTURE / 31.1%'),('retained','RETAINED / 20.9%')]):
  a=f.add_axes([.035+j*.32,.35,.29,.53]);setup(a);fill(a,territory,'#E6E3D8')
  g=over[sys] if sys!='retained' else unary_union([g for g,p in basezones if group(p)=='retained']);fill(a,g,CC[sys]);decorate(a,False,False);a.set_title(title,fontsize=11,color=INK,fontweight='bold')
 labels=['ENERGY + COMPUTE','AGRICULTURE','LIVING','INDUSTRY','TRADE / PORT'];keys=list(account['reference_pct'])
 for i,k in enumerate(keys):
- x=.045+i*.19;ref=account['reference_pct'][k];val=account['functional_coverage'][k]['pct'];f.text(x,.275,labels[i],fontsize=9,fontweight='bold',color=INK);f.text(x,.235,f"REFERENCE ~{ref}%",fontsize=9,color=INK);f.text(x,.19,f"V4 {val:.1f}%",fontsize=16,fontweight='bold',color=CC[k])
+ x=.045+i*.19;ref=account['reference_pct'][k];val=account['functional_coverage'][k]['pct'];f.text(x,.275,labels[i],fontsize=9,fontweight='bold',color=INK);f.text(x,.235,f"REFERENCE ~{ref}%",fontsize=9,color=INK);f.text(x,.19,f"V5 {val:.1f}%",fontsize=16,fontweight='bold',color=CC[k])
 f.text(.04,.12,'The 376.1 km² solar/agriculture intersection is counted in both functional systems, once in base land. Coverage does not sum to 100%.',fontsize=10,color=INK)
-f.text(.04,.065,'CURRENT WORKS / 8.635 km² study footprint; 7.656 ha of new crop bands. Territorial envelopes do not add homes, IT MW or irrigation rights.\nRetained mountains and drainage remain visible. Future co-use requires soil, water, grid and access verification before a field is commissioned.',fontsize=9,color=INK,linespacing=1.6)
+f.text(.04,.065,'CURRENT WORKS / 7.6368 km² study footprint; 7.656 ha of new crop bands. Territorial envelopes do not add homes, IT MW or irrigation rights.\nRetained mountains and drainage remain visible. Future co-use requires soil, water, grid and access verification before a field is commissioned.',fontsize=9,color=INK,linespacing=1.6)
 f.savefig(D/'functional-coverage.png',dpi=190,facecolor=BG);plt.close(f)
 # Source-based terrain axon with functional colour; no solar panels invented in territorial polygons.
 import sys;sys.path.insert(0,str(R/'scripts'));import make_scene as ms

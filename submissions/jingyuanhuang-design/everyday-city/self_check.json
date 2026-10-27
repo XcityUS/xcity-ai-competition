@@ -1,9 +1,9 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.4.0",
-  "checked_at": "2026-10-27T17:56:04+00:00",
+  "checked_at": "2026-10-27T21:40:09+00:00",
   "package": "submissions/jingyuanhuang-design/everyday-city",
-  "package_sha256": "070766dbc7bf33675876d27c3a39a73c386b3f221b758436244f069688f4a5e9",
+  "package_sha256": "6032570f6c458a50a1776e1b4152de16450467bc64aef733fde9aedd62050a10",
   "gates_total": 12,
   "gates_passed": 12,
   "pass": true,
@@ -179,18 +179,18 @@
     ]
   },
   "recomputed": {
-    "master_area_km2": 8.6407,
-    "site_coverage_pct": 7.96,
-    "gfa_m2": 1629631.6,
-    "far": 0.1886,
-    "open_space_pct": 11.368,
-    "human_machine_interfaces": 5,
+    "master_area_km2": 7.6419,
+    "site_coverage_pct": 9.001,
+    "gfa_m2": 1629631.7,
+    "far": 0.2133,
+    "open_space_pct": 12.854,
+    "human_machine_interfaces": 6,
     "shaded_pedestrian_pct": 0.308,
     "structure_km2": {
-      "agri_production": 1030.896,
-      "energy_compute": 1696.371,
+      "agri_production": 1032.444,
+      "energy_compute": 1698.942,
       "industry": 48.197,
-      "living": 165.061,
+      "living": 162.089,
       "port": 59.156,
       "reserve": 347.136
     }
