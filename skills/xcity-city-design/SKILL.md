@@ -17,6 +17,8 @@ Separate fixed pilots, sourced terrain/channels/access, preliminary screening, o
 
 Estimate who lives/works here and what their day needs. Distinguish population capacity from demand, jobs from installed equipment, gross territory from serviced construction, and future opportunity from funded works. Use explicit scenarios when facts are missing. Do not let an arbitrary population target or a renderer's defaults decide the layout.
 
+Read `brief/production-conditions.en.md` for panel/crop/service geometry, POD campus interfaces, capacity definitions and mapped construction phases. Distributed nodes do not justify arbitrary intra-campus gaps.
+
 ## 2. Organise centres, movement and landscape together
 
 Establish a legible hierarchy of civic/commercial centres, living districts, productive areas, field services, arrivals and retained landscapes. Explain the reason for each location and each adjacency or separation. A compute campus can be separate from housing or integrated with compatible work uses; do not impose either arrangement universally.
