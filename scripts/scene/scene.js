@@ -145,7 +145,7 @@
   renderer.outputEncoding = T.sRGBEncoding; renderer.physicallyCorrectLights = true;
   document.getElementById('view').appendChild(renderer.domElement);
   const scene = new T.Scene();
-  const camera = new T.PerspectiveCamera(50, 1.6, 0.3, 150000);
+  const camera = new T.PerspectiveCamera(50, 1.6, 0.3, 400000);
 
   const sky = new T.Sky(); sky.scale.setScalar(120000); scene.add(sky);
   const su = sky.material.uniforms;
@@ -262,6 +262,23 @@
   D.ground.forEach(gr => { if (gr.use !== 'reserve') flat(gr, gr.plaza ? GROUND.plaza : (GROUND[gr.use] || GROUND.open_space), 0.06, gr.use === 'energy' || gr.use === 'agriculture' ? 40 : 24); });
   const WASH = std({ map: TEX.gravel, color: 0xf7f0e2, roughness: 1 });
   D.washes.forEach(w => flat(w, WASH, 0.04, 40));
+  // Source annotations, not invented water, setbacks or a constructed perimeter.
+  const territoryContext = new T.Group();
+  function sourceLine(coords, material) {
+    const pts = [];
+    for (let i = 1; i < coords.length; i++) {
+      const a = coords[i - 1], b = coords[i], n = Math.max(1, Math.ceil(Math.hypot(b[0]-a[0], b[1]-a[1]) / 120));
+      for (let j = 0; j < n; j++) { const t = j/n, x = a[0]+t*(b[0]-a[0]), y = a[1]+t*(b[1]-a[1]); pts.push(new T.Vector3(x, hAt(x,y)+8, -y)); }
+    }
+    if (coords.length) { const q=coords[coords.length-1]; pts.push(new T.Vector3(q[0],hAt(q[0],q[1])+8,-q[1])); }
+    const obj = new T.Line(new T.BufferGeometry().setFromPoints(pts), material); obj.computeLineDistances(); territoryContext.add(obj);
+  }
+  const boundaryMat = new T.LineBasicMaterial({color:0x823516, linewidth:2, depthTest:false});
+  (D.site_boundary || []).forEach(p => [p.outer,...p.holes].forEach(r => sourceLine([...r,r[0]],boundaryMat)));
+  const channelMat = new T.LineBasicMaterial({color:0x527e9c,depthTest:false});
+  (D.source_channels || []).forEach(r => sourceLine(r,channelMat));
+  territoryContext.renderOrder=100; territoryContext.visible=false; scene.add(territoryContext);
+
   const ROAD = { machine: std({ map: TEX.asphalt, roughness: 0.85 }),
                  people: std({ map: TEX.paving, roughness: 0.9 }),
                  shared: std({ map: TEX.pavers, roughness: 0.9 }),
@@ -424,8 +441,10 @@
     sunLight.target.position.copy(target); sunLight.position.copy(target).add(su.sunPosition.value.clone().multiplyScalar(8000));
   }
   function applyView(v) {
+    territoryContext.visible = v.id === "whole-site-aerial";
     const sunv = D.suns[v.time] || D.suns.day;
     setSun(sunv.azimuth, sunv.elevation, v.time === 'night');
+    if (territoryContext.visible) { sky.visible=false; scene.background=new T.Color(0xece8dc); scene.fog.density=0; }
     camera.fov = v.fov; camera.position.set(v.pos[0], hAt(v.pos[0], v.pos[1]) + v.pos[2], -v.pos[1]);
     const tgt = new T.Vector3(v.target[0], hAt(v.target[0], v.target[1]) + v.target[2], -v.target[1]);
     camera.lookAt(tgt); camera.updateProjectionMatrix();

@@ -110,6 +110,7 @@ class Scene:
         if not self.geo["master_area"]:
             raise SystemExit("geometry/master_area.geojson is empty")
         self.master = unary_union([g for _, g in self.geo["master_area"]])
+        self.site = xc.to_utm(xc.site_boundary())
         c = self.master.centroid
         self.o = (round(c.x), round(c.y))
         self.near = self.master.buffer(2500).envelope
@@ -166,7 +167,8 @@ class Scene:
             d["suns"][k] = {"azimuth": az, "elevation": el,
                             "label": "%02d:%02d, 21 October, sun %s deg up" % (tt[3], tt[4], el) if el > 0 else
                             "%02d:%02d, 21 October, night" % (tt[3], tt[4])}
-        W = self.near
+        W = self.site.union(self.near)
+        # Keep all submitted territorial works; near only controls terrain sampling detail.
         # ground
         ground = []
         for p, g in self.geo["land_use"]:
@@ -184,6 +186,11 @@ class Scene:
             if gu.intersects(W):
                 wash += [rings(pg, self.o) for pg in polys(gu.intersection(W).buffer(25 if p.get("class") == "main" else 12))]
         d["washes"] = wash
+        # Whole-site annotations remain source geometry, not designed water or a fence.
+        d["site_boundary"] = [rings(pg, self.o) for pg in polys(self.site)]
+        d["source_channels"] = [[self.L(x, y) for x, y in ln.coords]
+                                for _, g in xc.channels()
+                                for ln in lines(xc.to_utm(g).intersection(self.site))]
         # roads
         roads = []
         for net in ("machine", "people", "shared"):
@@ -486,10 +493,15 @@ class Scene:
                         "pos": [*self.L(px, py), round(hz, 1)], "target": [*self.L(cx, cy), 0],
                         "shadow_radius": round(min(6000, r * 1.8))})
 
+        sc = self.site.envelope.centroid
+        bx0, by0, bx1, by1 = self.site.bounds
+        radius = math.hypot(bx1 - bx0, by1 - by0) * 0.58
+        aerial(sc.x, sc.y, radius, "whole-site-aerial",
+               "Whole issued site / source boundary and seasonal-channel annotations / proposed works only", pitch=55, fov=42)
         bc = built.convex_hull.centroid
-        aerial(bc.x, bc.y, ext(built.convex_hull) * 0.42, "master-aerial", "Complete study geometry - aerial diagram", pitch=30, fov=40)
+        aerial(bc.x, bc.y, ext(built.convex_hull) * 0.42, "master-aerial", "Local built-work envelope - not the whole-site overview", pitch=30, fov=40)
         tc = town.convex_hull.centroid
-        aerial(tc.x, tc.y, ext(town.convex_hull) * 0.36, "city-aerial", "All proposed urban geometry - hypothetical full build-out", pitch=24, fov=42)
+        aerial(tc.x, tc.y, ext(town.convex_hull) * 0.36, "city-aerial", "Residential / mixed-use enlargement - not the whole-site overview", pitch=24, fov=42)
         aerial(tc.x, tc.y, ext(town.convex_hull) * 0.3, "city-evening", "All proposed urban geometry - hypothetical evening", time="evening",
                az=az_eve - 25, pitch=20, fov=44)
         for p, g in self.geo["nodes"]:
