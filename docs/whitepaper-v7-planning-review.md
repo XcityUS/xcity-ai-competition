@@ -1,6 +1,6 @@
 # Whitepaper V7: planning use and updates
 
-Source reviewed: owner-supplied `XCITY白皮书V7(1).pdf`, October 2026, pages 4-8 and 17-18; full document read as project context. This digest does not republish the source PDF or certify its projections.
+Source reviewed: owner-supplied `XCITY白皮书V7(1).pdf`, October 2026, pages 4-8 and 17-18. This digest does not republish the source PDF or certify its projections.
 
 | Topic | Retain as design foundation | Reconcile before using as a current constraint |
 |---|---|---|
