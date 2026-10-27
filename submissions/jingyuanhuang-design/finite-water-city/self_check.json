@@ -1,27 +1,27 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.0.0",
-  "checked_at": "2026-10-25T19:18:02+00:00",
+  "checked_at": "2026-10-27T03:18:48+00:00",
   "package": "submissions/jingyuanhuang-design/finite-water-city",
-  "package_sha256": "7e60362b077db157057846d69e9e1999ec30827e4c28ece36a404109b78326d5",
+  "package_sha256": "ba066676ead012d341e6a3cb55087a874bb47645e4677f312a956b4e14f8fdba",
   "gates_total": 12,
   "gates_passed": 12,
   "pass": true,
   "recomputed": {
-    "master_area_km2": 12.008,
-    "site_coverage_pct": 1.342,
+    "master_area_km2": 40.3868,
+    "site_coverage_pct": 0.399,
     "gfa_m2": 311343.1,
-    "far": 0.0259,
-    "open_space_pct": 58.754,
+    "far": 0.0077,
+    "open_space_pct": 17.469,
     "human_machine_interfaces": 7,
     "shaded_pedestrian_pct": 84.429,
     "structure_km2": {
-      "agri_production": 536.327,
-      "energy_compute": 232.555,
-      "industry": 1.045,
-      "living": 9.512,
-      "port": 1.199,
-      "reserve": 875.744
+      "agri_production": 481.267,
+      "energy_compute": 186.111,
+      "industry": 1.081,
+      "living": 26.634,
+      "port": 2.165,
+      "reserve": 959.123
     }
   },
   "gates": [

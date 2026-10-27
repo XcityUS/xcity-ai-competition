@@ -45,7 +45,7 @@
     {
       "id": "A-FLOOD",
       "topic": "Screening buffers",
-      "value": "Permanent structures excluded from DEM flood band plus 30 m and from channel centrelines plus 150 m; reserve uses flood band plus 150 m. No design flood discharge claimed.",
+      "value": "Existing permanent buildings retain conservative exclusion of mapped flood band plus 30 m and channels plus 150 m. Whole-site flood-sensitive screening is shown separately from mountain/flow corridors; it is not a confirmed legal no-build boundary.",
       "basis": "Screening offsets, not hydraulic standards. Minor washes and external inflows are missing; ground survey and 2D modelling required."
     },
     {
@@ -57,7 +57,7 @@
     {
       "id": "A-ACCESS",
       "topic": "Access allowance",
-      "value": "80 km assumed external RN40 road corridor, 8 m carriageway and nominal 20 m reservation; 640,000 m2 pavement allowance outside site plus the drawn internal network. Eastern RP510 option held for later.",
+      "value": "Retire the arbitrary 80 km external road allowance. Regional RN40 approach shown as unverified directional context; internal candidate corridors are measured in the V3 GeoJSON. Actual external route, easements and cost remain phase-one prerequisites.",
       "basis": "Actual route, easements and crossings unresolved. The nearest-site distance is not the settlement access length. Phase one requires funded access."
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "A-GROWTH",
       "topic": "Growth ceiling",
-      "value": "Three settlements and a 7,200-resident long-term ceiling, conditional on independently demonstrated incremental water and complete services; stage 2 cumulative 2,400 jobs, stage 3 cumulative 3,600 jobs.",
+      "value": "Four conditional town reservations A/B/C/D plus the fixed first living quarter; only the detailed first neighbourhood has 960 proposed dwellings / 2400 residents. No 7200-person whole-site ceiling or final regional population is asserted.",
       "basis": "A deliberately modest ceiling, not a population forecast. Reservations confer no development entitlement."
     },
     {
@@ -89,6 +89,12 @@
       "topic": "Funding order",
       "value": "Infrastructure escrow and 12 months public-service operating reserve precede dwelling occupation; compute concession pays annual fixed community service charge independent of runtime.",
       "basis": "No prices or financing terms supplied; these are proposed enforceable contract conditions, not existing agreements."
+    },
+    {
+      "id": "A-V3",
+      "topic": "Whole-site planning screen",
+      "value": "300m block-mean DEM; mountain/steep screen slope >=5% or elevation >=850m; channel research corridor 150m each side; four towns and two compute reservations clipped by conservative flood and terrain screens.",
+      "basis": "Regional design choices, not statutory restrictions; the source flood band is a sensitivity screen. Eastern gateway strict-screen candidate about 2.64 km2 remains below the brief's about 7km2 intent. Regional capacity, fixed living-quarter demand, water sources, road engineering and resources remain unverified."
     }
   ]
 }

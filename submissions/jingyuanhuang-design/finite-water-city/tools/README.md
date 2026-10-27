@@ -23,3 +23,7 @@ All steps refer to this package's own `tools/` paths. The metadata script resets
 - Permanent building footprints avoid supplied dry-channel lines and flood-sensitive polygons. Smaller gullies and external upstream catchments require study.
 - The organiser's general open-space figure depicts an illustrative channel corridor; our actual exclusion is the submitted flood reserve and A-FLOOD offsets, not a certified design flood width.
 - Public entry remained unopened in the repository README when this scheme was prepared. No public PR was opened. Next manual rule/status review: 2026-10-28; the user has not requested a scheduled monitor.
+
+
+## V3 reproduction (2026-10-26)
+Run energy.py, whole_site_v3.py, then integrate_v3.py and repair_v3.py from the repository root. previous-submitted is a frozen archive of the original submission inputs; integration always reads it, so it does not compound changes. Current regional diagrams and initial-neighbourhood building design are distinct scales. Then regenerate scene, renders, figures and HTML; run the current self-check. Do not run legacy design.py or metadata.py over V3: they reproduce the historical rectangle and assumptions. M1 counts fully matched hours; energy-weighted CFE share is separate.

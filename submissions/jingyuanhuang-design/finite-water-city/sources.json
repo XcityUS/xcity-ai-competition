@@ -16,13 +16,14 @@
     },
     {
       "id": "SRC-PILOT",
-      "title": "Pilot area fields 01-03",
+      "title": "Fixed agrivoltaic fields and first living quarter",
       "publisher": "XCITY",
       "licence": "Provided for use in the XCITY AI Competition.",
       "used_in": [
-        "pilot-area/pilot_area.geojson"
+        "pilot-area/pilot_area.geojson",
+        "pilot-area/pilot_living_area.geojson"
       ],
-      "accessed": "2026-10-25",
+      "accessed": "2026-10-26",
       "used_for": "Site baseline",
       "url": "https://github.com/XcityUS/xcity-ai-competition"
     },

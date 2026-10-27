@@ -70,6 +70,44 @@
       "reference_images_note": "Control image renders/city-evening.png, drawn by scripts/render_views.py from this package's geometry.",
       "control_image": "renders/city-evening.png",
       "caption": "Rendered from the massing view city-evening; illustrates the geometry, not evidence."
+    },
+    {
+      "path": "reviews/whole-site-v3/01_whole_site_plan.png",
+      "model": "Python matplotlib / Shapely; deterministic code drawing, no image-generation model",
+      "prompt": "Execute tools/whole_site_v3.py. Use organiser boundary, pilot fields and living quarter, DEM terrain and flood sensitivity, and declared conditional planning geometry. Draw distinct mountain, wash and flood-screening categories. Preserve source geometry; do not infer lakes or approvals.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Regional 300m terrain screening and labelled vector drawing; diagram layout only",
+      "reference_images": "none_text_only_prompt",
+      "caption": "V3 regional planning review diagram, not a survey or approved development plan."
+    },
+    {
+      "path": "reviews/whole-site-v3/02_corridors_and_phases.png",
+      "model": "Python matplotlib / Shapely; deterministic code drawing, no image-generation model",
+      "prompt": "Execute tools/whole_site_v3.py. Use organiser boundary, pilot fields and living quarter, DEM terrain and flood sensitivity, and declared conditional planning geometry. Draw distinct mountain, wash and flood-screening categories. Preserve source geometry; do not infer lakes or approvals.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Regional 300m terrain screening and labelled vector drawing; diagram layout only",
+      "reference_images": "none_text_only_prompt",
+      "caption": "V3 regional planning review diagram, not a survey or approved development plan."
+    },
+    {
+      "path": "reviews/whole-site-v3/03_source_geometry.png",
+      "model": "Python matplotlib / Shapely; deterministic code drawing, no image-generation model",
+      "prompt": "Execute tools/whole_site_v3.py. Use organiser boundary, pilot fields and living quarter, DEM terrain and flood sensitivity, and declared conditional planning geometry. Draw distinct mountain, wash and flood-screening categories. Preserve source geometry; do not infer lakes or approvals.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Regional 300m terrain screening and labelled vector drawing; diagram layout only",
+      "reference_images": "none_text_only_prompt",
+      "caption": "V3 regional planning review diagram, not a survey or approved development plan."
+    },
+    {
+      "path": "media/cover-render-v5.png",
+      "model": "OpenAI built-in image generation; exact model version not exposed",
+      "prompt": "Use case: sketch-to-render. Asset type: finished architectural competition website cover, landscape 16:9. Input image 1 is the earlier finished concept rendering, a MATERIAL AND REALISM reference only. Input image 2 is the current geometry-derived aerial and is the AUTHORITATIVE EDIT TARGET. Render image 2 at professional architectural competition quality, with exactly its camera direction, perspective, building footprints, storeys, spacing, canopy routes, public facilities, service roads and solar-array positions. Preserve all geometry and relative scale. Improve only surface materials, realistic light and restrained human life. San Juan Argentine desert: pale mineral-plaster low-rise homes, gravel mineral ground, sparse dry-climate planting, continuous light shade structures, blue-black solar panels, broad dry landscape. Clear warm late-afternoon sunlight with readable shadows; restrained photorealism, no heavy atmosphere. Make the principal residential/public-space/production relationship immediately legible. No invented towers, courtyards, infill, buildings, hills, rivers, lakes, lawns or forests. Keep sparse arid planting. Compose a landscape image filling approximately the top 88% with a slim warm-white editorial title band below. The band must contain only these exact words: large 'AGUA FINITA' followed by '有限水城', and beneath it small '首期街区概念效果图'. Elegant dark-blue sans-serif typography. No logo, no old slogan, no charts or decorative graphics, no extra text. This is a conceptual rendering of the first neighbourhood, NOT a rendering of all 1656 square kilometres. Preserve geometry rather than beautifying through design changes.",
+      "generated_at": "2026-10-26",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Own finished image media/city-aerial.png used as material reference; latest geometry-derived renders/city-aerial.png supplied as authoritative control. Original author and licence records retained.",
+      "control_image": "renders/city-aerial.png",
+      "caption": "First-neighbourhood conceptual aerial cover. Not the whole-site build-out, a photograph or approval."
     }
   ]
 }

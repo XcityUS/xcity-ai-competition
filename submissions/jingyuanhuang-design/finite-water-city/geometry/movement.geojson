@@ -1,1 +1,1261 @@
-{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23244081958046, -31.153794922174697], [-68.2157500294416, -31.15369435322539]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23358444664852, -31.153801733806247], [-68.23244081958046, -31.153794922174697]]}, "properties": {"network": "people", "shaded": false, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23366428984299, -31.14387730632477], [-68.21583173012084, -31.143769967530545]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23305627094864, -31.154249720718898], [-68.23305872319807, -31.153945197239775]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23308487014175, -31.1506979477657], [-68.23314706291278, -31.142971963198125]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23305872319807, -31.153945197239775], [-68.23308487014175, -31.1506979477657]]}, "properties": {"network": "people", "shaded": false, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.22760100234636, -31.154217114262355], [-68.22769243995755, -31.142939371160168]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.22214574264609, -31.154184276743027], [-68.2222378259, -31.142906548161612]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.21679540049374, -31.154151846275536], [-68.21688811696987, -31.14287413203487]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.22218994907145, -31.14877096952195], [-68.21683991091021, -31.148738545938432]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.22769243995755, -31.142939371160168], [-68.23211263810741, -31.141161270817815], [-68.23945527242215, -31.14120483670025], [-68.24209199755244, -31.13941584721302]]}, "properties": {"network": "people", "shaded": false, "name": "Seasonal dry-wash trail"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23305872319808, -31.153945197239775], [-68.23302357333922, -31.158309708527824], [-68.21728657511785, -31.158215008293446]]}, "properties": {"network": "people", "shaded": true, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23305990360772, -31.15379861080226], [-68.23305872319808, -31.153945197239775]]}, "properties": {"network": "people", "shaded": false, "name": "Shaded public route"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.21567200470014, -31.16316761601574], [-68.21588370041172, -31.137454441289556]]}, "properties": {"network": "machine", "shaded": false, "name": "Service / emergency access", "width_m": 8}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23408359421869, -31.156962624191248], [-68.2094293393907, -31.1568136156591]]}, "properties": {"network": "machine", "shaded": false, "name": "Service / emergency access", "width_m": 8}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23410536207977, -31.154255964701033], [-68.21574631481349, -31.154145461297677]]}, "properties": {"network": "machine", "shaded": false, "name": "Service / emergency access", "width_m": 8}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.23403279111527, -31.16327815851897], [-68.23410536207977, -31.154255964701033]]}, "properties": {"network": "machine", "shaded": false, "name": "Service / emergency access", "width_m": 8}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.24944872596075, -31.13765439121621], [-68.21588370041172, -31.137454441289556]]}, "properties": {"network": "machine", "shaded": false, "name": "Service / emergency access", "width_m": 8}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.25594940752187, -31.134293512017212], [-68.24944872596075, -31.13765439121621]]}, "properties": {"network": "machine", "shaded": false, "name": "Service / emergency access", "width_m": 8}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.2157500294416, -31.15369435322539]}, "properties": {"kind": "interface", "name": "Gated crossing 1", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.21583173012084, -31.143769967530545]}, "properties": {"kind": "interface", "name": "Gated crossing 2", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.23305627094864, -31.154249720718905]}, "properties": {"kind": "interface", "name": "Gated crossing 3", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.22760100234636, -31.154217114262355]}, "properties": {"kind": "interface", "name": "Gated crossing 4", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.22214574264609, -31.154184276743027]}, "properties": {"kind": "interface", "name": "Gated crossing 5", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.21679540049374, -31.154151846275536]}, "properties": {"kind": "interface", "name": "Gated crossing 6", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-68.23303447327795, -31.15695637954636]}, "properties": {"kind": "interface", "name": "Gated crossing 7", "control": "Pedestrian priority; locked gates; manual refuge release"}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-68.22756807221509, -31.158277096879747], [-68.22754904287792, -31.16062286343185]]}, "properties": {"network": "people", "shaded": true, "name": "Drying workshop public approach"}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23244081958046,
+            -31.153794922174697
+          ],
+          [
+            -68.2157500294416,
+            -31.15369435322539
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23358444664852,
+            -31.153801733806247
+          ],
+          [
+            -68.23244081958046,
+            -31.153794922174697
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": false,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23366428984299,
+            -31.14387730632477
+          ],
+          [
+            -68.21583173012084,
+            -31.143769967530545
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23305627094864,
+            -31.154249720718898
+          ],
+          [
+            -68.23305872319807,
+            -31.153945197239775
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23308487014175,
+            -31.1506979477657
+          ],
+          [
+            -68.23314706291278,
+            -31.142971963198125
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23305872319807,
+            -31.153945197239775
+          ],
+          [
+            -68.23308487014175,
+            -31.1506979477657
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": false,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22760100234636,
+            -31.154217114262355
+          ],
+          [
+            -68.22769243995755,
+            -31.142939371160168
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22214574264609,
+            -31.154184276743027
+          ],
+          [
+            -68.2222378259,
+            -31.142906548161612
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21679540049374,
+            -31.154151846275536
+          ],
+          [
+            -68.21688811696987,
+            -31.14287413203487
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22218994907145,
+            -31.14877096952195
+          ],
+          [
+            -68.21683991091021,
+            -31.148738545938432
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22769243995755,
+            -31.142939371160168
+          ],
+          [
+            -68.23211263810741,
+            -31.141161270817815
+          ],
+          [
+            -68.23945527242215,
+            -31.14120483670025
+          ],
+          [
+            -68.24209199755244,
+            -31.13941584721302
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": false,
+        "name": "Seasonal dry-wash trail"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23305872319808,
+            -31.153945197239775
+          ],
+          [
+            -68.23302357333922,
+            -31.158309708527824
+          ],
+          [
+            -68.21728657511785,
+            -31.158215008293446
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23305990360772,
+            -31.15379861080226
+          ],
+          [
+            -68.23305872319808,
+            -31.153945197239775
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": false,
+        "name": "Shaded public route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21567200470014,
+            -31.16316761601574
+          ],
+          [
+            -68.21588370041172,
+            -31.137454441289556
+          ]
+        ]
+      },
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Service / emergency access",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23408359421869,
+            -31.156962624191248
+          ],
+          [
+            -68.2094293393907,
+            -31.1568136156591
+          ]
+        ]
+      },
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Service / emergency access",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23410536207977,
+            -31.154255964701033
+          ],
+          [
+            -68.21574631481349,
+            -31.154145461297677
+          ]
+        ]
+      },
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Service / emergency access",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23403279111527,
+            -31.16327815851897
+          ],
+          [
+            -68.23410536207977,
+            -31.154255964701033
+          ]
+        ]
+      },
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Service / emergency access",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.24944872596075,
+            -31.13765439121621
+          ],
+          [
+            -68.21588370041172,
+            -31.137454441289556
+          ]
+        ]
+      },
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Service / emergency access",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.25594940752187,
+            -31.134293512017212
+          ],
+          [
+            -68.24944872596075,
+            -31.13765439121621
+          ]
+        ]
+      },
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Service / emergency access",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.2157500294416,
+          -31.15369435322539
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 1",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21583173012084,
+          -31.143769967530545
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 2",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23305627094864,
+          -31.154249720718905
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 3",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22760100234636,
+          -31.154217114262355
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 4",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22214574264609,
+          -31.154184276743027
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 5",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21679540049374,
+          -31.154151846275536
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 6",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23303447327795,
+          -31.15695637954636
+        ]
+      },
+      "properties": {
+        "kind": "interface",
+        "name": "Gated crossing 7",
+        "control": "Pedestrian priority; locked gates; manual refuge release"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22756807221509,
+            -31.158277096879747
+          ],
+          [
+            -68.22754904287792,
+            -31.16062286343185
+          ]
+        ]
+      },
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Drying workshop public approach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21616753543958,
+            -31.13814459595605
+          ],
+          [
+            -68.21933643645404,
+            -31.135457048233363
+          ],
+          [
+            -68.2194472474316,
+            -31.121923741205237
+          ],
+          [
+            -68.2226155083329,
+            -31.11923609556592
+          ],
+          [
+            -68.22270373434745,
+            -31.108409416510383
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P1 首批街区接驳",
+        "from_id": "initial",
+        "to_id": "A",
+        "phase": "P1",
+        "length_km": 3.55,
+        "flood_band_km": 0.0,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23841092642094,
+            -31.11121000216809
+          ],
+          [
+            -68.23528676685547,
+            -31.108484693400865
+          ],
+          [
+            -68.22270373434745,
+            -31.108409416510383
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P1 西侧接入",
+        "from_id": "entry",
+        "to_id": "A",
+        "phase": "P1",
+        "length_km": 1.62,
+        "flood_band_km": 0.41,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.12736566969764,
+            -31.213362519009507
+          ],
+          [
+            -68.13688687203393,
+            -31.205306550025693
+          ],
+          [
+            -68.13691144880646,
+            -31.202599976396208
+          ],
+          [
+            -68.14008473137874,
+            -31.199914484590057
+          ],
+          [
+            -68.14955509018931,
+            -31.197270686458282
+          ],
+          [
+            -68.18127454404393,
+            -31.170408817626967
+          ],
+          [
+            -68.18139091738495,
+            -31.156875710039195
+          ],
+          [
+            -68.18456141504322,
+            -31.15418905341836
+          ],
+          [
+            -68.18465408705191,
+            -31.143362533470437
+          ],
+          [
+            -68.18782403583623,
+            -31.140675781499606
+          ],
+          [
+            -68.1878471035429,
+            -31.13796914536226
+          ],
+          [
+            -68.20052474207567,
+            -31.127221302442464
+          ],
+          [
+            -68.20054743704634,
+            -31.124514652177353
+          ],
+          [
+            -68.22270373434745,
+            -31.108409416510383
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P1 既定生活区接驳",
+        "from_id": "living",
+        "to_id": "A",
+        "phase": "P1",
+        "length_km": 15.8,
+        "flood_band_km": 0.0,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22270373434745,
+            -31.108409416510383
+          ],
+          [
+            -68.232075642387,
+            -31.116586018382858
+          ],
+          [
+            -68.23203205306507,
+            -31.121999365324058
+          ],
+          [
+            -68.24461690578374,
+            -31.122073760480976
+          ],
+          [
+            -68.25086681996984,
+            -31.127523863133604
+          ],
+          [
+            -68.25394967680718,
+            -31.13566216624054
+          ],
+          [
+            -68.260201008704,
+            -31.141111827359516
+          ],
+          [
+            -68.26028504172632,
+            -31.130285090732922
+          ],
+          [
+            -68.26345245621972,
+            -31.127596430229282
+          ],
+          [
+            -68.26349427145925,
+            -31.122183048877847
+          ],
+          [
+            -68.2666613231299,
+            -31.11949430045999
+          ],
+          [
+            -68.26674455147268,
+            -31.10866751172084
+          ],
+          [
+            -68.26049492585359,
+            -31.103218168589997
+          ],
+          [
+            -68.26053686868407,
+            -31.09780477035202
+          ],
+          [
+            -68.25428830196556,
+            -31.09235513403611
+          ],
+          [
+            -68.25433057869635,
+            -31.08694173429472
+          ],
+          [
+            -68.21997810002047,
+            -31.056963466543717
+          ],
+          [
+            -68.22000018156223,
+            -31.05425677403903
+          ],
+          [
+            -68.19815132938216,
+            -31.035175054344595
+          ],
+          [
+            -68.19840063975312,
+            -31.005401429988584
+          ],
+          [
+            -68.19528102972782,
+            -31.002675185895512
+          ],
+          [
+            -68.19532649044295,
+            -30.997261786546225
+          ],
+          [
+            -68.19220722921064,
+            -30.994535470897596
+          ],
+          [
+            -68.19225284889744,
+            -30.989122068820418
+          ],
+          [
+            -68.18913393629101,
+            -30.986395681672217
+          ],
+          [
+            -68.18606115066396,
+            -30.978255818291363
+          ],
+          [
+            -68.17982455416553,
+            -30.972802681203117
+          ],
+          [
+            -68.18003271211505,
+            -30.94844232864976
+          ],
+          [
+            -68.1550995573783,
+            -30.926626924138432
+          ],
+          [
+            -68.15514714469602,
+            -30.921213515874516
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P2 生产主轴南段",
+        "from_id": "A",
+        "to_id": "K1",
+        "phase": "P2",
+        "length_km": 34.66,
+        "flood_band_km": 6.96,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.15514714469602,
+            -30.921213515874516
+          ],
+          [
+            -68.14893992434473,
+            -30.913052234720006
+          ],
+          [
+            -68.11440798383303,
+            -30.912820407462682
+          ],
+          [
+            -68.11443291141224,
+            -30.910113727259226
+          ],
+          [
+            -68.11131876494255,
+            -30.907385518245274
+          ],
+          [
+            -68.11186818589118,
+            -30.847838287585713
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P2 北段生产主轴",
+        "from_id": "K1",
+        "to_id": "K2",
+        "phase": "P2",
+        "length_km": 11.71,
+        "flood_band_km": 3.2,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.11186818589118,
+            -30.847838287585713
+          ],
+          [
+            -68.12135358986528,
+            -30.83978235057876
+          ],
+          [
+            -68.12449046638665,
+            -30.839803593024914
+          ],
+          [
+            -68.13081301941436,
+            -30.83443240365414
+          ],
+          [
+            -68.13394972985242,
+            -30.834453413747408
+          ],
+          [
+            -68.14017489861263,
+            -30.839908665926092
+          ],
+          [
+            -68.24055713390169,
+            -30.840536164898996
+          ],
+          [
+            -68.24367289761473,
+            -30.84326131800951
+          ],
+          [
+            -68.2468099829845,
+            -30.843279599964426
+          ],
+          [
+            -68.26550880954086,
+            -30.859628536011076
+          ],
+          [
+            -68.26864644318563,
+            -30.859646297520168
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P2 西北生活支线",
+        "from_id": "K2",
+        "to_id": "B",
+        "phase": "P2",
+        "length_km": 16.74,
+        "flood_band_km": 6.4,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.11186818589118,
+            -30.847838287585713
+          ],
+          [
+            -68.11191805224445,
+            -30.842424875354787
+          ],
+          [
+            -68.1088061172561,
+            -30.839696621250432
+          ],
+          [
+            -68.10888114538777,
+            -30.831576497724793
+          ],
+          [
+            -68.10265831106221,
+            -30.826119779025987
+          ],
+          [
+            -68.09959766695026,
+            -30.81797789658778
+          ],
+          [
+            -68.08718107555138,
+            -30.804356606235995
+          ],
+          [
+            -68.08733452649575,
+            -30.78811635702536
+          ],
+          [
+            -68.08422501176885,
+            -30.785387538195625
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P2 北部生活支线",
+        "from_id": "K2",
+        "to_id": "C",
+        "phase": "P2",
+        "length_km": 7.87,
+        "flood_band_km": 0.0,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.15514714469602,
+            -30.921213515874516
+          ],
+          [
+            -68.14893992434473,
+            -30.913052234720006
+          ],
+          [
+            -68.11440798383303,
+            -30.912820407462682
+          ],
+          [
+            -68.10491465379312,
+            -30.920875595155664
+          ],
+          [
+            -68.09547068602481,
+            -30.923516725076247
+          ],
+          [
+            -68.08914022222055,
+            -30.928885962084372
+          ],
+          [
+            -68.08600047203271,
+            -30.928863806292537
+          ],
+          [
+            -68.08283488997826,
+            -30.931548223087997
+          ],
+          [
+            -68.07655523022179,
+            -30.931503525645336
+          ],
+          [
+            -68.06077675839651,
+            -30.93951033712529
+          ],
+          [
+            -68.03879632909833,
+            -30.9393487754471
+          ],
+          [
+            -68.03562910610728,
+            -30.942031997878765
+          ],
+          [
+            -68.0293488466661,
+            -30.941984993667873
+          ],
+          [
+            -68.02301353078447,
+            -30.947350876195774
+          ],
+          [
+            -68.01673294712863,
+            -30.947303251804392
+          ],
+          [
+            -68.01356485424672,
+            -30.949985911723886
+          ],
+          [
+            -67.97902098318018,
+            -30.949717656861182
+          ],
+          [
+            -67.97585178195887,
+            -30.952399366541336
+          ],
+          [
+            -67.9664305534873,
+            -30.952324367552556
+          ],
+          [
+            -67.96326092152164,
+            -30.955005757633305
+          ],
+          [
+            -67.94127760185376,
+            -30.954827537258375
+          ],
+          [
+            -67.93493662359323,
+            -30.960188962735245
+          ],
+          [
+            -67.93179599646221,
+            -30.960163039443145
+          ],
+          [
+            -67.92862515728326,
+            -30.962843548658064
+          ],
+          [
+            -67.92234374635252,
+            -30.962791315007042
+          ],
+          [
+            -67.9096579430001,
+            -30.973511888468114
+          ],
+          [
+            -67.89709382000788,
+            -30.973405239142515
+          ],
+          [
+            -67.89392158867058,
+            -30.976084857956646
+          ],
+          [
+            -67.88135719554049,
+            -30.975976670360637
+          ],
+          [
+            -67.87187027013984,
+            -30.981307628046732
+          ],
+          [
+            -67.85302282314801,
+            -30.98114164683363
+          ],
+          [
+            -67.84991405729036,
+            -30.978407287276884
+          ],
+          [
+            -67.837349551997,
+            -30.978294812543687
+          ],
+          [
+            -67.83113329594332,
+            -30.97282529208193
+          ],
+          [
+            -67.81856960602751,
+            -30.97271100937295
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P3 绕山向东通道",
+        "from_id": "K1",
+        "to_id": "D",
+        "phase": "P3",
+        "length_km": 35.92,
+        "flood_band_km": 4.91,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -67.81856960602751,
+            -30.97271100937295
+          ],
+          [
+            -67.81850292730151,
+            -30.978123810043606
+          ],
+          [
+            -67.80897882620916,
+            -30.98615644274256
+          ],
+          [
+            -67.8086423661636,
+            -31.013220248832674
+          ],
+          [
+            -67.81175101603213,
+            -31.015955586456812
+          ],
+          [
+            -67.79904596489074,
+            -31.02666472180818
+          ],
+          [
+            -67.79901200468383,
+            -31.029371080849806
+          ],
+          [
+            -67.7926582266432,
+            -31.034725136765275
+          ],
+          [
+            -67.78951531162359,
+            -31.03469569266713
+          ],
+          [
+            -67.7736273354677,
+            -31.048078964693886
+          ],
+          [
+            -67.76734067727551,
+            -31.04801905000596
+          ],
+          [
+            -67.76416238033056,
+            -31.050695292791637
+          ],
+          [
+            -67.75469692951631,
+            -31.05331091148761
+          ],
+          [
+            -67.74515993302091,
+            -31.061338403552263
+          ],
+          [
+            -67.73569294821961,
+            -31.06395258088412
+          ],
+          [
+            -67.72615331179486,
+            -31.07197858230985
+          ],
+          [
+            -67.71986519625244,
+            -31.071916311655627
+          ],
+          [
+            -67.7071425159967,
+            -31.08261582558076
+          ]
+        ]
+      },
+      "properties": {
+        "name": "P3 门户联系",
+        "from_id": "D",
+        "to_id": "E",
+        "phase": "P3",
+        "length_km": 18.33,
+        "flood_band_km": 1.01,
+        "status": "300 m least-cost corridor; not road engineering",
+        "network": "machine",
+        "shaded": false,
+        "kind": "regional_corridor",
+        "width_m": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "tool": "Python matplotlib / Shapely",
+  "model": "no image generation model",
+  "date": "2026-10-26",
+  "path": "node-locator.png",
+  "method": "Read current site and pilot boundaries, geometry/land_use, buildings, movement and nodes; project EPSG:32719; draw a two-scale labelled locator without changing geometry.",
+  "script": "tools/presentation_locator_v4.py",
+  "source": "XCITY source package and original submitted geometry",
+  "presentation": "Main booklet uses existing registered finished node imagery only. No low-poly control renders appear in the main booklet."
+}

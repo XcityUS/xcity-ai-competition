@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "tool": "Python / matplotlib / shapely / Pillow / numpy",
+  "type": "code-generated planning diagrams; no image generation",
+  "source_commit": "069766b",
+  "script": "tools/whole_site_v3.py",
+  "geometry_sha256": "7ca9707c3fa19da897b0a32df0d90aee6b81f4521f4f3acabc0ab8c38d0a9fce",
+  "source_data": [
+    "owner site boundary",
+    "pilot fields and living quarter",
+    "Copernicus DEM GLO-30 resampled 60m",
+    "DEM-derived channels and flood screening",
+    "OpenStreetMap regional roads"
+  ],
+  "postprocessing": "300m block-mean terrain; declared conceptual allocations and least-cost routing; Chinese labels",
+  "reference_image": false,
+  "status": "review only; no survey or permission inferred"
+}

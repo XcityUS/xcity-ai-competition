@@ -1,9 +1,10 @@
 {
-  "hourly_cfe_match_pct": 72.993,
+  "hourly_cfe_match_pct": 62.432,
+  "cfe_energy_share_pct": 72.993,
   "annual_load_mwh": 116070.0,
   "annual_pv_mwh": 87600.0,
-  "grid_mwh": 31106.71,
+  "grid_mwh": 31346.71,
   "peak_grid_mw": 17.0,
   "it_mwh": 78840,
-  "note": "Assumed synthetic annual profile; initial storage energy excluded; physical solar+storage supply fraction, unmatched imports have zero CFE credit. Not a site climate simulation."
+  "note": "Assumed synthetic annual profile; battery starts at protected reserve; M1 counts fully matched hours; separate energy-weighted solar+storage share, unmatched imports have zero CFE credit. Not a site climate simulation."
 }

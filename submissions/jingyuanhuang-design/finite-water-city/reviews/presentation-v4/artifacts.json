@@ -1,0 +1,22 @@
+{
+  "artifacts": [
+    {
+      "path": "AGUA-FINITA-presentation-v4.pdf",
+      "sha256": "1b8b72e555bb491b8e9bdb5a08939f8ab6c116b3bd1faf1db9efaecdfb71f85e",
+      "role": "main presentation"
+    },
+    {
+      "path": "AGUA-FINITA-technical-appendix-v4.pdf",
+      "sha256": "4b409fababd17eeae0c5c92940f8052925472da0881f14bb0c8b10245ed368f0",
+      "role": "evidence appendix"
+    },
+    {
+      "path": "node-locator.png",
+      "sha256": "5cd39b75565dfbbdbb8eeefcce30a81a7f6f3873a098359873f949a399cc4894",
+      "role": "geometry-derived node locator"
+    }
+  ],
+  "geometry_changed": false,
+  "reference": "https://github.com/open-city-ai/haidian/tree/main/skills/urban-design-ai-submission",
+  "node_images": "Reused existing media/N05-eye-day.png, N07-eye-day.png and N10-eye-day.png; full provenance remains in root image_provenance.json"
+}

@@ -1,0 +1,14 @@
+{
+  "main_pages": 6,
+  "appendix_pages": 20,
+  "main_images": [
+    "V3 whole-site diagram",
+    "V4 geometry-derived node locator",
+    "media/N05-eye-day.png",
+    "media/N07-eye-day.png",
+    "media/N10-eye-day.png"
+  ],
+  "low_poly_control_views_in_main": false,
+  "geometry_changes": false,
+  "reference": "https://github.com/open-city-ai/haidian/tree/main/skills/urban-design-ai-submission"
+}

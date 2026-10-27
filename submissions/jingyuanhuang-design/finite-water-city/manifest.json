@@ -4,7 +4,7 @@
   "title": "AGUA FINITA | The Finite Water City",
   "title_zh": "有限水城",
   "slug": "finite-water-city",
-  "summary": "A compact first settlement east of the fixed agrivoltaic pilot gives water, shade and human services priority over uninterrupted compute. Dry channels stay open; a public water ledger controls growth. Three nodes connect dry cooling, a seasonal wash and a shaded civic commons.",
+  "summary": "A whole-site network of four conditional towns, productive energy/compute corridors and an eastern gateway grows only with verified water. Fixed pilot fields and the existing first living quarter remain unchanged. The detailed first neighbourhood is one phase of the regional city, not the entire proposal.",
   "language": "en",
   "author": {
     "github": "jingyuanhuang-design",
@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals."
+    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested an architectural rendering cover instead of the abstract slogan on 2026-10-26; a first-neighbourhood aerial was produced for the cover."
   },
   "nodes": [
     "N05",
@@ -36,7 +36,10 @@
     "tier1_structure": {
       "evidence": [
         "geometry/structure.geojson",
-        "figures/fig-01-structure.png"
+        "figures/fig-01-structure.png",
+        "reviews/whole-site-v3/01_whole_site_plan.png",
+        "reviews/whole-site-v3/02_corridors_and_phases.png",
+        "reviews/whole-site-v3/corridors.geojson"
       ]
     },
     "tier2_master": {
@@ -68,43 +71,33 @@
   },
   "package_state": "ready_for_review",
   "created": "2026-10-25",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "thesis": "The city grows only when its water ledger can support another complete neighbourhood.",
   "render_note": "A low-rise desert settlement of pale mineral plaster and aggregate; dry gravel washes, modest drip planting, shade roofs and arcades. Existing pilot untouched.",
   "render_rules": "Preserve footprints, storeys, street positions, camera and terrain. No lakes, ornamental canals, lawns, skyscrapers or lush forest. All images are concept illustrations.",
   "scene_seed": 245,
   "booklet": {
-    "cover": "pages/cover.png",
+    "cover": "media/cover-render-v5.png",
     "pages": [
       {
-        "path": "reviews/layout-v2/00-geometry.png",
+        "path": "reviews/whole-site-v3/01_whole_site_plan.png",
         "after": "idea",
-        "title": "Source geometry and proposed connections"
+        "title": "Whole-site structure: fixed conditions and conditional growth"
       },
       {
-        "path": "reviews/layout-v2/01-city-structure.png",
+        "path": "reviews/whole-site-v3/02_corridors_and_phases.png",
         "after": "idea",
-        "title": "Regional structure: first settlement and later reservations"
+        "title": "Regional links and hydraulic study sections"
       },
       {
-        "path": "reviews/layout-v2/02-master-layout.png",
+        "path": "reviews/whole-site-v3/03_source_geometry.png",
         "after": "idea",
-        "title": "First settlement: arrival, living, production"
-      },
-      {
-        "path": "reviews/layout-v2/03-living-core.png",
-        "after": "idea",
-        "title": "Four residential groups and a civic destination"
+        "title": "Source boundary and southwest study envelope"
       },
       {
         "path": "pages/water-covenant.png",
         "after": "idea",
         "title": "A city that can say: enough"
-      },
-      {
-        "path": "pages/access.png",
-        "after": "brief",
-        "title": "The missing road is first-phase work"
       }
     ]
   }
