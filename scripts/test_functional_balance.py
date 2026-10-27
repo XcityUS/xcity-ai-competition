@@ -1,7 +1,10 @@
 import unittest
-from shapely.geometry import box
-from analyse_functional_balance import analyse,programme_checks
+from shapely.geometry import box,MultiPolygon
+from analyse_functional_balance import analyse,programme_checks,area
 class BalanceTests(unittest.TestCase):
+ def test_multipart_areas_and_denominator_stay_consistent(self):
+  a=box(500000,6500000,501000,6501000);b=box(502000,6500000,503000,6501000);m=MultiPolygon([a,b]);self.assertAlmostEqual(area(m),area(a)+area(b))
+  r=analyse(m,[(a,{'plan_role':'base_zoning','primary_use':'ecology'}),(b,{'plan_role':'base_zoning','primary_use':'housing'})]);self.assertAlmostEqual(r['base_groups']['living']['share_of_nonfixed_nonretained_pct'],100)
  def test_overlays_are_not_added_to_base(self):
   s=box(500000,6500000,501000,6501000);r=analyse(s,[(s,{'plan_role':'base_zoning','primary_use':'solar_agriculture'}),(s,{'plan_role':'system_overlay','system':'agri_production'})])
   self.assertAlmostEqual(r['base_groups']['energy_compute']['whole_site_pct'],100)
