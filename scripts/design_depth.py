@@ -1,5 +1,6 @@
 """Evidence-reference checks only. Never infer planning quality from file presence."""
 import json
+import jsonschema
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 POLICY = json.loads((ROOT / 'brief/design-depth.json').read_text())
@@ -19,8 +20,15 @@ def assess(package, nodes):
     errors = result['automatic']['errors']
     try:
         doc = json.loads((p / MATRIX).read_text())
-        if not isinstance(doc, dict) or doc.get('schema_version') != 1 or not isinstance(doc.get('rows'), list):
-            raise ValueError('expected schema_version 1 and rows array')
+        if not isinstance(doc, dict) or doc.get('schema_version') not in (1, 2) or not isinstance(doc.get('rows'), list):
+            raise ValueError('expected schema_version 1 or 2 and rows array')
+        schema = json.loads((ROOT / 'schema/design_depth_matrix.schema.json').read_text())
+        for error in jsonschema.Draft202012Validator(schema).iter_errors(doc):
+            errors.append('matrix schema: ' + error.message)
+        modern = doc['schema_version'] == 2
+        if not modern and p not in {(ROOT / x).resolve() for x in POLICY['legacy_submissions']}:
+            errors.append('New submission directories must use matrix v2; version-one compatibility is restricted to the exact organiser-listed legacy paths')
+        result['migration'] = 'current_v2' if modern else 'v1_compatible_use_v2_for_next_revision'
         rows = doc['rows']
         required = [x['id'] for x in POLICY['levels']] + ['node:' + n for n in nodes]
         ids = [x.get('id') for x in rows if isinstance(x, dict)]
@@ -38,6 +46,13 @@ def assess(package, nodes):
                 continue
             label = str(row.get('id'))
             status = row.get('status')
+            if modern:
+                for value in [row.get('decision'), *(row.get('scope') or {}).values()]:
+                    if not isinstance(value, str) or not value.strip() or '{{' in value:
+                        errors.append(label + ': replace decision/scope prompts with the actual judgment, extent and phase')
+                for kind in ('drawings','geometry'):
+                    if not row.get(kind):
+                        errors.append(label + ': required spatial evidence missing from ' + kind + '; organiser-data gaps do not waive design evidence')
             if status not in ('documented', 'partial'):
                 errors.append(label + ': status must be documented or partial, never approved/passed')
             gaps = row.get('gaps', [])
@@ -50,6 +65,8 @@ def assess(package, nodes):
                     errors.append(label + ': each gap needs missing, next_step and responsible')
                 elif any(gap[k].startswith(('Replace with', 'State how', 'Fill actual')) for k in ('missing', 'next_step', 'responsible')):
                     errors.append(label + ': replace scaffold gap prompts with actual information')
+                elif modern and gap.get('kind') not in ('organiser_data','professional_verification','entrant_design'):
+                    errors.append(label + ': gap kind must distinguish organiser data, professional verification and entrant design')
                 else:
                     result['further_work']['items'].append(dict(level=label, **gap))
             for kind in ('drawings', 'geometry', 'metrics'):

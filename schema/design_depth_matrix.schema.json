@@ -1,16 +1,162 @@
 {
-  "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "title":"XCITY design-depth evidence matrix — references, not approval",
-  "type":"object","required":["schema_version","rows"],
-  "properties":{
-    "schema_version":{"const":1},
-    "rows":{"type":"array","items":{"type":"object","required":["id","status","drawings","geometry","metrics","explanation","gaps"],"properties":{
-      "id":{"type":"string"},"status":{"enum":["documented","partial"]},
-      "drawings":{"type":"array","items":{"type":"string"}},
-      "geometry":{"type":"array","items":{"type":"string"}},
-      "metrics":{"type":"array","items":{"type":"string"}},
-      "explanation":{"type":"object","required":["path","heading"],"properties":{"path":{"type":"string"},"heading":{"type":"string","pattern":"^## "}}},
-      "gaps":{"type":"array","items":{"type":"object","required":["missing","next_step","responsible"],"properties":{"missing":{"type":"string","minLength":1},"next_step":{"type":"string","minLength":1},"responsible":{"type":"string","minLength":1}}}}
-    }}}
-  }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XCITY design-depth evidence matrix — references, not approval",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "rows"
+  ],
+  "properties": {
+    "schema_version": {
+      "enum": [
+        1,
+        2
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "drawings",
+          "geometry",
+          "metrics",
+          "explanation",
+          "gaps"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "documented",
+              "partial"
+            ]
+          },
+          "drawings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "geometry": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "explanation": {
+            "type": "object",
+            "required": [
+              "path",
+              "heading"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "heading": {
+                "type": "string",
+                "pattern": "^## "
+              }
+            }
+          },
+          "gaps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "missing",
+                "next_step",
+                "responsible"
+              ],
+              "properties": {
+                "missing": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "next_step": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "responsible": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kind": {
+                  "enum": [
+                    "organiser_data",
+                    "professional_verification",
+                    "entrant_design"
+                  ]
+                }
+              }
+            }
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope": {
+            "type": "object",
+            "required": [
+              "extent",
+              "phase"
+            ],
+            "properties": {
+              "extent": {
+                "type": "string",
+                "minLength": 1
+              },
+              "phase": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": 2
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "rows": {
+            "items": {
+              "required": [
+                "decision",
+                "scope"
+              ],
+              "properties": {
+                "gaps": {
+                  "items": {
+                    "required": [
+                      "kind"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

@@ -23,7 +23,7 @@ def main():
         raise SystemExit("every geometry file under %s/geometry is empty - nothing to compute" % os.path.relpath(pkg, xc.ROOT))
     probs = xc.geometry_problems(geo)
     c = xc.compute_metrics(pkg, geo)
-    print(json.dumps({k: c[k] for k in xc.COMPUTED_KEYS} | {"land_use_ha": c["land_use_ha"], "network_km": c["network_km"]},
+    print(json.dumps({k: c[k] for k in xc.COMPUTED_KEYS} | {"land_use_ha": c["land_use_ha"], "network_km": c["network_km"], "metric_scope": c["metric_scope"], "outside_master_gfa_m2": c["outside_master_gfa_m2"]},
                      ensure_ascii=False, indent=2))
     for k in empty:
         print("note: geometry/%s.geojson has no features" % k, file=sys.stderr)

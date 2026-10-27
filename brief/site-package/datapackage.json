@@ -2,7 +2,7 @@
   "profile": "data-package",
   "name": "xcity-ai-competition-site-package",
   "title": "XCITY AI Competition - site package (the two parcels)",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
   "sources_file": "sources.json",
   "resources": [
@@ -135,5 +135,7 @@
       "hash": "sha256:fc93401e79afb066e8b9edef4ac0dfce3ff91299048f4619454ee05622a5802c"
     }
   ],
-  "boundary_revision": "2026-10-27-seam-closure"
+  "boundary_revision": "2026-10-27-seam-closure",
+  "evidence_index": "evidence-index.json",
+  "evidence_schema": "../../schema/site-evidence.schema.json"
 }

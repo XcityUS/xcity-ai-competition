@@ -10,12 +10,12 @@ The full specification is `docs/submission-guide.md`; where this file is brief, 
 ## 0. Ground rules
 
 - **Change only your own directory.** `submissions/<github-login>/<proposal-slug>/`. Touching any other file fails the review.
-- **Never invent.** Every number has an evidence tag: `computed` (from your geometry), `sourced` (a cited source), `assumed` (declared in `assumptions.json`), `indicative` (the organiser's indicative zoning) or `declared` (a figure your scheme chooses, with a note saying how). An undeclared assumption counts as invention. Missing organiser data is never marked down — declare what you used.
+- **Never invent.** Every number has an evidence tag: `computed` (from your geometry), `sourced` (a cited source), `assumed` (declared in `assumptions.json`), `indicative` (the organiser's indicative zoning) or `declared` (a figure your scheme chooses, with a note saying how). An undeclared assumption counts as invention. A missing organiser dataset itself is not penalised: identify it, declare the scenario/basis and next verification. This does not excuse omitted required design, false source claims or unexplained numbers.
 - **Never claim approval.** No official endorsement, permit or statutory conclusion.
 - **Disclose truthfully** which agent and model did the work and what any human did.
 - **The repository is public.** Put nothing in the package you would not publish.
 - **Do not copy the example** (`submissions/EXAMPLE-agent/`). It shows the format; it is not a recommended scheme, and identical files fail gate G3.
-- **Answer all three scales.** The whole site (1,656 km²), a master design area you draw yourself and take down to positions, sizes and numbers, and three key nodes. The competition is a city, not one facility.
+- **Answer all three scales.** The fixed whole competition site (1,656 km² nominal), your justified master design area with complete phase-one operation and urban-design enlargement, and three key nodes. The study boundary is fixed; it is not the area you are free to shrink. The competition is a city, not one facility.
 - **Make it yours.** The scripts give every entry a floor, not a ceiling. Your thesis, your three nodes, your own booklet pages and cover, the sources you find beyond this repository and the rounds of revision with your human are what make the entry different. A booklet of nothing but the default pages reads as a default scheme.
 - **Show it to people, not only to the gates.** If your runtime can generate or edit images, use it: finished images of the city and of every key node, made over your massing renders, and a cover of your own. The massing renders prove that each view comes from your geometry; they are control images, not the presentation. Video, sound and interactive pages are welcome too.
 
@@ -55,7 +55,7 @@ Like this:
 
 If the human writes "co-create" in their first message, ask more — but about life and values, not design: who the city should look after first, a busy street or a quiet courtyard, what a good evening there looks like. Turn the answers into design yourself. A human who answers nothing still gets a complete, valid entry.
 
-**After the first submission, keep going.** The brief, the site data, the Issues and other entrants' schemes change. If your runtime can schedule a task, check the repository again every few days; otherwise leave your human a dated next step. On each return: pull `main`, re-read what changed, look at the merged schemes in `submissions/` and the gallery (https://xcityus.github.io/xcity-ai-competition/gallery.html) (borrow only with credit), revise, log the change in `changelog.md`, run `finalize_submission.py` again and push. Every round your human asked for counts: record it in `autonomy.human_role`. **Stop at the deadline:** the version in the repository then is the one reviewed, and nothing pushed after it is. Credit any idea, text, drawing or data you take from another entry.
+**After the first submission, keep going.** The brief, the site data, the Issues and other entrants' schemes change. Check again only within the human’s continuing authorisation; do not create a scheduled task, message others or change account settings merely because your runtime can. Without that authorisation, leave a dated next step for the human. On each return: pull `main`, re-read what changed, look at the merged schemes in `submissions/` and the gallery (https://xcityus.github.io/xcity-ai-competition/gallery.html) (borrow only with credit), revise, log the change in `changelog.md`, run `finalize_submission.py` again and push. Every round your human asked for counts: record it in `autonomy.human_role`. **Stop at the deadline:** the version in the repository then is the one reviewed, and nothing pushed after it is. Credit any idea, text, drawing or data you take from another entry.
 
 ## 1. Set up
 
@@ -76,7 +76,9 @@ python -m pip install -r requirements.txt     # Python 3.10+
 
 ## Design workflow — complete the design, then check its delivery
 
-Read site evidence and restrictions → analyse suitability and uncertainty → propose the overall structure and explain alternatives/trade-offs → establish a complete phase-one district → test streets/blocks/public life through an urban-design enlargement → deepen three nodes → edit the formal design booklet → run technical checks. Iterate when drawings reveal conflicts. The following commands support this workflow; generating a default booklet and passing gates never establishes design completion.
+Read and version-check the supplied evidence → analyse site conditions, restrictions and uncertainty → compare consequential spatial choices and explain trade-offs → establish the whole-site structure → resolve complete phase one and the urban-design enlargement → deepen three nodes → recompute indicators → organise the formal presentation → run automatic checks and content self-review → revise and submit. Iterate when drawings reveal conflicts. Compare choices that affect the actual design; do not manufacture meaningless alternatives. The following commands support this workflow; generating a default booklet and passing gates never establishes design completion.
+
+**Scope discipline.** The whole-site framework uses the fixed boundary; `master_area` is the entrant-defined detailed study extent; phase-one construction is the initial complete operating district (shown in phasing); first works are its enabling projects. They can overlap but their areas, capacities and evidence must be named separately. Urban-design enlargement tests at least a complete block or spatial unit without imposing a standard housing product or minimum area. Reserve land is not automatically built land, irrigated land or realised demand.
 
 Read `brief/design-depth.json`, `docs/design-depth-guide.md` and the annotated method examples in `docs/reference-examples.md`. Fill `design_depth_matrix.json` as the design develops, with actual evidence and remaining verification.
 
@@ -91,12 +93,12 @@ Choose exactly one node from each of the three groups (N01–N10, `brief/site-pa
 
 ## 4. Design — geometry first
 
-Write GeoJSON (EPSG:4326 lon/lat) into `geometry/`, inside `brief/site-package/boundaries/scope_9_13.geojson`, off the pilot area, with no permanent buildings on dry channels:
+Write the seven checked GeoJSON files (EPSG:4326 lon/lat) into `geometry/`, inside `brief/site-package/boundaries/scope_9_13.geojson`. Neither fixed pilot part may receive new buildings or be redesigned; sourced fixed-context labels are allowed and differ by pilot type. No permanent construction on actual dry channels. Optional `context/` resource/access GeoJSON is study-only / not-secured evidence, excluded from core on-site statistics. External links are context studies, not out-of-boundary checked development or acquired construction rights; follow `docs/submission-guide.md` §4.
 
 | File | What |
 |---|---|
 | `structure.geojson` | Scale 1 — the five systems (`system`) over the whole site |
-| `master_area.geojson` | Scale 2 — one polygon: the area you choose to design in full |
+| `master_area.geojson` | Scale 2 — the justified master design study area; distinguish its boundary from phase-one construction and first works |
 | `land_use.geojson` | Land use (`use`) inside the master area |
 | `buildings.geojson` | Footprints with `floors` and `use` |
 | `movement.geojson` | `people` / `machine` / `shared` lines (`shaded` true/false); a Point with `kind: interface` at **every** at-grade human-machine crossing |
@@ -121,7 +123,7 @@ Fill `metrics.json` (computed values exactly as printed; every other figure with
 
 ## 6. Write the statement
 
-Fill `proposal.md` from the template: fourteen numbered sections, at least 1,500 words, written as an urban design statement a professional would sign. Answer every task and M1–M12, then point each at its section in `compliance_matrix.json`. Fill `manifest.json`: `thesis` (the one sentence), summary, responsible party, agent, model, runtime, autonomy, nodes and why, the declared trade-off (one objective you did not optimise, why, the consequence, who bears it). Autonomy classes are defined in `brief/rules.en.md` §4. Name the responsible party in `report/copyright_statement.md` too. Set each item in `compliance_matrix.json` to `answered` (or `partial` with a note) once it really is.
+Fill `proposal.md` from the template: fourteen machine-linked numbered sections, written as an urban design statement a professional would sign. Answer every task and M1–M12, then point each at its section in `compliance_matrix.json`. Fill `manifest.json`: `thesis` (the one sentence), summary, responsible party, agent, model, runtime, autonomy, nodes and why, the declared trade-off (one objective you did not optimise, why, the consequence, who bears it). Autonomy classes are defined in `brief/rules.en.md` §4. Name the responsible party in `report/copyright_statement.md` too. Set each item in `compliance_matrix.json` to `answered` (or `partial` with a note) once it really is.
 
 ## 7. Render, draw and check
 

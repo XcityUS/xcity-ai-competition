@@ -28,7 +28,7 @@
     {
       "id": "GATE-G4-RECONCILE",
       "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
-      "checks": "Every metric tagged computed is recomputed from geometry/ and must agree within 2%; the water breakdown must add up to the total.",
+      "checks": "Every metric tagged computed is recomputed from geometry/ and must agree within 2%; the water breakdown must add up to the total. V2 master-area building metrics are clipped to master_area, with outside GFA separate; v1 keeps the historical denominator/numerator. V2 land_use partition overlaps/omissions above max(100 m², 0.01% master area) fail bookkeeping checks.",
       "automated": true,
       "partly_manual": false
     },
@@ -63,7 +63,7 @@
     {
       "id": "GATE-G9-BOUNDARIES",
       "title": "Site boundaries respected",
-      "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate. New submissions select exactly one node from each group in nodes/design_nodes.json; listed existing submissions retain any three of ten.",
+      "checks": "Core geometry/ construction layers lie inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate. New submissions select exactly one node from each group in nodes/design_nodes.json; listed existing submissions retain any three of ten. Optional context/ research can extend outside only when labelled study_only / not_secured; it grants no rights and is excluded from construction metrics. Fixed agrivoltaic and living labels differ. Legacy agriculture context is retained only for pre-v2 compatibility.",
       "automated": false,
       "partly_manual": true
     },

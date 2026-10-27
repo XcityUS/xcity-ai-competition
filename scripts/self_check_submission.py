@@ -16,6 +16,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import presentation
+import spatial_checks
 import design_depth
 import xcity_common as xc  # noqa: E402
 from node_selection import selection_errors  # noqa: E402
@@ -217,11 +218,8 @@ def check(pkg_path, write=True):
         g1.fail("proposal.md still contains %d template guidance lines (starting with '>')" % len(leftover))
     tlines = {l.strip() for l in open(tmpl, encoding="utf-8")} if os.path.exists(tmpl) else set()
     own = "\n".join(l for l in prop.splitlines() if l.strip() not in tlines and not l.strip().startswith("!["))
-    words = len(re.findall(r"[A-Za-z\u00C0-\u024F][A-Za-z\u00C0-\u024F'-]*", own)) + \
-        len(re.findall(r"[\u3400-\u9FFF]", own)) / 2.0
-    if words < 1500:
-        g1.fail("proposal.md has about %d words of its own (Chinese: two characters count as one word); a complete "
-                "statement needs at least 1,500" % words)
+    if not own.strip():
+        g1.fail("proposal.md has no entrant-authored explanation; a word count is not a design-depth test")
     if re.search(r"^> (XCITY AI Competition · San Juan, 1,656 km²|Write this as an urban design statement)", prop, re.M):
         g1.fail("proposal.md still contains the template header lines starting with '>'")
     cs = os.path.join(pkg, "report", "copyright_statement.md")
@@ -327,7 +325,13 @@ def check(pkg_path, write=True):
             g4.fail("land_use.geojson features %s lie outside the master area" % out[:10])
         outb = [i for i, (p, g) in enumerate(geo.get("buildings", [])) if not mu.contains(xc.to_utm(g))]
         if outb:
-            g4.note("%d buildings lie outside the master area; they are counted in GFA and coverage" % len(outb))
+            g4.note("%d buildings lie outside the master area; their treatment follows the declared metric version; v2 clips master-area metrics and reports outside buildings separately" % len(outb))
+
+    if spatial_checks.modern(pkg):
+        for problem in spatial_checks.partition_problems(geo):
+            g4.fail(problem)
+    for problem in spatial_checks.context_errors(pkg):
+        g9.fail(problem)
 
     # ---------------------------------------------------------------- G5 offline
     for rel in xc.package_files(pkg):
@@ -425,7 +429,7 @@ def check(pkg_path, write=True):
         if xc.to_utm(g).intersection(pilot_u).area > 1:
             g9.fail("buildings feature %d is on the pilot area, which is not open to design" % i)
     for i, (p, g) in enumerate(geo.get("land_use", [])):
-        for part in xc.pilot_land_use_conflicts(p.get("use"), xc.to_utm(g), pilot_parts_u):
+        for part in xc.pilot_land_use_conflicts(p.get("use"), xc.to_utm(g), pilot_parts_u, legacy=not spatial_checks.modern(pkg)):
             g9.fail("land_use feature %d (%s) conflicts with fixed %s pilot context; allowed labels: %s. "
                     "These labels do not permit new buildings or redesign." %
                     (i, p.get("use"), part, ", ".join(sorted(xc.PILOT_LAND_USES[part]))))
