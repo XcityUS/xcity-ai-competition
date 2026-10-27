@@ -26,14 +26,14 @@ for lang in ['en','zh']:
  v.append('</g>')
  for lon,lat,name in [(-68.536,-31.537,'San Juan'),(-68.845,-32.89,'Mendoza'),(-70.669,-33.449,'Santiago'),(-71.343,-29.953,'Coquimbo')]:
   x,y=U(lon,lat);v.append(f'<circle cx="{x}" cy="{y}" r="3.5" fill="#e8e2d0"/>');label(x+9,y+5,name,14)
- x,y=U(-68.19,-31.17);v.append(f'<path d="M{x+12},{y-5} L{x+60},{y-45} L{x+155},{y-45}" stroke="#e2bd6a" fill="none"/>');label(x+65,y-53,'XCITY 场地' if lang=='zh' else 'XCITY SITE',18,'#f2ce80')
+ x,y=U(-68.19,-31.17);v.append(f'<path d="M{x+5},{y-12} V{y-53} H{x-55}" stroke="#e2bd6a" fill="none"/>');label(x-55,y-65,'XCITY 场地' if lang=='zh' else 'XCITY SITE',18,'#f2ce80')
  label(50,35,'南美洲 → 阿根廷' if lang=='zh' else 'SOUTH AMERICA → ARGENTINA',17)
  label(650,35,'圣胡安省及周边区域' if lang=='zh' else 'SAN JUAN AND THE SURROUNDING REGION',17)
- label(795,175,'圣胡安省' if lang=='zh' else 'SAN JUAN PROVINCE',17,'#e2bd6a')
+ label(795,135,'圣胡安省' if lang=='zh' else 'SAN JUAN PROVINCE',17,'#e2bd6a')
  label(50,660,'区域定位示意 · 放大图比例不同' if lang=='zh' else 'REGIONAL ORIENTATION · SCALES DIFFER BETWEEN VIEWS',13,'#9a9d8c')
  v.append('</g></svg>');(R/f'media/home-regional-context-{lang}.svg').write_text('\n'.join(v))
 p=R/'index.html';s=p.read_text();a=s.index('<div class="regional-maps">') if '<div class="regional-maps">' in s else s.index('<div class="regional-diagram">');b=s.index('<p class="regional-credit">',a)
-s=s[:a]+'''<div class="regional-diagram"><img class="zh-only" src="media/home-regional-context-zh.svg?v=20261027-horizontal" alt="从南美洲定位至圣胡安省的放大区位图，标出XCITY场地" loading="lazy"><img class="en-only" src="media/home-regional-context-en.svg?v=20261027-horizontal" alt="Connected regional diagram from South America to San Juan, locating the XCITY site" loading="lazy"></div>'''+s[b:]
+s=s[:a]+'''<div class="regional-diagram"><img class="zh-only" src="media/home-regional-context-zh.svg?v=20261027-label-spacing" alt="从南美洲定位至圣胡安省的放大区位图，标出XCITY场地" loading="lazy"><img class="en-only" src="media/home-regional-context-en.svg?v=20261027-label-spacing" alt="Connected regional diagram from South America to San Juan, locating the XCITY site" loading="lazy"></div>'''+s[b:]
 
 if '.regional-diagram{width:100%' not in s:s=s.replace('.regional-background{','.regional-diagram{width:100%;margin:24px 0}.regional-diagram img{width:100%;height:auto}.regional-background{',1)
 p.write_text(s)
