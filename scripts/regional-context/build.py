@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import json,html
+from shapely.geometry import shape,LineString
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];data=Path(__file__).resolve().parent;countries=json.loads((data/'countries.geojson').read_text())['features'];provinces=json.loads((data/'argentina.json').read_text())['features'];site=json.loads((R/'brief/site-package/boundaries/scope_9_13.geojson').read_text())['features']
 def transform(bounds,rect):
@@ -18,12 +19,18 @@ for lang in ['en','zh']:
  draw(sj['geometry'],T,'#cfac5b','#edcc7b',1)
  a,b=T(-72.7,-34.3);c,d=T(-66,-27.8)
  v.append(f'<rect x="{a}" y="{d}" width="{c-a}" height="{b-d}" fill="none" stroke="#d1ad60" stroke-width="1.5"/>')
- v.append(f'<path d="M{c},{(b+d)/2} H620 m-8,-5 l8,5 -8,5" stroke="#b99b5b" fill="none" stroke-width="1.5"/>')
+ # End the locator on the actual western provincial outline at the same latitude.
+ locator_y=(b+d)/2
+ latitude=-34.3+(605-locator_y)/535*6.5
+ cross=shape(sj['geometry']).intersection(LineString([(-80,latitude),(-60,latitude)]))
+ end_x,_=U(cross.bounds[0],latitude)
+ locator=f'<path d="M{c},{locator_y} H{end_x}" stroke="#b99b5b" fill="none" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"/>' 
  v.append('<g clip-path="url(#regional)">')
  for f in countries:draw(f['geometry'],U,'#242a27','#6e7267',1)
  for f in provinces:draw(f['geometry'],U,'#5c5b48' if f is sj else '#303932','#80836f',1)
  for f in site:draw(f['geometry'],U,'#dfb75e','#ffe4a1',1.2)
  v.append('</g>')
+ v.append(locator)
  for lon,lat,name in [(-68.536,-31.537,'San Juan'),(-68.845,-32.89,'Mendoza'),(-70.669,-33.449,'Santiago'),(-71.343,-29.953,'Coquimbo')]:
   x,y=U(lon,lat);v.append(f'<circle cx="{x}" cy="{y}" r="3.5" fill="#e8e2d0"/>');label(x+9,y+5,name,14)
  x,y=U(-68.19,-31.17);v.append(f'<path d="M{x+5},{y-12} V{y-53} H{x-55}" stroke="#e2bd6a" fill="none"/>');label(x-55,y-65,'XCITY 场地' if lang=='zh' else 'XCITY SITE',18,'#f2ce80')
@@ -32,7 +39,7 @@ for lang in ['en','zh']:
  label(50,660,'区域定位示意 · 放大图比例不同' if lang=='zh' else 'REGIONAL ORIENTATION · SCALES DIFFER BETWEEN VIEWS',13,'#9a9d8c')
  v.append('</g></svg>');(R/f'media/home-regional-context-{lang}.svg').write_text('\n'.join(v))
 p=R/'index.html';s=p.read_text();a=s.index('<div class="regional-maps">') if '<div class="regional-maps">' in s else s.index('<div class="regional-diagram">');b=s.index('<p class="regional-credit">',a)
-s=s[:a]+'''<div class="regional-diagram"><img class="zh-only" src="media/home-regional-context-zh.svg?v=20261027-city-label" alt="从南美洲定位至圣胡安省的放大区位图，标出XCITY场地" loading="lazy"><img class="en-only" src="media/home-regional-context-en.svg?v=20261027-city-label" alt="Connected regional diagram from South America to San Juan, locating the XCITY site" loading="lazy"></div>'''+s[b:]
+s=s[:a]+'''<div class="regional-diagram"><img class="zh-only" src="media/home-regional-context-zh.svg?v=20261027-dotted-boundary" alt="从南美洲定位至圣胡安省的放大区位图，标出XCITY场地" loading="lazy"><img class="en-only" src="media/home-regional-context-en.svg?v=20261027-dotted-boundary" alt="Connected regional diagram from South America to San Juan, locating the XCITY site" loading="lazy"></div>'''+s[b:]
 
 if '.regional-diagram{width:100%' not in s:s=s.replace('.regional-background{','.regional-diagram{width:100%;margin:24px 0}.regional-diagram img{width:100%;height:auto}.regional-background{',1)
 p.write_text(s)
