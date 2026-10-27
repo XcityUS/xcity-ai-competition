@@ -9,7 +9,12 @@
       "reference": "media/controls/district-aerial.png",
       "reference_role": "Original geometry-derived massing control; paired eye view inferred from aerial",
       "post_processing": "None",
-      "status": "Concept illustration; not measured or built evidence"
+      "status": "Concept illustration; not measured or built evidence",
+      "generated_at": "2026-10-27",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry massing made with tools/draw_design.py at media/controls/district-aerial.png; original entrant work for this competition.",
+      "caption": "Concept illustration over original massing. Paired image contains aerial at left and eye-level interpretation at right; not survey, construction or engineering evidence.",
+      "view": "city_aerial"
     },
     {
       "path": "media/A01-finished.png",
@@ -20,7 +25,13 @@
       "reference": "media/controls/A01-aerial.png",
       "reference_role": "Original geometry-derived massing control; paired eye view inferred from aerial",
       "post_processing": "None",
-      "status": "Concept illustration; not measured or built evidence"
+      "status": "Concept illustration; not measured or built evidence",
+      "generated_at": "2026-10-27",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry massing made with tools/draw_design.py at media/controls/A01-aerial.png; original entrant work for this competition.",
+      "caption": "Concept illustration over original massing. Paired image contains aerial at left and eye-level interpretation at right; not survey, construction or engineering evidence.",
+      "node_id": "A01",
+      "view": "aerial"
     },
     {
       "path": "media/B03-finished.png",
@@ -31,7 +42,13 @@
       "reference": "media/controls/B03-aerial.png",
       "reference_role": "Original geometry-derived massing control; paired eye view inferred from aerial",
       "post_processing": "None",
-      "status": "Concept illustration; not measured or built evidence"
+      "status": "Concept illustration; not measured or built evidence",
+      "generated_at": "2026-10-27",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry massing made with tools/draw_design.py at media/controls/B03-aerial.png; original entrant work for this competition.",
+      "caption": "Concept illustration over original massing. Paired image contains aerial at left and eye-level interpretation at right; not survey, construction or engineering evidence.",
+      "node_id": "B03",
+      "view": "aerial"
     },
     {
       "path": "media/C02-finished.png",
@@ -42,7 +59,53 @@
       "reference": "media/controls/C02-aerial.png",
       "reference_role": "Original geometry-derived massing control; paired eye view inferred from aerial",
       "post_processing": "None",
-      "status": "Concept illustration; not measured or built evidence"
+      "status": "Concept illustration; not measured or built evidence",
+      "generated_at": "2026-10-27",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry massing made with tools/draw_design.py at media/controls/C02-aerial.png; original entrant work for this competition.",
+      "caption": "Concept illustration over original massing. Paired image contains aerial at left and eye-level interpretation at right; not survey, construction or engineering evidence.",
+      "node_id": "C02",
+      "view": "aerial"
+    },
+    {
+      "path": "media/controls/A01-aerial.png",
+      "model": "Matplotlib geometry renderer / tools/draw_design.py",
+      "prompt": "Draw the submitted building footprints, heights and relative positions in an orthographic aerial control. No generative additions.",
+      "generated_at": "2026-10-27",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry/buildings.geojson and geometry/nodes.geojson produced by tools/build_design.py.",
+      "caption": "Original source-derived massing reference. This control is not a finished image."
+    },
+    {
+      "path": "media/controls/B03-aerial.png",
+      "model": "Matplotlib geometry renderer / tools/draw_design.py",
+      "prompt": "Draw the submitted building footprints, heights and relative positions in an orthographic aerial control. No generative additions.",
+      "generated_at": "2026-10-27",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry/buildings.geojson and geometry/nodes.geojson produced by tools/build_design.py.",
+      "caption": "Original source-derived massing reference. This control is not a finished image."
+    },
+    {
+      "path": "media/controls/C02-aerial.png",
+      "model": "Matplotlib geometry renderer / tools/draw_design.py",
+      "prompt": "Draw the submitted building footprints, heights and relative positions in an orthographic aerial control. No generative additions.",
+      "generated_at": "2026-10-27",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry/buildings.geojson and geometry/nodes.geojson produced by tools/build_design.py.",
+      "caption": "Original source-derived massing reference. This control is not a finished image."
+    },
+    {
+      "path": "media/controls/district-aerial.png",
+      "model": "Matplotlib geometry renderer / tools/draw_design.py",
+      "prompt": "Draw the submitted building footprints, heights and relative positions in an orthographic aerial control. No generative additions.",
+      "generated_at": "2026-10-27",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Original geometry/buildings.geojson and geometry/nodes.geojson produced by tools/build_design.py.",
+      "caption": "Original source-derived massing reference. This control is not a finished image."
     }
   ]
 }

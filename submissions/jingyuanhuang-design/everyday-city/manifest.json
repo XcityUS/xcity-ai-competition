@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Human asked for a separate new scheme while preserving the published Finite Water City; prioritised housing and public life; delegated node choice; required English-only public material and A/B/C node IDs without old-code aliases. Public submission of this newly completed work has not yet been approved after review."
+    "human_role": "Human asked for a separate new scheme while preserving the published Finite Water City; prioritised housing and public life; delegated node choice; required English-only public material and A/B/C node IDs without old-code aliases. On 27 October 2026 the human reviewed the new concept and explicitly requested pushing it and showing it on the homepage. Public preview publication is authorised; official competition dates remain unpublished."
   },
   "nodes": [
     "A01",
@@ -66,10 +66,128 @@
       }
     }
   },
-  "package_state": "draft",
+  "package_state": "ready_for_review",
   "created": "2026-10-27",
   "updated": "2026-10-27",
   "booklet": {
-    "cover": "media/district-finished.png"
+    "cover": "media/district-finished.png",
+    "section_pages": {
+      "whole_site": [
+        {
+          "path": "pages/01-whole-site.png",
+          "title": "Whole-site urban structure"
+        }
+      ],
+      "node_locator": [
+        {
+          "path": "pages/10-node-locator.png",
+          "title": "Three connected places"
+        }
+      ],
+      "node:A01": [
+        {
+          "path": "pages/11-a01-plan.png",
+          "title": "A01 / Courtyard Homes"
+        },
+        {
+          "path": "pages/A01-finished.png",
+          "title": "A01 / finished concept views"
+        }
+      ],
+      "node:B03": [
+        {
+          "path": "pages/12-b03-plan.png",
+          "title": "B03 / Useful Compute"
+        },
+        {
+          "path": "pages/B03-finished.png",
+          "title": "B03 / finished concept views"
+        }
+      ],
+      "node:C02": [
+        {
+          "path": "pages/13-c02-plan.png",
+          "title": "C02 / Working Farm Edge"
+        },
+        {
+          "path": "pages/C02-finished.png",
+          "title": "C02 / finished concept views"
+        }
+      ],
+      "phasing": [
+        {
+          "path": "pages/14-phasing.png",
+          "title": "Complete first chapter"
+        }
+      ],
+      "key_metrics": [
+        {
+          "path": "pages/16-review-dashboard.png",
+          "title": "Key indicators and verification"
+        }
+      ]
+    },
+    "pages": [
+      {
+        "path": "pages/02-site-reading.png",
+        "title": "Site evidence",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/03-siting-choice.png",
+        "title": "Siting decision",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/04-first-district.png",
+        "title": "Complete first district",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/05-courtyard-neighbourhood.png",
+        "title": "Courtyard neighbourhood",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/17-a01-floor-and-section.png",
+        "title": "Housing floor and section",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/06-street-section.png",
+        "title": "Public street section",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/18-civic-spine.png",
+        "title": "Civic spine",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/07-movement.png",
+        "title": "People and machine movement",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/19-resource-network.png",
+        "title": "Resource network",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/08-water-priorities.png",
+        "title": "Water priorities",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/09-energy.png",
+        "title": "Energy dispatch",
+        "after": "whole_site"
+      },
+      {
+        "path": "pages/15-governance.png",
+        "title": "Governance and livelihoods",
+        "after": "phasing"
+      }
+    ]
   }
 }

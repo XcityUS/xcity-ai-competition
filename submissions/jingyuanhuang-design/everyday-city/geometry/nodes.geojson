@@ -43,7 +43,15 @@
         "node_id": "B03",
         "name": "Useful Compute",
         "why": "Production accepts a civic boundary and has a named heat user",
-        "phase": 1
+        "phase": 1,
+        "eye_from": [
+          -68.2235173530465,
+          -31.166102404134644
+        ],
+        "eye_to": [
+          -68.22183417763473,
+          -31.166633597632647
+        ]
       },
       "geometry": {
         "type": "Polygon",
@@ -79,7 +87,15 @@
         "node_id": "C02",
         "name": "Working Farm Edge",
         "why": "Public learning and farm logistics meet outside the protected pilot",
-        "phase": 1
+        "phase": 1,
+        "eye_from": [
+          -68.22928915930594,
+          -31.16600174686514
+        ],
+        "eye_to": [
+          -68.22928514180171,
+          -31.166497966390438
+        ]
       },
       "geometry": {
         "type": "Polygon",

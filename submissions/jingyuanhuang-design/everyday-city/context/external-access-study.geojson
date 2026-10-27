@@ -9,7 +9,9 @@
         "not_secured": true,
         "source": "SRC-OSM",
         "assumption": "A-TERRAIN",
-        "status": "Straight corridor hypothesis only; survey, alignment, wash crossings, land rights, junction and emergency access unresolved"
+        "status": "study_only",
+        "authority": "not_secured",
+        "basis": "Source SRC-OSM regional RN40 line; entrant straight corridor study under A-TERRAIN. Not a surveyed or secured access alignment; rights, flood crossings, gradients and junction require verification."
       },
       "geometry": {
         "type": "LineString",

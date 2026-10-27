@@ -155,7 +155,7 @@ a=f.add_axes([.07,.22,.56,.56]);a.axis('off');items=[['Phase-one district',f"{qa
 for (r,c),cell in tab.get_celld().items():cell.set_facecolor('#e6e0d2' if r%2==0 else BG);cell.set_edgecolor('#cfc9bc')
 note(f,.70,.77,'Accepted trade-off','Sacrifice uninterrupted compute output and the shortest possible productive routes to protect independent housing, public life and a clear service boundary.',40)
 note(f,.70,.48,'Unresolved engineering','Survey, hydrology, access rights, utility capacity, seismic and fire design, grading and actual dwelling plans remain unverified. Regional routes are 300 m-grid studies.',40)
-note(f,.70,.19,'Submission status','Independent new review package. English public material; A/B/C IDs only. Organiser machine rules still use old IDs, so no current gate pass or public submission is claimed.',40);finish(f,16,'review-dashboard')
+note(f,.70,.19,'Submission status','Independent English proposal; A/B/C IDs under current rules. Public preview authorised 27 October 2026. Automatic compliance and independent design review remain separate.',40);finish(f,16,'review-dashboard')
 # Geometry-derived aerial controls for exact selected extents; real level changes remain unmodelled.
 (P/'media/controls').mkdir(parents=True,exist_ok=True)
 for key,bounds,elev,azim in [('district',(x0,y0,x0+1900,y0+1400),53,-65),('A01',geo['nodes'][0][0].bounds,48,-62),('B03',geo['nodes'][1][0].bounds,43,-68),('C02',(x0+80,y0+70,x0+870,y0+380),40,-65)]:
