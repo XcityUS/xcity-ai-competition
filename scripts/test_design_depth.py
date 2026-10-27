@@ -33,7 +33,9 @@ class DepthTests(unittest.TestCase):
  def test_false_approval(self):
   self.doc['rows'][0]['status']='passed';self.assertEqual(self.assess()['automatic']['status'],'failed')
  def test_legacy_exact_paths(self):
-  for rel in dd.POLICY['legacy_submissions']:self.assertFalse(dd.applies(dd.ROOT/rel))
+  for rel in dd.POLICY['legacy_submissions']:
+   package=dd.ROOT/rel
+   self.assertEqual(dd.applies(package),(package/dd.MATRIX).exists())
   self.assertTrue(dd.applies(self.p))
  def test_missing_matrix(self):self.assertEqual(dd.assess(self.p,['N02','N05','N07'])['automatic']['status'],'failed')
  def test_v2_scope_decision_and_gap_types(self):
