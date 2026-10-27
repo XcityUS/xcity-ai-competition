@@ -72,7 +72,7 @@ def form(lang):
     P('XCITY 设计机构征集','XCITY Design Practice Call','Subtitle')
     P('资格申请工作表及材料清单','Application Worksheet\nand Materials Checklist','Title')
     P('本工作表仅供可选准备。官网简短注册后，我们将邮件发送专属申请链接；请在官网逐项填写资格表、提供适用证明与团队业绩、上传1–10页构想PDF，可保存并最终提交。无需上传Word，邮件不收申请附件。','This optional worksheet helps you prepare. Register on the official website; we will email a private application link. Complete the online form, evidence and references, upload a 1–10-page ideas PDF, save progress and finally submit. No Word upload is required. Do not email application attachments.')
-    note('注册截止：2026年12月31日23:59 UTC。完整在线申请截止：2027年1月31日23:59 UTC。2027年2月遴选五家。','Registration deadline: 31 December 2026, 23:59 UTC. Complete online application: 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027.')
+    note('注册截止：2026年12月31日23:59 UTC。完整在线申请截止：2027年1月31日23:59 UTC。2027年2月遴选三家。','Registration deadline: 31 December 2026, 23:59 UTC. Complete online application: 31 January 2027, 23:59 UTC. Three teams will be selected in February 2027.')
     note('可使用中文或英文。灰色字段可整理草稿，最终请在专属网页填写；不适用项请说明，无需准备不适用的证书。本Word不构成正式提交。','Chinese or English is accepted. Use grey fields for preparation, then complete the private online form. Explain inapplicable items; do not obtain irrelevant certificates. This Word file is not a formal submission.')
     H('1 机构与联系人','1 Institution and contact')
     for c,e,t in [

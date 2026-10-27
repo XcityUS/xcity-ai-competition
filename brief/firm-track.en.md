@@ -10,9 +10,9 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 |---|---|
 | Organiser | XCITY |
 | Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
-| Procedure | Two stages: register on the practice page, receive a private link by email, then complete and submit the online application; paid design by five shortlisted practices |
+| Procedure | Two stages: register on the practice page, receive a private link by email, then complete and submit the online application; paid design by three shortlisted practices |
 | Fees | None: there is no fee to apply or to take part |
-| Honorarium and prize | US$50,000 to each of the five for a compliant stage-two entry; US$50,000 more to one winner |
+| Honorarium and prize | US$50,000 to each of the three for a compliant stage-two entry; US$50,000 more to one winner |
 | Languages | Stage 1 in English or Chinese; stage 2 in English |
 | Contact | competition@xcity.ai |
 
@@ -26,11 +26,11 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Registration and private online application.** Applications are open. Register on the official practice page with basic institution and contact information. XCITY will email a private application link. Follow that link to complete the qualification form, provide applicable evidence and team/project references, upload a **1–10-page initial-ideas PDF**, save progress and finally submit on the official website. The organiser checks eligibility first, then assesses eligible teams, experience and ideas to select five. Stage one is free and unpaid. Initial registrations close on 31 December 2026, 23:59 UTC. Complete online applications are due by 31 January 2027, 23:59 UTC; five teams are selected in February 2027. Registration alone is not a complete stage-one application or shortlisting.
+**Stage 1 · Registration and private online application.** Applications are open. Register on the official practice page with basic institution and contact information. XCITY will email a private application link. Follow that link to complete the qualification form, provide applicable evidence and team/project references, upload a **1–10-page initial-ideas PDF**, save progress and finally submit on the official website. The organiser checks eligibility first, then assesses eligible teams, experience and ideas to select three. Stage one is free and unpaid. Initial registrations close on 31 December 2026, 23:59 UTC. Complete online applications are due by 31 January 2027, 23:59 UTC; three teams are selected in February 2027. Registration alone is not a complete stage-one application or shortlisting.
 
-The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the five are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
+The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the three are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
 
-**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Each of the five that delivers a compliant entry receives US$50,000; one winner receives a further US$50,000.
+**Stage 2 · Design, by the shortlisted teams.** Shortlisted teams receive the full site package, an online briefing and a written question period, and design the four layers in section 3. Each of the three that delivers a compliant entry receives US$50,000; one winner receives a further US$50,000.
 
 **Review and selection.** Shortlisted teams present online to the jury. XCITY may invite the winning team to discuss further work under a separate agreement.
 
@@ -157,7 +157,7 @@ The weight of each criterion is published with the formal rules.
 
 ## 8. Who can apply
 
-The call is open to practices that meet the eligibility requirements. All applicants follow the same application requirements, eligibility review and selection criteria. Five teams are selected for stage two.
+The call is open to practices that meet the eligibility requirements. All applicants follow the same application requirements, eligibility review and selection criteria. Three teams are selected for stage two.
 
 - The applicant is a legally registered design practice or a consortium, holding the planning, architecture or landscape licence or business registration that applies where it is registered.
 - The team covers masterplanning, urban design, and landscape and ecology, and sets out how water, energy, transport and delivery expertise is brought in.
@@ -171,13 +171,13 @@ The call is open to practices that meet the eligibility requirements. All applic
 
 Read the current brief and stage-one site data. Register on the practice page. We will email your private application link; follow it to complete the online qualification form and checklist, provide applicable evidence or accepted links and a 1–10-page ideas PDF. Save progress and finally submit online for stage-one review. The optional Word worksheet is a preparation aid, not a required upload or email attachment.
 
-Register online by 31 December 2026, 23:59 UTC; submit the complete online application by 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027. All applicants follow the same eligibility and selection criteria. The initial registration form requires no attachments; the private application page collects the complete materials.
+Register online by 31 December 2026, 23:59 UTC; submit the complete online application by 31 January 2027, 23:59 UTC. Three teams will be selected in February 2027. All applicants follow the same eligibility and selection criteria. The initial registration form requires no attachments; the private application page collects the complete materials.
 
 Optional updates on the main and Agent pages remain separate from institution applications.
 
 ## 10. Honorarium, jury and terms
 
-- **Stage one** is unpaid. **Honorarium**: US$50,000 to each of the five shortlisted practices that delivers a compliant stage-two entry, whatever its placing. **Prize**: US$50,000 more to one winner. **Further work**: XCITY may invite the winning team to discuss further work under a separate agreement; winning is not itself a commission.
+- **Stage one** is unpaid. **Honorarium**: US$50,000 to each of the three shortlisted practices that delivers a compliant stage-two entry, whatever its placing. **Prize**: US$50,000 more to one winner. **Further work**: XCITY may invite the winning team to discuss further work under a separate agreement; winning is not itself a commission.
 - **Jury**: qualified experts in planning, architecture, landscape and energy infrastructure. Do not contact jury members about the call; doing so may lead to disqualification.
 - **Conduct**: work must be original and must not infringe the rights of others. AI tools may be used; disclose how, and the team stays responsible for the result. No claim of official approval, permit or statutory status.
 - **Publicity**: shortlisted and selected work may be shown on XCITY's website, in exhibitions and publications; every image, map and AI-generated element must be legally publishable.

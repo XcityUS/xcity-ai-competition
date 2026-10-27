@@ -15,7 +15,7 @@ BOUNDARY_AREA=float(BOUNDARY_REVISION['revised_scope_geodesic_km2'])
 BOUNDARY_VERSION=BOUNDARY_REVISION['revision']
 
 pdfmetrics.registerFont(TTFont('Arial','/System/Library/Fonts/Supplemental/Arial.ttf'))
-W,H=841.92,595.92;BG='#F7F5F0';INK='#262626';BODY='#363634';GRAY='#8A877F';LINE='#D2CFC6';page=0;checks=[];c=canvas.Canvas(str(OUT),pagesize=(W,H));c.setTitle('XCITY | Masterplanning and Urban Design Competition | Professional Practice Design Brief');c.setAuthor('XCITY');c.setSubject('Initial ideas of up to 10 pages; five shortlisted teams; US$300,000 in design honoraria and awards')
+W,H=841.92,595.92;BG='#F7F5F0';INK='#262626';BODY='#363634';GRAY='#8A877F';LINE='#D2CFC6';page=0;checks=[];c=canvas.Canvas(str(OUT),pagesize=(W,H));c.setTitle('XCITY | Masterplanning and Urban Design Competition | Professional Practice Design Brief');c.setAuthor('XCITY');c.setSubject('Initial ideas of up to 10 pages; three shortlisted teams; US$200,000 in design honoraria and awards')
 def rect(x,y,w,h,col,stroke=None):
  c.setFillColor(HexColor(col));c.setStrokeColor(HexColor(stroke or col));c.setLineWidth(.5);c.rect(x,H-y-h,w,h,fill=1,stroke=bool(stroke))
 def txt(s,x,y,size=11,color=BODY):
@@ -58,7 +58,7 @@ base('X C I T Y · SAN JUAN, ARGENTINA','')
 image('site-context.png',375,0,467,H)
 txt('XCITY',50,151,31,INK);txt('International',50,206,26,INK);txt('Masterplanning &',50,241,26,INK);txt('Urban Design Competition',50,276,23,INK);txt('Professional Practice Track',50,331,14,GRAY)
 para('Design Brief\nApproximately 1,656 km²\nSite-wide framework · Complete city layout · Focus areas',50,409,290,10)
-para('Initial ideas of up to 10 pages → Five shortlisted teams\nTotal design honoraria and awards: US$300,000',50,490,300,9)
+para('Initial ideas of up to 10 pages → Three shortlisted teams\nTotal design honoraria and awards: US$200,000',50,490,300,9)
 # 02
 base('CONTENTS','Contents')
 items=[('01','Competition overview'),('02','The design challenge'),('03','Regional context'),('04','The site'),('05','Existing conditions'),('06','Vision and objectives'),('07','Design scope'),('08','Programme and development metrics'),('09','Site constraints'),('10','Design considerations'),('11','Phasing and delivery'),('12','Submission requirements'),('13','Evaluation criteria'),('14','Competition procedure'),('A','Site information')]
@@ -71,9 +71,9 @@ table(['Item','Requirement'],[
 ['Location and site','San Juan Province, in the Andean foothills of western Argentina. Competition area: approximately 1,656 km².'],
 ['Early works area','Fixed pilots: agrivoltaic fields 01–03 (13.9 km²) and the Phase 1 living quarter (2.48 km², outline only). XCITY delivers both; proposals connect to them without redesigning them.'],
 ['Participation','Registration is free. All applicants follow the same application requirements, eligibility review and selection criteria.'],
-['Stage 1','Register online, receive a private link by email, then complete the online qualification form and uploads, including an initial-ideas PDF of 1-10 pages. Eligibility is checked before ideas, experience and team are assessed to select five teams.'],
-['Stage 2','The five shortlisted teams develop full proposals after appointment and receipt of the brief and common site information package. Briefings and Q&A will be online.'],
-['Honoraria and award','Each valid Stage 2 submission earns US$50,000. One winner receives an additional US$50,000. Total: US$300,000.'],
+['Stage 1','Register online, receive a private link by email, then complete the online qualification form and uploads, including an initial-ideas PDF of 1-10 pages. Eligibility is checked before ideas, experience and team are assessed to select three teams.'],
+['Stage 2','The three shortlisted teams develop full proposals after appointment and receipt of the brief and common site information package. Briefings and Q&A will be online.'],
+['Honoraria and award','Each valid Stage 2 submission earns US$50,000. One winner receives an additional US$50,000. Total: US$200,000.'],
 ['Further services','Any subsequent design commission, fees and rights to adapt or implement the work will be negotiated under a separate agreement.']],[115,627],y=184,size=9.6,minh=41)
 #04
 base('02 · THE DESIGN CHALLENGE','The design challenge')
@@ -263,7 +263,7 @@ for i,(a,b) in enumerate([
 ('Register online','Applications are open. Complete institution, country or jurisdiction, contact and email on the official practice page. No attachments are needed for initial registration.'),
 ('Receive your private link','We will email a private application link. Follow it to the official website; the qualification form and item-by-item checklist are online. The Word worksheet is optional preparation only.'),
 ('Complete and save online','Fill the form; upload evidence or accepted registry/project links, team and references, and a 1-10-page ideas PDF. Save progress and return through your private link. Do not upload a Word form or email attachments.'),
-('Stage-one review','Register by 31 December 2026, 23:59 UTC. Finally submit the complete online application by 31 January 2027, 23:59 UTC. Five teams are selected in February 2027. Initial registration or saving a draft alone does not complete stage one or mean shortlisting.')]):
+('Stage-one review','Register by 31 December 2026, 23:59 UTC. Finally submit the complete online application by 31 January 2027, 23:59 UTC. Three teams are selected in February 2027. Initial registration or saving a draft alone does not complete stage one or mean shortlisting.')]):
  y=207+i*76;txt(f'0{i+1}',50,y,18,GRAY);txt(a,93,y,12,INK);para(b,93,y+25,699,9.6)
 para('Evidence: ordinary PDF/PNG/JPG copies or accepted links; no notarisation. Each file up to 10 MB, all uploads up to 25 MB. Ideas must be a 1-10-page PDF. Contact: competition@xcity.ai.',50,526,742,8,GRAY)
 #27
@@ -275,14 +275,14 @@ table(['Suggested topic','What it should communicate'],[
 ['3 Phase 1 rationale','Suggest a starting location or selection principles. Explain how production, housing, public services and essential infrastructure could support one another.'],
 ['4 A spatial idea or sketch','Illustrate one representative spatial proposition through a sketch, relationship diagram or section. Show how it tests the wider idea; polished renderings are not required.'],
 ['5 Method and collaboration','Outline your design approach, key assumptions, questions for verification and proposed specialist collaboration.']],[155,587],y=181,size=10,minh=45)
-columns([('Format and workload','Submit a PDF of up to 10 pages, which may be exported from PowerPoint. Credentials, team details and references are separate. A complete masterplan, engineering calculations and additional renderings are not required.'),('Selection and use of ideas','The panel will select five teams using the criteria in Section 13, considering the ideas, reference work and proposed team. Stage 1 is unpaid. Unselected ideas do not grant rights to adaptation or implementation.')],y=454,size=9.4)
+columns([('Format and workload','Submit a PDF of up to 10 pages, which may be exported from PowerPoint. Credentials, team details and references are separate. A complete masterplan, engineering calculations and additional renderings are not required.'),('Selection and use of ideas','The panel will select three teams using the criteria in Section 13, considering the ideas, reference work and proposed team. Stage 1 is unpaid. Unselected ideas do not grant rights to adaptation or implementation.')],y=454,size=9.4)
 #28
 base('14 · COMPETITION PROCEDURE','Stage 2 · Design honoraria and winner’s award')
-para('The five shortlisted teams begin full design work after signing the participation agreement and receiving the complete brief and common site information package. Shortlisting establishes eligibility for the Stage 2 honorarium; it does not trigger an advance payment.',50,123,742,10.5)
+para('The three shortlisted teams begin full design work after signing the participation agreement and receiving the complete brief and common site information package. Shortlisting establishes eligibility for the Stage 2 honorarium; it does not trigger an advance payment.',50,123,742,10.5)
 table(['Payment','Allocation','Payment condition'],[
-['Stage 2 design honoraria','5 teams × US$50,000\nSubtotal: US$250,000','Payable following a complete, valid Stage 2 submission in accordance with the brief and participation agreement, irrespective of ranking.'],
+['Stage 2 design honoraria','3 teams × US$50,000\nSubtotal: US$150,000','Payable following a complete, valid Stage 2 submission in accordance with the brief and participation agreement, irrespective of ranking.'],
 ['Additional winner’s award','1 team × US$50,000','Paid to the winning team after the result is announced, in addition to its Stage 2 honorarium.'],
-['Total','US$300,000','The winner receives US$100,000 in total. Each of the other four teams receives US$50,000.']],[155,240,347],y=203,size=10.3,minh=64)
+['Total','US$200,000','The winner receives US$100,000 in total. Each of the other two teams receives US$50,000.']],[155,240,347],y=203,size=10.3,minh=64)
 columns([('What counts as a valid submission','Submit the required Stage 2 material and respond substantively to the design task. Eligibility is reviewed beforehand. Completeness checks and design evaluation are separate; a lower ranking does not remove the honorarium.'),('What the payments cover','Stage 1 is unpaid and there is no Stage 2 advance. No separate design-development award is offered. Later design services are outside these payments. Tax treatment, payment documents and settlement procedures are governed by the participation agreement.')],y=449,size=9.4)
 #29
 base('14 · COMPETITION PROCEDURE','Briefings, jury process and use of submissions')
@@ -310,7 +310,7 @@ c.save()
 r=PdfReader(OUT);full='\n'.join(p.extract_text() or '' for p in r.pages)
 assert len(r.pages)==31,len(r.pages)
 assert not re.search('[\u4e00-\u9fff]',full),'Chinese text remains in English PDF'
-for value in ['US$300,000','US$50,000','US$100,000','competition@xcity.ai','up to 10 pages','private link']:assert value in full,value
+for value in ['US$200,000','US$50,000','US$100,000','competition@xcity.ai','up to 10 pages','private link']:assert value in full,value
 for value in ['US$75,000','parcel 9','parcel 13','TBC','TBD']:assert value not in full,value
-(O/'validation-english.json').write_text(json.dumps({'pages':31,'paragraph_boxes_checked':len(checks),'chinese_text_characters':0,'native_pdf_text':True,'site_area_km2':1656,'stage_1_pages':10,'shortlisted_teams':5,'honorarium_usd':50000,'winner_additional_usd':50000,'total_usd':300000},indent=2))
+(O/'validation-english.json').write_text(json.dumps({'pages':31,'paragraph_boxes_checked':len(checks),'chinese_text_characters':0,'native_pdf_text':True,'site_area_km2':1656,'stage_1_pages':10,'shortlisted_teams':3,'honorarium_usd':50000,'winner_additional_usd':50000,'total_usd':200000},indent=2))
 print(OUT)
