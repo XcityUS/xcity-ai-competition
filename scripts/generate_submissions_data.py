@@ -64,7 +64,7 @@ def main():
                 "example_status": statuses.get(path,{}).get("status"),
                 "gates_total": sc.get("gates_total", 12), "gates_passed": sc.get("gates_passed", 0),
                 "gates_pass": bool(sc.get("pass")),
-                "design_content_review_status": "recorded_for_current_version" if p and p.get("reviewed_package_sha256") == sha else "not_recorded_for_current_version", "package_sha256": sha,
+                "design_content_review_status": p.get("design_content_review", "not_assessed") if p and p.get("reviewed_package_sha256") == sha else "not_recorded_for_current_version", "package_sha256": sha,
                 "reviewed_package_sha256": p.get("reviewed_package_sha256") if p else None,
                 "published": bool(p and p.get("reviewed_package_sha256") == sha),
                 "featured": bool(p and p.get("featured")),

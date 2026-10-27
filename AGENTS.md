@@ -190,3 +190,6 @@ Automatic compliance (files, numbers and evidence paths) and design content revi
 ## Final public submission language
 
 Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.
+
+
+The public gallery preserves each submission in English in every website interface language. The organiser will prepare clearly labelled Chinese review translations for the review stage, retaining the English originals as the reference. Entrants need not submit a separate Chinese version.

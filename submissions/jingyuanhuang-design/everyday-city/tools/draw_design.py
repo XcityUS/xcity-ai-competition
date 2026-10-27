@@ -22,6 +22,7 @@ scope=unary_union([g for g,p in load(S/'boundaries/scope_9_13.geojson')]);pilot=
 master=geo['master_area'][0][0];x0,y0=json.loads((P/'tools/selected_site.json').read_text())['origin_utm_m'];qa=json.loads((P/'report/geometry-qa.json').read_text())
 BG='#f5f1e8';INK='#263b3b';TEAL='#275f62';GOLD='#c79955';RED='#b7644e';COL={'living':'#c88868','energy_compute':'#6b8f95','agri_production':'#a9b397','industry':'#b8a079','port':'#b58b99','reserve':'#e3dfd3','residential':'#c88868','civic':'#cfb56c','compute':'#6b8f95','energy':'#a6b799','open_space':'#ece6d5','infrastructure':'#aeb9b8'}
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'text.color':INK,'axes.labelcolor':INK})
+boundary_revision=json.loads((S/'boundaries/boundary-revision.json').read_text())
 index=[]
 def parts(g):
  if g.geom_type=='Polygon':yield g
@@ -68,6 +69,8 @@ def mastermap(ax,bounds=None,movement=True):
 # 01 full site: exact source extent, strategic reservations and links.
 f=new(1,'A city of everyday centres','Whole competition site / fixed boundary / source-derived research framework')
 a=f.add_axes([.04,.10,.63,.71])
+unassessed=scope.difference(unary_union([g for g,p in geo['structure']]))
+fill(a,unassessed,'#f4ddb4',edge=GOLD,lw=.7)
 for g,p in geo['structure']:fill(a,g,COL[p['system']])
 line(a,scope,INK,1.2);line(a,channels,'#a8b8b5',.5)
 for g,p in load(P/'report/regional-corridors.geojson'):line(a,g,TEAL,1.4,'--' if p['phase']>1 else '-')
@@ -75,12 +78,12 @@ for g,p in load(P/'report/centres.geojson'):
  a.scatter(g.x/1000,g.y/1000,s=25,color=TEAL);a.text(g.x/1000+.4,g.y/1000+.4,p['name'],size=9)
 frame(a,scope.bounds);note(f,.70,.79,'One main city first','A complete primary district supports daily life. Two conditional service towns grow only with their own services and resource contracts. The eastern gateway remains a later shared freight reserve.')
 note(f,.70,.51,'Five systems, linked','Homes and public services define the primary city; regional energy and compute form a separate production backbone; agricultural research occupies low-slope land; repair and processing accompany centres; trade is reserved at the east.')
-note(f,.70,.23,'Land is not installed capacity','Reserve colours show proposed roles, not realised buildings, irrigation or a verified resource entitlement. Fixed pilots remain unchanged.',40);finish(f,1,'whole-site')
+note(f,.70,.23,'Land is not installed capacity','Reserve colours show proposed roles, not realised buildings, irrigation or a verified resource entitlement. Fixed pilots remain unchanged. New seam area is unassessed; the boundary correction adds no design programme.',40);finish(f,1,'whole-site')
 f=new(2,'Read the ground before drawing the city','DEM-derived screening is neither a lake nor a surveyed flood boundary')
 a=f.add_axes([.04,.12,.62,.68]);fill(a,scope,'#e7e1d4');fill(a,flood.intersection(scope),'#cdd9d4',alpha=.8);line(a,channels,TEAL,.6);fill(a,pilot,GOLD);fill(a,living,RED);line(a,scope,INK,1);line(a,master,RED,2);frame(a,scope.bounds)
-note(f,.70,.79,'Fixed facts','The issued boundary covers 1,656.684229 km2 geodesically. The 13.9 km2 agrivoltaic pilot and 2.48 km2 first living-quarter outline are fixed separately. No internal stock or service capacity is invented.')
+note(f,.70,.79,'Fixed facts',f"The current issued boundary covers {boundary_revision['revised_scope_geodesic_km2']:,.6f} km2 geodesically. The nominal project label remains about 1,656 km2. The agrivoltaic fields and first living-quarter outline remain fixed; no service capacity is invented.")
 note(f,.70,.48,'Screening, then verification','60 m DEM and regional flood sensitivity inform siting. Neither proves site safety. Actual channels have no permanent construction. The first district is clear of the supplied 150 m channel-research screen.')
-note(f,.70,.18,'Source','XCITY site package at 9e504de; boundary revision 2026-10-27-seam-closure. Survey, small washes and utility rights remain unverified.');finish(f,2,'site-reading')
+note(f,.70,.18,'Source',f"XCITY boundary revision {boundary_revision['revision']}. Only the authorised 9/13 open seam is repaired; other outer edges retained. Newly added land is unassessed, not redesigned. Survey and utility rights remain unverified.");finish(f,2,'site-reading')
 f=new(3,'Choose proximity without hiding the terrain cost','Three spatially meaningful fit tests / same 1.9 x 1.4 km programme')
 a=f.add_axes([.06,.17,.52,.60]);fill(a,scope,'#e6e0d2');fill(a,pilot,GOLD);fill(a,flood.intersection(box(570000,6550000,578000,6560000)),'#cbd8d2')
 for i,v in enumerate(json.loads((P/'tools/selected_site.json').read_text())['comparison']):
@@ -170,4 +173,9 @@ for key,bounds,elev,azim in [('district',(x0,y0,x0+1900,y0+1400),53,-65),('A01',
      j=(i+1)%len(xy);faces.append([(xy[i,0],xy[i,1],0),(xy[j,0],xy[j,1],0),(xy[j,0],xy[j,1],h),(xy[i,0],xy[i,1],h)])
    ax.add_collection3d(Poly3DCollection(faces,facecolor=color,edgecolor='#525a55',linewidths=.3,alpha=1))
  ax.set_xlim(0,xmax-xmin);ax.set_ylim(0,ymax-ymin);ax.set_zlim(0,80 if key=='district' else 30);ax.set_box_aspect((xmax-xmin,ymax-ymin,(xmax-xmin)*.2));ax.view_init(elev=elev,azim=azim);ax.axis('off');fig.subplots_adjust(0,0,1,1);fig.savefig(P/'media/controls'/f'{key}-aerial.png',dpi=160);plt.close(fig)
-(P/'report/page-index.json').write_text(json.dumps(index,indent=2));print('Drawn',len(index),'English design sheets and four geometry controls')
+# Retain separately authored detail sheets 17-19 when redrawing base sheets.
+index_path=P/'report/page-index.json'
+previous=json.loads(index_path.read_text()) if index_path.exists() else []
+index.extend(entry for entry in previous if entry['number'] not in {item['number'] for item in index})
+index.sort(key=lambda entry:entry['number'])
+index_path.write_text(json.dumps(index,indent=2));print('Drawn',len(index),'English design sheets and four geometry controls')

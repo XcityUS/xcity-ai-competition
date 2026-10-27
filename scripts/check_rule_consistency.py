@@ -44,6 +44,9 @@ def check():
   need('retain the previous any-three' not in read(f),f+': removed node-selection exception returned')
  need(data('schema/manifest.schema.json')['properties']['language'].get('const')=='en','final public submission language must be English')
  need(req.get('public_submission_language',{}).get('code')=='en','machine language policy missing')
+ for f in ['agent.html','gallery.html']:
+  for card in re.findall(r'<a class="gc".*?</a>',read(f),re.S):
+   need(not re.search('[\u4e00-\u9fff]',card),f+': public scheme card is not English-only')
  for f in ['public-brief','design-requirements']:
   need((ROOT/('brief/'+f+'.zh.md')).is_file(),'missing Chinese counterpart '+f)
  return errors
