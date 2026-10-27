@@ -4,7 +4,7 @@
       "id": "S-SNAPSHOT",
       "title": "XCITY issued competition site package",
       "publisher": "XCITY",
-      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/ea39e8ebf3250d29548203ed1771ec4f7ed9f695/brief/site-package",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/e6a7325b32ae9bd2ad8e45298650363b64837040/brief/site-package",
       "accessed": "2026-10-27",
       "used_for": "Boundary, fixed pilots, terrain and drainage screening, regional roads. Not cadastral certification, utility rights or hydraulic approval."
     },
@@ -67,6 +67,15 @@
       "publisher": "Source publisher",
       "accessed": "2026-10-27",
       "used_for": "Dioecious wind-pollinated biology, not local yield or irrigation verification"
+    },
+    {
+      "id": "SRC-WHITEPAPER-V7",
+      "title": "XCITY Whitepaper V7, page5",
+      "publisher": "XCITY",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/blob/main/brief/functional-balance-reference.json",
+      "accessed": "2026-10-27",
+      "used_for": "Five-function approximate60/30/5/3/2 programme; supplied PDF directly inspected. Older absolute areas are not transferred.",
+      "licence": "User-supplied source; only short factual programme paraphrase, no reproduced artwork."
     }
   ],
   "file_checksums": [

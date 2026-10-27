@@ -59,6 +59,12 @@
       "topic": "Farm edge spatial organisation",
       "value": "Workshops move55m south;29m front public courts;70m rear work aprons;4m pedestrian approaches;0.9m permeable boundary fence. Unchanged crop area,70jobs,2 workshops and irrigation.",
       "basis": "Entrant dimensions and operating arrangement, not surveyed clearance standards. Detailed turning, accessibility, grading, drainage and farm safety remain professional checks."
+    },
+    {
+      "id": "V4-FUNCTIONAL",
+      "topic": "Territorial allocation and resource gates",
+      "value": "Five functions compared with whitepaper;21% terrain/drainage retained; overlapping agrivoltaic coverage not installed.",
+      "basis": "Explicit V4 envelope design, functional-account.json; northern shared-field boundary follows declared6588km UTM service limit, not measured suitability or an installation schedule. No new population, MW or yield capacity."
     }
   ]
 }

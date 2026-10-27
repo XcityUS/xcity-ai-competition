@@ -1,0 +1,137 @@
+{
+  "invalid_features": [],
+  "unallocated_m2": 0.0,
+  "outside_scope_m2": 43.903337295103825,
+  "overlap_excess_m2": 0,
+  "retained_unchanged_m2": {
+    "D00-F": 7.949832824915952e-10,
+    "D00-L": 0.0,
+    "D06": 0.0,
+    "D07": 4.570730308849601e-06
+  },
+  "local_control_comparison": {
+    "renders/city-centre.png": {
+      "mean_channel_delta": 0.0005078666666666667,
+      "fraction_pixels_delta_over10": 3.04e-05,
+      "basis": "Same geometry/camera; tiny floating-point/anti-alias differences on unchanged roads, visually reviewed."
+    },
+    "renders/A01-aerial.png": {
+      "bit_identical": true
+    },
+    "renders/A01-eye.png": {
+      "bit_identical": true
+    },
+    "renders/B03-aerial.png": {
+      "bit_identical": true
+    },
+    "renders/B03-eye.png": {
+      "bit_identical": true
+    },
+    "renders/C02-aerial.png": {
+      "bit_identical": true
+    },
+    "renders/C02-eye.png": {
+      "bit_identical": true
+    },
+    "renders/city-overall.png": {
+      "mean_channel_delta": 5.066666666666667e-06,
+      "fraction_pixels_delta_over10": 0.0,
+      "basis": "Same geometry/camera; tiny floating-point/anti-alias differences on unchanged roads, visually reviewed."
+    }
+  },
+  "numerical_tolerance_note": "UTM/longitude round trips produce <100m2 boundary slivers and <10m2 base gaps across1658km2; figures are reported without treating these as construction exclusions. One D03-E ring required a1e-10 degree inward nudge.",
+  "local_capacity_change": false,
+  "status": "passed_targeted_geometry_and_identity_checks_only",
+  "content_review": "self_review_only_not_independent",
+  "official_advisory_issue": "The current organiser analyse_functional_balance.py transforms MultiPolygon components a second time during recursive area calculation. Its MultiPolygon totals are not used as evidence here; this package checks geodesic area with a single lon/lat transformation.",
+  "geodesic_scope_km2": 1658.819818967727,
+  "geodesic_districts": [
+    {
+      "id": "D00-F",
+      "km2": 13.901630991822922,
+      "pct": 0.8380434591427668
+    },
+    {
+      "id": "D00-L",
+      "km2": 2.4823267965297697,
+      "pct": 0.1496441486981091
+    },
+    {
+      "id": "D07",
+      "km2": 269.8619959589592,
+      "pct": 16.268312740975844
+    },
+    {
+      "id": "D06",
+      "km2": 77.27421568439594,
+      "pct": 4.65838512421941
+    },
+    {
+      "id": "D05-W",
+      "km2": 16.98076734514165,
+      "pct": 1.023665569399133
+    },
+    {
+      "id": "D05-E",
+      "km2": 12.59726513308702,
+      "pct": 0.7594112988670595
+    },
+    {
+      "id": "D01",
+      "km2": 80.04810470411256,
+      "pct": 4.825605758311109
+    },
+    {
+      "id": "D04",
+      "km2": 48.19725084440067,
+      "pct": 2.9055145286601114
+    },
+    {
+      "id": "D02",
+      "km2": 501.5461293693008,
+      "pct": 30.235117981735332
+    },
+    {
+      "id": "D03-S",
+      "km2": 15.878436129687058,
+      "pct": 0.9572128297555612
+    },
+    {
+      "id": "D03-N",
+      "km2": 188.46684216963104,
+      "pct": 11.361501714328007
+    },
+    {
+      "id": "D03-E",
+      "km2": 431.5857926331159,
+      "pct": 26.017641439905688
+    }
+  ],
+  "geodesic_functional_coverage": [
+    {
+      "system": "energy_compute",
+      "km2": 1012.2428072604213,
+      "pct": 61.02186600895168
+    },
+    {
+      "system": "agri_production",
+      "km2": 515.4477600576197,
+      "pct": 31.07316142258172
+    },
+    {
+      "system": "living",
+      "km2": 82.53042829499105,
+      "pct": 4.975249713760305
+    },
+    {
+      "system": "industry",
+      "km2": 48.19725084440067,
+      "pct": 2.9055145286601114
+    },
+    {
+      "system": "port",
+      "km2": 29.57803247822867,
+      "pct": 1.7830768682661924
+    }
+  ]
+}

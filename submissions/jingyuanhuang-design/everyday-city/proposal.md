@@ -1,8 +1,8 @@
-# THE EVERYDAY CITY / V3
+# THE EVERYDAY CITY / V4
 
 ## 1. Design thesis
 
-Homes and public life organise a complete town. The V1 compact rectangle with six small neighbourhood modules is withdrawn from recommendation. V2 instead gives West, East and North living districts a continuous street grid and a shared civic band, with separately serviced productive and farm-learning campuses.
+Photovoltaic agriculture leads the territory; homes and public life organise its compact town. The V1 compact rectangle with six small neighbourhood modules is withdrawn from recommendation. V2 instead gives West, East and North living districts a continuous street grid and a shared civic band, with separately serviced productive and farm-learning campuses.
 
 ## 2. Source and ground reading
 
@@ -10,7 +10,15 @@ The current issued boundary, both fixed pilots, Copernicus DEM terrain and DEM-d
 
 ## 3. Territorial districts
 
-The exclusive base zoning assigns every issued hectare a role: exact fixed pilots D00-F/D00-L; D01 southwest settlement/farm-service basin; D02 western dry-agriculture research; D03 northern energy research; D04 central production/transfer; D05 eastern gateway/logistics; D06 dry landscape/field-service links; D07 DEM-derived mountain stewardship. Gross areas are not built or irrigated areas. Edges outside fixed/terrain outlines are declared operating and service choices; they require survey, resource and access validation. The area account and edge logic are in reviews/redesign-v2/design-account.json. The earlier original terrain-cost regional routes and steep/high-terrain reading are retained with explicit V1 attribution; new town and node geometry is independently authored.
+The V4 territorial layout responds to the Whitepaper V7 five-function reference rather than retaining the previous oversized industrial and logistics basins. Exact fixed pilots D00-F/D00-L and source-derived mountain/drainage units D07/D06 are unchanged. D01 is a compact southwest living/civic territory; D02 is a larger western/central agriculture territory; D03-S/N/E separate southern compute/energy works, northern solar-energy land and the central/eastern energy territory. D04 is a much narrower processing/repair corridor along the proposed central transfer route. D05-W/E are compact western arrival/trade and eastern domestic-transfer reserves. They are not approved free ports or customs installations.
+
+On the current 1,657.84km2 planar boundary, exclusive land including fixed pilots is energy/compute635.58km2(38.34%), agriculture515.11km2(31.07%), living/services82.48km2(4.97%), industry48.17km2(2.91%), gateways29.56km2(1.78%) and retained mountain/drainage346.95km2(20.93%). These six exclusive groups sum to the whole site. The circa60/30/5/3/2 whitepaper reference is not used to erase retained terrain or mechanically scale its older400,000ha boundary.
+
+Functional coverage is a separate overlapping account. The southern/central agricultural field-service envelope can support compatible raised solar and forage/jojoba, subject to water, soils, equipment and grid verification. Including fixed agrivoltaic context, its intersection is376.06km2; energy/compute coverage becomes1,011.65km2(61.02%). Agriculture remains31.07%, living4.97%, industry2.91% and trade1.78%. Coverage percentages are not added to100%; the overlap is counted once in base land. The former16.3%/4.7% mountain and drainage accounts have not been relabelled as installed energy.
+
+Scale and location remain conditional. D04 contracts from251.93 to48.17km2; D05 from291.98 to29.56km2. Most of these allocations are unserviced reservations, with no claimed throughput or new jobs. The western gate follows the southwest arrival spine; the eastern gate is a domestic transfer point at the existing proposed corridor junction, not an international border claim. D02 extends from the western alluvial study into the central field-service catchment released from industry. Its northern co-use limit follows the declared field-service limit near UTM northing6588000; this is an entrant operating boundary, not a surveyed agronomic cutoff. D03-E receives the former overlarge industrial/logistics land as conditional solar/service territory outside retained mountain/drainage units. Terrain suitability at60m resolution cannot establish civil buildability.
+
+The current8.635km2 detailed study footprint,5.76km2 town,7,872 homes,19,680-resident capacity and staged4/6/8MW IT remain unchanged. New defined crop bands remain7.656ha with22,968m3/year assumed irrigation. No additional population, IT MW, installed PV or irrigated area is credited from territorial colours. A full new shared-field programme, excluding the fixed pilot, would, at an explicitly assumed35% net crop/gross ratio and3,000m3/ha/year blended allowance, require roughly38.0million m3/year of additional water. That scale is not supplied or secured and is excluded from current operational demand. Regional solar, agriculture, processing and gateways are resource/demand-gated future envelopes; they cannot open merely because the local town reaches P3. Detailed phase capacity remains in phasing_programme.json; the new territorial account is reviews/functional-v4/functional-account.json.
 
 ## 4. Complete city and operating relationships
 

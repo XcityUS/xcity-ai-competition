@@ -1,3 +1,3 @@
-# Everyday City V3
+# Everyday City V4
 
-C02 courtyard and camera revision,27 October2026. Two workshops moved55m toward the canopy;29m public forecourts and70m rear loading aprons. Crop areas, water budgets and capacities unchanged.26-page main booklet, visual-first A0,14-page technical appendix. Whole-site native source axon preserves issued boundary and source channels. Finished local aerial intentionally crops field ends; no full-territory claim. Independent design/engineering not assessed.
+Whitepaper-led territorial correction,27 October2026. Exclusive energy38.34%, agriculture31.07%, living4.97%, industry2.91%, gateways1.78%, retained20.93%. Energy functional coverage61.02% includes376.06km2 solar/agriculture co-use, counted once in base land. No additional commissioned works, resources, population or jobs from gross territories. Existing V3 local geometry/renderings remain local views. Previous territorial allocation is superseded under reviews/functional-v4/before. Independent design content/engineering not assessed.

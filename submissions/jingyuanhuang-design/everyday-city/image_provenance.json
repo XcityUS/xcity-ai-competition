@@ -15,7 +15,9 @@
       "node_id": "",
       "view": "aerial",
       "sha256": "252921afde41273e05ffaee9b1be62d47fb60f1f5545fc51fbf35552503a6a8a",
-      "control_sha256": "afbe23eb9587d4d654319e61116f37ba80868e12fd9ee1cdfdfbfbc6c6675da8"
+      "control_sha256": "496256585214cb7f6c50a2d3871491898fc40632031f9f8fd5a86f3944b51482",
+      "prior_control_sha256": "afbe23eb9587d4d654319e61116f37ba80868e12fd9ee1cdfdfbfbc6c6675da8",
+      "control_refresh_note": "V4 retains local geometry/cameras. Targeted raster comparison shows only subpixel differences; see reviews/functional-v4/geometry-and-balance-qa.json."
     },
     {
       "path": "media/v2/A01-aerial.png",
@@ -131,7 +133,9 @@
       "view": "aerial",
       "sha256": "181b2476200a3776bbb36be7634fc73c676ed10f87daf58e1e1ac104520c0437",
       "additional_reference": "reviews/redesign-v2/rejected/city-overall-planted-trees.png",
-      "control_sha256": "92f91ff1913adfaa307807dbfe18e0119083781e4a97e938c9dfb695066c58f8"
+      "control_sha256": "5669fc4cf5a7dd295a6d7204003c10edce4687073f09b54a0dfaac81dcf32b5e",
+      "prior_control_sha256": "92f91ff1913adfaa307807dbfe18e0119083781e4a97e938c9dfb695066c58f8",
+      "control_refresh_note": "V4 retains local geometry/cameras. Targeted raster comparison shows only subpixel differences; see reviews/functional-v4/geometry-and-balance-qa.json."
     }
   ],
   "review": "reviews/redesign-v2/visual-review.md"

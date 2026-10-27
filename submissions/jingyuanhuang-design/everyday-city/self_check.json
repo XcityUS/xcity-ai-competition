@@ -1,9 +1,9 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.4.0",
-  "checked_at": "2026-10-27T16:39:46+00:00",
+  "checked_at": "2026-10-27T17:53:42+00:00",
   "package": "submissions/jingyuanhuang-design/everyday-city",
-  "package_sha256": "060aa94ad9ebe3f357de0feb2794911f2f17172235fbda4fbe7d5f41b331e8ae",
+  "package_sha256": "0d9e30044af57696ff34365ccc7598a6e4fc427898d317a325875c7ddcecadb0",
   "gates_total": 12,
   "gates_passed": 12,
   "pass": true,
@@ -185,12 +185,13 @@
     "far": 0.1886,
     "open_space_pct": 11.368,
     "human_machine_interfaces": 5,
-    "shaded_pedestrian_pct": 0.311,
+    "shaded_pedestrian_pct": 0.308,
     "structure_km2": {
-      "agri_production": 438.501,
-      "energy_compute": 465.265,
-      "living": 115.804,
-      "port": 292.117,
+      "agri_production": 1030.896,
+      "energy_compute": 1696.371,
+      "industry": 48.197,
+      "living": 165.061,
+      "port": 59.156,
       "reserve": 347.136
     }
   },
@@ -255,6 +256,7 @@
       "pass": true,
       "messages": [],
       "notes": [
+        "Fixed agrivoltaic pilot context is labelled energy_compute in structure.geojson; expected agri_production. Context classification requires content review; do not redesign its interior.",
         "Content review by the organiser completes this gate (prohibited items B1-B5).",
         "DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone."
       ]

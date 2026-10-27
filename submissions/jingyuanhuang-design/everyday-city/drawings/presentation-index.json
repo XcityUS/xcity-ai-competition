@@ -4,11 +4,11 @@
   "documents": {
     "main": {
       "path": "drawings/a3-booklet.pdf",
-      "pages": 26
+      "pages": 27
     },
     "technical": {
       "path": "drawings/a3-technical-appendix.pdf",
-      "pages": 14
+      "pages": 15
     }
   },
   "sections": [
@@ -17,55 +17,56 @@
       "document": "main",
       "pages": [
         3,
-        4
+        4,
+        5
       ]
     },
     {
       "id": "node_locator",
       "document": "main",
       "pages": [
-        13
+        14
       ]
     },
     {
       "id": "node:A01",
       "document": "main",
       "pages": [
-        14,
-        15
+        15,
+        16
       ]
     },
     {
       "id": "node:B03",
       "document": "main",
       "pages": [
-        16,
         17,
-        18
+        18,
+        19
       ]
     },
     {
       "id": "node:C02",
       "document": "main",
       "pages": [
-        19,
         20,
-        21
+        21,
+        22
       ]
     },
     {
       "id": "phasing",
       "document": "main",
       "pages": [
-        22,
-        23
+        23,
+        24
       ]
     },
     {
       "id": "key_metrics",
       "document": "main",
       "pages": [
-        25
+        26
       ]
     }
   ],
@@ -82,121 +83,126 @@
     },
     {
       "page": 3,
-      "title": "Whole-site zoning",
+      "title": "V4 whole-site zoning",
       "section": "whole_site"
     },
     {
       "page": 4,
-      "title": "Source-based territorial axon",
+      "title": "Whitepaper and functional balance",
       "section": "whole_site"
     },
     {
       "page": 5,
+      "title": "Source-based territorial axon",
+      "section": "whole_site"
+    },
+    {
+      "page": 6,
       "title": "Ground and alternative",
       "section": "site_reading"
     },
     {
-      "page": 6,
+      "page": 7,
       "title": "Complete system layout",
       "section": "overall_layout"
     },
     {
-      "page": 7,
+      "page": 8,
       "title": "Overall spatial view",
       "section": "overall_layout"
     },
     {
-      "page": 8,
+      "page": 9,
       "title": "Districts, blocks and the civic band",
       "section": "urban_design"
     },
     {
-      "page": 9,
+      "page": 10,
       "title": "A hierarchy of streets and public movement",
       "section": "street_mobility"
     },
     {
-      "page": 10,
+      "page": 11,
       "title": "Dry commons and a shade network",
       "section": "ecology_landscape"
     },
     {
-      "page": 11,
+      "page": 12,
       "title": "Schools, care and daily destinations",
       "section": "public_space_services"
     },
     {
-      "page": 12,
+      "page": 13,
       "title": "Housing grammar",
       "section": "urban_design"
     },
     {
-      "page": 13,
+      "page": 14,
       "title": "Three-node locator",
       "section": "node_locator"
     },
     {
-      "page": 14,
+      "page": 15,
       "title": "A01 aerial",
       "section": "node:A01"
     },
     {
-      "page": 15,
+      "page": 16,
       "title": "A01 eye plan section",
       "section": "node:A01"
     },
     {
-      "page": 16,
+      "page": 17,
       "title": "B03 aerial",
       "section": "node:B03"
     },
     {
-      "page": 17,
+      "page": 18,
       "title": "B03 eye plan section",
       "section": "node:B03"
     },
     {
-      "page": 18,
+      "page": 19,
       "title": "B03 modules and operating interfaces",
       "section": "node:B03"
     },
     {
-      "page": 19,
+      "page": 20,
       "title": "C02 aerial",
       "section": "node:C02"
     },
     {
-      "page": 20,
+      "page": 21,
       "title": "C02 eye plan section",
       "section": "node:C02"
     },
     {
-      "page": 21,
+      "page": 22,
       "title": "C02 panel crop and service relationship",
       "section": "node:C02"
     },
     {
-      "page": 22,
+      "page": 23,
       "title": "Construction isolation and commissioning",
       "section": "phasing"
     },
     {
-      "page": 23,
+      "page": 24,
       "title": "Construction phases",
       "section": "phasing"
     },
     {
-      "page": 24,
+      "page": 25,
       "title": "Independent first operation",
       "section": "phasing_operation"
     },
     {
-      "page": 25,
+      "page": 26,
       "title": "Resource capacities and gates",
       "section": "key_metrics"
     },
     {
-      "page": 26,
+      "page": 27,
       "title": "Choices and next verification",
       "section": "conclusion"
     }

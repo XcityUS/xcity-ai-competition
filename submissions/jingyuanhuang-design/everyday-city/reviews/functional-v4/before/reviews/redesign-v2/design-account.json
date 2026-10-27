@@ -1,0 +1,216 @@
+{
+  "source_boundary": "brief/site-package/boundaries/scope_9_13.geojson",
+  "whole_site_km2": 1657.8435417846936,
+  "master_km2": 8.635,
+  "town_km2": 5.76,
+  "dwellings": 7872,
+  "residents": 19680.0,
+  "jobs": 2150,
+  "housing_blocks": 99,
+  "school_places": 3100,
+  "building_fixed_overlap_m2": 0.0,
+  "building_channel_screen_overlap_m2": 0.0,
+  "building_flood_screen_overlap_m2": 0.0,
+  "base_gap_m2": 0.0,
+  "base_overlap_m2": 1.1920928955078125e-06,
+  "town_ground_screen": {
+    "median_slope_pct": 1.18,
+    "p95_slope_pct": 4.25
+  },
+  "productive_ground_screen": {
+    "median_slope_pct": 2.36,
+    "p95_slope_pct": 7.69
+  },
+  "town_to_compute_edge_m": 1100.0,
+  "interfaces": 5,
+  "school_capacity_basis": "Two southern schools x 750 places plus four northern schools x 400; assumed, need 15% of population; demographics/funding review required",
+  "land_partition_gap_m2": 0.0,
+  "programme": [
+    {
+      "phase": 1,
+      "new_dwellings": 1776,
+      "cumulative_dwellings": 1776,
+      "new_residents": 4440.0,
+      "cumulative_residents": 4440.0,
+      "new_jobs": 905,
+      "cumulative_jobs": 905,
+      "period": "Years 0-5 scenario",
+      "objective": "Complete western neighbourhood, civic core, utilities and first productive halls",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "basis": "computed building inventory; assumed 2.5 residents per dwelling"
+    },
+    {
+      "phase": 2,
+      "new_dwellings": 2112,
+      "cumulative_dwellings": 3888,
+      "new_residents": 5280.0,
+      "cumulative_residents": 9720.0,
+      "new_jobs": 805,
+      "cumulative_jobs": 1710,
+      "period": "Years 5-10 conditional",
+      "objective": "Eastern living district and additional productive capacity",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "basis": "computed building inventory; assumed 2.5 residents per dwelling"
+    },
+    {
+      "phase": 3,
+      "new_dwellings": 3984,
+      "cumulative_dwellings": 7872,
+      "new_residents": 9960.0,
+      "cumulative_residents": 19680.0,
+      "new_jobs": 440,
+      "cumulative_jobs": 2150,
+      "period": "Years 10-20 conditional",
+      "objective": "Northern neighbourhoods and final staged halls",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "basis": "computed building inventory; assumed 2.5 residents per dwelling"
+    }
+  ],
+  "regions": [
+    {
+      "id": "D00-F",
+      "district_id": "D00-F",
+      "name": "Fixed agrivoltaic pilot",
+      "primary_use": "fixed_context",
+      "system": "agri_production",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Exact issued fixed boundary; unchanged",
+      "area_km2": 13.892211232008629
+    },
+    {
+      "id": "D00-L",
+      "district_id": "D00-L",
+      "name": "Fixed living pilot",
+      "primary_use": "fixed_context",
+      "system": "living",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Exact issued fixed boundary; no internal redesign",
+      "area_km2": 2.480783499017229
+    },
+    {
+      "id": "D07",
+      "district_id": "D07",
+      "name": "Mountain stewardship",
+      "primary_use": "ecology",
+      "system": "reserve",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Source DEM steep/high terrain; preliminary conservation study, not statutory exclusion",
+      "area_km2": 269.72307274872475
+    },
+    {
+      "id": "D01",
+      "district_id": "D01",
+      "name": "Southwest settlement and farm services",
+      "primary_use": "mixed_use",
+      "system": "living",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "SW access basin; northeastern edge is a declared urban service limit, not a built-up boundary",
+      "area_km2": 113.24618535369588
+    },
+    {
+      "id": "D02",
+      "district_id": "D02",
+      "name": "Western dry agriculture research",
+      "primary_use": "agriculture",
+      "system": "agri_production",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Western fan and seasonal drainage system; testing sites only after water/soil verification",
+      "area_km2": 424.31466051444437
+    },
+    {
+      "id": "D03",
+      "district_id": "D03",
+      "name": "Northern energy research",
+      "primary_use": "solar_agriculture",
+      "system": "energy_compute",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "North shoulder north of proposed research access; no installed full-district PV claim",
+      "area_km2": 213.04933136770126
+    },
+    {
+      "id": "D04",
+      "district_id": "D04",
+      "name": "Central production and transfer",
+      "primary_use": "industry",
+      "system": "energy_compute",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Transfer-corridor operating basin; no residential capacity credited",
+      "area_km2": 251.9340581588841
+    },
+    {
+      "id": "D05",
+      "district_id": "D05",
+      "name": "Eastern gateway and logistics",
+      "primary_use": "logistics",
+      "system": "port",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Eastern access/transfer study outside mountain reserve; external connection unsecured",
+      "area_km2": 291.9750783719441
+    },
+    {
+      "id": "D06",
+      "district_id": "D06",
+      "name": "Dry landscape and field-service links",
+      "primary_use": "reserve",
+      "system": "reserve",
+      "plan_role": "base_zoning",
+      "basis_ref": "proposal.md#territorial-districts",
+      "edge_logic": "Remaining seasonal-drainage links and unresolved terrain; explicit landscape/research role, not a lake",
+      "area_km2": 77.22816053826769
+    }
+  ],
+  "land_use_km2": {
+    "reserve": 1.21,
+    "school": 0.169344,
+    "infrastructure": 1.272504,
+    "dry_park": 0.42336,
+    "terrain_review": 0.225792,
+    "energy": 0.78,
+    "daily_centre": 0.112896,
+    "residential": 2.794176,
+    "agriculture": 0.4,
+    "compute": 0.35,
+    "civic": 0.338688,
+    "open_space": 0.55824
+  },
+  "road_building_centerline_conflicts": [],
+  "qa_note": "Road centreline tests only; swept paths, widths, accessible route junctions and emergency engineering need professional review.",
+  "active_compute_campus_km2": 0.35,
+  "productive_gross_estate_km2": 1.56,
+  "unserviced_productive_reserve_km2": 1.21,
+  "module_positions": 32,
+  "module_operating_it_kw_assumed": 250,
+  "module_rack_nameplate_kw_reference": 336,
+  "power_block_nameplate_kw_reference": 1000,
+  "plant_gap_logic": "50m horizontal group gap and60m between-row zone reserve delivery, plant/fibre/thermal service and separated worker shade. Dimensions are entrant assumptions pending supplier/fire/thermal review.",
+  "land_partition_note": "Exclusive partition verified after removing duplicate reserve records; geometric self-check passes."
+}

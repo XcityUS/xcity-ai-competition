@@ -4,7 +4,7 @@
   "title": "THE EVERYDAY CITY",
   "title_zh": "",
   "slug": "everyday-city",
-  "summary": "A complete low-rise town organised around three living districts, a civic band and shared dry commons. An independent compute/repair campus and a new farm-learning edge support its southern approaches. Whole-site zoning and regional road studies frame conditional growth; housing, employment and resource figures are capacities to verify, not promised demand.",
+  "summary": "A photovoltaic-agriculture-led territory with compact living, a reduced processing corridor and two small gateway reserves. V4 compares exclusive land and overlapping61% energy/31% agriculture coverage with the Whitepaper programme; retained terrain remains explicit. The complete southwest town and three detailed nodes retain their phased capacity scenarios.",
   "language": "en",
   "author": {
     "github": "jingyuanhuang-design",
@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Jingyuan Huang directed housing/public-life priorities, delegated node choices, requested English deliverables and directly authorised publication. After reviewing V2, he requested a fuller, less isolated farm-edge composition. Codex revised workshop siting, forecourts, rear servicing, cameras, diagrams and presentation; design content remains independently unassessed."
+    "human_role": "Jingyuan Huang set housing/public-life priorities and directed a Whitepaper V7 functional-balance correction, with continued direct publication authorisation. Codex revised territorial zoning, gateway scale, functional accounts, diagrams and presentation; independent design review remains pending."
   },
   "nodes": [
     "A01",
@@ -81,8 +81,8 @@
     "illustrative_entourage": false
   },
   "scene_seed": 20261027,
-  "thesis": "Homes and shared public life organise the town; productive edges serve it without owning its everyday services.",
-  "presentation_revision": "Everyday City V3 / compact farm forecourts and close framing",
+  "thesis": "Photovoltaic agriculture leads the territory; shared public life organises a compact town.",
+  "presentation_revision": "Everyday City V4 / whitepaper-led functional rebalance",
   "public_display_status": "authorised_preview_not_design_approval",
   "render_note": " | explicit-geometry-sha256:944661ba7850bbf4f27a3c6230d67cecc2d6a821329de57bda3ae3280284c148"
 }

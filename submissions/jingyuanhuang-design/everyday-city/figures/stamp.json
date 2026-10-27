@@ -1,7 +1,7 @@
 {
   "script": "tools/register_artifacts_v2.py",
-  "script_version": "Everyday-City-V3",
-  "input_sha256": "0514f0ebca6a6f312d6a4acdff15d0235fc8baf95b7a6c39cbbb9882e4b950ee",
+  "script_version": "Everyday-City-V4",
+  "input_sha256": "14ed58a7057b187cd371f7d314f279278563a452d60cdda1df841b970497027c",
   "generated_at": "2026-10-27",
   "actual_authoring_scripts": [
     "tools/redesign_v2.py",
@@ -13,11 +13,13 @@
     "scripts/render_views.py",
     "tools/publish_v2.py",
     "tools/courtyard_revision_v3.py",
-    "tools/territorial_axon_v3.py"
+    "tools/functional_revision_v4.py",
+    "tools/functional_diagrams_v4.py",
+    "tools/check_functional_v4.py"
   ],
   "note": "Actual custom drawing/PDF output provenance. No claim that organiser make_figures.py authored the design; no design approval.",
   "files": {
-    "figures/fig-01-structure.png": "1d41795ffbec3a084ef9411a2a39fe9496f1b28e75845fe9da3fe3bf5f6295c6",
+    "figures/fig-01-structure.png": "78d182a6adc1e21af901c49a4971e0d69f44f1fc49a3d9545d4863ccc181945d",
     "figures/fig-02-master-plan.png": "1c6ada8e8a20d13d5cb79eee6a4a5382c8cea34e493e0f41bd7e28f3cbe1f550",
     "figures/fig-03-land-use-density.png": "1c6ada8e8a20d13d5cb79eee6a4a5382c8cea34e493e0f41bd7e28f3cbe1f550",
     "figures/fig-04-movement.png": "713ae7edd56b74beb052ec54ba86a506df0f77c111671cc1616fed3f4adf404f",
@@ -25,10 +27,10 @@
     "figures/fig-06-phasing.png": "c6b49b9d9e9a3f865d34dfa2a49bcb75f5abb39bb90944ac26dd67c4c29c9d3e",
     "figures/fig-07-metrics.png": "2fbb4bfcbb61c3c4c68bcb6c39cf09b6375873403d44e58afcfb6104157ab774",
     "figures/fig-08-node-location.png": "4b050fd6d52fcd20bf0d20f68e3426269abff0a0bddff400424e5a1f8a12c7e3",
-    "drawings/a3-booklet.pdf": "8f453c0436b31404e3378a6f408f4c139c30a802e033aaee23dfe916635fef89",
-    "drawings/a0-board.pdf": "42cb2c4615b46cf6ad02f875c6b3a159f4ab9f8a1b5b4bea402627c4603e8307",
-    "drawings/a3-technical-appendix.pdf": "9b87c93b29fe2a8d0d5ac47f6b5170ea32496d56b2c7c5c46276262b04763aae",
-    "drawings/presentation-index.json": "a78c2a1c815a033a64c47cf4184bb1ad5444e4860126ae1146b556fbf60fd2d8",
+    "drawings/a3-booklet.pdf": "417da28e9022abe5766763b734594180f7ec14d202e3396d9486df9322695de7",
+    "drawings/a0-board.pdf": "9338fcd0bb86c1ce2eace9c5ed853cbc174d9e70cadd9a19edaba6dd1f676235",
+    "drawings/a3-technical-appendix.pdf": "de11d57963aa0f9edec1a508534de17ff76128fa3b9302efd6b10790d4f84947",
+    "drawings/presentation-index.json": "296251fc79dff0fb52ee33308f8cf25b9dff10f2e6ddc5c9fcff3b75e87f2e14",
     "figures/node-A01-plan.png": "0b722a5c7c615bcde578bbf93b5eae69320291f0ed58f90c351067378057d23d",
     "figures/node-A01-aerial.png": "1c35e0b5471bc1f8a45d5a52a8cab8d2a4b488b6b090f9dbdec5adba9e3ba4e5",
     "figures/node-A01-eye.png": "adf3a2295f14d23809a4e2f05333b833aec3e8f0bc49b7ef6353d2fcae94e3bd",

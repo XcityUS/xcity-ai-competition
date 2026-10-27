@@ -51,7 +51,7 @@
     },
     {
       "key": "shaded_pedestrian_pct",
-      "value": 0.311,
+      "value": 0.308,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/movement.geojson"
@@ -59,10 +59,11 @@
     {
       "key": "structure_km2",
       "value": {
-        "agri_production": 438.501,
-        "energy_compute": 465.265,
-        "living": 115.804,
-        "port": 292.117,
+        "agri_production": 1030.896,
+        "energy_compute": 1696.371,
+        "industry": 48.197,
+        "living": 165.061,
+        "port": 59.156,
         "reserve": 347.136
       },
       "unit": "mixed",
@@ -91,7 +92,7 @@
       "value": {
         "people": 8.931,
         "machine": 9.214,
-        "shared": 196.803
+        "shared": 198.975
       },
       "unit": "mixed",
       "evidence": "computed",

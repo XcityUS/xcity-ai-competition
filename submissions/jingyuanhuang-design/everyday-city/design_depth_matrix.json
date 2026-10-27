@@ -4,13 +4,15 @@
     {
       "id": "whole_site",
       "status": "partial",
-      "decision": "Named exclusive territorial districts, source mountain reading and regional road framework",
+      "decision": "V4 whitepaper-led territory: exclusive land, overlapping agrivoltaic coverage, compact gateways and staged local works.",
       "scope": {
         "extent": "Whole issued site",
         "phase": "P1-P3 capacity scenario"
       },
       "drawings": [
-        "figures/fig-01-structure.png"
+        "figures/fig-01-structure.png",
+        "reviews/redesign-v2/diagrams/functional-coverage.png",
+        "reviews/redesign-v2/diagrams/whole-site-axon.png"
       ],
       "geometry": [
         "geometry/structure.geojson",
@@ -36,7 +38,7 @@
     {
       "id": "overall_layout",
       "status": "partial",
-      "decision": "One complete town with separately serviced productive and farm campuses",
+      "decision": "V4 whitepaper-led territory: exclusive land, overlapping agrivoltaic coverage, compact gateways and staged local works.",
       "scope": {
         "extent": "Complete town and associated campuses",
         "phase": "P1-P3 capacity scenario"
@@ -46,7 +48,9 @@
         "figures/fig-04-movement.png",
         "figures/fig-05-open-space-water.png",
         "figures/fig-08-node-location.png",
-        "media/v3/city-overall.png"
+        "media/v3/city-overall.png",
+        "reviews/redesign-v2/diagrams/functional-coverage.png",
+        "reviews/redesign-v2/diagrams/whole-site-axon.png"
       ],
       "geometry": [
         "geometry/master_area.geojson",
