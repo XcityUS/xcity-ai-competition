@@ -179,6 +179,16 @@ class Scene:
                 r["plaza"] = any(k in nm for k in ("plaza", "square", "arcade", "spine", "广场"))
                 ground.append(r)
         d["ground"] = ground
+        # Optional entrant-defined future field footprints: ground design, never automatic PV tables.
+        d["planned_fields"] = []
+        ref = self.man.get("scene_generation", {}).get("territorial_field_geometry")
+        if ref:
+            path = os.path.realpath(os.path.join(self.pkg, ref))
+            if not path.startswith(os.path.realpath(self.pkg) + os.sep):
+                raise SystemExit("territorial field geometry must stay inside the submission")
+            for props, geom in xc.features(path):
+                for pg in polys(xc.to_utm(geom).intersection(self.site)):
+                    d["planned_fields"].append(rings(pg, self.o))
         # washes
         wash = []
         for p, g in xc.channels():

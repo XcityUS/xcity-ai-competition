@@ -237,6 +237,13 @@ def scene_input_hash(pkg):
         if os.path.exists(p):
             h.update(open(p, "rb").read())
     man = load_json(os.path.join(pkg, "manifest.json"))
+    field_ref = (man.get("scene_generation") or {}).get("territorial_field_geometry")
+    if field_ref:
+        field_path = os.path.realpath(os.path.join(pkg, field_ref))
+        if not field_path.startswith(os.path.realpath(pkg) + os.sep):
+            raise ValueError("territorial field geometry must stay inside the submission")
+        h.update(str(field_ref).encode() + b"\0")
+        if os.path.isfile(field_path):h.update(Path(field_path).read_bytes())
     h.update(json.dumps({k: man.get(k) for k in ("title", "render_note", "scene_seed", "scene_generation")}, sort_keys=True,
                         ensure_ascii=False).encode())
     return h.hexdigest()

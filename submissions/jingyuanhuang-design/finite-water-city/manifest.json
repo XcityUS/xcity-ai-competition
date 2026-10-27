@@ -79,8 +79,12 @@
   "booklet": {
     "cover": "media/v12-whole-site-axon.png",
     "pages": [],
-    "section_pages": {}
+    "section_pages": {},
+    "cover_kind": "diagram"
   },
   "presentation_revision": "V12",
-  "public_display_status": "authorised_preview_not_design_approval"
+  "public_display_status": "authorised_preview_not_design_approval",
+  "scene_generation": {
+    "territorial_field_geometry": "geometry/territorial_fields.geojson"
+  }
 }
