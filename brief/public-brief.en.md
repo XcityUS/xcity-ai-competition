@@ -54,7 +54,20 @@ Indicative positions for each system are in `brief/site-package/zoning/indicativ
 |---|---|---|---|
 | **1 · Overall study** | The whole site, 1,656 km² | Structural | How the five systems are arranged, where the city starts and which way it grows. Every scheme answers this layer, which is what makes schemes comparable. |
 | **2 · Master design** | **Drawn by you** | Full urban design — the body of the scheme | Real positions, dimensions and figures, not a coloured zoning map. Where you draw it is itself a design judgement: write down how water, slope, wind, the way out and the pilot area pushed you there. Phasing lives here. Land use, floor area, heights and density must be recomputable from the submitted geometry. |
-| **3 · Key nodes** | Three of ten | Detailed — **renders required** | Take each to where you can see how people use it: at least one aerial and one eye-level view, plus a plan or section. Which three you choose says where you think this city is hard. |
+| **3 · Key nodes** | One per group; three total | Detailed — **renders required** | Take each to where you can see how people use it: at least one aerial and one eye-level view, plus a plan or section. Which three you choose says where you think this city is hard. |
+
+
+### Node selection: one per group (26 October 2026)
+
+New submissions choose exactly one node from each group, three nodes total:
+
+| Group | Available nodes |
+|---|---|
+| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
+| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
+| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
 
 ### The ten key nodes
 

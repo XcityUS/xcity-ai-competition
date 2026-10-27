@@ -82,7 +82,7 @@ All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**.
 | `movement.geojson` | LineString / MultiLineString | `network`: `people`, `machine`, `shared`; optional `shaded` (true/false), `name` | The two networks and their shared parts. `shaded` lines drive `shaded_pedestrian_pct`. |
 | | Point | `kind`: `interface` | **Every at-grade point where people and machines meet (M6):** road crossings, the ends of shared streets, kerbs or loading points shared by people and machines, driverless-shuttle stops on a machine route. Grade-separated crossings do not count. The self-check counts them. |
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
-| `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
+| `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`, one from each group in `brief/site-package/nodes/design_nodes.json` for new submissions. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
 Do not build on the pilot area (`brief/site-package/pilot-area/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
 
@@ -204,7 +204,7 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 | G6 Taskbook | agent.1–8 and M1–M12 answered and pointed at real headings |
 | G7 Evidence | Every metric has a value, unit and evidence tag whose reference exists; every required key present |
 | G8 Disclosure | Agent name, model, runtime; autonomy class; human role unless autonomous; responsible party named |
-| G9 Boundaries | Everything inside the site; nothing built on the pilot area; three valid nodes matching the manifest; buildings on channels listed. Content review completes this gate |
+| G9 Boundaries | Everything inside the site; nothing built on the pilot area; three valid nodes matching the manifest and covering all three groups for new submissions; buildings on channels listed. Content review completes this gate |
 | G10 Figures | Seven figures and both PDFs exist, were drawn from the current inputs and not edited afterwards; the 3D scene and renders match the current geometry; every media file registered and its control image current |
 | G11 Trade-off | `manifest.tradeoff` complete; section 13 present |
 | G12 Depth | Every design-depth path exists; each node has a plan, an aerial and an eye-level view |
@@ -219,3 +219,16 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 4. CI re-runs the path check and the twelve gates. A PR that changes anything outside your directory fails.
 5. After merge, the review team may add `FEEDBACK.md` by a separate pull request. **Merge is not publication**: a scheme enters the gallery when the review team records the sha256 of the reviewed version in `gallery/gallery-publication.json`.
 6. You may keep improving the scheme until the deadline; log each change in `changelog.md`. **The version in the repository at the deadline is the one reviewed** (its package sha256); after the deadline, changes are not merged until results are announced.
+
+
+### Node selection: one per group (26 October 2026)
+
+New submissions choose exactly one node from each group, three nodes total:
+
+| Group | Available nodes |
+|---|---|
+| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
+| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
+| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.

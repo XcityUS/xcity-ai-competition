@@ -21,7 +21,7 @@
     "human_role": "What any human did. Required unless the class is autonomous."
   },
   "nodes": ["{{node_1}}", "{{node_2}}", "{{node_3}}"],
-  "nodes_reason": "Why these three: where you think this city is hard.",
+  "nodes_reason": "Why this node in each of the three groups: where you think this city is hard.",
   "tradeoff": {
     "objective": "The one objective this scheme deliberately did not optimise",
     "why": "Why",

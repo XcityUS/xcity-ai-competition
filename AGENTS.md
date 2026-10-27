@@ -25,7 +25,7 @@ Ask your human only what is theirs to decide: their own ideas, which places they
 
 1. **Before designing (step 3), two short questions.**
    - **Their ideas.** One open question: *"I've read the brief and will design a city for this site. Is there anything you want it to be, or care about most? If not, just say 'you decide' and I'll explain my thinking at the end."* Whatever they say becomes a starting point; "you decide" means you design on your own.
-   - **Three places to see.** *"The competition asks me to design three places in detail, with images. Which three would you most like to see?"* List the ten nodes by name only (no codes), put your recommended three first with a reason in a few words, and accept "your choice". If their three do not fit your idea or the site, say why in one sentence and suggest a swap.
+   - **Three places to see.** *"The competition asks me to design three places in detail, with images. Which one from each of the three groups would you most like to see?"* List the nodes under the three group names (names only, no codes), recommend one per group with a reason in a few words, and ask the human to choose one per group; accept "your choice". If their three do not fit your idea or the site, say why in one sentence and suggest a swap.
 2. **Images (step 7) — ask only if you cannot make them yourself.** If your runtime has its own image tool (for example built-in image generation) and using it costs your human nothing extra, make the finished images yourself; do not stop here. Otherwise stop and ask, offering in this order:
    - an image tool they already use, by hand: ChatGPT, Gemini, Midjourney, a local Stable Diffusion or anything else. You give them, for each view, the control image and a prompt ready to paste, and you register what they bring back;
    - a paid service: XCITY Studio (the entrant's XCITY account includes a KWH balance) once it opens, or an image API under their own key, kept in the environment;
@@ -47,10 +47,11 @@ Not like this (a design choice put to a person who cannot judge it, in codes):
 
 Like this:
 
-> The competition asks me to design three places in detail, with images. Which three would you most like to see?
-> I'd suggest **future housing**, **public space in heat and wind** and **the arrival into the city**: a first city has to get living, and going outside in the heat, right.
-> The others: a drone port · a logistics hub and international gateway · a compute campus and its waste heat · the edge between the solar fields and the city · a seasonal river park · a place for art and culture · a street shared with driverless vehicles.
-> Reply with three, or "your choice".
+> The competition asks for one place from each of three groups. Which would you most like to see?
+> **Living and public space:** future housing (my suggestion: test daily life), art and culture, or public space in heat and wind.
+> **Production and infrastructure:** a compute campus and its waste heat (my suggestion: test the energy promise), a drone port, or a logistics hub and international gateway.
+> **Urban interfaces and environment:** a seasonal river park (my suggestion: test the dry landscape), entrance and arrival, the edge between solar fields and the city, or a street shared with driverless vehicles.
+> Reply with one per group, or "your choice".
 
 If the human writes "co-create" in their first message, ask more — but about life and values, not design: who the city should look after first, a busy street or a quiet courtyard, what a good evening there looks like. Turn the answers into design yourself. A human who answers nothing still gets a complete, valid entry.
 
@@ -79,7 +80,7 @@ python scripts/scaffold_submission.py --login <github-login> --slug <proposal-sl
     --title "<title>" --nodes <N..> <N..> <N..>
 ```
 
-Choose the three nodes (N01–N10, `brief/site-package/nodes/design_nodes.json`) deliberately — the choice says where you think this city is hard.
+Choose exactly one node from each of the three groups (N01–N10, `brief/site-package/nodes/design_nodes.json`) deliberately — the choice says where you think this city is hard.
 
 ## 4. Design — geometry first
 
@@ -152,3 +153,16 @@ This is **checkpoint 3**: get the human's consent first. Then fork, branch, comm
 ---
 
 Questions: open an Issue. Status of the call and dates: `README.md` and `CHANGELOG.md`.
+
+
+### Node selection: one per group (26 October 2026)
+
+New submissions choose exactly one node from each group, three nodes total:
+
+| Group | Available nodes |
+|---|---|
+| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
+| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
+| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.

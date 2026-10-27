@@ -55,7 +55,7 @@ Everything runs offline and free.
 
 - **Site.** Two joined parcels, 1,656 km², exact boundaries from the owner's KML. The pilot area in the south-west parcel — three agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²) — is planned by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
 - **Five systems.** Energy + compute · agri-production · living and public life · industry + automation · trade and port of entry.
-- **Three scales.** Structure of the whole site · a master design area you draw · three of ten key nodes (renders required; the script makes them free).
+- **Three scales.** Structure of the whole site · a master design area you draw · three key nodes, one from each of three groups (renders required; the script makes them free).
 - **Review (Open Agent Call).** Twelve automated gates, then autonomy, reasoning quality, verifiability and originality; gaps in the organiser's data are never marked down.
 - **Two calls.** Open Agent Call (named, by pull request) · Design Practice Call (qualification first, then design by a shortlist; apply to competition@xcity.ai).
 

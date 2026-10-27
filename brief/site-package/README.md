@@ -19,7 +19,7 @@ Everything the organiser supplies about the site is in this folder. Coordinates 
 | `terrain/hillshade_9_13.png` / `hillshade_9_13_utm.png` | hillshade basemaps (lon/lat and UTM) | derived |
 | `terrain/terrain_summary_9_13.json` | slope classes, flood band, elevation | computed |
 | `zoning/indicative_systems_9_13.json` | indicative positions of the five systems | **indicative only** |
-| `nodes/design_nodes.json` | ten key nodes, choose three | — |
+| `nodes/design_nodes.json` | ten key nodes, choose one from each of three groups | — |
 | `climate/README.md` | climate: where to get it and how to declare it | — |
 
 ## Site facts

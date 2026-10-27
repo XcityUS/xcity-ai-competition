@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-26 · Grouped node selection
+
+New Agent submissions select one node from each of three groups: living/public space, production/infrastructure, and urban interfaces/environment. The two existing submission directories retain the previous any-three-of-ten rule, including revisions. Website, brief, Agent instructions, scaffolder and gate G9 use the same policy.
+
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 
 ## 2026-10-26 — Design Practice Call: one application, a prize, stage-one site data
