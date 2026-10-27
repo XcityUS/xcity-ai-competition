@@ -260,6 +260,8 @@
     energy: std({ map: TEX.gravel, color: 0xe9dfcc, roughness: 1 }),
   };
   D.ground.forEach(gr => { if (gr.use !== 'reserve') flat(gr, gr.plaza ? GROUND.plaza : (GROUND[gr.use] || GROUND.open_space), 0.06, gr.use === 'energy' || gr.use === 'agriculture' ? 40 : 24); });
+  const FUTURE_FIELD = new T.MeshBasicMaterial({color:0xa6b56c,transparent:true,opacity:0.55,depthTest:false,depthWrite:false});
+  (D.planned_fields || []).forEach(p => flat(p,FUTURE_FIELD,0.25,300));
   const WASH = std({ map: TEX.gravel, color: 0xf7f0e2, roughness: 1 });
   D.washes.forEach(w => flat(w, WASH, 0.04, 40));
   // Source annotations, not invented water, setbacks or a constructed perimeter.
