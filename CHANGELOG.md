@@ -1,3 +1,10 @@
+## 2026-10-26 · Full illustrated Design Brief
+
+- Restore the complete 31-page professional practice Design Brief in English and Chinese, with fourteen chapters and the original illustrated layout, replacing the condensed PDF mistakenly used as the full brief.
+- Apply a common application, eligibility review and selection process without recruitment-route or invitation promises. Release without internal-discussion labels.
+- Synchronise up to ten pages of ideas, online registration and private drafts, separate evidence, and final submission after the window is announced. No preparation period or final date is set.
+- Align maps and figures with the issued site package and show both fixed pilots. Publish language-matched previews and both downloads.
+
 # Changelog
 
 ## 2026-10-26 · Design Practice online application

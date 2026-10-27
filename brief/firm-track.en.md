@@ -2,7 +2,7 @@
 
 > Version: 26 October 2026. Online registration and draft preparation; final submission dates pending.
 > Online application: https://xcity-practice-applications.jingyuan-huang.chatgpt.site
-> The same current brief as a PDF: `brief/design-practice-brief.en.pdf`
+> Full illustrated Design Brief (31 pages): `brief/design-practice-brief.en.pdf`; Chinese: `brief/design-practice-brief.zh.pdf`. This page is the web guide to the call.
 
 XCITY runs two separate calls on one site. This one, the **Design Practice Call**, looks for urban design and planning practices able to propose a city of real spatial quality, and to take it further. The other, the Open Agent Call, tests whether an AI agent can plan on its own; it has its own brief and review. The two share the site and its conditions (**`brief/site-conditions.en.md`**) and are reviewed and ranked separately.
 
@@ -157,7 +157,7 @@ The weight of each criterion is published with the formal rules.
 
 ## 8. Who can apply
 
-The call is open to every practice; XCITY may also invite practices to apply. Every applicant follows the same submission requirements and review criteria, and five are chosen for stage two.
+The call is open to practices that meet the eligibility requirements. All applicants follow the same application requirements, eligibility review and selection criteria. Five teams are selected for stage two.
 
 - The applicant is a legally registered design practice or a consortium, holding the planning, architecture or landscape licence or business registration that applies where it is registered.
 - The team covers masterplanning, urban design, and landscape and ecology, and sets out how water, energy, transport and delivery expertise is brought in.

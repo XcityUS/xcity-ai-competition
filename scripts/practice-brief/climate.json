@@ -1,0 +1,37 @@
+{
+  "station": "SAN JUAN AERO",
+  "wmo": "87311",
+  "period": "1991-2020",
+  "elevation_m": 597,
+  "temp_mean_c": [
+    27.3,
+    25.6,
+    22.8,
+    17.3,
+    12.3,
+    8.4,
+    7.5,
+    10.7,
+    14.9,
+    19.6,
+    23.5,
+    26.4
+  ],
+  "precip_mm": [
+    17.4,
+    22.5,
+    10.8,
+    4.6,
+    3.4,
+    1.8,
+    1.3,
+    2.6,
+    3.7,
+    2.9,
+    7.2,
+    12.4
+  ],
+  "annual_mean_temp_c": 18.0,
+  "annual_precip_mm": 90.5,
+  "source": "https://repositorio.smn.gob.ar/bitstream/handle/20.500.12160/2506/estad%C3%ADsticas_climatol%C3%B3gicas_normales_1991-2020.pdf"
+}

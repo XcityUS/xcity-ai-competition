@@ -1,0 +1,10 @@
+{
+  "road_straight_distance_km": {
+    "RN150": 52.87393979281479,
+    "RP510": 35.55018494567299,
+    "RN40": 27.55940955936259,
+    "RN20": 40.716252844183444,
+    "RN141": 47.287244583953786
+  },
+  "note": "Road distances retained from the full brief. Terrain and screening values use brief/site-package/terrain/terrain_summary_9_13.json."
+}
