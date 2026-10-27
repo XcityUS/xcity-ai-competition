@@ -25,3 +25,8 @@ Migrated current node identifiers to A/B/C group codes (A03, B03 and C03) and cu
 ## 2026-10-27 source boundary correction
 
 Reference maps now read the open-seam closure boundary. The added junction slit is hatched as not yet covered by the prior hydrology screening. This is a source-map refresh; no buildings, node locations, capacities or land-use proposals are moved, and no design approval is implied.
+
+
+## 2026-10-27 — V8 district-structure redesign / review stage
+
+Human rejected V7's miniature all-functions town and asked to continue with continuous residential districts and independent production siting. Withdraw V7 from recommendation and mark the submission draft. Add CURRENT_DESIGN_REVIEW.md and a separate V8 source-frozen geometry/PDF review. R is a continuous residential planning envelope; C is a compact mixed-use transition with a distinct first core; P is a separate production precinct. Recompute western-boundary access studies, freight exclusion, district accounts and full-cell source slope distributions. Retire V7 dwelling/population quotas and unverified heat credits. Current core geometry, old PDFs/images and stored gates remain historical until the full rebuild; no new final render, ready-package claim or website publication.

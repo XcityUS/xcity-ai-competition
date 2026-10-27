@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.22128298428042,
+              -31.118539619865867
+            ],
+            [
+              -68.22129771672994,
+              -31.116735175013567
+            ],
+            [
+              -68.22339506785568,
+              -31.11674783236805
+            ],
+            [
+              -68.22338037507669,
+              -31.118552278116642
+            ],
+            [
+              -68.22128298428042,
+              -31.118539619865867
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "school",
+        "name": "South school / shared sport reservation",
+        "phase": 1,
+        "capacity_status": "Derive from housing and age scenario before occupancy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.2213639963454,
+              -31.108615166840906
+            ],
+            [
+              -68.2213787215034,
+              -31.10681071917213
+            ],
+            [
+              -68.22347585450497,
+              -31.10682337159767
+            ],
+            [
+              -68.22346116899789,
+              -31.108627820162546
+            ],
+            [
+              -68.2213639963454,
+              -31.108615166840906
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "school",
+        "name": "North school expansion reservation",
+        "phase": 2,
+        "capacity_status": "Only opens with corresponding housing and service need"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22284867540893,
+          -31.11945133932423
+        ]
+      },
+      "properties": {
+        "kind": "daily_centre",
+        "name": "South daily centre",
+        "phase": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21717335626033,
+          -31.108138646419576
+        ]
+      },
+      "properties": {
+        "kind": "daily_centre",
+        "name": "North daily centre",
+        "phase": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.2212314102636,
+          -31.12485517281569
+        ]
+      },
+      "properties": {
+        "kind": "civic_service",
+        "name": "Initial care / market / public transport",
+        "phase": 1
+      }
+    }
+  ]
+}

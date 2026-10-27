@@ -4,6 +4,8 @@ Prepared for Jingyuan Huang on 27 October 2026. Repository read/frozen at `307ec
 
 ## Status
 
+**Withdrawn from recommendation after human review on 27 October 2026.** Current work: `../district-structure-v8/`. Retained as a problem record.
+
 The earlier submission is **revision required**, not a reliable design example. Its earlier automated results are not content approval. At the frozen repository version its stored result is 11/12, failed. The old submission is traceable in Git at `307eca1:submissions/jingyuanhuang-design/finite-water-city/`.
 
 This folder is an independent candidate planning review. The published core geometry, declaration of readiness and older images have **not** been silently relabelled as V7. No revised package or website update has been published in this step. The review PDF is not the final A0 or a compliant replacement booklet.

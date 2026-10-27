@@ -1,6 +1,6 @@
 {
   "status": "revision_required",
-  "candidate_status": "planning_review",
+  "candidate_status": "withdrawn_from_recommendation",
   "date": "2026-10-27",
   "baseline_git_commit": "307eca1",
   "published_baseline_is_not_design_approval": true,
@@ -11,5 +11,7 @@
     "Complete the geometry-linked phase map and programme",
     "Reconcile full current-schema geometry, metrics and depth matrix",
     "Regenerate and verify every changed view; no legacy render reuse"
-  ]
+  ],
+  "superseded_by": "../district-structure-v8/",
+  "reason": "Human rejected the miniature all-functions town and required continuous residential districts with independent production siting."
 }

@@ -1,0 +1,47 @@
+[
+  {
+    "path": "01-whole-site-hierarchy.png",
+    "model": "No image model; original Python / Matplotlib planning diagram",
+    "generated_at": "2026-10-27",
+    "prompt": "Draw source-frozen V8 whole-site roles, district structure, release candidates and measured route studies exactly from tools/district_structure_v8.py. No houses, capacities, existing roads or secured rights are inferred.",
+    "post_processing": "none",
+    "own_work": true,
+    "status": "district_structure_review"
+  },
+  {
+    "path": "02-district-relationships.png",
+    "model": "No image model; original Python / Matplotlib planning diagram",
+    "generated_at": "2026-10-27",
+    "prompt": "Draw source-frozen V8 whole-site roles, district structure, release candidates and measured route studies exactly from tools/district_structure_v8.py. No houses, capacities, existing roads or secured rights are inferred.",
+    "post_processing": "none",
+    "own_work": true,
+    "status": "district_structure_review"
+  },
+  {
+    "path": "03-continuous-residential-district.png",
+    "model": "No image model; original Python / Matplotlib planning diagram",
+    "generated_at": "2026-10-27",
+    "prompt": "Draw source-frozen V8 whole-site roles, district structure, release candidates and measured route studies exactly from tools/district_structure_v8.py. No houses, capacities, existing roads or secured rights are inferred.",
+    "post_processing": "none",
+    "own_work": true,
+    "status": "district_structure_review"
+  },
+  {
+    "path": "04-movement-and-interfaces.png",
+    "model": "No image model; original Python / Matplotlib planning diagram",
+    "generated_at": "2026-10-27",
+    "prompt": "Draw source-frozen V8 whole-site roles, district structure, release candidates and measured route studies exactly from tools/district_structure_v8.py. No houses, capacities, existing roads or secured rights are inferred.",
+    "post_processing": "none",
+    "own_work": true,
+    "status": "district_structure_review"
+  },
+  {
+    "path": "05-service-hierarchy-and-phasing.png",
+    "model": "No image model; original Python / Matplotlib planning diagram",
+    "generated_at": "2026-10-27",
+    "prompt": "Draw source-frozen V8 whole-site roles, district structure, release candidates and measured route studies exactly from tools/district_structure_v8.py. No houses, capacities, existing roads or secured rights are inferred.",
+    "post_processing": "none",
+    "own_work": true,
+    "status": "district_structure_review"
+  }
+]

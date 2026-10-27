@@ -1,0 +1,16 @@
+{
+  "submissions/jingyuanhuang-design/finite-water-city/tools/district_structure_v8.py": "450ae348bce483d5e789d99b25166d0e3b5eca5e8bf572939f13c7a5528d52e1",
+  "submissions/jingyuanhuang-design/finite-water-city/geometry/structure.geojson": "9e37c92781e3eba57c9fe4610085b1fb52019e64a27549d690941b759179fe42",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/whole-site-v3/corridors.geojson": "4c1cfaf251e121f8c2ad8f26360cec0e1234b3888803b9e8287b4d5d3f5e17c0",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/whole-site-v3/centres.geojson": "50dc4cb67725f40b9d1dfe1b8e2d7ac66c0638d8e31e0564c40ed3a58633a7a2",
+  "brief/site-package/boundaries/archive/2026-10-26/scope_9_13.geojson": "c58759a4942543c60f6e0aa6e35a4b1a7dd34030a03ce7202e3c829f9194c42e",
+  "AGENTS.md": "375410c518ebe81bfb7b9b81ce2b1b8a6744918cb0e6dd0bb70ddd46b1080450",
+  "skills/xcity-agent-submission/SKILL.md": "d745b321487e9707051c4cdb7e87a82d287fc2232e92cad10f8d0467ac3e1070",
+  "brief/requirements.json": "c40ed9b9376604d7eb51c92d85e71fe32ce6280fa546f1283c33d1b12bb2a81c",
+  "brief/design-depth.json": "48f4782a648d86bbbdf67c2750fff1296211e7a090d671d80cf58b7845dc0631",
+  "brief/site-package/boundaries/scope_9_13.geojson": "6390ce30a2335d45dd8438b48810c3feabeaa1b4b085fd8c2b7cb655daeced10",
+  "brief/site-package/boundaries/boundary-revision.json": "4ab8f62d50c929501a507204cef0818925d8aa716981d4643240a071cf56e7d4",
+  "brief/site-package/water/channels_dem.geojson": "bcc3ff8caad4c83a5187d674b893079da7361c8487bd94ae524566c7ad711283",
+  "brief/site-package/water/flood_sensitive_dem.geojson": "67cda090c40e1413820600d658d4c0216c77bd62abe9c8b6c3429b9ab75ca4c4",
+  "brief/site-package/terrain/dem_9_13_utm19s_60m.png": "068b49d9be9bb08a01c67a71b7be02bd720e47bbaf4891070c2a6673bc51755c"
+}

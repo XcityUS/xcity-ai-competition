@@ -1,0 +1,163 @@
+{
+  "version": "V8",
+  "source_commit": "307eca185e442c7cbb517dea848824a876b92415",
+  "date": "2026-10-27",
+  "status": "district_structure_review_not_final_submission",
+  "whole_site_geodesic_km2": 1658.8198189675963,
+  "terrain": {
+    "R": {
+      "hydrologically_unclassified_seam_m2": 0.0,
+      "projected_km2": 6.1896,
+      "source_dem_cells": 1747,
+      "slope_median_pct": 1.18,
+      "slope_p95_pct": 4.49,
+      "share_cells_below_3pct": 86.7,
+      "flood_screen_overlap_pct": 0.0,
+      "distance_to_dem_channel_m": 700,
+      "fixed_pilot_overlap_m2": 0.0
+    },
+    "C": {
+      "hydrologically_unclassified_seam_m2": 0.0,
+      "projected_km2": 0.6,
+      "source_dem_cells": 170,
+      "slope_median_pct": 1.18,
+      "slope_p95_pct": 2.64,
+      "share_cells_below_3pct": 98.2,
+      "flood_screen_overlap_pct": 0.17,
+      "distance_to_dem_channel_m": 1058,
+      "fixed_pilot_overlap_m2": 0.0
+    },
+    "P": {
+      "hydrologically_unclassified_seam_m2": 0.0,
+      "projected_km2": 1.76,
+      "source_dem_cells": 513,
+      "slope_median_pct": 1.86,
+      "slope_p95_pct": 4.86,
+      "share_cells_below_3pct": 75.8,
+      "flood_screen_overlap_pct": 0.0,
+      "distance_to_dem_channel_m": 1514,
+      "fixed_pilot_overlap_m2": 0.0
+    },
+    "V7_east_plot": {
+      "hydrologically_unclassified_seam_m2": 0.0,
+      "projected_km2": 0.42,
+      "source_dem_cells": 110,
+      "slope_median_pct": 1.86,
+      "slope_p95_pct": 18.13,
+      "share_cells_below_3pct": 80.0,
+      "flood_screen_overlap_pct": 0.0,
+      "distance_to_dem_channel_m": 4107,
+      "fixed_pilot_overlap_m2": 0.0
+    },
+    "V7_east_alternative": {
+      "hydrologically_unclassified_seam_m2": 0.0,
+      "projected_km2": 1.32,
+      "source_dem_cells": 360,
+      "slope_median_pct": 1.86,
+      "slope_p95_pct": 16.78,
+      "share_cells_below_3pct": 72.5,
+      "flood_screen_overlap_pct": 0.0,
+      "distance_to_dem_channel_m": 3965,
+      "fixed_pilot_overlap_m2": 0.0
+    }
+  },
+  "zone_gap_R_to_P_m": 3400,
+  "R_gross_km2": 6.1896,
+  "C_gross_km2": 0.6,
+  "P_gross_km2": 1.76,
+  "first_release_candidates": {
+    "R0": 1.56,
+    "C0": 0.12,
+    "P0": 0.18
+  },
+  "first_release_seam_overlap_m2": {
+    "R0": 0.0,
+    "C0": 0.0,
+    "P0": 0.0
+  },
+  "whole_site_partition_gap_m2": 0.0,
+  "whole_site_partition_overlap_m2": 0.0,
+  "district_overlap_m2": 0.0,
+  "freight_start_gap_to_boundary_gate_m": 0.0,
+  "passenger_start_gap_to_boundary_gate_m": 0.0,
+  "freight_inside_residential_m": 0.0,
+  "freight_inside_core_m": 0.0,
+  "district_outside_scope_m2": 0.0,
+  "fixed_pilot_overlap_m2": 0.0,
+  "C03_source_channel_m": 982,
+  "routes": [
+    {
+      "id": "F",
+      "kind": "freight_study",
+      "name": "Production access bypasses R and C",
+      "phase": 1,
+      "channel_intersection_empty": false,
+      "channel_overlap_m": 0.0,
+      "status": "study_only",
+      "authority": "not_secured",
+      "basis": "300 m source DEM least-cost alignment; not engineering or right of way",
+      "length_km": 7.83,
+      "flood_screen_km": 2.33,
+      "channel_intersection": "Point"
+    },
+    {
+      "id": "A",
+      "kind": "passenger_study",
+      "name": "Regional arrival to town-centre edge",
+      "phase": 1,
+      "channel_intersection_empty": false,
+      "channel_overlap_m": 0.0,
+      "status": "study_only",
+      "authority": "not_secured",
+      "basis": "300 m source DEM least-cost alignment; not engineering or right of way",
+      "length_km": 8.79,
+      "flood_screen_km": 0.74,
+      "channel_intersection": "Point"
+    },
+    {
+      "id": "S",
+      "kind": "shuttle_study",
+      "name": "Worker shuttle between independent districts",
+      "phase": 1,
+      "channel_intersection_empty": true,
+      "channel_overlap_m": 0.0,
+      "status": "study_only",
+      "authority": "not_secured",
+      "basis": "300 m source DEM least-cost alignment; not engineering or right of way",
+      "length_km": 4.52,
+      "flood_screen_km": 0.0,
+      "channel_intersection": "LineString"
+    },
+    {
+      "id": "L",
+      "kind": "fixed_quarter_study",
+      "name": "Fixed-quarter connection; not a walking catchment",
+      "phase": 1,
+      "channel_intersection_empty": true,
+      "channel_overlap_m": 0.0,
+      "status": "study_only",
+      "authority": "not_secured",
+      "basis": "300 m source DEM least-cost alignment; not engineering or right of way",
+      "length_km": 14.82,
+      "flood_screen_km": 0.0,
+      "channel_intersection": "LineString"
+    }
+  ],
+  "capacity_status": "V7 960 dwellings / 2400 residents and three-town population ledger withdrawn. New capacity not fixed at this structure stage.",
+  "heat_credit_status": "No residential heat-network or reuse credit asserted.",
+  "do_not_change": [
+    "Issued boundary and both fixed pilot outlines",
+    "Forage grass and jojoba under fixed arrays",
+    "No permanent construction on actual channels",
+    "English final deliverables"
+  ],
+  "warnings": [
+    "300 m routes require detailed engineering, junction rights and channel crossings",
+    "R and P are gross planning extents, not fully buildable or constructed land",
+    "R/C local streets are a backbone only; blocks, plots, doors and service capacities remain to design",
+    "Existing living-quarter capacity, service provision and actual completion are unknown",
+    "Any added-seam land is hydrologically unclassified, not demonstrated safe",
+    "P still includes non-flat terrain; next stage locates actual platforms within its footprint",
+    "A complete current-schema submission and new compliant A0 have not been generated"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21705117136091,
+            -31.12302530635598
+          ],
+          [
+            -68.21722886486367,
+            -31.101371971289073
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "residential_collector",
+        "name": "Residential distributor / bus",
+        "phase": "1-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22815791539203,
+            -31.11136284028451
+          ],
+          [
+            -68.20403979191614,
+            -31.111216134383202
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "residential_collector",
+        "name": "Cross-district local street",
+        "phase": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21705117136091,
+            -31.12302530635598
+          ],
+          [
+            -68.2217594744741,
+            -31.124407230590464
+          ],
+          [
+            -68.22384965048113,
+            -31.12532210518107
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "centre_transition",
+        "name": "Residential street to town-centre transition",
+        "phase": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22284867540893,
+            -31.11945133932423
+          ],
+          [
+            -68.22117074706152,
+            -31.119441208269
+          ],
+          [
+            -68.22118548215768,
+            -31.11763676371764
+          ],
+          [
+            -68.21709561273146,
+            -31.11761197950349
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "daily_walk",
+        "name": "South daily-service walk",
+        "phase": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22137135909007,
+            -31.10771294307052
+          ],
+          [
+            -68.21717705741683,
+            -31.107687534968242
+          ],
+          [
+            -68.21717335626033,
+            -31.108138646419576
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "daily_walk",
+        "name": "North daily-service walk",
+        "phase": 2
+      }
+    }
+  ]
+}

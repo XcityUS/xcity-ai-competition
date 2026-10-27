@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested a complete design argument with plans, sections, diagrams and massing rather than a six-page digest; authorised uploading the completed revision and replacing its abstract cover with a city rendering. V6 adopts the updated main/technical presentation contract and discloses unfinished engineering independently."
+    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested a complete design argument with plans, sections, diagrams and massing rather than a six-page digest; authorised uploading the completed revision and replacing its abstract cover with a city rendering. V6 adopts the updated main/technical presentation contract and discloses unfinished engineering independently. On 2026-10-27 the human rejected V7's miniature all-functions town and asked to continue with continuous residential districts and separately justified production. V7 is withdrawn from recommendation. V8 is a district-structure review in reviews/district-structure-v8, not a ready submission; older core geometry and imagery are retained as history pending a full rebuild."
   },
   "nodes": [
     "A03",
@@ -69,7 +69,7 @@
       }
     }
   },
-  "package_state": "ready_for_review",
+  "package_state": "draft",
   "created": "2026-10-25",
   "updated": "2026-10-27",
   "thesis": "The city grows only when its water ledger can support another complete neighbourhood.",

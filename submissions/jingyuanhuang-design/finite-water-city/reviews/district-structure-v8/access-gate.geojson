@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.27330236536338,
+          -31.115234403599892
+        ]
+      },
+      "properties": {
+        "name": "Candidate boundary access; regional junction unselected",
+        "status": "study_only"
+      }
+    }
+  ]
+}

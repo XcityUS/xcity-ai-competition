@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.20289316692758,
+              -31.122938494223547
+            ],
+            [
+              -68.2291117416205,
+              -31.123098030570013
+            ],
+            [
+              -68.22929398436565,
+              -31.10054240726095
+            ],
+            [
+              -68.20736510166886,
+              -31.100409424019574
+            ],
+            [
+              -68.20305933056157,
+              -31.10305066466637
+            ],
+            [
+              -68.20289316692758,
+              -31.122938494223547
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "R",
+        "role": "residential_district",
+        "name": "Continuous residential district",
+        "phase": "1-2",
+        "extent_basis": "Planning envelope; not fully built in Phase 1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.22697036016541,
+              -31.128498798981532
+            ],
+            [
+              -68.22701424800324,
+              -31.12308546396086
+            ],
+            [
+              -68.21652679973612,
+              -31.123022118829443
+            ],
+            [
+              -68.21648231659957,
+              -31.12843544039458
+            ],
+            [
+              -68.22697036016541,
+              -31.128498798981532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "C",
+        "role": "town_centre",
+        "name": "Town-centre transition and reserve",
+        "phase": "1-2",
+        "extent_basis": "Gross mixed-use study; only C0 is the initial activity core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.21619288328961,
+              -31.1636219181588
+            ],
+            [
+              -68.21627456975607,
+              -31.153697546725958
+            ],
+            [
+              -68.23305990360772,
+              -31.153798610802273
+            ],
+            [
+              -68.23297996622755,
+              -31.16372302157172
+            ],
+            [
+              -68.21619288328961,
+              -31.1636219181588
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "P",
+        "role": "productive_precinct",
+        "name": "Separate compute / repair precinct",
+        "phase": "1-2",
+        "extent_basis": "Production planning envelope; first works P0"
+      }
+    }
+  ]
+}
