@@ -732,6 +732,9 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
 .pw .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin:28px 0}
 .pw .fact{background:var(--surface);padding:16px 18px}
 .pw .fact h3{margin:0 0 8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-family:var(--mono)}
+.pw .collaboration-record{margin:0 0 20px;font-size:13px;color:var(--muted)}
+.pw .collaboration-record summary{cursor:pointer;color:var(--gold);padding:8px 0}
+.pw .collaboration-record p{max-width:80ch;line-height:1.65;overflow-wrap:anywhere}
 .pw .fact p{margin:0;font-size:13.5px;line-height:1.65}
 .pw .tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-top:36px;position:sticky;top:0;z-index:5}
 .pw .tab{background:var(--surface);padding:14px 16px;text-align:left;border:0;color:var(--body);cursor:pointer;font:inherit}
@@ -851,9 +854,10 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   +'<div class="facts">'
   +'<div class="fact"><h3>'+L('Gives up','Renuncia','主动放弃')+'</h3><p><b>'+esc(t.objective)+'</b><br>'+esc(t.who_bears)+'</p></div>'
   +'<div class="fact"><h3>'+L('Depth','Profundidad','深化程度')+'</h3><p>'+L('Whole site · master design · nodes ','Todo el sitio · plan maestro · nodos ','整片场地 · 总体设计 · 节点 ')+esc((m.nodes||[]).join(', '))+'</p><p style="margin-top:6px;color:var(--muted)">'+esc(m.nodes_reason)+'</p></div>'
-  +'<div class="fact"><h3>'+L('Who and how','Quién y cómo','谁、怎样做的')+'</h3><p>'+esc(au2.responsible_party)+'<br>'+esc(ag.name)+' · '+esc(ag.model)+'<br>'+esc(au.class)+'</p><p style="margin-top:6px;color:var(--muted)">'+esc(au.human_role)+'</p></div>'
+  +'<div class="fact"><h3>'+L('Who and how','Quién y cómo','谁、怎样做的')+'</h3><p>'+esc(au2.responsible_party)+'<br>'+esc(ag.name)+'</p><p style="margin-top:6px;color:var(--muted)">'+(au.class==='human_directed'?L('Human-directed · AI-assisted','Dirección humana · asistencia de IA','人类指导 · AI 辅助'):esc(au.class))+'</p></div>'
   +'<div class="fact"><h3>'+L('Automatic compliance','Controles automáticos','自动合规检查')+'</h3><p>'+(sc?esc(sc.gates_passed+'/'+sc.gates_total)+(sc.pass?L(' passed',' superados',' 通过'):''):'-')+'</p></div>'
   +'</div>'
+  +'<details class="collaboration-record"><summary>'+L('View collaboration record','Ver registro de colaboración','查看协作详细记录')+'</summary><p>'+esc(ag.name)+' · '+esc(ag.model)+' · '+esc(au.class)+'</p><p>'+esc(au.human_role)+'</p></details>'
   +'<p class="note">'+L('Automatic checks do not assess planning adequacy or grant design approval. Design content review is recorded separately.','Los controles automáticos no equivalen a la aprobación del diseño.','自动检查不证明总体规划充分，也不代表设计获批。设计内容评审另行记录。')+'</p>'
   +'<div class="tabs" role="tablist">'
   +tab('read','01',L('Read the scheme','Leer la propuesta','阅读方案','b'),'<span class="sm">'+L('The statement with its figures','La memoria con sus figuras','正文与配图')+'</span>')
