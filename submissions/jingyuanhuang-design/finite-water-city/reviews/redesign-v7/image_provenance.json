@@ -1,0 +1,65 @@
+[
+  {
+    "path": "01-whole-site.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  },
+  {
+    "path": "02-extents-and-nodes.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  },
+  {
+    "path": "03-first-town.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  },
+  {
+    "path": "04-three-nodes.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  },
+  {
+    "path": "05-phasing-ledger.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  },
+  {
+    "path": "06-water-and-operation.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  },
+  {
+    "path": "07-audit.png",
+    "model": "Original geometry diagram / Python 3.12 + Matplotlib; no image model",
+    "generated_at": "2026-10-27",
+    "prompt": "Authored planning diagram from source-frozen XCITY site data and candidate geometry; reproduce tools/redesign_v7.py. Not survey or approval.",
+    "source_script": "../../tools/redesign_v7.py",
+    "own_work": true,
+    "status": "planning_review"
+  }
+]

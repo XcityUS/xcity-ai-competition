@@ -1,0 +1,52 @@
+{
+  "status": "planning_review_not_final_submission",
+  "source_commit": "307eca1",
+  "boundary_revision": "2026-10-27-open-seam-closure",
+  "nominal_site_km2": 1656,
+  "current_source_geodesic_km2": 1658.8198189675963,
+  "old_master_projected_km2": 40.562,
+  "new_study_projected_km2": 19.24,
+  "first_town_gross_projected_km2": 0.81,
+  "production_plot_projected_km2": 0.42,
+  "new_dwellings": 960,
+  "new_residents_scenario": 2400,
+  "household_size_assumed": 2.5,
+  "residential_buildings": 64,
+  "residential_gfa_m2": 115200.0,
+  "geometry_failures": [],
+  "buildings_intersecting_flood_screen": [],
+  "housing_to_compute_nearest_footprints_m": 2268,
+  "node_route_m": {
+    "A03_to_B03": 3900,
+    "A03_to_C03": 1900
+  },
+  "site_slope_sample": {
+    "elevation_m": 653.0,
+    "centre_cell_slope_pct": 1.18
+  },
+  "campus_slope_sample": {
+    "elevation_m": 668.0,
+    "centre_cell_slope_pct": 1.86
+  },
+  "channel_intersection_in_C03_m": 916,
+  "phase_one_it_mw_assumed": 6,
+  "heat_reuse_credited_pct": 0,
+  "buildings_on_service_plots": [],
+  "buildings_on_routes": [],
+  "permanent_building_overlap_m2": 0.0,
+  "water": {
+    "gross_end_use_m3_y": 273750.72,
+    "reclaimed_substitution_m3_y": 75000,
+    "fresh_source_with_10pct_loss_m3_y": 220834.13,
+    "components": {
+      "domestic": 105120.0,
+      "public_services": 30000,
+      "industry": 50000,
+      "new_crop_trials": 80000,
+      "landscape": 5000,
+      "compute_cooling": 630.72,
+      "panel_cleaning": 3000
+    },
+    "fixed_pilot_and_existing_quarter_demand": "unknown; must be reconciled before occupancy; never assumed zero"
+  }
+}

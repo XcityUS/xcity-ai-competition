@@ -1,0 +1,600 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22679469027207,
+            -31.150152092966444
+          ],
+          [
+            -68.2268605887148,
+            -31.14203211636646
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -68.22485395889647,
+              -31.150140426077687
+            ],
+            [
+              -68.22488222279911,
+              -31.146666883391138
+            ]
+          ],
+          [
+            [
+              -68.22489176534886,
+              -31.145493998418846
+            ],
+            [
+              -68.22492002270279,
+              -31.142020453192664
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -68.22307058511562,
+              -31.150129679371865
+            ],
+            [
+              -68.22311105348959,
+              -31.145167477043987
+            ]
+          ],
+          [
+            [
+              -68.22311399625343,
+              -31.144806589450805
+            ],
+            [
+              -68.22311546761547,
+              -31.144626145646537
+            ]
+          ],
+          [
+            [
+              -68.22313165172417,
+              -31.142641263461357
+            ],
+            [
+              -68.22313680087733,
+              -31.142009709908795
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -68.22107740378716,
+              -31.15011763912786
+            ],
+            [
+              -68.22111797595558,
+              -31.145155439142957
+            ]
+          ],
+          [
+            [
+              -68.22112092626708,
+              -31.144794551720167
+            ],
+            [
+              -68.22112240140292,
+              -31.144614108001083
+            ]
+          ],
+          [
+            [
+              -68.22113862702109,
+              -31.142629226753026
+            ],
+            [
+              -68.22114378938095,
+              -31.141997673498622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21929403203528,
+            -31.15010684013391
+          ],
+          [
+            -68.21936056958373,
+            -31.14198687794328
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21735330504494,
+            -31.15009506023191
+          ],
+          [
+            -68.21742000795544,
+            -31.141975101792223
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22679469027207,
+            -31.150152092966444
+          ],
+          [
+            -68.21735330504494,
+            -31.15009506023191
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2268082382421,
+            -31.148482987512434
+          ],
+          [
+            -68.21736701840439,
+            -31.148425958511094
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22682068673384,
+            -31.146949214546567
+          ],
+          [
+            -68.21737961886345,
+            -31.146892188975624
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -68.22683459862722,
+              -31.145234997264332
+            ],
+            [
+              -68.22305823619145,
+              -31.14521227159934
+            ]
+          ],
+          [
+            [
+              -68.22117005658117,
+              -31.145200867251862
+            ],
+            [
+              -68.21739370058891,
+              -31.145177975527222
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -68.22684704510267,
+              -31.143701223514633
+            ],
+            [
+              -68.22312319204902,
+              -31.14367881559002
+            ]
+          ],
+          [
+            [
+              -68.22113014564832,
+              -31.143666778391843
+            ],
+            [
+              -68.21740629900708,
+              -31.143644205207682
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -68.2268605887148,
+              -31.14203211636646
+            ],
+            [
+              -68.2191507790825,
+              -31.14198560625514
+            ]
+          ],
+          [
+            [
+              -68.21768224594669,
+              -31.14197669487219
+            ],
+            [
+              -68.21742000795544,
+              -31.141975101792223
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "local_street",
+        "network": "shared",
+        "name": "Town street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22322794158724,
+            -31.150130628603836
+          ],
+          [
+            -68.22329414394113,
+            -31.14201065883851
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "public_spine",
+        "network": "people",
+        "name": "Shaded civic walk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22682764282919,
+            -31.14609210596325
+          ],
+          [
+            -68.21738665987667,
+            -31.146035082309236
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "public_spine",
+        "network": "people",
+        "name": "Neighbourhood cross-walk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2122572876128,
+            -31.132018732796734
+          ],
+          [
+            -68.21196625259729,
+            -31.167205155241913
+          ],
+          [
+            -68.20567088793969,
+            -31.167166466641113
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "production_access",
+        "network": "machine",
+        "name": "Freight / service approach"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21847192002049,
+            -31.141620583536447
+          ],
+          [
+            -68.21689849796826,
+            -31.141611026793317
+          ],
+          [
+            -68.21697707573912,
+            -31.132047507531542
+          ],
+          [
+            -68.2122572876128,
+            -31.132018732796734
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "passenger_link",
+        "network": "shared",
+        "name": "Passenger turn-off before freight route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22682764282919,
+            -31.14609210596325
+          ],
+          [
+            -68.23259714556923,
+            -31.146126613120355
+          ],
+          [
+            -68.23265164205532,
+            -31.139359953194326
+          ],
+          [
+            -68.23422503280813,
+            -31.139369316903352
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "park_access",
+        "network": "people",
+        "name": "Park high-ground access; closes on warning"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21735330504494,
+            -31.15009506023191
+          ],
+          [
+            -68.21210810268285,
+            -31.150063076347095
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "worker_shuttle",
+        "network": "shared",
+        "name": "Controlled worker shuttle link"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21841873256825,
+            -31.141710487131945
+          ],
+          [
+            -68.21841651243301,
+            -31.141981152656218
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "care_access",
+        "network": "people",
+        "name": "Local care / arrival connector"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2249034744895,
+            -31.15050162923092
+          ],
+          [
+            -68.22490641108095,
+            -31.15014074178349
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "care_access",
+        "network": "people",
+        "name": "Local care / arrival connector"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.219238621891,
+            -31.150467409105776
+          ],
+          [
+            -68.21924157993946,
+            -31.150106522142657
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "care_access",
+        "network": "people",
+        "name": "Local care / arrival connector"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22497834106453,
+            -31.141298992919353
+          ],
+          [
+            -68.22497247041801,
+            -31.142020768797927
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "care_access",
+        "network": "people",
+        "name": "Local care / arrival connector"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2193140354992,
+            -31.141264785143154
+          ],
+          [
+            -68.21930812195717,
+            -31.141986560053276
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "care_access",
+        "network": "people",
+        "name": "Local care / arrival connector"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "git_commit": "307eca1",
+  "date": "2026-10-27",
+  "files": {
+    "AGENTS.md": "375410c518ebe81bfb7b9b81ce2b1b8a6744918cb0e6dd0bb70ddd46b1080450",
+    "brief/design-depth.json": "48f4782a648d86bbbdf67c2750fff1296211e7a090d671d80cf58b7845dc0631",
+    "brief/requirements.json": "c40ed9b9376604d7eb51c92d85e71fe32ce6280fa546f1283c33d1b12bb2a81c",
+    "docs/design-depth-guide.md": "509f3f7c9deebda7e4d0e81d394b6edba13a90af9afd1573dc8320d798354f0f",
+    "skills/xcity-agent-submission/SKILL.md": "d745b321487e9707051c4cdb7e87a82d287fc2232e92cad10f8d0467ac3e1070",
+    "brief/site-package/boundaries/scope_9_13.geojson": "6390ce30a2335d45dd8438b48810c3feabeaa1b4b085fd8c2b7cb655daeced10",
+    "brief/site-package/boundaries/boundary-revision.json": "4ab8f62d50c929501a507204cef0818925d8aa716981d4643240a071cf56e7d4",
+    "brief/site-package/terrain/terrain_summary_9_13.json": "33744e08023da8e91919473b889175ed115e028f375126d4de6eed1848386527"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "status": "review_draft_not_machine_submission",
+  "phases": [
+    {
+      "phase": 1,
+      "period": "Scenario years 0-4 after enabling conditions",
+      "objective": "One operable town plus separate production",
+      "works": [
+        "Survey, lawful source and external access before occupancy",
+        "First housing, care, school, clinic, storage, reuse and public transport",
+        "Separate production gates; trial crops only outside fixed pilots"
+      ],
+      "sequence_dependencies": [
+        "Access and resource tests -> utilities -> public services -> housing occupancy -> interruptible compute"
+      ],
+      "trigger": "Lawful source passes quantity/quality tests; full pilot demand audited; access and service operations funded",
+      "zones": [
+        {
+          "zone_id": "S",
+          "name": "South-west town",
+          "new_residents": 2400,
+          "cumulative_residents": 2400,
+          "new_dwellings": 960,
+          "cumulative_dwellings": 960,
+          "new_jobs": 900,
+          "cumulative_jobs": 900,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        },
+        {
+          "zone_id": "P",
+          "name": "Local production",
+          "new_residents": 0,
+          "cumulative_residents": 0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 300,
+          "cumulative_jobs": 300,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "period": "Scenario years 4-8; may never start",
+      "objective": "Expand the existing town before another settlement",
+      "works": [
+        "Expand school and health capacity with housing",
+        "Extend source/renewables only with permits and demand",
+        "Conditional central compute campus has its own services"
+      ],
+      "sequence_dependencies": [
+        "Maintain 12 months verified source headroom -> fund services -> release contiguous blocks"
+      ],
+      "trigger": "80% occupancy and 12 months of audited source headroom after all fixed and new uses; committed jobs and public services",
+      "zones": [
+        {
+          "zone_id": "S",
+          "name": "South-west town",
+          "new_residents": 4800,
+          "cumulative_residents": 7200,
+          "new_dwellings": 1920,
+          "cumulative_dwellings": 2880,
+          "new_jobs": 2000,
+          "cumulative_jobs": 2900,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        },
+        {
+          "zone_id": "P",
+          "name": "Local production",
+          "new_residents": 0,
+          "cumulative_residents": 0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 400,
+          "cumulative_jobs": 700,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        },
+        {
+          "zone_id": "K",
+          "name": "Central compute",
+          "new_residents": 0,
+          "cumulative_residents": 0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 400,
+          "cumulative_jobs": 400,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "period": "Scenario years 8-15+; separate go/no-go decisions",
+      "objective": "Conditional northern town and eastern gateway",
+      "works": [
+        "Independent services at each settlement",
+        "Surveyed regional corridor and emergency alternatives",
+        "Gateway supply/receiving works and customs status before terminal construction"
+      ],
+      "sequence_dependencies": [
+        "North source/access/services -> north town; independent east source/trade/access -> gateway settlement"
+      ],
+      "trigger": "Each remote location passes its own water, power, access, demand and service tests; gateway has lawful trade status",
+      "zones": [
+        {
+          "zone_id": "S",
+          "name": "South-west town",
+          "new_residents": 4800,
+          "cumulative_residents": 12000,
+          "new_dwellings": 1920,
+          "cumulative_dwellings": 4800,
+          "new_jobs": 1800,
+          "cumulative_jobs": 4700,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        },
+        {
+          "zone_id": "N",
+          "name": "North town",
+          "new_residents": 4800,
+          "cumulative_residents": 4800,
+          "new_dwellings": 1920,
+          "cumulative_dwellings": 1920,
+          "new_jobs": 1800,
+          "cumulative_jobs": 1800,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        },
+        {
+          "zone_id": "E",
+          "name": "Eastern gateway settlement",
+          "new_residents": 2400,
+          "cumulative_residents": 2400,
+          "new_dwellings": 960,
+          "cumulative_dwellings": 960,
+          "new_jobs": 1200,
+          "cumulative_jobs": 1200,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        },
+        {
+          "zone_id": "K",
+          "name": "Central compute",
+          "new_residents": 0,
+          "cumulative_residents": 0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 800,
+          "cumulative_jobs": 1200,
+          "basis": "Declared capacity scenario; 2.5 residents/dwelling. Jobs are programme targets, not existing or secured employment. Remote town capacities are not detailed housing designs."
+        }
+      ]
+    }
+  ],
+  "totals": [
+    [
+      1,
+      2400,
+      2400,
+      960,
+      960,
+      1200,
+      1200
+    ],
+    [
+      2,
+      4800,
+      7200,
+      1920,
+      2880,
+      2800,
+      4000
+    ],
+    [
+      3,
+      12000,
+      19200,
+      4800,
+      7680,
+      5600,
+      9600
+    ]
+  ]
+}
