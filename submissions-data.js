@@ -377,10 +377,10 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 10,
     "gates_pass": false,
-    "design_content_review_status": "not_assessed",
-    "package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
+    "design_content_review_status": "not_recorded_for_current_version",
+    "package_sha256": "e989166479031d03d7a505ed67f04aea12af570d74e56863ef9aca4aa0361934",
     "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
-    "published": true,
+    "published": false,
     "featured": true,
     "example": false,
     "cover": "media/district-finished.png",
@@ -773,14 +773,6 @@ window.XCITY_SUBMISSIONS = [
       [
         "sources.json",
         1597
-      ],
-      [
-        "tools/__pycache__/design_graphics.cpython-312.pyc",
-        11373
-      ],
-      [
-        "tools/__pycache__/draw_design.cpython-312.pyc",
-        41780
       ],
       [
         "tools/a0_presentation.py",
