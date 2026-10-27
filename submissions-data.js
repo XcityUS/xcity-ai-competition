@@ -365,9 +365,9 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "design_content_review_status": "recorded_for_current_version",
-    "package_sha256": "974f421d9fff574f00a7b57d102b8ea234f9a422d593a3871d402e220e110422",
-    "reviewed_package_sha256": "974f421d9fff574f00a7b57d102b8ea234f9a422d593a3871d402e220e110422",
+    "design_content_review_status": "not_assessed",
+    "package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
+    "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
     "published": true,
     "featured": true,
     "example": false,
@@ -400,23 +400,23 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        1859934
+        1859643
       ],
       [
         "drawings/a3-booklet.pdf",
-        3592518
+        3611297
       ],
       [
         "drawings/a3-technical-appendix.pdf",
-        2281819
+        2282023
       ],
       [
         "drawings/everyday-city-design-review.pdf",
-        10496419
+        10563695
       ],
       [
         "drawings/everyday-city-technical-appendix.pdf",
-        417658
+        417720
       ],
       [
         "drawings/presentation-index.json",
@@ -424,35 +424,35 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "figures/fig-01-structure.png",
-        578270
+        577247
       ],
       [
         "figures/fig-02-master-plan.png",
-        256758
+        256586
       ],
       [
         "figures/fig-03-land-use-density.png",
-        188045
+        187876
       ],
       [
         "figures/fig-04-movement.png",
-        217135
+        216964
       ],
       [
         "figures/fig-05-open-space-water.png",
-        189448
+        189268
       ],
       [
         "figures/fig-06-phasing.png",
-        396305
+        393881
       ],
       [
         "figures/fig-07-metrics.png",
-        180858
+        180675
       ],
       [
         "figures/fig-08-node-location.png",
-        473373
+        472922
       ],
       [
         "figures/node-A01-aerial.png",
@@ -544,19 +544,19 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "media/controls/A01-aerial.png",
-        125778
+        125541
       ],
       [
         "media/controls/B03-aerial.png",
-        78864
+        78802
       ],
       [
         "media/controls/C02-aerial.png",
-        51934
+        51926
       ],
       [
         "media/controls/district-aerial.png",
-        231539
+        231302
       ],
       [
         "media/district-finished.png",
@@ -568,71 +568,71 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "pages/00-cover.png",
-        3384659
+        3385542
       ],
       [
         "pages/01-whole-site.png",
-        487247
+        523685
       ],
       [
         "pages/02-site-reading.png",
-        424000
+        459963
       ],
       [
         "pages/03-siting-choice.png",
-        187352
+        213417
       ],
       [
         "pages/04-first-district.png",
-        181774
+        195962
       ],
       [
         "pages/05-courtyard-neighbourhood.png",
-        181574
+        215853
       ],
       [
         "pages/06-street-section.png",
-        155620
+        185576
       ],
       [
         "pages/07-movement.png",
-        200269
+        219924
       ],
       [
         "pages/08-water-priorities.png",
-        201931
+        231808
       ],
       [
         "pages/09-energy.png",
-        262779
+        287393
       ],
       [
         "pages/10-node-locator.png",
-        206486
+        226684
       ],
       [
         "pages/11-a01-plan.png",
-        174594
+        200198
       ],
       [
         "pages/12-b03-plan.png",
-        175783
+        197407
       ],
       [
         "pages/13-c02-plan.png",
-        177243
+        200160
       ],
       [
         "pages/14-phasing.png",
-        151230
+        155144
       ],
       [
         "pages/15-governance.png",
-        226000
+        252031
       ],
       [
         "pages/16-review-dashboard.png",
-        231799
+        266563
       ],
       [
         "pages/17-a01-floor-and-section.png",
@@ -648,19 +648,19 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "pages/A01-finished.png",
-        3291723
+        3292361
       ],
       [
         "pages/B03-finished.png",
-        3215958
+        3215974
       ],
       [
         "pages/C02-finished.png",
-        3162335
+        3162968
       ],
       [
         "pages/a0-presentation.jpg",
-        6004792
+        6004480
       ],
       [
         "proposal.md",
@@ -744,7 +744,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/index.html",
-        230
+        23541075
       ],
       [
         "report/page-index.json",
@@ -792,7 +792,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/draw_design.py",
-        23687
+        24440
       ],
       [
         "tools/energy_model.py",
@@ -800,7 +800,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/package_review.py",
-        9142
+        9163
       ],
       [
         "tools/prepare_publication.py",
@@ -859,13 +859,13 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "design_content_review_status": "not_recorded_for_current_version",
-    "package_sha256": "b5d24f9643c6d2e20ebd1d5abb4c9926296f206d2cca61c94cf53e09829bd55a",
-    "reviewed_package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
-    "published": false,
+    "design_content_review_status": "not_assessed",
+    "package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
+    "reviewed_package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
+    "published": true,
     "featured": false,
     "example": false,
-    "cover": "media/cover-render-v5.png",
+    "cover": "media/city-aerial.png",
     "thesis": "The city grows only when its water ledger can support another complete neighbourhood.",
     "files": [
       [
@@ -878,7 +878,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "changelog.md",
-        3574
+        3901
       ],
       [
         "compliance_matrix.json",
@@ -890,15 +890,15 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3812505
+        3812337
       ],
       [
         "drawings/a3-booklet.pdf",
-        4496821
+        4480412
       ],
       [
         "drawings/a3-technical-appendix.pdf",
-        4582697
+        4582686
       ],
       [
         "drawings/presentation-index.json",
@@ -906,35 +906,35 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "figures/fig-01-structure.png",
-        579663
+        579025
       ],
       [
         "figures/fig-02-master-plan.png",
-        340220
+        332111
       ],
       [
         "figures/fig-03-land-use-density.png",
-        157960
+        157860
       ],
       [
         "figures/fig-04-movement.png",
-        282997
+        280475
       ],
       [
         "figures/fig-05-open-space-water.png",
-        283478
+        280850
       ],
       [
         "figures/fig-06-phasing.png",
-        395594
+        393820
       ],
       [
         "figures/fig-07-metrics.png",
-        171560
+        171460
       ],
       [
         "figures/fig-08-node-location.png",
-        498911
+        493146
       ],
       [
         "figures/node-A03-aerial.png",
@@ -1010,7 +1010,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "manifest.json",
-        7865
+        7861
       ],
       [
         "media/A03-aerial-v6.png",
@@ -1134,7 +1134,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/full-v6/01-site-reading.png",
-        388357
+        386835
       ],
       [
         "reviews/full-v6/02-siting-tradeoff.png",
@@ -1314,11 +1314,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/presentation-v4/node-locator.png",
-        253907
+        252464
       ],
       [
         "reviews/presentation-v4/node-locator.svg",
-        120583
+        120535
       ],
       [
         "reviews/presentation-v4/presentation-qa.json",
@@ -1330,27 +1330,27 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.png",
-        858031
+        857030
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.svg",
-        3149530
+        3150191
       ],
       [
         "reviews/whole-site-v3/02_corridors_and_phases.png",
-        828047
+        826958
       ],
       [
         "reviews/whole-site-v3/02_corridors_and_phases.svg",
-        3151440
+        3152101
       ],
       [
         "reviews/whole-site-v3/03_source_geometry.png",
-        843059
+        842333
       ],
       [
         "reviews/whole-site-v3/03_source_geometry.svg",
-        3205697
+        3206358
       ],
       [
         "reviews/whole-site-v3/README.md",
@@ -1526,7 +1526,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/render_whole_site_en.py",
-        11991
+        12205
       ],
       [
         "tools/repair_geometry.py",

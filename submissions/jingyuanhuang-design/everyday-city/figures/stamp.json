@@ -1,16 +1,16 @@
 {
   "script": "scripts/make_figures.py",
   "script_version": "1.2.0",
-  "input_sha256": "027832c6bafd968a5b997074ce478cb2b53aee5fc5a7c24d925570b74d41d8ab",
+  "input_sha256": "360ffb821b2314d64283025a53bbbe71bd359621ffdee7b3415b11e27eeb3b17",
   "files": {
-    "figures/fig-01-structure.png": "e0a745ba5b12e97d444215c6d364754829d592b8e59c9dce0196bf208ab30486",
-    "figures/fig-02-master-plan.png": "ed1d5168786cafe05a5169023c4ab4abc503fc9890a7ae94b01b24b404433572",
-    "figures/fig-03-land-use-density.png": "1583b7b9b9c1b8fdfb1f7e4540ff1a835c0b4e53536ea2fd168d755af371f0b0",
-    "figures/fig-04-movement.png": "8dd3bf569a18be6ffd998d08d71e5e66c01036dbde5aa3a2c5f62e0923a92388",
-    "figures/fig-05-open-space-water.png": "02fbf9fba314a9dbdb9c004d827aee53718f855e948052f01db144877e79c114",
-    "figures/fig-06-phasing.png": "bf3226ace7f9e211afadff0e29a04d85628b5bbc11d8ce99b78df023312315be",
-    "figures/fig-07-metrics.png": "d0ac8d706e22db685b8aeedf9b20c63cd6a965734a378d53d2367e665b6b287b",
-    "figures/fig-08-node-location.png": "95ef210d96378850fcfbcefbe4136d5ed44823e350d2e3b68a2e22db7f5b6680",
+    "figures/fig-01-structure.png": "44ae5f4e7b52d22bde5ac8a7fc1f09d5ea0fff67cb31b65d9e45654783661801",
+    "figures/fig-02-master-plan.png": "ef78b35578136415d7d44bc10968d1f2621802bf5b887cdad4e6c6362b6d0545",
+    "figures/fig-03-land-use-density.png": "4593aa9c071c12f89427ca26e49f4d48a3bf8b35b46b21e81c258f615d13ef6d",
+    "figures/fig-04-movement.png": "9c9e3868de071bd3a1b7bfa3fab5940a608650bb6581dc79a558aad050658558",
+    "figures/fig-05-open-space-water.png": "61212ce4afaeab1084b2aeb0c361c018cba0d6965ff8320db420cf4491ce43b3",
+    "figures/fig-06-phasing.png": "b1117cdf3ac22bb7d21949853976f6250df873f7727213ddb7102bc7a8c5bde4",
+    "figures/fig-07-metrics.png": "22a4a776019db67b99415a26b9178cd81ac3b63bea4f9d67a562c132abb1ae25",
+    "figures/fig-08-node-location.png": "2332b26c769e4487c03fe9d9a928dba696496b034a183dd374e52233b3f9e349",
     "figures/node-A01-plan.png": "75b2457f17a19229e4790c98e4b0fc45166aed502fae331fecee53f8ac467548",
     "figures/node-A01-aerial.png": "d16e648b67f3699620fdbe9d8487e0a6caa0915bfd8aee29931a587a3c6f46c3",
     "figures/node-A01-eye.png": "db2f1abc6ed3a30e9eca6495aa1cfa0bdd5f444612019d9937c860b580ebab48",
@@ -20,9 +20,9 @@
     "figures/node-C02-plan.png": "6b8793eeee90796fe6a3b8e9f94234f57ac0a6783e1088032f574a960ef30915",
     "figures/node-C02-aerial.png": "e6234874fdd7b43db6fab92656e19bd7f5788d2f46bbea1ef1614d09d13c2b80",
     "figures/node-C02-eye.png": "ddea07e48a958efe89b886c23cffb02a2bdb0878200accf24a6876423fbdd80d",
-    "drawings/a3-booklet.pdf": "2b184c7a8fb86d6946384532a30ba5077ebbcb35062cff02657091c9ef7cd80a",
-    "drawings/a3-technical-appendix.pdf": "f732f661e594e58e4a4662426eb9724ed9baba50d7a51000e33c18a585754746",
+    "drawings/a3-booklet.pdf": "fbecb0286f9b93541b30469af426a8640c5cbce760dac28f91cf36ac64a500e4",
+    "drawings/a3-technical-appendix.pdf": "8d7c91cf1f8042180e306f934dff37d678f721bdc03afde547e2b65598695411",
     "drawings/presentation-index.json": "38451ef65f960de0eea9d9d42cece9bb8cfc82684eaf3681f7d296d52014d0c7",
-    "drawings/a0-board.pdf": "0493b90c34b7b79f107bf25ef7bd0658d0655683112957b6238eae9c24ef4083"
+    "drawings/a0-board.pdf": "a6aedb8e3d11a56953bbd25362ae59dff27744de699606bf8ec07ffd7a4965b5"
   }
 }

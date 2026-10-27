@@ -26,7 +26,7 @@ The organiser’s issued machine-readable site package is in this folder. Docume
 
 | | |
 |---|---|
-| Site | Nominal competition area 1,656 km² (retained label, not a new rounding); revised union 1,656.684229 km² (Parcel A 1,483.844674 · Parcel B 172.839555); see boundary revision |
+| Site | Nominal competition area 1,656 km² (retained label, not a new rounding); current geometric area and parcel areas are recorded in `boundaries/boundary-revision.json`; the nominal project label is not the measured geometric area |
 | Pilot area | three fields, 13.9 km², and a living quarter, phase 1, 2.48 km², inside the south-west parcel |
 | Slope < 2% | 1,183 km² |
 | Slope ≥ 25% (mountain) | 127 km², mostly the Pie de Palo range in the south-east of the main parcel |
@@ -90,10 +90,10 @@ For all gaps: explain a viable scenario and sensitivity, identify what could cha
 
 ### 资料判读（中文摘要）
 
-固定条件、初步筛选、参考意向与参赛者假设必须分开标注。边界采用 `2026-10-27-seam-closure` 内部缝隙拓扑整理版：合并外轮廓不变，两个内部狭缝填合、局部重叠去除；这不等于地籍或测量精度已核实。洪泛敏感范围不是湖泊、设计洪水边界或全域永久禁建区；季节沟道也不是已落实的水源。农光场与既定生活区分别分类；生活区仅公布外轮廓，不应虚构内部建筑、现状人口和市政能力。道路距离为边界至道路的直线距离，不是可实施道路长度。供水、电力、现状设施、地形和水文缺失资料必须明确列出，并说明假设、方案影响与下一步核实方式；文字说明不能替代真实资料。
+固定条件、初步筛选、参考意向与参赛者假设必须分开标注。边界采用 `2026-10-27-open-seam-closure` 修订：仅修复9/13接合处获授权的开放狭缝，其他外边保留；同时保留此前内部孔洞填合与局部重叠整理。当前几何面积、各地块面积及版本以 `boundaries/boundary-revision.json` 为准，项目名义面积仍约1,656 km²；这不等于地籍或测量精度已核实。洪泛敏感范围不是湖泊、设计洪水边界或全域永久禁建区；季节沟道也不是已落实的水源。农光场与既定生活区分别分类；生活区仅公布外轮廓，不应虚构内部建筑、现状人口和市政能力。道路距离为边界至道路的直线距离，不是可实施道路长度。供水、电力、现状设施、地形和水文缺失资料必须明确列出，并说明假设、方案影响与下一步核实方式；文字说明不能替代真实资料。
 
 ## Current boundary revision
 
-Use `boundaries/boundary-revision.json` revision `2026-10-27-seam-closure`, not an archived source. The combined exterior remains unchanged, two internal seams are filled and the parcel overlap is removed. The revised geodesic union is 1,656.684229 km²; older terrain raster cell totals are a separate method/version and must not silently be presented as recalculated under this revision. The revision date is a topology-edit date, not a survey acquisition date. Exchange KML/KMZ and archive details are in `boundaries/README.md`.
+Use the current `boundaries/boundary-revision.json` revision `2026-10-27-open-seam-closure`, not an archived source. Only the authorised open seam at parcels 9/13 is repaired; other outer edges are retained. The prior internal-hole closure and overlap removal are retained. Read the current geodesic union and parcel areas from that revision record; nominal project area remains about 1,656 km²; older terrain raster cell totals are a separate method/version and must not silently be presented as recalculated under this revision. The revision date is a topology-edit date, not a survey acquisition date. Exchange KML/KMZ and archive details are in `boundaries/README.md`.
 
 The retained 1,656 km² competition label is nominal. Newly closed seam land is not automatically flood-safe: the historic hydraulic screening model has not been extended merely by closing geometry. Consult the terrain summary revision notes before using slope or screening statistics for the added seam.

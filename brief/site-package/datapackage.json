@@ -2,7 +2,7 @@
   "profile": "data-package",
   "name": "xcity-ai-competition-site-package",
   "title": "XCITY AI Competition - site package (the two parcels)",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
   "sources_file": "sources.json",
   "resources": [
@@ -11,18 +11,18 @@
       "path": "boundaries/parcels_9_13.geojson",
       "mediatype": "application/geo+json",
       "description": "Two issued competition parcels; internal seam closure, not cadastral verification",
-      "hash": "sha256:f9da3e6fe8e11f36a1f0abd1dd5a70bdc329d352d93ddb94af38dcf098aba0fc",
+      "hash": "sha256:9022b5b26d1b23f9188c4d63cc4b3bf142c47442a2d801388615809b7a881c97",
       "source": "SRC-KML",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "name": "scope_9_13",
       "path": "boundaries/scope_9_13.geojson",
       "mediatype": "application/geo+json",
       "description": "Site boundary (union)",
-      "hash": "sha256:225935fa106017e970cdc82f4910c50d7616e947c69f1a9dc62592c5a5fb3ca6",
+      "hash": "sha256:6390ce30a2335d45dd8438b48810c3feabeaa1b4b085fd8c2b7cb655daeced10",
       "source": "SRC-KML",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "name": "pilot_area",
@@ -109,7 +109,7 @@
       "path": "terrain/terrain_summary_9_13.json",
       "mediatype": "application/json",
       "description": "Slope, flood and elevation figures",
-      "hash": "sha256:a3defe4decd67fad4cbacbee0451a70c389cadcc93a3a84e8243ffe9f7c192d4",
+      "hash": "sha256:33744e08023da8e91919473b889175ed115e028f375126d4de6eed1848386527",
       "source": "SRC-DEM"
     },
     {
@@ -132,10 +132,10 @@
       "path": "areas.json",
       "mediatype": "application/json",
       "description": "Every area figure, one place",
-      "hash": "sha256:fc93401e79afb066e8b9edef4ac0dfce3ff91299048f4619454ee05622a5802c"
+      "hash": "sha256:b61ad455fbe33395c3dee8f7b9b4e0fa83be8f606a1a0b8d249ac03a2996acab"
     }
   ],
-  "boundary_revision": "2026-10-27-seam-closure",
+  "boundary_revision": "2026-10-27-open-seam-closure",
   "evidence_index": "evidence-index.json",
   "evidence_schema": "../../schema/site-evidence.schema.json"
 }

@@ -23,6 +23,8 @@ def load(path):
 def source(path):
     return unary_union([g for (_, g) in load(S / path)])
 scope = source('boundaries/scope_9_13.geojson')
+boundary_record=json.loads((S/'boundaries/boundary-revision.json').read_text())
+seam_patch=transform(t,shape(boundary_record['open_seam_patch']))
 pilot = source('pilot-area/pilot_area.geojson')
 living = source('pilot-area/pilot_living_area.geojson')
 flood = source('water/flood_sensitive_dem.geojson').intersection(scope)
@@ -86,6 +88,7 @@ def basemap(ax, mode):
     ax.set_facecolor(BG)
     for (g, k, n) in zones:
         fill(ax, g, COL[k] if mode != 'geometry' else '#D9DDD7' if k == 'protect' else '#F8F6F0', edge='#B6C4BA' if k == 'floodstudy' else '#A0A8A4' if mode == 'geometry' else None, lw=0.25 if mode == 'geometry' else 0, hatch='....' if k == 'floodstudy' else None)
+    fill(ax,seam_patch,'#D5D5CB',edge='#85877C',lw=0.3,hatch='///')
     lines(ax, channels, '#7D9B9A', 0.6, alpha=0.7)
     lines(ax, scope.boundary, INK, 1.7)
     lines(ax, pilot.boundary, '#52683B', 1.5)

@@ -11,7 +11,7 @@
 
 The authoritative node catalogue is `brief/site-package/nodes/design_nodes.json`. Manifest validation and `scripts/node_selection.py` use that catalogue. The schema rejects unknown IDs; the selector enforces one per group for every package. The gallery provides both IDs and readable names. English declaration is machine checked; language in raster drawings also needs human review.
 
-Existing source assets, references, filenames, node properties and generated public deliverables are migrated together. No spatial redesign is inferred from a new label. Current boundaries remain the issued seam-closed version, with the exterior unchanged.
+Existing source assets, references, filenames, node properties and generated public deliverables are migrated together. No spatial redesign is inferred from a new label. Current boundaries use the issued open-seam closure: only the authorised parcel-junction slit is filled; the remaining exterior is retained. The exact geometry area and revision are recorded in the boundary package.
 
 ## Example status and next step
 

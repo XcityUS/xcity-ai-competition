@@ -2,21 +2,35 @@
   "$schema": "../schema/gallery.schema.json",
   "version": 1,
   "status": "call_not_open",
-  "note_en": "Merge is not publication. A scheme appears in the gallery only when the review team records it here with the sha256 of the version it reviewed (scripts/self_check_submission.py prints it). If the package changes afterwards, the entry no longer matches and is not shown until it is reviewed again.",
+  "note_en": "A publication fingerprint identifies the exact version displayed. Explicitly authorised public previews may be displayed before design review; their publication basis and not_assessed status must be stated. Automatic compliance is never design approval.",
   "published": [
     {
       "path": "submissions/jingyuanhuang-design/finite-water-city",
-      "reviewed_package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
+      "reviewed_package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
       "published_at": "2026-10-26",
-      "featured": false
+      "featured": false,
+      "design_content_review": "not_assessed",
+      "administrative_refresh": {
+        "date": "2026-10-27",
+        "boundary_revision": "2026-10-27-open-seam-closure",
+        "previous_publication_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
+        "note": "Source-map and English-display refresh only. No design content approval is implied."
+      },
+      "publication_basis": "Organiser-authorised public display. Current source maps and English deliverables refreshed; independent design review not assessed."
     },
     {
       "path": "submissions/jingyuanhuang-design/everyday-city",
-      "reviewed_package_sha256": "974f421d9fff574f00a7b57d102b8ea234f9a422d593a3871d402e220e110422",
+      "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
       "published_at": "2026-10-27",
       "featured": true,
       "publication_basis": "Explicit author/maintainer request for public preview and homepage display after reviewing the new proposal. Automatic compliance only; independent design content not assessed.",
-      "design_content_review": "not_assessed"
+      "design_content_review": "not_assessed",
+      "administrative_refresh": {
+        "date": "2026-10-27",
+        "boundary_revision": "2026-10-27-open-seam-closure",
+        "previous_publication_sha256": "383157149f7fda6c33aa54e7f4acf4ddcd7ae73572c4f213579ef3815c4bf401",
+        "note": "Source-map and English-display refresh only. No design content approval is implied."
+      }
     }
   ]
 }

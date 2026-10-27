@@ -77,7 +77,7 @@
   "render_rules": "Preserve footprints, storeys, street positions, camera and terrain. No lakes, ornamental canals, lawns, skyscrapers or lush forest. All images are concept illustrations.",
   "scene_seed": 245,
   "booklet": {
-    "cover": "media/cover-render-v5.png",
+    "cover": "media/city-aerial.png",
     "pages": [
       {
         "path": "reviews/full-v6/01-site-reading.png",

@@ -9,6 +9,11 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.utils import ImageReader
 from pypdf import PdfReader
 ROOT=Path(__file__).resolve().parents[2]; O=Path(__file__).resolve().parent; F=O/'assets/en'; IMG=O/'assets/products'; OUT=ROOT/'brief/design-practice-brief.en.pdf'
+# Read the issued boundary revision at build time; do not freeze geometry area in prose.
+BOUNDARY_REVISION=json.loads((ROOT/'brief/site-package/boundaries/boundary-revision.json').read_text())
+BOUNDARY_AREA=float(BOUNDARY_REVISION['revised_scope_geodesic_km2'])
+BOUNDARY_VERSION=BOUNDARY_REVISION['revision']
+
 pdfmetrics.registerFont(TTFont('Arial','/System/Library/Fonts/Supplemental/Arial.ttf'))
 W,H=841.92,595.92;BG='#F7F5F0';INK='#262626';BODY='#363634';GRAY='#8A877F';LINE='#D2CFC6';page=0;checks=[];c=canvas.Canvas(str(OUT),pagesize=(W,H));c.setTitle('XCITY | Masterplanning and Urban Design Competition | Professional Practice Design Brief');c.setAuthor('XCITY');c.setSubject('Initial ideas of up to 10 pages; five shortlisted teams; US$300,000 in design honoraria and awards')
 def rect(x,y,w,h,col,stroke=None):
@@ -28,7 +33,7 @@ def base(section,title):
  page+=1;rect(0,0,W,H,BG);txt(section,50,41,8,GRAY)
  size=25
  if pdfmetrics.stringWidth(title,'Arial',size)>742:size=742/pdfmetrics.stringWidth(title,'Arial',1)
- txt(title,50,67,size,INK);txt('XCITY · PROFESSIONAL PRACTICE TRACK · DESIGN BRIEF · 26 OCT 2026',50,564,7,GRAY);txt(f'{page-1:02}',783,564,7,GRAY)
+ txt(title,50,67,size,INK);txt('XCITY · PROFESSIONAL PRACTICE TRACK · DESIGN BRIEF · 27 OCT 2026',50,564,7,GRAY);txt(f'{page-1:02}',783,564,7,GRAY)
  c.bookmarkPage(f'p{page}');c.addOutlineEntry(title or 'XCITY',f'p{page}',0)
 def image(name,x,y,w,h):
  p=Path(name);p=p if p.is_absolute() else F/p
@@ -101,7 +106,7 @@ roads=json.loads((O/'analysis.json').read_text())['road_straight_distance_km']
 for i,(a,b,k) in enumerate([('RN 40','North–south regional route','RN40'),('RN 20','San Juan and eastern links','RN20'),('RN 141','Eastern regional connection','RN141'),('RN 150','Regional connection towards Chile','RN150'),('RP 510','Eastern provincial road','RP510')]):
  y=330+i*30;txt(a,425,y,9);txt(b,485,y,8.6);txt(f'{roads[k]:.1f} km',735,y,9);line(y+23,425,367)
 para('Distances are the shortest straight-line measurements from the site boundary to each road, not driving distances. Proposals must assess access routes, rights and enabling works.',425,491,367,8.5)
-para('Satellite mosaic: Esri World Imagery; credits are shown on the image. Accessed 26 October 2026. Acquisition dates vary across the mosaic. The yellow line marks the competition display boundary.',50,512,345,7.5,GRAY)
+para('Satellite mosaic: Esri World Imagery; credits are shown on the image. Accessed 27 October 2026. Acquisition dates vary across the mosaic. The yellow outline is drawn from the current open-seam-closure GeoJSON.',50,512,345,7.5,GRAY)
 c.linkURL('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',(50,H-545,395,H-510))
 #08
 base('04 · THE SITE','Early works area')
@@ -123,7 +128,7 @@ txt('Elevation: approximately 636–1,354 m',50,436,10,INK);txt('5th–95th perc
 txt('Slope classes within the competition area',444,436,10,INK)
 for i,(col,t) in enumerate([('#DAD7AD','<2%: ~1,183.6 km²'),('#A7B790','2–5%: ~182 km²'),('#A88B61','5–15%: ~132 km²'),('#666254','>15%: ~158 km²')]):
  x=444+(i%2)*177;y=465+(i//2)*26;rect(x,y+3,10,8,col);txt(t,x+16,y,9)
-para('Boundary seams closed; external outline unchanged. Geometry 1,656.684 km²; project nominal area 1,656 km². This is not cadastral verification. Terrain: Copernicus GLO-30 DEM, 60 m grid, 300 m slope smoothing; raster areas are indicative.',50,520,742,7.7,GRAY)
+para(f'Only the authorised open seam at parcels 9/13 is repaired; all other outer edges are retained. Geometry {BOUNDARY_AREA:,.6f} km² ({BOUNDARY_VERSION}); nominal project area about 1,656 km², not cadastral verification. Terrain: Copernicus GLO-30 DEM; 60 m grid, 300 m slope smoothing; raster areas indicative.',50,520,742,7.7,GRAY)
 #11
 base('05 · EXISTING CONDITIONS','Hydrology and preliminary development suitability')
 for i,(name,title) in enumerate([('drainage.png','Seasonal drainage'),('flood-screen.png','Flood sensitivity screening'),('buildable-screen.png','Preliminary suitability screening')]):

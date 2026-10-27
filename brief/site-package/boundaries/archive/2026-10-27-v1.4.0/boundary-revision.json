@@ -1,0 +1,34 @@
+{
+  "revision": "2026-10-27-seam-closure",
+  "authorisation": "Organiser instruction: close the gap between the two supplied parcels and update every issued format. This is a competition-data topology revision, not cadastral certification.",
+  "method": "Retain the exact existing union exterior, fill its two internal seam holes, retain Parcel A, assign the filled seam to Parcel B and remove the original overlap from Parcel B. No buffering or external outline movement.",
+  "original_parcel_ids": {
+    "main": "Parcel A (original 9)",
+    "south-west": "Parcel B (original 13)"
+  },
+  "original_scope_geodesic_km2": 1656.3798107486482,
+  "revised_scope_geodesic_km2": 1656.6842294864746,
+  "added_internal_seam_geodesic_km2": 0.3044187378263814,
+  "removed_external_area_km2": 0,
+  "projected_exchange_note": "SHP/DXF are EPSG:32719 metre-coordinate chord representations of the WGS84 rings. The shared seam is re-reconciled in that CRS to remove millimetre-width projection self-intersections; symmetric-difference tolerance against directly projected WGS84 polygons is 20 m2. Scope and parcel union coincide and parcel overlap is zero within 0.01 m2 in the export CRS.",
+  "external_outline_unchanged": true,
+  "external_outline_reference": "Exact union exterior of archived owner-supplied parcel coordinates. Previous scope file rounded intersection coordinates; numerical exterior difference is below 0.1 m.",
+  "original_hole_count": 2,
+  "revised_hole_count": 0,
+  "original_holes_projected_m2": [
+    19427.996271330347,
+    284780.20980251255
+  ],
+  "original_overlap_projected_m2": 13191.618536615233,
+  "revised_overlap_m2": 0,
+  "parcels_geodesic_km2": [
+    1483.8446740603436,
+    172.83955541471775
+  ],
+  "archive": "archive/2026-10-26",
+  "legacy_submissions": "Existing submissions are not rewritten; original boundary files remain archived. New generated outputs use this revision.",
+  "sha256": {
+    "parcels_9_13.geojson": "f9da3e6fe8e11f36a1f0abd1dd5a70bdc329d352d93ddb94af38dcf098aba0fc",
+    "scope_9_13.geojson": "225935fa106017e970cdc82f4910c50d7616e947c69f1a9dc62592c5a5fb3ca6"
+  }
+}

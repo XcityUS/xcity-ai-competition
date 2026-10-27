@@ -387,6 +387,13 @@
       "drawing_annotations",
       "legends"
     ],
-    "working_language": "unrestricted"
+    "working_language": "unrestricted",
+    "gallery_follows_interface_language": false,
+    "review_translation": {
+      "language": "zh",
+      "prepared_by": "organiser",
+      "clearly_labelled": true,
+      "retain_english_original": true
+    }
   }
 }

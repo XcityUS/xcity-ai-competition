@@ -20,3 +20,8 @@ Synced upstream c60cd1d: revised seam-closed organiser boundary, current grouped
 
 ## 2026-10-27 — Administrative node and publication-language migration
 Migrated current node identifiers to A/B/C group codes (A03, B03 and C03) and current public proposal, authored diagrams and booklet captions to English. Working-language archives and exact historical image prompts remain as provenance. This is an administrative/presentation migration, not a new spatial design or a content-review pass. Canonical design geometry and node positions are unchanged; current organiser-generated scene, controls, PDFs, HTML and checks must be regenerated together by the maintainer before publication.
+
+
+## 2026-10-27 source boundary correction
+
+Reference maps now read the open-seam closure boundary. The added junction slit is hatched as not yet covered by the prior hydrology screening. This is a source-map refresh; no buildings, node locations, capacities or land-use proposals are moved, and no design approval is implied.

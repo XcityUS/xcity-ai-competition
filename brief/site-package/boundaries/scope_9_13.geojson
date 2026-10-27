@@ -8,21 +8,17 @@
       "properties": {
         "id": "SCOPE-9-13",
         "name_en": "XCITY AI Competition site: the two parcels",
-        "area_km2": 1656.684229,
+        "area_km2": 1658.819819,
         "area_9_km2": 1483.844674,
-        "area_13_km2": 172.839555,
-        "geometry_source": "union of revised competition parcels; internal seam holes closed; external union outline unchanged",
+        "area_13_km2": 174.975145,
+        "geometry_source": "union of revised competition parcels; internal holes and externally connected seam closed with recorded four-point patch",
         "confidence": "issued competition boundary; not surveyed/cadastral verification",
-        "boundary_revision": "2026-10-27-seam-closure"
+        "boundary_revision": "2026-10-27-open-seam-closure"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              -68.05617,
-              -31.212494
-            ],
             [
               -68.072032,
               -31.222793
@@ -256,14 +252,6 @@
               -31.085134
             ],
             [
-              -68.260011,
-              -31.133475
-            ],
-            [
-              -68.25995938054892,
-              -31.140030670287963
-            ],
-            [
               -68.224809,
               -31.089706
             ],
@@ -274,6 +262,10 @@
             [
               -68.05617,
               -31.212494
+            ],
+            [
+              -68.072032,
+              -31.222793
             ]
           ]
         ]

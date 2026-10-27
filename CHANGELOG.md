@@ -1,5 +1,9 @@
 ## 2026-10-26 · Current consolidated rules and private materials upload
 
+## 2026-10-27 — close the remaining outside-connected parcel seam
+
+The earlier hole-only correction left an open slit at the parcel junction. The explicit four-point patch now closes that slit; all formats, maps, satellite overlays, bilingual briefs and the stage-one ZIP are regenerated. The regression checks the mouth transect and points inside the formerly omitted slit rather than relying only on a no-holes test. Exact revised geometry area is 1,658.819819 km²; nominal project area remains about 1,656 km². New seam land is not assumed hydrologically safe.
+
 ## 2026-10-27 — grouped node IDs and English public deliverables
 
 All node references use A/B/C identifiers with readable names. Earlier node-number aliases and selection exemptions are removed. Final public deliverables must be English; working language remains unrestricted. The organiser example is explicitly inactive pending redesign, without a compliance pass. See [migration note](docs/node-and-language-update.md).

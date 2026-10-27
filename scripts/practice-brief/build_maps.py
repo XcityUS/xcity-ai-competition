@@ -72,6 +72,8 @@ fig,ax=base(streams=False,road=False);flat=mask&(slope<2);
 # Newly closed seam land has no rerun HAND classification: do not colour it confirmed flat/non-flood.
 original_scope=transform(to_utm,geometries('boundaries/archive/2026-10-26/scope_9_13.geojson')[0])
 for gap in original_scope.interiors:flat &= ~MPath(np.asarray(gap.coords)).contains_points(np.c_[gx.ravel(),gy.ravel()]).reshape(dem.shape)
+seam=read('boundaries/boundary-revision.json').get('open_seam_patch')
+if seam:flat &= ~MPath(np.asarray(shape(seam).exterior.coords)).contains_points(np.c_[gx.ravel(),gy.ravel()]).reshape(dem.shape)
 ax.imshow(np.ma.masked_where(~flat,np.ones(dem.shape)),extent=ext,cmap=ListedColormap(['#84A478']),vmin=0,vmax=1,zorder=3);fill(ax,flood,BG,1,4);lines(ax,[site],INK,.9,6);embellish(ax);save(fig,'buildable-screen.png')
 systems=read('zoning/indicative_systems_9_13.json')['systems']
 def drawsystem(ax,name):

@@ -3,24 +3,24 @@
   "figures": [
     {
       "key": "site",
-      "km2": 1656.7,
+      "km2": 1658.8,
       "basis": "scope_9_13.geojson, geodesic",
       "say": "1,656 km² (nominal project area)",
-      "boundary_revision": "2026-10-27-seam-closure",
+      "boundary_revision": "2026-10-27-open-seam-closure",
       "nominal_area_km2": 1656,
-      "geometry_area_km2": 1656.6842294864746
+      "geometry_area_km2": 1658.8198189675963
     },
     {
       "key": "parcel_main",
       "km2": 1483.8,
       "basis": "parcels_9_13.geojson, geodesic",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "parcel_southwest",
-      "km2": 172.8,
+      "km2": 175.0,
       "basis": "parcels_9_13.geojson, geodesic",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "pilot_area_outline",
@@ -39,33 +39,33 @@
     },
     {
       "key": "slope_lt_2pct",
-      "km2": 1183.6,
+      "km2": 1185.7,
       "basis": "terrain_summary_9_13.json",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "slope_2_5pct",
       "km2": 182.2,
       "basis": "terrain_summary_9_13.json",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "slope_5_15pct",
       "km2": 131.8,
       "basis": "terrain_summary_9_13.json",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "slope_15_25pct",
       "km2": 31.3,
       "basis": "terrain_summary_9_13.json",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "slope_ge_25pct",
       "km2": 126.7,
       "basis": "terrain_summary_9_13.json",
-      "boundary_revision": "2026-10-27-seam-closure"
+      "boundary_revision": "2026-10-27-open-seam-closure"
     },
     {
       "key": "flood_sensitive",

@@ -37,7 +37,7 @@ def end():
 header('Geometry and method audit');qa=json.loads((P/'report/geometry-qa.json').read_text());y=H-100
 for k in ['source_commit','source_boundary_revision','phase_one_planar_km2','housing_buildings','dwellings','residents_scenario','jobs_scenario','interfaces','buildings','people_path_building_conflict_m','building_fixed_overlap_m2','building_channel_screen_overlap_m2','building_flood_screen_overlap_m2','land_partition_gap_m2']:
  c.setFont('Helvetica',12);c.drawString(45,y,k);c.drawString(420,y,str(qa.get(k)));y-=26
-p=Paragraph('Planar areas and geodesic published metrics have different methods. Flood and channel tests use issued preliminary screening. A/B/C IDs follow the human instruction; the current organiser checker remains unmigrated. No PASS 12/12 or public submission is claimed.',style);p.wrap(W-100,150);p.drawOn(c,45,85);end()
+p=Paragraph('Planar areas and geodesic published metrics have different methods. Flood and channel tests use issued preliminary screening. A/B/C IDs follow the current brief. Automatic file, geometry and numerical checks are separate from independent design review; no design approval is claimed.',style);p.wrap(W-100,150);p.drawOn(c,45,85);end()
 for key in ['district','A01','B03','C02']:
  header(key+' / original geometry control');p=P/'media/controls'/f'{key}-aerial.png';c.drawImage(str(p),45,85,width=W-90,height=H-190,preserveAspectRatio=True,anchor='c');end()
 for title,items in [('Declared assumptions',json.loads((P/'assumptions.json').read_text())['assumptions']),('Source and boundary record',[{'id':x['id'],'topic':x['title'],'value':x['url'],'basis':x['used_for']} for x in json.loads((P/'sources.json').read_text())['sources']])]:
