@@ -1,7 +1,7 @@
 # Design Practice Call · Brief
 
 > Version: 26 October 2026. Registration closes 31 December 2026; complete applications close 31 January 2027, both at 23:59 UTC. Selection: February 2027.
-> Online application: https://xcityus.github.io/xcity-ai-competition/application.html
+> Online application: https://xcityus.github.io/xcity-ai-competition/practice.html#apply
 > Full illustrated Design Brief (31 pages): `brief/design-practice-brief.en.pdf`; Chinese: `brief/design-practice-brief.zh.pdf`. This page is the web guide to the call.
 
 XCITY runs two separate calls on one site. This one, the **Design Practice Call**, looks for urban design and planning practices able to propose a city of real spatial quality, and to take it further. The other, the Open Agent Call, tests whether an AI agent can plan on its own; it has its own brief and review. The two share the site and its conditions (**`brief/site-conditions.en.md`**) and are reviewed and ranked separately.
@@ -10,7 +10,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 |---|---|
 | Organiser | XCITY |
 | Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
-| Procedure | Two stages: register and prepare an online application, then submit it for selection; paid design by five shortlisted practices |
+| Procedure | Two stages: apply on the practice page and return the emailed form and materials for selection; paid design by five shortlisted practices |
 | Fees | None: there is no fee to apply or to take part |
 | Honorarium and prize | US$50,000 to each of the five for a compliant stage-two entry; US$50,000 more to one winner |
 | Languages | Stage 1 in English or Chinese; stage 2 in English |
@@ -26,7 +26,7 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Registration, draft preparation and final application.** Open to every practice that meets section 8, free of charge. Register basic institution and contact details through the online application service. This creates a private draft and management link; no initial ideas or attachments are required at registration. Return through that link to fill in the team and relevant experience, supply applicable evidence and prepare initial ideas of **up to 10 pages**. Save partial drafts and replace attachments before final submission. Registration and saving drafts are open now. Final submission is not open yet; its opening date will be announced. Once open, submit the complete application by 31 January 2027, 23:59 UTC. Registration, saving a draft and receipt of files do not constitute eligibility approval or shortlisting. The organiser checks eligibility first, then reviews eligible teams, experience and ideas and selects five. Stage one is unpaid. Register by 31 December 2026, 23:59 UTC. Every registered applicant has the same final application deadline of 31 January 2027, 23:59 UTC; selection of five teams is scheduled for February 2027.
+**Stage 1 · Application and email reply.** The call is not open yet; register interest on the official practice page with basic institution and contact information. Once open, apply on that page and XCITY will email the application form and material requirements. Return the completed form, applicable evidence, team and experience, and initial ideas of **up to 10 pages** to competition@xcity.ai. The organiser checks eligibility first, then assesses eligible teams, experience and ideas to select five. Stage one is free and unpaid. Registration closes on 31 December 2026, 23:59 UTC. Complete email replies are due by 31 January 2027, 23:59 UTC; five teams are selected in February 2027. Registration alone is not a complete stage-one application or shortlisting.
 
 The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the five are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
 
@@ -97,9 +97,9 @@ Each issue is placed in the whole-site plan and phase one, with its phase. Relat
 
 ## 5. What to send at stage 1
 
-One online application, comprising form information and applicable attachments. Applicants do not need to merge every item into a single PDF or prepare the ideas before registering.
+One email reply with the completed application form and applicable attachments or links. Applicants do not need to merge every item into a single PDF or prepare the ideas before registering.
 
-**① Institution, team and evidence.** Fill in the text fields, then upload files or provide the accepted alternative below.
+**① Institution, team and evidence.** Complete the emailed form and provide files or the accepted alternatives below.
 
 | Item | How to provide it | What is checked |
 |---|---|---|
@@ -109,9 +109,9 @@ One online application, comprising form information and applicable attachments. 
 | Actual team and roles | Form text identifying lead, key members, disciplines and responsibilities | Who will do the work and how expertise is covered |
 | Relevant projects | Portfolio file or project links; state location, scale, year, status and actual role | Relevant experience and attributable contribution |
 | Consortium, if applicable | Signed consortium agreement or signed statement of members, lead and roles | Who applies together and who leads |
-| Declaration and private review notice | Confirm at final submission | Accuracy, project credits, conflicts and permission to store the application privately for review |
+| Declaration and private review notice | Include with the returned form | Accuracy, project credits, conflicts and permission to store the application privately for review |
 
-Ordinary electronic copies or scans are sufficient for the application; notarisation, certification and paper originals are not requested at this stage. Further verification may be requested before appointment. For file fields use PDF, PNG or JPG as indicated, no more than 10 MB per file and 25 MB across all application files. Files are private to authorised reviewers and are not published with the public repository. Keep the management link: its holder can access and edit the draft. The service does not automatically send an email. Contact competition@xcity.ai if help or a correction after final submission is needed.
+Ordinary electronic copies or scans are sufficient; notarisation, certification and paper originals are not requested at this stage. Further verification may be requested before appointment. Follow the attachment instructions in the application email. Materials are private to authorised reviewers and are not published in the public repository. Contact competition@xcity.ai for assistance or corrections.
 
 **② Initial ideas, up to 10 pages** (a slide deck is fine). Only the reading of the site, the design direction and the way of working. Suggested content:
 
@@ -169,11 +169,11 @@ The call is open to practices that meet the eligibility requirements. All applic
 
 **There is no application fee.**
 
-1. **Read and register.** Download the current brief and stage-one site data. Create an online application with basic institution and contact information. No concept or attachment is needed yet.
-2. **Prepare and save.** Keep the private management link. Complete the team and experience fields, upload applicable evidence or links, and add an initial-ideas PDF of up to 10 pages. Save partial drafts and return later.
-3. **Submit the final application.** When final submission opens, and by 31 January 2027, 23:59 UTC, confirm the declarations and submit the complete application. The receipt confirms storage, not eligibility or shortlisting. The organiser first checks eligibility, then assesses the eligible teams, experience and ideas and selects five for paid design. Registration closes on 31 December 2026, 23:59 UTC; already registered applicants can continue saving and submit until the January deadline. Five teams will be selected in February 2027.
+Read the current brief and stage-one site data. Register interest on the practice page before the call opens. Once applications open, apply there; we will send the application form and material requirements by email. Complete the form, attach applicable evidence and initial ideas of up to 10 pages, and reply to competition@xcity.ai for stage-one review.
 
-Optional “receive updates” on the main and Agent pages concerns updates only. Applicants are not automatically subscribed. The practice page has one application path.
+Register by 31 December 2026, 23:59 UTC; return all materials by 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027. All applicants follow the same eligibility and selection criteria. The current registration form requires no attachments.
+
+Optional updates on the main and Agent pages remain separate from institution applications.
 
 ## 10. Honorarium, jury and terms
 
@@ -188,6 +188,6 @@ The later Stage 2 dates (briefing, design submission, presentations and results)
 
 ## 12. Materials
 
-- **Stage 1:** this brief, the online application service and the stage-one site data (`brief/design-practice-stage1-data.zip`: site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps), all on the call's web page.
+- **Stage 1:** this brief, the practice-page registration form and stage-one site data (`brief/design-practice-stage1-data.zip`: site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps), all on the call's web page.
 - **Stage 2:** the full site package (boundaries, pilot area, terrain, channels, roads, indicative systems), an online briefing and written answers, for the shortlisted teams.
 - Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.
