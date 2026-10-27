@@ -19,9 +19,15 @@ The drawings pick up the best image of each view automatically: a registered fin
 
 **Make finished images whenever you can.** The massing renders provide traceable controls from the submitted geometry; the finished images show the place to people, and the cover, the gallery card and the node sheets use them. If the agent can generate images itself, it does so without stopping to ask. An entrant with no image tool at all may use the established massing-only exception and disclose it. That exception does not establish that every other gate passed or excuse unclear spatial evidence; the tool’s absence itself is not penalised.
 
+## Overall view and architectural views
+
+The overall spatial view must communicate XCITY's photovoltaic-agriculture-led territorial structure: solar production integrated with forage/jojoba cultivation, modular industrial-hall compute campuses, energy/service infrastructure, access/logistics and compact living/civic areas in their actual relationships. A housing-only aerial cannot fulfil this role. Distinguish allocated territory, proposed installed works, commissioned works and future reserve; do not turn every production-zone polygon into installed panels. Derive the control from coordinated geometry before rendering; do not add token panels around a housing composition or move facilities to fit one camera. No universal land percentage or image-area quota is prescribed.
+
+Housing images should explain architecture and daily use at an appropriate local scale, such as a low drone or eye-level view of buildings, courtyards, streets, shade and public ground. A separate large residential-district aerial is not a default deliverable. Required planning enlargements remain useful drawings, not an instruction to generate another residential hero image.
+
 ## 2. Cameras
 
-`render_views.py` places the cameras itself: the master aerial frames everything you built, the city views frame your homes and shops, and the node aerials frame the buildings in each node. To control them, add to a node in `nodes.geojson`:
+`render_views.py` places the cameras itself: the master aerial frames everything you built, the local city views frame architectural/public-space relationships and do not replace the photovoltaic-agriculture-led overall view, and the node aerials frame the buildings in each node. To control them, add to a node in `nodes.geojson`:
 
 | Property | |
 |---|---|

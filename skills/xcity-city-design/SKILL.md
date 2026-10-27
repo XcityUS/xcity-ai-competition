@@ -17,7 +17,7 @@ Separate fixed pilots, sourced terrain/channels/access, preliminary screening, o
 
 Estimate who lives/works here and what their day needs. Distinguish population capacity from demand, jobs from installed equipment, gross territory from serviced construction, and future opportunity from funded works. Use explicit scenarios when facts are missing. Do not let an arbitrary population target or a renderer's defaults decide the layout.
 
-Read `brief/production-conditions.en.md` for panel/crop/service geometry, POD campus interfaces, capacity definitions and mapped construction phases. Distributed nodes do not justify arbitrary intra-campus gaps.
+Read `brief/production-conditions.en.md` for panel/crop/service geometry, modular industrial-hall campus interfaces, capacity definitions and mapped construction phases. Distributed nodes do not justify arbitrary intra-campus gaps. The confirmed compute form is industrial halls with modular construction/equipment: design the buildings and internal servicing as well as the campus; POD references do not require a field of standalone containers.
 
 ## 2. Organise centres, movement and landscape together
 
@@ -62,6 +62,10 @@ Run file/geometry/number/version checks separately from content review. Inspect 
 ## 7. Present the decisions, not the spreadsheet
 
 The A0 board is visual-first: a clear overall spatial argument, dominant plan/axon, explanatory diagrams, spatially relevant node evidence and a concise phasing story. Keep only the few numbers needed to understand scale, capacity or a decisive constraint, with scope and evidence status. Put full district-by-phase population/jobs/dwelling accounts, detailed metrics, logs and source tables in the technical appendix/JSON/CSV. Do not replace a dense table with dozens of number badges. There is no fixed booklet page count, diagram quota or automatic score for more work.
+
+The overall spatial view must communicate XCITY's photovoltaic-agriculture-led territorial structure: solar production integrated with forage/jojoba cultivation, modular industrial-hall compute campuses, energy/service infrastructure, access/logistics and compact living/civic areas in their actual relationships. A housing-only aerial cannot fulfil this role. Distinguish allocated territory, proposed installed works, commissioned works and future reserve; do not turn every production-zone polygon into installed panels. Derive the control from coordinated geometry before rendering; do not add token panels around a housing composition or move facilities to fit one camera. No universal land percentage or image-area quota is prescribed.
+
+Housing images should explain architecture and daily use at an appropriate local scale, such as a low drone or eye-level view of buildings, courtyards, streets, shade and public ground. A separate large residential-district aerial is not a default deliverable. Required planning enlargements remain useful drawings, not an instruction to generate another residential hero image.
 
 Only make finished views after checking the organising geometry. Keep a matching control for each perspective; state geographic scope, camera/projection, phase and simplifications. Axons can be diagrammatic. Do not invent a camera, change geometry or relocate facilities to fit the picture. Final public title, narrative, labels, legends and images are English.
 
