@@ -1,9 +1,9 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.4.0",
-  "checked_at": "2026-10-27T16:18:52+00:00",
+  "checked_at": "2026-10-27T16:24:03+00:00",
   "package": "submissions/jingyuanhuang-design/finite-water-city",
-  "package_sha256": "3508b0d9b9180af397fb291f3e2139dccd71bac9bc46a6c39a2aeed8d1cc3b16",
+  "package_sha256": "d2a0a86a8df4398410c1b453abd1cf2b6de7d84468b7855e161452b18c9e2878",
   "gates_total": 12,
   "gates_passed": 8,
   "pass": false,

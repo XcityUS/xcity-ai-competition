@@ -1216,8 +1216,8 @@ window.XCITY_SUBMISSIONS = [
     "gates_passed": 8,
     "gates_pass": false,
     "design_content_review_status": "not_assessed",
-    "package_sha256": "3508b0d9b9180af397fb291f3e2139dccd71bac9bc46a6c39a2aeed8d1cc3b16",
-    "reviewed_package_sha256": "3508b0d9b9180af397fb291f3e2139dccd71bac9bc46a6c39a2aeed8d1cc3b16",
+    "package_sha256": "d2a0a86a8df4398410c1b453abd1cf2b6de7d84468b7855e161452b18c9e2878",
+    "reviewed_package_sha256": "d2a0a86a8df4398410c1b453abd1cf2b6de7d84468b7855e161452b18c9e2878",
     "published": true,
     "featured": false,
     "example": false,
@@ -1382,7 +1382,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "manifest.json",
-        6004
+        6033
       ],
       [
         "media/A03-aerial-v6.png",
