@@ -10,14 +10,14 @@ def path(g,T):
  rings=g['coordinates'] if g['type']=='Polygon' else [r for p in g['coordinates'] for r in p] if g['type']=='MultiPolygon' else []
  return ' '.join('M'+' L'.join('%.2f,%.2f'%T(*p[:2]) for p in ring)+' Z' for ring in rings)
 for lang in ['en','zh']:
- T=transform((-84,-57,-33,14),(50,65,390,540));U=transform((-72.7,-34.3,-66,-27.8),(650,70,480,535));v=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690"><defs><clipPath id="regional"><rect x="650" y="70" width="480" height="535"/></clipPath></defs><g font-family="Arial, sans-serif">']
+ T=transform((-84,-57,-33,14),(50,65,390,540));U=transform((-72.7,-34.3,-65.0229166667,-27.8),(650,70,550,535));v=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690"><defs><clipPath id="regional"><rect x="650" y="70" width="550" height="535"/></clipPath></defs><g font-family="Arial, sans-serif">']
  def label(x,y,s,size=15,c='#ddd8c8'):v.append(f'<text x="{x}" y="{y}" font-size="{size}" fill="{c}">{html.escape(s)}</text>')
  def draw(g,t,fill,stroke,width=.7):v.append(f'<path d="{path(g,t)}" fill="{fill}" stroke="{stroke}" stroke-width="{width}" fill-rule="evenodd"/>')
  for f in countries:
   if f['properties'].get('CONTINENT')=='South America':draw(f['geometry'],T,'#958c75' if f['properties'].get('ADMIN')=='Argentina' else '#363936','#77776c')
  sj=next(f for f in provinces if 'San Juan' in f['properties'].get('name',''))
  draw(sj['geometry'],T,'#cfac5b','#edcc7b',1)
- a,b=T(-72.7,-34.3);c,d=T(-66,-27.8)
+ a,b=T(-72.7,-34.3);c,d=T(-65.0229166667,-27.8)
  v.append(f'<rect x="{a}" y="{d}" width="{c-a}" height="{b-d}" fill="none" stroke="#d1ad60" stroke-width="1.5"/>')
  # End the locator on the actual western provincial outline at the same latitude.
  locator_y=(b+d)/2
@@ -39,7 +39,7 @@ for lang in ['en','zh']:
  label(50,660,'区域定位示意 · 放大图比例不同' if lang=='zh' else 'REGIONAL ORIENTATION · SCALES DIFFER BETWEEN VIEWS',13,'#9a9d8c')
  v.append('</g></svg>');(R/f'media/home-regional-context-{lang}.svg').write_text('\n'.join(v))
 p=R/'index.html';s=p.read_text();a=s.index('<div class="regional-maps">') if '<div class="regional-maps">' in s else s.index('<div class="regional-diagram">');b=s.index('<p class="regional-credit">',a)
-s=s[:a]+'''<div class="regional-diagram"><img class="zh-only" src="media/home-regional-context-zh.svg?v=20261027-dotted-boundary" alt="从南美洲定位至圣胡安省的放大区位图，标出XCITY场地" loading="lazy"><img class="en-only" src="media/home-regional-context-en.svg?v=20261027-dotted-boundary" alt="Connected regional diagram from South America to San Juan, locating the XCITY site" loading="lazy"></div>'''+s[b:]
+s=s[:a]+'''<div class="regional-diagram"><img class="zh-only" src="media/home-regional-context-zh.svg?v=20261027-right-aligned" alt="从南美洲定位至圣胡安省的放大区位图，标出XCITY场地" loading="lazy"><img class="en-only" src="media/home-regional-context-en.svg?v=20261027-right-aligned" alt="Connected regional diagram from South America to San Juan, locating the XCITY site" loading="lazy"></div>'''+s[b:]
 
 if '.regional-diagram{width:100%' not in s:s=s.replace('.regional-background{','.regional-diagram{width:100%;margin:24px 0}.regional-diagram img{width:100%;height:auto}.regional-background{',1)
 p.write_text(s)
