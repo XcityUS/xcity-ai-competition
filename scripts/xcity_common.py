@@ -227,13 +227,17 @@ def scene_input_hash(pkg):
     """What the 3D scene and its renders are drawn from: geometry/ and the manifest's title and render note.
     visual/index.html and renders/stamp.json record it; GATE-G10 recomputes it."""
     h = hashlib.sha256()
+    for source in ['scripts/make_scene.py','scripts/scene/scene.js']:
+        path=os.path.join(ROOT,source)
+        if os.path.isfile(path):h.update(source.encode()+b'\0'+Path(path).read_bytes())
+
     for rel in GEOMETRY_FILES:
         p = os.path.join(pkg, rel)
         h.update(rel.encode() + b"\0")
         if os.path.exists(p):
             h.update(open(p, "rb").read())
     man = load_json(os.path.join(pkg, "manifest.json"))
-    h.update(json.dumps({k: man.get(k) for k in ("title", "render_note", "scene_seed")}, sort_keys=True,
+    h.update(json.dumps({k: man.get(k) for k in ("title", "render_note", "scene_seed", "scene_generation")}, sort_keys=True,
                         ensure_ascii=False).encode())
     return h.hexdigest()
 

@@ -14,7 +14,7 @@
 
 ## 2. Complete phase one and urban-design enlargement
 
-**Useful evidence:** the first district plan locates housing, jobs, daily services, safe access, production logistics, water/waste/power and the first funded works. A block enlargement shows entrances and servicing, public/private edges, building heights, shaded walking and a decisive cross-section. Quantities reconcile with the same phase-one metrics. Explain what happens if phases two and three never happen.
+**Useful evidence:** the complete city plan locates every proposed district, housing, jobs, daily services, safe access, production logistics and water/waste/power across all phases. It then identifies the first funded works. A block enlargement shows entrances and servicing, public/private edges, building heights, shaded walking and a decisive cross-section. Quantities reconcile with the same phase-one metrics. Explain what happens if phases two and three never happen.
 
 **Insufficient:** a boundary labelled phase 1 enclosing housing blocks whose school, water plant, jobs and road exist only in phase 3. A set of building footprints without street edges, entrances, shade or public-space relationships cannot establish urban design.
 

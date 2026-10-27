@@ -10,7 +10,7 @@ Design the four connected levels first (`AGENTS.md`, `brief/design-depth.json`);
 
 | Step | Tool | Output | Needs |
 |---|---|---|---|
-| 1. 3D scene | `scripts/make_scene.py` (run by step 2) | `visual/index.html`: an offline three.js scene of your geometry on the real terrain, with sun, trees, people, robots and vehicles generated from it | Python only |
+| 1. 3D scene | `scripts/make_scene.py` (run by step 2) | `visual/index.html`: an offline three.js scene of your geometry on the real terrain, with terrain, submitted geometry and sun; optional illustrative additions require explicit opt-in | Python only |
 | 2. Massing renders | `scripts/render_views.py` | `renders/<view>.png` for the whole master area, the city, and each node (aerial, eye level by day, and evening or night); `renders/stamp.json` | Playwright + Chromium (software WebGL, no GPU) |
 | 3. Finished images (expected) | `scripts/ai_render.py` | `media/<view>.jpg`, registered in `image_provenance.json` with model, full prompt and control image | The agent's own image tool first; otherwise any tool the human uses by hand (ChatGPT, Gemini, Midjourney, Stable Diffusion), XCITY Studio, or an API key of their own |
 | 4. Drawings | `scripts/make_figures.py` | Required figures and shared locator, node sheets, main A3 booklet, technical appendix/page index and A0 board | Python only |
@@ -40,7 +40,7 @@ python scripts/ai_render.py <package> run --provider openai      # your own OPEN
 python scripts/ai_render.py <package> register media/A03-eye-day.jpg --view A03-eye-day --model "..."   # made by hand
 ```
 
-**Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. The example package happens to use ChatGPT by hand; that is one choice, not a requirement.
+**Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. Reference packages do not prescribe a provider or workflow.
 
 Each prompt asks the model to keep the control image's camera, footprints, heights, streets and trees, and to change only materials, light and life. An agent must ask its human before spending money (AGENTS.md, checkpoint 2). Keys stay in the environment or in `~/.xcity/`, never in the repository.
 
@@ -104,3 +104,40 @@ See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-
 ## Final public submission language
 
 Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.
+
+### Siting and view validity
+
+Do not organise the city to fit the three selected nodes into one image. Justify adjacency or separation using the relevant terrain, access, utility, noise, risk, operations and public-life conditions; no universal distance or requirement to co-locate is imposed. Identify each image as whole-site diagram, complete-city view, district/detail view or node view. Register its geographic footprint, scale/extent and, for a physical perspective, position, target, height and lens/FOV (or explicitly identify a diagrammatic orthographic/axonometric projection). A matching geometry-derived control is required for each finished perspective; an eye-level scene inferred from an aerial alone is not a verified camera view. Keep geometry checks separate from visual judgement. The picture must not silently add, relocate or resize buildings, invent topography or replace the complete layout. A local neighbourhood aerial cannot serve as evidence for the entire 1,658.82 km² site.
+
+
+## Evidence-safe scene defaults
+
+`scene_generation.procedural_planting`, `procedural_pv` and `illustrative_entourage` default to `false`. A land-use label, a shaded route or a building name is not a planting plan, installed PV layout or water design. Roof PV requires `roof_pv: true` on its building; a depicted water channel requires `water_channel_design: true` on its movement feature and an explained design basis. Opting into procedural illustrations does not add them to capacity or water accounts. Keep designed planting geometry, species, water allocation and maintenance assumptions explicit in the relevant drawings and proposal. Do not count automatically drawn trees as proof of shade or automatically drawn panels as installed generation.
+
+After geometry, scene policy or renderer code changes, regenerate controls and every dependent finished image. Cache fingerprints include the scene policy and renderer source. Open the actual new images and compare them with the plan: a current fingerprint confirms version linkage, not geometric fidelity or design quality. Record the geographic extent and camera of each perspective; a local aerial is not a whole-city plan.
+
+
+## Coordinated city diagrams
+
+## City-scale system diagrams and overall spatial view
+
+Design a useful city before composing its node images. First organise the functional programme and city structure; then test the coordinated systems, resolve urban design and three nodes, and communicate the same complete layout through an overall axonometric or oblique birdseye view. Iterate when a diagram exposes a conflict. Neither co-location nor separation is a design objective: justify both through the city’s operation and site conditions.
+
+The main booklet must explain the following six themes. They can share sheets or be combined where legible; six themes do not prescribe six pages. Use the same underlying city geometry, district names, orientation and comparable scales, with clearly identified insets where needed. Retain an issued-whole-site locator; a city-scale study does not shrink the overall planning obligation. The whole-site framework need not depict every building at the same detail as an urban-design enlargement.
+
+| Theme | Question | Required spatial evidence |
+|---|---|---|
+| Planning structure | How the city is organised: centre hierarchy, district roles, principal axes, edges and relationships between districts. | Show named centres/districts, their scale or capacity and the connections that make them one settlement system. |
+| Functional programme | Where housing, civic/commercial services, computing/production, agriculture and logistics go, and why uses adjoin or separate. | Locate functional areas and anchors; show necessary adjacencies, compatible mixtures, service links and reasoned conflicts or separations. |
+| Streets and mobility | How the city is reached and works: main access, street hierarchy, public transport, walking/cycling, freight and decisive interfaces. | Draw connected routes, hierarchy, main arrivals, crossings and service/freight access; distinguish proposed external approaches from secured access. |
+| Ecology and landscape | How terrain, seasonal channels, protection and open space form a connected landscape, and how planting/shade respond to water and climate. | Show linked corridors and open spaces, drainage/terrain relationships and evidence status; do not invent lakes, permanent green cover or surveyed flood limits. |
+| Land use | How land is allocated by spatial unit, with use categories, mixed-use conventions, areas and capacities. | Show readable development blocks or appropriate land units, categories and legend; reconcile land areas and capacity assumptions without double counting. |
+| Public space and services | Where residents and workers gather and obtain services, and how centres and neighbourhoods connect. | Locate civic anchors, schools/health/markets and public spaces; show service hierarchy, walking connections and declared capacity/catchment assumptions. |
+
+Explain the decision each diagram tests and what changed because of it. A functional diagram explains programme and operating relationships; a land-use plan allocates spatial units and reconciles their areas. They may be combined only if both remain clear. Recolouring one undifferentiated map six times is insufficient. Use abstraction appropriate to the question; exhaustive building or parcel detail across the entire site is not required. Do not copy a reference city’s water, vegetation, street pattern, density or urban form.
+
+The overall spatial view shows the complete proposed city layout or settlement system, including its district/centre hierarchy, principal streets, massing/height character, landscape and productive context at an appropriate level. State its geographic extent, projection/camera, phase or full-build-out scenario, and what is simplified. An axonometric may be diagrammatic; a finished perspective must match its geometry-derived camera control. If distant parts cannot be read in one physical view, use a clearly labelled overall axonometric plus consistent insets rather than a fictional camera or a collage pretending to be contiguous. Do not relocate facilities to put all three nodes into the frame. A local neighbourhood or node aerial cannot replace this overall view, and the overall view cannot replace the system diagrams.
+
+Show the Phase 1/2/3 construction map and matching programme using the same district IDs and layout. Keep population, dwellings, jobs, public/utility services, sequence and dependencies consistent with the city diagrams. Detailed selected nodes test the city decisions; they do not determine the city’s extent. There is no fixed AI Agent booklet page count or requirement to pad the report. Additional detail, images or pages earn no credit by themselves.
+
+Link these drawings in the existing `overall_layout` row of `design_depth_matrix.json`, with associated geometry, metrics and proposal sections. The six thematic questions and overall-view fidelity are content-review matters; file existence does not prove they are answered. No separate parallel form or additional pass badge is introduced.

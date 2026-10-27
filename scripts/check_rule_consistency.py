@@ -18,7 +18,25 @@ def check():
  need({c['id'] for c in planting['crops']}=={'forage_grass','jojoba'} and planting['retain_both'],'fixed under-panel crops differ')
  need(depth['construction_programme']['a0_map_required'],'A0 construction phasing map missing')
  need(req['design_depth']==depth,'requirements/design-depth machine twins differ')
- need([x['id'] for x in depth['levels']]==['whole_site','phase_one','urban_design','nodes'],'four design levels changed')
+ representation=depth['representation_evidence']
+ for key in ['procedural_planting_default','procedural_pv_default','illustrative_entourage_default','illustration_is_capacity_evidence']:
+  need(representation[key] is False,'unsubstantiated scene evidence policy: '+key)
+ for key in ['roof_pv_requires_explicit_building_property','water_channel_requires_explicit_design_property','scene_policy_and_renderer_in_cache_fingerprint','visual_geometry_review_required']:
+  need(representation[key] is True,'missing rendering evidence safeguard: '+key)
+ for f in ['brief/design-requirements.zh.md','scripts/practice-brief/build_zh.py']:
+  need('| 首期完整城区 |' not in read(f) and "['一期总体城市设计'," not in read(f),f+': phase-one-only design scope returned')
+ for f in ['scripts/practice-brief/build_en.py']:
+  need("['Phase 1 urban design'," not in read(f),f+': phase-one-only design scope returned')
+ need([x['id'] for x in depth['levels']]==['whole_site','overall_layout','urban_design','nodes'],'four design levels changed')
+ diagrams=depth['city_system_diagrams']
+ need({x['id'] for x in diagrams['themes']}=={'planning_structure','functional_programme','street_mobility','ecology_landscape','land_use','public_space_services'},'city diagram themes differ from organiser instruction')
+ need(diagrams['shared_city_geometry_required'] and diagrams['separation_is_not_an_objective'],'city diagrams lost layout/adjacency basis')
+ need(diagrams['fixed_page_count'] is False and diagrams['combined_drawings_allowed'],'fixed diagram page quota returned')
+ need(diagrams['district_function_land_use_and_phase_distinguished'] and diagrams['renders_cannot_replace_required_planning_evidence'],'planning evidence or spatial-unit distinction lost')
+ need((ROOT/diagrams['method_reference']).is_file(),'official method reference guide missing')
+ overview=diagrams['overall_spatial_view']
+ need(overview['required'] and overview['same_layout_as_plans'] and overview['frame_does_not_require_all_nodes_to_be_visible'],'overall city view policy differs')
+ need((ROOT/'docs/city-system-diagrams.md').is_file(),'city diagram guide missing')
  spatial=depth['spatial_relationships']
  for key in ['node_colocation_required','all_nodes_in_urban_design_enlargement_required','all_nodes_in_master_area_required','single_contiguous_phase_one_required','render_view_determines_design_extent']:
   need(spatial[key] is False,'removed spatial freedom: '+key)

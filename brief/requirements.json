@@ -340,18 +340,17 @@
         ]
       },
       {
-        "id": "phase_one",
-        "title": "Complete phase-one district",
-        "question_zh": "即使后续不建设，也能完整生活和生产",
-        "question_en": "Life and production remain complete if later phases never happen",
-        "spatial_evidence": "Master plan; roads, public services, production, utilities and first works",
+        "id": "overall_layout",
+        "title": "Complete city layout and phased implementation",
+        "question_zh": "完整城市如何组织、容纳多少人，并按什么顺序建设",
+        "question_en": "How the complete city is organised, its capacities and construction sequence",
+        "spatial_evidence": "Coordinated city-scale structure, functional programme, street/mobility, ecology/landscape, land-use and public-space/service diagrams; complete layout across all phases; matching overall axonometric or birdseye view and capacity/phase accounts",
         "decisions": [
-          "Construction boundary and complete functions",
-          "Residents, jobs, housing and services",
-          "People, machine, logistics and emergency networks",
-          "Water, electricity, wastewater, waste and maintenance",
-          "Necessary external infrastructure and first works",
-          "Independent operation if later phases stop"
+          "Complete planned development extent and capacities across all phases",
+          "District hierarchy, living and production relationships",
+          "Public-service and utility locations, scale and connections",
+          "Phase 1/2/3 construction extents, objectives, durations, dependencies and triggers",
+          "Independent operation of the first phase if later works stop"
         ]
       },
       {
@@ -398,9 +397,10 @@
     },
     "planning_boundary": {
       "whole_site": "Fixed organiser-defined scope_9_13.geojson; the overall plan must cover the entire site.",
-      "phase_one": "Justify independently operable first-phase settlement areas and associated production/infrastructure within the whole-site structure. They may be spatially separate and require evidenced operational links; this does not reduce the overall planning boundary."
+      "phase_one": "Justify independently operable first-phase settlement areas and associated production/infrastructure within the whole-site structure. They may be spatially separate and require evidenced operational links; this does not reduce the overall planning boundary.",
+      "overall_layout": "The full planned city and associated facilities across all development phases, not only the first district. Urban-design enlargements may be one or multiple coherent areas and need not contain all nodes."
     },
-    "revision": "2026-10-27-independent-extents",
+    "revision": "2026-10-27-city-system-diagrams",
     "matrix_version": 2,
     "matrix_v1_compatibility": "Only the two organiser-listed legacy paths may retain v1 matrices. New directories must use v2; entrants cannot self-declare an earlier rule version.",
     "spatial_relationships": {
@@ -442,6 +442,101 @@
       ],
       "capacity_ranges_allowed": true,
       "calendar_dates_are_not_fixed": true
+    },
+    "representation_evidence": {
+      "procedural_planting_default": false,
+      "procedural_pv_default": false,
+      "illustrative_entourage_default": false,
+      "roof_pv_requires_explicit_building_property": true,
+      "water_channel_requires_explicit_design_property": true,
+      "illustration_is_capacity_evidence": false,
+      "scene_policy_and_renderer_in_cache_fingerprint": true,
+      "visual_geometry_review_required": true
+    },
+    "city_system_diagrams": {
+      "required": true,
+      "workflow": [
+        "site_reading",
+        "functional_programme_and_city_structure",
+        "coordinated_city_system_diagrams",
+        "urban_design_and_three_nodes",
+        "overall_spatial_view_from_same_layout",
+        "phasing_and_account_reconciliation"
+      ],
+      "themes": [
+        {
+          "id": "planning_structure",
+          "title_zh": "规划结构",
+          "title_en": "Planning structure",
+          "question_zh": "城市怎样组织：中心层级、各区角色、主要发展轴、边缘和地区之间的联系。",
+          "question_en": "How the city is organised: centre hierarchy, district roles, principal axes, edges and relationships between districts.",
+          "spatial_evidence": "Show named centres/districts, their scale or capacity and the connections that make them one settlement system."
+        },
+        {
+          "id": "functional_programme",
+          "title_zh": "功能布局",
+          "title_en": "Functional programme",
+          "question_zh": "居住、公共与商业服务、算力生产、农业、物流等放在哪里，为什么相邻或分开。",
+          "question_en": "Where housing, civic/commercial services, computing/production, agriculture and logistics go, and why uses adjoin or separate.",
+          "spatial_evidence": "Locate functional areas and anchors; show necessary adjacencies, compatible mixtures, service links and reasoned conflicts or separations."
+        },
+        {
+          "id": "street_mobility",
+          "title_zh": "道路与交通系统",
+          "title_en": "Streets and mobility",
+          "question_zh": "城市怎样进入及运行：主入口、路网层级、公共交通、步行骑行、生产物流与关键接口。",
+          "question_en": "How the city is reached and works: main access, street hierarchy, public transport, walking/cycling, freight and decisive interfaces.",
+          "spatial_evidence": "Draw connected routes, hierarchy, main arrivals, crossings and service/freight access; distinguish proposed external approaches from secured access."
+        },
+        {
+          "id": "ecology_landscape",
+          "title_zh": "生态与景观系统",
+          "title_en": "Ecology and landscape",
+          "question_zh": "地形、季节沟道、保护与开放空间怎样形成连续格局，种植和遮阴如何回应水与气候。",
+          "question_en": "How terrain, seasonal channels, protection and open space form a connected landscape, and how planting/shade respond to water and climate.",
+          "spatial_evidence": "Show linked corridors and open spaces, drainage/terrain relationships and evidence status; do not invent lakes, permanent green cover or surveyed flood limits."
+        },
+        {
+          "id": "land_use",
+          "title_zh": "土地利用",
+          "title_en": "Land use",
+          "question_zh": "土地按什么单元安排，用地类别、混合方式、面积与容量如何对应。",
+          "question_en": "How land is allocated by spatial unit, with use categories, mixed-use conventions, areas and capacities.",
+          "spatial_evidence": "Show readable development blocks or appropriate land units, categories and legend; reconcile land areas and capacity assumptions without double counting."
+        },
+        {
+          "id": "public_space_services",
+          "title_zh": "公共空间与公共服务",
+          "title_en": "Public space and services",
+          "question_zh": "居民与工作者在哪里活动、获得服务，各级中心和社区如何被联系起来。",
+          "question_en": "Where residents and workers gather and obtain services, and how centres and neighbourhoods connect.",
+          "spatial_evidence": "Locate civic anchors, schools/health/markets and public spaces; show service hierarchy, walking connections and declared capacity/catchment assumptions."
+        }
+      ],
+      "shared_city_geometry_required": true,
+      "consistent_extent_orientation_and_scale_or_explicit_insets": true,
+      "combined_drawings_allowed": true,
+      "fixed_page_count": false,
+      "whole_site_and_city_extent_distinguished": true,
+      "whole_site_pixel_detail_not_required": true,
+      "adjacency_or_separation_requires_reason": true,
+      "separation_is_not_an_objective": true,
+      "overall_spatial_view": {
+        "required": true,
+        "allowed_modes": [
+          "axonometric",
+          "oblique_birdseye"
+        ],
+        "same_layout_as_plans": true,
+        "may_be_diagrammatic": true,
+        "geographic_extent_projection_and_phase_labelled": true,
+        "local_node_view_is_not_city_overview": true,
+        "frame_does_not_require_all_nodes_to_be_visible": true
+      },
+      "automatic_checks": "Check declared paths, numeric/version links and packaging only; thematic adequacy, useful abstraction and image fidelity require content review.",
+      "method_reference": "docs/city-design-method-basis.md",
+      "district_function_land_use_and_phase_distinguished": true,
+      "renders_cannot_replace_required_planning_evidence": true
     }
   },
   "public_submission_language": {

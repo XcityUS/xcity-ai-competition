@@ -574,7 +574,7 @@ def check(pkg_path, write=True):
     for error in phasing_programme.assess(pkg):
         g12.fail(error)
 
-    g12.note("Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
+    g12.note("Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, coordinated city-system diagrams, the overall axonometric/birdseye view, system locations and scales, transport, resource infrastructure and phasing require independent design content review; diagram paths alone do not establish their usefulness or fidelity.")
     gates = [G[g["id"]].out() for g in EVAL["gates"]]
     result = {
         "script": "scripts/self_check_submission.py", "script_version": xc.SCRIPT_VERSION,
