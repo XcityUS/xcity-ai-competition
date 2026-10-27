@@ -831,13 +831,14 @@ if(!okPath){$('#pw').innerHTML='<p>'+L('No scheme selected.','No se eligió ning
 var base=q+'/';
 var row=(window.XCITY_SUBMISSIONS||[]).filter(function(r){return r.path===q})[0]||{};
 var files=(row.files||[]).map(function(f){return {p:f[0],s:f[1]}});
-function j(p){return fetch(base+p).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+function asset(p){return base+p+'?v='+encodeURIComponent(row.package_sha256||'20261027')}
+function j(p){return fetch(asset(p)).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
 Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assumptions.json'),j('sources.json'),j('image_provenance.json')]).then(function(a){
  var m=a[0],sc=a[1],mx=a[2]||{},asm=a[3]||{},src=a[4]||{},prov=a[5]||{};
  if(!m) throw new Error('manifest');
  var t=m.tradeoff||{},ag=m.agent||{},au=m.autonomy||{},au2=m.author||{};
  var imgs=(prov.images||[]);
- var cover=row.cover?base+row.cover:null;
+ var cover=row.cover?asset(row.cover):null;
  var kinds={img:0,pdf:0,data:0,html:0,other:0};
  files.forEach(function(f){kinds[kind(f.p)]++});
  var h='<div class="crumb">'+esc(q)+(sc?' · sha256 '+esc((sc.package_sha256||'').slice(0,16)):'')+'</div>'
@@ -845,10 +846,10 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   +(m.thesis?'<p class="thesis">'+esc(m.thesis)+'</p>':'')
   +'<p class="sum">'+esc(m.summary)+'</p>'
   +'<div class="acts">'
-  +'<a class="btn-gold" href="'+base+'drawings/a3-booklet.pdf">'+L('A3 booklet (PDF)','Cuaderno A3 (PDF)','A3 图册（PDF）')+'</a>'
-  +'<a class="btn-ghost" href="'+base+'drawings/a0-board.pdf">'+L('A0 board','Lámina A0','A0 展板')+'</a>'
-  +(files.some(function(f){return f.p==='visual/index.html'})?'<a class="btn-ghost" href="'+base+'visual/index.html">'+L('3D scene ↗','Escena 3D ↗','三维场景 ↗')+'</a>':'')
-  +'<a class="btn-ghost" href="'+base+'report/proposal.html">'+L('Full statement ↗','Memoria completa ↗','方案正文 ↗')+'</a>'
+  +'<a class="btn-gold" href="'+asset('drawings/a3-booklet.pdf')+'">'+L('A3 booklet (PDF)','Cuaderno A3 (PDF)','A3 图册（PDF）')+'</a>'
+  +'<a class="btn-ghost" href="'+asset('drawings/a0-board.pdf')+'">'+L('A0 board','Lámina A0','A0 展板')+'</a>'
+  +(files.some(function(f){return f.p==='visual/index.html'})?'<a class="btn-ghost" href="'+asset('visual/index.html')+'">'+L('3D scene ↗','Escena 3D ↗','三维场景 ↗')+'</a>':'')
+  +'<a class="btn-ghost" href="'+asset('report/proposal.html')+'">'+L('Full statement ↗','Memoria completa ↗','方案正文 ↗')+'</a>'
   +'<a class="btn-ghost" href="'+REPO+'/tree/main/'+q+'">GitHub ↗</a></div>'
   +(cover?'<div class="hero"><img src="'+esc(cover)+'" alt=""><span class="cap">'+L('Illustrates the geometry; not evidence','Ilustra la geometría; no es evidencia','用于说明几何，不作为证据')+'</span></div>':'')
   +'<div class="facts">'
@@ -868,14 +869,14 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   +'<div class="modal" id="modal"><div class="mbar"><span id="mname"></span><span><a id="mopen" target="_blank" rel="noopener">'+L('Open ↗','Abrir ↗','新窗口打开 ↗')+'</a> &nbsp; <button class="btn-ghost" id="mclose">'+L('Close','Cerrar','关闭')+'</button></span></div><div class="mbody" id="mbody"></div></div>';
  $('#pw').innerHTML=h; document.title=m.title+' · XCITY';
  var P={
-  read:function(){return '<iframe class="read" src="'+base+'report/proposal.html" title="proposal"></iframe>'},
+  read:function(){return '<iframe class="read" src="'+asset('report/proposal.html')+'" title="proposal"></iframe>'},
   lib:function(){
    var groups={};
    files.forEach(function(f){var g=f.p.indexOf('/')>0?f.p.split('/')[0]:'·';(groups[g]=groups[g]||[]).push(f)});
    var order=['drawings','media','renders','figures','pages','geometry','visual','report','·','tools'];
    var keys=Object.keys(groups).sort(function(a,b){var i=order.indexOf(a),k=order.indexOf(b);return (i<0?99:i)-(k<0?99:k)});
    return keys.map(function(g){return '<div class="grp">'+esc(g==='·'?'package':g)+'</div><div class="lib">'+groups[g].map(function(f){
-     var k=kind(f.p), th=k==='img'?'<span class="th" style="background-image:url(\''+esc(base+f.p)+'\')"></span>':'<span class="th">'+esc(f.p.split('.').pop().toUpperCase().slice(0,5))+'</span>';
+     var k=kind(f.p), th=k==='img'?'<span class="th" style="background-image:url(\''+esc(asset(f.p))+'\')"></span>':'<span class="th">'+esc(f.p.split('.').pop().toUpperCase().slice(0,5))+'</span>';
      return '<button class="fi" data-f="'+esc(f.p)+'">'+th+'<span style="min-width:0"><span class="nm" title="'+esc(f.p)+'">'+esc(f.p.split('/').pop())+'</span><br><span class="sz">'+size(f.s)+'</span></span></button>'}).join('')+'</div>'}).join('')||'<p>-</p>';
   },
   ev:function(){
@@ -887,8 +888,8 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   img:function(){
    if(!imgs.length) return '<p class="sum">'+L('No registered images: the views in this scheme are the massing renders drawn from its geometry.','No hay imágenes registradas: las vistas de esta propuesta son los renders volumétricos de su geometría.','没有登记的图像：本方案的视图是由几何生成的体块渲染。')+'</p>';
    return '<div class="imgs">'+imgs.map(function(im){
-    return '<div><div class="ip"><figure><img loading="lazy" src="'+esc(base+(im.control_image||''))+'" alt=""><figcaption>'+L('Control image','Imagen de control','控制图')+' · '+esc(im.control_image||'-')+'</figcaption></figure>'
-     +'<figure><img loading="lazy" src="'+esc(base+im.path)+'" alt=""><figcaption>'+esc(im.path)+' · '+esc(im.model)+'</figcaption></figure></div>'
+    return '<div><div class="ip"><figure><img loading="lazy" src="'+esc(asset(im.control_image||''))+'" alt=""><figcaption>'+L('Control image','Imagen de control','控制图')+' · '+esc(im.control_image||'-')+'</figcaption></figure>'
+     +'<figure><img loading="lazy" src="'+esc(asset(im.path))+'" alt=""><figcaption>'+esc(im.path)+' · '+esc(im.model)+'</figcaption></figure></div>'
      +'<details><summary>'+L('Prompt and processing','Prompt y procesado','提示词与后期')+'</summary><pre>'+esc(im.prompt)+'\n\n'+esc(im.post_processing)+' — '+esc(im.post_processing_note||'')+'\n'+esc(im.caption||'')+'</pre></details></div>'}).join('')+'</div>';
   }
  };
@@ -908,7 +909,7 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   box.innerHTML=x; box.style.display='block';
  }
  function openFile(p){
-  var k=kind(p), url=base+p, body=$('#mbody');
+  var k=kind(p), url=asset(p), body=$('#mbody');
   $('#mname').textContent=p; $('#mopen').href=url; $('#modal').classList.add('on');
   if(k==='img') body.innerHTML='<img src="'+esc(url)+'" alt="">';
   else if(k==='pdf') body.innerHTML='<object data="'+esc(url)+'" type="application/pdf"><a href="'+esc(url)+'">'+esc(p)+'</a></object>';
