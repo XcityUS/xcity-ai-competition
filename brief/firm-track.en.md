@@ -1,6 +1,8 @@
 # Design Practice Call · Brief
 
-> The same brief as a PDF: `brief/design-practice-brief.en.pdf`
+> Version: 26 October 2026. Online registration and draft preparation; final submission dates pending.
+> Online application: https://xcity-practice-applications.jingyuan-huang.chatgpt.site
+> The same current brief as a PDF: `brief/design-practice-brief.en.pdf`
 
 XCITY runs two separate calls on one site. This one, the **Design Practice Call**, looks for urban design and planning practices able to propose a city of real spatial quality, and to take it further. The other, the Open Agent Call, tests whether an AI agent can plan on its own; it has its own brief and review. The two share the site and its conditions (**`brief/site-conditions.en.md`**) and are reviewed and ranked separately.
 
@@ -8,7 +10,7 @@ XCITY runs two separate calls on one site. This one, the **Design Practice Call*
 |---|---|
 | Organiser | XCITY |
 | Site | San Juan province, Argentina — 1,656 km² of continuous land east of the Andes |
-| Procedure | Two stages: one submission of the application and initial ideas; then paid design by five shortlisted practices |
+| Procedure | Two stages: register and prepare an online application, then submit it for selection; paid design by five shortlisted practices |
 | Fees | None: there is no fee to apply or to take part |
 | Honorarium and prize | US$50,000 to each of the five for a compliant stage-two entry; US$50,000 more to one winner |
 | Languages | Stage 1 in English or Chinese; stage 2 in English |
@@ -24,7 +26,7 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Application and initial ideas.** Open to every practice that meets section 8, free of charge, with no registration. Download this brief, the application form and the stage-one site data, and send **two PDFs in one email**: the application, and **initial ideas of up to 10 pages**. The organiser checks eligibility first, then reviews the team and the ideas of eligible practices, and selects five. Stage one is unpaid.
+**Stage 1 · Registration, draft preparation and final application.** Open to every practice that meets section 8, free of charge. Register basic institution and contact details through the online application service. This creates a private draft and management link; no initial ideas or attachments are required at registration. Return through that link to fill in the team and relevant experience, supply applicable evidence and prepare initial ideas of **up to 10 pages**. Save partial drafts and replace attachments before final submission. Submit the complete application when the final submission window opens. Registration, saving a draft and receipt of files do not constitute eligibility approval or shortlisting. The organiser checks eligibility first, then reviews eligible teams, experience and ideas and selects five. Stage one is unpaid. The final timing policy and dates are published with the formal rules; no fixed number of days after registration is assumed.
 
 The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the five are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
 
@@ -95,19 +97,21 @@ Each issue is placed in the whole-site plan and phase one, with its phase. Relat
 
 ## 5. What to send at stage 1
 
-One email to competition@xcity.ai with two PDFs, in English or Chinese.
+One online application, comprising form information and applicable attachments. Applicants do not need to merge every item into a single PDF or prepare the ideas before registering.
 
-**① The application.** The application form (`templates/firm-application-form.docx`) is downloaded from the call's web page.
+**① Institution, team and evidence.** Fill in the text fields, then upload files or provide the accepted alternative below.
 
-| Document | What is checked |
-|---|---|
-| The completed application form (Word) | Practice, contact, how you apply, and the authorised representative |
-| Proof of legal registration | The practice exists and can take part and sign |
-| The professional licence or permit that applies | Where you practise; where practices are not graded, equivalent evidence and an explanation |
-| The actual team | Lead designer, key members, disciplines, and who really does the work |
-| Relevant projects | Place, size, year, status, and what the practice and the lead designer actually did; a portfolio can be part of this |
-| Consortium agreement, if any | Members, lead and roles |
-| Declaration | The material is true, no one is in two teams, and any relation to the organiser or the jury is disclosed |
+| Item | How to provide it | What is checked |
+|---|---|---|
+| Institution and contact | Form: legal name, country/jurisdiction, contact name and email | Who is applying and how to contact them |
+| Legal registration | Registration certificate, business record or official registry link; one verifiable form of evidence is sufficient | The practice's legal identity |
+| Professional qualification, where applicable | Applicable licence/permit file, or an explanation of the local registration/licensing system and equivalent evidence | The qualification appropriate to the applicant's jurisdiction and work; no universal certificate title is prescribed |
+| Actual team and roles | Form text identifying lead, key members, disciplines and responsibilities | Who will do the work and how expertise is covered |
+| Relevant projects | Portfolio file or project links; state location, scale, year, status and actual role | Relevant experience and attributable contribution |
+| Consortium, if applicable | Signed consortium agreement or signed statement of members, lead and roles | Who applies together and who leads |
+| Declaration and private review notice | Confirm at final submission | Accuracy, project credits, conflicts and permission to store the application privately for review |
+
+Ordinary electronic copies or scans are sufficient for the application; notarisation, certification and paper originals are not requested at this stage. Further verification may be requested before appointment. For file fields use PDF, PNG or JPG as indicated, no more than 10 MB per file and 25 MB across all application files. Files are private to authorised reviewers and are not published with the public repository. Keep the management link: its holder can access and edit the draft. The service does not automatically send an email. Contact competition@xcity.ai if help or a correction after final submission is needed.
 
 **② Initial ideas, up to 10 pages** (a slide deck is fine). Only the reading of the site, the design direction and the way of working. Suggested content:
 
@@ -163,20 +167,13 @@ The call is open to every practice; XCITY may also invite practices to apply. Ev
 
 ## 9. How to apply
 
-**There is no fee and no registration.** Three steps:
+**There is no application fee.**
 
-1. **Download** this brief, the application form (Word) and the stage-one site data (site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps) from the call's web page.
-2. **Prepare two PDFs:** ① the application form, proof of registration and licence, the team and relevant projects; ② initial ideas of up to 10 pages.
-3. **Submit once** to **competition@xcity.ai**, with the subject line `XCITY - Design Practice Call - Application - practice name`. The organiser confirms receipt.
+1. **Read and register.** Download the current brief and stage-one site data. Create an online application with basic institution and contact information. No concept or attachment is needed yet.
+2. **Prepare and save.** Keep the private management link. Complete the team and experience fields, upload applicable evidence or links, and add an initial-ideas PDF of up to 10 pages. Save partial drafts and return later.
+3. **Submit the final application.** When the formal submission window is open, confirm the declarations and submit the complete application. The receipt confirms storage, not eligibility or shortlisting. The organiser first checks eligibility, then assesses the eligible teams, experience and ideas and selects five for paid design. Timetable and deadlines are published separately; until then the service allows preparation but does not accept final submissions.
 
-One application, one shortlist notice, one design submission. Eligibility is still checked, as the first step of the review, not as a separate round. The deadline is published with the formal rules.
-
-### Questions and answers
-
-- Ask by email to **competition@xcity.ai** with the subject line `XCITY - Design Practice Call - Question`.
-- Every explanation that affects the task, eligibility or review is published in writing on the call's web page, the same for every applicant, without naming who asked.
-- While qualifications are reviewed, the organiser may check facts about a practice's credentials with it online. Such a call gives no individual explanation of the task, eligibility or review.
-- An answer explains the call; it does not change it. Changes are made only in the documents themselves and logged in `CHANGELOG.md`.
+Optional “register interest” on the call website only concerns updates; it is separate from creating a formal application draft.
 
 ## 10. Honorarium, jury and terms
 
@@ -191,6 +188,6 @@ The dates (application deadline, shortlist, briefing, submission, presentations,
 
 ## 12. Materials
 
-- **Stage 1:** this brief, the application form (`templates/firm-application-form.docx`) and the stage-one site data (`brief/design-practice-stage1-data.zip`: site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps), all on the call's web page.
+- **Stage 1:** this brief, the online application service and the stage-one site data (`brief/design-practice-stage1-data.zip`: site and pilot-area boundaries as KMZ, DXF and SHP, and analysis maps), all on the call's web page.
 - **Stage 2:** the full site package (boundaries, pilot area, terrain, channels, roads, indicative systems), an online briefing and written answers, for the shortlisted teams.
 - Not supplied (held by others): official cadastre, grid connection and capacity, water rights, a climate series.

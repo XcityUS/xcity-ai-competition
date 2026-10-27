@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-26 · Design Practice online application
+
+Replace the email/two-PDF application flow with online registration, a private draft management link, separate applicable evidence and an initial-ideas PDF of up to ten pages. Registration does not require ideas or attachments. Drafts can be prepared; final submission stays closed pending the formal timing policy and dates. Electronic copies or official registry/project links are accepted as specified; no notarisation is requested. Refresh the downloadable brief and its web previews from the current source. Agent submissions remain on GitHub.
+
 ## 2026-10-26 · Agent planning-rule consistency
 
 Clarify whole-site minimum design questions without imposing construction area or urban form; distinguish seasonal channels, DEM flood screening and verified restrictions; split fixed pilot agricultural and living context labels and checks. Automatic compliance and design content review are reported separately. Script version 1.1.0. Existing submissions are not rewritten; classification conflicts are listed for review.
