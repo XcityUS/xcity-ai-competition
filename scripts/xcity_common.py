@@ -14,7 +14,7 @@ from shapely import make_valid
 
 ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 SITE = os.path.join(ROOT, "brief", "site-package")
-SCRIPT_VERSION = "1.0.0"
+SCRIPT_VERSION = "1.1.0"
 
 GEOD = Geod(ellps="WGS84")
 _TO_UTM = Transformer.from_crs("EPSG:4326", "EPSG:32719", always_xy=True)
@@ -101,11 +101,27 @@ def site_boundary():
     return unary_union([g for _, g in features(os.path.join(SITE, "boundaries", "scope_9_13.geojson"))])
 
 
-def pilot_area():
-    """The pilot area: the three agrivoltaic fields and the living quarter, both fixed, neither open to design."""
+def pilot_parts():
+    """Separate fixed agrivoltaic and living outlines, lon/lat."""
     d = os.path.join(SITE, "pilot-area")
-    return unary_union([g for f in ("pilot_area.geojson", "pilot_living_area.geojson") if os.path.exists(os.path.join(d, f))
-                        for _, g in features(os.path.join(d, f))])
+    return {key: unary_union([g for _, g in features(os.path.join(d, name))])
+            for key, name in (("agrivoltaic", "pilot_area.geojson"),
+                              ("living", "pilot_living_area.geojson"))}
+
+
+def pilot_area():
+    """Both fixed pilot parts; neither is open to new design."""
+    return unary_union(list(pilot_parts().values()))
+
+
+PILOT_LAND_USES = {key: set(value["land_use_labels"]) for key, value in
+                   load_json(os.path.join(ROOT, "brief", "requirements.json"))["fixed_pilot_context"].items()}
+
+
+def pilot_land_use_conflicts(use, geometry_utm, parts_utm):
+    """Labels describe fixed context, not permission for new construction."""
+    return [part for part, outline in parts_utm.items()
+            if use not in PILOT_LAND_USES[part] and geometry_utm.intersection(outline).area > 100]
 
 
 def channels():

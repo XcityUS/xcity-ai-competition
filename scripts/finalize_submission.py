@@ -58,6 +58,7 @@ def main():
     r = sc.check(pkg, write=True)
     sc.report(r)
     if r["pass"]:
+        print("\nAutomatic checks passed; the package is ready for independent design review, not design approval.")
         print("\nready: open a pull request that changes only submissions/%s/%s/" % (login, slug))
     sys.exit(0 if r["pass"] else 1)
 

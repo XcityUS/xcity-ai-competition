@@ -11,7 +11,7 @@
 
 ## 2. Site reading
 
-> Read the site before you design it: water, slope, the Pie de Palo range, the Zonda, seismic risk, the dry channels, the pilot area, the 27.6 km to the nearest road. Which of these decided your structure, and how? A scheme that would look the same on another site scores low on D1.
+> Read the site before you design it: water, slope, the Pie de Palo range, the Zonda, seismic risk, the dry channels, the pilot area, the 27.6 km to the nearest road. Separate mapped seasonal channels, the DEM flood-sensitive screening band and any verified restrictions. The approximately 503 km² screening band is not a blanket permanent no-build zone. Distinguish fixed agrivoltaic and living pilot outlines; do not invent their interiors. Which of these decided your structure, and how? A scheme that would look the same on another site scores low on D1.
 
 ![Structure](figures/fig-01-structure.png)
 
@@ -37,7 +37,7 @@
 
 ## 7. Urban form
 
-> agent.6. Three scales. (1) The whole site: where the five systems sit. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses the main parcel (with the range and its eastern wing) and the south-west parcel (with the pilot area).
+> agent.6. Three scales. (1) The whole site: settlements and centre hierarchy, all five systems with locations and approximate scales, primary transport, resource infrastructure, connections to both fixed pilot parts, and phasing relationships. Explain how these form a city or settlement system; a coloured zoning diagram alone is insufficient. No minimum construction footprint is imposed. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses the main parcel (with the range and its eastern wing) and the south-west parcel (with the pilot area).
 
 ![Master plan](figures/fig-02-master-plan.png)
 

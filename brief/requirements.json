@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/requirements.schema.json",
-  "version": 1,
+  "version": 2,
   "note_en": "Machine-readable twin of brief/design-requirements.en.md. If the two ever disagree, this file wins. 'mandatory' items must each be answered (compliance_matrix.json) and, where a metric key is given, declared in metrics.json. 'computed' metrics are recomputed by the self-check from your geometry; a declared value more than 2% away fails GATE-G4.",
   "evidence_tags": {
     "computed": "Recomputed from the submitted geometry. Must name the geometry file in 'computed_from'.",
@@ -237,5 +237,50 @@
     "A jobs figure with no skills mix and no named trainer"
   ],
   "scope_en": "Unless a requirement says otherwise, M1-M12 describe phase one at full build-out and full occupancy. Long-term figures may be added under keys of your own (e.g. long_term_residents).",
-  "structure_note_en": "structure.geojson areas are land areas. The brief's system percentages are planning weight, not land share, so they will not match. The pilot area counts as agri_production."
+  "structure_note_en": "structure.geojson areas are land areas. The brief's system percentages are planning weight, not land share, so they will not match. The pilot area counts as agri_production.",
+  "whole_site_structure": {
+    "review_method": "design_content_review",
+    "minimum_questions": [
+      "settlement and centre hierarchy, including undeveloped land",
+      "five system locations, approximate scales and relationships",
+      "primary internal and external transport and human-machine connections",
+      "resource infrastructure and declared capacities or assumptions",
+      "connections to both pilot parts and both parcels",
+      "phasing relationships and observable expansion triggers"
+    ],
+    "not_sufficient": "A coloured zoning diagram covering the whole site alone.",
+    "no_prescribed_minimum_construction_area": true,
+    "no_prescribed_urban_form": true
+  },
+  "flood_data_interpretation": {
+    "seasonal_channels": "Permanent construction on actual dry channels is prohibited; supplied lines and check buffers are DEM-derived indicators for review.",
+    "flood_sensitive_screening": "Approximately 503 km2; not a verified design-flood boundary, statutory setback or blanket permanent no-build zone. Outside screening does not establish flood safety.",
+    "verified_design_flood_boundary_supplied": false
+  },
+  "fixed_pilot_context": {
+    "agrivoltaic": {
+      "file": "pilot-area/pilot_area.geojson",
+      "structure_system": "agri_production",
+      "land_use_labels": [
+        "agriculture",
+        "energy"
+      ],
+      "new_buildings_allowed": false
+    },
+    "living": {
+      "file": "pilot-area/pilot_living_area.geojson",
+      "structure_system": "living",
+      "land_use_labels": [
+        "residential",
+        "mixed_use",
+        "civic",
+        "open_space",
+        "infrastructure",
+        "agriculture"
+      ],
+      "new_buildings_allowed": false,
+      "interior_layout_supplied": false
+    }
+  },
+  "review_status_note": "Automatic compliance is separate from design content review; G12 checks evidence existence only."
 }

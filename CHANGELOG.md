@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-26 · Agent planning-rule consistency
+
+Clarify whole-site minimum design questions without imposing construction area or urban form; distinguish seasonal channels, DEM flood screening and verified restrictions; split fixed pilot agricultural and living context labels and checks. Automatic compliance and design content review are reported separately. Script version 1.1.0. Existing submissions are not rewritten; classification conflicts are listed for review.
+
 ## 2026-10-26 · Grouped node selection
 
 New Agent submissions select one node from each of three groups: living/public space, production/infrastructure, and urban interfaces/environment. The two existing submission directories retain the previous any-three-of-ten rule, including revisions. Website, brief, Agent instructions, scaffolder and gate G9 use the same policy.

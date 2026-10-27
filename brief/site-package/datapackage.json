@@ -2,7 +2,7 @@
  "profile": "data-package",
  "name": "xcity-ai-competition-site-package",
  "title": "XCITY AI Competition - site package (the two parcels)",
- "version": "1.0.0",
+ "version": "1.1.0",
  "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
  "sources_file": "sources.json",
  "resources": [
@@ -66,7 +66,7 @@
    "name": "flood_sensitive",
    "path": "water/flood_sensitive_dem.geojson",
    "mediatype": "application/geo+json",
-   "description": "DEM-derived flood-sensitive band",
+   "description": "DEM screening layer, not a surveyed design-flood extent or blanket permanent no-build area",
    "hash": "sha256:67cda090c40e1413820600d658d4c0216c77bd62abe9c8b6c3429b9ab75ca4c4",
    "source": "SRC-DEM"
   },
@@ -123,7 +123,7 @@
    "path": "nodes/design_nodes.json",
    "mediatype": "application/json",
    "description": "Ten key nodes - choose one from each of three groups",
-   "hash": "sha256:8b5080b837829fbc9c2229db112eb0677d03937893a31a546936fdf4ab284a4f"
+   "hash": "sha256:6645789ffc9e8efcee591025a503eac35b4b9d76d6ef66d38feaadfe21434b59"
   },
   {
    "name": "areas",
