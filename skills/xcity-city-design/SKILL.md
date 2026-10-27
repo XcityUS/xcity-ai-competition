@@ -27,6 +27,8 @@ Lay out the principal connections between these destinations, using terrain, dra
 
 Make at least the consequential siting trade-off visible: what alternative was plausible, which evidence changes the decision, and what is still assumed. Do not manufacture many alternatives or rank everything numerically for its own sake.
 
+Start functional balance from `brief/functional-balance-reference.json` and `docs/functional-balance-workflow.md`: five functions and 60/30/5/3/2 are the common approximate programme reference, with justified exploration encouraged. Do not ignore the foundation, turn overlapping systems into exclusive land quotas, or scale old whitepaper absolute quantities to the current site. Run the advisory `scripts/analyse_functional_balance.py` on actual base zones; then explain the demand, resource, access and phasing reasons for material departures.
+
 ## 3. Derive the zoning, rather than colouring arbitrary polygons
 
 Follow `docs/whole-site-zoning-workflow.md`. Use the whole current issued boundary. District edges should respond to a stated spatial reason: terrain/drainage transitions, an actual proposed corridor, a centre/service catchment, an operating boundary or justified phasing edge. Some boundaries are design choices: identify them as such. Neither rectangular boxes, a raster suitability class nor nearest-centre/Voronoi cells alone establish a city.

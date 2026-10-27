@@ -23,6 +23,10 @@ The full specification is `docs/submission-guide.md`; where this file is brief, 
 
 Read and apply `skills/xcity-city-design/SKILL.md` when designing or revising the city. It guides evidence-led zoning, centre/road/landscape relationships, public-service-first urban fabric, phased operation and visual-first boards. If your runtime does not load repository skills automatically, read it as Markdown before designing. The skill does not prescribe a layout or replace the brief.
 
+## Functional balance starts from the project foundation
+
+Read `docs/functional-balance-workflow.md` and `brief/functional-balance-reference.json`. Respond to the five-function 60/30/5/3/2 approximate reference before proposing justified changes. Distinguish base land, overlapping systems and phased installed works. Run `scripts/analyse_functional_balance.py` to expose actual shares and missing programme inputs; the advisory tool does not choose a layout or approve it.
+
 ## Whole-site design comes before the local prototype
 
 Read `docs/whole-site-zoning-workflow.md` before drawing geometry. Deliver a base zoning plan over the entire issued boundary, with named/numbered polygon districts, primary uses, an area account and explicit primary/secondary roads. Use `plan_role=base_zoning` in structure.geojson; use `road_class` in movement.geojson. Explain every district, including retained land, and how roads serve the centres and development areas. Five-system overlays, local master-area diagrams and three node circles cannot substitute for these plans. The scaffolder supplies empty files, not designed zoning; the renderer draws submitted geometry and cannot invent a city. G12 now checks base coverage and road records as well as references. Design quality remains separately reviewed.

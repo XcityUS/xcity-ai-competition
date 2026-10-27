@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "status": "required_programme_starting_point_with_exploration_not_land_quota",
+  "source": {
+    "title": "XCITY Whitepaper V7",
+    "date": "October 2026",
+    "page": 5,
+    "supplied_filename": "XCITY白皮书V7(1).pdf",
+    "scope_warning": "Page 4 uses about 400000 hectares. Do not transfer its absolute areas, 600 GW or long-term population to the current issued competition boundary."
+  },
+  "reference_pct": {
+    "energy_compute": 60,
+    "agri_production": 30,
+    "living": 5,
+    "industry": 3,
+    "trade_port": 2
+  },
+  "interpretation": "The whitepaper describes approximate functional-region shares in its older scope. The current competition retains these as a strategic reference: systems can overlap, particularly solar and agriculture. Compare exclusive base-land areas separately from overlapping functional coverage; do not enforce 60/30/5/3/2 as five exclusive quotas.",
+  "confirmed_programme": [
+    "Photovoltaic agriculture leads the productive territory",
+    "Under-panel forage grass and jojoba",
+    "Compute campuses use industrial halls with modular construction and equipment",
+    "Current issued boundary and both fixed pilots remain authoritative"
+  ],
+  "deviation_policy": "Every design must respond to the common five-function programme and approximate reference balance. Designers may freely explore other distributions, explaining material changes through terrain, drainage, usable land, population/jobs, facility demand, resources, access and construction phases. A coloured strategic region does not establish serviced, installed or commissioned area.",
+  "unknowns": [
+    "Lawful water and grid capacity",
+    "Local crop yields and irrigation needs",
+    "Confirmed facility demand and jobs",
+    "Engineering clearances and buildable areas",
+    "Long-term growth timing"
+  ]
+}
