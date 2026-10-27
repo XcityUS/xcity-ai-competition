@@ -63,7 +63,7 @@
     {
       "id": "GATE-G9-BOUNDARIES",
       "title": "Site boundaries respected",
-      "checks": "Core geometry/ construction layers lie inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate. New submissions select exactly one node from each group in nodes/design_nodes.json; listed existing submissions retain any three of ten. Optional context/ research can extend outside only when labelled study_only / not_secured; it grants no rights and is excluded from construction metrics. Fixed agrivoltaic and living labels differ. Legacy agriculture context is retained only for pre-v2 compatibility.",
+      "checks": "Core geometry/ construction layers lie inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate. Every submission and revision selects exactly one node from each of groups A, B and C in nodes/design_nodes.json; three distinct nodes total. Optional context/ research can extend outside only when labelled study_only / not_secured; it grants no rights and is excluded from construction metrics. Fixed agrivoltaic and living labels differ. Legacy agriculture context is retained only for pre-v2 compatibility.",
       "automated": false,
       "partly_manual": true
     },

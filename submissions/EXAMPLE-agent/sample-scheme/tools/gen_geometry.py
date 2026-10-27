@@ -8,7 +8,7 @@ Scale 1  the whole site: a chain of oasis cities on one corridor ("the Line"), f
          on the fans, mountain and washes kept as reserve.
 Scale 2  the first city, on the flat lower terrace directly east of the pilot area: a 300 m superblock grid of
          low courtyard housing, machines on a 600 m grid, acequia streets fed by gravity from a tank on the bluff.
-Scale 3  N01 arrival along the first fields, N02 a housing superblock, N10 the main square in heat and Zonda.
+Scale 3  C01 arrival along the first fields, A01 a housing superblock, A03 the main square in heat and Zonda.
 """
 import json, math, os, re, sys, random
 import numpy as np
@@ -281,7 +281,7 @@ for (i, j), kind in sorted(K.items()):
     elif kind == "sports":
         L("open_space", S_, "Sports grounds under shade")
 
-# ---- the arrival hub (N01), superblock (0, 0)
+# ---- the arrival hub (C01), superblock (0, 0)
 hx0, hy0 = X0, Y0
 Bd(box(hx0 + 40, hy0 + 150, hx0 + 160, hy0 + 178), 2, "civic", "Arrival hall and visitor centre", h=11)
 Bd(box(hx0 + 14, hy0 + 40, hx0 + 120, hy0 + 64), 1, "infrastructure", "Coach and shuttle canopy (PV)", h=7, form="canopy")
@@ -307,7 +307,7 @@ Bd(box(mx0 + 20, my0 + 20, mx0 + 150, my0 + 44), 2, "civic", "School - classroom
 Bd(box(mx0 + 20, my0 + 44, mx0 + 44, my0 + 150), 2, "civic", "School - classrooms (west)")
 Bd(box(mx0 + 170, my0 + 20, mx0 + 280, my0 + 90), 1, "civic", "School hall and canteen", h=8)
 L("open_space", box(mx0 + 60, my0 + 60, mx0 + 160, my0 + 180), "School yard (shaded)")
-# ---- Plaza del Agua (N10), superblock (2, 3)
+# ---- Plaza del Agua (A03), superblock (2, 3)
 px0, py0 = X0 + 2 * S, Y0 + 3 * S
 Bd(box(px0 + 12, py0 + 20, px0 + 30, py0 + 280), 3, "civic",
    "Wind gallery: arcaded hall on the windward side (culture, assembly)", h=13)
@@ -532,7 +532,7 @@ phasing = [
 # ---------------------------------------------------------------- nodes
 hb = sb(*NODE_HOUSING)
 nodes = [
-    ({"node_id": "N01", "name": "Arriving along the first fields",
+    ({"node_id": "C01", "name": "Arriving along the first fields",
       "why": "Everyone arrives the same way: 3.5 km beside the agrivoltaic fields the city grew out of, then under one "
              "canopy where the coach stops and the city begins on foot. If arrival is a car park, the city has lied "
              "about what it is.",
@@ -564,7 +564,7 @@ nodes = [
                      "with olive orchards; ahead, a long solar canopy over the coach stop, a two-storey arrival hall of "
                      "rammed earth and timber, a market hall, people walking into the city with luggage and bicycles."},
      box(571900, 6548300, 572700, 6549760).difference(LEAD.buffer(15))),
-    ({"node_id": "N02", "name": "A superblock of courtyard houses",
+    ({"node_id": "A01", "name": "A superblock of courtyard houses",
       "why": "Housing is where heat, earthquakes, water and robots meet every day. If a family can live here in January "
              "and in a Zonda week without a car or an air-conditioner running all day, the rest of the city follows.",
       "eye_from": LL(hb.bounds[0] + 101.7, hb.bounds[1] + 30), "eye_to": LL(hb.bounds[0] + 101.7, hb.bounds[1] + 200),
@@ -594,7 +594,7 @@ nodes = [
                      "and a narrow open irrigation channel; children playing, neighbours at their doors, a small white "
                      "delivery robot."},
      hb),
-    ({"node_id": "N10", "name": "Plaza del Agua: a square for 45 degrees and the Zonda",
+    ({"node_id": "A03", "name": "Plaza del Agua: a square for 45 degrees and the Zonda",
       "why": "A desert city needs one room where everyone can be outside at once. Here it has to work at 45 C and in a "
              "hot north-west wind, with water that is never wasted.",
       "eye_from": LL(X0 + 2 * S + 205, Y0 + 3 * S + 55), "eye_to": LL(X0 + 2 * S + 70, Y0 + 3 * S + 170),

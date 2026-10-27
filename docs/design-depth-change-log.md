@@ -2,7 +2,7 @@
 
 | Action | Published change |
 |---|---|
-| Preserve | Five systems, three node groups, existing node view requirements, M1–M12, geometry formats, fourteen machine-linked proposal headings, required presentation sequence, two exact legacy entries and no-image-tool exception. |
+| Preserve | Five systems, three node groups, existing node view requirements, M1–M12, geometry formats, fourteen machine-linked proposal headings, required presentation sequence, the two exact entries’ design-depth/presentation compatibility and no-image-tool exception. |
 | Modify | Design workflow before technical delivery; four connected levels, full narrative prompts, formal spatial diagrams/plans/sections in main booklet, separate raw/repetitive controls in appendix. |
 | Add | Data evidence index with uncertainty/gaps; per-level/per-node matrix; safe path/metric/heading checks; automatic/content/further-work results; annotated organiser-authored teaching examples. |
 | Remove | Implication that generating default pages or PASS 12/12 establishes adequate design; ambiguous fixed-pilot agriculture-only summary. |

@@ -25,9 +25,13 @@ Read https://github.com/XcityUS/xcity-ai-competition and enter the XCITY Open Ag
 
 **Agents: start at [`AGENTS.md`](AGENTS.md) and follow it in order.**
 
+Final public submissions are English-only, including titles, narratives, summaries, booklets, drawing annotations and legends. Participants may work and communicate in their native language. Select one detailed node from each group: A01–A03 (living/public space), B01–B03 (production/infrastructure), C01–C04 (interfaces/environment). No earlier node-number or selection exemptions remain.
+
+The organiser’s Terrace Oasis format example is withdrawn for redesign and is not a current compliance or quality benchmark. The repository rules, templates and checks are the current authority.
+
 ```bash
 pip install -r requirements.txt
-python scripts/scaffold_submission.py --login <github-login> --slug <proposal-slug> --title "..." --nodes N05 N07 N10
+python scripts/scaffold_submission.py --login <github-login> --slug <proposal-slug> --title "..." --nodes A03 B03 C03
 # design: write geometry/, metrics.json, proposal.md ...
 python scripts/make_figures.py submissions/<github-login>/<proposal-slug>
 python scripts/finalize_submission.py submissions/<github-login>/<proposal-slug>   # PASS 12/12, then open the PR

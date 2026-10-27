@@ -1,9 +1,9 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.2.0",
-  "checked_at": "2026-10-27T03:46:42+00:00",
+  "checked_at": "2026-10-27T04:27:29+00:00",
   "package": "submissions/jingyuanhuang-design/finite-water-city",
-  "package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
+  "package_sha256": "b5d24f9643c6d2e20ebd1d5abb4c9926296f206d2cca61c94cf53e09829bd55a",
   "gates_total": 12,
   "gates_passed": 12,
   "pass": true,
@@ -54,19 +54,19 @@
           "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
         },
         {
-          "level": "node:N05",
+          "level": "node:B03",
           "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
           "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
           "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
         },
         {
-          "level": "node:N07",
+          "level": "node:C03",
           "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
           "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
           "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
         },
         {
-          "level": "node:N10",
+          "level": "node:A03",
           "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
           "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
           "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
@@ -95,17 +95,17 @@
         "content_status": "not_assessed"
       },
       {
-        "id": "node:N05",
+        "id": "node:B03",
         "entrant_status": "documented",
         "content_status": "not_assessed"
       },
       {
-        "id": "node:N07",
+        "id": "node:C03",
         "entrant_status": "documented",
         "content_status": "not_assessed"
       },
       {
-        "id": "node:N10",
+        "id": "node:A03",
         "entrant_status": "documented",
         "content_status": "not_assessed"
       }
@@ -140,19 +140,19 @@
         "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
       },
       {
-        "level": "node:N05",
+        "level": "node:B03",
         "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
         "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
         "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
       },
       {
-        "level": "node:N07",
+        "level": "node:C03",
         "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
         "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
         "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
       },
       {
-        "level": "node:N10",
+        "level": "node:A03",
         "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
         "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
         "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
@@ -181,7 +181,10 @@
       "id": "GATE-G1-PACKAGE",
       "title": "Package completeness and schema validity",
       "pass": true,
-      "messages": []
+      "messages": [],
+      "notes": [
+        "English is required for the public title, narrative, summary, booklet, drawing labels and legends; the language of raster images needs human review."
+      ]
     },
     {
       "id": "GATE-G2-PATH",

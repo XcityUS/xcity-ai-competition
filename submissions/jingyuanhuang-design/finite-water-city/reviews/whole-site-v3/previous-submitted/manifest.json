@@ -21,11 +21,11 @@
     "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals."
   },
   "nodes": [
-    "N05",
-    "N07",
-    "N10"
+    "B03",
+    "C03",
+    "A03"
   ],
-  "nodes_reason": "N05 tests whether production can accept water limits; N07 gives floods room; N10 tests whether daily public life survives heat without decorative irrigation.",
+  "nodes_reason": "B03 tests whether production can accept water limits; C03 gives floods room; A03 tests whether daily public life survives heat without decorative irrigation.",
   "tradeoff": {
     "objective": "Maximum uninterrupted compute throughput and minimum cooling electricity",
     "why": "Scarce water is reserved first for people and the existing agricultural system.",
@@ -49,20 +49,20 @@
       ]
     },
     "tier3_nodes": {
-      "N05": {
-        "plan": "figures/node-N05-plan.png",
-        "aerial": "figures/node-N05-aerial.png",
-        "eye_level": "figures/node-N05-eye.png"
+      "B03": {
+        "plan": "figures/node-B03-plan.png",
+        "aerial": "figures/node-B03-aerial.png",
+        "eye_level": "figures/node-B03-eye.png"
       },
-      "N07": {
-        "plan": "figures/node-N07-plan.png",
-        "aerial": "figures/node-N07-aerial.png",
-        "eye_level": "figures/node-N07-eye.png"
+      "C03": {
+        "plan": "figures/node-C03-plan.png",
+        "aerial": "figures/node-C03-aerial.png",
+        "eye_level": "figures/node-C03-eye.png"
       },
-      "N10": {
-        "plan": "figures/node-N10-plan.png",
-        "aerial": "figures/node-N10-aerial.png",
-        "eye_level": "figures/node-N10-eye.png"
+      "A03": {
+        "plan": "figures/node-A03-plan.png",
+        "aerial": "figures/node-A03-aerial.png",
+        "eye_level": "figures/node-A03-eye.png"
       }
     }
   },

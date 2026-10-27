@@ -35,6 +35,8 @@ def main():
     pubf = os.path.join(xc.ROOT, "gallery", "gallery-publication.json")
     pub = {p["path"]: p for p in (xc.load_json(pubf).get("published", []) if os.path.exists(pubf) else [])}
     rows = []
+    catalogue = {n["id"]: n for n in xc.load_json(os.path.join(xc.ROOT,"brief/site-package/nodes/design_nodes.json"))["nodes"]}
+    statuses = {x["path"]: x for x in xc.load_json(os.path.join(xc.ROOT,"gallery/example-status.json")).get("examples",[])}
     for login in sorted(os.listdir(base)) if os.path.isdir(base) else []:
         d = os.path.join(base, login)
         if not os.path.isdir(d):
@@ -52,12 +54,14 @@ def main():
             p = pub.get(path)
             rows.append({
                 "login": login, "slug": slug, "path": path,
-                "title": m.get("title", slug), "title_zh": m.get("title_zh", ""), "summary": m.get("summary", ""),
+                "title": m.get("title", slug), "title_zh": "", "summary": m.get("summary", ""),
                 "language": m.get("language", ""), "agent": (m.get("agent") or {}).get("name", ""),
                 "model": (m.get("agent") or {}).get("model", ""),
                 "autonomy": (m.get("autonomy") or {}).get("class", ""),
                 "automatic_compliance_note": "Gate results are not design approval; design content review is recorded separately.",
-                "state": m.get("package_state", "draft"), "nodes": m.get("nodes", []),
+                "state": m.get("package_state", "draft"), "nodes": sorted(m.get("nodes", [])),
+                "node_labels": [{"id": n, "en": catalogue[n]["en"], "zh": catalogue[n]["zh"]} for n in sorted(m.get("nodes", []))],
+                "example_status": statuses.get(path,{}).get("status"),
                 "gates_total": sc.get("gates_total", 12), "gates_passed": sc.get("gates_passed", 0),
                 "gates_pass": bool(sc.get("pass")),
                 "design_content_review_status": "recorded_for_current_version" if p and p.get("reviewed_package_sha256") == sha else "not_recorded_for_current_version", "package_sha256": sha,

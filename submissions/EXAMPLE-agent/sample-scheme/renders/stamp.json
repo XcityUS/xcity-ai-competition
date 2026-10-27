@@ -19,49 +19,49 @@
       "label": "The city - evening",
       "time": "evening"
     },
-    "N01-aerial.png": {
+    "C01-aerial.png": {
       "sha256": "46fe20bc3631ddf7b4262398b309a18f3928638cbd1ea3d88db5f8dab9e8581e",
-      "label": "N01 - aerial",
+      "label": "C01 - aerial",
       "time": "day"
     },
-    "N01-eye-day.png": {
+    "C01-eye-day.png": {
       "sha256": "b3e5afc88e06e0af2b7d2f4a98d553055920b0a88027c706b8ae4c4ae88c78f8",
-      "label": "N01 - eye level, day",
+      "label": "C01 - eye level, day",
       "time": "day"
     },
-    "N01-eye-night.png": {
+    "C01-eye-night.png": {
       "sha256": "9e62e93d37921c76e82c9241dcde51eba27fae2cd589cdf22f27b1b9b1464a55",
-      "label": "N01 - eye level, night",
+      "label": "C01 - eye level, night",
       "time": "night"
     },
-    "N02-aerial.png": {
+    "A01-aerial.png": {
       "sha256": "038a9fb7241288035637ad197985be3721a080e1def41d71b5b1b9d6cb3988f8",
-      "label": "N02 - aerial",
+      "label": "A01 - aerial",
       "time": "day"
     },
-    "N02-eye-day.png": {
+    "A01-eye-day.png": {
       "sha256": "d58479d2d86ccdcacae6976d1f03ddc5085b78f2ead0ad080d73a5394c6853f1",
-      "label": "N02 - eye level, day",
+      "label": "A01 - eye level, day",
       "time": "day"
     },
-    "N02-eye-evening.png": {
+    "A01-eye-evening.png": {
       "sha256": "035ed412bb815a219999e0bd680f54a852ff7e7a1ca5cff2448fbabd0b71bb20",
-      "label": "N02 - eye level, evening",
+      "label": "A01 - eye level, evening",
       "time": "evening"
     },
-    "N10-aerial.png": {
+    "A03-aerial.png": {
       "sha256": "e86fb8b8461e592f922148f6a16b8f90c0a3becb7fce038632fef0b17b8b0b96",
-      "label": "N10 - aerial",
+      "label": "A03 - aerial",
       "time": "day"
     },
-    "N10-eye-day.png": {
+    "A03-eye-day.png": {
       "sha256": "a066231861cd017fe8d07b9191e4b66465548e905a05e0480b3d4a37c6dab1a1",
-      "label": "N10 - eye level, day",
+      "label": "A03 - eye level, day",
       "time": "day"
     },
-    "N10-eye-evening.png": {
+    "A03-eye-evening.png": {
       "sha256": "a0d46136bb584cfc88e00404954c28eb1e5ac1de607eb8c1233fb7a83c14b2e3",
-      "label": "N10 - eye level, evening",
+      "label": "A03 - eye level, evening",
       "time": "evening"
     }
   }

@@ -123,6 +123,9 @@ def check(pkg_path, write=True):
     for k in ("title", "slug", "summary", "language"):
         if not nonempty(man.get(k)):
             g1.fail("manifest.json: '%s' is missing or still a placeholder" % k)
+    if man.get("language") != "en":
+        g1.fail("Final public submissions must use English (manifest.language must be en).")
+    g1.note("English is required for the public title, narrative, summary, booklet, drawing labels and legends; the language of raster images needs human review.")
     if man.get("summary") and len(man["summary"]) > 700:
         g1.fail("manifest.json: summary is longer than 700 characters")
     tman_p = os.path.join(xc.ROOT, "templates", "manifest.json")
@@ -462,7 +465,7 @@ def check(pkg_path, write=True):
                 "construction on a dry channel" % hits)
     ids = [str(p.get("node_id")) for p, g in geo.get("nodes", [])]
     if len(ids) != 3 or len(set(ids)) != 3 or not set(ids) <= NODE_IDS:
-        g9.fail("nodes.geojson must hold three different node_id values from N01-N10 (found %s)" % ids)
+        g9.fail("nodes.geojson must hold three different node_id values from A01-A03, B01-B03, C01-C04 (found %s)" % ids)
     if set(ids) != set(man.get("nodes") or []):
         g9.fail("nodes.geojson ids %s do not match manifest.nodes %s" % (sorted(ids), man.get("nodes")))
     for error in selection_errors(ids, pkg):
@@ -615,6 +618,13 @@ def main():
         for login in sorted(os.listdir(base)) if os.path.isdir(base) else []:
             for slug in sorted(os.listdir(os.path.join(base, login))) if os.path.isdir(os.path.join(base, login)) else []:
                 if os.path.isfile(os.path.join(base, login, slug, "manifest.json")):
+                    package_rel = "submissions/%s/%s" % (login, slug)
+                    status_path = os.path.join(xc.ROOT, "gallery/example-status.json")
+                    examples = xc.load_json(status_path).get("examples", []) if os.path.isfile(status_path) else []
+                    withdrawn = any(x.get("path") == package_rel and x.get("status") == "rebuild_pending" for x in examples)
+                    if login == "EXAMPLE-agent" and withdrawn:
+                        print("NOT ACTIVE: %s — organiser example withdrawn for redesign; not checked or approved. Explicit path checks still apply every gate." % package_rel)
+                        continue
                     paths.append(os.path.join(base, login, slug))
     if not paths:
         ap.error("give a package path or --all")

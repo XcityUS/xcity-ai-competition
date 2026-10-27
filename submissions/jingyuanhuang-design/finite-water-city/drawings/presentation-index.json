@@ -8,7 +8,7 @@
     },
     "technical": {
       "path": "drawings/a3-technical-appendix.pdf",
-      "pages": 17
+      "pages": 11
     }
   },
   "sections": [
@@ -27,21 +27,21 @@
       ]
     },
     {
-      "id": "node:N05",
+      "id": "node:A03",
       "document": "main",
       "pages": [
         15
       ]
     },
     {
-      "id": "node:N07",
+      "id": "node:B03",
       "document": "main",
       "pages": [
         19
       ]
     },
     {
-      "id": "node:N10",
+      "id": "node:C03",
       "document": "main",
       "pages": [
         23

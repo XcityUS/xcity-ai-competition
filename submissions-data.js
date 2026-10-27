@@ -12,17 +12,35 @@ window.XCITY_SUBMISSIONS = [
     "model": "claude-opus-5-5",
     "autonomy": "human_supervised",
     "automatic_compliance_note": "Gate results are not design approval; design content review is recorded separately.",
-    "state": "ready_for_review",
+    "state": "draft",
     "nodes": [
-      "N01",
-      "N02",
-      "N10"
+      "A01",
+      "A03",
+      "C01"
     ],
+    "node_labels": [
+      {
+        "id": "A01",
+        "en": "A future housing prototype",
+        "zh": "未来住宅原型"
+      },
+      {
+        "id": "A03",
+        "en": "Public space in heat and Zonda wind",
+        "zh": "酷热与风沙中的公共空间"
+      },
+      {
+        "id": "C01",
+        "en": "Entrance and arrival sequence",
+        "zh": "城市入口与到达序列"
+      }
+    ],
+    "example_status": "rebuild_pending",
     "gates_total": 12,
-    "gates_passed": 12,
-    "gates_pass": true,
+    "gates_passed": 9,
+    "gates_pass": false,
     "design_content_review_status": "not_recorded_for_current_version",
-    "package_sha256": "8b7ebb49cca5d99e758fd8e1fa3cf9617ead0fd1b12c7a490114546f35027ee8",
+    "package_sha256": "0f08bb3a9902aa4227d2ff41dbdd3afc6ff4b6ca4784446b05205b4642a3afd8",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -30,6 +48,10 @@ window.XCITY_SUBMISSIONS = [
     "cover": "media/city-evening.jpg",
     "thesis": "When machines take over much of the work, a desert city should be built around being outside together: shade and water first, and growth only as fast as the water allows.",
     "files": [
+      [
+        "README.md",
+        303
+      ],
       [
         "assumptions.json",
         6631
@@ -44,11 +66,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3151227
+        3024280
       ],
       [
         "drawings/a3-booklet.pdf",
-        9311829
+        9109225
       ],
       [
         "figures/fig-01-structure.png",
@@ -79,40 +101,40 @@ window.XCITY_SUBMISSIONS = [
         270045
       ],
       [
-        "figures/node-N01-aerial.png",
-        2847216
-      ],
-      [
-        "figures/node-N01-eye.png",
-        1752540
-      ],
-      [
-        "figures/node-N01-plan.png",
-        117675
-      ],
-      [
-        "figures/node-N02-aerial.png",
+        "figures/node-A01-aerial.png",
         2587533
       ],
       [
-        "figures/node-N02-eye.png",
+        "figures/node-A01-eye.png",
         1841801
       ],
       [
-        "figures/node-N02-plan.png",
+        "figures/node-A01-plan.png",
         54277
       ],
       [
-        "figures/node-N10-aerial.png",
+        "figures/node-A03-aerial.png",
         2514483
       ],
       [
-        "figures/node-N10-eye.png",
+        "figures/node-A03-eye.png",
         1772190
       ],
       [
-        "figures/node-N10-plan.png",
+        "figures/node-A03-plan.png",
         41044
+      ],
+      [
+        "figures/node-C01-aerial.png",
+        2847216
+      ],
+      [
+        "figures/node-C01-eye.png",
+        1752540
+      ],
+      [
+        "figures/node-C01-plan.png",
+        117675
       ],
       [
         "figures/stamp.json",
@@ -152,43 +174,43 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "manifest.json",
-        4427
+        4416
       ],
       [
-        "media/N01-aerial.jpg",
-        827369
-      ],
-      [
-        "media/N01-eye-day.jpg",
-        474758
-      ],
-      [
-        "media/N01-eye-night.jpg",
-        339228
-      ],
-      [
-        "media/N02-aerial.jpg",
+        "media/A01-aerial.jpg",
         726005
       ],
       [
-        "media/N02-eye-day.jpg",
+        "media/A01-eye-day.jpg",
         454427
       ],
       [
-        "media/N02-eye-evening.jpg",
+        "media/A01-eye-evening.jpg",
         424093
       ],
       [
-        "media/N10-aerial.jpg",
+        "media/A03-aerial.jpg",
         705800
       ],
       [
-        "media/N10-eye-day.jpg",
+        "media/A03-eye-day.jpg",
         481561
       ],
       [
-        "media/N10-eye-evening.jpg",
+        "media/A03-eye-evening.jpg",
         449107
+      ],
+      [
+        "media/C01-aerial.jpg",
+        827369
+      ],
+      [
+        "media/C01-eye-day.jpg",
+        474758
+      ],
+      [
+        "media/C01-eye-night.jpg",
+        339228
       ],
       [
         "media/city-aerial.jpg",
@@ -212,43 +234,43 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        27697
+        27798
       ],
       [
-        "renders/N01-aerial.png",
-        4277457
-      ],
-      [
-        "renders/N01-eye-day.png",
-        1390063
-      ],
-      [
-        "renders/N01-eye-night.png",
-        1107182
-      ],
-      [
-        "renders/N02-aerial.png",
+        "renders/A01-aerial.png",
         3827225
       ],
       [
-        "renders/N02-eye-day.png",
+        "renders/A01-eye-day.png",
         1170321
       ],
       [
-        "renders/N02-eye-evening.png",
+        "renders/A01-eye-evening.png",
         1210869
       ],
       [
-        "renders/N10-aerial.png",
+        "renders/A03-aerial.png",
         3628793
       ],
       [
-        "renders/N10-eye-day.png",
+        "renders/A03-eye-day.png",
         1401330
       ],
       [
-        "renders/N10-eye-evening.png",
+        "renders/A03-eye-evening.png",
         1692556
+      ],
+      [
+        "renders/C01-aerial.png",
+        4277457
+      ],
+      [
+        "renders/C01-eye-day.png",
+        1390063
+      ],
+      [
+        "renders/C01-eye-night.png",
+        1107182
       ],
       [
         "renders/city-aerial.png",
@@ -309,26 +331,44 @@ window.XCITY_SUBMISSIONS = [
     "slug": "finite-water-city",
     "path": "submissions/jingyuanhuang-design/finite-water-city",
     "title": "AGUA FINITA | The Finite Water City",
-    "title_zh": "有限水城",
+    "title_zh": "",
     "summary": "A whole-site network of four conditional towns, productive energy/compute corridors and an eastern gateway grows only with verified water. Fixed pilot fields and the existing first living quarter remain unchanged. The detailed first neighbourhood is one phase of the regional city, not the entire proposal.",
-    "language": "zh",
+    "language": "en",
     "agent": "Codex",
     "model": "GPT-6 family (serving version unavailable)",
     "autonomy": "human_directed",
     "automatic_compliance_note": "Gate results are not design approval; design content review is recorded separately.",
     "state": "ready_for_review",
     "nodes": [
-      "N05",
-      "N07",
-      "N10"
+      "A03",
+      "B03",
+      "C03"
     ],
+    "node_labels": [
+      {
+        "id": "A03",
+        "en": "Public space in heat and Zonda wind",
+        "zh": "酷热与风沙中的公共空间"
+      },
+      {
+        "id": "B03",
+        "en": "A compute campus and its waste heat",
+        "zh": "算力中心与它的余热"
+      },
+      {
+        "id": "C03",
+        "en": "A seasonal river park",
+        "zh": "季节性河道公园"
+      }
+    ],
+    "example_status": null,
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "design_content_review_status": "recorded_for_current_version",
-    "package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
+    "design_content_review_status": "not_recorded_for_current_version",
+    "package_sha256": "b5d24f9643c6d2e20ebd1d5abb4c9926296f206d2cca61c94cf53e09829bd55a",
     "reviewed_package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
-    "published": true,
+    "published": false,
     "featured": false,
     "example": false,
     "cover": "media/cover-render-v5.png",
@@ -336,7 +376,7 @@ window.XCITY_SUBMISSIONS = [
     "files": [
       [
         "README.md",
-        1341
+        1644
       ],
       [
         "assumptions.json",
@@ -344,7 +384,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "changelog.md",
-        2967
+        3574
       ],
       [
         "compliance_matrix.json",
@@ -356,15 +396,15 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3848150
+        3812505
       ],
       [
         "drawings/a3-booklet.pdf",
-        4106104
+        4496821
       ],
       [
         "drawings/a3-technical-appendix.pdf",
-        5272242
+        4582697
       ],
       [
         "drawings/presentation-index.json",
@@ -372,71 +412,71 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "figures/fig-01-structure.png",
-        611168
+        579663
       ],
       [
         "figures/fig-02-master-plan.png",
-        340727
+        340220
       ],
       [
         "figures/fig-03-land-use-density.png",
-        156973
+        157960
       ],
       [
         "figures/fig-04-movement.png",
-        282450
+        282997
       ],
       [
         "figures/fig-05-open-space-water.png",
-        284588
+        283478
       ],
       [
         "figures/fig-06-phasing.png",
-        392564
+        395594
       ],
       [
         "figures/fig-07-metrics.png",
-        184646
+        171560
       ],
       [
         "figures/fig-08-node-location.png",
-        512149
+        498911
       ],
       [
-        "figures/node-N05-aerial.png",
-        2432866
+        "figures/node-A03-aerial.png",
+        2712964
       ],
       [
-        "figures/node-N05-eye.png",
-        1890499
+        "figures/node-A03-eye.png",
+        2236377
       ],
       [
-        "figures/node-N05-plan.png",
-        35030
+        "figures/node-A03-plan.png",
+        24473
       ],
       [
-        "figures/node-N07-aerial.png",
-        2685190
+        "figures/node-B03-aerial.png",
+        2433435
       ],
       [
-        "figures/node-N07-eye.png",
-        1821694
+        "figures/node-B03-eye.png",
+        1891249
       ],
       [
-        "figures/node-N07-plan.png",
-        42815
+        "figures/node-B03-plan.png",
+        29510
       ],
       [
-        "figures/node-N10-aerial.png",
-        2712230
+        "figures/node-C03-aerial.png",
+        2685571
       ],
       [
-        "figures/node-N10-eye.png",
-        2235726
+        "figures/node-C03-eye.png",
+        1822167
       ],
       [
-        "figures/node-N10-plan.png",
-        25199
+        "figures/node-C03-plan.png",
+        41403
       ],
       [
         "figures/stamp.json",
@@ -456,7 +496,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "geometry/movement.geojson",
-        27836
+        27908
       ],
       [
         "geometry/nodes.geojson",
@@ -468,7 +508,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "geometry/structure.geojson",
-        4345701
+        10950817
       ],
       [
         "image_provenance.json",
@@ -476,31 +516,31 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "manifest.json",
-        7728
+        7865
       ],
       [
-        "media/N05-aerial-v6.png",
-        3342246
-      ],
-      [
-        "media/N05-eye-day.png",
-        2867979
-      ],
-      [
-        "media/N07-aerial-v6.png",
-        3869821
-      ],
-      [
-        "media/N07-eye-day.png",
-        2580291
-      ],
-      [
-        "media/N10-aerial-v6.png",
+        "media/A03-aerial-v6.png",
         3811403
       ],
       [
-        "media/N10-eye-day.png",
+        "media/A03-eye-day.png",
         3089731
+      ],
+      [
+        "media/B03-aerial-v6.png",
+        3342246
+      ],
+      [
+        "media/B03-eye-day.png",
+        2867979
+      ],
+      [
+        "media/C03-aerial-v6.png",
+        3869821
+      ],
+      [
+        "media/C03-eye-day.png",
+        2580291
       ],
       [
         "media/city-aerial.png",
@@ -532,55 +572,55 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        27184
+        29342
       ],
       [
-        "renders/N05-aerial.png",
-        5525512
-      ],
-      [
-        "renders/N05-eye-day.png",
-        1703667
-      ],
-      [
-        "renders/N05-eye-evening.png",
-        1985643
-      ],
-      [
-        "renders/N07-aerial.png",
-        5538991
-      ],
-      [
-        "renders/N07-eye-day.png",
-        2117320
-      ],
-      [
-        "renders/N07-eye-evening.png",
-        2165953
-      ],
-      [
-        "renders/N10-aerial.png",
+        "renders/A03-aerial.png",
         4881422
       ],
       [
-        "renders/N10-eye-day.png",
+        "renders/A03-eye-day.png",
         2050889
       ],
       [
-        "renders/N10-eye-evening.png",
+        "renders/A03-eye-evening.png",
         2412534
       ],
       [
+        "renders/B03-aerial.png",
+        5525512
+      ],
+      [
+        "renders/B03-eye-day.png",
+        1703667
+      ],
+      [
+        "renders/B03-eye-evening.png",
+        1985643
+      ],
+      [
+        "renders/C03-aerial.png",
+        5538991
+      ],
+      [
+        "renders/C03-eye-day.png",
+        2117320
+      ],
+      [
+        "renders/C03-eye-evening.png",
+        2165953
+      ],
+      [
         "renders/city-aerial.png",
-        4601408
+        4601749
       ],
       [
         "renders/city-evening.png",
-        4797473
+        4797362
       ],
       [
         "renders/master-aerial.png",
-        4705199
+        4705086
       ],
       [
         "renders/prompts.json",
@@ -596,83 +636,83 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        35151
+        36842
       ],
       [
         "reviews/full-v6/01-site-reading.png",
-        522803
+        388357
       ],
       [
         "reviews/full-v6/02-siting-tradeoff.png",
-        219762
+        224869
       ],
       [
         "reviews/full-v6/03-five-systems.png",
-        170749
+        178119
       ],
       [
         "reviews/full-v6/04-first-neighbourhood.png",
-        244311
+        233592
       ],
       [
         "reviews/full-v6/05-housing-enlargement.png",
-        197105
+        187405
       ],
       [
         "reviews/full-v6/06-height-interface.png",
-        178841
+        145507
       ],
       [
         "reviews/full-v6/07-human-machine.png",
-        219203
+        199608
       ],
       [
         "reviews/full-v6/08-water-budget.png",
-        254628
+        255553
       ],
       [
         "reviews/full-v6/09-energy-dispatch.png",
-        262714
+        235868
       ],
       [
         "reviews/full-v6/10-governance.png",
-        222053
+        196685
       ],
       [
-        "reviews/full-v6/N05-finished.png",
-        3722663
+        "reviews/full-v6/A03-finished.png",
+        4200594
       ],
       [
-        "reviews/full-v6/N05-operation.png",
-        227358
+        "reviews/full-v6/A03-operation.png",
+        201667
       ],
       [
-        "reviews/full-v6/N05-plan-section.png",
-        189761
+        "reviews/full-v6/A03-plan-section.png",
+        191890
       ],
       [
-        "reviews/full-v6/N07-finished.png",
-        4032685
+        "reviews/full-v6/B03-finished.png",
+        3721929
       ],
       [
-        "reviews/full-v6/N07-operation.png",
-        217965
+        "reviews/full-v6/B03-operation.png",
+        207977
       ],
       [
-        "reviews/full-v6/N07-plan-section.png",
-        210029
+        "reviews/full-v6/B03-plan-section.png",
+        183196
       ],
       [
-        "reviews/full-v6/N10-finished.png",
-        4198424
+        "reviews/full-v6/C03-finished.png",
+        4031698
       ],
       [
-        "reviews/full-v6/N10-operation.png",
-        218270
+        "reviews/full-v6/C03-operation.png",
+        205403
       ],
       [
-        "reviews/full-v6/N10-plan-section.png",
-        198232
+        "reviews/full-v6/C03-plan-section.png",
+        212038
       ],
       [
         "reviews/full-v6/previous-statement.en.md",
@@ -712,7 +752,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/layout-v2/AGUA-FINITA-layout-v2.pdf",
-        462045
+        458860
       ],
       [
         "reviews/layout-v2/QA.md",
@@ -756,11 +796,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/presentation-v4/AGUA-FINITA-presentation-v4.pdf",
-        13298078
+        13298504
       ],
       [
         "reviews/presentation-v4/AGUA-FINITA-technical-appendix-v4.pdf",
-        7116850
+        6916111
       ],
       [
         "reviews/presentation-v4/appendix-cover.pdf",
@@ -776,15 +816,15 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/presentation-v4/node-locations.json",
-        760
+        773
       ],
       [
         "reviews/presentation-v4/node-locator.png",
-        255774
+        253907
       ],
       [
         "reviews/presentation-v4/node-locator.svg",
-        265653
+        120583
       ],
       [
         "reviews/presentation-v4/presentation-qa.json",
@@ -796,27 +836,27 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.png",
-        886381
+        858031
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.svg",
-        3456744
+        3149530
       ],
       [
         "reviews/whole-site-v3/02_corridors_and_phases.png",
-        858034
+        828047
       ],
       [
         "reviews/whole-site-v3/02_corridors_and_phases.svg",
-        3472127
+        3151440
       ],
       [
         "reviews/whole-site-v3/03_source_geometry.png",
-        858371
+        843059
       ],
       [
         "reviews/whole-site-v3/03_source_geometry.svg",
-        3459221
+        3205697
       ],
       [
         "reviews/whole-site-v3/README.md",
@@ -911,20 +951,20 @@ window.XCITY_SUBMISSIONS = [
         4951
       ],
       [
-        "tools/N05-aerial-v6-provenance.json",
-        1590
-      ],
-      [
-        "tools/N07-aerial-v6-provenance.json",
-        1615
-      ],
-      [
-        "tools/N10-aerial-v6-provenance.json",
+        "tools/A03-aerial-v6-provenance.json",
         1642
       ],
       [
+        "tools/B03-aerial-v6-provenance.json",
+        1590
+      ],
+      [
+        "tools/C03-aerial-v6-provenance.json",
+        1615
+      ],
+      [
         "tools/README.md",
-        3940
+        4660
       ],
       [
         "tools/cover-render-v5-provenance.json",
@@ -952,7 +992,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/full_design_v6.py",
-        28002
+        28724
       ],
       [
         "tools/hourly_dispatch.csv",
@@ -980,7 +1020,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/presentation_locator_v4.py",
-        5297
+        5770
       ],
       [
         "tools/reconcile_shade.py",
@@ -989,6 +1029,10 @@ window.XCITY_SUBMISSIONS = [
       [
         "tools/refine_views.py",
         1377
+      ],
+      [
+        "tools/render_whole_site_en.py",
+        11991
       ],
       [
         "tools/repair_geometry.py",
@@ -1012,11 +1056,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/write_full_narrative_v6.py",
-        32085
+        32077
       ],
       [
         "visual/index.html",
-        2338991
+        2338955
       ]
     ]
   }

@@ -572,7 +572,7 @@
         ]
       },
       "properties": {
-        "name": "P1 首批街区接驳",
+        "name": "P1 First-district connection",
         "from_id": "initial",
         "to_id": "A",
         "phase": "P1",
@@ -605,7 +605,7 @@
         ]
       },
       "properties": {
-        "name": "P1 西侧接入",
+        "name": "P1 Western access",
         "from_id": "entry",
         "to_id": "A",
         "phase": "P1",
@@ -682,7 +682,7 @@
         ]
       },
       "properties": {
-        "name": "P1 既定生活区接驳",
+        "name": "P1 Fixed living-quarter connection",
         "from_id": "living",
         "to_id": "A",
         "phase": "P1",
@@ -823,7 +823,7 @@
         ]
       },
       "properties": {
-        "name": "P2 生产主轴南段",
+        "name": "P2 Southern production spine",
         "from_id": "A",
         "to_id": "K1",
         "phase": "P2",
@@ -868,7 +868,7 @@
         ]
       },
       "properties": {
-        "name": "P2 北段生产主轴",
+        "name": "P2 Northern production spine",
         "from_id": "K1",
         "to_id": "K2",
         "phase": "P2",
@@ -933,7 +933,7 @@
         ]
       },
       "properties": {
-        "name": "P2 西北生活支线",
+        "name": "P2 Northwest settlement branch",
         "from_id": "K2",
         "to_id": "B",
         "phase": "P2",
@@ -990,7 +990,7 @@
         ]
       },
       "properties": {
-        "name": "P2 北部生活支线",
+        "name": "P2 Northern settlement branch",
         "from_id": "K2",
         "to_id": "C",
         "phase": "P2",
@@ -1151,7 +1151,7 @@
         ]
       },
       "properties": {
-        "name": "P3 绕山向东通道",
+        "name": "P3 Eastern corridor around the range",
         "from_id": "K1",
         "to_id": "D",
         "phase": "P3",
@@ -1244,7 +1244,7 @@
         ]
       },
       "properties": {
-        "name": "P3 门户联系",
+        "name": "P3 Gateway connection",
         "from_id": "D",
         "to_id": "E",
         "phase": "P3",

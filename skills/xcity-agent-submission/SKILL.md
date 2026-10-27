@@ -41,3 +41,6 @@ The external scales remain whole site—master design—three nodes; internally,
 - Load remote assets in submitted offline HTML, spend unapproved money or publish credentials.
 
 Site constraints: `skills/xcity-site-rules/SKILL.md`. Legacy node, presentation and matrix exceptions are independent and use the exact organiser-listed paths; a self-declared date cannot activate them.
+
+
+Final public submission language: English for the title, narrative, public summary, booklets, drawing annotations and legends. Communication, research and design may use the participant’s native language. Use exactly one A, one B and one C node from the current catalogue; there is no earlier-node alias or node-selection exception.

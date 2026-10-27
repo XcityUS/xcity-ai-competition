@@ -18,7 +18,7 @@ im,d=page('01 / POSITION','AGUA FINITA','The Finite Water City / San Juan, Argen
 d.arc((120,480,830,1190),30,330,fill=INK,width=65);d.line((150,1060,850,1060),fill=GOLD,width=28)
 d.text((1040,500),'A CITY THAT',font=font(110,True),fill=INK);d.text((1040,635),'CAN SAY:',font=font(110,True),fill=INK);d.text((1040,770),'ENOUGH.',font=font(140,True),fill=GOLD)
 wrap(d,1040,1010,'Growth follows a public water ledger. Shade, homes and essential services come before another server hall.',width=43,size=39)
-for x,n,l in [(130,'N05','HEAT WITHOUT THIRST'),(870,'N07','THE ABSENT RIVER'),(1610,'N10','THE RIGHT TO SHADE')]:d.text((x,1340),n,font=font(70,True),fill=INK);d.text((x,1445),l,font=font(28,True),fill=MUT)
+for x,n,l in [(130,'B03','HEAT WITHOUT THIRST'),(870,'C03','THE ABSENT RIVER'),(1610,'A03','THE RIGHT TO SHADE')]:d.text((x,1340),n,font=font(70,True),fill=INK);d.text((x,1445),l,font=font(28,True),fill=MUT)
 # Wide cover sized for the organiser's hero panel, avoiding crop loss.
 im=Image.new('RGB',(2400,1050),BG);d=ImageDraw.Draw(im)
 d.arc((130,160,830,860),30,330,fill=INK,width=62);d.line((155,730,850,730),fill=GOLD,width=26)

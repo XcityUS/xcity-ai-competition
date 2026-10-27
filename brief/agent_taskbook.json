@@ -118,5 +118,6 @@
     "automatic checks and independent content review",
     "revise and submit"
   ],
-  "design_depth_policy": "brief/design-depth.json"
+  "design_depth_policy": "brief/design-depth.json",
+  "public_submission_language": "en"
 }

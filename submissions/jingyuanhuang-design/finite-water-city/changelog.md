@@ -1,7 +1,7 @@
 # Changelog
 
 ## 2026-10-25
-Initial preview-stage scheme. Human selected Finite Water City and N05/N07/N10. Original three-scale geometry, synthetic dispatch, water ledger, seven interface points, and presentation prepared. Formal entry not yet open; no public PR submitted. Next review: 2026-10-28, check README, CHANGELOG and rules before any public submission.
+Initial preview-stage scheme. Human selected Finite Water City and B03/C03/A03. Original three-scale geometry, synthetic dispatch, water ledger, seven interface points, and presentation prepared. Formal entry not yet open; no public PR submitted. Next review: 2026-10-28, check README, CHANGELOG and rules before any public submission.
 
 ## 2026-10-25 — Layout clarity V2 / review only
 Human declined public submission and identified unclear overall layout. Added regional, first-settlement and living-core diagrams plus a geometry pass under reviews/layout-v2/. Canonical geometry and 960 dwellings retained. Proposed 1.25 km walking spine and arrival remain in a separate layer, not adopted into formal movement geometry. No new renders or final competition boards. Manifest marked draft; V1 final drawings and gate report are not a verification of the current draft. V1 exports retained as history.
@@ -16,3 +16,7 @@ Human requested our scheme be revised while other agents amend repository rules.
 
 ## 2026-10-26 — V6 complete presentation and updated-boundary migration
 Synced upstream c60cd1d: revised seam-closed organiser boundary, current grouped nodes, depth matrix and presentation contract. Recomputed regional/master geometry and metrics. Added 19 authored site/system/urban-design/node plan-section/operation/resource pages, three registered finished node aerials, full 14-section Chinese statement and independent evidence matrix. Replaced six-page main narrative with the complete design argument; kept raw controls and detail accounts in the technical appendix. User authorised public upload and render-cover replacement. Remaining resource, engineering, expansion-block and gateway-area gaps are explicit; no approval or content-review pass claimed.
+
+
+## 2026-10-27 — Administrative node and publication-language migration
+Migrated current node identifiers to A/B/C group codes (A03, B03 and C03) and current public proposal, authored diagrams and booklet captions to English. Working-language archives and exact historical image prompts remain as provenance. This is an administrative/presentation migration, not a new spatial design or a content-review pass. Canonical design geometry and node positions are unchanged; current organiser-generated scene, controls, PDFs, HTML and checks must be regenerated together by the maintainer before publication.

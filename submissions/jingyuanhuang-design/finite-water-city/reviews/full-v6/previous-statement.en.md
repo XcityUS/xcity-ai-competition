@@ -97,29 +97,29 @@ Four irreversible commitments deserve an early public vote: the wash corridor re
 
 ## 10. Key nodes · 重点节点
 
-### N05 | Heat without thirst
+### B03 | Heat without thirst
 
 Three declared 180 by 75 m single-storey compute halls face a protected service zone. Repair and drying workshops occupy the next strip; the intervening path provides a visible public boundary without turning the data hall into an unsecured public building. A metered loop gives the drying cooperative an auditable heat offer rather than a decorative greenhouse. Sections distinguish the 9 m hall, approximately 7 m workshop and separate public circulation. Morning is maintenance and drying preparation, afternoon is flexible compute dispatch, and evening is a quieter workshop edge. Equipment intake filtration, fire separation and noise remain engineering tasks.
 
-![N05 plan](figures/node-N05-plan.png)
-![N05 aerial concept](figures/node-N05-aerial.png)
-![N05 eye-level concept](figures/node-N05-eye.png)
+![B03 plan](figures/node-B03-plan.png)
+![B03 aerial concept](figures/node-B03-aerial.png)
+![B03 eye-level concept](figures/node-B03-eye.png)
 
-### N07 | The absent river
+### C03 | The absent river
 
 This node treats a mostly dry channel as a river even when there is no visible water. The park has gravel ground, flood closure gates and a seasonal walking spur; there are no permanent buildings in the mapped channel or its screening reserve. The water classroom occupies the eastern high-ground edge. The long cross-section is deliberately unheroic: the channel has room and people retreat. At dawn a guide explains traces of past flows; when upstream warnings arrive the lower path closes before rain reaches town; at night the wash stays dark. The concept images must keep it dry and spare rather than inventing a blue river.
 
-![N07 plan](figures/node-N07-plan.png)
-![N07 aerial concept](figures/node-N07-aerial.png)
-![N07 eye-level concept](figures/node-N07-eye.png)
+![C03 plan](figures/node-C03-plan.png)
+![C03 aerial concept](figures/node-C03-aerial.png)
+![C03 eye-level concept](figures/node-C03-eye.png)
 
-### N10 | The right to shade
+### A03 | The right to shade
 
 The central declared 270 by 140 m civic roof perimeter encloses an open gravel commons between library, kitchen, market and service buildings. The roof strips are 12 m deep at its north and south edges, with narrow side connections; shaded pedestrian connectors reach housing. Its open middle supports evening markets and gatherings, while occupied edges offer deep shade at midday. These are actual canopy geometries, not a claim that the entire square is shaded. No machine route enters the commons. A child can wait at the kitchen, an elder can choose the cooled library, and a night-shift worker can use a staffed refuge. The space spends little landscape water because social comfort is provided by roofs and usable indoor neighbours.
 
-![N10 plan](figures/node-N10-plan.png)
-![N10 aerial concept](figures/node-N10-aerial.png)
-![N10 eye-level concept](figures/node-N10-eye.png)
+![A03 plan](figures/node-A03-plan.png)
+![A03 aerial concept](figures/node-A03-aerial.png)
+![A03 eye-level concept](figures/node-A03-eye.png)
 
 ## 11. Metrics and evidence · 指标与证据
 
@@ -145,7 +145,7 @@ We deliberately do not optimise uninterrupted compute throughput or minimum cool
 
 sources.json retains organiser boundary and pilot licences, Copernicus attribution and OSM ODbL credits. Indicative siting is explicitly indicative. External primary guidance is limited to DOE's water/energy definitions, INPRES's seismic regulatory context and the Climate Group's hourly-accounting framework. None establishes a local water right, grid offer, performance warranty or approval. assumptions.json records water, cooling, climate, supply, access, flood screening, seismic, housing and finance gaps. These assumptions must be replaced with evidence before implementation.
 
-Codex in the GPT-6 family generated original geometry, text, operating models and presentation on macOS; the exact serving-model version is not exposed in this session and is not invented. Jingyuan Huang requested entry, chose the recommended Finite Water City direction with N05/N07/N10 and selected the public account and responsibility name. Because choosing the direction is a human design decision, autonomy is disclosed as human_directed. No other entrant's design or example geometry was copied. Script-generated drawings and geometry-derived massing controls establish spatial evidence; registered AI concept images are presentation only and may not be read as photographs or measured conditions. The preview call is not yet open for formal entry. The human explicitly authorised public publication after the layout review on 2026-10-25. This version is a public preview in the author fork; formal competition entry still requires an open submission period.
+Codex in the GPT-6 family generated original geometry, text, operating models and presentation on macOS; the exact serving-model version is not exposed in this session and is not invented. Jingyuan Huang requested entry, chose the recommended Finite Water City direction with B03/C03/A03 and selected the public account and responsibility name. Because choosing the direction is a human design decision, autonomy is disclosed as human_directed. No other entrant's design or example geometry was copied. Script-generated drawings and geometry-derived massing controls establish spatial evidence; registered AI concept images are presentation only and may not be read as photographs or measured conditions. The preview call is not yet open for formal entry. The human explicitly authorised public publication after the layout review on 2026-10-25. This version is a public preview in the author fork; formal competition entry still requires an open submission period.
 
 
 
