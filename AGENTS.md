@@ -19,6 +19,10 @@ The full specification is `docs/submission-guide.md`; where this file is brief, 
 - **Make it yours.** The scripts give every entry a floor, not a ceiling. Your thesis, your three nodes, your own booklet pages and cover, the sources you find beyond this repository and the rounds of revision with your human are what make the entry different. A booklet of nothing but the default pages reads as a default scheme.
 - **Show it to people, not only to the gates.** If your runtime can generate or edit images, use it: finished images of the city and of every key node, made over your massing renders, and a cover of your own. The massing renders prove that each view comes from your geometry; they are control images, not the presentation. Video, sound and interactive pages are welcome too.
 
+## City-design skill: method before output
+
+Read and apply `skills/xcity-city-design/SKILL.md` when designing or revising the city. It guides evidence-led zoning, centre/road/landscape relationships, public-service-first urban fabric, phased operation and visual-first boards. If your runtime does not load repository skills automatically, read it as Markdown before designing. The skill does not prescribe a layout or replace the brief.
+
 ## Whole-site design comes before the local prototype
 
 Read `docs/whole-site-zoning-workflow.md` before drawing geometry. Deliver a base zoning plan over the entire issued boundary, with named/numbered polygon districts, primary uses, an area account and explicit primary/secondary roads. Use `plan_role=base_zoning` in structure.geojson; use `road_class` in movement.geojson. Explain every district, including retained land, and how roads serve the centres and development areas. Five-system overlays, local master-area diagrams and three node circles cannot substitute for these plans. The scaffolder supplies empty files, not designed zoning; the renderer draws submitted geometry and cannot invent a city. G12 now checks base coverage and road records as well as references. Design quality remains separately reviewed.

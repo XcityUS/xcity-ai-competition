@@ -28,7 +28,7 @@
 | 数据性质、版本和局限 | site-package/evidence-index、sources、datapackage | sources、assumptions、矩阵缺口 | site-evidence.schema；check_rule_consistency | CRS/单位/尺度/来源日期/方法/许可/缺口；不知道则标未知 |
 | 三类结果 | design-depth.review_states；evaluation | self_check三个结果对象 | self_check_submission；design_depth | 自动合规、内容未评审、待核实事项；无自动设计批准 |
 | 机构申请 | practice-schedule；firm-track；中英PDF | 官网注册、专属逐项材料页、可选工作表 | 私有API的文件/页数/完整性/权限校验 | 注册截止12月31日；完整在线申请1月31日；2月选五家；邮件只发送私链/通知 |
-| 更新订阅 | 首页interest表单 | tracks多选 | interest.js | 仅首页、可选两赛道；邮件发送后才完成订阅，与报名分开 |
+| 更新订阅 | 首页interest表单 | tracks多选 | interest.js | 仅首页、可选两赛道；后台确认保存后完成订阅，不调用邮件客户端，与报名分开 |
 
 ## 兼容与迁移
 

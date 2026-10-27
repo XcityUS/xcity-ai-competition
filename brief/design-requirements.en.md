@@ -229,3 +229,17 @@ Method and review basis: [docs/city-design-method-basis.md](https://github.com/X
 ### Full-site zoning and the road framework
 
 Follow [the whole-site zoning workflow](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md). The entire issued site needs an explicit base zoning proposal, not a small city plan over an unexplained background. In structure.geojson, use plan_role=base_zoning with district_id, name, primary_use and basis_ref plus system; separate optional overlapping relations as system_overlay. Draw the primary and secondary road skeleton in movement.geojson using road_class; network denotes users, not hierarchy. Recompute the full-site area account. G12 checks coverage, overlap, identifiers and road-class records, not design quality. Local enlargements and node images do not replace these full-site plans.
+
+## Trace each district edge to a decision / 分区线要能追溯到设计决定
+
+Read and apply `skills/xcity-city-design/SKILL.md` before geometry generation. For each meaningful district, explain its role/users, edge logic, source or declared assumption, access/service relationship, capacity basis and construction dependency in the existing proposal and account. Terrain/drainage, proposed corridors, centre/service relationships, operating interfaces and justified phase boundaries can inform edges. Where an edge is a design choice, say so. Rectangles, nearest-centre partitions or suitability pixels alone are not a functional zoning argument. Do not invent parcel boundaries, existing roads or detailed surveyed constraints.
+
+At city scale show meaningful district and block relationships; resolve the selected urban enlargements without claiming that every hectare requires detailed parcels. Reserve and connect public-service sites before filling land with repeated housing modules. Overlay functions, roads, landscape and service access from the same geometry, inspect conflicts, and revise the organising layout before node views or finished renders. Keep a drawing when it tests a decision, required verification or clear communication, rather than adding sheets mechanically. No extra submission form or fixed site/population/page quota is introduced.
+
+分区须在既有方案说明和土地账里讲清：用途与使用者、边界为何落在这里、资料或假设、交通和服务联系、容量依据、建设条件。地形水文、拟建路廊、中心与服务关系、生产运营和合理分期都可支持边界；设计选择应明说。不能只用矩形、最近中心自动分割或适宜性像元直接充当功能规划。先按使用与容量预留公服，再排街坊和住宅，叠合道路、功能、景观与服务并处理冲突，最后深化节点和渲染。不新增填表负担，不限定开发面积、人口或页数。
+
+## Visual-first A0 / A0以空间设计为主
+
+Use the A0 board to communicate the city: a dominant overall plan/axon, coordinated functional/road/landscape diagrams, legible district and centre relationships, necessary node evidence and a concise construction sequence. Keep only numbers that materially explain scale, capacity, a resource constraint or phase choice, clearly scoped and tagged. Full district-by-phase population/dwelling/job accounts, detailed metric grids, all source/evidence columns and logs remain in the technical appendix and machine files. The phase map is still required; a dense spreadsheet or dozens of numerical badges is not its replacement. There is no additional fixed number quota and fewer numbers do not excuse missing calculations. The default A0 now summarises the three stages visually rather than reproducing every district row.
+
+A0是讲清空间方案的展板：以全域总图/轴测为主，配功能、路网、景观、中心关系和必要节点图，并说明建设顺序。只保留直接支持尺度、容量、资源约束或分期判断的关键数字，标清范围与依据。完整分区分期的人口、住房、岗位、指标及来源表和日志放技术附件与机器文件；A0仍须有分期图，不用密集Excel式表格，也不改成满板数字卡片。不新增固定数字数量限制，更不取消计算义务。

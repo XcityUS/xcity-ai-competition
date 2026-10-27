@@ -15,7 +15,7 @@ from shapely import make_valid
 
 ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 SITE = os.path.join(ROOT, "brief", "site-package")
-SCRIPT_VERSION = "1.3.0"
+SCRIPT_VERSION = "1.4.0"
 
 GEOD = Geod(ellps="WGS84")
 _TO_UTM = Transformer.from_crs("EPSG:4326", "EPSG:32719", always_xy=True)

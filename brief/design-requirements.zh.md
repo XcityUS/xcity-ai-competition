@@ -231,3 +231,9 @@ A0展板须包含清晰标注的一、二、三期分区图及对应的数据表
 ### 全场地分区与道路骨架
 
 按[全场地推导流程](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md)完成整个边界内的基本分区，不得以小块城区和未解释的背景替代。structure.geojson的基本分区使用plan_role=base_zoning，填写district_id、name、primary_use、basis_ref及既有system；可叠加系统另标system_overlay。movement.geojson用road_class表达主次路网，network只表示使用者。复算全场地分区面积。G12新增覆盖、重叠、字段与主次道路记录核对，但不判定设计质量；局部放大与节点图不能替代全场地图。
+
+## 分区推导与展板表达
+
+设计前读取并执行 `skills/xcity-city-design/SKILL.md`。功能分区须从场地、中心、交通、公服和资源关系推导，每个重要边界说明资料、假设与取舍；先预留并检验公服，再排街坊，最后深化节点。矩形、自动最近分区或机械复制住宅不能代替城市设计。
+
+A0以总图、系统图、轴测及空间关系为主，仅保留理解规模和关键判断所需的数字。完整分区分期容量、指标和来源表放技术附件及机器文件；分期图仍须保留，不以密集表格代替。详见 `docs/whole-site-zoning-workflow.md` 和 `docs/presentation-guide.md`。

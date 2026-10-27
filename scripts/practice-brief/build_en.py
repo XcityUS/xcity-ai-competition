@@ -101,11 +101,11 @@ para('Explain how Phase 1 will share services, jobs, procurement and transport w
 para('Base maps: Natural Earth. Provincial boundaries: amCharts geodata. Competition boundary: XCITY project information. For regional orientation only.',50,514,742,8,GRAY)
 #07
 base('04 · THE SITE','Location and access')
-image('satellite-region.jpg',50,125,345,378);image('satellite-site.jpg',425,125,367,190)
+image('satellite-region.jpg',50,125,345,378)
 roads=json.loads((O/'analysis.json').read_text())['road_straight_distance_km']
 for i,(a,b,k) in enumerate([('RN 40','North–south regional route','RN40'),('RN 20','San Juan and eastern links','RN20'),('RN 141','Eastern regional connection','RN141'),('RN 150','Regional connection towards Chile','RN150'),('RP 510','Eastern provincial road','RP510')]):
- y=330+i*30;txt(a,425,y,9);txt(b,485,y,8.6);txt(f'{roads[k]:.1f} km',735,y,9);line(y+23,425,367)
-para('Distances are the shortest straight-line measurements from the site boundary to each road, not driving distances. Proposals must assess access routes, rights and enabling works.',425,491,367,8.5)
+ y=205+i*44;txt(a,425,y,9);txt(b,485,y,8.6);txt(f'{roads[k]:.1f} km',735,y,9);line(y+23,425,367)
+para('Distances are the shortest straight-line measurements from the site boundary to each road, not driving distances. Proposals must assess access routes, rights and enabling works.',425,455,367,9)
 para('Satellite mosaic: Esri World Imagery; credits are shown on the image. Accessed 27 October 2026. Acquisition dates vary across the mosaic. The yellow outline is drawn from the current open-seam-closure GeoJSON.',50,512,345,7.5,GRAY)
 c.linkURL('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',(50,H-545,395,H-510))
 #08

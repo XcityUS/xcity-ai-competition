@@ -102,12 +102,11 @@ para('底图：Natural Earth；省界：amCharts geodata；场地范围：XCITY�
 #07 satellite and roads
 base('04 · 场地','区位与交通')
 image('satellite-region.jpg',50,125,345,378)
-image('satellite-site.jpg',425,125,367,190)
 roads=json.loads((O/'analysis.json').read_text())['road_straight_distance_km']
 rows=[(a,b,f'{roads[k]:.1f} km') for a,b,k in [('RN 40','南北向区域干线','RN40'),('RN 20','省会及东部方向','RN20'),('RN 141','东向区域联系','RN141'),('RN 150','智利方向区域联系','RN150'),('RP 510','东侧省道','RP510')]]
 for i,(a,b,d) in enumerate(rows):
- y=330+i*30;txt(a,425,y,9);txt(b,491,y,9);txt(d,724,y,9);line(y+23,425,367)
-para('距离为本轮场地边缘至现有道路的最近直线距离，并非实际行驶距离。各方向进场道路的路由、权属及工程量由方案论证。',425,491,367,8.5)
+ y=205+i*44;txt(a,425,y,9);txt(b,491,y,9);txt(d,724,y,9);line(y+23,425,367)
+para('距离为本轮场地边缘至现有道路的最近直线距离，并非实际行驶距离。各方向进场道路的路由、权属及工程量由方案论证。',425,455,367,9)
 para('真实卫星拼接影像：Esri World Imagery；署名见图内。访问：2026-10-27；不同位置拍摄日期不同，非同期现场测绘。黄色线直接采用本次开放接缝闭合后的同源边界。',50,512,345,7.5,GRAY)
 c.linkURL('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',(50,H-540,395,H-510))
 #08

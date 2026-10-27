@@ -562,7 +562,18 @@
       "no_minimum_built_area": true,
       "no_fixed_page_count": true,
       "automatic_checks": "Full-site polygon coverage/overlap, required attributes and explicit road classes only; no design-quality or engineering approval.",
-      "workflow": "docs/whole-site-zoning-workflow.md"
+      "workflow": "docs/whole-site-zoning-workflow.md",
+      "method_skill": "skills/xcity-city-design/SKILL.md",
+      "boundary_reasoning": "Explain district role/users, spatial edge logic, source/assumption, access/service relationship, capacity and phase/resource dependency in existing proposal/accounts. Automatic coverage does not verify this reasoning."
+    },
+    "a0_presentation": {
+      "visual_first": true,
+      "full_phase_map_required": true,
+      "full_quantitative_accounts_location": "technical_appendix_and_machine_files",
+      "dense_district_phase_tables_on_board": false,
+      "fixed_numeric_quota": false,
+      "key_numbers": "Only figures needed to understand scale, capacities, decisive constraints or construction choices; scope/evidence labelled.",
+      "calculations_still_required": true
     }
   },
   "public_submission_language": {
