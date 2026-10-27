@@ -188,6 +188,13 @@ def figure_input_hash(pkg):
     shown = {k: man.get(k) for k in ("title", "title_zh", "slug", "summary", "thesis", "nodes", "nodes_reason", "author",
                                       "agent", "autonomy", "tradeoff", "booklet")}
     h.update(json.dumps(shown, sort_keys=True, ensure_ascii=False).encode())
+    booklet=man.get('booklet') if isinstance(man.get('booklet'),dict) else {}
+    custom=booklet.get('section_pages') if isinstance(booklet.get('section_pages'),dict) else {}
+    for section,pages in sorted(custom.items()):
+        for page in pages if isinstance(pages,list) else []:
+            rel=page.get('path') if isinstance(page,dict) else None
+            path=os.path.join(pkg,str(rel or ''))
+            if rel and os.path.isfile(path):h.update(('booklet.section_pages:'+section+':'+rel).encode()+b'\0'+sha256_file(path).encode())
     # the brief page prints the compliance matrix and the proposal's headings; the booklet places the entrant's pages
     cm = os.path.join(pkg, "compliance_matrix.json")
     if os.path.exists(cm):

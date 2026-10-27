@@ -71,6 +71,11 @@ def main():
         ("Nodes", ", ".join(man.get("nodes", []))),
         ("Updated", man.get("updated", "")),
     ])
+    downloads = '<nav aria-label="Submission documents"><a href="../drawings/a3-booklet.pdf">Public presentation</a>'
+    if os.path.isfile(os.path.join(pkg, "drawings", "a3-technical-appendix.pdf")):
+        downloads += ' · <a href="../drawings/a3-technical-appendix.pdf">Technical appendix</a>'
+    downloads += '</nav>'
+    body = downloads + body
     doc = ("<!doctype html><html lang=\"%s\"><head><meta charset=\"utf-8\">"
            "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
            "<meta name=\"xcity-source-sha256\" content=\"%s\">"

@@ -6,4 +6,6 @@ Pillow>=9.0
 markdown>=3.4
 # Optional
 # playwright>=1.40   massing renders (scripts/render_views.py); then: python -m playwright install chromium
-# pikepdf>=8.0       smaller booklet and board PDFs (make_figures.py compresses images when it is installed)
+# pikepdf>=8.0       optional faster PDF compression; pypdf is used otherwise
+
+pypdf>=6.1  # presentation-index PDF page verification

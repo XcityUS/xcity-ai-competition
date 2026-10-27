@@ -254,13 +254,13 @@ table(['条件','要求与证明'],[
 ['联合体与重复申请','允许联合体共同满足要求，提供协议或成员及分工说明，明确牵头方与职责；成员不得再单独申请或加入其他联合体重复申请。']],[145,597],y=200,size=10,minh=55)
 para('专业资格用于确认身份及执业条件，作品、实际团队和最多十页初步构想共同用于择优遴选。所提交材料须真实、可核实，并披露与主办方、评审人员的利益关系。',50,518,742,8.5,GRAY)
 base('14 · 规则与流程','在线登记与申请')
-para('在线登记／继续申请：xcity-practice-applications.jingyuan-huang.chatgpt.site',50,139,742,11,INK)
-c.linkURL('https://xcity-practice-applications.jingyuan-huang.chatgpt.site',(50,H-167,792,H-137))
+para('在线登记／继续申请：xcityus.github.io/xcity-ai-competition/application.html',50,139,742,11,INK)
+c.linkURL('https://xcityus.github.io/xcity-ai-competition/application.html',(50,H-167,792,H-137))
 for i,(a,b) in enumerate([
 ('先登记基本信息','填写机构、注册国家或地区、联系人及邮箱。登记时无需准备附件或初步构想。'),
 ('保存私人管理链接','通过专属链接返回申请草稿。请妥善保存，不会自动发送邮件；持有此链接的人可以编辑申请。'),
 ('补充材料并保存草稿','在线填写团队及相关业绩，提供注册依据或官方查询链接、适用专业资格或当地制度说明、作品集或项目链接，以及单独的最多十页构想PDF。'),
-('完整后正式提交','正式提交前可保存部分内容、替换附件。提交窗口和具体日期在官方网站公布；登记及保存材料不代表资格通过或入围。')]):
+('完整后正式提交','现可登记并保存草稿，正式提交开放日另行通知。2026年12月31日23:59 UTC截止登记；2027年1月31日23:59 UTC截止完整申请；2027年2月遴选五家。登记不代表入围。')]):
  y=207+i*76;txt(f'0{i+1}',50,y,18,GRAY);txt(a,93,y,12,INK);para(b,93,y+25,699,9.6)
 para('文件支持PDF、PNG、JPG；单个不超过10 MB，合计不超过25 MB。申请阶段不要求公证。联系：competition@xcity.ai。',50,526,742,8,GRAY)
 # First-round workflow and exact five pages.
@@ -300,8 +300,8 @@ para('资料包、答疑与补遗采用统一发布渠道。后续勘察、地�
 base('联系与官方信息','联系方式')
 txt('XCITY',50,193,32,INK);txt('机构赛道 · 国际总体规划与城市设计竞赛',50,254,17)
 para('请在线登记并准备申请。所有申请人适用统一申请要求、资格审核与评审标准。资料、澄清及通知通过官方渠道统一发布；问题可联系下列邮箱。',50,325,650,12)
-para('在线申请：xcity-practice-applications.jingyuan-huang.chatgpt.site',50,414,742,10)
-c.linkURL('https://xcity-practice-applications.jingyuan-huang.chatgpt.site',(50,H-434,792,H-412))
+para('在线申请：xcityus.github.io/xcity-ai-competition/application.html',50,414,742,10)
+c.linkURL('https://xcityus.github.io/xcity-ai-competition/application.html',(50,H-434,792,H-412))
 txt('联系邮箱：',50,465,10,GRAY);txt('competition@xcity.ai',108,463,12,INK)
 c.linkURL('mailto:competition@xcity.ai',(108,H-460,358,H-440))
 c.save()

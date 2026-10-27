@@ -72,6 +72,7 @@ python -m pip install -r requirements.txt     # Python 3.10+
 5. `brief/site-package/README.md` — then load the data you need (boundaries, pilot area, channels, terrain, indicative systems, nodes).
 6. `brief/evaluation.json` — the twelve gates, the four criteria and the seven dimensions; `brief/scenarios.json` — situations the panel will raise.
 7. `docs/submission-guide.md` — the package format. `docs/visual-guide.md` — drawings and renders.
+8. **`docs/presentation-guide.md` and `templates/presentation.template.md` — required public reading order and the separate technical appendix. Plan the presentation before rendering.**
 
 ## 3. Create your package
 
@@ -137,14 +138,18 @@ python scripts/ai_render.py submissions/<login>/<slug> register media/<view>.jpg
 
 Every image in `media/` is registered in `image_provenance.json` with its model, its full prompt and its control image (gate G10). Images illustrate the geometry; they are never evidence, and each caption says it is a concept image. The drawings use them automatically, in this order: a registered image, then the massing render, then make_figures' own massing drawing.
 
-The booklet is yours to shape. In `manifest.json`, `booklet.cover` names any image in your package for the cover, and `booklet.pages` adds your own pages — `{"path": "pages/<file>.png", "after": "cover|idea|views|brief|figures|N05|nodes|day|end", "title": "..."}`. Draw them with your own tools (diagrams, a day in pictures, identity, a phasing film strip); keep the script in `tools/`. A page made with an image model is registered in `image_provenance.json` like any image.
+The booklet's graphic layout is yours; its **information structure is required**: whole-site plan → shared node locator (whole site to master area to all three nodes and their connections) → three node sections in manifest order → phasing → key indicators. A cover/thesis may precede this sequence. Each node uses the same ID and official topic, a place name, location/access explanation, finished aerial and eye-level views, and necessary design plans/sections. Mark the existing no-image-tool massing fallback visibly; never call a control a finished image. See `templates/presentation.template.md`.
+
+Keep controls, image/control comparisons, full accounts, compliance tables, detailed sections, assumptions and disclosure in **`drawings/a3-technical-appendix.pdf`**. Keep the original checked files on disk. `make_figures.py` produces the main booklet, this appendix and a page index. G12 checks the index/PDF ranges, not visual quality or planning adequacy.
+
+`manifest.booklet.cover` selects a cover. `booklet.pages` adds your own pages; presentation and technical insertion anchors are listed in `docs/presentation-guide.md`. Custom pages preserve the reading order and the separation of controls from presentation. To replace default public section layouts, set `booklet.section_pages` as described in the presentation guide; the generator retains checked figures and updates the page index.
 
 ```bash
-python scripts/make_figures.py submissions/<login>/<slug>        # 7 figures, three sheets per node, A3 booklet, A0 board
+python scripts/make_figures.py submissions/<login>/<slug>        # checked figures, public A3 booklet, technical appendix, page index and A0 board
 python scripts/finalize_submission.py submissions/<login>/<slug> # HTML, ready_for_review, the twelve gates
 ```
 
-Read every message, fix, run again (`finalize_submission.py --redraw` forces a full redraw). **Open the pull request only when it prints PASS 12/12.** Look at `drawings/a3-booklet.pdf` yourself before you submit: if a drawing looks wrong, the geometry is wrong.
+Read every message, fix, run again (`finalize_submission.py --redraw` forces a full redraw). **Open the pull request only when it prints PASS 12/12.** Open both PDFs. Verify the main reading order, shared locator, node titles/locations and image quality, and compare the finished views with their controls in the appendix. A wrong view may be a geometry, camera or image-editing problem; diagnose it. Passing the gates does not establish that the presentation or city is adequate.
 
 ## 8. Submit
 

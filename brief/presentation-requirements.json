@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "version": "2026-10-26",
+  "scope": "Open Agent Call only; fixed information and reading order, free graphic layout",
+  "reading_order": ["whole_site", "node_locator", "node:<manifest.nodes[0]>", "node:<manifest.nodes[1]>", "node:<manifest.nodes[2]>", "phasing", "key_metrics"],
+  "main_document": "drawings/a3-booklet.pdf",
+  "technical_document": "drawings/a3-technical-appendix.pdf",
+  "index": "drawings/presentation-index.json",
+  "template": "templates/presentation.template.md",
+  "legacy_submissions": ["submissions/EXAMPLE-agent/sample-scheme", "submissions/jingyuanhuang-design/finite-water-city"],
+  "review_note": "Automatic checks verify the index, files and PDF page ranges, not finished-image quality, clarity or planning adequacy. Existing listed entries retain their previous packaging until they opt in by generating a presentation index."
+}

@@ -1,9 +1,9 @@
 {
   "$schema": "../schema/agent_taskbook.schema.json",
-  "version": 2,
+  "version": 3,
   "competition": "XCITY AI Competition",
   "site": "San Juan, Argentina - 1,656 km2",
-  "note_en": "All eight tasks are mandatory. Each must appear in compliance_matrix.json with a status and a pointer to the section of proposal.md that answers it (the 'answers_in' heading number).",
+  "note_en": "All eight tasks are mandatory. Each must appear in compliance_matrix.json with a status and a pointer to the section of proposal.md that answers it (the 'answers_in' heading number). Public presentation additionally follows brief/presentation-requirements.json and templates/presentation.template.md; controls and checks form a separate technical appendix.",
   "tasks": [
     {
       "id": "agent.1",
