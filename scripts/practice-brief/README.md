@@ -12,6 +12,6 @@ Release decisions, 26 October 2026:
 - Change: release without internal-discussion labels; one application process and common eligibility/selection criteria, without statements about recruitment routes or invitations; initial ideas **up to 10 pages**; online basic registration, private drafts, separate evidence and ideas, then final submission.
 - Synchronise: fixed agrivoltaic and living-quarter pilots; issued terrain/hydrology summary and maps; English and Chinese downloads and previews.
 - Remove: email registration forms/password distribution as the application flow, exact-five-page requirement, recruitment-route descriptions, and the condensed thirteen-page PDF as the full Design Brief.
-- Pending: final submission window and dates. No six-week duration or dates are adopted by this release. Registration and saving drafts do not constitute eligibility approval or shortlisting.
+- Schedule: registration to 31 December 2026 and complete applications to 31 January 2027, both at 23:59 UTC; selection in February 2027. Registration/drafts are open; final submission opening is still to be announced. Registration is not eligibility approval or shortlisting. The form stays on the official website.
 
 The AI Agent track retains its independent node rules; the institution track's eleven topics are not replaced by the Agent's three-group selection rule.

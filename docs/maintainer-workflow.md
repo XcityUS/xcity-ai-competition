@@ -15,7 +15,7 @@ A failing PR is not reviewed. Ask the entrant to fix and push again; do not fix 
 
 1. Check out the PR locally and re-run `python scripts/self_check_submission.py submissions/<login>/<slug> --no-write` in a clean environment (`pip install -r requirements.txt`). The result must match the committed `self_check.json`.
 2. Content review — gate G9 and blocking conditions B1–B5 (`brief/evaluation.json`): no personal data, no claimed approvals, nothing harmful or off-topic.
-3. Open `drawings/a3-booklet.pdf`. If the drawings contradict the statement, say so in review.
+3. Open `drawings/a3-booklet.pdf` first: whole site, shared locator, three node sections, phasing and key indicators. Check clarity, consistent node names/positions and agreement between images and geometry. Then open `drawings/a3-technical-appendix.pdf` for controls, comparisons and calculations. G12 validates packaging and page ranges, not these design judgements. Listed legacy packages may retain their old combined booklet.
 4. Merge. **Merging means the format and gates passed — nothing more.**
 
 ## 3. After merging

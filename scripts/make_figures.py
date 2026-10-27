@@ -13,7 +13,9 @@ Reads only your own geometry/, metrics.json and manifest.json plus the site pack
     figures/fig-06-phasing.png          three phases and their triggers
     figures/fig-07-metrics.png          every declared metric with its evidence tag
     figures/node-<id>-plan.png | -aerial.png | -eye.png   for each of your three nodes (scale 3)
-    drawings/a3-booklet.pdf             cover, the seven figures, node sheets, disclosure
+    drawings/a3-booklet.pdf             public presentation in the required reading order
+    drawings/a3-technical-appendix.pdf controls, accounts, sections and disclosure
+    drawings/presentation-index.json  main section page ranges and document page counts
     drawings/a0-board.pdf               one A0 board
     figures/stamp.json                  what the figures were drawn from (GATE-G10 checks it)
 
@@ -48,6 +50,7 @@ from shapely.geometry.polygon import orient                         # noqa: E402
 from PIL import Image                                               # noqa: E402
 from shapely.geometry import Point, LineString, box                 # noqa: E402
 from shapely.ops import unary_union                                 # noqa: E402
+import presentation
 import xcity_common as xc                                           # noqa: E402
 
 # ------------------------------------------------------------------------------- style
@@ -437,8 +440,8 @@ def master_window(pkg, ax, pad=600):
     return fit_aspect(pkg.master.buffer(pad).bounds, ax_aspect(ax))
 
 
-def panel_master(pkg, ax, compact=False):
-    win = master_window(pkg, ax)
+def panel_master(pkg, ax, compact=False, window=None):
+    win = window if window is not None else master_window(pkg, ax)
     W = box(*win)
     hillshade(ax, pkg, alpha=0.35)
     site_context(ax, pkg)
@@ -1739,6 +1742,24 @@ def draw_node_day(pkg, nid, size=A3):
     return fig
 
 
+def section_pages(pkg,section):
+    """Optional authored page images replace a public section; checked figures remain separate."""
+    configured=booklet_cfg(pkg).get('section_pages') or {}
+    if section not in configured:return None
+    pages=configured[section]
+    if not isinstance(pages,list) or not pages:raise ValueError('booklet.section_pages.'+section+' must contain page images')
+    figs=[]
+    for page in pages:
+        rel=page.get('path','') if isinstance(page,dict) else ''
+        path=os.path.realpath(os.path.join(pkg.dir,rel))
+        if os.path.commonpath([os.path.realpath(pkg.dir),path])!=os.path.realpath(pkg.dir) or not os.path.isfile(path):
+            raise ValueError('Custom section page must be an existing image inside the package: '+rel)
+        fig=new_page(pkg,A3,section,page.get('title') or section,page.get('subtitle',''))
+        ax=fig.add_axes([.03,.07,.94,.81]);show_image(ax,path)
+        figs.append(fig)
+    return figs
+
+
 def booklet_cfg(pkg):
     b = pkg.man.get("booklet") if isinstance(pkg.man.get("booklet"), dict) else {}
     return b
@@ -2093,15 +2114,47 @@ def a0_board(pkg):
     return fig
 
 
+def compress_pdf_images_pypdf(path, quality=80, min_side=400):
+    """Default pure-Python compression; leave original control files untouched."""
+    from pypdf import PdfWriter
+    writer=PdfWriter(clone_from=path)
+    seen=set()
+    for page in writer.pages:
+        # Inspect object references before decoding: Matplotlib may share one image dictionary
+        # across every page. Repeatedly decoding/replacing it is slow and degrades the image.
+        for name in page.images.keys():
+            try:
+                parts=[name] if isinstance(name,str) else name
+                objects=page['/Resources']['/XObject']
+                for i,part in enumerate(parts):
+                    raw=objects[part].get_object()
+                    if i<len(parts)-1:objects=raw['/Resources']['/XObject']
+                ref=raw.indirect_reference
+                identity=(ref.idnum,ref.generation) if ref is not None else id(raw)
+                if identity in seen:continue
+                seen.add(identity)
+                if '/SMask' in raw or any(f in str(raw.get('/Filter','')) for f in ('DCTDecode','JPXDecode')):continue
+                image=page.images[name]
+                if image.image.mode in ('RGB','L') and min(image.image.size)>=min_side:
+                    image.replace(image.image,quality=quality)
+            except (KeyError,ValueError,NotImplementedError):
+                continue
+    writer.compress_identical_objects(remove_duplicates=True,remove_unreferenced=True)
+    tmp=path+'.compressed'
+    writer.write(tmp)
+    os.replace(tmp,path)
+    return True
+
+
 def compress_pdf_images(path, quality=80, min_side=400):
-    """Re-encode large embedded raster images as JPEG so a booklet full of renders stays small (needs pikepdf;
+    """Re-encode embedded raster images so both PDFs stay within the package size limit (pikepdf, or pypdf;
     without it the PDF is left as matplotlib wrote it)."""
     try:
         import io
         import pikepdf
         from pikepdf import PdfImage, Name
     except ImportError:
-        return False
+        return compress_pdf_images_pypdf(path,quality,min_side)
     pdf = pikepdf.open(path, allow_overwriting_input=True)
     seen = set()
     for page in pdf.pages:
@@ -2127,6 +2180,72 @@ def compress_pdf_images(path, quality=80, min_side=400):
                 continue
     pdf.save(path, deterministic_id=True)
     return True
+
+
+# ------------------------------------------------------------------------------- public presentation structure
+def node_location_text(pkg, nid):
+    p, g = pkg.nodes[nid]
+    c, m = g.centroid, pkg.master.centroid
+    dx, dy = c.x-m.x, c.y-m.y
+    direction = ('north' if dy >= 0 else 'south') + ('-east' if dx >= 0 else '-west')
+    return '%s of the master-area centre, %.2f km; node area %.2f ha. See the shared locator for access and connections.' % (direction, c.distance(m)/1000, g.area/10000)
+
+
+def node_locator(pkg, size=A3):
+    fig = new_page(pkg, size, 'LOCATOR', 'Whole site > master design area > three nodes',
+                   'The same node IDs are used on the plans, images and technical evidence')
+    a=fig.add_axes([.03,.31,.32,.55]);panel_structure(pkg,a)
+    a.set_title('Whole-site location of the master design area',fontsize=8,loc='left')
+    b=fig.add_axes([.38,.31,.59,.55])
+    extent=unary_union([pkg.master]+[g for _,g in pkg.nodes.values()]).buffer(600)
+    panel_master(pkg,b,window=fit_aspect(extent.bounds,ax_aspect(b)))
+    b.set_title('Master-area enlargement: selected nodes and movement networks',fontsize=8,loc='left')
+    for i,nid in enumerate(pkg.man.get('nodes',[])):
+        p,g=pkg.nodes[nid];c=g.representative_point()
+        ax=fig.add_axes([.03+i*.32,.07,.30,.19])
+        side_text(ax,[(nid+' | '+pkg.node_meta.get(nid,{}).get('en',nid),node_location_text(pkg,nid)),
+                      ('Role and connections',p.get('why') or pkg.man.get('nodes_reason',''))],fs=7.5,width=65)
+    fig.text(.38,.285,'Network colours: people / salmon; machines / charcoal; shared / purple. Follow the submitted networks; no extra direct links are invented.',fontsize=6.5,color=MUTED)
+    return fig
+
+
+def public_node_sheet(pkg,nid):
+    fig=draw_node_sheet(pkg,nid)
+    fig.text(.03,.91,T('Location: '+node_location_text(pkg,nid)),fontsize=7,color=MUTED,va='top')
+    finished=all(any(im.get('control_image')=='renders/%s-%s.png'%(nid,v) and os.path.isfile(os.path.join(pkg.dir,str(im.get('path','')))) for im in pkg.prov) for v in ['aerial','eye-day'])
+    if not finished:
+        fig.text(.03,.047,'MASSING-ONLY FALLBACK: one or more finished concept views are unavailable. Controls are not finished images; see technical appendix and tool disclosure.',fontsize=7,color=RED)
+    return fig
+
+
+def key_indicators(pkg,size=A3):
+    fig=new_page(pkg,size,'INDICATORS','Key indicators: scope, phase and evidence','Full accounts and checks are in the separate technical appendix')
+    keys=[('master_area_km2','Master design area','Master area'),('residents_phase1','Residents','Phase 1'),('jobs_phase1','Jobs','Phase 1'),('dwellings_phase1','Homes','Phase 1'),('far','Floor area ratio','Master area'),('open_space_pct','Open space','Master area'),('annual_water_demand_m3','Annual water demand','Phase 1'),('peak_it_load_mw','Compute load','Phase 1'),('hourly_cfe_match_pct','Hourly clean energy match','Phase 1'),('water_reuse_pct','Water reuse','Phase 1'),('waste_heat_reuse_pct','Waste heat reuse','Phase 1')]
+    rows=[]
+    for key,title,scope in keys:
+        metric=pkg.metrics.get(key,{})
+        value=metric.get('value')
+        if value is None and key in pkg.computed:value=pkg.computed[key]
+        rows.append([title,fmt(value) if value is not None else 'Not declared',metric.get('unit',''),scope,metric.get('evidence','computed' if key in pkg.computed else '-')])
+    ax=fig.add_axes([.03,.21,.94,.65]);ax.set_axis_off()
+    tb=ax.table(cellText=rows,colLabels=['Indicator','Value','Unit','Scope / phase','Evidence'],colWidths=[.30,.18,.16,.18,.18],loc='upper left',cellLoc='left');tb.auto_set_font_size(False);tb.set_fontsize(9);tb.scale(1,2.3)
+    for (row,col),cell in tb.get_celld().items():cell.set_edgecolor('#E2DCCF');cell.set_facecolor('#ECE6D8' if row==0 else PAPER)
+    ax=fig.add_axes([.03,.07,.94,.12]);side_text(ax,[('Reading these figures','The whole site is 1,656 km²; master-area figures are not whole-site totals. Phase 1 means full build-out and occupancy unless stated otherwise. Evidence tags describe the basis, not approval. Full system land accounts, assumptions and calculations remain in the appendix and metrics.json.')],fs=8,width=210)
+    return fig
+
+
+def control_comparison(pkg,nid,size=A3):
+    fig=new_page(pkg,size,'TECHNICAL / '+nid,'Geometry controls and presentation comparison','Control images remain evidence; concept images illustrate the submitted geometry')
+    for i,(view,label) in enumerate([('aerial','Aerial'),('eye-day','Eye level')]):
+        ax=fig.add_axes([.03+i*.48,.49,.45,.37]);path=os.path.join(pkg.dir,'renders',nid+'-'+view+'.png')
+        if pkg.renders_ok and os.path.isfile(path):show_image(ax,path,'GEOMETRY CONTROL / '+label)
+        else:
+            a,e,c,rad=node_cameras(pkg,nid,ax_aspect(ax));ground,prisms=scene(pkg,c,rad*(4 if i==0 else 6));render(pkg,ax,a if i==0 else e,ground,prisms,title='GEOMETRY CONTROL / '+label)
+        path,credit=view_image(pkg,nid+'-'+view)
+        ax=fig.add_axes([.03+i*.48,.07,.45,.37])
+        if path:show_image(ax,path,credit)
+        else:ax.set_axis_off();ax.text(.03,.8,'No separate finished image supplied.\nMassing-only fallback is disclosed in the main booklet.',fontsize=10,transform=ax.transAxes)
+    return fig
 
 
 # ------------------------------------------------------------------------------- main
@@ -2155,55 +2274,58 @@ def main():
     os.makedirs(fdir, exist_ok=True)
     os.makedirs(ddir, exist_ok=True)
     written = []
-    with PdfPages(os.path.join(ddir, "a3-booklet.pdf")) as pdf:
-        def put(f):
-            if f is not None:
-                pdf.savefig(f, facecolor=PAPER)
-                plt.close(f)
-
-        def extras(after):
-            for f in extra_pages(pkg, after):
-                put(f)
-        put(cover(pkg))
-        extras("cover")
-        put(the_idea(pkg))
-        extras("idea")
-        put(city_spread(pkg))
-        extras("views")
-        put(brief_alignment(pkg))
-        extras("brief")
-        for key, num, title, sub, panel in FIGS:
-            f = draw_fig(pkg, key, num, title, sub, panel)
-            path = os.path.join(fdir, key + ".png")
-            f.savefig(path, dpi=args.dpi, facecolor=PAPER)
-            pdf.savefig(f, facecolor=PAPER)
-            plt.close(f)
-            written.append(path)
-            print("  " + os.path.relpath(path, pkg.dir))
-        extras("figures")
-        for nid in pkg.nodes:
-            for draw in (draw_node_sheet, draw_node_detail, draw_node_day):
-                put(draw(pkg, nid))
-            extras(nid)
-            for mode, path in save_node_images(pkg, nid, fdir, args.dpi).items():
-                written.append(path)
-                print("  " + os.path.relpath(path, pkg.dir))
-        extras("nodes")
-        put(day_to_night(pkg))
-        extras("day")
-        extras("end")
-        for f in disclosure(pkg):
-            pdf.savefig(f, facecolor=PAPER)
-            plt.close(f)
-        d = pdf.infodict()
-        d["Title"] = "%s - A3 booklet" % pkg.title
-        d["Subject"] = "XCITY AI Competition submission %s/%s" % (pkg.login, pkg.slug)
-        d["Keywords"] = "input-sha256:%s make_figures:%s" % (pkg.input_hash, xc.SCRIPT_VERSION)
-        d["CreationDate"] = None
-        d["ModDate"] = None
-    compress_pdf_images(os.path.join(ddir, "a3-booklet.pdf"))
-    written.append(os.path.join(ddir, "a3-booklet.pdf"))
-    print("  drawings/a3-booklet.pdf")
+    # Preserve all standalone checked drawings, independently of the public reading order.
+    for key,num,title,sub,panel in FIGS:
+        f=draw_fig(pkg,key,num,title,sub,panel);path=os.path.join(fdir,key+'.png')
+        f.savefig(path,dpi=args.dpi,facecolor=PAPER);plt.close(f);written.append(path)
+    f=node_locator(pkg);path=os.path.join(fdir,'fig-08-node-location.png')
+    f.savefig(path,dpi=args.dpi,facecolor=PAPER);plt.close(f);written.append(path)
+    for nid in pkg.nodes:
+        written.extend(save_node_images(pkg,nid,fdir,args.dpi).values())
+    counters={'main':0,'technical':0};sections=[]
+    paths={'main':'drawings/a3-booklet.pdf','technical':'drawings/a3-technical-appendix.pdf'}
+    def figure(key):
+        args=next(row for row in FIGS if row[0]==key)
+        return draw_fig(pkg,*args)
+    for document in ('main','technical'):
+        with PdfPages(os.path.join(pkg.dir,paths[document])) as pdf:
+            def put(f,section=None):
+                if f is None:return
+                custom=section_pages(pkg,section) if section and document=='main' else None
+                if custom is not None:
+                    plt.close(f);start=counters[document]+1
+                    for own_page in custom:put(own_page)
+                    sections.append({'id':section,'document':document,'pages':list(range(start,counters[document]+1))})
+                    return
+                pdf.savefig(f,facecolor=PAPER);plt.close(f);counters[document]+=1
+                if section:sections.append({'id':section,'document':document,'pages':[counters[document]]})
+            def extras(after):
+                for f in extra_pages(pkg,after):put(f)
+            if document=='main':
+                put(cover(pkg));extras('cover');extras('idea')
+                put(figure('fig-01-structure'),'whole_site');extras('whole_site')
+                put(node_locator(pkg),'node_locator');extras('node_locator')
+                put(figure('fig-02-master-plan'));extras('views')
+                for nid in pkg.man.get('nodes',[]):
+                    put(public_node_sheet(pkg,nid),'node:'+nid);extras(nid)
+                extras('nodes')
+                put(figure('fig-06-phasing'),'phasing');extras('phasing')
+                put(key_indicators(pkg),'key_metrics');extras('key_metrics');extras('end')
+            else:
+                put(brief_alignment(pkg));extras('brief')
+                for key in ['fig-03-land-use-density','fig-04-movement','fig-05-open-space-water','fig-07-metrics']:put(figure(key))
+                extras('figures')
+                for nid in pkg.man.get('nodes',[]):
+                    put(control_comparison(pkg,nid));put(draw_node_detail(pkg,nid));put(draw_node_day(pkg,nid))
+                put(day_to_night(pkg));extras('day')
+                for f in disclosure(pkg):put(f)
+            info=pdf.infodict();info['Title']=pkg.title+(' - Public presentation' if document=='main' else ' - Technical appendix')
+            info['Keywords']='input-sha256:%s make_figures:%s presentation:1'%(pkg.input_hash,xc.SCRIPT_VERSION)
+            info['CreationDate']=None;info['ModDate']=None
+        path=os.path.join(pkg.dir,paths[document]);compress_pdf_images(path);written.append(path)
+        print('  '+paths[document])
+    index={'schema_version':1,'layout_version':1,'documents':{key:{'path':paths[key],'pages':counters[key]} for key in counters},'sections':sections,'note':'Page-order and file checks only; design quality and image/geometry agreement require independent review.'}
+    path=os.path.join(pkg.dir,presentation.INDEX);xc.write_json(path,index);written.append(path)
     if not args.skip_a0:
         with PdfPages(os.path.join(ddir, "a0-board.pdf")) as pdf:
             f = a0_board(pkg)

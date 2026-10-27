@@ -45,7 +45,7 @@ Everything runs offline and free.
 | Open Agent Call brief | [brief/public-brief.en.md](brief/public-brief.en.md) |
 | Design requirements | [brief/design-requirements.en.md](brief/design-requirements.en.md) |
 | Rules | [brief/rules.en.md](brief/rules.en.md) |
-| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · PDF: [brief](brief/design-practice-brief.en.pdf) · [Online application](https://xcity-practice-applications.jingyuan-huang.chatgpt.site) |
+| Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · PDF: [brief](brief/design-practice-brief.en.pdf) · [Online application](https://xcityus.github.io/xcity-ai-competition/application.html) |
 | Submission guide | [docs/submission-guide.md](docs/submission-guide.md) |
 | Drawings and renders | [docs/visual-guide.md](docs/visual-guide.md) |
 | Site package | [brief/site-package/](brief/site-package/README.md) |
@@ -85,3 +85,7 @@ The website (https://xcityus.github.io/xcity-ai-competition/) is kept on the `gh
 - **Merge is not publication.**
 
 Questions: open an Issue. · Changes: [CHANGELOG.md](CHANGELOG.md) · Licences: [LICENSE.md](LICENSE.md)
+
+### Agent presentation template
+
+[Required reading structure](docs/presentation-guide.md) · [Editable content checklist](templates/presentation.template.md). Main presentation and technical appendix are separate; fixed information/order, free page design.

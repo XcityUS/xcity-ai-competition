@@ -252,13 +252,13 @@ table(['Requirement','Evidence'],[
 para('Credentials establish professional standing. References, the proposed team and initial ideas of up to 10 pages inform selection. All information must be truthful and verifiable. Disclose relationships or interests involving the organiser or panel members.',50,518,742,8.5,GRAY)
 #26
 base('14 · COMPETITION PROCEDURE','Online registration and application')
-para('Register / continue application: xcity-practice-applications.jingyuan-huang.chatgpt.site',50,139,742,11,INK)
-c.linkURL('https://xcity-practice-applications.jingyuan-huang.chatgpt.site',(50,H-167,792,H-137))
+para('Register / continue application: xcityus.github.io/xcity-ai-competition/application.html',50,139,742,11,INK)
+c.linkURL('https://xcityus.github.io/xcity-ai-competition/application.html',(50,H-167,792,H-137))
 for i,(a,b) in enumerate([
 ('Register basic details','Enter the institution, country or jurisdiction, contact and email. No attachments or initial ideas are required at registration.'),
 ('Keep the private management link','Use the link to return to your draft. Keep it private: anyone holding it can edit the application. It is not automatically emailed.'),
 ('Prepare and save the application','Fill in team and experience details. Add registration evidence or an official registry URL, applicable professional evidence or an explanation, a portfolio or project URL, and a separate ideas PDF of up to 10 pages.'),
-('Make the final submission','Save partial drafts and replace attachments before final submission. Final dates and the submission window will be announced on the official site. Registration or saving files does not constitute eligibility approval or shortlisting.')]):
+('Make the final submission','Register by 31 December 2026, 23:59 UTC. Final submission opens later; complete applications are due 31 January 2027, 23:59 UTC. Selection: February 2027. Registration is not eligibility approval or shortlisting.')]):
  y=207+i*76;txt(f'0{i+1}',50,y,18,GRAY);txt(a,93,y,12,INK);para(b,93,y+25,699,9.6)
 para('Files: PDF, PNG or JPG; 10 MB per file, 25 MB in total. No notarisation is requested at application. Contact: competition@xcity.ai.',50,526,742,8,GRAY)
 #27
@@ -298,14 +298,14 @@ para('Site information, answers and amendments will be issued through a common c
 base('CONTACT','Contact')
 txt('XCITY',50,193,32,INK);txt('International Masterplanning and Urban Design Competition',50,254,17)
 para('Register and prepare your application online. All applicants follow the same application requirements, eligibility review and selection criteria. Common documents, clarifications and notices are issued through the official competition channels. Contact the competition team below for questions.',50,325,650,12)
-para('Online application: xcity-practice-applications.jingyuan-huang.chatgpt.site',50,414,742,10)
-c.linkURL('https://xcity-practice-applications.jingyuan-huang.chatgpt.site',(50,H-434,792,H-412))
+para('Online application: xcityus.github.io/xcity-ai-competition/application.html',50,414,742,10)
+c.linkURL('https://xcityus.github.io/xcity-ai-competition/application.html',(50,H-434,792,H-412))
 txt('Email:',50,465,10,GRAY);txt('competition@xcity.ai',83,463,12,INK);c.linkURL('mailto:competition@xcity.ai',(83,H-460,333,H-440))
 c.save()
 r=PdfReader(OUT);full='\n'.join(p.extract_text() or '' for p in r.pages)
 assert len(r.pages)==31,len(r.pages)
 assert not re.search('[\u4e00-\u9fff]',full),'Chinese text remains in English PDF'
 for value in ['US$300,000','US$50,000','US$100,000','competition@xcity.ai','up to 10 pages','private management link']:assert value in full,value
-for value in ['xcityus.github.io','US$75,000','parcel 9','parcel 13','TBC','TBD']:assert value not in full,value
+for value in ['US$75,000','parcel 9','parcel 13','TBC','TBD']:assert value not in full,value
 (O/'validation-english.json').write_text(json.dumps({'pages':31,'paragraph_boxes_checked':len(checks),'chinese_text_characters':0,'native_pdf_text':True,'site_area_km2':1656,'stage_1_pages':10,'shortlisted_teams':5,'honorarium_usd':50000,'winner_additional_usd':50000,'total_usd':300000},indent=2))
 print(OUT)

@@ -1,7 +1,7 @@
 # Design Practice Call · Brief
 
-> Version: 26 October 2026. Online registration and draft preparation; final submission dates pending.
-> Online application: https://xcity-practice-applications.jingyuan-huang.chatgpt.site
+> Version: 26 October 2026. Registration closes 31 December 2026; complete applications close 31 January 2027, both at 23:59 UTC. Selection: February 2027.
+> Online application: https://xcityus.github.io/xcity-ai-competition/application.html
 > Full illustrated Design Brief (31 pages): `brief/design-practice-brief.en.pdf`; Chinese: `brief/design-practice-brief.zh.pdf`. This page is the web guide to the call.
 
 XCITY runs two separate calls on one site. This one, the **Design Practice Call**, looks for urban design and planning practices able to propose a city of real spatial quality, and to take it further. The other, the Open Agent Call, tests whether an AI agent can plan on its own; it has its own brief and review. The two share the site and its conditions (**`brief/site-conditions.en.md`**) and are reviewed and ranked separately.
@@ -26,7 +26,7 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Registration, draft preparation and final application.** Open to every practice that meets section 8, free of charge. Register basic institution and contact details through the online application service. This creates a private draft and management link; no initial ideas or attachments are required at registration. Return through that link to fill in the team and relevant experience, supply applicable evidence and prepare initial ideas of **up to 10 pages**. Save partial drafts and replace attachments before final submission. Submit the complete application when the final submission window opens. Registration, saving a draft and receipt of files do not constitute eligibility approval or shortlisting. The organiser checks eligibility first, then reviews eligible teams, experience and ideas and selects five. Stage one is unpaid. The final timing policy and dates are published with the formal rules; no fixed number of days after registration is assumed.
+**Stage 1 · Registration, draft preparation and final application.** Open to every practice that meets section 8, free of charge. Register basic institution and contact details through the online application service. This creates a private draft and management link; no initial ideas or attachments are required at registration. Return through that link to fill in the team and relevant experience, supply applicable evidence and prepare initial ideas of **up to 10 pages**. Save partial drafts and replace attachments before final submission. Registration and saving drafts are open now. Final submission is not open yet; its opening date will be announced. Once open, submit the complete application by 31 January 2027, 23:59 UTC. Registration, saving a draft and receipt of files do not constitute eligibility approval or shortlisting. The organiser checks eligibility first, then reviews eligible teams, experience and ideas and selects five. Stage one is unpaid. Register by 31 December 2026, 23:59 UTC. Every registered applicant has the same final application deadline of 31 January 2027, 23:59 UTC; selection of five teams is scheduled for February 2027.
 
 The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the five are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
 
@@ -171,9 +171,9 @@ The call is open to practices that meet the eligibility requirements. All applic
 
 1. **Read and register.** Download the current brief and stage-one site data. Create an online application with basic institution and contact information. No concept or attachment is needed yet.
 2. **Prepare and save.** Keep the private management link. Complete the team and experience fields, upload applicable evidence or links, and add an initial-ideas PDF of up to 10 pages. Save partial drafts and return later.
-3. **Submit the final application.** When the formal submission window is open, confirm the declarations and submit the complete application. The receipt confirms storage, not eligibility or shortlisting. The organiser first checks eligibility, then assesses the eligible teams, experience and ideas and selects five for paid design. Timetable and deadlines are published separately; until then the service allows preparation but does not accept final submissions.
+3. **Submit the final application.** When final submission opens, and by 31 January 2027, 23:59 UTC, confirm the declarations and submit the complete application. The receipt confirms storage, not eligibility or shortlisting. The organiser first checks eligibility, then assesses the eligible teams, experience and ideas and selects five for paid design. Registration closes on 31 December 2026, 23:59 UTC; already registered applicants can continue saving and submit until the January deadline. Five teams will be selected in February 2027.
 
-Optional “register interest” on the call website only concerns updates; it is separate from creating a formal application draft.
+Optional “receive updates” on the main and Agent pages concerns updates only. Applicants are not automatically subscribed. The practice page has one application path.
 
 ## 10. Honorarium, jury and terms
 
@@ -184,7 +184,7 @@ Optional “register interest” on the call website only concerns updates; it i
 
 ## 11. Published with the formal rules
 
-The dates (application deadline, shortlist, briefing, submission, presentations, results), the jury members, the weight of each criterion, authorship and intellectual property, and the terms of further work are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
+The later Stage 2 dates (briefing, design submission, presentations and results), the jury members, the weight of each criterion, authorship and intellectual property, and the terms of further work are published with the formal rules. From then on the formal rules govern, and changes are logged in `CHANGELOG.md`.
 
 ## 12. Materials
 

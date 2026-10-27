@@ -83,10 +83,11 @@
     },
     {
       "id": "GATE-G12-DEPTH",
-      "title": "Design evidence exists (content adequacy not assessed automatically)",
+      "title": "Design evidence and presentation packaging (quality not assessed automatically)",
       "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view. This only checks evidence presence. Whole-site planning adequacy and spatial design are assessed separately by reviewers; automatic PASS is not design approval.",
       "automated": true,
-      "partly_manual": true
+      "partly_manual": true,
+      "presentation_note": "New packages supply separate main/technical PDFs and a truthful page index in the required reading order. See brief/presentation-requirements.json; organiser-listed legacy packages retain prior packaging until opt-in."
     }
   ],
   "blocking_conditions": [

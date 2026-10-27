@@ -38,7 +38,8 @@ submissions/<github-login>/<proposal-slug>/
 │   ├── phasing.geojson      phases 1, 2, 3 with triggers
 │   └── nodes.geojson        the three key nodes you chose
 ├── figures/                 made by scripts/make_figures.py - do not edit
-├── drawings/                a3-booklet.pdf, a0-board.pdf - made by the same script
+├── drawings/                a3-booklet.pdf (public), a3-technical-appendix.pdf,
+│                            presentation-index.json, a0-board.pdf
 ├── report/
 │   ├── proposal.html        made by scripts/render_proposal_html.py
 │   └── copyright_statement.md
@@ -122,7 +123,9 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
 }
 ```
 
-**Your booklet.** `make_figures.py` always draws the required pages: cover, the idea, the city views, how the scheme answers the brief, the seven figures, three sheets per node (views; plan and sections; a day of use), day to night, and the disclosure. `booklet.cover` chooses the cover image; `booklet.pages` inserts pages you made yourself — any PNG or JPG inside the package — after `cover`, `idea`, `views`, `brief`, `figures`, a node id (`N05`), `nodes`, `day` or `end`. A page made with an image model is registered in `image_provenance.json`.
+**Your booklet.** The required reading order is whole-site plan → shared node locator → three node sections in manifest order → phasing → key indicators. `drawings/a3-booklet.pdf` is the public presentation; controls, detailed checks and disclosure go in the separate `drawings/a3-technical-appendix.pdf`. The generator preserves all standalone checked figures and writes a page index. Read `docs/presentation-guide.md` and `templates/presentation.template.md`; they define the information that must be visible, while layout remains free.
+
+`booklet.cover` selects the cover. `booklet.pages` adds PNG/JPG pages at the documented main or technical anchors. If you replace the default layout, keep a truthful `drawings/presentation-index.json`: document paths and physical page counts, and one main section each named `whole_site`, `node_locator`, `node:<id>` for each selected node, `phasing`, `key_metrics`, with one-based page lists in reading order. See the generated index for the format. A page made with an image model is registered in `image_provenance.json`.
 
 Schema: `schema/manifest.schema.json`. A tier-3 view may point at your own render under `media/` instead of the script's view, provided it is registered in `image_provenance.json`.
 
@@ -237,7 +240,7 @@ A combined design is welcome, but each selected node needs its own distinct ID a
 
 The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
 
-Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence existence, not whether the evidence convincingly answers these questions.
+Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence existence and presentation packaging/page ranges, not whether the evidence convincingly answers these questions.
 
 ## Flood data: screening versus verified restrictions
 

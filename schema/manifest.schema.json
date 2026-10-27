@@ -182,13 +182,38 @@
               },
               "after": {
                 "type": "string",
-                "description": "cover | idea | views | brief | figures | N01-N10 | nodes | day | end"
+                "description": "Main: cover | idea | whole_site | node_locator | views | N01-N10 | nodes | phasing | key_metrics | end. Technical appendix: brief | figures | day."
               },
               "title": {
                 "type": "string"
               },
               "subtitle": {
                 "type": "string"
+              }
+            }
+          }
+        },
+        "section_pages": {
+          "type": "object",
+          "description": "Optional authored image pages replacing a public section; keys: whole_site, node_locator, node:Nxx, phasing, key_metrics. Order and index are generated automatically.",
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "path"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "subtitle": {
+                  "type": "string"
+                }
               }
             }
           }

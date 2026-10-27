@@ -78,6 +78,9 @@ def main():
         text = fill(f.read(), ctx)
     with open(os.path.join(pkg, "report", "copyright_statement.md"), "w", encoding="utf-8") as f:
         f.write(text)
+    with open(os.path.join(tpl, "presentation.template.md"), encoding="utf-8") as f:
+        with open(os.path.join(pkg, "report", "presentation-plan.md"), "w", encoding="utf-8") as out:
+            out.write(f.read())
     for name, note in GEOMETRY_NOTES.items():
         xc.write_json(os.path.join(pkg, "geometry", name + ".geojson"),
                       {"type": "FeatureCollection", "name": name, "_note": note, "features": []})

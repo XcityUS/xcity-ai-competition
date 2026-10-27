@@ -15,6 +15,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import presentation
 import xcity_common as xc  # noqa: E402
 from node_selection import selection_errors  # noqa: E402
 from shapely.geometry import Point  # noqa: E402
@@ -474,7 +475,7 @@ def check(pkg_path, write=True):
                 g10.fail("%s is listed in figures/stamp.json but missing" % rel)
             elif xc.sha256_file(p) != h:
                 g10.fail("%s was changed after make_figures.py drew it" % rel)
-        for rel in xc.REQUIRED_FIGURES + ["drawings/a3-booklet.pdf", "drawings/a0-board.pdf"]:
+        for rel in xc.REQUIRED_FIGURES + ["drawings/a3-booklet.pdf", "drawings/a0-board.pdf"] + presentation.required_outputs(pkg):
             if rel not in (stamp.get("files") or {}):
                 g10.fail("%s was not produced by make_figures.py" % rel)
     else:
@@ -535,6 +536,8 @@ def check(pkg_path, write=True):
     g9.note("DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone.")
 
     # ---------------------------------------------------------------- G12 depth
+    for problem in presentation.index_errors(pkg, man.get("nodes") or []):
+        g12.fail(problem)
     dd = man.get("design_depth") or {}
     for tier in ("tier1_structure", "tier2_master"):
         ev = (dd.get(tier) or {}).get("evidence") or []
@@ -556,7 +559,7 @@ def check(pkg_path, write=True):
             elif rel.startswith("media/") and rel not in reg:
                 g12.fail("node %s: %s is not registered in image_provenance.json" % (nid, rel))
 
-    g12.note("Checks evidence existence only. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
+    g12.note("Checks evidence existence and presentation packaging/page order only; not readability or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
     gates = [G[g["id"]].out() for g in EVAL["gates"]]
     result = {
         "script": "scripts/self_check_submission.py", "script_version": xc.SCRIPT_VERSION,

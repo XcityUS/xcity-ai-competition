@@ -71,3 +71,7 @@ Any of these ends the review: personal data, confidential material or non-public
 ## 10. Contact
 
 Formal contact details are published with the formal rules. Until then, open an Issue in this repository; answers that touch the rules are written into this file or `CHANGELOG.md`.
+
+## Public presentation packaging
+
+For new Agent entries, the main booklet and technical appendix are separate. The required main reading order and information are in `docs/presentation-guide.md` and `templates/presentation.template.md`; graphic layout is free. The organiser-maintained legacy list and machine-readable policy are in `brief/presentation-requirements.json`. G12 checks the page index and actual PDF page counts/ranges, not design quality, readability or image/geometry agreement. These remain independent review questions.

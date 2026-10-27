@@ -54,12 +54,15 @@ Each prompt asks the model to keep the control image's camera, footprints, heigh
 | `fig-06-phasing.png` | Phases 1–3 with areas and triggers |
 | `fig-07-metrics.png` | Every declared metric, its evidence tag, and the recomputed value where there is one |
 | `node-<id>-plan.png`, `-aerial.png`, `-eye.png` | For each node: the plan, and the best aerial and eye-level image |
-| `drawings/a3-booklet.pdf` | The cover (your choice of image), the idea (thesis and the three scales on one page), the city views, how the scheme answers the brief, the seven figures, three sheets per node — views; plan with dimensions and numbers plus sections and street sections at true scale; a day of use with people and machines — day to night at eye level, your own pages, and assumptions, sources and AI disclosure |
+| `fig-08-node-location.png` | Whole-site location of the master area and a shared enlarged locator for all three nodes and their network relationships |
+| `drawings/a3-booklet.pdf` | Public presentation: cover; whole site; shared node locator and master plan; three named/located node sections; phasing; key indicators; optional custom presentation pages |
+| `drawings/a3-technical-appendix.pdf` | Compliance matrix, detailed figures, geometry controls and image comparisons, detailed node sections/operations, sources, assumptions and disclosure |
+| `drawings/presentation-index.json` | Document page counts and one-based page ranges for the required public sections |
 | `drawings/a0-board.pdf` | One A0 board |
 
 Every sheet carries a title, sources, the script version and a hash of its inputs, which include the renders and the registered images. The drawings say nothing your data does not.
 
-**Make the booklet yours.** The required pages are a floor. `manifest.booklet.cover` picks the cover; `manifest.booklet.pages` adds pages you draw yourself (see `docs/submission-guide.md` §5). In `nodes.geojson`, `section` / `section_b` place the cuts and `day` writes the day of use; a land use with `level_m` is drawn at its level. The example's identity page comes from its own `tools/make_pages.py`.
+**Make the layout yours; preserve the reading order.** The required information is in `docs/presentation-guide.md` and `templates/presentation.template.md`. Controls and checks stay in the technical appendix. `manifest.booklet.cover` picks the cover; `manifest.booklet.pages` adds pages you draw yourself (see `docs/submission-guide.md` §5). In `nodes.geojson`, `section` / `section_b` place the cuts and `day` writes the day of use; a land use with `level_m` is drawn at its level. The example's identity page comes from its own `tools/make_pages.py`.
 
 ## 5. Registering media
 

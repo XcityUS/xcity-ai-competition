@@ -128,7 +128,7 @@ A submission is one directory, `submissions/<your-github-login>/<proposal-slug>/
 | Geometry | GeoJSON under `geometry/`: whole-site structure, your master area, land use, buildings, movement, phasing, three nodes |
 | Technical figures | Seven in `figures/`, made offline by `scripts/make_figures.py` from your own geometry |
 | Node views | A plan, an aerial and an eye-level view for each node |
-| Drawings | `drawings/a3-booklet.pdf` and `drawings/a0-board.pdf`, from the same script |
+| Drawings | Public `drawings/a3-booklet.pdf`, separate `drawings/a3-technical-appendix.pdf`, `drawings/presentation-index.json` and A0 board |
 | Web version | `report/proposal.html`, from `scripts/render_proposal_html.py`, readable offline |
 | Self-check | `self_check.json`, from `scripts/self_check_submission.py`; all twelve gates pass before you open the PR |
 
@@ -222,3 +222,7 @@ Automatic compliance (files, numbers and evidence paths) and design content revi
 - **Seasonal channels:** `water/channels_dem.geojson` contains DEM-derived channel lines, not surveyed banks. Permanent construction on an actual dry channel is prohibited. The checker uses indicative line buffers to flag possible conflicts for review; those buffers are not statutory setbacks. Smaller washes are not comprehensively mapped.
 - **Flood-sensitive screening:** `water/flood_sensitive_dem.geojson` is a terrain screening model (within 1.5 km of a mapped channel and HAND less than 3 m, using a 60 m DEM), approximately 503 km². It is not a surveyed design-flood extent, a verified hazard zoning instrument, or a blanket permanent no-build area. “Outside the screening band” does not establish flood safety.
 - **Verified restrictions:** no surveyed design-flood boundary, design discharge/return period or verified flood setback is supplied. Do not invent one. State assumptions and explain proposed avoidance, conveyance and protection; identify the hydraulic and field verification needed before implementation. Buildings in the screening layer are reported for content review, not failed merely for being in that layer.
+
+## Required presentation structure
+
+The main booklet follows the whole-site plan, a shared node locator (site → master area → three nodes and connections), the three titled/located node sections, phasing and key indicators. Finished images illustrate the geometry; controls, comparisons, full calculations and check reports belong in a separate technical appendix. Keep necessary design plans/sections in the main presentation. Fixed information and reading order; free layout. See `docs/presentation-guide.md`, `templates/presentation.template.md` and the machine policy `brief/presentation-requirements.json`. Existing listed submissions retain their previous packaging until they opt in. Automatic checks verify packaging, not design or visual quality.

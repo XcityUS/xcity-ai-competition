@@ -1,3 +1,11 @@
+## 2026-10-26 · Official application page, schedule and Agent presentation
+
+- Keep the application form at the official website's `application.html`; private intake/storage stays behind the API. Existing private management links remain compatible.
+- Registration and drafts are open; final submission remains closed until a separately announced opening. Registration deadline: 31 December 2026; complete application deadline: 31 January 2027, both 23:59 UTC. Select five teams in February 2027.
+- Practice pages prioritise formal application; passive email-update interest stays separate on the home and Agent pages. No applicant is automatically subscribed to marketing updates.
+- Synchronise the full bilingual Design Brief's application link and schedule.
+- Agent entries follow a shared sequence: whole site, shared node locator, three node sections, phasing and key indicators. Default generation separates the public booklet and technical appendix, retains controls/checked figures, and emits a checked PDF page index. Listed legacy packages are preserved until opt-in. Packaging checks do not approve design quality.
+
 ## 2026-10-26 · Full illustrated Design Brief
 
 - Restore the complete 31-page professional practice Design Brief in English and Chinese, with fourteen chapters and the original illustrated layout, replacing the condensed PDF mistakenly used as the full brief.
