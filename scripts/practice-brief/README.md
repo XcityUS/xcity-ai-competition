@@ -15,3 +15,6 @@ Historical release decisions, 26 October 2026 (the application-flow descriptions
 - Schedule: registration to 31 December 2026 and complete applications to 31 January 2027, both at 23:59 UTC; selection in February 2027. Online applications are open. Complete applications are returned by email. Registration is not eligibility approval or shortlisting. The form stays on the official website.
 
 The AI Agent track retains its independent node rules; the institution track's eleven topics are not replaced by the Agent's three-group selection rule.
+
+
+Current shortlist revision, 27 October 2026: three shortlisted teams. US$50,000 for each valid Stage 2 submission (US$150,000 subtotal), plus US$50,000 to the winner; total US$200,000. This supersedes the historical five-team record above. Contracting/payment entity remains to be confirmed before Stage 2 agreements.
