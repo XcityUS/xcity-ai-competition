@@ -1,0 +1,15 @@
+{
+  "status": "declared_scenarios",
+  "items": [
+    "2.5 residents per dwelling at full occupancy",
+    "Residential bars: 24 dwellings in 2880 m2 GFA; terraces: 8 dwellings in 960 m2 GFA",
+    "Mixed-use building: 20 dwellings in upper 2400 m2; 70 design jobs in lower 2400 m2",
+    "Education demand 15% of residents; 360 places per 2160 m2 wing; operations and local standards to verify",
+    "School/block terrain screen uses 60 m DEM; housing blocks over median 3.5% or P95 8% held for terrain review",
+    "Water 120 L/resident/day + 25 L/resident/day services; employment water 25 L/job/day for 300 days; losses 10%; sewage recovery 65%",
+    "Compute cooling WUE 0.02 L/kWh, PUE 1.25, no credited heat reuse; independent nearby production receiver remains a later optional trial",
+    "Annual IT energy after Phase 1 uses 60% utilisation scenario; Phase 1 uses the explicit synthetic dispatch",
+    "Job totals are floor-space/programme capacity, not existing or contracted employment; household livelihood verification gates actual housing release",
+    "Fixed arrays keep forage grass/jojoba; their demand is unknown and not silently counted as zero"
+  ]
+}

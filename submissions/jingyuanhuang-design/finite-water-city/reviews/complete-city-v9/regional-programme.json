@@ -1,0 +1,55 @@
+{
+  "status": "proposed_strategic_regions_for_review",
+  "gross_area_km2": 1657.8435417846936,
+  "regions": [
+    {
+      "id": "Z1",
+      "name": "Southwest urban and service region",
+      "area_km2": 232.566,
+      "color": "#D3AD8E",
+      "programme": "R + C continuous living district; separate P/S utilities; fixed pilots retained.",
+      "boundary_basis": "Proposed strategic demarcation by geographic sector and service role; not an issued regulatory boundary"
+    },
+    {
+      "id": "Z2",
+      "name": "Northwest agricultural research region",
+      "area_km2": 341.24,
+      "color": "#B8C49B",
+      "programme": "Dryland crop trials and agricultural service; no blanket irrigation or new town assumed.",
+      "boundary_basis": "Proposed strategic demarcation by geographic sector and service role; not an issued regulatory boundary"
+    },
+    {
+      "id": "Z3",
+      "name": "Northern energy research region",
+      "area_km2": 392.282,
+      "color": "#D9CB92",
+      "programme": "Energy research and northern maintenance hub; installations follow demand and power rights.",
+      "boundary_basis": "Proposed strategic demarcation by geographic sector and service role; not an issued regulatory boundary"
+    },
+    {
+      "id": "Z4",
+      "name": "Central production and transfer region",
+      "area_km2": 238.158,
+      "color": "#ABC2C4",
+      "programme": "Regional transfer and conditional productive sites; source washes and terrain remain overlays.",
+      "boundary_basis": "Proposed strategic demarcation by geographic sector and service role; not an issued regulatory boundary"
+    },
+    {
+      "id": "Z5",
+      "name": "Eastern gateway and logistics region",
+      "area_km2": 227.523,
+      "color": "#B9AAC4",
+      "programme": "Conditional gateway with worker services. Trade and access rights precede works.",
+      "boundary_basis": "Proposed strategic demarcation by geographic sector and service role; not an issued regulatory boundary"
+    },
+    {
+      "id": "Z6",
+      "name": "Southeast mountain stewardship region",
+      "area_km2": 226.075,
+      "color": "#C9CEC3",
+      "programme": "Mountain and dryland stewardship; no urban allocation. DEM terrain screening governs any access intervention.",
+      "boundary_basis": "Proposed strategic demarcation by geographic sector and service role; not an issued regulatory boundary"
+    }
+  ],
+  "distinction": "Regions partition the whole site. Land-use units subdivide development districts. Flood/terrain/fixed-pilot layers constrain each region independently. Gross region areas are not construction land."
+}

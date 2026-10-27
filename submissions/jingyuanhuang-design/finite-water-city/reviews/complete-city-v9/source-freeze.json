@@ -1,0 +1,15 @@
+{
+  "AGENTS.md": "32ebd873debbb7cbe37558f3a98141be9c9f9f9b14634e84300bf191afdf9439",
+  "brief/requirements.json": "3e770666f05709444e55f2324adc4e2c85dd8b2a612422e68aee4e624822281d",
+  "brief/design-depth.json": "97171db1b38acdb2012bff13d3e657ee1b173c57932a2207ca5dffdef275cdc9",
+  "brief/site-package/boundaries/scope_9_13.geojson": "6390ce30a2335d45dd8438b48810c3feabeaa1b4b085fd8c2b7cb655daeced10",
+  "brief/site-package/water/channels_dem.geojson": "bcc3ff8caad4c83a5187d674b893079da7361c8487bd94ae524566c7ad711283",
+  "brief/site-package/terrain/dem_9_13_utm19s_60m.png": "068b49d9be9bb08a01c67a71b7be02bd720e47bbaf4891070c2a6673bc51755c",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/district-structure-v8/districts.geojson": "daf8ecbd427ff0f72eece54702207a66e09e12b00085d8d43d834469dbd30023",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/district-structure-v8/access-studies.geojson": "ee652e45c45187fe2e723c1d98078f604a374567d49e6260059ab1525023d119",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/district-structure-v8/whole-site-roles.geojson": "e22e34f48d4d88f728475223b6d3856e03211704fca28427c7bbf8476ac38d71",
+  "submissions/jingyuanhuang-design/finite-water-city/geometry/structure.geojson": "9e37c92781e3eba57c9fe4610085b1fb52019e64a27549d690941b759179fe42",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/whole-site-v3/centres.geojson": "50dc4cb67725f40b9d1dfe1b8e2d7ac66c0638d8e31e0564c40ed3a58633a7a2",
+  "submissions/jingyuanhuang-design/finite-water-city/reviews/whole-site-v3/corridors.geojson": "4c1cfaf251e121f8c2ad8f26360cec0e1234b3888803b9e8287b4d5d3f5e17c0",
+  "submissions/jingyuanhuang-design/finite-water-city/tools/complete_city_v9.py": "13330ae35aadf1ce6f59c054d47122487a4187aa21b786c98e518fc07e9caeff"
+}

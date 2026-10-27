@@ -1,0 +1,61 @@
+{
+  "status": "design_review_not_organiser_approval",
+  "source_commit": "ac96714",
+  "buildings": 815,
+  "residential_blocks": 91,
+  "dwelling_count": 10240,
+  "population_scenario": 25600.0,
+  "jobs_design_capacity": 4461,
+  "building_overlap_m2": 0.0,
+  "district_accounts": {
+    "R": {
+      "gross_m2": 6189602,
+      "gap_m2": 0.0,
+      "overlap_m2": -0.0
+    },
+    "C": {
+      "gross_m2": 600000,
+      "gap_m2": 0.0,
+      "overlap_m2": 0.0
+    },
+    "P": {
+      "gross_m2": 1760000,
+      "gap_m2": 0.0,
+      "overlap_m2": 0.0
+    },
+    "S": {
+      "gross_m2": 1947112,
+      "gap_m2": 0.0,
+      "overlap_m2": -0.0
+    },
+    "A": {
+      "gross_m2": 133992,
+      "gap_m2": 0.0,
+      "overlap_m2": 0.0
+    },
+    "N": {
+      "gross_m2": 134400,
+      "gap_m2": 0.0,
+      "overlap_m2": 0.0
+    },
+    "E": {
+      "gross_m2": 2640828,
+      "gap_m2": 0.0,
+      "overlap_m2": -0.0
+    }
+  },
+  "road_building_conflicts": [],
+  "block_terrain_reserves": 30,
+  "limits": [
+    "Declared demographic, staffing, job-space, power and water coefficients are design assumptions, not observed demand",
+    "Source water and fixed-pilot/living-quarter demand remain unverified; occupancy cannot begin before the combined balance clears",
+    "School distances are street-network block-gate tests; individual doors and safe crossings require detailed design",
+    "All road/platform geometry remains concept design; local surveys, hydraulics, seismic and noise/dust studies are outstanding",
+    "Node finished perspectives have not been regenerated; the deliverable uses formal plans and explicitly diagrammatic axonometrics"
+  ],
+  "regional_partition": {
+    "regions": 6,
+    "gap_m2": 0.0,
+    "overlap_m2": -0.0
+  }
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "path": "01-whole-site.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      562598.7914138689,
+      6544107.3660588255,
+      628478.629142185,
+      6605944.387255685
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "02-complete-city-plan.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "03-planning-structure.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "04-functional-programme.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "05-streets-and-mobility.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "06-ecology-landscape.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "07-land-use-and-accounts.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "08-public-space-and-services.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "09-overall-axonometric.png",
+    "type": "diagrammatic_overall_spatial_view",
+    "projection": "orthographic axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera",
+    "elevation_deg": 48,
+    "azimuth_deg": -62,
+    "building_height_scale": 3,
+    "terrain": "flat analytical datum explicitly not a terrain rendering",
+    "insets": [
+      {
+        "name": "P + S",
+        "extent_utm19s": [
+          572800,
+          6551700,
+          574950,
+          6555300
+        ]
+      }
+    ]
+  },
+  {
+    "path": "10-A03-plan-section.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      573865.0,
+      6555990.0,
+      574285.0,
+      6556410.0
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "11-B03-plan-section.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572880.0,
+      6551780.0,
+      574920.0000000005,
+      6553320.000000001
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "12-C03-plan-section.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572079.9999999992,
+      6556580.0,
+      573670.0000000005,
+      6558620.0
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "13-phasing-and-capacities.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "14-resource-and-delivery.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      572200,
+      6555600,
+      576250,
+      6559300
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  },
+  {
+    "path": "00-whole-site-regions.png",
+    "type": "formal_diagram",
+    "projection": "orthographic plan unless explicitly axonometric",
+    "extent_utm19s": [
+      562598.7914138689,
+      6544107.3660588255,
+      628478.629142185,
+      6605944.387255685
+    ],
+    "phase": "full planned build-out; phase legends identify exceptions",
+    "geometry_source": "geometry/",
+    "note": "Original geometry drawing; no inferred physical camera"
+  }
+]

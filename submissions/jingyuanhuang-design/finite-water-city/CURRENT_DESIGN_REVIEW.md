@@ -1,15 +1,13 @@
-# Current design review: V8 district structure
+# Current design review: V9 whole-site regions and city layout
 
-Status: **redesign in progress; not ready for publication as a reliable example**.
+Status: **working planning review; not a reliable-example approval or final submission**.
 
-On 27 October 2026 the human rejected V7's miniature all-functions town. V7 is withdrawn from recommendation and retained as a problem record. The new working source is `tools/district_structure_v8.py`; review outputs are in `reviews/district-structure-v8/`.
+Current source: `tools/complete_city_v9.py`. Review: `reviews/complete-city-v9/`. Requirements snapshot: upstream `ac967146488c9b1515f865d942009080c179b7d5`. The latest local requirement review is retained at `reviews/district-structure-v8/requirements-review-ac96714.md`.
 
-The scope remains the entire issued competition site. The current revision establishes one continuous residential district, a compact mixed-use town-centre transition, a separate productive precinct, distinct passenger/freight connections, and conditional regional production options. It withdraws V7's imposed 960-dwelling quota and three-town population ledger. School and daily service belong to residential catchments; compute, cooling yards and freight facilities do not become neighbourhood amenities merely by being adjacent.
+The human explicitly required regional subdivision after the first V9 drawing still concentrated on the town. The revised first sheet and A0 now show six gross planning regions covering the entire issued site, named Z1-Z6. These are proposed service/programme demarcations, not issued cadastral, regulatory, surveyed or hydraulic boundaries. Z6 uses the earlier terrain-derived mountain screening layer in the southeast; the geographic cuts of the other regions are design choices requiring further alternatives review. Region gross area is never counted as buildable or installed capacity.
 
-The current package's older `geometry/`, booklet, images and generated self-check remain historical submission material. They have **not** been silently renamed V8. The current core package must be rebuilt and recomputed before a new submission can be called ready. There is no new automatic or content approval.
+Within Z1, the complete three-stage R/C layout uses continuous residential precincts and daily services, a town-level centre and separate P/S productive infrastructure. N and E remain separate conditional workplace hubs. Compute is not inserted into residential blocks. Master geometry, floor counts, dwelling capacity, phase totals and diagrammatic massing use one source. There is no credited long-distance residential heat reuse. Demographic, employment, education and resource coefficients remain declared scenarios; water rights, fixed-pilot demand and livelihood demand are unresolved activation gates.
 
-The V8 PDF is a **district-structure review**, not a final A0, a detailed plot layout or a complete construction programme. The initial release extents are search areas; they are not claims that every square metre will be built or occupied in the first phase. Population, housing, jobs, local service capacity and resource budgets must be iterated together with terrain-fit blocks and actual construction tranches.
+The new deliverables are a 15-page A3 planning review and an A0 planning review. They contain formal plans, six city themes, explanatory node plans/sections, an explicitly diagrammatic overall axonometric, phase accounts and resource assumptions. They do not contain new finished node aerial/eye-level perspectives. The six city-theme sheets primarily enlarge R/C with a P/S inset; they are not yet a complete whole-territory design-depth submission. This limitation must be resolved before publication as a finished example.
 
-Source snapshot: upstream `307eca185e442c7cbb517dea848824a876b92415`. Current boundary revision: `2026-10-27-open-seam-closure`. Both fixed pilot outlines remain unchanged. Added-seam land is hydrologically unclassified.
-
-No website replacement or final public submission has been made for this review.
+V7 is withdrawn from recommendation, and V8 remains a preliminary structure study. Older root `geometry/`, booklet, images and automatic-check records remain historical, **not the V9 submission source**. The root manifest remains draft. No new 12/12 claim, design approval, website replacement or public submission is made for V9.
