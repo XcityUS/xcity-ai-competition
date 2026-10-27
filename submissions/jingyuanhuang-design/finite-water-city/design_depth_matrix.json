@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "rows": [
+    {
+      "id": "whole_site",
+      "status": "partial",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/structure.geojson",
+        "geometry/movement.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 2."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    },
+    {
+      "id": "phase_one",
+      "status": "partial",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/master_area.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 9."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    },
+    {
+      "id": "urban_design",
+      "status": "partial",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 7."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    },
+    {
+      "id": "nodes",
+      "status": "documented",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/nodes.geojson",
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    },
+    {
+      "id": "node:N05",
+      "status": "documented",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/nodes.geojson",
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    },
+    {
+      "id": "node:N07",
+      "status": "documented",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/nodes.geojson",
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    },
+    {
+      "id": "node:N10",
+      "status": "documented",
+      "drawings": [
+        "drawings/a3-booklet.pdf"
+      ],
+      "geometry": [
+        "geometry/nodes.geojson",
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1",
+        "annual_water_demand_m3"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
+          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
+          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        }
+      ]
+    }
+  ]
+}

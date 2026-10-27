@@ -99,6 +99,235 @@
       "caption": "V3 regional planning review diagram, not a survey or approved development plan."
     },
     {
+      "path": "reviews/full-v6/01-site-reading.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/02-siting-tradeoff.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/03-five-systems.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/04-first-neighbourhood.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/05-housing-enlargement.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/06-height-interface.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/07-human-machine.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/08-water-budget.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/09-energy-dispatch.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/10-governance.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N05-finished.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N05-operation.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N05-plan-section.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N07-finished.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N07-operation.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N07-plan-section.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N10-finished.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N10-operation.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "reviews/full-v6/N10-plan-section.png",
+      "model": "Python matplotlib / Shapely; deterministic authored diagram",
+      "prompt": "Run tools/full_design_v6.py: read the submitted geometry, source DEM, movement, metrics and declared assumptions. Make legible, purpose-specific urban design plans, sections and system diagrams. No geometry or measured facts inferred from imagery.",
+      "generated_at": "2026-10-26",
+      "post_processing": "Original vector planning drawing and editorial composition",
+      "reference_images": "own_work",
+      "reference_images_note": "Own submitted geometry and registered concept images; organiser site data attribution in sources.json.",
+      "caption": "Authored design evidence or presentation page; not survey or approval."
+    },
+    {
+      "path": "media/N05-aerial-v6.png",
+      "node_id": "N05",
+      "view": "aerial",
+      "model": "OpenAI built-in image generation; exact model version unavailable",
+      "prompt": "Use case: sketch-to-render. Transform this exact geometry-derived control into a finished architectural competition aerial of Agua Finita, San Juan desert. Preserve the exact camera, footprints, building heights, roof shapes, spacing, paths, roads, planting locations and relative scale. Change only material realism, light and a restrained human layer. Clear warm daylight; pale mineral plaster, muted metal, dry aggregate, sparse arid planting, architectural visualisation quality. No text, no labels, no watermark. No invented buildings, streets, mountains, water features, lawns or forest. This is a conceptual image, not a photograph or approval. Show the three long single-storey compute halls, their dry-cooling/service edge, four repair/drying workshops and the small heat-receiving pavilion exactly where the control places them. No decorative greenhouse or towers. Roof surfaces and architectural materials are realistic. People stay on existing public paths, freight in the service zone.",
+      "generated_at": "2026-10-26",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Author's geometry-derived control renders/N05-aerial.png supplied; keep original camera and geometry. Conceptual presentation only.",
+      "control_image": "renders/N05-aerial.png",
+      "caption": "Finished conceptual aerial for N05; geometry remains authoritative, not a photograph or approval."
+    },
+    {
+      "path": "media/N07-aerial-v6.png",
+      "node_id": "N07",
+      "view": "aerial",
+      "model": "OpenAI built-in image generation; exact model version unavailable",
+      "prompt": "Use case: sketch-to-render. Transform this exact geometry-derived control into a finished architectural competition aerial of Agua Finita, San Juan desert. Preserve the exact camera, footprints, building heights, roof shapes, spacing, paths, roads, planting locations and relative scale. Change only material realism, light and a restrained human layer. Clear warm daylight; pale mineral plaster, muted metal, dry aggregate, sparse arid planting, architectural visualisation quality. No text, no labels, no watermark. No invented buildings, streets, mountains, water features, lawns or forest. This is a conceptual image, not a photograph or approval. This is a seasonal DRY wash park, not a river or lake. Preserve the dry gravel topography, single small water classroom at the high-ground edge and the actual sparse path network. No added bridges, decks, pools, buildings or new paths. Retain generous empty flood conveyance ground. Restrained desert vegetation only. Small visitors on the high-ground path explain scale.",
+      "generated_at": "2026-10-26",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Author's geometry-derived control renders/N07-aerial.png supplied; keep original camera and geometry. Conceptual presentation only.",
+      "control_image": "renders/N07-aerial.png",
+      "caption": "Finished conceptual aerial for N07; geometry remains authoritative, not a photograph or approval."
+    },
+    {
+      "path": "media/N10-aerial-v6.png",
+      "node_id": "N10",
+      "view": "aerial",
+      "model": "OpenAI built-in image generation; exact model version unavailable",
+      "prompt": "Use case: sketch-to-render. Transform this exact geometry-derived control into a finished architectural competition aerial of Agua Finita, San Juan desert. Preserve the exact camera, footprints, building heights, roof shapes, spacing, paths, roads, planting locations and relative scale. Change only material realism, light and a restrained human layer. Clear warm daylight; pale mineral plaster, muted metal, dry aggregate, sparse arid planting, architectural visualisation quality. No text, no labels, no watermark. No invented buildings, streets, mountains, water features, lawns or forest. This is a conceptual image, not a photograph or approval. Preserve the large rectangular civic shade-roof perimeter, central covered walk, surrounding school/library/kitchen buildings and residential bars. Roof positions and open-ground footprint stay exact. Finish pale gravel aggregate, mineral plaster and light roofs; sparse drought-tolerant planting in already indicated positions. People gather along existing shaded edges; no lawn, fountain or lake.",
+      "generated_at": "2026-10-26",
+      "post_processing": "none",
+      "reference_images": "own_work",
+      "reference_images_note": "Author's geometry-derived control renders/N10-aerial.png supplied; keep original camera and geometry. Conceptual presentation only.",
+      "control_image": "renders/N10-aerial.png",
+      "caption": "Finished conceptual aerial for N10; geometry remains authoritative, not a photograph or approval."
+    },
+    {
       "path": "media/cover-render-v5.png",
       "model": "OpenAI built-in image generation; exact model version not exposed",
       "prompt": "Use case: sketch-to-render. Asset type: finished architectural competition website cover, landscape 16:9. Input image 1 is the earlier finished concept rendering, a MATERIAL AND REALISM reference only. Input image 2 is the current geometry-derived aerial and is the AUTHORITATIVE EDIT TARGET. Render image 2 at professional architectural competition quality, with exactly its camera direction, perspective, building footprints, storeys, spacing, canopy routes, public facilities, service roads and solar-array positions. Preserve all geometry and relative scale. Improve only surface materials, realistic light and restrained human life. San Juan Argentine desert: pale mineral-plaster low-rise homes, gravel mineral ground, sparse dry-climate planting, continuous light shade structures, blue-black solar panels, broad dry landscape. Clear warm late-afternoon sunlight with readable shadows; restrained photorealism, no heavy atmosphere. Make the principal residential/public-space/production relationship immediately legible. No invented towers, courtyards, infill, buildings, hills, rivers, lakes, lawns or forests. Keep sparse arid planting. Compose a landscape image filling approximately the top 88% with a slim warm-white editorial title band below. The band must contain only these exact words: large 'AGUA FINITA' followed by '有限水城', and beneath it small '首期街区概念效果图'. Elegant dark-blue sans-serif typography. No logo, no old slogan, no charts or decorative graphics, no extra text. This is a conceptual rendering of the first neighbourhood, NOT a rendering of all 1656 square kilometres. Preserve geometry rather than beautifying through design changes.",

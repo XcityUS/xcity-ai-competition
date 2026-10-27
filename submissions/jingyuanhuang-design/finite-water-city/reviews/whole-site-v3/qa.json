@@ -1,25 +1,25 @@
 {
-  "source_commit": "069766b",
+  "source_commit": "c60cd1d",
   "crs": "EPSG:32719 regional calculation; outputs EPSG:4326",
-  "site_utm_km2": 1655.4050334651963,
+  "site_utm_km2": 1655.709389567692,
   "area_account_km2": {
     "fixed_agri": 13.892211232008629,
     "fixed_living": 2.480783499017229,
     "protect": 269.72379862872225,
-    "wash": 73.90963953424169,
-    "floodstudy": 421.4676424055867,
-    "dry": 193.47995605497488,
+    "wash": 73.90964680447411,
+    "floodstudy": 421.4677031740237,
+    "dry": 193.48485095748714,
     "compute": 10.305277935348375,
     "localindustry": 0.6039950649090617,
-    "town": 24.13645204339017,
+    "town": 24.136454674967965,
     "energy": 175.6864112988207,
     "gateway": 2.640963448926635,
-    "agri": 467.0779023192451
+    "agri": 467.377292848982
   },
   "partition_gap_m2": 0.0,
-  "partition_overlap_m2": -5.9604644775390625e-06,
+  "partition_overlap_m2": -3.814697265625e-06,
   "proposal_fixed_overlap_m2": 0.0,
-  "master_km2": 40.359715788265135,
+  "master_km2": 40.562105830686264,
   "routes": [
     {
       "name": "P1 首批街区接驳",

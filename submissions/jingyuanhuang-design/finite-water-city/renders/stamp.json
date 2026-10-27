@@ -1,66 +1,66 @@
 {
-  "input_sha256": "e3eaa04f1cea86f5ae486e30bd1dda7cec3420df461fdc7b7b558253da8bc055",
+  "input_sha256": "793164b93c4eadfbc0b0a8a44d48722244c67b325b0b969a6eef800130f20739",
   "width": 2400,
   "height": 1500,
-  "generator": "scripts/render_views.py 1.0.0",
+  "generator": "scripts/render_views.py 1.1.0",
   "files": {
     "master-aerial.png": {
-      "sha256": "4a2e9989d4830068c89213f4e264a31af5627bce1f47b39891dd63b0a2e48c07",
+      "sha256": "e587bf1fd742bafcdacdfda4b5a4fa28d41081ed17cf7dd721dba8a4baf0a100",
       "label": "Master design - aerial",
       "time": "day"
     },
     "city-aerial.png": {
-      "sha256": "121e87fea87025b3459f20f55fef1c68005b90832281c1f21a237a375aeddc10",
+      "sha256": "77a8dbd0023ca07a0cd77856e2650fbcff65d1c4ae4324c2f9bb69177bcdcb51",
       "label": "The city - aerial",
       "time": "day"
     },
     "city-evening.png": {
-      "sha256": "a37ba97ebb4544eed25bf81047c2f7775c68156785cac815e632a38f848cc081",
+      "sha256": "ef25804128c1fb97350aeac271ddd02b116f22a5a32b421b3409eae8f71da404",
       "label": "The city - evening",
       "time": "evening"
     },
     "N05-aerial.png": {
-      "sha256": "45b53d19c0d2bc300428d0f9ef4e04d7782531cba57546e3ee173fd25390ff3a",
+      "sha256": "15d258878b7fcd68432e65728502a2e7becef6bf1d8f493bdb764b11c72a63cb",
       "label": "N05 - aerial",
       "time": "day"
     },
     "N05-eye-day.png": {
-      "sha256": "db02c18ae57668fbee8df1385615bddc1d5a546764c065fa40f22d59f363eaf5",
+      "sha256": "f0b343e03c11e5538bc4d32fce30689b0ece2814e1b6cf612ae62427db895f41",
       "label": "N05 - eye level, day",
       "time": "day"
     },
     "N05-eye-evening.png": {
-      "sha256": "074074f428becf9988ed63da294a166fed5512910d88ec0a627b1ad34112635c",
+      "sha256": "56aaeae93e46026edd2666214f675f93852ee9f770983d18dcf8c63cdf1fe81e",
       "label": "N05 - eye level, evening",
       "time": "evening"
     },
     "N07-aerial.png": {
-      "sha256": "4606e8ae8de59e57704baefb9c605fe7a27f2ca9bf4fe312d5665b6c3d0f521a",
+      "sha256": "84f622db1cdef627b4d40deac8ccfd5d399e2fed8f68fea9669c13cb6d4a153b",
       "label": "N07 - aerial",
       "time": "day"
     },
     "N07-eye-day.png": {
-      "sha256": "a7b32bcadd63f14a7cc7cefd056c88733c065b1f6b6f152968001de2bf112c68",
+      "sha256": "b4e7ae7c9d1dca258fb919712dfb8fe8e6f273eaac30b698352d46fe0e724420",
       "label": "N07 - eye level, day",
       "time": "day"
     },
     "N07-eye-evening.png": {
-      "sha256": "684926a6c5531d43e21eb75e8b01041b45902dccdf8ec6e41fe8a89768a73571",
+      "sha256": "fe90280d1daf78b4d3f6e0fd2c73d1db26a3eaae6d8730168bcebf55fdb1de9c",
       "label": "N07 - eye level, evening",
       "time": "evening"
     },
     "N10-aerial.png": {
-      "sha256": "637a9b08a9dbec31242b1eb01b433ad5432c14c1bf5f9caf1ee0b264605a388e",
+      "sha256": "c99ba5b81f8e7762c78c881e69bab6968b3c46e566cd092257139e48313f4e84",
       "label": "N10 - aerial",
       "time": "day"
     },
     "N10-eye-day.png": {
-      "sha256": "32fc93328303eebe11b61b88875884c0b070a7a6c71cbbd4ab1486b53b9e75f1",
+      "sha256": "22cb06de84fcb950af967ae02592bc87dabbfb36a74974debb5b10c128d903f8",
       "label": "N10 - eye level, day",
       "time": "day"
     },
     "N10-eye-evening.png": {
-      "sha256": "02bdc68aeee6461c1f1712ace2a7872421fa229f4544a912b6874239995a036e",
+      "sha256": "a29695dd41a6e86c1e0e6abb2c5b275aa715034f028469eebaa781de05310316",
       "label": "N10 - eye level, evening",
       "time": "evening"
     }

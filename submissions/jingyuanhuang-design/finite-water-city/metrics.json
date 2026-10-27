@@ -2,14 +2,14 @@
   "metrics": [
     {
       "key": "master_area_km2",
-      "value": 40.3868,
+      "value": 40.5893,
       "unit": "km2",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "site_coverage_pct",
-      "value": 0.399,
+      "value": 0.397,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
@@ -30,7 +30,7 @@
     },
     {
       "key": "open_space_pct",
-      "value": 17.469,
+      "value": 17.382,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/land_use.geojson"
@@ -52,12 +52,12 @@
     {
       "key": "structure_km2",
       "value": {
-        "agri_production": 481.267,
+        "agri_production": 481.567,
         "energy_compute": 186.111,
         "industry": 1.081,
         "living": 26.634,
         "port": 2.165,
-        "reserve": 959.123
+        "reserve": 959.128
       },
       "unit": "km2",
       "evidence": "computed",

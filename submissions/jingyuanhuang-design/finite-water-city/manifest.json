@@ -5,7 +5,7 @@
   "title_zh": "有限水城",
   "slug": "finite-water-city",
   "summary": "A whole-site network of four conditional towns, productive energy/compute corridors and an eastern gateway grows only with verified water. Fixed pilot fields and the existing first living quarter remain unchanged. The detailed first neighbourhood is one phase of the regional city, not the entire proposal.",
-  "language": "en",
+  "language": "zh",
   "author": {
     "github": "jingyuanhuang-design",
     "responsible_party": "Jingyuan Huang",
@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested an architectural rendering cover instead of the abstract slogan on 2026-10-26; a first-neighbourhood aerial was produced for the cover."
+    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested a complete design argument with plans, sections, diagrams and massing rather than a six-page digest; authorised uploading the completed revision and replacing its abstract cover with a city rendering. V6 adopts the updated main/technical presentation contract and discloses unfinished engineering independently."
   },
   "nodes": [
     "N05",
@@ -80,25 +80,117 @@
     "cover": "media/cover-render-v5.png",
     "pages": [
       {
-        "path": "reviews/whole-site-v3/01_whole_site_plan.png",
-        "after": "idea",
-        "title": "Whole-site structure: fixed conditions and conditional growth"
+        "path": "reviews/full-v6/01-site-reading.png",
+        "title": "场地与限制",
+        "after": "whole_site"
       },
       {
-        "path": "reviews/whole-site-v3/02_corridors_and_phases.png",
-        "after": "idea",
-        "title": "Regional links and hydraulic study sections"
+        "path": "reviews/full-v6/02-siting-tradeoff.png",
+        "title": "起步选址取舍",
+        "after": "whole_site"
       },
       {
-        "path": "reviews/whole-site-v3/03_source_geometry.png",
-        "after": "idea",
-        "title": "Source boundary and southwest study envelope"
+        "path": "reviews/full-v6/03-five-systems.png",
+        "title": "五系统的联系",
+        "after": "whole_site"
       },
       {
-        "path": "pages/water-covenant.png",
-        "after": "idea",
-        "title": "A city that can say: enough"
+        "path": "reviews/full-v6/04-first-neighbourhood.png",
+        "title": "首批街区总体",
+        "after": "views"
+      },
+      {
+        "path": "reviews/full-v6/05-housing-enlargement.png",
+        "title": "居住组团与公共路径",
+        "after": "views"
+      },
+      {
+        "path": "reviews/full-v6/06-height-interface.png",
+        "title": "高度与空间界面",
+        "after": "views"
+      },
+      {
+        "path": "reviews/full-v6/07-human-machine.png",
+        "title": "人机交通与注册界面",
+        "after": "views"
+      },
+      {
+        "path": "reviews/full-v6/N05-plan-section.png",
+        "title": "N05 详细平面与断面",
+        "after": "N05"
+      },
+      {
+        "path": "reviews/full-v6/N05-operation.png",
+        "title": "N05 使用与运行情景",
+        "after": "N05"
+      },
+      {
+        "path": "reviews/full-v6/N07-plan-section.png",
+        "title": "N07 详细平面与断面",
+        "after": "N07"
+      },
+      {
+        "path": "reviews/full-v6/N07-operation.png",
+        "title": "N07 使用与运行情景",
+        "after": "N07"
+      },
+      {
+        "path": "reviews/full-v6/N10-plan-section.png",
+        "title": "N10 详细平面与断面",
+        "after": "N10"
+      },
+      {
+        "path": "reviews/full-v6/N10-operation.png",
+        "title": "N10 使用与运行情景",
+        "after": "N10"
+      },
+      {
+        "path": "reviews/full-v6/08-water-budget.png",
+        "title": "水预算与短缺",
+        "after": "key_metrics"
+      },
+      {
+        "path": "reviews/full-v6/09-energy-dispatch.png",
+        "title": "逐小时能源情景",
+        "after": "key_metrics"
+      },
+      {
+        "path": "reviews/full-v6/10-governance.png",
+        "title": "资产、责任与增长治理",
+        "after": "key_metrics"
       }
-    ]
+    ],
+    "section_pages": {
+      "whole_site": [
+        {
+          "path": "reviews/whole-site-v3/01_whole_site_plan.png",
+          "title": "全场地总体结构"
+        }
+      ],
+      "node_locator": [
+        {
+          "path": "reviews/presentation-v4/node-locator.png",
+          "title": "全场地—首批街区—三个节点"
+        }
+      ],
+      "node:N05": [
+        {
+          "path": "reviews/full-v6/N05-finished.png",
+          "title": "N05 · 算力与余热利用"
+        }
+      ],
+      "node:N07": [
+        {
+          "path": "reviews/full-v6/N07-finished.png",
+          "title": "N07 · 季节河道公园"
+        }
+      ],
+      "node:N10": [
+        {
+          "path": "reviews/full-v6/N10-finished.png",
+          "title": "N10 · 遮阴公共空间"
+        }
+      ]
+    }
   }
 }

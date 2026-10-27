@@ -115,7 +115,7 @@ save('master_study',[ft(master,name='西南深化研究范围',status='review en
 save('centres',[ft(p,id=k,status='proposed reservation') for k,p in C.items()])
 area={}
 for g,k,n in zones:area[k]=area.get(k,0)+g.area/1e6
-qa=dict(source_commit='069766b',crs='EPSG:32719 regional calculation; outputs EPSG:4326',site_utm_km2=scope.area/1e6,area_account_km2=area,partition_gap_m2=scope.difference(unary_union([g for g,_,_ in zones])).area,partition_overlap_m2=sum(g.area for g,_,_ in zones)-unary_union([g for g,_,_ in zones]).area,proposal_fixed_overlap_m2=sum(g.intersection(fixed).area for g,k,n in zones if not k.startswith('fixed')),master_km2=master.area/1e6,routes=[p for _,p in routes],limits=['300m regional screening; source channels are DEM-derived, not surveyed','No water rights, grid connection, road right-of-way, soil or bridge approvals inferred','Production reservations are not irrigated or installed area; no new population promise','Gateway suitable reservation may be below indicative 7km2; remaining land is not forced into flood zone','This review does not replace canonical submission geometry or certify all twelve gates'])
+qa=dict(source_commit='c60cd1d',crs='EPSG:32719 regional calculation; outputs EPSG:4326',site_utm_km2=scope.area/1e6,area_account_km2=area,partition_gap_m2=scope.difference(unary_union([g for g,_,_ in zones])).area,partition_overlap_m2=sum(g.area for g,_,_ in zones)-unary_union([g for g,_,_ in zones]).area,proposal_fixed_overlap_m2=sum(g.intersection(fixed).area for g,k,n in zones if not k.startswith('fixed')),master_km2=master.area/1e6,routes=[p for _,p in routes],limits=['300m regional screening; source channels are DEM-derived, not surveyed','No water rights, grid connection, road right-of-way, soil or bridge approvals inferred','Production reservations are not irrigated or installed area; no new population promise','Gateway suitable reservation may be below indicative 7km2; remaining land is not forced into flood zone','This review does not replace canonical submission geometry or certify all twelve gates'])
 (O/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2))
 # Freeze hash before drawing, all views use these exact in-memory geometries.
 h=hashlib.sha256(b''.join((O/f).read_bytes() for f in ['structure.geojson','corridors.geojson','master_study.geojson','centres.geojson'])).hexdigest();(O/'geometry.sha256').write_text(h+'\n')
@@ -201,7 +201,7 @@ for mode,filename,title in [('planning','01_whole_site_plan','有限水城  /  �
  text(fig,.04,.95,title,28,transform=fig.transFigure);text(fig,.04,.912,'XCITY OPEN AGENT CALL  ·  Jingyuan Huang  ·  2026-10-26  ·  V3 REVIEW',11,transform=fig.transFigure)
  if mode!='geometry':
   handles=[LegendPatch(facecolor=COL[k],label=legendnames[k]) for k in COL];leg=fig.legend(handles=handles,loc='lower left',bbox_to_anchor=(.04,.055),ncol=6,frameon=False,prop=FontProperties(fname=font.get_file(),size=11),columnspacing=1.8)
- text(fig,.04,.025,'来源：XCITY 069766b｜业主边界、既定试点、Copernicus DEM 60m、DEM 沟道与洪泛筛选。新规划为概念预留；通道采用300m区域寻径，尚非道路工程。',9,transform=fig.transFigure)
+ text(fig,.04,.025,'来源：XCITY c60cd1d｜业主边界、既定试点、Copernicus DEM 60m、DEM 沟道与洪泛筛选。新规划为概念预留；通道采用300m区域寻径，尚非道路工程。',9,transform=fig.transFigure)
  for ext in ['png','svg']:
   fig.savefig(OUT/(filename+'.'+ext),dpi=180,facecolor=BG);fig.savefig(O/(filename+'.'+ext),dpi=180,facecolor=BG)
  plt.close(fig)

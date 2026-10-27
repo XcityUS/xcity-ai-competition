@@ -1,0 +1,13 @@
+{
+  "path": "media/N07-aerial-v6.png",
+  "node_id": "N07",
+  "view": "aerial",
+  "model": "OpenAI built-in image generation; exact model version unavailable",
+  "prompt": "Use case: sketch-to-render. Transform this exact geometry-derived control into a finished architectural competition aerial of Agua Finita, San Juan desert. Preserve the exact camera, footprints, building heights, roof shapes, spacing, paths, roads, planting locations and relative scale. Change only material realism, light and a restrained human layer. Clear warm daylight; pale mineral plaster, muted metal, dry aggregate, sparse arid planting, architectural visualisation quality. No text, no labels, no watermark. No invented buildings, streets, mountains, water features, lawns or forest. This is a conceptual image, not a photograph or approval. This is a seasonal DRY wash park, not a river or lake. Preserve the dry gravel topography, single small water classroom at the high-ground edge and the actual sparse path network. No added bridges, decks, pools, buildings or new paths. Retain generous empty flood conveyance ground. Restrained desert vegetation only. Small visitors on the high-ground path explain scale.",
+  "generated_at": "2026-10-26",
+  "post_processing": "none",
+  "reference_images": "own_work",
+  "reference_images_note": "Author's geometry-derived control renders/N07-aerial.png supplied; keep original camera and geometry. Conceptual presentation only.",
+  "control_image": "renders/N07-aerial.png",
+  "caption": "Finished conceptual aerial for N07; geometry remains authoritative, not a photograph or approval."
+}

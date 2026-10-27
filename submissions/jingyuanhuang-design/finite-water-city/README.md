@@ -1,35 +1,17 @@
-# AGUA FINITA | 有限水城
+# AGUA FINITA｜有限水城
 
-**当前主展示：V4 · 2026-10-26**
+**V6 完整修订 · Jingyuan Huang · 2026-10-26**
 
-- [6页主展示册：总图、节点定位、三个成品节点与实施](reviews/presentation-v4/AGUA-FINITA-presentation-v4.pdf)
-- [20页独立技术附件：过程、平剖面与校核](reviews/presentation-v4/AGUA-FINITA-technical-appendix-v4.pdf)
+[完整中文方案与设计图文](report/proposal.html) · [主展示图册](drawings/a3-booklet.pdf) · [独立技术附件](drawings/a3-technical-appendix.pdf)
 
-本次参考海淀提交技能的人工阅读层与机器证据层组织方式，重新编排展示，未改动V3方案几何；没有照搬海淀的场地、JSON格式或专业标准。六页是本轮编辑选择，并非参考技能的固定要求。
+![首批街区概念鸟瞰封面](media/cover-render-v5.png)
 
-以下保留V3设计说明与技术入口。
+全场地结构、首期总体、城市设计放大、三个节点及资源运行共同构成方案。主册保留正式diagram、平面、关键断面和成品鸟瞰／人视，原始体量对照与完整技术记录位于附件。六页V4仅为历史摘要，不再是主展示入口。
 
+N05 算力与余热利用：南侧生产边缘；N07 季节河道公园：西北沟道边缘；N10 遮阴公共空间：住宅东侧公共核心。
 
-**V3 本地修订／待审阅 · 2026-10-26 · Jingyuan Huang**
+[三节点定位](reviews/presentation-v4/node-locator.png) · [设计深度与待核问题](design_depth_matrix.json) · [自动合规结果](self_check.json)
 
-此前公开预览已通过上游 PR #5 合并。本次修订尚未公开推送。
+本版未声称工程或规划审批。当前严格筛选下东部门户候选约2.64km²，约7km²意向仍需核实；水权、既定生活区实际需求和道路水文工程未被虚构为已落实。自动通过不等于设计批准。
 
-本版将约1656 km²全场地组织为四处条件性城镇、能源算力复合生产带、分布式加工维护与东部门户，保留既定农光场与首期生活区。洪泛敏感筛选与山地、沟道行洪研究分开表达；没有规划大片湖区。
-
-![全场地总体结构](reviews/whole-site-v3/01_whole_site_plan.png)
-
-![区域通道与分期](reviews/whole-site-v3/02_corridors_and_phases.png)
-
-## 当前成果
-
-- [完整设计说明](proposal.md)
-- [V3原始技术图册（过程来源）](drawings/a3-booklet.pdf)
-- [区域图与土地账](reviews/whole-site-v3/README.md)
-- [离线报告](report/proposal.html)
-- [自检结果](self_check.json)
-
-西南总体研究包络约40.39 km²；其中保留原首批街区建筑和节点，其余新增部分明确为待深化预留，不计作首期建设量。东部门户严格筛选后约2.64 km²，约7 km²意向规模仍需进一步核实。全域人口、供水及工程能力未据彩色分区推定。
-
-M1已修正为全年完全匹配小时占比62.432%；72.993%为另列的全年清洁电量占比。既定生活区需求尚无资料，不混入新增2400居民的测算。
-
-旧公开输入保留于 reviews/whole-site-v3/previous-submitted，作为历史来源，不是另一份当前方案。
+参考海淀项目的人工阅读／证据分层组织方法并署名，未复制其空间方案。旧版快照在 reviews/ 中，当前几何与指标位于 geometry/ 与 metrics.json。

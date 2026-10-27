@@ -10,8 +10,8 @@
         "boundaries/parcels_9_13.geojson",
         "boundaries/scope_9_13.geojson"
       ],
-      "accessed": "2026-10-25",
-      "used_for": "Site baseline",
+      "accessed": "2026-10-26",
+      "used_for": "Current organiser seam-closed competition boundary, source commit c60cd1d. Exterior unchanged; not cadastral certification.",
       "url": "https://github.com/XcityUS/xcity-ai-competition"
     },
     {
@@ -95,6 +95,16 @@
       "used_for": "Hourly matching accounting concept, not a certification of our scenario",
       "publisher": "Climate Group",
       "accessed": "2026-10-25"
+    },
+    {
+      "id": "S-HAIDIAN-PRESENTATION",
+      "title": "Haidian submission skill and Yunique-hub Open Gate Line: reading/evidence organisation reference",
+      "publisher": "open-city-ai / Yunique-hub",
+      "url": "https://github.com/open-city-ai/haidian/tree/main/skills/urban-design-ai-submission",
+      "accessed": "2026-10-26",
+      "licence": "Reference to public method; no peer prose, geometry or images reproduced",
+      "used_for": "Human-reading/evidence-layer separation and design-argument organisation only",
+      "related_url": "https://haidian.open-city.ai/proposal-view.html?proposal=submissions/Yunique-hub/jingzhang-open-gate-line"
     }
   ]
 }
