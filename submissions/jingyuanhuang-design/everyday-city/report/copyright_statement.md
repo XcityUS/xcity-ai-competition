@@ -1,0 +1,1 @@
+Jingyuan Huang is the responsible party. Original generated proposal, geometry, text and images. Issued source data retain their licences and competition-only limitations. No official approval claimed.

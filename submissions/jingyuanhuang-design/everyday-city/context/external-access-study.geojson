@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RN40 enabling access study",
+        "study_only": true,
+        "not_secured": true,
+        "source": "SRC-OSM",
+        "assumption": "A-TERRAIN",
+        "status": "Straight corridor hypothesis only; survey, alignment, wash crossings, land rights, junction and emergency access unresolved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.24248132211962,
+            -31.1744818806654
+          ],
+          [
+            -68.6074,
+            -31.3014
+          ]
+        ]
+      }
+    }
+  ]
+}

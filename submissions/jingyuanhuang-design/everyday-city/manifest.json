@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "competition": "xcity-ai-competition",
+  "title": "THE EVERYDAY CITY",
+  "title_zh": "",
+  "slug": "everyday-city",
+  "summary": "A city organised around homes, shared courts and everyday public services. Six neighbourhoods form a complete first district; energy, compute and farm services support its edges. The whole-site network grows through two conditional service towns and a later eastern gateway.",
+  "language": "en",
+  "author": {
+    "github": "jingyuanhuang-design",
+    "responsible_party": "Jingyuan Huang",
+    "organisation": ""
+  },
+  "agent": {
+    "name": "Codex",
+    "model": "GPT-6 family; exact serving version unavailable",
+    "runtime": "Codex desktop on macOS"
+  },
+  "autonomy": {
+    "class": "human_directed",
+    "human_role": "Human asked for a separate new scheme while preserving the published Finite Water City; prioritised housing and public life; delegated node choice; required English-only public material and A/B/C node IDs without old-code aliases. Public submission of this newly completed work has not yet been approved after review."
+  },
+  "nodes": [
+    "A01",
+    "B03",
+    "C02"
+  ],
+  "nodes_reason": "Housing and shared ground test independent daily life; useful compute tests civic production; the working farm edge connects the city to the protected productive pilot.",
+  "tradeoff": {
+    "objective": "Maximum uninterrupted compute throughput and minimum productive-route length",
+    "why": "Independent housing, public life and a clear service boundary take precedence.",
+    "consequence": "Flexible IT output, additional maintenance and walking connections, shared-space funding obligations.",
+    "who_bears": "Compute investors and operators through interruption contracts; public-service funding must not depend on uninterrupted IT revenue."
+  },
+  "design_depth": {
+    "tier1_structure": {
+      "evidence": [
+        "geometry/structure.geojson",
+        "pages/01-whole-site.png"
+      ]
+    },
+    "tier2_master": {
+      "evidence": [
+        "geometry/master_area.geojson",
+        "geometry/land_use.geojson",
+        "geometry/buildings.geojson",
+        "pages/04-first-district.png",
+        "pages/05-courtyard-neighbourhood.png"
+      ]
+    },
+    "tier3_nodes": {
+      "A01": {
+        "plan": "pages/11-a01-plan.png",
+        "aerial": "media/A01-finished.png",
+        "eye_level": "media/A01-finished.png"
+      },
+      "B03": {
+        "plan": "pages/12-b03-plan.png",
+        "aerial": "media/B03-finished.png",
+        "eye_level": "media/B03-finished.png"
+      },
+      "C02": {
+        "plan": "pages/13-c02-plan.png",
+        "aerial": "media/C02-finished.png",
+        "eye_level": "media/C02-finished.png"
+      }
+    }
+  },
+  "package_state": "draft",
+  "created": "2026-10-27",
+  "updated": "2026-10-27",
+  "booklet": {
+    "cover": "media/district-finished.png"
+  }
+}

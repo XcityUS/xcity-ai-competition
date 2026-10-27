@@ -1,0 +1,17 @@
+{
+  "valid_core_geometries": true,
+  "building_outside_master_m2": 0.0,
+  "land_partition_gap_m2": 0.0,
+  "land_overlap_m2": -4.656612873077393e-10,
+  "solid_building_overlap_m2": 0.0,
+  "pedestrian_building_intersection_m": 0.0,
+  "vehicle_building_intersection_m": 0.0,
+  "abc_nodes": [
+    "A01",
+    "B03",
+    "C02"
+  ],
+  "old_node_ids_in_core": false,
+  "non_english_script_in_public_statement": false,
+  "missing_statement_figures": []
+}

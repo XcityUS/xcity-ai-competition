@@ -1,0 +1,125 @@
+{
+  "_note": "Set each status to 'answered' (or 'partial' with a note) once proposal.md really answers it; 'not_answered' fails gate G6. section: the numbered heading in proposal.md that answers it.",
+  "items": [
+    {
+      "id": "agent.1",
+      "status": "answered",
+      "section": "## 1.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.2",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.3",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.4",
+      "status": "answered",
+      "section": "## 5.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.5",
+      "status": "answered",
+      "section": "## 6.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.6",
+      "status": "answered",
+      "section": "## 7.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.7",
+      "status": "answered",
+      "section": "## 8.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "agent.8",
+      "status": "answered",
+      "section": "## 9.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M1",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M2",
+      "status": "answered",
+      "section": "## 3.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M3",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M4",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M5",
+      "status": "answered",
+      "section": "## 4.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M6",
+      "status": "answered",
+      "section": "## 5.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M7",
+      "status": "answered",
+      "section": "## 5.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M8",
+      "status": "answered",
+      "section": "## 8.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M9",
+      "status": "answered",
+      "section": "## 8.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M10",
+      "status": "answered",
+      "section": "## 9.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M11",
+      "status": "answered",
+      "section": "## 9.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    },
+    {
+      "id": "M12",
+      "status": "answered",
+      "section": "## 6.",
+      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+    }
+  ]
+}

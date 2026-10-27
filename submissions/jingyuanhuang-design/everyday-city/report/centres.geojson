@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "P",
+        "role": "living"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22459203765675,
+          -31.162249744754035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North",
+        "role": "living"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.13451916844761,
+          -30.829257283425427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East",
+        "role": "living"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.83255202613536,
+          -30.96156014137755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Energy",
+        "role": "energy_compute"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.16057583901137,
+          -30.95869369188284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gateway",
+        "role": "port"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.71064058033645,
+          -31.073842638284614
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "assumptions": [
+    {
+      "id": "A-HOMES",
+      "topic": "Housing and services",
+      "value": "1440 homes; 2.5 people/home; 96 wings, 15 homes/wing; 25% protected rental target; primary 360, secondary 240, childcare120 places",
+      "basis": "Original capacity programme. Household types and actual demand need survey. Of 1000 students, 600 are school-age,120 preschool,280 tertiary/apprentice scenario."
+    },
+    {
+      "id": "A-ENERGY",
+      "topic": "Electricity, cooling and backup",
+      "value": "8 MW peak / 6 MW mean IT; PUE1.30; WUE0.015 L/kWh; 20 MW PV; 180 MWh battery; 20 MW grid; 72 MWh protected usable reserve; 95% charge/discharge efficiency",
+      "basis": "Explicit project scenario. Synthetic sun and periodic dust episodes in tools/energy_model.py; no utility confirmation. 16MW rooftop +4MW utility-yard canopies;220W/m2 module density;approximately90910m2 total module area;roof structural,fire,yield and interconnection verification required. Individual roof modules are not shown in all concept images."
+    },
+    {
+      "id": "A-WATER",
+      "topic": "Gross use and reuse",
+      "value": "891748.4 m3/year total. Fresh abstraction751748.4; distributionloss40000; deliveredfresh711748.4; internalreuse180000",
+      "basis": "Domestic3600x140Lx365; IT52560000kWh x0.015L/kWh. Agriculture650000 includes fixed-pilot placeholder600000 and new50000; landscape12000;industry45000. No verified water rights. Fixed living-quarter demand unknown and additional."
+    },
+    {
+      "id": "A-SHORT",
+      "topic": "30% reduction",
+      "value": "267524.52 m3/year reduction:12000 landscape+35000 industry+180000 agriculture+40524.52 domestic/public",
+      "basis": "Residual use624223.88. Domestic143435.48=109.16 L/person/day; pilot allocation cuts require operator agreement and crop/animal welfare verification; otherwise reduce occupancy or secure emergency supply."
+    },
+    {
+      "id": "A-HEAT",
+      "topic": "Waste heat",
+      "value": "2628 MWh/year usable heat, 5% of52560MWh IT electricity",
+      "basis": "Named receiver: cooperative drying/processing workshops; temperature, losses, seasonal demand and contracts unknown."
+    },
+    {
+      "id": "A-TERRAIN",
+      "topic": "Siting and drainage",
+      "value": "Mean slope2.64% coarse footprint screening;150m channel research retreat;35m stopping distance outside fixed pilot",
+      "basis": "Scenario basis only, not surveyed banks, flood boundary, rights or accessible grading."
+    },
+    {
+      "id": "A-GROWTH",
+      "topic": "Regional capacity",
+      "value": "First district3600; two later service-town scenarios1800each; conditional regional total7200 new residents",
+      "basis": "Growth not promised. Independent services and audited resource margin20%,occupancy80%,funded access required; actual layouts for later towns remain to be designed."
+    },
+    {
+      "id": "A-OPERATIONS",
+      "topic": "Traffic, lighting and services",
+      "value": "10 km/h shared neighbourhood loops; machine stop at public crossings;2200K shielded lighting;1MW essential-service load",
+      "basis": "Concept assumptions pending traffic, lighting, seismic, fire and load studies. No facial recognition or household movement tracking."
+    },
+    {
+      "id": "A-GOVERNANCE",
+      "topic": "Asset continuity",
+      "value": "Proposed civic trust, independent operator leases, maintenance/service reserve and resident council",
+      "basis": "Institutional design only. Legal form, reserve amount and affordability remain to be negotiated."
+    }
+  ]
+}

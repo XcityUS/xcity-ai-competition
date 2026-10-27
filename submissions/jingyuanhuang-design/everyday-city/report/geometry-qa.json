@@ -1,0 +1,64 @@
+{
+  "origin_utm_m": [
+    573000,
+    6551500
+  ],
+  "source_commit": "9e504de",
+  "source_boundary_revision": "2026-10-27-seam-closure",
+  "phase_one_planar_km2": 2.770339362257745,
+  "housing_buildings": 96,
+  "dwellings": 1440,
+  "residents_scenario": 3600,
+  "jobs_scenario": 1500,
+  "interfaces": 33,
+  "buildings": 306,
+  "people_path_building_conflict_m": 0.0,
+  "building_fixed_overlap_m2": 0.0,
+  "building_channel_screen_overlap_m2": 0.0,
+  "building_flood_screen_overlap_m2": 0.0,
+  "land_partition_gap_m2": 7.889616587886724e-07,
+  "regional_links": [
+    {
+      "name": "P to Energy",
+      "phase": 2,
+      "study_only": true,
+      "length_km": 29.746
+    },
+    {
+      "name": "Energy to North",
+      "phase": 2,
+      "study_only": true,
+      "length_km": 24.282
+    },
+    {
+      "name": "Energy to East",
+      "phase": 3,
+      "study_only": true,
+      "length_km": 36.646
+    },
+    {
+      "name": "East to Gateway",
+      "phase": 3,
+      "study_only": true,
+      "length_km": 19.504
+    },
+    {
+      "name": "Fixed farm connection",
+      "phase": 1,
+      "study_only": true,
+      "length_km": 2.473
+    },
+    {
+      "name": "Fixed living-quarter connection",
+      "phase": 1,
+      "study_only": true,
+      "length_km": 11.837
+    }
+  ],
+  "limits": [
+    "300m regional route grid; 60m terrain is not engineering",
+    "No secured water, grid or external access rights",
+    "A/B/C IDs requested by human; organiser checker still expects old numbering; no compatibility aliases included",
+    "Not submitted; not independent design approval"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": "concept_review_not_formal_pass",
+  "main_pages": 23,
+  "technical_pages": 8,
+  "main_page_sources": [
+    "pages/00-cover.png",
+    "pages/01-whole-site.png",
+    "pages/02-site-reading.png",
+    "pages/03-siting-choice.png",
+    "pages/04-first-district.png",
+    "pages/05-courtyard-neighbourhood.png",
+    "pages/17-a01-floor-and-section.png",
+    "pages/06-street-section.png",
+    "pages/18-civic-spine.png",
+    "pages/07-movement.png",
+    "pages/19-resource-network.png",
+    "pages/08-water-priorities.png",
+    "pages/09-energy.png",
+    "pages/10-node-locator.png",
+    "pages/11-a01-plan.png",
+    "pages/A01-finished.png",
+    "pages/12-b03-plan.png",
+    "pages/B03-finished.png",
+    "pages/13-c02-plan.png",
+    "pages/C02-finished.png",
+    "pages/14-phasing.png",
+    "pages/15-governance.png",
+    "pages/16-review-dashboard.png"
+  ]
+}
