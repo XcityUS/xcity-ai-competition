@@ -1,0 +1,294 @@
+{
+  "scope_km2": 1658.8198189675368,
+  "denominators": {
+    "whole_site_km2": 1658.8198189675368,
+    "nonfixed_nonretained_km2": 1295.3013245029115,
+    "note": "The second denominator is an accounting comparison only, not a buildable-land assessment."
+  },
+  "districts": [
+    {
+      "id": "D00-F",
+      "name": "Fixed agrivoltaic pilot",
+      "primary_use": "fixed_context",
+      "comparison_group": "fixed_context",
+      "area_km2": 13.901630991822922,
+      "whole_site_pct": 0.8380434591428629,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D00-L",
+      "name": "Fixed living pilot",
+      "primary_use": "fixed_context",
+      "comparison_group": "fixed_context",
+      "area_km2": 2.4823267965297697,
+      "whole_site_pct": 0.14964414869812626,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D07",
+      "name": "Mountain stewardship",
+      "primary_use": "ecology",
+      "comparison_group": "retained",
+      "area_km2": 269.8619959591405,
+      "whole_site_pct": 16.26831274098864,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D06",
+      "name": "Drainage and dry landscape links",
+      "primary_use": "reserve",
+      "comparison_group": "retained",
+      "area_km2": 77.27403071470155,
+      "whole_site_pct": 4.658373973539667,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D05-W",
+      "name": "Western arrival and trade reserve",
+      "primary_use": "logistics",
+      "comparison_group": "trade_port",
+      "area_km2": 16.980767345881166,
+      "whole_site_pct": 1.0236655694438312,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D05-E",
+      "name": "Eastern domestic transfer reserve",
+      "primary_use": "logistics",
+      "comparison_group": "trade_port",
+      "area_km2": 12.59726513308702,
+      "whole_site_pct": 0.7594112988671466,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D01",
+      "name": "Southwest living and civic territory",
+      "primary_use": "mixed_use",
+      "comparison_group": "living",
+      "area_km2": 80.04810470410844,
+      "whole_site_pct": 4.825605758311415,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D04",
+      "name": "Central processing and repair corridor",
+      "primary_use": "industry",
+      "comparison_group": "industry",
+      "area_km2": 48.19725084440067,
+      "whole_site_pct": 2.905514528660445,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D02",
+      "name": "Western and central agricultural territory",
+      "primary_use": "agriculture",
+      "comparison_group": "agri_production",
+      "area_km2": 501.5461288253228,
+      "whole_site_pct": 30.23511794894573,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D03-S",
+      "name": "Southern energy and compute works",
+      "primary_use": "energy",
+      "comparison_group": "energy_compute",
+      "area_km2": 15.87843612968807,
+      "whole_site_pct": 0.9572128297557321,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D03-N",
+      "name": "Northern solar-energy territory",
+      "primary_use": "energy",
+      "comparison_group": "energy_compute",
+      "area_km2": 188.4668421696267,
+      "whole_site_pct": 11.361501714329048,
+      "basis_ref": "proposal.md#territorial-districts"
+    },
+    {
+      "id": "D03-E",
+      "name": "Central and eastern energy territory",
+      "primary_use": "energy",
+      "comparison_group": "energy_compute",
+      "area_km2": 431.58585444381976,
+      "whole_site_pct": 26.017645166094194,
+      "basis_ref": "proposal.md#territorial-districts"
+    }
+  ],
+  "base_groups": {
+    "fixed_context": {
+      "area_km2": 16.383957788352692,
+      "whole_site_pct": 0.9876876078409893,
+      "share_of_nonfixed_nonretained_pct": null
+    },
+    "retained": {
+      "area_km2": 347.13602667811995,
+      "whole_site_pct": 20.926686714786197,
+      "share_of_nonfixed_nonretained_pct": null
+    },
+    "trade_port": {
+      "area_km2": 29.578032478968186,
+      "whole_site_pct": 1.7830768683109777,
+      "share_of_nonfixed_nonretained_pct": 2.2834866235037836
+    },
+    "living": {
+      "area_km2": 80.04810470410844,
+      "whole_site_pct": 4.825605758311415,
+      "share_of_nonfixed_nonretained_pct": 6.179882872800112
+    },
+    "industry": {
+      "area_km2": 48.19725084440067,
+      "whole_site_pct": 2.905514528660445,
+      "share_of_nonfixed_nonretained_pct": 3.7209296348783543
+    },
+    "agri_production": {
+      "area_km2": 501.5461288253228,
+      "whole_site_pct": 30.23511794894573,
+      "share_of_nonfixed_nonretained_pct": 38.720437881326426
+    },
+    "energy_compute": {
+      "area_km2": 635.9311316310256,
+      "whole_site_pct": 38.336359643136795,
+      "share_of_nonfixed_nonretained_pct": 49.095227470273045
+    }
+  },
+  "system_overlay_coverage": {
+    "energy_compute": {
+      "area_km2": 1012.2428072707536,
+      "whole_site_pct": 61.02186600958155
+    },
+    "agri_production": {
+      "area_km2": 515.4477600913383,
+      "whole_site_pct": 31.073161424617968
+    },
+    "living": {
+      "area_km2": 82.53043299034712,
+      "whole_site_pct": 4.975249996814889
+    },
+    "industry": {
+      "area_km2": 48.19725084440067,
+      "whole_site_pct": 2.905514528660445
+    },
+    "port": {
+      "area_km2": 29.578032478968186,
+      "whole_site_pct": 1.7830768683109777
+    }
+  },
+  "geometry_findings": {
+    "missing_base_zoning": false,
+    "unallocated_km2": 4.742500840160544e-05,
+    "outside_scope_km2": 5.057760030031203e-07,
+    "overlap_excess_km2": 2.674933739399421e-06
+  },
+  "status": "advisory_not_design_approval",
+  "reference": {
+    "version": 1,
+    "status": "required_programme_starting_point_with_exploration_not_land_quota",
+    "source": {
+      "title": "XCITY Whitepaper V7",
+      "date": "October 2026",
+      "page": 5,
+      "supplied_filename": "XCITY\u767d\u76ae\u4e66V7(1).pdf",
+      "scope_warning": "Page 4 uses about 400000 hectares. Do not transfer its absolute areas, 600 GW or long-term population to the current issued competition boundary."
+    },
+    "reference_pct": {
+      "energy_compute": 60,
+      "agri_production": 30,
+      "living": 5,
+      "industry": 3,
+      "trade_port": 2
+    },
+    "interpretation": "The whitepaper describes approximate functional-region shares in its older scope. The current competition retains these as a strategic reference: systems can overlap, particularly solar and agriculture. Compare exclusive base-land areas separately from overlapping functional coverage; do not enforce 60/30/5/3/2 as five exclusive quotas.",
+    "confirmed_programme": [
+      "Photovoltaic agriculture leads the productive territory",
+      "Under-panel forage grass and jojoba",
+      "Compute campuses use industrial halls with modular construction and equipment",
+      "Current issued boundary and both fixed pilots remain authoritative"
+    ],
+    "deviation_policy": "Every design must respond to the common five-function programme and approximate reference balance. Designers may freely explore other distributions, explaining material changes through terrain, drainage, usable land, population/jobs, facility demand, resources, access and construction phases. A coloured strategic region does not establish serviced, installed or commissioned area.",
+    "unknowns": [
+      "Lawful water and grid capacity",
+      "Local crop yields and irrigation needs",
+      "Confirmed facility demand and jobs",
+      "Engineering clearances and buildable areas",
+      "Long-term growth timing"
+    ]
+  },
+  "analysis_only_repairs": [],
+  "reference_comparison": [
+    {
+      "system": "energy_compute",
+      "reference_pct": 60,
+      "base_land_pct": 38.336359643136795,
+      "interpretation": "Diagnostic juxtaposition only: exclusive land and overlapping system weight are different measures. No pass/fail tolerance."
+    },
+    {
+      "system": "agri_production",
+      "reference_pct": 30,
+      "base_land_pct": 30.23511794894573,
+      "interpretation": "Diagnostic juxtaposition only: exclusive land and overlapping system weight are different measures. No pass/fail tolerance."
+    },
+    {
+      "system": "living",
+      "reference_pct": 5,
+      "base_land_pct": 4.825605758311415,
+      "interpretation": "Diagnostic juxtaposition only: exclusive land and overlapping system weight are different measures. No pass/fail tolerance."
+    },
+    {
+      "system": "industry",
+      "reference_pct": 3,
+      "base_land_pct": 2.905514528660445,
+      "interpretation": "Diagnostic juxtaposition only: exclusive land and overlapping system weight are different measures. No pass/fail tolerance."
+    },
+    {
+      "system": "trade_port",
+      "reference_pct": 2,
+      "base_land_pct": 1.7830768683109777,
+      "interpretation": "Diagnostic juxtaposition only: exclusive land and overlapping system weight are different measures. No pass/fail tolerance."
+    }
+  ],
+  "programme_checks": [
+    {
+      "function": "housing",
+      "status": "missing_inputs",
+      "missing": [
+        "population",
+        "people_per_dwelling",
+        "floor_area_m2_per_dwelling",
+        "gross_far"
+      ],
+      "gross_area_estimate_km2": null,
+      "basis": "Supplied scenario arithmetic; education/health, operating yards, roads, water, grid, terrain and engineering require separate reconciliation."
+    },
+    {
+      "function": "solar",
+      "status": "missing_inputs",
+      "missing": [
+        "solar_mwp",
+        "gross_mwp_per_km2"
+      ],
+      "gross_area_estimate_km2": null,
+      "basis": "Supplied scenario arithmetic; education/health, operating yards, roads, water, grid, terrain and engineering require separate reconciliation."
+    },
+    {
+      "function": "compute",
+      "status": "missing_inputs",
+      "missing": [
+        "it_mw",
+        "it_mw_per_hall",
+        "hall_footprint_m2",
+        "campus_building_coverage"
+      ],
+      "gross_area_estimate_km2": null,
+      "basis": "Supplied scenario arithmetic; education/health, operating yards, roads, water, grid, terrain and engineering require separate reconciliation."
+    }
+  ],
+  "agent_questions": [
+    "Which areas are strategic allocations, serviced plots, actual footprints, or expansion reserve? Map each separately.",
+    "How do solar generation and forage/jojoba share the same ground without double-counting the base account?",
+    "Why do production/logistics districts need their allocated scale? Show facility throughput, land intensity, access and phase, or identify conditional reserve.",
+    "Does population follow credible jobs and resources, with schools, health, shops and transport before occupancy?",
+    "Which candidate distribution changes a real spatial/resource trade-off? Compare it with the reference without treating a percentage as a layout.",
+    "Where do primary/secondary routes serve centres and cross source channels? Do not infer engineering from this account."
+  ]
+}

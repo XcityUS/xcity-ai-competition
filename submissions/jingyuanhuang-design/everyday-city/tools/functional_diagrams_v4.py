@@ -75,7 +75,7 @@ for g,p in roads:
 for g,p in basezones:
  if g.area<15e6:continue
  q=g.representative_point();a.text((q.x-x0)/1000,(q.y-y0)/1000,height(q.x,q.y)+.1,p['id'],fontsize=8,color=INK,zorder=12)
-a.view_init(elev=55,azim=-65);a.set_box_aspect(((x1-x0)/1000,(y1-y0)/1000,2.4));a.set_axis_off();f.subplots_adjust(0,.1,1,.95)
+a.view_init(elev=55,azim=-65);a.set_box_aspect(((x1-x0)/1000,(y1-y0)/1000,2.4),zoom=1.4);a.set_proj_type('ortho');a.set_axis_off();f.subplots_adjust(0,.1,1,.95)
 f.text(.04,.96,'WHOLE-SITE TERRAIN + FUNCTIONAL STRUCTURE',fontsize=17,fontweight='bold',color=INK)
 f.text(.04,.91,'Source terrain in true relative scale / issued boundary / source seasonal channels / proposed route studies',fontsize=10,color=INK)
 f.legend(handles=[Patch(facecolor=CC[k],label=NM[k]) for k in CC],loc='lower center',bbox_to_anchor=(.5,.065),ncol=3,frameon=False,fontsize=9)

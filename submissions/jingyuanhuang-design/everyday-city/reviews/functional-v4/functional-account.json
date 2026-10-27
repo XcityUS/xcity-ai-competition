@@ -65,5 +65,6 @@
   "method": "UTM19S planar allocation; corrected single-transform geodesic check in geometry-and-balance-qa.json. Overlapping coverage is separate from exclusive land and installed works.",
   "resource_gate": "Future shared-field candidate excludes the fixed13.89km2 pilot. At a declared35% crop-net/gross ratio and3000m3/ha/year blended allowance, cultivating the362.17km2 candidate would require about38.0million m3/year of additional indicative water. This is not supplied or secured and is excluded from current operating demand.",
   "fixed_pilots_unchanged": true,
-  "new_co_use_candidate_km2": 362.1723061205913
+  "new_co_use_candidate_km2": 362.1723061205913,
+  "official_advisory": "organiser-advisory.json / corrected upstream analyser after26eedc2/e890a76"
 }

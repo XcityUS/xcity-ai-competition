@@ -43,7 +43,7 @@
   "local_capacity_change": false,
   "status": "passed_targeted_geometry_and_identity_checks_only",
   "content_review": "self_review_only_not_independent",
-  "official_advisory_issue": "The current organiser analyse_functional_balance.py transforms MultiPolygon components a second time during recursive area calculation. Its MultiPolygon totals are not used as evidence here; this package checks geodesic area with a single lon/lat transformation.",
+  "official_advisory_issue": "An earlier organiser analyser had a recursive MultiPolygon transform error; upstream26eedc2/e890a76 fixed it. Latest organiser-advisory.json and this independent single-transform calculation agree at displayed precision.",
   "geodesic_scope_km2": 1658.819818967727,
   "geodesic_districts": [
     {
