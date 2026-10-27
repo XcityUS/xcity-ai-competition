@@ -8,6 +8,7 @@ from pathlib import Path
 from collections import defaultdict
 from shapely.geometry import shape,mapping
 from shapely import make_valid
+from shapely.geometry.polygon import orient
 from shapely.ops import transform,unary_union
 from pyproj import Transformer,Geod
 ROOT=Path(__file__).resolve().parents[1]
@@ -28,8 +29,7 @@ def load(p,repair=False):
  return result
 def area(g):
  if g.is_empty:return 0.
- g=transform(I,g)
- if g.geom_type=='Polygon':return abs(GEOD.geometry_area_perimeter(g)[0])/1e6
+ if g.geom_type=='Polygon':return abs(GEOD.geometry_area_perimeter(orient(transform(I,g),sign=1))[0])/1e6
  if hasattr(g,'geoms'):return sum(area(x) for x in g.geoms)
  return 0.
 def analyse(scope,records):
