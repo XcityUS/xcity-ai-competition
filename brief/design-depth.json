@@ -13,28 +13,61 @@
       "title": "Whole-site structure",
       "question_zh": "城镇、生产、保护、交通、资源与增长的关系",
       "question_en": "Settlements, production, protection, transport, resources and growth",
-      "spatial_evidence": "Overall structure and system links; capacity scenarios and phasing"
+      "spatial_evidence": "Overall structure and system links; capacity scenarios and phasing",
+      "decisions": [
+        "Site suitability, development and protection",
+        "Locations, capacities and dependencies of all five systems",
+        "Settlements and centres",
+        "Primary movement and external access",
+        "Resource infrastructure",
+        "Population, jobs, land and resource scenarios",
+        "Starting point, growth and conditional phases"
+      ]
     },
     {
       "id": "phase_one",
       "title": "Complete phase-one district",
       "question_zh": "即使后续不建设，也能完整生活和生产",
       "question_en": "Life and production remain complete if later phases never happen",
-      "spatial_evidence": "Master plan; roads, public services, production, utilities and first works"
+      "spatial_evidence": "Master plan; roads, public services, production, utilities and first works",
+      "decisions": [
+        "Construction boundary and complete functions",
+        "Residents, jobs, housing and services",
+        "People, machine, logistics and emergency networks",
+        "Water, electricity, wastewater, waste and maintenance",
+        "Necessary external infrastructure and first works",
+        "Independent operation if later phases stop"
+      ]
     },
     {
       "id": "urban_design",
       "title": "Urban design enlargement",
       "question_zh": "总体布局如何形成街道、街区和公共生活",
       "question_en": "How the master layout forms streets, blocks and public life",
-      "spatial_evidence": "Block plan, building heights/massing, public space and decisive sections"
+      "spatial_evidence": "Block plan, building heights/massing, public space and decisive sections",
+      "decisions": [
+        "At least a complete block or spatial unit",
+        "Continuous streets and blocks",
+        "Massing, height and density",
+        "Centres, services and accessible routes",
+        "Public interfaces and separated or shared flows",
+        "Terrain, heat, wind and drainage responses"
+      ]
     },
     {
       "id": "nodes",
       "title": "Three detailed nodes",
       "question_zh": "位置、使用者、空间组织与运行方式",
       "question_en": "Location, users, spatial organisation and operation",
-      "spatial_evidence": "Locator, detailed plan, necessary sections/elevations, massing and concept views"
+      "spatial_evidence": "Locator, detailed plan, necessary sections/elevations, massing and concept views",
+      "decisions": [
+        "Whole-site and master-area location and phase",
+        "Upper-level promise tested",
+        "Users, arrival, stay and operation",
+        "Buildings, paths, vegetation, shade, terrain and water relationships",
+        "Dimensions and interfaces",
+        "Normal use and relevant abnormal conditions"
+      ]
     }
   ],
   "freedom": {
@@ -51,5 +84,8 @@
   "planning_boundary": {
     "whole_site": "Fixed organiser-defined scope_9_13.geojson; the overall plan must cover the entire site.",
     "phase_one": "Justify the first complete district within the whole-site structure; this does not reduce the overall planning boundary."
-  }
+  },
+  "revision": "2026-10-26-consistency-2",
+  "matrix_version": 2,
+  "matrix_v1_compatibility": "Only the two organiser-listed legacy paths may retain v1 matrices. New directories must use v2; entrants cannot self-declare an earlier rule version."
 }

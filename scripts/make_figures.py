@@ -2315,10 +2315,10 @@ def main():
                 put(key_indicators(pkg),'key_metrics');extras('key_metrics');extras('end')
             else:
                 put(brief_alignment(pkg));extras('brief')
-                for key in ['fig-03-land-use-density','fig-04-movement','fig-05-open-space-water','fig-07-metrics']:put(figure(key))
+                for key in ['fig-07-metrics']:put(figure(key))
                 extras('figures')
                 for nid in pkg.man.get('nodes',[]):
-                    put(control_comparison(pkg,nid));put(draw_node_detail(pkg,nid));put(draw_node_day(pkg,nid))
+                    put(control_comparison(pkg,nid));put(draw_node_day(pkg,nid))
                 put(day_to_night(pkg));extras('day')
                 for f in disclosure(pkg):put(f)
             info=pdf.infodict();info['Title']=pkg.title+(' - Public presentation' if document=='main' else ' - Technical appendix')

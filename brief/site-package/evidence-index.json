@@ -16,7 +16,13 @@
       "intended_use": "Competition extent, clipping and land accounts.",
       "limitations": "Topology revision is not cadastral or legal certification. Original acquisition date remains unknown; revision date is not a survey date.",
       "boundary_revision": "2026-10-27-seam-closure",
-      "revision_record": "boundaries/boundary-revision.json"
+      "revision_record": "boundaries/boundary-revision.json",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Provided for use in the XCITY AI Competition. Not a cadastral record; not for legal use.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "boundaries/scope_9_13.geojson",
@@ -30,7 +36,13 @@
       "intended_use": "Competition extent, clipping and land accounts.",
       "limitations": "Topology revision is not cadastral or legal certification. Original acquisition date remains unknown; revision date is not a survey date.",
       "boundary_revision": "2026-10-27-seam-closure",
-      "revision_record": "boundaries/boundary-revision.json"
+      "revision_record": "boundaries/boundary-revision.json",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Provided for use in the XCITY AI Competition. Not a cadastral record; not for legal use.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "pilot-area/pilot_area.geojson",
@@ -42,7 +54,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Organiser-supplied outlines; survey accuracy and internal layout not supplied.",
       "intended_use": "Respect fixed outline and design external connections; classify fields and living quarter separately.",
-      "limitations": "Fixed for competition; no inference of as-built completion, internal buildings, utility capacity or legal approvals."
+      "limitations": "Fixed for competition; no inference of as-built completion, internal buildings, utility capacity or legal approvals.",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Provided for use in the XCITY AI Competition.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "pilot-area/pilot_living_area.geojson",
@@ -54,7 +72,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Organiser-supplied outlines; survey accuracy and internal layout not supplied.",
       "intended_use": "Respect fixed outline and design external connections; classify fields and living quarter separately.",
-      "limitations": "Fixed for competition; no inference of as-built completion, internal buildings, utility capacity or legal approvals."
+      "limitations": "Fixed for competition; no inference of as-built completion, internal buildings, utility capacity or legal approvals.",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Provided for use in the XCITY AI Competition.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "access/roads_osm.geojson",
@@ -66,7 +90,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Road geometry simplified to approximately 200 m; distances rounded to 0.1 km.",
       "intended_use": "Compare regional access alternatives, then propose and justify an actual connecting corridor.",
-      "limitations": "Boundary-to-road geodesic distance is not route length, travel distance, feasibility, access permission or capacity. Extract omits local-track inventory."
+      "limitations": "Boundary-to-road geodesic distance is not route length, travel distance, feasibility, access permission or capacity. Extract omits local-track inventory.",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Open Database License (ODbL) 1.0; (c) OpenStreetMap contributors",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "access/road_distances_9_13.json",
@@ -78,7 +108,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Road geometry simplified to approximately 200 m; distances rounded to 0.1 km.",
       "intended_use": "Compare regional access alternatives, then propose and justify an actual connecting corridor.",
-      "limitations": "Boundary-to-road geodesic distance is not route length, travel distance, feasibility, access permission or capacity. Extract omits local-track inventory."
+      "limitations": "Boundary-to-road geodesic distance is not route length, travel distance, feasibility, access permission or capacity. Extract omits local-track inventory.",
+      "crs": "See the referenced spatial layer; not a standalone coordinate dataset",
+      "units": "Resource fields carry their own units; do not infer capacity from a diagram",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Open Database License (ODbL) 1.0; (c) OpenStreetMap contributors",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "water/channels_dem.geojson",
@@ -90,7 +126,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete. Flood-sensitive polygons are neither lakes nor a surveyed design-flood boundary nor blanket permanent no-build land; outside polygons does not prove safety."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete. Flood-sensitive polygons are neither lakes nor a surveyed design-flood boundary nor blanket permanent no-build land; outside polygons does not prove safety.",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "water/flood_sensitive_dem.geojson",
@@ -102,7 +144,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete. Flood-sensitive polygons are neither lakes nor a surveyed design-flood boundary nor blanket permanent no-build land; outside polygons does not prove safety."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete. Flood-sensitive polygons are neither lakes nor a surveyed design-flood boundary nor blanket permanent no-build land; outside polygons does not prove safety.",
+      "crs": "EPSG:4326",
+      "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "terrain/dem_9_13_utm19s_60m.tif",
@@ -114,7 +162,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete.",
+      "crs": "EPSG:32719",
+      "units": "metres (height/grid); degree-based slope as labelled",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "terrain/dem_9_13_utm19s_60m.png",
@@ -126,7 +180,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete.",
+      "crs": "EPSG:32719",
+      "units": "metres (height/grid); degree-based slope as labelled",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "terrain/hillshade_9_13.png",
@@ -138,7 +198,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete.",
+      "crs": "See the referenced spatial layer; not a standalone coordinate dataset",
+      "units": "metres (height/grid); degree-based slope as labelled",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "terrain/hillshade_9_13_utm.png",
@@ -150,7 +216,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete.",
+      "crs": "EPSG:32719",
+      "units": "metres (height/grid); degree-based slope as labelled",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "terrain/terrain_summary_9_13.json",
@@ -162,7 +234,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "60 m DEM grid; slopes smoothed across 5 × 5 cells (300 m); raster area estimates about 1% per terrain summary. No field accuracy supplied.",
       "intended_use": "Regional terrain and drainage screening, suitability alternatives and stated uncertainty.",
-      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete."
+      "limitations": "Not detailed topographic or hydraulic survey. Smaller washes and upstream inflows outside the 2 × 2 degree DEM window are incomplete.",
+      "crs": "See the referenced spatial layer; not a standalone coordinate dataset",
+      "units": "metres (height/grid); degree-based slope as labelled",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "zoning/indicative_systems_9_13.json",
@@ -174,7 +252,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Points and approximate halos, not land-use boundaries.",
       "intended_use": "Adopt, move or reject with reasons; cite evidence_tag indicative.",
-      "limitations": "Proximity labels such as near water and power do not verify a water source, abstraction right, grid connection, capacity or port approval."
+      "limitations": "Proximity labels such as near water and power do not verify a water source, abstraction right, grid connection, capacity or port approval.",
+      "crs": "See the referenced spatial layer; not a standalone coordinate dataset",
+      "units": "Resource fields carry their own units; do not infer capacity from a diagram",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "Provided for use in the XCITY AI Competition.",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "nodes/design_nodes.json",
@@ -184,7 +268,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Task catalogue, not a spatial survey.",
       "intended_use": "Select one task from each of the three issued groups.",
-      "limitations": "Names do not establish fixed node locations or geometry; locate nodes through the design."
+      "limitations": "Names do not establish fixed node locations or geometry; locate nodes through the design.",
+      "crs": "See the referenced spatial layer; not a standalone coordinate dataset",
+      "units": "Resource fields carry their own units; do not infer capacity from a diagram",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     },
     {
       "path": "areas.json",
@@ -194,7 +284,13 @@
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
       "precision": "Use each recorded method and rounding; vector and raster denominators differ.",
       "intended_use": "Trace published area quantities to geometry or terrain calculation.",
-      "limitations": "Distinguish revised vector boundary (1,656.684229 km²) from earlier raster cell area (1,655.3 km²) and historical vector totals; cite geometry revision and calculation method."
+      "limitations": "Distinguish revised vector boundary (1,656.684229 km²) from earlier raster cell area (1,655.3 km²) and historical vector totals; cite geometry revision and calculation method.",
+      "crs": "See the referenced spatial layer; not a standalone coordinate dataset",
+      "units": "Resource fields carry their own units; do not infer capacity from a diagram",
+      "appropriate_scale": "Regional/whole-site and preliminary siting; not cadastral, building-setting-out or engineering design",
+      "verification": "Confirm source gaps, field conditions and professional studies before implementation; revision does not certify safety or rights",
+      "licence": "",
+      "version_date": "2026-10-26 documentation review; original observation date remains as separately recorded"
     }
   ],
   "data_gaps": [

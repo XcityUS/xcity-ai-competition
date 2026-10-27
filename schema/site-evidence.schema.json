@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "resources"
+  ],
+  "properties": {
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "source_ids",
+          "evidence_class",
+          "observation_or_source_date",
+          "precision",
+          "intended_use",
+          "limitations",
+          "crs",
+          "units",
+          "appropriate_scale",
+          "verification",
+          "licence",
+          "version_date"
+        ]
+      }
+    }
+  }
+}

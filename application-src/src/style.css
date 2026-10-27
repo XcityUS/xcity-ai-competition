@@ -7,3 +7,5 @@
 
 .embedded .top,.embedded footer{display:none}.embedded .shell{padding:24px 0;max-width:none}.embedded body{overflow:hidden}.embedded .columns{gap:28px}
 .registration{max-width:900px}.registration h1{font-size:clamp(28px,3vw,36px);margin-bottom:12px}.registration .lead{font-size:15px;margin-bottom:24px}.registration .receipt{margin-top:28px}.simple-form{padding:24px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.embedded .registration{padding:0}.embedded .registration h1{margin-top:0}@media(max-width:600px){.field-grid{grid-template-columns:1fr}.simple-form{padding:20px 16px}}
+
+.materials .panel{margin:24px 0}.materials-nav{padding:16px max(32px,calc((100vw - 1116px)/2));gap:28px}.material-anchors{display:flex;gap:24px;align-items:center}.material-anchors a{font-size:13px;letter-spacing:0;color:var(--body);border-bottom:1px solid transparent}.material-anchors a.active{color:var(--gold);border-bottom-color:var(--gold)}.material-crumb{white-space:nowrap}.materials-nav .material-crumb span{display:inline}@media(max-width:1100px){.material-anchors{display:none}}

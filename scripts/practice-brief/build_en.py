@@ -66,7 +66,7 @@ table(['Item','Requirement'],[
 ['Location and site','San Juan Province, in the Andean foothills of western Argentina. Competition area: approximately 1,656 km².'],
 ['Early works area','Fixed pilots: agrivoltaic fields 01–03 (13.9 km²) and the Phase 1 living quarter (2.48 km², outline only). XCITY delivers both; proposals connect to them without redesigning them.'],
 ['Participation','Registration is free. All applicants follow the same application requirements, eligibility review and selection criteria.'],
-['Stage 1','Apply online, then return the emailed qualification application form with evidence and initial ideas of up to 10 pages. Eligibility is checked before ideas, experience and team are assessed to select five teams.'],
+['Stage 1','Register online, receive a private link by email, then complete the online qualification form and uploads, including an initial-ideas PDF of 1-10 pages. Eligibility is checked before ideas, experience and team are assessed to select five teams.'],
 ['Stage 2','The five shortlisted teams develop full proposals after appointment and receipt of the brief and common site information package. Briefings and Q&A will be online.'],
 ['Honoraria and award','Each valid Stage 2 submission earns US$50,000. One winner receives an additional US$50,000. Total: US$300,000.'],
 ['Further services','Any subsequent design commission, fees and rights to adapt or implement the work will be negotiated under a separate agreement.']],[115,627],y=184,size=9.6,minh=41)
@@ -251,16 +251,16 @@ table(['Requirement','Evidence'],[
 ['Consortia and duplicate entries','Provide an agreement or a statement naming the lead entity, members and responsibilities. A member may not also apply independently or join another consortium in this competition.']],[145,597],y=200,size=10,minh=55)
 para('Credentials establish professional standing. References, the proposed team and initial ideas of up to 10 pages inform selection. All information must be truthful and verifiable. Disclose relationships or interests involving the organiser or panel members.',50,518,742,8.5,GRAY)
 #26
-base('14 · COMPETITION PROCEDURE','Registration and email application')
+base('14 · COMPETITION PROCEDURE','Registration and private online application')
 para('Apply online: xcityus.github.io/xcity-ai-competition/practice.html#apply',50,139,742,11,INK)
 c.linkURL('https://xcityus.github.io/xcity-ai-competition/practice.html#apply',(50,H-167,792,H-137))
 for i,(a,b) in enumerate([
-('Apply online','Applications are open. Complete institution, country or jurisdiction, contact and email on the official practice page. No attachments are needed in this form.'),
-('Receive the application form','We will email the qualification application form and materials checklist to the address provided. Complete the form and gather the applicable evidence and initial ideas.'),
-('Reply with the form and materials','Complete the emailed form. Attach registration evidence or registry URL, applicable professional evidence or an explanation, team and portfolio or project references, and an ideas PDF of up to 10 pages. Reply to competition@xcity.ai.'),
-('Stage-one review','Apply online by 31 December 2026, 23:59 UTC. Return the complete form and materials by 31 January 2027, 23:59 UTC. Five teams are selected in February 2027. Completing the online form alone does not complete stage one or mean shortlisting.')]):
+('Register online','Applications are open. Complete institution, country or jurisdiction, contact and email on the official practice page. No attachments are needed for initial registration.'),
+('Receive your private link','We will email a private application link. Follow it to the official website; the qualification form and item-by-item checklist are online. The Word worksheet is optional preparation only.'),
+('Complete and save online','Fill the form; upload evidence or accepted registry/project links, team and references, and a 1-10-page ideas PDF. Save progress and return through your private link. Do not upload a Word form or email attachments.'),
+('Stage-one review','Register by 31 December 2026, 23:59 UTC. Finally submit the complete online application by 31 January 2027, 23:59 UTC. Five teams are selected in February 2027. Initial registration or saving a draft alone does not complete stage one or mean shortlisting.')]):
  y=207+i*76;txt(f'0{i+1}',50,y,18,GRAY);txt(a,93,y,12,INK);para(b,93,y+25,699,9.6)
-para('Ordinary electronic copies or scans are accepted; no notarisation is requested. Follow the attachment instructions in the application email. Contact: competition@xcity.ai.',50,526,742,8,GRAY)
+para('Evidence: ordinary PDF/PNG/JPG copies or accepted links; no notarisation. Each file up to 10 MB, all uploads up to 25 MB. Ideas must be a 1-10-page PDF. Contact: competition@xcity.ai.',50,526,742,8,GRAY)
 #27
 base('14 · COMPETITION PROCEDURE','Stage 1 · Initial ideas of up to 10 pages')
 para('Use up to 10 pages to explain your reading of the site, your initial urban proposition and what you would test if shortlisted. This stage is about direction and approach, not a completed masterplan. The five topics below are suggested; allocate the pages as needed.',50,124,742,11)
@@ -297,7 +297,7 @@ para('Site information, answers and amendments will be issued through a common c
 #31
 base('CONTACT','Contact')
 txt('XCITY',50,193,32,INK);txt('International Masterplanning and Urban Design Competition',50,254,17)
-para('Online applications are open on the official practice page. Apply there and return the emailed qualification application form with supporting materials. All applicants follow the same application requirements, eligibility review and selection criteria. Common documents, clarifications and notices are issued through the official competition channels. Contact the competition team below for questions.',50,325,650,12)
+para('Online registration is open on the official practice page. We will email a private link to complete the qualification form and uploads on the official website. Save progress and finally submit online; do not email application attachments. All applicants follow the same application requirements, eligibility review and selection criteria. Common documents, clarifications and notices are issued through the official competition channels. Contact the competition team below for questions.',50,325,650,12)
 para('Online application: xcityus.github.io/xcity-ai-competition/practice.html#apply',50,414,742,10)
 c.linkURL('https://xcityus.github.io/xcity-ai-competition/practice.html#apply',(50,H-434,792,H-412))
 txt('Email:',50,465,10,GRAY);txt('competition@xcity.ai',83,463,12,INK);c.linkURL('mailto:competition@xcity.ai',(83,H-460,333,H-440))
@@ -305,7 +305,7 @@ c.save()
 r=PdfReader(OUT);full='\n'.join(p.extract_text() or '' for p in r.pages)
 assert len(r.pages)==31,len(r.pages)
 assert not re.search('[\u4e00-\u9fff]',full),'Chinese text remains in English PDF'
-for value in ['US$300,000','US$50,000','US$100,000','competition@xcity.ai','up to 10 pages','emailed form']:assert value in full,value
+for value in ['US$300,000','US$50,000','US$100,000','competition@xcity.ai','up to 10 pages','private link']:assert value in full,value
 for value in ['US$75,000','parcel 9','parcel 13','TBC','TBD']:assert value not in full,value
 (O/'validation-english.json').write_text(json.dumps({'pages':31,'paragraph_boxes_checked':len(checks),'chinese_text_characters':0,'native_pdf_text':True,'site_area_km2':1656,'stage_1_pages':10,'shortlisted_teams':5,'honorarium_usd':50000,'winner_additional_usd':50000,'total_usd':300000},indent=2))
 print(OUT)

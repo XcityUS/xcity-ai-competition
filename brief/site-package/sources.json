@@ -1,61 +1,62 @@
 {
- "note_en": "Source registry for the site package. Cite these ids in your own sources.json when you use the data.",
- "sources": [
-  {
-   "id": "SRC-KML",
-   "title": "Parcel boundaries for the two parcels of the site",
-   "publisher": "XCITY (owner-supplied KML)",
-   "licence": "Provided for use in the XCITY AI Competition. Not a cadastral record; not for legal use.",
-   "used_in": [
-    "boundaries/parcels_9_13.geojson",
-    "boundaries/scope_9_13.geojson"
-   ]
-  },
-  {
-   "id": "SRC-PILOT",
-   "title": "Pilot area: fields 01-03 and the living quarter, phase 1",
-   "publisher": "XCITY",
-   "licence": "Provided for use in the XCITY AI Competition.",
-   "used_in": [
-    "pilot-area/pilot_area.geojson",
-    "pilot-area/pilot_living_area.geojson"
-   ]
-  },
-  {
-   "id": "SRC-DEM",
-   "title": "Copernicus DEM GLO-30 (WorldDEM-30)",
-   "publisher": "European Union / ESA, Copernicus programme",
-   "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
-   "licence_url": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/DEM/resources/license/License-COPDEM-30.pdf",
-   "used_in": [
-    "terrain/dem_9_13_utm19s_60m.tif",
-    "terrain/dem_9_13_utm19s_60m.png",
-    "terrain/hillshade_9_13.png",
-    "terrain/hillshade_9_13_utm.png",
-    "terrain/terrain_summary_9_13.json",
-    "water/channels_dem.geojson",
-    "water/flood_sensitive_dem.geojson"
-   ]
-  },
-  {
-   "id": "SRC-OSM",
-   "title": "OpenStreetMap road network",
-   "publisher": "OpenStreetMap contributors",
-   "licence": "Open Database License (ODbL) 1.0; (c) OpenStreetMap contributors",
-   "used_in": [
-    "access/roads_osm.geojson",
-    "access/road_distances_9_13.json"
-   ]
-  },
-  {
-   "id": "SRC-XCITY-INDICATIVE",
-   "title": "Indicative positions of the five urban systems",
-   "publisher": "XCITY",
-   "licence": "Provided for use in the XCITY AI Competition.",
-   "evidence_tag": "indicative",
-   "used_in": [
-    "zoning/indicative_systems_9_13.json"
-   ]
-  }
- ]
+  "note_en": "Source registry for the site package. Cite these ids in your own sources.json when you use the data. Per-resource CRS, units, scale, provenance, limitations, gaps and licence are indexed in evidence-index.json.",
+  "sources": [
+    {
+      "id": "SRC-KML",
+      "title": "Parcel boundaries for the two parcels of the site",
+      "publisher": "XCITY (owner-supplied KML)",
+      "licence": "Provided for use in the XCITY AI Competition. Not a cadastral record; not for legal use.",
+      "used_in": [
+        "boundaries/parcels_9_13.geojson",
+        "boundaries/scope_9_13.geojson"
+      ]
+    },
+    {
+      "id": "SRC-PILOT",
+      "title": "Pilot area: fields 01-03 and the living quarter, phase 1",
+      "publisher": "XCITY",
+      "licence": "Provided for use in the XCITY AI Competition.",
+      "used_in": [
+        "pilot-area/pilot_area.geojson",
+        "pilot-area/pilot_living_area.geojson"
+      ]
+    },
+    {
+      "id": "SRC-DEM",
+      "title": "Copernicus DEM GLO-30 (WorldDEM-30)",
+      "publisher": "European Union / ESA, Copernicus programme",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.",
+      "licence_url": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/DEM/resources/license/License-COPDEM-30.pdf",
+      "used_in": [
+        "terrain/dem_9_13_utm19s_60m.tif",
+        "terrain/dem_9_13_utm19s_60m.png",
+        "terrain/hillshade_9_13.png",
+        "terrain/hillshade_9_13_utm.png",
+        "terrain/terrain_summary_9_13.json",
+        "water/channels_dem.geojson",
+        "water/flood_sensitive_dem.geojson"
+      ]
+    },
+    {
+      "id": "SRC-OSM",
+      "title": "OpenStreetMap road network",
+      "publisher": "OpenStreetMap contributors",
+      "licence": "Open Database License (ODbL) 1.0; (c) OpenStreetMap contributors",
+      "used_in": [
+        "access/roads_osm.geojson",
+        "access/road_distances_9_13.json"
+      ]
+    },
+    {
+      "id": "SRC-XCITY-INDICATIVE",
+      "title": "Indicative positions of the five urban systems",
+      "publisher": "XCITY",
+      "licence": "Provided for use in the XCITY AI Competition.",
+      "evidence_tag": "indicative",
+      "used_in": [
+        "zoning/indicative_systems_9_13.json"
+      ]
+    }
+  ],
+  "resource_metadata": "evidence-index.json"
 }

@@ -33,3 +33,13 @@ The two exact organiser-listed legacy entries are unchanged and retain their pre
 - 节点：谁在何时使用？平剖面和运行情景能否解释效果图？对总体方案的哪个承诺进行了检验？
 
 Use the annotated examples in `reference-examples.md` as method prompts, never as a preferred urban form.
+
+## Matrix v2 / 矩阵第二版
+
+New scaffolds use schema_version 2. Add decision (the actual spatial judgment) and scope.extent / scope.phase (the relevant boundary and construction phase or scenario). Classify each gap as organiser_data, professional_verification or entrant_design. Each row still needs actual drawing and geometry references: missing organiser information can be treated through declared assumptions, but does not waive entrant-authored spatial evidence. Only the two exact organiser-listed legacy paths may retain v1 matrices; new directories must use v2. The two listed legacy entries remain exempt until opt-in. Neither documented nor partial means approved.
+
+新版填写 decision（空间判断）和 scope.extent／scope.phase（范围、阶段或容量情景），缺口区分主办资料、专业核实、参赛设计遗漏。资料缺失不等于免交设计证据。第一版仅对主办方列明的两份旧投稿兼容，新目录必须第二版，不能自行声明旧规则绕过检查。旧投稿主动升级后再复算。
+
+For v2, GFA, coverage and FAR are clipped to master_area; outside-master building floor area is reported separately. Neither is automatically the actual phase-one quantity: declare the real construction phase and external necessary works separately. V1 retains its historical whole-package building numerator for reproducibility. V2 land_use is a mutually exclusive partition of master_area; overlaps/omissions above max(100 m², 0.01% of master area) are bookkeeping errors. This tolerance is not survey accuracy or engineering clearance. The five whole-site systems can overlap; do not apply the land_use partition rule to system weights.
+
+第二版建筑量及密度仅统计 master_area 内几何，区外建筑量另报；不能自动称为实际首期建成量。第一版原口径保留。用地分区须覆盖深化范围且不重叠，账面容差不代表测绘精度。五类全域系统的复合关系另行表达。

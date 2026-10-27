@@ -17,7 +17,7 @@ class PilotContextTests(unittest.TestCase):
 
     def test_compatible_fixed_context_and_external_land(self):
         self.assertEqual(xc.pilot_land_use_conflicts("energy", self.parts["agrivoltaic"], self.parts), [])
-        self.assertEqual(xc.pilot_land_use_conflicts("agriculture", self.parts["living"], self.parts), [])
+        self.assertEqual(xc.pilot_land_use_conflicts("agriculture", self.parts["living"], self.parts, legacy=True), [])
         self.assertEqual(xc.pilot_land_use_conflicts("industry", box(400, 0, 500, 100), self.parts), [])
 
 

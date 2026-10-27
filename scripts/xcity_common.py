@@ -5,6 +5,7 @@ Everything here runs offline. Dependencies: shapely >= 2, pyproj, numpy (see req
 import hashlib
 import json
 import os
+from pathlib import Path
 import re
 
 from pyproj import Geod, Transformer
@@ -14,7 +15,7 @@ from shapely import make_valid
 
 ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 SITE = os.path.join(ROOT, "brief", "site-package")
-SCRIPT_VERSION = "1.1.0"
+SCRIPT_VERSION = "1.2.0"
 
 GEOD = Geod(ellps="WGS84")
 _TO_UTM = Transformer.from_crs("EPSG:4326", "EPSG:32719", always_xy=True)
@@ -57,7 +58,12 @@ def site_json(rel):
 
 
 def to_utm(geom):
-    return transform(lambda x, y, z=None: _TO_UTM.transform(x, y), geom)
+    projected = transform(lambda x, y, z=None: _TO_UTM.transform(x, y), geom)
+    # Projection can turn touching polygon rings into floating-point self-intersections.
+    # Repair the derived display/check geometry only; never rewrite submitted coordinates.
+    if projected.geom_type in ("Polygon", "MultiPolygon") and not projected.is_valid:
+        projected = make_valid(projected)
+    return projected
 
 
 def to_lonlat(geom):
@@ -118,10 +124,10 @@ PILOT_LAND_USES = {key: set(value["land_use_labels"]) for key, value in
                    load_json(os.path.join(ROOT, "brief", "requirements.json"))["fixed_pilot_context"].items()}
 
 
-def pilot_land_use_conflicts(use, geometry_utm, parts_utm):
+def pilot_land_use_conflicts(use, geometry_utm, parts_utm, legacy=False):
     """Labels describe fixed context, not permission for new construction."""
     return [part for part, outline in parts_utm.items()
-            if use not in PILOT_LAND_USES[part] and geometry_utm.intersection(outline).area > 100]
+            if use not in (PILOT_LAND_USES[part] | ({"agriculture"} if legacy and part == "living" else set())) and geometry_utm.intersection(outline).area > 100]
 
 
 def channels():
@@ -174,6 +180,13 @@ def figure_input_hash(pkg):
         h.update(rel.encode() + b"\0")
         if os.path.exists(p):
             h.update(open(p, "rb").read())
+    matrix_path = os.path.join(pkg, 'design_depth_matrix.json')
+    if os.path.exists(matrix_path) and load_json(matrix_path).get('schema_version') == 2:
+        for rel in ['design_depth_matrix.json', 'brief/design-depth.json', 'brief/site-package/boundaries/boundary-revision.json', 'brief/site-package/datapackage.json']:
+            path = os.path.join(pkg if rel == 'design_depth_matrix.json' else ROOT, rel)
+            h.update(rel.encode() + b'\0' + open(path, 'rb').read())
+        for path in sorted(Path(pkg).glob('context/*.geojson')):
+            h.update(str(path.relative_to(pkg)).encode() + b'\0' + path.read_bytes())
     # the drawings place the massing renders and the registered media images, so they are inputs too
     rs = os.path.join(pkg, "renders", "stamp.json")
     if os.path.exists(rs):
@@ -293,6 +306,12 @@ def compute_metrics(pkg, geo=None):
     master = unary_union([g for _, g in geo["master_area"]]) if geo["master_area"] else None
     m_m2 = geodesic_m2(master) if master is not None else 0.0
     solid = [(p, g) for p, g in geo["buildings"] if p.get("form") != "canopy"]   # canopies: roof on posts, no floor area
+    outside_solid = []
+    matrix_path = os.path.join(pkg, 'design_depth_matrix.json')
+    modern = os.path.exists(matrix_path) and load_json(matrix_path).get('schema_version') == 2
+    if modern and master is not None:
+        outside_solid = [(p, g.difference(master)) for p, g in solid if not master.covers(g)]
+        solid = [(p, g.intersection(master)) for p, g in solid]
     fp = sum(geodesic_m2(g) for _, g in solid)
     gfa = sum(geodesic_m2(g) * _floors(p) for p, g in solid)
     land = {}
@@ -335,6 +354,8 @@ def compute_metrics(pkg, geo=None):
         "land_use_ha": {k: round(v / 1e4, 2) for k, v in sorted(land.items())},
         "network_km": {k: round(v / 1000, 3) for k, v in nets.items()},
     }
+    out['metric_scope'] = 'master_area_clipped_v2' if modern else 'legacy_package_buildings_over_master_area'
+    out['outside_master_gfa_m2'] = round(sum(geodesic_m2(g) * _floors(p) for p,g in outside_solid),1) if modern else None
     return out
 
 

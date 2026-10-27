@@ -19,7 +19,7 @@
 | Elevation | 606–2,658 m, median 675 m |
 | Roads | **No existing national or provincial road on site.** Nearest: RN 40 about 27.6 km; RP 510 about 35.6 km; RN 20 about 40.7 km |
 
-Every design lies inside the site boundary. The seam closure fills two internal slivers (approximately 0.304419 km²) without moving the source parcels’ combined external outline. The added seam has terrain coverage but no rerun flood/HAND classification; it is not confirmed non-flood-sensitive land. Existing archived entries are not rewritten. See the boundary revision record and `terrain/terrain_summary_9_13.json`.
+All core construction geometry lies inside the site boundary. Optional external access/resource research belongs in separate context/ evidence, labelled study_only and not_secured; it is excluded from construction and land accounts and confers no external rights. The seam closure fills two internal slivers (approximately 0.304419 km²) without moving the source parcels’ combined external outline. The added seam has terrain coverage but no rerun flood/HAND classification; it is not confirmed non-flood-sensitive land. Existing archived entries are not rewritten. See the boundary revision record and `terrain/terrain_summary_9_13.json`.
 
 ## 2. The pilot area — protected
 
@@ -52,7 +52,7 @@ Phase one must work as a place if nothing after it is built: water, power, servi
 
 | Supplied | Not supplied (held by) |
 |---|---|
-| Exact parcel boundaries and the site; the pilot area; terrain (DEM 60 m, hillshade, slope and flood band); terrain-derived channels; regional roads and distances; indicative positions of five urban systems; ten key nodes. See `site-package/README.md` | Official cadastre (Dirección de Geodesia y Catastro, San Juan) · grid connection and capacity (provincial utility) · water rights and abstraction (provincial water authority) · seismic code edition (INPRES / CIRSOC) · climate series (see `site-package/climate/README.md`) |
+| Owner-derived issued competition boundaries (not cadastral verification); the pilot area; terrain (DEM 60 m, hillshade, slope and flood band); terrain-derived channels; regional roads and distances; indicative positions of five urban systems; ten key nodes. See `site-package/README.md` | Official cadastre (Dirección de Geodesia y Catastro, San Juan) · grid connection and capacity (provincial utility) · water rights and abstraction (provincial water authority) · seismic code edition (INPRES / CIRSOC) · climate series (see `site-package/climate/README.md`) |
 
 Indicative positions are a direction, not a land-use boundary. Where data is not supplied, assume — and state the value, its source and the reason. **A gap in the data the organiser supplied is never a reason to mark a design down.**
 

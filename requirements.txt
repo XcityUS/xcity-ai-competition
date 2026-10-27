@@ -9,3 +9,4 @@ markdown>=3.4
 # pikepdf>=8.0       optional faster PDF compression; pypdf is used otherwise
 
 pypdf>=6.1  # presentation-index PDF page verification
+jsonschema>=4.18  # machine-rule and evidence-matrix validation

@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "UTC",
   "registration_deadline": "2026-12-31T23:59:59Z",
   "application_deadline": "2027-01-31T23:59:59Z",
@@ -7,5 +7,8 @@
   "initial_ideas_max_pages": 10,
   "application_url": "https://xcityus.github.io/xcity-ai-competition/practice.html#apply",
   "registration_mode": "application",
-  "materials_submission": "email"
+  "materials_submission": "private_online_application",
+  "email_role": "private_application_link_only",
+  "link_delivery": "organiser_manual_until_email_provider_connected",
+  "qualification_worksheet": "optional_preparation_not_required_upload"
 }

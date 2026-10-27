@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "rows": [
     {
       "id": "whole_site",
@@ -17,9 +17,15 @@
         {
           "missing": "Replace with actual missing design/data or explain remaining uncertainty",
           "next_step": "State how it will be resolved or verified",
-          "responsible": "Entrant / named specialist role"
+          "responsible": "Entrant / named specialist role",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     },
     {
       "id": "phase_one",
@@ -37,9 +43,15 @@
         {
           "missing": "Replace with actual missing design/data or explain remaining uncertainty",
           "next_step": "State how it will be resolved or verified",
-          "responsible": "Entrant / named specialist role"
+          "responsible": "Entrant / named specialist role",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     },
     {
       "id": "urban_design",
@@ -57,9 +69,15 @@
         {
           "missing": "Replace with actual missing design/data or explain remaining uncertainty",
           "next_step": "State how it will be resolved or verified",
-          "responsible": "Entrant / named specialist role"
+          "responsible": "Entrant / named specialist role",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     },
     {
       "id": "nodes",
@@ -77,9 +95,15 @@
         {
           "missing": "Replace with actual missing design/data or explain remaining uncertainty",
           "next_step": "State how it will be resolved or verified",
-          "responsible": "Entrant / named specialist role"
+          "responsible": "Entrant / named specialist role",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     },
     {
       "id": "node:{{node_1}}",
@@ -97,9 +121,15 @@
         {
           "missing": "Fill actual node evidence and uncertainty",
           "next_step": "Verify against users, movement and selected design question",
-          "responsible": "Entrant"
+          "responsible": "Entrant",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     },
     {
       "id": "node:{{node_2}}",
@@ -117,9 +147,15 @@
         {
           "missing": "Fill actual node evidence and uncertainty",
           "next_step": "Verify against users, movement and selected design question",
-          "responsible": "Entrant"
+          "responsible": "Entrant",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     },
     {
       "id": "node:{{node_3}}",
@@ -137,9 +173,15 @@
         {
           "missing": "Fill actual node evidence and uncertainty",
           "next_step": "Verify against users, movement and selected design question",
-          "responsible": "Entrant"
+          "responsible": "Entrant",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "{{actual spatial judgment and upper-level promise}}",
+      "scope": {
+        "extent": "{{whole site / phase-one / enlargement / named node}}",
+        "phase": "{{phase or capacity scenario}}"
+      }
     }
   ]
 }

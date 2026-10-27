@@ -12,7 +12,7 @@
 | **Scored metrics** | Affect the score | Not eliminated; shows up in the relevant dimension |
 | **Prohibited** | Must not appear | Review ends |
 
-Most figures have no pass mark. The gates check **whether you gave the number, with a correct unit and a stated basis** — not whether you hit a threshold. **No number = fail. A number with its basis = pass.** How good it is belongs to scoring.
+Most figures have no pass mark. The gates check **whether you gave the number, with a correct unit and a stated basis** — not whether you hit a threshold. Missing required numeric fields fail automatic compliance. Supplying a number and basis does not establish a reasonable capacity, complete design or engineering feasibility. How good it is belongs to scoring.
 
 ---
 
@@ -22,7 +22,7 @@ The land, the protected pilot area, water, earthquakes, the Zonda, dry channels 
 
 For this call:
 
-- All submitted geometry lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance), and nothing is built on the pilot area. The self-check tests both.
+- All core construction geometry under geometry/ lies inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance), and no new buildings may invade either fixed pilot part. Classify the agrivoltaic fields and living quarter separately. Optional external research belongs under context/, marked study_only / not_secured, and is excluded from construction accounts. The self-check tests encoded geometry and labels; it does not establish rights or suitability.
 - Cite the matching `SRC-*` id in your `sources.json`. Indicative zoning is cited as `indicative` only.
 - **You may assume — in `assumptions.json`, with the value, its source and the reason. An undeclared assumption counts as invention.**
 - The hard conditions are design constraints, not background. A scheme that shows no trace of them scores low on D1. Mark the flood corridors in your geometry and state the basis for their width; draw the access corridor as phase-one works.
@@ -45,7 +45,7 @@ Machine-readable twin: `requirements.json.design_depth` / `design-depth.json`. T
 
 Combine drawings where useful. Choose sections/elevations for the actual spatial or operational question; do not mechanically produce identical sets for every node. No fixed booklet length, minimum development footprint or additional render quota is introduced. The three-node selection and existing view requirements remain unchanged.
 
-Each new entry supplies `design_depth_matrix.json` (template in `templates/`), linking each level and each selected node to drawings, geometry, metric keys and proposal headings. A declared gap needs a reason, next verification and responsible role. A missing organiser dataset is not itself a failing design claim; identify the gap honestly. File existence and reference consistency can be checked automatically; design adequacy remains unassessed until independent review.
+Each new entry supplies `design_depth_matrix.json` (v2; v1 is readable only for the two listed legacy paths) (template in `templates/`), identifying the actual decision, scope.extent and scope.phase, and linking each level and selected node to drawings, geometry, metric keys and proposal headings. A declared gap identifies organiser_data, professional_verification or entrant_design, with next verification and responsible role. Missing organiser data does not waive required entrant-authored drawing/geometry evidence. A missing organiser dataset is not itself a failing design claim; identify the gap honestly. File existence and reference consistency can be checked automatically; design adequacy remains unassessed until independent review.
 
 ## D. Mandatory M1–M12
 
@@ -153,3 +153,7 @@ Automatic compliance (files, numbers and evidence paths) and design content revi
 - **Seasonal channels:** `water/channels_dem.geojson` contains DEM-derived channel lines, not surveyed banks. Permanent construction on an actual dry channel is prohibited. The checker uses indicative line buffers to flag possible conflicts for review; those buffers are not statutory setbacks. Smaller washes are not comprehensively mapped.
 - **Flood-sensitive screening:** `water/flood_sensitive_dem.geojson` is a terrain screening model (within 1.5 km of a mapped channel and HAND less than 3 m, using a 60 m DEM), approximately 503 km². It is not a surveyed design-flood extent, a verified hazard zoning instrument, or a blanket permanent no-build area. “Outside the screening band” does not establish flood safety.
 - **Verified restrictions:** no surveyed design-flood boundary, design discharge/return period or verified flood setback is supplied. Do not invent one. State assumptions and explain proposed avoidance, conveyance and protection; identify the hydraulic and field verification needed before implementation. Buildings in the screening layer are reported for content review, not failed merely for being in that layer.
+
+## Metric scope and version
+
+For matrix v2, master_area_km2 is the supplied master polygon, while GFA, coverage and FAR use building portions clipped to it. Outside-master GFA is reported separately; neither value is automatically phase-one built capacity. Declare actual construction phases, first works, external infrastructure and future scenarios separately. Version-one metrics retain their historical whole-package-building numerator so existing records remain reproducible. V2 land_use partitions master_area without material overlap or omission: bookkeeping tolerance is max(100 m², 0.01% of master area), not survey accuracy. The five whole-site systems may overlap and are not subject to that land_use partition rule.
