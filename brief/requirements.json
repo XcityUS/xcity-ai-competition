@@ -533,7 +533,10 @@
         "local_node_view_is_not_city_overview": true,
         "frame_does_not_require_all_nodes_to_be_visible": true
       },
-      "automatic_checks": "Check declared paths, numeric/version links and packaging only; thematic adequacy, useful abstraction and image fidelity require content review."
+      "automatic_checks": "Check declared paths, numeric/version links and packaging only; thematic adequacy, useful abstraction and image fidelity require content review.",
+      "method_reference": "docs/city-design-method-basis.md",
+      "district_function_land_use_and_phase_distinguished": true,
+      "renders_cannot_replace_required_planning_evidence": true
     }
   },
   "public_submission_language": {

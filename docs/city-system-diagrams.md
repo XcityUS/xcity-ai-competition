@@ -47,3 +47,6 @@ Link these drawings in the existing `overall_layout` row of `design_depth_matrix
 分期图及人口、住房、岗位、公服市政、建设顺序与依赖表使用同一套分区编号和布局。三个深化节点用于检验城市决定，不决定城市边界。AI Agent图册不设固定页数；以清楚说明完整方案为准，更多页数、图像或细节本身不加分。
 
 在现有深度矩阵的 `overall_layout` 行关联这些图纸、几何、指标和正文章节，不另加一套申请表。自动检查只能核对文件与版本等已编码关系；六类专题是否有用、整体图是否忠实仍属设计内容评审，不能自动判通过。
+
+
+Method and review basis: [docs/city-design-method-basis.md](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/city-design-method-basis.md). Define district boundaries/IDs, functional allocations, land-use units and construction phases distinctly; relate them through the same geometry and accounts. At city scale show principal/secondary streets and readable district/block structure, with local detail in appropriate enlargements. Required planning diagrams and plans cannot be replaced by renders.

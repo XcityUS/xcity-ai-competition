@@ -32,6 +32,8 @@ def check():
  need({x['id'] for x in diagrams['themes']}=={'planning_structure','functional_programme','street_mobility','ecology_landscape','land_use','public_space_services'},'city diagram themes differ from organiser instruction')
  need(diagrams['shared_city_geometry_required'] and diagrams['separation_is_not_an_objective'],'city diagrams lost layout/adjacency basis')
  need(diagrams['fixed_page_count'] is False and diagrams['combined_drawings_allowed'],'fixed diagram page quota returned')
+ need(diagrams['district_function_land_use_and_phase_distinguished'] and diagrams['renders_cannot_replace_required_planning_evidence'],'planning evidence or spatial-unit distinction lost')
+ need((ROOT/diagrams['method_reference']).is_file(),'official method reference guide missing')
  overview=diagrams['overall_spatial_view']
  need(overview['required'] and overview['same_layout_as_plans'] and overview['frame_does_not_require_all_nodes_to_be_visible'],'overall city view policy differs')
  need((ROOT/'docs/city-system-diagrams.md').is_file(),'city diagram guide missing')
