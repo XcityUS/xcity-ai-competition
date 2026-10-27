@@ -77,7 +77,7 @@ A combined design is welcome, but each selected node needs its own distinct ID a
 | A01 | A future housing prototype | How a dwelling is organised when labour goes to machines and the commute no longer defines the day |
 | B01 | Drone port | Take-off, charging, sorting and maintenance, and their relation to blocks and roofs |
 | B02 | Logistics hub and international gateway | How yards, the crossing and automated sorting live with the city |
-| B03 | A compute campus and its waste heat | Who uses the heat decides how close it sits to people |
+| B03 | A compute campus and its waste heat | Modules, shared infrastructure, credible capacities and justified heat interfaces |
 | C02 | The edge between agrivoltaic fields and the city | Interwoven, lifted, or a boundary you can walk along |
 | C03 | A seasonal river park | Dry most of the year, a flood channel in a storm |
 | A02 | A place for art and culture | Desert, mountain, a dark sky — somewhere people travel to |
@@ -293,3 +293,6 @@ Method and review basis: [docs/city-design-method-basis.md](https://github.com/X
 ### Full-site zoning and the road framework
 
 Follow [the whole-site zoning workflow](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md). The entire issued site needs an explicit base zoning proposal, not a small city plan over an unexplained background. In structure.geojson, use plan_role=base_zoning with district_id, name, primary_use and basis_ref plus system; separate optional overlapping relations as system_overlay. Draw the primary and secondary road skeleton in movement.geojson using road_class; network denotes users, not hierarchy. Recompute the full-site area account. G12 checks coverage, overlap, identifiers and road-class records, not design quality. Local enlargements and node images do not replace these full-site plans.
+
+
+Read the operating layout and construction diagram requirements: [production-conditions.en.md](production-conditions.en.md).

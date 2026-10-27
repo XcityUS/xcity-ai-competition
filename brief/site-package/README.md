@@ -97,3 +97,6 @@ For all gaps: explain a viable scenario and sensitivity, identify what could cha
 Use the current `boundaries/boundary-revision.json` revision `2026-10-27-open-seam-closure`, not an archived source. Only the authorised open seam at parcels 9/13 is repaired; other outer edges are retained. The prior internal-hole closure and overlap removal are retained. Read the current geodesic union and parcel areas from that revision record; nominal project area remains about 1,656 km²; older terrain raster cell totals are a separate method/version and must not silently be presented as recalculated under this revision. The revision date is a topology-edit date, not a survey acquisition date. Exchange KML/KMZ and archive details are in `boundaries/README.md`.
 
 The retained 1,656 km² competition label is nominal. Newly closed seam land is not automatically flood-safe: the historic hydraulic screening model has not been extended merely by closing geometry. Consult the terrain summary revision notes before using slope or screening statistics for the added seam.
+
+
+Operational conditions / 生产运营条件: [English](../production-conditions.en.md) · [中文](../production-conditions.zh.md). Fixed pilot interiors remain protected; reference dimensions are not approved site engineering.
