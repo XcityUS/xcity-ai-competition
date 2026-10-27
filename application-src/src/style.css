@@ -4,3 +4,5 @@
 .schedule{border:1px solid var(--line);padding:14px 18px;color:var(--gold);font-size:13px;margin:0 0 32px;overflow-wrap:anywhere}.steps{margin-bottom:20px}
 
 .checklist{border:1px solid var(--line);padding:24px;margin-bottom:32px;background:var(--surface)}.checklist h3{margin-top:24px}.checklist li{margin-bottom:12px}.checklist ul{padding-left:22px}.checklist p{margin-bottom:0}
+
+.embedded .top,.embedded footer{display:none}.embedded .shell{padding:24px 0;max-width:none}.embedded body{overflow:hidden}.embedded .columns{gap:28px}
