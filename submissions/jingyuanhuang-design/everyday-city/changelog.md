@@ -17,3 +17,7 @@ Replaced the public A0 default control-render sheet with an authored presentatio
 
 ## 2026-10-27 / V2 complete-city redesign
 Replaced the compact six-neighbourhood prototype with a complete phased town, independent productive campus and new farm-learning edge. Recomputed capacities; updated eight geometry-controlled finished views, coordinated city diagrams,22-page booklet, table-free A0, technical appendix and current public report. V1 withdrawn from recommendation; direct website replacement authorised by owner.
+
+
+## 2026-10-27 / Complete V2 operating and agrivoltaic revision
+Whole-site zoning, complete town, public services and road/landscape diagrams replace the withdrawn local compound. Compact modular campus, raised agrivoltaics with forage/jojoba crop geometry and22968m3/year assumed new irrigation, staged commissioning and construction isolation are coordinated with25-page design booklet, visual-first A0, eight concept views and separate technical appendix. Publication explicitly authorised by Jingyuan Huang; content remains not independently assessed.

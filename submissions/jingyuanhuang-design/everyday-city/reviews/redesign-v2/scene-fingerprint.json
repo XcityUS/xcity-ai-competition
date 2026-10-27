@@ -1,5 +1,5 @@
 {
-  "input_sha256": "e77b995437130cdf6cbbb31119caedf78e62f5e414b47fc3c785e18abe4581a0",
-  "renderer_sha256": "35181de5d4166b7fbcc05eba27464c36501be2819507547d5ef3a0c61f0c43db",
-  "assumptions": "Maximum-corner conceptual building plinths; no installed planting, decorative water or implicit rooftop PV; explicit new trial rows only."
+  "input_sha256": "f98e9275163aee99bcf40158d4da17ebb5de0019fe8671bb041ca3c450efad5c",
+  "renderer_sha256": "e3a918503f7f2e0a850857db46fd24b5339b43b897497c676d1782998360000d",
+  "assumptions": "Maximum-corner conceptual building plinths; proposed forage/jojoba crop bands only in geometry/crops.geojson; no decorative water, lawn or implicit rooftop PV; irrigation rights unverified."
 }

@@ -177,6 +177,17 @@
           "new_jobs": 0,
           "cumulative_jobs": 70,
           "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "ESTATE-RESERVE",
+          "name": "Unserviced productive estate reserve",
+          "new_residents": 0,
+          "cumulative_residents": 0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 0,
+          "cumulative_jobs": 0,
+          "basis": "Gross estate remainder only; no construction, power, occupation or employment credit."
         }
       ]
     }

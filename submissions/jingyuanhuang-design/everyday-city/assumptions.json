@@ -47,6 +47,12 @@
       "topic": "Roads",
       "value": "32m Main Street;28m avenue;20m local reservations; corridor studies not secured",
       "basis": "Junctions, widths, transport operation, accessibility and external rights require verification"
+    },
+    {
+      "id": "V2-AGRICULTURE",
+      "topic": "Agrivoltaic crop and water scenario",
+      "value": "{\"crop_area_ha\": {\"forage\": 3.828000000000093, \"jojoba\": 3.827999999999441}, \"total_crop_area_ha\": 7.655999999999534, \"annual_irrigation_m3_assumed\": 22967.999999999254, \"irrigation_allowance_m3_ha_y\": {\"forage\": 4000, \"jojoba\": 2000}, \"dimensions\": \"2m crop bands;4m fixed-tilt panels at3.8m centre /3.1m minimum edge;18m C02 /20m main row pitch;100m C02 end headlands;1.2m pruned jojoba;2.6m high x2.5m wide service vehicle, all assumed\", \"pollination\": \"Jojoba wind pollination: provisional1:8 male:female trial, distributed along rows and both ends; refine with seasonal wind and flowering observations; no bee dependence.\", \"water_gate\": \"No planting or occupied-stage approval before lawful supply and soil trial. No commercial yield credited. Account includes new fields only; protected pilot demand additional unknown.\", \"planting_map\": \"geometry/crops.geojson\"}",
+      "basis": "Entrant assumptions implementing confirmed forage/jojoba programme; agronomic demand, yield, seasonal wind, safety and lawful water require verification."
     }
   ]
 }

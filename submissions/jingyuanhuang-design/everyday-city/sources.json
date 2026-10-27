@@ -4,7 +4,7 @@
       "id": "S-SNAPSHOT",
       "title": "XCITY issued competition site package",
       "publisher": "XCITY",
-      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/640062ffa5550ced7d6e79c7996dab54b6c0cd88/brief/site-package",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/df440a3ab394bdb3e869915e3adbf985881f749f/brief/site-package",
       "accessed": "2026-10-27",
       "used_for": "Boundary, fixed pilots, terrain and drainage screening, regional roads. Not cadastral certification, utility rights or hydraulic approval."
     },
@@ -43,6 +43,30 @@
       "accessed": "2026-10-27",
       "used_for": "Issued access/roads_osm.geojson, access/road_distances_9_13.json",
       "licence": "Open Database License (ODbL) 1.0; (c) OpenStreetMap contributors"
+    },
+    {
+      "id": "V2-POD",
+      "title": "XCITY POD",
+      "url": "https://xcity.ai/computepod",
+      "publisher": "Source publisher",
+      "accessed": "2026-10-27",
+      "used_for": "Reference product architecture and rack-nameplate arithmetic, not certified vendor layout"
+    },
+    {
+      "id": "V2-POWERNODE",
+      "title": "XCITY PowerNode",
+      "url": "https://xcity.ai/powernode",
+      "publisher": "Source publisher",
+      "accessed": "2026-10-27",
+      "used_for": "Shared microgrid/power interfaces; facility MW is not IT load"
+    },
+    {
+      "id": "V2-JOJOBA",
+      "title": "US Forest Service Simmondsia chinensis species review",
+      "url": "https://research.fs.usda.gov/feis/species-reviews/simchi",
+      "publisher": "Source publisher",
+      "accessed": "2026-10-27",
+      "used_for": "Dioecious wind-pollinated biology, not local yield or irrigation verification"
     }
   ],
   "file_checksums": [
@@ -74,5 +98,6 @@
       "path": "brief/site-package/access/roads_osm.geojson",
       "sha256": "99a95cc87451bfd864f62314dcebf4ce4c07587a9bd3942bca03a069e8ae516a"
     }
-  ]
+  ],
+  "owner_reference_note": "Organiser agricultural studies informed panel/crop/service relationships; private reference files are not republished. Their indicative dimensions are not treated as mandatory standards."
 }

@@ -261,6 +261,7 @@
   };
   D.ground.forEach(gr => { if (gr.use !== 'reserve') flat(gr, gr.plaza ? GROUND.plaza : (GROUND[gr.use] || GROUND.open_space), 0.06, gr.use === 'energy' || gr.use === 'agriculture' ? 40 : 24); });
   const WASH = std({ map: TEX.gravel, color: 0xb5a693, roughness: 1 });
+  (D.crop_bands || []).forEach(gr => flat(gr, new T.MeshStandardMaterial({color: gr.species === 'forage' ? 0x7d9258 : 0x9a876a, roughness:1}), .10, 10));
   D.washes.forEach(w => flat(w, WASH, 0.04, 40));
   const ROAD = { machine: std({ map: TEX.asphalt, roughness: 0.85 }),
                  people: std({ map: TEX.paving, roughness: 0.9 }),
@@ -343,9 +344,10 @@
   // PV tables: single-axis trackers, rows north-south
   const pvRows = D.pv_rows, tilt = deg(D.pv_tilt || 20);
   const pvq = new T.Quaternion().setFromEuler(new T.Euler(-tilt, Math.PI / 2, 0));
-  instanced(new T.BoxGeometry(2.3, 0.06, 1), pvMat, pvRows, (r, p, q, s) => { p.set(r[0], hAt(r[0], r[1]) + 1.7, -r[1]); q.copy(pvq); s.set(1, 1, r[2]); });
-  instanced(new T.BoxGeometry(0.1, 1.6, 0.1), postMat, pvRows, (r, p, q, s) => { p.set(r[0], hAt(r[0], r[1]) + 0.8, -r[1]); q.identity(); s.set(1, 1, r[2]); }, false);
+  instanced(new T.BoxGeometry(4, 0.06, 1), pvMat, pvRows, (r, p, q, s) => { p.set(r[0], hAt(r[0], r[1]) + (r[3] || 1.7), -r[1]); q.copy(pvq); s.set(1, 1, r[2]); });
+  instanced(new T.BoxGeometry(0.1, 1, 0.1), postMat, pvRows, (r, p, q, s) => { p.set(r[0], hAt(r[0], r[1]) + (r[3] || 1.7) / 2, -r[1]); q.identity(); s.set(1, (r[3] || 1.7), r[2]); }, false);
 
+  instanced(new T.IcosahedronGeometry(1,1), new T.MeshStandardMaterial({color:0x77805b,roughness:1}), D.jojoba || [], (r,p,q,s)=>{p.set(r[0],hAt(r[0],r[1])+.6,-r[1]);q.identity();s.set(1,.6,1);});
   // trees: 0 broad (algarrobo), 1 poplar (windbreaks), 2 olive (orchards); t = [x, y, size, rot, type]
   const ico = (r, d) => new T.IcosahedronGeometry(r, d);
   const crownBroad = mergeParts([

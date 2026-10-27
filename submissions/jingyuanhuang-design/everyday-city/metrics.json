@@ -9,28 +9,28 @@
     },
     {
       "key": "footprint_m2",
-      "value": 807711.1,
+      "value": 687831.7,
       "unit": "m2",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "site_coverage_pct",
-      "value": 9.348,
+      "value": 7.96,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "gfa_m2",
-      "value": 1749511.1,
+      "value": 1629631.6,
       "unit": "m2",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "far",
-      "value": 0.2025,
+      "value": 0.1886,
       "unit": "ratio",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
@@ -74,12 +74,12 @@
       "value": {
         "agriculture": 40.03,
         "civic": 50.84,
-        "compute": 156.1,
+        "compute": 35.02,
         "energy": 78.05,
         "infrastructure": 127.33,
         "mixed_use": 11.3,
         "open_space": 98.23,
-        "reserve": 22.59,
+        "reserve": 506.91,
         "residential": 279.6
       },
       "unit": "mixed",
@@ -89,9 +89,9 @@
     {
       "key": "network_km",
       "value": {
-        "people": 8.703,
-        "machine": 10.25,
-        "shared": 196.383
+        "people": 8.49,
+        "machine": 8.491,
+        "shared": 196.803
       },
       "unit": "mixed",
       "evidence": "computed",
@@ -176,17 +176,17 @@
     },
     {
       "key": "water_demand_m3_per_year",
-      "value": 750005.4,
+      "value": 772973.4,
       "unit": "m3/year",
       "evidence": "declared",
-      "note": "reviews/redesign-v2/resource-scenarios.json; full-build-out gross demand assumptions"
+      "note": "V2 explicit crop scenario:7.656ha new forage/jojoba bands require22968m3/year assumed irrigation. Fixed-pilot consumption additional unknown; no lawful supply or commercial yield established."
     },
     {
       "key": "freshwater_required_m3_per_year",
-      "value": 706527.6086956522,
+      "value": 731492.8260869565,
       "unit": "m3/year",
       "evidence": "declared",
-      "note": "Gross use less reuse, divided by 0.92; fixed-pilot and irrigation demands additional unknown"
+      "note": "V2 explicit crop scenario:7.656ha new forage/jojoba bands require22968m3/year assumed irrigation. Fixed-pilot consumption additional unknown; no lawful supply or commercial yield established."
     },
     {
       "key": "machine_traffic_rule",
@@ -235,14 +235,14 @@
       "value": 4,
       "unit": "MW",
       "evidence": "declared",
-      "note": "Two phase-one2MW halls; assumed12MW grid connection, not supplied or secured"
+      "note": "16 conceptual modular positions at250kW operating IT each;4MW P1, unsecured12MW grid assumption. Power-block rating is not IT."
     },
     {
       "key": "annual_water_demand_m3",
-      "value": 177117.7,
+      "value": 200085.7,
       "unit": "m3/yr",
       "evidence": "declared",
-      "note": "Phase-one full occupancy; domestic includes civic; panel cleaning1000m3/y sits in industry; fixed-pilot demand is additional unknown"
+      "note": "V2 explicit crop scenario:7.656ha new forage/jojoba bands require22968m3/year assumed irrigation. Fixed-pilot consumption additional unknown; no lawful supply or commercial yield established."
     },
     {
       "key": "water_domestic_m3",
@@ -260,10 +260,10 @@
     },
     {
       "key": "water_agriculture_m3",
-      "value": 0,
+      "value": 22968,
       "unit": "m3/yr",
       "evidence": "declared",
-      "note": "No new irrigation or yield credited; fixed pilot is additional unknown"
+      "note": "V2 explicit crop scenario:7.656ha new forage/jojoba bands require22968m3/year assumed irrigation. Fixed-pilot consumption additional unknown; no lawful supply or commercial yield established."
     },
     {
       "key": "water_landscape_m3",

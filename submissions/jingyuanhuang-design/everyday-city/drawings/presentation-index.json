@@ -4,7 +4,7 @@
   "documents": {
     "main": {
       "path": "drawings/a3-booklet.pdf",
-      "pages": 22
+      "pages": 25
     },
     "technical": {
       "path": "drawings/a3-technical-appendix.pdf",
@@ -39,29 +39,32 @@
       "document": "main",
       "pages": [
         15,
-        16
+        16,
+        17
       ]
     },
     {
       "id": "node:C02",
       "document": "main",
       "pages": [
-        17,
-        18
+        18,
+        19,
+        20
       ]
     },
     {
       "id": "phasing",
       "document": "main",
       "pages": [
-        19
+        21,
+        22
       ]
     },
     {
       "id": "key_metrics",
       "document": "main",
       "pages": [
-        21
+        24
       ]
     }
   ],
@@ -148,31 +151,46 @@
     },
     {
       "page": 17,
+      "title": "B03 modules and operating interfaces",
+      "section": "node:B03"
+    },
+    {
+      "page": 18,
       "title": "C02 aerial",
       "section": "node:C02"
     },
     {
-      "page": 18,
+      "page": 19,
       "title": "C02 eye plan section",
       "section": "node:C02"
     },
     {
-      "page": 19,
+      "page": 20,
+      "title": "C02 panel crop and service relationship",
+      "section": "node:C02"
+    },
+    {
+      "page": 21,
+      "title": "Construction isolation and commissioning",
+      "section": "phasing"
+    },
+    {
+      "page": 22,
       "title": "Construction phases",
       "section": "phasing"
     },
     {
-      "page": 20,
+      "page": 23,
       "title": "Independent first operation",
       "section": "phasing_operation"
     },
     {
-      "page": 21,
+      "page": 24,
       "title": "Resource capacities and gates",
       "section": "key_metrics"
     },
     {
-      "page": 22,
+      "page": 25,
       "title": "Choices and next verification",
       "section": "conclusion"
     }

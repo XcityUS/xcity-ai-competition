@@ -242,5 +242,11 @@
         }
       ]
     }
-  ]
+  ],
+  "operational_evidence": {
+    "agriculture": "reviews/redesign-v2/diagrams/C02-operating-plan.png",
+    "clearances": "reviews/redesign-v2/diagrams/C02-operating-section.png",
+    "campus": "reviews/redesign-v2/diagrams/B03-operating-plan.png",
+    "commissioning": "reviews/redesign-v2/diagrams/commissioning-P1.png"
+  }
 }

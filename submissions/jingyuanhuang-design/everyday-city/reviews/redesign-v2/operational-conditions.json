@@ -1,0 +1,58 @@
+{
+  "campus": {
+    "active_area_km2": 0.35,
+    "positions_per_group": 8,
+    "group_count": 4,
+    "installed_positions_by_phase": [
+      16,
+      24,
+      32
+    ],
+    "operating_it_mw": [
+      4,
+      6,
+      8
+    ],
+    "reference_rack_nameplate_mw": 10.752,
+    "power_block_ratings_total_mw": 32,
+    "assumed_grid_connection_mw": 12,
+    "source": "https://xcity.ai/computepod",
+    "limits": "Alternative covered equipment grouping, not a certified XPOD vendor layout. Nameplate power is not IT or operating draw. Cooling/fire/crane/utility layouts require vendor engineering."
+  },
+  "farm": {
+    "panel_width_m": 4,
+    "centre_height_m": 3.8,
+    "edge_clearance_m": 3.1,
+    "row_pitch_m": 18,
+    "clear_between_rows_m": 14,
+    "headlands_m": 100,
+    "fixed_tilt_degrees": 20,
+    "pruned_jojoba_envelope_height_m": 1.2,
+    "plant_envelope_diameter_m": 2,
+    "assumed_machine_height_m": 2.6,
+    "assumed_machine_width_m": 2.5,
+    "planting_status": "No planting or occupied-stage approval before lawful supply and soil trial. No commercial yield credited. Account includes new fields only; protected pilot demand additional unknown.",
+    "pollination": "Trial male plants at both ends of selected female jojoba segments pending measured seasonal wind; species is wind-pollinated. Not a fixed-pilot internal layout.",
+    "crop_account": {
+      "crop_area_ha": {
+        "forage": 3.828000000000093,
+        "jojoba": 3.827999999999441
+      },
+      "total_crop_area_ha": 7.655999999999534,
+      "annual_irrigation_m3_assumed": 22967.999999999254,
+      "irrigation_allowance_m3_ha_y": {
+        "forage": 4000,
+        "jojoba": 2000
+      },
+      "dimensions": "2m crop bands;4m fixed-tilt panels at3.8m centre /3.1m minimum edge;18m C02 /20m main row pitch;100m C02 end headlands;1.2m pruned jojoba;2.6m high x2.5m wide service vehicle, all assumed",
+      "pollination": "Jojoba wind pollination: provisional1:8 male:female trial, distributed along rows and both ends; refine with seasonal wind and flowering observations; no bee dependence.",
+      "water_gate": "No planting or occupied-stage approval before lawful supply and soil trial. No commercial yield credited. Account includes new fields only; protected pilot demand additional unknown.",
+      "planting_map": "geometry/crops.geojson"
+    },
+    "main_row_pitch_m": 20
+  },
+  "phasing": {
+    "commissioning": "Installed works count as operating only after utility, emergency, resource and staffing tests.",
+    "construction_access": "Eastern perimeter/northern bypass outside occupied West; fence active construction cells and keep public Main Street continuous."
+  }
+}

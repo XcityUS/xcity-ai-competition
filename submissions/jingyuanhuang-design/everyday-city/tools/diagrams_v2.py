@@ -48,7 +48,7 @@ def base(a,bounds,mode='land'):
   for g,p in bld:
    if g.intersects(w):fill(a,g.intersection(w),'#8C6B54' if p['use']=='residential' else '#626F70',lw=0)
  for g,p in roads:
-  if not g.intersects(w) or p.get('study_only'):continue
+  if not g.geom_type.endswith('LineString') or not g.intersects(w) or p.get('study_only'):continue
   if p['network']=='people':
    if mode in ['green','mobility']:line(a,g.intersection(w),GREEN if mode=='green' else RUST,2.4 if mode=='green' else 1.8,'--')
    continue
@@ -58,14 +58,14 @@ def run():
  bounds=unary_union([g for g,p in scope]).bounds;f,a=canvas(bounds,(10,9))
  for g,p in regions:fill(a,g,RC[p['id']],edge=INK,lw=.5);label(a,g,p['id'] if p['id'].startswith('D00') or p['id']=='D01' else p['id']+'\n'+p['name'].replace(' and ',' + ').replace(' research','\nresearch'),7)
  for g,p in roads:
-  if p['road_class'] in ['primary','secondary'] and (p.get('study_only') or g.length>2000):line(a,g,BLUE,1.8 if p['road_class']=='primary' else 1,'--')
+  if p.get('road_class') in ['primary','secondary'] and (p.get('study_only') or g.length>2000):line(a,g,BLUE,1.8 if p['road_class']=='primary' else 1,'--')
  for g,p in ch:line(a,g.intersection(unary_union([q for q,v in scope])),'#7D9D98',.55)
  a.annotate('SW town + campuses\nsee city enlargement',xy=(574.6,6555.0),xytext=(590,6551),arrowprops=dict(arrowstyle='->',color=RUST,lw=1),fontsize=8,color=INK,bbox=dict(facecolor=BG,pad=3,edgecolor='none'))
  save(f,'whole-site')
  f,a=canvas(SYSTEM,(7,10));base(a,SYSTEM)
  for g,p in dist:line(a,g,RUST,1.2);label(a,g,p['id'],9)
  for g,p in nodes:line(a,g,RUST,1.6);label(a,g,p['node_id'],10)
- label(a,Point(574500,6553700),'1.1 km town / campus edge separation\nNo residential heat pipe credited',8)
+ label(a,Point(574500,6553700),'1.1 km town / estate; 1.45 km active campus\nNo residential heat pipe credited',8)
  save(f,'system-layout')
  for mode,name in [('land','city-composite'),('mobility','city-mobility'),('green','city-landscape'),('phase','city-phasing')]:
   f,a=canvas(TOWN);base(a,TOWN,mode)
@@ -106,7 +106,7 @@ def run():
   if nid=='A01':
    a.fill_between([0,12],[9.6,9.6],color='#CDAA7F');a.fill_between([118,130],[9.6,9.6],color='#CDAA7F');a.fill_between([28,108],[4.2,4.2],[3.9,3.9],color='#A57552');a.set(xlim=(-8,138),ylim=(-3,15));a.text(65,11,'3 storeys / 9.6 m     +     shared court / 106 m clear',ha='center',color=INK);a.text(65,-2,'Detached bars and a 6 m deep shade canopy / conceptual level section',ha='center',color=INK)
   elif nid=='B03':
-   a.fill_between([0,100],[10,10],color='#90A9B8');a.fill_between([230,330],[10,10],color='#90A9B8');a.fill_between([150,156],[4.2,4.2],[3.7,3.7],color='#A57552');a.set(xlim=(-15,345),ylim=(-5,25));a.text(170,18,'10 m halls / independent service yards / 6 m worker shade band',ha='center',color=INK);a.text(170,-4,'Local heat test remains on the productive campus; no pipe to homes',ha='center',color=INK)
+   a.fill_between([0,40],[8,8],color='#90A9B8');a.fill_between([100,140],[8,8],color='#90A9B8');a.fill_between([70,76],[4.2,4.2],[3.7,3.7],color='#A57552');a.set(xlim=(-8,148),ylim=(-4,20));a.text(70,16,'8 m service pavilions / 60 m service gap / 6 m worker shade',ha='center',color=INK);a.text(70,-3,'Covered modular positions; local heat test uncredited; no pipe to homes',ha='center',color=INK)
   else:
    for x in range(0,140,18):a.plot([x,x+4],[2.4,3],color=BLUE,lw=3)
    a.fill_between([170,176],[4.2,4.2],[3.8,3.8],color='#A57552');a.fill_between([260,290],[6,6],color='#B09D7B');a.set(xlim=(-10,310),ylim=(-5,14));a.text(150,10,'Trial PV rows / dry test ground / public shade / farm service shed',ha='center',color=INK);a.text(150,-4,'Under-panel crop trials require lawful water and soil evidence before planting',ha='center',color=INK)

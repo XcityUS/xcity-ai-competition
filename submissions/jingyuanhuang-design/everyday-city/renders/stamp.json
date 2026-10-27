@@ -1,11 +1,11 @@
 {
-  "input_sha256": "e77b995437130cdf6cbbb31119caedf78e62f5e414b47fc3c785e18abe4581a0",
+  "input_sha256": "f98e9275163aee99bcf40158d4da17ebb5de0019fe8671bb041ca3c450efad5c",
   "width": 2000,
   "height": 1250,
   "generator": "scripts/render_views.py 1.4.0",
   "files": {
     "city-overall.png": {
-      "sha256": "c9f2dde37a818678d28df47cb3375ad40555ab06053be50c82783d20ef8f5a31",
+      "sha256": "8038328598698eaecdd1a40d71a2e3d04e5ef7e27af853ecf0d04ab6d6744252",
       "label": "Complete southwest settlement system / full build-out",
       "time": "day"
     },
@@ -25,22 +25,22 @@
       "time": "day"
     },
     "B03-aerial.png": {
-      "sha256": "3c145925ea9c0bf7dfa39ad3cd32ed2122f7646bb26a5e91c4de11baaa3b8803",
+      "sha256": "4ae071469ea3b673626e92911a2abc7ecf119819bc9953fa53454fca756d6e48",
       "label": "B03 four staged halls and repair / local aerial",
       "time": "day"
     },
     "B03-eye.png": {
-      "sha256": "9ffb41e85787139ecaad640fd3e9cf790f77aae1758389172f4f7a4b481aeb62",
+      "sha256": "8e5f202a60f420d249c62af7ed57bc614a42fa742ef1c5c2c21da3ed71b27db3",
       "label": "B03 protected worker spine / eye-level",
       "time": "day"
     },
     "C02-aerial.png": {
-      "sha256": "4f0f43b156e211bc92fa5f5d8f8efb760f47adf0050f6c59dd7134af40eb7c58",
+      "sha256": "bcf7bfdac9cd6b0f6c34b1a6b8a3223ed55158f7d7fd123caf980250339a3d1d",
       "label": "C02 new trial field and learning edge / local aerial",
       "time": "day"
     },
     "C02-eye.png": {
-      "sha256": "83e3eaa48464cdd613fa5d8c2e0ecf4157b3028634db9badc6846668aad7d9b8",
+      "sha256": "152bdfb4b9502646623e8931567b3a1882d82da82bed342f678af233aae1fcc3",
       "label": "C02 public shade edge facing new trial rows / eye-level",
       "time": "day"
     }
