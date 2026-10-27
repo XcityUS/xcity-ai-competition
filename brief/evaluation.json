@@ -83,10 +83,10 @@
     },
     {
       "id": "GATE-G12-DEPTH",
-      "title": "Declared design depth points at evidence that exists",
-      "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view.",
+      "title": "Design evidence exists (content adequacy not assessed automatically)",
+      "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view. This only checks evidence presence. Whole-site planning adequacy and spatial design are assessed separately by reviewers; automatic PASS is not design approval.",
       "automated": true,
-      "partly_manual": false
+      "partly_manual": true
     }
   ],
   "blocking_conditions": [
@@ -277,5 +277,6 @@
   "organiser_data_gaps": {
     "rule_en": "A gap in the data the organiser supplied is never a reason to mark an entry down. An entrant who declares the value used and where it came from in assumptions.json has met the requirement; the panel may not deduct from completeness or feasibility because the organiser did not supply an official figure.",
     "checked_by": "gates check that a declaration exists, not that the number is official"
-  }
+  },
+  "review_status_note": "Automatic compliance and independent design content review are separate. No automatic gate certifies the quality or completeness of master planning."
 }
