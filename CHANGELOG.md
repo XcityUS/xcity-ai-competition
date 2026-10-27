@@ -1,3 +1,14 @@
+## 2026-10-26 · Current consolidated rules and private materials upload
+
+This entry supersedes earlier same-day application/draft/email instructions below; older entries are history, not concurrent rules.
+
+- Institution flow: register on the official practice page; organiser emails a private link; complete and save the form and individual materials there, then submit online. Email does not receive application attachments. Optional Word worksheets remain preparation aids. Registration closes 31 December 2026; complete application 31 January 2027, both 23:59 UTC; select five in February 2027. Automatic sending awaits mail-provider integration.
+- Agent call retains a fixed whole-site boundary and public three-scale framework, with four connected design tasks. Add Chinese counterparts to the public brief and design requirements; remove the 1,500-word completion gate and unauthorised automatic scheduling language.
+- Matrix v2 adds actual decisions, extent/phase and typed gaps. New directories cannot downgrade; the two exact listed legacy entries retain records and explicit migration paths. V2 master-area GFA/coverage/FAR clip buildings to the master extent and report outside GFA separately. Land-use partition checks detect omissions and overlap; tolerance is bookkeeping only.
+- Separate optional external study context from construction geometry and accounts. Strengthen resource provenance/CRS/units/limits/licence metadata and its schema. Script version 1.2.0. Automatic consistency never approves design content or engineering.
+- Fix presentation-card spacing and in-grid actions. Remove duplicate per-track update sections; homepage offers independent track preferences. Annotated references remain in the Agent repository without a promotional website button.
+- Audit and requirement-to-evidence mapping: docs/rule-consistency-audit.md. No participant package is rewritten.
+
 ## 2026-10-26 · Applications open and consistent navigation
 
 - Open the institution online application now. Collect basic details, then send the qualification application form and materials checklist by email; complete replies enter stage-one review. Keep the December and January deadlines.

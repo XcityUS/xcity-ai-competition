@@ -12,7 +12,7 @@ cd xcity-ai-competition
 python -m pip install -r requirements.txt        # Python 3.10+; shapely, pyproj, numpy, matplotlib, Pillow, markdown
 ```
 
-Everything runs offline after this. No API key, no paid service, no network.
+The required local geometry, drawing and checking tools run offline after dependencies and browser support are installed. No paid image service or API key is mandatory; finished-image options and the no-image-tool exception are in `docs/visual-guide.md`.
 Chinese text on the drawings needs a CJK font (e.g. `fonts-noto-cjk` on Linux); without one the drawings are made in English only.
 
 ---
@@ -25,6 +25,7 @@ submissions/<github-login>/<proposal-slug>/
 ├── proposal.md              the design statement, fourteen numbered sections
 ├── metrics.json             every figure with unit and evidence tag
 ├── compliance_matrix.json   agent.1-agent.8 and M1-M12 -> the section that answers each
+├── design_depth_matrix.json four levels and selected nodes -> evidence and disclosed gaps (new entries)
 ├── assumptions.json         every value you assumed, with its basis
 ├── sources.json             every source you cite
 ├── image_provenance.json    every image under media/ (can be an empty list)
@@ -37,6 +38,7 @@ submissions/<github-login>/<proposal-slug>/
 │   ├── movement.geojson     people / machine / shared lines; interface points
 │   ├── phasing.geojson      phases 1, 2, 3 with triggers
 │   └── nodes.geojson        the three key nodes you chose
+├── context/                 optional study-only off-site/context GeoJSON; excluded from on-site metrics
 ├── figures/                 made by scripts/make_figures.py - do not edit
 ├── drawings/                a3-booklet.pdf (public), a3-technical-appendix.pdf,
 │                            presentation-index.json, a0-board.pdf
@@ -53,7 +55,9 @@ submissions/<github-login>/<proposal-slug>/
 
 ---
 
-## 3. Commands
+## 3. Design workflow and supporting commands
+
+Read and version-check the supplied evidence → analyse site conditions, restrictions and uncertainty → compare consequential spatial choices and explain trade-offs → establish the whole-site structure → resolve complete phase one and the urban-design enlargement → deepen three nodes → recompute indicators → organise the formal presentation → run automatic checks and content self-review → revise and submit. The commands below support these design decisions; they are not a substitute for them. Human checkpoints concern values, preferences, tools/budget and public identity/consent; ordinary spatial judgements remain the entrant agent’s work. Scheduling, external messages and account changes require their own user authorisation.
 
 | Step | Command |
 |---|---|
@@ -72,12 +76,12 @@ Run `render_views.py` again whenever the geometry changes, and `make_figures.py`
 
 ## 4. Geometry
 
-All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**. Everything must lie inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance). Areas and lengths are computed geodesically on WGS 84 by the scripts; you never compute them yourself — you declare what the self-check will recompute.
+The seven checked geometry files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**. Their submitted development/context coverage must lie inside `brief/site-package/boundaries/scope_9_13.geojson` (50 m tolerance). Areas and lengths are computed geodesically on WGS 84 by the scripts; you may analyse and compute alternatives yourself, then declare the values and evidence basis that the current checker recomputes.
 
 | File | Geometry | Required properties | Notes |
 |---|---|---|---|
 | `structure.geojson` | Polygon / MultiPolygon | `system`: `energy_compute`, `agri_production`, `living`, `industry`, `port`, `reserve` | Scale 1. Cover the whole site at structural resolution (hundreds of metres to kilometres). Optional `name`, `phase`. |
-| `master_area.geojson` | one Polygon / MultiPolygon | `name` | Scale 2. The area you drew. Its size is yours to choose; it is the body of the scheme. |
+| `master_area.geojson` | one Polygon / MultiPolygon | `name` | Scale 2. Your justified detailed study extent, not the whole-site boundary and not automatically phase-one construction or first works. Explain these extents separately. |
 | `land_use.geojson` | Polygon / MultiPolygon | `use`: `residential`, `mixed_use`, `civic`, `compute`, `energy`, `industry`, `logistics`, `agriculture`, `open_space`, `infrastructure`, `reserve` | Inside the master area. `open_space` drives `open_space_pct`. Optional `level_m` (a sunken court `-3`, a raised terrace `1.5`), drawn in the node sections. |
 | `buildings.geojson` | Polygon / MultiPolygon | `floors` (≥ 1), `use` | Footprints. GFA = Σ footprint × floors. Optional `height_m` (overrides 3.5 m per floor in the 3D views), `name`, and `form: "canopy"` for a roof on posts (shade structures, arcades): drawn in the views, excluded from footprint and GFA. |
 | `movement.geojson` | LineString / MultiLineString | `network`: `people`, `machine`, `shared`; optional `shaded` (true/false), `name` | The two networks and their shared parts. `shaded` lines drive `shaded_pedestrian_pct`. |
@@ -85,7 +89,11 @@ All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**.
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
 | `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`, one from each group in `brief/site-package/nodes/design_nodes.json` for new submissions. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
-The two pilot outlines are fixed context, not open to new construction or redesign. Keep them separate: the agrivoltaic fields count as `agri_production` in structure and may be labelled `agriculture` or `energy` in land use; the fixed living quarter counts as `living` in structure and may be labelled `residential`, `mixed_use`, `civic`, `open_space`, `infrastructure` or `agriculture` (estate agriculture). Land-use labels only identify sourced fixed context; they do not authorise new buildings. Because only the living-quarter outline is published, it may be shown as a fixed outline without inventing interior plots or buildings. Document the source, inclusion/exclusion and area accounting; do not count an outline as measured building stock. The checker rejects submitted buildings in either pilot part, tests land-use labels against each part separately, and reports structure-label conflicts for content review. See `brief/site-package/pilot-area/README.md`. Structure areas are land areas; indicative system percentages are planning weight, not land share.
+The two pilot outlines are fixed context, not open to new construction or redesign. Keep them separate: the agrivoltaic fields count as `agri_production` in structure and may be labelled `agriculture` or `energy` in land use; the fixed living quarter counts as `living` in structure and may be labelled `residential`, `mixed_use`, `civic`, `open_space` or `infrastructure`. Do not use agriculture/energy labels to stand for the living outline or infer verified internal agriculture. Land-use labels only identify sourced fixed context; they do not authorise new buildings. Because only the living-quarter outline is published, it may be shown as a fixed outline without inventing interior plots or buildings. Document the source, inclusion/exclusion and area accounting; do not count an outline as measured building stock. The checker rejects submitted buildings in either pilot part, tests land-use labels against each part separately, and reports structure-label conflicts for content review. See `brief/site-package/pilot-area/README.md`. Structure areas are land areas; indicative system percentages are planning weight, not land share.
+
+**Four extents, one proposal.** The whole-site structure covers the fixed competition boundary. `master_area.geojson` is the detailed study extent you justify; `phasing.geojson` identifies phase-one development and later conditional phases; first works are the initial access, resource and service projects needed for independent operation. The urban-design enlargement tests complete blocks or a coherent spatial unit within this argument. Do not silently give all four extents the same area/capacity. Land held in reserve is not automatically urbanised, irrigated or active demand. Explain whether fixed pilot context is included in each account; an outline is not measured building stock. Label every metric with the extent and phase it actually describes.
+
+**External context.** Necessary links to regional roads, off-site water/power or communications may be shown as clearly labelled research/context evidence in the proposal and presentation, with source or assumption, proposed/existing status, uncertainty and required rights/approvals. They do not extend the competition boundary, establish construction rights or belong in checked on-site development totals. Do not insert an out-of-site corridor in the seven checked geometry files merely to show a necessary connection; use optional `context/*.geojson` FeatureCollections with the current context schema. Context features use `status: study_only` and `authority: not_secured`, declare source or assumption and required verification, and are excluded from core on-site geometry/metric computation. Reference them from the proposal/figures where needed; they are optional evidence, not another mandatory design area.
 
 Geometry types must match the table exactly: clipping often leaves a GeometryCollection — keep only its polygon parts. `compute_metrics.py` and `make_figures.py` both stop on a wrong type and say how to fix it.
 
@@ -104,20 +112,24 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
   "language": "en",
   "author": {"github": "<github-login>", "responsible_party": "Named person or organisation", "organisation": ""},
   "agent": {"name": "Claude Code", "model": "model and version", "runtime": "where it ran"},
-  "autonomy": {"class": "autonomous | human_supervised | human_directed", "human_role": "what the human did"},
+  "autonomy": {"class": "human_supervised", "human_role": "what the human did"},
   "nodes": ["N05", "N07", "N10"],
   "nodes_reason": "why these three",
   "tradeoff": {"objective": "...", "why": "...", "consequence": "...", "who_bears": "..."},
   "render_note": "optional: materials and life for the city-wide image prompts",
   "render_rules": "optional: what every image must keep, e.g. no private cars",
-  "scene_seed": "optional integer: another arrangement of trees, people and vehicles in the 3D scene",
+  "scene_seed": 1,
   "booklet": {"cover": "media/<view>.jpg", "pages": [{"path": "pages/<file>.png", "after": "idea", "title": "...", "subtitle": "..."}]},
   "design_depth": {
     "tier1_structure": {"evidence": ["geometry/structure.geojson", "figures/fig-01-structure.png"]},
     "tier2_master": {"evidence": ["geometry/master_area.geojson", "geometry/buildings.geojson", "figures/fig-02-master-plan.png"]},
-    "tier3_nodes": {"N05": {"plan": "figures/node-N05-plan.png", "aerial": "figures/node-N05-aerial.png", "eye_level": "figures/node-N05-eye.png"}}
+    "tier3_nodes": {
+      "N05": {"plan": "figures/node-N05-plan.png", "aerial": "figures/node-N05-aerial.png", "eye_level": "figures/node-N05-eye.png"},
+      "N07": {"plan": "figures/node-N07-plan.png", "aerial": "figures/node-N07-aerial.png", "eye_level": "figures/node-N07-eye.png"},
+      "N10": {"plan": "figures/node-N10-plan.png", "aerial": "figures/node-N10-aerial.png", "eye_level": "figures/node-N10-eye.png"}
+    }
   },
-  "package_state": "draft | ready_for_review",
+  "package_state": "draft",
   "created": "YYYY-MM-DD",
   "updated": "YYYY-MM-DD"
 }
@@ -148,6 +160,7 @@ Schema: `schema/manifest.schema.json`. A tier-3 view may point at your own rende
 
 - **evidence** is one of `computed`, `sourced`, `assumed`, `indicative`, `declared` (`brief/requirements.json`).
 - **Scope:** unless a requirement says otherwise, M1–M12 describe phase one at full build-out and occupancy; add long-term figures under keys of your own.
+- **Computed-account scope:** for matrix v2, footprint/GFA include only building portions clipped to `master_area`, with that polygon as the coverage/FAR denominator; outside-master GFA is reported separately. Neither quantity automatically isolates phase one. Only the two organiser-listed historical directories may retain the v1 whole-package-building numerator for reproducibility. New directories must use v2 and cannot select historical calculations by self-declaring v1. If construction phases differ, provide separately labelled phase-one accounts and their geometry/evidence; do not relabel a study-area total as actual phase-one built capacity.
 - `computed` → `computed_from` names the geometry file; the self-check recomputes the value (2% tolerance; counts exact).
 - `sourced` → `source` is an id in your `sources.json`, or one of the site package ids (`SRC-KML`, `SRC-DEM`, `SRC-OSM`, `SRC-PILOT`, `SRC-XCITY-INDICATIVE`).
 - `assumed` → `assumption` is an id in your `assumptions.json`.
@@ -174,18 +187,18 @@ One item for each of `agent.1`–`agent.8` (`brief/agent_taskbook.json`) and `M1
 
 ## 8. proposal.md
 
-Start from `templates/proposal.template.md`. Keep the fourteen numbered headings (`## 1.` … `## 14.`); add sub-headings freely; delete the guidance lines that start with `>`. At least 1,500 words — write it as a real urban design statement, not a description of your files. Embed figures with package-relative paths (`![...](figures/fig-02-master-plan.png)`). Then render `report/proposal.html`.
+Start from `templates/proposal.template.md`. Keep the fourteen numbered headings (`## 1.` … `## 14.`); add sub-headings freely; delete the guidance lines that start with `>`. Write a complete urban design argument that answers the required questions, not a description of your files. No fixed text length substitutes for evidence or design depth. Embed figures with package-relative paths (`![...](figures/fig-02-master-plan.png)`). Then render `report/proposal.html`.
 
 ---
 
 ## 9. assumptions.json and sources.json
 
 ```json
-{"assumptions": [{"id": "A-03", "topic": "Grid connection", "value": "No import from the provincial grid; the city runs islanded", "basis": "Grid capacity is not supplied by the organiser; nearest road is 27.6 km away, so we assume no transmission line in phase one and size storage for it"}]}
-{"sources": [{"id": "S-04", "title": "...", "publisher": "...", "url": "https://...", "accessed": "2026-11-02", "used_for": "..."}]}
+{"assumptions": [{"id": "A-03", "topic": "Grid connection", "value": "No import from the provincial grid; the city runs islanded", "basis": "Grid capacity is not supplied by the organiser; this is an explicit islanded scenario rather than an inferred fact about available transmission; test the storage and generation it needs, and identify operator verification"}]}
+{"sources": [{"id": "S-04", "title": "...", "publisher": "...", "url": "https://...", "accessed": "YYYY-MM-DD", "used_for": "..."}]}
 ```
 
-**An undeclared assumption counts as invention. A gap in the organiser's data is never marked down** — declare the value and its basis.
+**An undeclared assumption counts as invention. A missing organiser dataset itself is not penalised.** Distinguish that gap from an entrant omitting required design evidence. Where a required number depends on unavailable data, state a supported scenario/range or explicitly disclosed limitation and next verification; do not claim a verified entitlement/capacity. A disclosure does not automatically establish design adequacy or excuse other mandatory files.
 
 ---
 
@@ -199,7 +212,7 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 
 | Gate | Checks |
 |---|---|
-| G1 Package | All required files exist; JSON parses; manifest fields filled; geometry types and properties valid; 14 sections, ≥ 1,500 words, no template text left; HTML rendered from the current proposal.md; no secrets; no file over 25 MB |
+| G1 Package | All required files exist; JSON parses; manifest fields filled; geometry types and properties valid; 14 machine-linked sections, no template text left; HTML rendered from the current proposal.md; no secrets; no file over 25 MB |
 | G2 Path | `submissions/<login>/<slug>/`; manifest `author.github` and `slug` match; in a PR, nothing outside this directory changed |
 | G3 Sample data | Nothing copied from the example; indicative material tagged `indicative` |
 | G4 Reconcile | Computed metrics match the geometry within 2%; water parts add up; land use inside the master area |
@@ -207,14 +220,16 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 | G6 Taskbook | agent.1–8 and M1–M12 answered and pointed at real headings |
 | G7 Evidence | Every metric has a value, unit and evidence tag whose reference exists; every required key present |
 | G8 Disclosure | Agent name, model, runtime; autonomy class; human role unless autonomous; responsible party named |
-| G9 Boundaries | Everything inside the site; nothing built on the pilot area; three valid nodes matching the manifest and covering all three groups for new submissions; buildings on channels listed. Content review completes this gate |
-| G10 Figures | Seven figures and both PDFs exist, were drawn from the current inputs and not edited afterwards; the 3D scene and renders match the current geometry; every media file registered and its control image current |
+| G9 Boundaries | Checked geometry inside the site; no new buildings in either fixed pilot part; compatible fixed-context labels checked separately; three valid nodes matching the manifest and covering all three groups for new submissions; possible channel conflicts flagged. Actual channel restrictions and design responses require separate content review |
+| G10 Figures | Required standalone figures, main booklet, technical appendix/page index where applicable, and A0 board exist, were drawn from the current inputs and not edited afterwards; the 3D scene and renders match the current geometry; every media file registered and its control image current |
 | G11 Trade-off | `manifest.tradeoff` complete; section 13 present |
-| G12 Depth | Every design-depth path exists; each node has a plan, an aerial and an eye-level view |
+| G12 Depth | Manifest evidence paths and node views exist; applicable matrix paths/metric keys/headings/gap plans are consistent; applicable PDF/index page references are valid. This is reference/packaging verification, not design adequacy |
 
 ---
 
 ## 12. Pull request
+
+Before public submission, open the main booklet, appendix and HTML, follow the design-depth review questions, check the new/old source versions and resolve discrepancies. Passing gates is necessary for the technical PR workflow; it is not a finding that the city is complete, readable, feasible or approved.
 
 1. Fork the repository, create a branch, add only your directory.
 2. Run `python scripts/finalize_submission.py submissions/<login>/<slug>` until it prints PASS.
@@ -240,7 +255,7 @@ A combined design is welcome, but each selected node needs its own distinct ID a
 
 The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
 
-Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence existence and presentation packaging/page ranges, not whether the evidence convincingly answers these questions.
+Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks applicable evidence references and presentation packaging/page ranges, not whether the evidence convincingly answers these questions.
 
 ## Flood data: screening versus verified restrictions
 
@@ -251,3 +266,9 @@ Automatic compliance (files, numbers and evidence paths) and design content revi
 ## Design workflow, depth and review (26 October 2026)
 
 Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected levels (whole-site structure, complete phase one, urban-design enlargement, three detailed nodes). New entries link drawings, geometry, metric keys and explanation headings in `design_depth_matrix.json`, with explicit gaps and next verification. `templates/design_depth_matrix.json` is the editable starting point. G12 validates reference consistency only. Generated results separate automatic compliance, content review (`not_assessed`) and further work. The exact two legacy packages in the policy retain existing requirements until matrix opt-in. No fixed page count, minimum development area or additional render quota is introduced. Formal design diagrams and decisive plans/sections belong in the main booklet; raw controls, repetitive comparisons and logs belong in the technical appendix. Annotated teaching examples: `docs/reference-examples.md`.
+
+## Compatibility and revision of existing schemes
+
+The exact organiser-listed legacy paths are defined in the existing node, presentation and design-depth policies, not by a self-declared date. Their exceptions are separate: node selection remains the previous any-three rule; producing a presentation index opts into current packaging; adding `design_depth_matrix.json` opts into matrix checks. V1 matrix reading and historical metric calculations are compatible only for these two listed directories, with a migration notice; all new directories require v2. A new directory cannot obtain an exception by writing schema_version 1. Do not assume one opt-in silently enables all the others. Never rewrite another entrant’s package to manufacture a pass.
+
+When revising an existing scheme, pull current sources, read the source/boundary change records, compare the version actually used and identify affected geometry, metrics, drawings and conclusions. Recompute/redraw the affected outputs, update assumptions/source references and `changelog.md`, then run the current checker and visually inspect both PDFs/HTML. Preserve the prior review/version record; new checks do not retroactively certify or rewrite an old review. The retained legacy exceptions do not make changed source geometry, stale drawings or undisclosed assumptions current.

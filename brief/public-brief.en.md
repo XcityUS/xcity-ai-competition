@@ -52,8 +52,8 @@ Indicative positions for each system are in `brief/site-package/zoning/indicativ
 
 | | Area | Depth | What it answers |
 |---|---|---|---|
-| **1 · Overall study** | The whole site, 1,656 km² | Structural | How the five systems are arranged, where the city starts and which way it grows. Every scheme answers this layer, which is what makes schemes comparable. |
-| **2 · Master design** | **Drawn by you** | Full urban design — the body of the scheme | Real positions, dimensions and figures, not a coloured zoning map. Where you draw it is itself a design judgement: write down how water, slope, wind, the way out and the pilot area pushed you there. Phasing lives here. Land use, floor area, heights and density must be recomputable from the submitted geometry. |
+| **1 · Whole-site planning** | The whole site, 1,656 km² | Structural | How the five systems are arranged, where the city starts and which way it grows. Every scheme answers this layer, which is what makes schemes comparable. |
+| **2 · Phase-one layout and urban design** | Justified within the fixed whole-site boundary | Complete district plus a block/spatial-unit enlargement | Explain the actual phase-one construction extent, necessary external works and first works; show independent operation. An enlargement tests streets, blocks, heights, density and public life. The selected district does not replace the whole-site plan. Distinguish master_area metrics from phase-one capacity and state their extent and phase. |
 | **3 · Key nodes** | One per group; three total | Detailed — **renders required** | Take each to where you can see how people use it: at least one aerial and one eye-level view, plus a plan or section. Which three you choose says where you think this city is hard. |
 
 
@@ -126,7 +126,7 @@ A submission is one directory, `submissions/<your-github-login>/<proposal-slug>/
 | Proposal | `proposal.md`, fourteen sections, template in `templates/proposal.template.md`; it must read like a real urban design statement |
 | Data | `manifest.json`, `metrics.json`, `compliance_matrix.json`, `assumptions.json`, `sources.json` |
 | Geometry | GeoJSON under `geometry/`: whole-site structure, your master area, land use, buildings, movement, phasing, three nodes |
-| Technical figures | Seven in `figures/`, made offline by `scripts/make_figures.py` from your own geometry |
+| Technical figures | Seven base figures plus the shared node locator for current presentation-policy entries, made offline by `scripts/make_figures.py` from your own geometry |
 | Node views | A plan, an aerial and an eye-level view for each node |
 | Drawings | Public `drawings/a3-booklet.pdf`, separate `drawings/a3-technical-appendix.pdf`, `drawings/presentation-index.json` and A0 board |
 | Web version | `report/proposal.html`, from `scripts/render_proposal_html.py`, readable offline |
@@ -161,7 +161,7 @@ Entries that clear the gates are judged on four things. The seven dimensions bel
 | D6 | Risk, compliance and data governance | Which failure is actually likely here, and who decides when it happens? |
 | D7 | Declared trade-off | One objective not optimised, why, the consequence, and who bears it |
 
-**A gap in the data the organiser supplied is never a reason to mark an entry down** — declare the value you used and where it came from, and the requirement is met.
+**A gap in the data the organiser supplied is never a reason to mark an entry down** — declare the value you used and where it came from, and explain how the uncertainty affects the design and will be verified. This does not waive required spatial responses or excuse an entrant's own omissions.
 Entries are ranked within their autonomy class (autonomous / human-supervised / human-directed), not across classes.
 
 ---
@@ -229,4 +229,4 @@ The main booklet follows the whole-site plan, a shared node locator (site → ma
 
 ## Design workflow, depth and review (26 October 2026)
 
-Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected levels (whole-site structure, complete phase one, urban-design enlargement, three detailed nodes). New entries link drawings, geometry, metric keys and explanation headings in `design_depth_matrix.json`, with explicit gaps and next verification. `templates/design_depth_matrix.json` is the editable starting point. G12 validates reference consistency only. Generated results separate automatic compliance, content review (`not_assessed`) and further work. The exact two legacy packages in the policy retain existing requirements until matrix opt-in. No fixed page count, minimum development area or additional render quota is introduced. Formal design diagrams and decisive plans/sections belong in the main booklet; raw controls, repetitive comparisons and logs belong in the technical appendix. Annotated teaching examples: `docs/reference-examples.md`.
+Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected levels (whole-site structure, complete phase one, urban-design enlargement, three detailed nodes). New entries use matrix v2 with the actual decision, extent and phase, linking drawings, geometry, metric keys and explanation headings in `design_depth_matrix.json`, with gaps classified as organiser data, professional verification or entrant design, plus next verification. Version-one matrices remain readable only for the two exact organiser-listed legacy paths; new directories must use v2. `templates/design_depth_matrix.json` is the editable starting point. G12 validates reference consistency only. Generated results separate automatic compliance, content review (`not_assessed`) and further work. The exact two legacy packages in the policy retain existing requirements until matrix opt-in. No fixed page count, minimum development area or additional render quota is introduced. Formal design diagrams and decisive plans/sections belong in the main booklet; raw controls, repetitive comparisons and logs belong in the technical appendix. Annotated teaching examples: `docs/reference-examples.md`.

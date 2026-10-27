@@ -33,7 +33,7 @@ def form(lang):
             if zh:
                 rf.set(qn('w:ascii'),'Arial Unicode MS');rf.set(qn('w:hAnsi'),'Arial Unicode MS')
             for borders in list(st.element.iter(qn('w:pBdr'))):borders.getparent().remove(borders)
-    D.core_properties.author='XCITY';D.core_properties.title='XCITY 资格申请表及材料清单' if zh else 'XCITY Qualification Application Form and Materials Checklist'
+    D.core_properties.author='XCITY';D.core_properties.title='XCITY 资格申请工作表及材料清单（可选）' if zh else 'XCITY Qualification Application Worksheet and Materials Checklist (Optional)'
     def P(c,e,style=None):return D.add_paragraph(c if zh else e,style)
     def H(c,e,level=1):return D.add_heading(c if zh else e,level)
     def F(c,e,tag,multiline=False):
@@ -70,10 +70,10 @@ def form(lang):
     def page(c,e):D.add_page_break();H(c,e)
     # Page 1
     P('XCITY 设计机构征集','XCITY Design Practice Call','Subtitle')
-    P('资格申请表及材料清单','Qualification Application Form\nand Materials Checklist','Title')
-    P('请填写本表，并连同适用证明、团队与相关业绩、最多十页初步构想，通过邮件回复 competition@xcity.ai。收到完整材料后，我们将进行第一阶段资格与方案遴选。','Complete this form and reply to competition@xcity.ai with applicable evidence, team and project references, and initial ideas of up to ten pages. Complete materials enter stage-one eligibility and selection review.')
-    note('在线申请截止：2026年12月31日23:59 UTC。完整材料回复截止：2027年1月31日23:59 UTC。2027年2月遴选五家。','Online application deadline: 31 December 2026, 23:59 UTC. Complete email reply: 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027.')
-    note('可使用中文或英文。直接点击灰色字段填写，可按需扩展或复制表格；不适用项请说明，无需准备不适用的证书。','Chinese or English is accepted. Click the grey fields to complete them; extend or copy sections as needed. Explain items that do not apply; do not obtain certificates that are not applicable.')
+    P('资格申请工作表及材料清单','Application Worksheet\nand Materials Checklist','Title')
+    P('本工作表仅供可选准备。官网简短注册后，我们将邮件发送专属申请链接；请在官网逐项填写资格表、提供适用证明与团队业绩、上传1–10页构想PDF，可保存并最终提交。无需上传Word，邮件不收申请附件。','This optional worksheet helps you prepare. Register on the official website; we will email a private application link. Complete the online form, evidence and references, upload a 1–10-page ideas PDF, save progress and finally submit. No Word upload is required. Do not email application attachments.')
+    note('注册截止：2026年12月31日23:59 UTC。完整在线申请截止：2027年1月31日23:59 UTC。2027年2月遴选五家。','Registration deadline: 31 December 2026, 23:59 UTC. Complete online application: 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027.')
+    note('可使用中文或英文。灰色字段可整理草稿，最终请在专属网页填写；不适用项请说明，无需准备不适用的证书。本Word不构成正式提交。','Chinese or English is accepted. Use grey fields for preparation, then complete the private online form. Explain inapplicable items; do not obtain irrelevant certificates. This Word file is not a formal submission.')
     H('1 机构与联系人','1 Institution and contact')
     for c,e,t in [
       ('申请编号 如已收到','Application reference if received','REF'),('机构法定名称','Institution legal name','ORG'),('注册国家或地区','Country or jurisdiction of registration','COUNTRY'),('登记地址','Registered address','ADDRESS'),('申请方式 单一机构或联合体','Applicant type Single practice or consortium','TYPE'),('牵头机构 联合体填写','Lead entity Consortium only','LEAD'),('联系人姓名与职务','Contact name and position','CONTACT'),('联系邮箱','Email','EMAIL'),('电话 含国家代码 如有','Telephone with country code if available','PHONE'),('机构网站 如有','Practice website if available','WEB')]:F(c,e,t)
@@ -114,23 +114,23 @@ def form(lang):
     note('涉及联合设计时请注明合作方与分工。引用的作品和图片应有权用于本次申请；不要求提供客户保密资料。','For joint work, identify collaborators and responsibilities. Ensure references and images may be used for this application; client-confidential material is not requested.')
     # Page 5
     page('5 材料清单','5 Materials checklist')
-    P('请在右栏填写已附文件名或链接；不适用项写明不适用及原因。材料可分开提交，无需合并成一份大型 PDF。','In the right column, enter attached filenames or links. For a conditional item, state not applicable and explain why. Files may remain separate; do not merge everything into one large PDF.')
+    P('可在右栏整理拟上传文件名或链接；不适用项说明原因。请在官网专属页逐项填写及上传，无需合并成一份大型PDF，也无需上传本Word。','Use the right column to prepare filenames or links. Explain conditional items that do not apply. Complete and upload each item on your private online page; no combined PDF or upload of this Word worksheet is required.')
     rows=[
-      ('本资格申请表','This qualification application form','填写完成的 Word 或导出 PDF','Completed Word file or exported PDF'),
+      ('在线资格申请表','Online qualification application form','在专属网页填写 无需上传Word','Complete on your private page No Word upload'),
       ('机构注册依据','Legal registration evidence','证书 营业记录或官方链接 任选一项','Certificate business record or official link Choose one'),
       ('适用专业资格','Applicable professional evidence','资格文件 或当地制度与等效依据说明','Evidence or explanation of local arrangements and equivalent basis'),
-      ('实际团队与分工','Actual team and roles','填写本表第3部分 可附补充页','Section 3 Supplementary pages if needed'),
-      ('相关项目业绩','Relevant project references','本表第4部分 作品集或项目链接','Section 4 Portfolio or project links'),
-      ('初步构想','Initial ideas','单独 PDF 最多10页','Separate PDF Up to 10 pages'),
+      ('实际团队与分工','Actual team and roles','在线填写 可用本表第3部分准备','Complete online Section 3 is a preparation aid'),
+      ('相关项目业绩','Relevant project references','在线填写 作品集文件或项目链接','Complete online Portfolio file or project links'),
+      ('初步构想','Initial ideas','单独1–10页PDF 在线上传','Separate 1–10-page PDF Upload online'),
       ('联合体协议或成员职责说明','Consortium agreement or member-and-role statement','仅联合体 需签署','Consortia only Signed'),
-      ('真实性及利益关系声明','Accuracy and conflicts declaration','填写本表第6部分','Complete section 6')]
+      ('真实性及利益关系声明','Accuracy and conflicts declaration','在线确认 本表第6部分仅供准备','Confirm online Section 6 is preparation only')]
     table(['材料' if zh else 'Material','可接受形式' if zh else 'Accepted form','文件名或链接' if zh else 'Filename or link'],[[(c if zh else e),(c2 if zh else e2),None] for c,e,c2,e2 in rows],[1.7,2.65,2.42])
     H('初步构想应说明什么','What the initial ideas should explain',2)
-    P('最多10页，说明场地判断、城市与五大系统的初步方向、首期启动逻辑、代表性空间想法及工作方法。草图、示意图或剖面即可；此阶段不要求完整总图或效果图。','Use up to ten pages to explain the site reading, initial city and five-system direction, phase-one logic, a representative spatial idea and your approach. Sketches, diagrams or sections are sufficient; a full masterplan or rendering is not required at this stage.')
-    note('资格材料接受普通电子版或扫描件。链接应可由主办方访问；如有访问限制，请在邮件中说明。资料过大无法邮件发送时，请先联系 competition@xcity.ai 确认传递方式。','Ordinary electronic copies or scans are accepted. Links must be accessible to the organiser; explain access restrictions in your email. If files are too large to email, contact competition@xcity.ai to agree a transfer method.')
+    P('以1–10页PDF说明场地判断、城市与五大系统的初步方向、首期启动逻辑、代表性空间想法及工作方法。草图、示意图或剖面即可；此阶段不要求完整总图或效果图。','Use a 1–10-page PDF to explain the site reading, initial city and five-system direction, phase-one logic, a representative spatial idea and your approach. Sketches, diagrams or sections are sufficient; a full masterplan or rendering is not required at this stage.')
+    note('证明支持普通PDF、PNG或JPG；每个文件最多10 MB，全部上传合计最多25 MB。接受的证明及项目链接应可由授权审核人员访问；访问限制请在在线说明中注明。邮件仅发送专属链接，不接收申请附件。','Evidence uploads: PDF, PNG or JPG; each file up to 10 MB, total uploads up to 25 MB. Accepted evidence/project links must be accessible to authorised reviewers; explain access restrictions online. Email delivers the private link, not application attachments.')
     # Page 6
-    page('6 声明与回复邮件','6 Declaration and email reply')
-    P('请由有权代表申请机构或联合体的人员阅读并确认。填写姓名与日期，作为本次申请声明。','An authorised representative of the practice or consortium should read and confirm the following. Enter your name and date to confirm the application declaration.')
+    page('6 声明与在线提交','6 Declaration and online submission')
+    P('请由有权代表申请机构或联合体的人员阅读。可先在本工作表整理姓名、日期与声明，正式确认请在官网专属申请页完成。','An authorised representative should read these declarations. Prepare names, dates and statements here if useful; make the formal confirmation on the private online application page.')
     declarations=[
       ('所填信息及所附材料真实、可核实，项目署名与实际职责已如实说明。','The information and evidence are accurate and verifiable. Project credits and actual responsibilities are stated truthfully.'),
       ('列出的参赛团队及协作安排已如实说明，未将未确认人员列作已确认成员。','The stated team and collaboration arrangements are accurate. Unconfirmed participants are not presented as confirmed.'),
@@ -142,9 +142,9 @@ def form(lang):
     F('利益关系披露或其他说明','Conflicts or other explanation','CONFLICTS',True)
     F('授权代表姓名与职务','Authorised representative name and position','SIGNATORY')
     F('代表的机构及确认日期','Represented entity and date of confirmation','SIGN_DATE')
-    H('邮件回复方式','How to reply',2)
-    P('请回复主办方发送申请表的邮件，收件人为 competition@xcity.ai。建议主题：XCITY 设计机构申请 机构名称 申请编号（如有）。附上本表、适用材料和单独的初步构想 PDF。','Reply to the organiser’s application email at competition@xcity.ai. Suggested subject: XCITY Design Practice Application Institution name Application reference if any. Attach this form, applicable materials and a separate initial-ideas PDF.')
-    note('完整材料回复截止：2027年1月31日23:59 UTC。在线申请或材料收件不代表资格通过或入围；完成适用材料后进入第一阶段审核。','Complete replies are due by 31 January 2027, 23:59 UTC. Online application or receipt of materials does not mean eligibility approval or shortlisting. Complete applicable materials enter stage-one review.')
+    H('如何完成在线申请','How to complete the online application',2)
+    P('打开主办方邮件中的专属申请链接，在官网逐项填写并提供材料。可保存后继续；核对完整性后最终提交。专属链接请妥善保存，不要公开。遇到链接或上传问题，请联系 competition@xcity.ai；请勿发送申请附件。','Open the private link emailed by the organiser. Complete each item and provide the materials on the official website; save and return as needed, then make the final submission. Keep the link private. For link or upload assistance contact competition@xcity.ai; do not email application attachments.')
+    note('完整在线申请截止：2027年1月31日23:59 UTC。仅注册或保存草稿不代表完成第一阶段申请；最终提交后进入审核，但不代表资格通过或入围。','Final online submission is due by 31 January 2027, 23:59 UTC. Registration or a saved draft alone does not complete stage one. Final submission enters review; it does not mean eligibility approval or shortlisting.')
     # Running identifier and pages only
     header=sec.header.paragraphs[0];header.text='XCITY  |  '+('设计机构征集' if zh else 'DESIGN PRACTICE CALL');header.style='Caption'
     for run in header.runs:run.font.color.rgb=RGBColor(0,0,0);run.font.size=Pt(8)

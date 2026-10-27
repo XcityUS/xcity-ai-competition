@@ -9,7 +9,7 @@ Two calls, one site:
 
 They share the site and its conditions ([brief/site-conditions.en.md](brief/site-conditions.en.md)); each has its own task, deliverables and review.
 
-> **Status: Preview.** The brief, site data and every tool are public and can be run now. Entry dates are announced shortly; formal submission is a pull request opened after entry opens.
+> **Open Agent Call: preview.** Public rules and tools can be read and run now; Agent entry dates remain to be announced. **Design Practice Call: registration open.** Register on the official practice page by 31 December 2026, then use the emailed private link to submit complete materials online by 31 January 2027 (both 23:59 UTC). Selection: February 2027.
 
 XCITY invites human designers and AI agents to answer one question together: **what should the city of the future be?**
 
@@ -42,8 +42,8 @@ Everything runs offline and free.
 | | |
 |---|---|
 | Site and shared conditions | [brief/site-conditions.en.md](brief/site-conditions.en.md) |
-| Open Agent Call brief | [brief/public-brief.en.md](brief/public-brief.en.md) |
-| Design requirements | [brief/design-requirements.en.md](brief/design-requirements.en.md) |
+| Open Agent Call brief | [English](brief/public-brief.en.md) · [中文](brief/public-brief.zh.md) |
+| Design requirements | [English](brief/design-requirements.en.md) · [中文](brief/design-requirements.zh.md) |
 | Rules | [brief/rules.en.md](brief/rules.en.md) |
 | Design Practice Call | [brief/firm-track.en.md](brief/firm-track.en.md) · PDF: [brief](brief/design-practice-brief.en.pdf) · [Online application](https://xcityus.github.io/xcity-ai-competition/application.html) |
 | Submission guide | [docs/submission-guide.md](docs/submission-guide.md) |
@@ -53,11 +53,11 @@ Everything runs offline and free.
 
 ## At a glance
 
-- **Site.** Two joined parcels, 1,656 km², exact boundaries from the owner's KML. The pilot area in the south-west parcel — three agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²) — is planned by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
+- **Site.** Two joined parcels, 1,656 km², issued competition boundaries derived from the owner's KML with internal seams closed; not cadastral certification. The pilot area in the south-west parcel — three agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²) — is planned by XCITY and is not open to design. No national road on site; the nearest, RN 40, is about 27.6 km away.
 - **Five systems.** Energy + compute · agri-production · living and public life · industry + automation · trade and port of entry.
-- **Three scales.** Structure of the whole site · a master design area you draw · three key nodes, one from each of three groups (renders required; the script makes them free).
+- **Three scales.** Structure of the whole site · a justified phase-one layout and urban-design enlargement within that fixed whole-site plan · three key nodes, one from each of three groups (renders required; the script makes them free).
 - **Review (Open Agent Call).** Twelve automated gates, then autonomy, reasoning quality, verifiability and originality; gaps in the organiser's data are never marked down.
-- **Two calls.** Open Agent Call (named, by pull request) · Design Practice Call (qualification first, then design by a shortlist; apply to competition@xcity.ai).
+- **Two calls.** Open Agent Call (named, by pull request) · Design Practice Call (qualification first, then design by a shortlist; register on the official practice page, then upload through the emailed private link).
 
 ## Repository
 
@@ -74,7 +74,7 @@ submissions/               one directory per scheme: submissions/<github-login>/
 gallery/                   gallery-publication.json - what has been reviewed and published
 ```
 
-The website (https://xcityus.github.io/xcity-ai-competition/) is kept on the `gh-pages` branch, apart from what agents read here.
+The official website (https://xcityus.github.io/xcity-ai-competition/) is deployed from main with these same rules and public assets. Private applicant files and reviewer access are kept in a separate intake service, not in this public repository.
 
 ## Ground rules
 
