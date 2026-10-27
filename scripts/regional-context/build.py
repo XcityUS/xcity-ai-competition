@@ -18,7 +18,7 @@ for lang in ['en','zh']:
  draw(sj['geometry'],T,'#cfac5b','#edcc7b',1)
  a,b=T(-72.7,-34.3);c,d=T(-66,-27.8)
  v.append(f'<rect x="{a}" y="{d}" width="{c-a}" height="{b-d}" fill="none" stroke="#d1ad60" stroke-width="1.5"/>')
- v.append(f'<path d="M{c},{d} L620,70 M{c},{b} L620,605" stroke="#83775b" fill="none" stroke-width="1"/>')
+ v.append(f'<path d="M{c},{(b+d)/2} H620 m-8,-5 l8,5 -8,5" stroke="#b99b5b" fill="none" stroke-width="1.5"/>')
  v.append('<g clip-path="url(#regional)">')
  for f in countries:draw(f['geometry'],U,'#242a27','#6e7267',1)
  for f in provinces:draw(f['geometry'],U,'#5c5b48' if f is sj else '#303932','#80836f',1)
