@@ -31,6 +31,9 @@ def check():
  whole=depth['whole_site_plan']
  need(whole['base_covers_entire_issued_site'] and whole['base_area_account_exclusive'] and whole['network_is_not_road_hierarchy'],'whole-site zoning/road contract differs')
  need((ROOT/'docs/whole-site-zoning-workflow.md').is_file(),'whole-site workflow missing')
+ need((ROOT/whole['method_skill']).is_file(),'city-design method skill missing')
+ board=depth['a0_presentation']
+ need(board['visual_first'] and board['calculations_still_required'] and not board['dense_district_phase_tables_on_board'],'A0 visual/account separation differs')
  diagrams=depth['city_system_diagrams']
  need({x['id'] for x in diagrams['themes']}=={'planning_structure','functional_programme','street_mobility','ecology_landscape','land_use','public_space_services'},'city diagram themes differ from organiser instruction')
  need(diagrams['shared_city_geometry_required'] and diagrams['separation_is_not_an_objective'],'city diagrams lost layout/adjacency basis')

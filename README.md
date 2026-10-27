@@ -93,3 +93,9 @@ Questions: open an Issue. · Changes: [CHANGELOG.md](CHANGELOG.md) · Licences: 
 ### Agent presentation template
 
 [Required reading structure](docs/presentation-guide.md) · [Editable content checklist](templates/presentation.template.md). Main presentation and technical appendix are separate; fixed information/order, free page design.
+
+### City design method / 城市设计方法
+
+Before designing, read [the repository city-design skill](skills/xcity-city-design/SKILL.md). It guides evidence-led district boundaries, centres and road/open-space relationships, public-service provision, urban fabric and phasing before node views. A Markdown link does not automatically execute a skill: runtimes without skill support should read and apply it explicitly. The A0 board communicates spatial decisions; detailed numerical accounts remain in the technical appendix.
+
+设计前请读取并执行上述仓库 skill：先判断场地、组织功能与中心和路网，再形成有依据的分区、公服与城市肌理，最后深化节点和展示。不支持安装 skill 的 Agent 直接读取 Markdown。A0以图面和设计判断为主，完整数字账放技术附件。

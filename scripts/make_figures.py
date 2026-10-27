@@ -2111,6 +2111,38 @@ def disclosure(pkg, size=A3):
     return figs
 
 
+def panel_a0_phase_story(ax, programme):
+    """A board explains sequence; full per-zone accounts stay in the appendix/JSON."""
+    ax.clear(); ax.set_axis_off()
+    phases = sorted(programme.get('phases', []), key=lambda p: p.get('phase', 0))
+    phases = [p for p in phases if p.get('phase') in (1, 2, 3)]
+    if not phases:
+        ax.text(0, .9, 'Construction sequence: define the stages and their operating conditions.',
+                transform=ax.transAxes, fontsize=16, color=INK, va='top')
+        return
+    width = .30
+    for i, phase in enumerate(phases):
+        x = i * .34
+        values = [z.get('new_residents') for z in phase.get('zones', [])]
+        if values and all(isinstance(v, (int, float, dict)) and not isinstance(v, bool) for v in values):
+            low = sum(v.get('min', 0) if isinstance(v, dict) else v for v in values)
+            high = sum(v.get('max', 0) if isinstance(v, dict) else v for v in values)
+            count = ('%s - %s' % (fmt(low), fmt(high))) if low != high else fmt(low)
+            label = count + ' additional residents (scenario)'
+        else:
+            label = 'Capacity: see scoped programme'
+        ax.text(x, .98, 'STAGE ' + str(phase['phase']), transform=ax.transAxes,
+                fontsize=18, fontweight='bold', color=INK, va='top')
+        ax.text(x, .75, textwrap.fill(T(phase.get('objective', '')), 46),
+                transform=ax.transAxes, fontsize=13, color=INK, va='top', linespacing=1.2)
+        ax.text(x, .33, label, transform=ax.transAxes, fontsize=12, color=MUTED, va='top')
+        if i < len(phases) - 1:
+            ax.annotate('', xy=(x + .33, .91), xytext=(x + width, .91), xycoords='axes fraction',
+                        arrowprops=dict(arrowstyle='->', color=MUTED, lw=1.3))
+    ax.text(0, .02, 'Conditional sequence; full district capacities, periods, works and triggers: technical appendix / phasing_programme.json.',
+            transform=ax.transAxes, fontsize=11, color=MUTED, va='bottom')
+
+
 def a0_board(pkg):
     # Entrant-authored presentation board; checked geometry/figures are still generated.
     authored = booklet_cfg(pkg).get("a0_page")
@@ -2143,23 +2175,9 @@ def a0_board(pkg):
                     ("Declared trade-off", "%s. Why: %s. Who bears it: %s" % (
                         m.get("tradeoff", {}).get("objective", ""), m.get("tradeoff", {}).get("why", ""),
                         m.get("tradeoff", {}).get("who_bears", "")))], fs=17, width=150)
-    programme_path=os.path.join(pkg.dir,'phasing_programme.json')
+    programme_path = os.path.join(pkg.dir, 'phasing_programme.json')
     if os.path.isfile(programme_path):
-        programme=xc.load_json(programme_path)
-        ax5.clear();ax5.set_axis_off()
-        rows=[]
-        def capacity(value):
-            return ('%s–%s' % (value.get('min'),value.get('max'))) if isinstance(value,dict) else str(value)
-        for phase in programme.get('phases',[]):
-            for zone in phase.get('zones',[]):
-                counts=' / '.join(capacity(zone.get('new_'+k))+' → '+capacity(zone.get('cumulative_'+k)) for k in ['residents','dwellings','jobs'])
-                delivery=phase.get('period','')+'; '+phase.get('objective','')+'; works: '+', '.join(phase.get('works',[]))+'; '+', '.join(phase.get('sequence_dependencies',[]))+'; trigger: '+phase.get('trigger','')
-                rows.append([str(phase.get('phase'))+' · '+zone.get('zone_id',''),textwrap.fill(counts,48),textwrap.fill(delivery,100)])
-        if rows:
-            table=ax5.table(cellText=rows,colLabels=['Phase / zone','Residents / dwellings / jobs: new → cumulative','Period, objective, sequence and trigger'],colWidths=[.13,.33,.54],loc='upper left',cellLoc='left')
-            table.auto_set_font_size(False);table.set_fontsize(max(7,min(13,45/(len(rows)+1))))
-            for (ri,ci),cell in table.get_celld().items():
-                cell.set_height(1/(len(rows)+1));cell.set_edgecolor('#D2CFC6');cell.set_facecolor(PAPER)
+        panel_a0_phase_story(ax5, xc.load_json(programme_path))
     nodes = list(pkg.nodes)[:3]
     for i, nid in enumerate(nodes):
         x = 0.03 + i * 0.32

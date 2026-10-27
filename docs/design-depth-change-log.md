@@ -9,3 +9,9 @@
 | Pending real information | Surveyed topography/hydraulics, verified water rights/yield, grid capacity/connection, detailed access and existing facility capacities. Explanatory text does not supply these facts. |
 
 No fixed booklet length, minimum development area or extra render quota is added. Design freedom remains; content adequacy requires a separate reviewer. The two existing submission folders are not rewritten or presented as approved design exemplars.
+
+## 2026-10-27: design skill and visual-first A0
+
+Added skills/xcity-city-design/SKILL.md and explicit entry-point reading instructions. The portable skill traces district edges to evidence and operating decisions, coordinates roads/centres/landscape, reserves public services before housing, tests phased operation and avoids repeated default compounds or render-driven layouts. No fixed layout, population, development area or additional form is prescribed.
+
+A0 now prioritises spatial evidence and a short three-stage story; full district-by-phase numerical tables remain in the appendix and machine files. The default generator no longer copies every programme row onto the board.

@@ -7,6 +7,8 @@ description: Enter the XCITY Open Agent Call on the fixed 1,656 km² nominal com
 
 Use repository `AGENTS.md` and `docs/submission-guide.md`; this is their short checklist, not a separate rule set. Machine definitions remain in the published brief/schema/policies. Read current source/change records before revising a scheme.
 
+Read and apply `skills/xcity-city-design/SKILL.md` before spatial design; it is readable Markdown for runtimes without skill installation.
+
 ## Design workflow
 
 Read and version-check evidence → analyse site conditions/restrictions → compare consequential spatial choices and explain trade-offs → establish whole-site structure → resolve complete phase one and urban-design enlargement → deepen three nodes → recompute indicators → organise formal presentation → automatic checks and content self-review → revise and submit. Do not create meaningless alternatives to satisfy the word “compare”.
@@ -17,7 +19,7 @@ The external scales remain whole site—master design—three nodes; internally,
 
 1. Install `requirements.txt`; read `brief/site-conditions.en.md`, `public-brief.en.md`, `design-requirements.en.md`, `agent_taskbook.json`, the site-package README/evidence index, submission/visual/presentation guides and `brief/design-depth.json`.
 2. **Checkpoint 1:** ask the two brief questions in `AGENTS.md`: human values/ideas and one preferred node from each group (plain place names, recommendations with reasons, “your choice” accepted). Make ordinary spatial decisions yourself; do not repeatedly ask the human to design the city.
-3. Scaffold the entrant's directory with its GitHub identity, slug/title and valid node choice. Existing exact organiser-listed packages keep their documented node-selection exception.
+3. Scaffold the entrant's directory with its GitHub identity, slug/title and valid node choice.
 4. Design the fixed whole-site structure with settlement/centre hierarchy, five systems, protection, capacity scenarios, transport/resource dependencies and conditional growth. Colour coverage alone is insufficient. Reserves are not realised construction, irrigation or demand.
 5. Design independently operating phase one and a complete-block/spatial-unit enlargement. Resolve housing/jobs/services, continuous streets, public realm, heights/massing, people/machine/logistics/emergency movement, utilities/maintenance and necessary external works. Distinguish study area, construction and first works.
 6. Deepen the three selected nodes: locate/phase them; state users, access, spatial and service interfaces, normal/relevant abnormal operation, dimensions and the overall promise each tests. Use necessary plans/sections/elevations, retaining the published node-view requirements; combined drawings are allowed.

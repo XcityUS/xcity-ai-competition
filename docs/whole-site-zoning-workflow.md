@@ -52,3 +52,11 @@ The default whole-site panel draws submitted primary/secondary/local roads and b
 - Modify / 修改：whole-site base zoning roles, named districts/area account, road hierarchy, default rendering and geometric checks.
 - Remove / 删除：accepting a small prototype plus an unexplained remainder or a system-only overlay as the complete zoning/road proposal.
 - Unconfirmed / 待核实：old reference-image quantities, flood/setback assumptions, road rights and resource capacities; none is adopted as current site fact.
+
+## Trace each district edge to a decision / 分区线要能追溯到设计决定
+
+Read and apply `skills/xcity-city-design/SKILL.md` before geometry generation. For each meaningful district, explain its role/users, edge logic, source or declared assumption, access/service relationship, capacity basis and construction dependency in the existing proposal and account. Terrain/drainage, proposed corridors, centre/service relationships, operating interfaces and justified phase boundaries can inform edges. Where an edge is a design choice, say so. Rectangles, nearest-centre partitions or suitability pixels alone are not a functional zoning argument. Do not invent parcel boundaries, existing roads or detailed surveyed constraints.
+
+At city scale show meaningful district and block relationships; resolve the selected urban enlargements without claiming that every hectare requires detailed parcels. Reserve and connect public-service sites before filling land with repeated housing modules. Overlay functions, roads, landscape and service access from the same geometry, inspect conflicts, and revise the organising layout before node views or finished renders. Keep a drawing when it tests a decision, required verification or clear communication, rather than adding sheets mechanically. No extra submission form or fixed site/population/page quota is introduced.
+
+分区须在既有方案说明和土地账里讲清：用途与使用者、边界为何落在这里、资料或假设、交通和服务联系、容量依据、建设条件。地形水文、拟建路廊、中心与服务关系、生产运营和合理分期都可支持边界；设计选择应明说。不能只用矩形、最近中心自动分割或适宜性像元直接充当功能规划。先按使用与容量预留公服，再排街坊和住宅，叠合道路、功能、景观与服务并处理冲突，最后深化节点和渲染。不新增填表负担，不限定开发面积、人口或页数。

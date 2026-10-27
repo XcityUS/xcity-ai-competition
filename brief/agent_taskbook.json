@@ -111,11 +111,12 @@
     }
   ],
   "design_workflow": [
+    "read and apply skills/xcity-city-design/SKILL.md",
     "read and cross-check evidence",
     "analyse suitability and uncertainty",
     "compare material spatial choices and explain trade-offs",
     "whole-site structure",
-    "complete phase-one layout",
+    "complete city layout across all phases; test independent phase-one operation",
     "urban-design enlargement",
     "three detailed nodes",
     "recompute scoped metrics",

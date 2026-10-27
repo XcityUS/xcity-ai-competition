@@ -141,3 +141,9 @@ The overall spatial view shows the complete proposed city layout or settlement s
 Show the Phase 1/2/3 construction map and matching programme using the same district IDs and layout. Keep population, dwellings, jobs, public/utility services, sequence and dependencies consistent with the city diagrams. Detailed selected nodes test the city decisions; they do not determine the city’s extent. There is no fixed AI Agent booklet page count or requirement to pad the report. Additional detail, images or pages earn no credit by themselves.
 
 Link these drawings in the existing `overall_layout` row of `design_depth_matrix.json`, with associated geometry, metrics and proposal sections. The six thematic questions and overall-view fidelity are content-review matters; file existence does not prove they are answered. No separate parallel form or additional pass badge is introduced.
+
+## Visual-first A0 / A0以空间设计为主
+
+Use the A0 board to communicate the city: a dominant overall plan/axon, coordinated functional/road/landscape diagrams, legible district and centre relationships, necessary node evidence and a concise construction sequence. Keep only numbers that materially explain scale, capacity, a resource constraint or phase choice, clearly scoped and tagged. Full district-by-phase population/dwelling/job accounts, detailed metric grids, all source/evidence columns and logs remain in the technical appendix and machine files. The phase map is still required; a dense spreadsheet or dozens of numerical badges is not its replacement. There is no additional fixed number quota and fewer numbers do not excuse missing calculations. The default A0 now summarises the three stages visually rather than reproducing every district row.
+
+A0是讲清空间方案的展板：以全域总图/轴测为主，配功能、路网、景观、中心关系和必要节点图，并说明建设顺序。只保留直接支持尺度、容量、资源约束或分期判断的关键数字，标清范围与依据。完整分区分期的人口、住房、岗位、指标及来源表和日志放技术附件与机器文件；A0仍须有分期图，不用密集Excel式表格，也不改成满板数字卡片。不新增固定数字数量限制，更不取消计算义务。
