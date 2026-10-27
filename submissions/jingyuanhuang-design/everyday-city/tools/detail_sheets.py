@@ -31,6 +31,6 @@ f=d.new(19,'Infrastructure has a route, a capacity and a limit','Resource diagra
 a=f.add_axes([.05,.15,.9,.62]);a.axis('off');nodes=[(.02,.68,'Rooftop + yard PV\n20 MW scenario'),(.35,.68,'Battery / grid\n180 MWh / 20 MW'),(.70,.68,'Homes + services\n1 MW critical reserve'),(.02,.25,'Fresh supply\n751,748.4 m3/yr'),(.35,.25,'Treatment + reuse\n180,000 m3/yr reuse'),(.70,.25,'Farms + processing\nFixed pilot separate')]
 for x,y,s in nodes:
  a.add_patch(Poly([(x,y),(x+.26,y),(x+.26,y+.19),(x,y+.19)],transform=a.transAxes,facecolor='#dfd7c5',edgecolor=d.TEAL));a.text(x+.13,y+.095,s,transform=a.transAxes,ha='center',va='center',fontsize=12)
-for x1,y1,x2,y2 in [(.28,.775,.35,.775),(.61,.775,.70,.775),(.28,.345,.35,.345),(.61,.345,.70,.345),(.83,.68,.83,.44),(.48,.68,.48,.44)]:a.annotate('',xy=(x2,y2),xytext=(x1,y1),xycoords='axes fraction',arrowprops={'arrowstyle':'->','color':d.TEAL,'lw':2})
+for x1,y1,x2,y2 in [(.28,.775,.35,.775),(.61,.775,.70,.775),(.28,.345,.35,.345),(.61,.345,.70,.345),(.83,.68,.48,.44),(.48,.68,.48,.44)]:a.annotate('',xy=(x2,y2),xytext=(x1,y1),xycoords='axes fraction',arrowprops={'arrowstyle':'->','color':d.TEAL,'lw':2})
 f.text(.07,.115,'Grid, water and communications alignments are research assumptions. Waste, treatment, pressure, cable routes and utility approvals require specialist design.',size=10);d.finish(f,19,'resource-network')
 (P/'report/page-index.json').write_text(json.dumps(d.index,indent=2));print('19 formal English sheets')
