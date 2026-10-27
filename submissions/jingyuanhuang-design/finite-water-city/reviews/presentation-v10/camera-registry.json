@@ -1,0 +1,171 @@
+[
+  {
+    "id": "city-core-aerial",
+    "position_utm19s": [
+      575450,
+      6555500,
+      700
+    ],
+    "target_utm19s": [
+      574600,
+      6556850,
+      0
+    ],
+    "fov_degrees": 50,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": null,
+    "phase": "Hypothetical full build-out",
+    "label": "Southwest city / central and southern precincts / local aerial",
+    "scope": "Central and southern urban precincts; local aerial crop, not whole site",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/city-core-aerial.png",
+    "status": "rejected_trial_not_used_in_presentation"
+  },
+  {
+    "id": "city-overall",
+    "position_utm19s": [
+      579300,
+      6550100,
+      6200
+    ],
+    "target_utm19s": [
+      574300,
+      6555500,
+      0
+    ],
+    "fov_degrees": 42,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": null,
+    "phase": "Hypothetical full build-out",
+    "label": "Southwest complete city + independent productive system",
+    "scope": "Southwestern built settlement; not full competition territory",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/city-overall.png"
+  },
+  {
+    "id": "A03-aerial",
+    "position_utm19s": [
+      574360,
+      6555880,
+      300
+    ],
+    "target_utm19s": [
+      574075,
+      6556200,
+      0
+    ],
+    "fov_degrees": 43,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": null,
+    "phase": "Phase 1 node core with full-build-out urban context",
+    "label": "A03 market commons",
+    "scope": "Node camera crop",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/A03-aerial.png"
+  },
+  {
+    "id": "A03-eye",
+    "position_utm19s": [
+      574054,
+      6556181,
+      1.6
+    ],
+    "target_utm19s": [
+      574088,
+      6556248,
+      2
+    ],
+    "fov_degrees": 62,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": 1.6,
+    "phase": "Phase 1 node core with full-build-out urban context",
+    "label": "A03 public life",
+    "scope": "Node camera crop",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/A03-eye.png"
+  },
+  {
+    "id": "B03-aerial",
+    "position_utm19s": [
+      574500,
+      6551600,
+      900
+    ],
+    "target_utm19s": [
+      573850,
+      6552500,
+      0
+    ],
+    "fov_degrees": 44,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": null,
+    "phase": "P1-P3 full build-out; halls are staged 2 / 4 / 8 MW",
+    "label": "B03 eight compute halls and repair",
+    "scope": "Node camera crop",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/B03-aerial.png"
+  },
+  {
+    "id": "B03-eye",
+    "position_utm19s": [
+      573695,
+      6552589,
+      1.6
+    ],
+    "target_utm19s": [
+      573570,
+      6552440,
+      3
+    ],
+    "fov_degrees": 62,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": 1.6,
+    "phase": "P1-P3 full build-out; halls are staged 2 / 4 / 8 MW",
+    "label": "B03 protected worker approach",
+    "scope": "Node camera crop",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/B03-eye.png"
+  },
+  {
+    "id": "C03-aerial",
+    "position_utm19s": [
+      573440,
+      6556650,
+      650
+    ],
+    "target_utm19s": [
+      572950,
+      6557210,
+      0
+    ],
+    "fov_degrees": 44,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": null,
+    "phase": "Phase 2",
+    "label": "C03 eastern visitor edge and source seasonal wash",
+    "scope": "Node camera crop",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/C03-aerial.png"
+  },
+  {
+    "id": "C03-eye",
+    "position_utm19s": [
+      572983,
+      6557165,
+      1.6
+    ],
+    "target_utm19s": [
+      572795,
+      6557135,
+      0
+    ],
+    "fov_degrees": 62,
+    "aspect_ratio": 1.6,
+    "eye_height_above_terrain_m": 1.6,
+    "phase": "Phase 2",
+    "label": "C03 dry wash visitor edge",
+    "scope": "Node camera crop",
+    "geometry_source": "scene/geometry/",
+    "control_image": "controls/C03-eye.png"
+  }
+]

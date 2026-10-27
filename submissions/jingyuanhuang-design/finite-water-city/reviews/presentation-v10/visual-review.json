@@ -1,0 +1,55 @@
+{
+  "status": "presentation_review_not_final_submission_approval",
+  "selected_finished_views": 7,
+  "matched_controls": 7,
+  "selection": [
+    "city-overall",
+    "A03-aerial",
+    "A03-eye",
+    "B03-aerial",
+    "B03-eye",
+    "C03-aerial",
+    "C03-eye"
+  ],
+  "cover": "A03-aerial / centre district local aerial / presentation crop",
+  "whole_site_scope": "Issued boundary remains in the six-region plan; local cameras do not redefine the design scope",
+  "checks": {
+    "primary_public_centre": "Two long market halls and two open shade bands retained",
+    "productive_node": "Two rows of four compute halls, four repair workshops, one small utility building retained in selected aerial",
+    "seasonal_channel": "Source dry-wash course, angular edge path and one shade point retained; no standing water",
+    "landscape": "Rejected planted urban trees removed; dry background texture is illustrative",
+    "image_extent": "Local node images identified separately from the overall southwestern system view"
+  },
+  "rejected_trials": [
+    "First compute aerial merged eight compute halls into four and was excluded",
+    "First seasonal-wash aerial had oversized people and was excluded",
+    "First centre aerial had unsupported planted trees; a tree-removal revision was selected",
+    "Additional local-city trial closed separate bars into courtyard forms and was excluded"
+  ],
+  "limits": [
+    "Visual comparison is not pixel-perfect geometric certification; plans/geometry govern dimensions",
+    "AI surface textures, detailed finishes, minor equipment and people are illustrative",
+    "V10 worker-path yard-spur crossings still require controlled crossing detail; no new road safety approval is claimed",
+    "V9 resource rights, fixed-pilot demand, livelihood and civil/environmental verification remain unresolved"
+  ],
+  "documents": {
+    "agua-finita-v10-booklet.pdf": {
+      "pages": 23,
+      "sha256": "c720802ca918f6f5fa0d0b7b1b4913fdd89a30ab289899dbdae717a17f6a7e99"
+    },
+    "agua-finita-v10-technical-appendix.pdf": {
+      "pages": 9,
+      "sha256": "b869765444085687cb42b9148fb49510ee95dd110f99be043ccde6305fc5916e"
+    },
+    "agua-finita-v10-a0.pdf": {
+      "pages": 1,
+      "sha256": "88abb8a931cacfbd953105675e26d04f406dfb971b69092a81e293ea54f43421"
+    }
+  },
+  "pdf_visual_qa": {
+    "main": "All 23 pages rasterised and inspected; corrected cover title and clipped node section re-rendered",
+    "a0": "Final full-page raster inspected; updated local hero, all six node images, plans, programme and legends",
+    "appendix": "All 9 pages rasterised; controls kept separate from public imagery"
+  },
+  "pdf_export": "Original selected PNGs retained unchanged; PDF embeds photographic images as high-quality JPEG 95, no geometry or image layout change."
+}

@@ -1,0 +1,99 @@
+{
+  "status": "design_presentation_review_not_final_submission",
+  "main_pages": 23,
+  "sections": [
+    {
+      "page": 1,
+      "section": "cover"
+    },
+    {
+      "page": 2,
+      "section": "whole_site_regions"
+    },
+    {
+      "page": 3,
+      "section": "whole_site_framework"
+    },
+    {
+      "page": 4,
+      "section": "complete_urban_plan"
+    },
+    {
+      "page": 5,
+      "section": "overall_spatial_view"
+    },
+    {
+      "page": 6,
+      "section": "planning_structure"
+    },
+    {
+      "page": 7,
+      "section": "functional_programme"
+    },
+    {
+      "page": 8,
+      "section": "streets_mobility"
+    },
+    {
+      "page": 9,
+      "section": "ecology_landscape"
+    },
+    {
+      "page": 10,
+      "section": "land_use"
+    },
+    {
+      "page": 11,
+      "section": "public_space_services"
+    },
+    {
+      "page": 12,
+      "section": "overall_axonometric"
+    },
+    {
+      "page": 13,
+      "section": "shared_node_locator"
+    },
+    {
+      "page": 14,
+      "section": "node_A03_aerial"
+    },
+    {
+      "page": 15,
+      "section": "node_A03_eye_plan"
+    },
+    {
+      "page": 16,
+      "section": "node_B03_aerial"
+    },
+    {
+      "page": 17,
+      "section": "node_B03_eye_plan"
+    },
+    {
+      "page": 18,
+      "section": "node_C03_aerial"
+    },
+    {
+      "page": 19,
+      "section": "node_C03_eye_plan"
+    },
+    {
+      "page": 20,
+      "section": "phasing_map_and_totals"
+    },
+    {
+      "page": 21,
+      "section": "zone_phase_programme"
+    },
+    {
+      "page": 22,
+      "section": "resources_and_independent_operation"
+    },
+    {
+      "page": 23,
+      "section": "key_indicators"
+    }
+  ],
+  "technical_separate": true
+}

@@ -1,0 +1,48 @@
+{
+  "input_sha256": "4363a7295d527a092ce2c45b74fc2f1ce4ed865d6e9596741ac531743786813a",
+  "width": 1920,
+  "height": 1200,
+  "generator": "scripts/render_views.py 1.2.0",
+  "files": {
+    "city-overall.png": {
+      "sha256": "8c24270ca0044d42a1930d504aebc8cfc517feec85c9aac88e4be4720a030792",
+      "label": "Southwest complete city + independent productive system",
+      "time": "day"
+    },
+    "A03-aerial.png": {
+      "sha256": "b969cab9ae6ff28b2dd2259e5a5c72718b196cf6bf7711e37239e61ac0faa7f7",
+      "label": "A03 market commons",
+      "time": "day"
+    },
+    "A03-eye.png": {
+      "sha256": "9bf28383c48d60de52ba6f0e2c9a616083156c8e4ccb613769eea58b13f7b5e3",
+      "label": "A03 public life",
+      "time": "day"
+    },
+    "B03-aerial.png": {
+      "sha256": "5bc59c905a02e4c75f2214a2df10da6dfdbf395658c69b26eee002784c989bef",
+      "label": "B03 eight compute halls and repair",
+      "time": "day"
+    },
+    "B03-eye.png": {
+      "sha256": "ea0d92f2e9df51ae5938d8419b3654b7390b51dd268214464d8c805366a54703",
+      "label": "B03 protected worker approach",
+      "time": "day"
+    },
+    "C03-aerial.png": {
+      "sha256": "11690d719d19cd51dce13135f34ba3bcf538f00428b274d579e39987ea4c749c",
+      "label": "C03 eastern visitor edge and source seasonal wash",
+      "time": "day"
+    },
+    "C03-eye.png": {
+      "sha256": "44025e8eed49cf2bd468f29bb438d4491b619b9d69b6829d6dde2bdb9118d257",
+      "label": "C03 dry wash visitor edge",
+      "time": "day"
+    },
+    "city-core-aerial.png": {
+      "sha256": "632f6670483f50e7b22f2f4e26bf430cfaf3b5f12fdf0d26583d4bf3f8f656c0",
+      "label": "Southwest city / central and southern precincts / local aerial",
+      "time": "day"
+    }
+  }
+}
