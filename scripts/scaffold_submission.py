@@ -65,7 +65,7 @@ def main():
     for d in ("geometry", "figures", "drawings", "report", "media"):
         os.makedirs(os.path.join(pkg, d), exist_ok=True)
     for name in ("manifest.json", "metrics.json", "compliance_matrix.json", "assumptions.json", "sources.json",
-                 "image_provenance.json", "changelog.md", "design_depth_matrix.json"):
+                 "image_provenance.json", "changelog.md", "design_depth_matrix.json", "phasing_programme.json"):
         with open(os.path.join(tpl, name), encoding="utf-8") as f:
             text = fill(f.read(), ctx)
         with open(os.path.join(pkg, name), "w", encoding="utf-8") as f:

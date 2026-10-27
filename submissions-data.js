@@ -40,7 +40,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_passed": 9,
     "gates_pass": false,
     "design_content_review_status": "not_recorded_for_current_version",
-    "package_sha256": "0f08bb3a9902aa4227d2ff41dbdd3afc6ff4b6ca4784446b05205b4642a3afd8",
+    "package_sha256": "cf2e687c43ec9229ee7bf06c6e5c5926e9aa955d490d97a6eff12d1c1c1f27c5",
     "reviewed_package_sha256": null,
     "published": false,
     "featured": false,
@@ -66,79 +66,91 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3024280
+        3101693
       ],
       [
         "drawings/a3-booklet.pdf",
-        9109225
+        5209491
+      ],
+      [
+        "drawings/a3-technical-appendix.pdf",
+        4433077
+      ],
+      [
+        "drawings/presentation-index.json",
+        1081
       ],
       [
         "figures/fig-01-structure.png",
-        1244631
+        734946
       ],
       [
         "figures/fig-02-master-plan.png",
-        421082
+        414299
       ],
       [
         "figures/fig-03-land-use-density.png",
-        345953
+        363059
       ],
       [
         "figures/fig-04-movement.png",
-        385575
+        401163
       ],
       [
         "figures/fig-05-open-space-water.png",
-        286520
+        279798
       ],
       [
         "figures/fig-06-phasing.png",
-        889827
+        529134
       ],
       [
         "figures/fig-07-metrics.png",
-        270045
+        240207
+      ],
+      [
+        "figures/fig-08-node-location.png",
+        669412
       ],
       [
         "figures/node-A01-aerial.png",
-        2587533
+        3337874
       ],
       [
         "figures/node-A01-eye.png",
-        1841801
+        2394560
       ],
       [
         "figures/node-A01-plan.png",
-        54277
+        46255
       ],
       [
         "figures/node-A03-aerial.png",
-        2514483
+        3241777
       ],
       [
         "figures/node-A03-eye.png",
-        1772190
+        2293864
       ],
       [
         "figures/node-A03-plan.png",
-        41044
+        40583
       ],
       [
         "figures/node-C01-aerial.png",
-        2847216
+        3662401
       ],
       [
         "figures/node-C01-eye.png",
-        1752540
+        2275754
       ],
       [
         "figures/node-C01-plan.png",
-        117675
+        111413
       ],
       [
         "figures/stamp.json",
-        2021
+        2347
       ],
       [
         "geometry/buildings.geojson",
@@ -298,7 +310,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        35404
+        35684
       ],
       [
         "sources.json",
@@ -363,8 +375,8 @@ window.XCITY_SUBMISSIONS = [
     ],
     "example_status": null,
     "gates_total": 12,
-    "gates_passed": 12,
-    "gates_pass": true,
+    "gates_passed": 10,
+    "gates_pass": false,
     "design_content_review_status": "not_assessed",
     "package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
     "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
@@ -857,8 +869,8 @@ window.XCITY_SUBMISSIONS = [
     ],
     "example_status": null,
     "gates_total": 12,
-    "gates_passed": 12,
-    "gates_pass": true,
+    "gates_passed": 11,
+    "gates_pass": false,
     "design_content_review_status": "not_assessed",
     "package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
     "reviewed_package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",

@@ -265,7 +265,34 @@
         "agriculture",
         "energy"
       ],
-      "new_buildings_allowed": false
+      "new_buildings_allowed": false,
+      "under_panel_planting": {
+        "status": "organiser_confirmed",
+        "confirmed_on": "2026-10-27",
+        "source": "Organiser instruction, 2026-10-27",
+        "crops": [
+          {
+            "id": "forage_grass",
+            "name_en": "Forage grass",
+            "name_zh": "牧草"
+          },
+          {
+            "id": "jojoba",
+            "name_en": "Jojoba",
+            "name_zh": "荷荷巴",
+            "scientific_name": "Simmondsia chinensis"
+          }
+        ],
+        "retain_both": true,
+        "not_supplied": [
+          "crop_allocation",
+          "planting_ratios",
+          "irrigation_demand",
+          "yields",
+          "detailed_agronomic_parameters"
+        ],
+        "other_crops_or_animals_are_not_confirmed": true
+      }
     },
     "living": {
       "file": "pilot-area/pilot_living_area.geojson",
@@ -371,11 +398,51 @@
     },
     "planning_boundary": {
       "whole_site": "Fixed organiser-defined scope_9_13.geojson; the overall plan must cover the entire site.",
-      "phase_one": "Justify the first complete district within the whole-site structure; this does not reduce the overall planning boundary."
+      "phase_one": "Justify independently operable first-phase settlement areas and associated production/infrastructure within the whole-site structure. They may be spatially separate and require evidenced operational links; this does not reduce the overall planning boundary."
     },
-    "revision": "2026-10-26-consistency-2",
+    "revision": "2026-10-27-independent-extents",
     "matrix_version": 2,
-    "matrix_v1_compatibility": "Only the two organiser-listed legacy paths may retain v1 matrices. New directories must use v2; entrants cannot self-declare an earlier rule version."
+    "matrix_v1_compatibility": "Only the two organiser-listed legacy paths may retain v1 matrices. New directories must use v2; entrants cannot self-declare an earlier rule version.",
+    "spatial_relationships": {
+      "whole_site_required": true,
+      "node_colocation_required": false,
+      "all_nodes_in_urban_design_enlargement_required": false,
+      "all_nodes_in_master_area_required": false,
+      "single_contiguous_phase_one_required": false,
+      "render_view_determines_design_extent": false,
+      "each_node_requires_location_phase_and_system_role": true,
+      "dispersed_facilities_require_evidenced_operational_links": true,
+      "main_entrance_topic": "C01",
+      "main_entrance_in_overall_plan_required": true,
+      "detailed_main_entrance_only_if_selected": true
+    },
+    "construction_programme": {
+      "required": true,
+      "file": "phasing_programme.json",
+      "a0_map_required": true,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "fields": [
+        "zone_id",
+        "new_residents",
+        "cumulative_residents",
+        "new_dwellings",
+        "cumulative_dwellings",
+        "new_jobs",
+        "cumulative_jobs",
+        "objective",
+        "works",
+        "period",
+        "sequence_dependencies",
+        "trigger",
+        "basis"
+      ],
+      "capacity_ranges_allowed": true,
+      "calendar_dates_are_not_fixed": true
+    }
   },
   "public_submission_language": {
     "code": "en",

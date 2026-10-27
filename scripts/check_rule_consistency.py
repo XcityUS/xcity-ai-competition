@@ -14,8 +14,16 @@ def check():
   try:jsonschema.Draft202012Validator.check_schema(json.loads(schema_file.read_text()))
   except (ValueError,jsonschema.SchemaError) as e:errors.append(schema_file.name+': '+str(e))
  depth=data('brief/design-depth.json');req=data('brief/requirements.json')
+ planting=req['fixed_pilot_context']['agrivoltaic']['under_panel_planting']
+ need({c['id'] for c in planting['crops']}=={'forage_grass','jojoba'} and planting['retain_both'],'fixed under-panel crops differ')
+ need(depth['construction_programme']['a0_map_required'],'A0 construction phasing map missing')
  need(req['design_depth']==depth,'requirements/design-depth machine twins differ')
  need([x['id'] for x in depth['levels']]==['whole_site','phase_one','urban_design','nodes'],'four design levels changed')
+ spatial=depth['spatial_relationships']
+ for key in ['node_colocation_required','all_nodes_in_urban_design_enlargement_required','all_nodes_in_master_area_required','single_contiguous_phase_one_required','render_view_determines_design_extent']:
+  need(spatial[key] is False,'removed spatial freedom: '+key)
+ need(spatial['main_entrance_topic']=='C01' and spatial['main_entrance_in_overall_plan_required'],'main access omitted from overall plan')
+ need(data('brief/site-package/nodes/design_nodes.json')['spatial_relationships']==spatial,'node catalogue spatial policy differs')
  for payload,schema in [('brief/requirements.json','schema/requirements.schema.json'),('brief/agent_taskbook.json','schema/agent_taskbook.schema.json'),('templates/design_depth_matrix.json','schema/design_depth_matrix.schema.json'),('brief/site-package/evidence-index.json','schema/site-evidence.schema.json')]:
   for e in jsonschema.Draft202012Validator(data(schema)).iter_errors(data(payload)):errors.append(payload+': '+e.message)
  p=data('brief/practice-schedule.json')

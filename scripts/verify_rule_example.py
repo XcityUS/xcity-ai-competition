@@ -45,6 +45,16 @@ def run(destination,source_fixture=None):
  for metric in metrics['metrics']:
   if metric.get('key') in xc.COMPUTED_KEYS:metric['value']=computed[metric['key']]
  write('metrics.json',metrics)
+ programme=json.loads((ROOT/'templates/phasing_programme.json').read_text())
+ phase_geometry=read('geometry/phasing.geojson')
+ residents=next(m['value'] for m in metrics['metrics'] if m['key']=='residents_phase1')
+ for phase in programme['phases']:
+  n=phase['phase'];zid='qa-phase-'+str(n)
+  phase.update(period='Relative test interval; not a delivery forecast',objective='QA fixture only; no design approval',works=['Synthetic programme structure for checker test'],sequence_dependencies=['Verify resources before occupied development'],trigger='Specialist verification and capacity confirmation')
+  phase['zones']=[dict(zone_id=zid,name='QA test zone',basis='Synthetic zero-growth fixture; not a design forecast',new_residents=residents if n==1 else 0,cumulative_residents=residents if n==1 else 0,new_dwellings=0,cumulative_dwellings=0,new_jobs=0,cumulative_jobs=0)]
+  for feature in phase_geometry['features']:
+   if feature['properties']['phase']==n:feature['properties']['zone_id']=zid
+ write('geometry/phasing.geojson',phase_geometry);write('phasing_programme.json',programme)
  prop=(p/'proposal.md').read_text();(p/'proposal.md').write_text('QA INTEGRATION ONLY. Derived from jingyuanhuang-design/finite-water-city; no participant source is modified. Account normalisation and missing-data declarations test the tools, not design adequacy.\n\n'+prop)
  (p/'changelog.md').write_text('Organiser isolated fixture: v2 matrix, clipped metrics and partition normalisation. Original design credited; not submitted or approved.\n')
  for script in ['make_scene.py','finalize_submission.py']:

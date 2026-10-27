@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "map": "figures/fig-06-phasing.png",
+  "a0_board": "drawings/a0-board.pdf",
+  "phases": [
+    {
+      "phase": 1,
+      "period": "{{relative years or duration; assumptions}}",
+      "objective": "{{phase objective}}",
+      "works": [
+        "{{works and prerequisite infrastructure}}"
+      ],
+      "sequence_dependencies": [
+        "{{construction order and dependencies}}"
+      ],
+      "trigger": "{{observable start/expansion condition}}",
+      "zones": [
+        {
+          "zone_id": "{{same zone_id in geometry/phasing.geojson}}",
+          "name": "{{district or separate facility}}",
+          "new_residents": null,
+          "cumulative_residents": null,
+          "new_dwellings": null,
+          "cumulative_dwellings": null,
+          "new_jobs": null,
+          "cumulative_jobs": null,
+          "basis": "{{capacity assumptions; identify any bounds}}"
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "period": "{{relative years or duration; assumptions}}",
+      "objective": "{{phase objective}}",
+      "works": [
+        "{{works and prerequisite infrastructure}}"
+      ],
+      "sequence_dependencies": [
+        "{{construction order and dependencies}}"
+      ],
+      "trigger": "{{observable start/expansion condition}}",
+      "zones": [
+        {
+          "zone_id": "{{same zone_id in geometry/phasing.geojson}}",
+          "name": "{{district or separate facility}}",
+          "new_residents": null,
+          "cumulative_residents": null,
+          "new_dwellings": null,
+          "cumulative_dwellings": null,
+          "new_jobs": null,
+          "cumulative_jobs": null,
+          "basis": "{{capacity assumptions; identify any bounds}}"
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "period": "{{relative years or duration; assumptions}}",
+      "objective": "{{phase objective}}",
+      "works": [
+        "{{works and prerequisite infrastructure}}"
+      ],
+      "sequence_dependencies": [
+        "{{construction order and dependencies}}"
+      ],
+      "trigger": "{{observable start/expansion condition}}",
+      "zones": [
+        {
+          "zone_id": "{{same zone_id in geometry/phasing.geojson}}",
+          "name": "{{district or separate facility}}",
+          "new_residents": null,
+          "cumulative_residents": null,
+          "new_dwellings": null,
+          "cumulative_dwellings": null,
+          "new_jobs": null,
+          "cumulative_jobs": null,
+          "basis": "{{capacity assumptions; identify any bounds}}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": "XCITY-DESIGN-NODES",
-  "version": 4,
+  "version": 5,
   "rule_en": "Choose exactly one node from each group, three nodes total. This rule applies to all submissions.",
   "render_required_en": "Each node must include renders: at least one aerial and one eye-level render, plus a plan or section. Sequences, video and animation are encouraged.",
   "nodes": [
@@ -37,14 +37,15 @@
     {
       "id": "B03",
       "en": "A compute campus and its waste heat",
-      "brief_en": "Halls, substation, cooling and where the heat goes - who uses the waste heat decides how close it sits to people.",
+      "brief_en": "Compute halls or multiple campuses, substations, cooling, maintenance and credible heat users. Locate by power, water, cooling, transport, operational and safety conditions. A campus may be separate from housing and other nodes; waste-heat use requires justified temperature, distance and network assumptions, not forced adjacency.",
       "zh": "算力中心与它的余热"
     },
     {
       "id": "C01",
       "en": "Entrance and arrival sequence",
-      "brief_en": "The first kilometre from the regional road into the city: where people, vehicles and goods part, and what the city looks like at first sight.",
-      "zh": "城市入口与到达序列"
+      "brief_en": "The main entrance(s), regional approach and arrival sequence: how people, public transport, service and freight movements enter and separate, including public address, orientation and safe access. Identify existing versus proposed off-site links and unconfirmed rights; no regional road inside the site is implied. All schemes show main access in the whole-site plan; detailed entrance design is required only when C01 is selected.",
+      "zh": "城市入口与到达序列",
+      "brief_zh": "主入口、区域接入与到达序列：说明人、公共交通、服务与货运如何进入、分流，以及识别、导向和安全到达。区分既有与拟建的场外连接及未确认权利，不得暗示场内已有国道。所有方案须在全域规划中交代主要接入；选中C01时才要求入口节点详细设计。"
     },
     {
       "id": "C02",
@@ -101,5 +102,18 @@
       ],
       "code": "C"
     }
-  ]
+  ],
+  "spatial_relationships": {
+    "whole_site_required": true,
+    "node_colocation_required": false,
+    "all_nodes_in_urban_design_enlargement_required": false,
+    "all_nodes_in_master_area_required": false,
+    "single_contiguous_phase_one_required": false,
+    "render_view_determines_design_extent": false,
+    "each_node_requires_location_phase_and_system_role": true,
+    "dispersed_facilities_require_evidenced_operational_links": true,
+    "main_entrance_topic": "C01",
+    "main_entrance_in_overall_plan_required": true,
+    "detailed_main_entrance_only_if_selected": true
+  }
 }

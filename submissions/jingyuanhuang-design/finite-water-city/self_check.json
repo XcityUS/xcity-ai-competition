@@ -1,13 +1,13 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.2.0",
-  "checked_at": "2026-10-27T04:57:08+00:00",
+  "checked_at": "2026-10-27T05:21:58+00:00",
   "package": "submissions/jingyuanhuang-design/finite-water-city",
   "package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
   "gates_total": 12,
-  "gates_passed": 12,
-  "pass": true,
-  "automated_compliance_status": "passed",
+  "gates_passed": 11,
+  "pass": false,
+  "automated_compliance_status": "failed",
   "design_content_review": {
     "status": "not_assessed",
     "note": "Automated gates do not establish design adequacy or organiser approval."
@@ -256,8 +256,10 @@
     {
       "id": "GATE-G12-DEPTH",
       "title": "Design evidence and presentation packaging (quality not assessed automatically)",
-      "pass": true,
-      "messages": [],
+      "pass": false,
+      "messages": [
+        "Missing/invalid phasing_programme.json; use the template and provide actual phase/zone capacity and sequence data"
+      ],
       "notes": [
         "Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review."
       ]

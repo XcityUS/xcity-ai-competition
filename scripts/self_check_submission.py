@@ -570,6 +570,10 @@ def check(pkg_path, write=True):
             elif rel.startswith("media/") and rel not in reg:
                 g12.fail("node %s: %s is not registered in image_provenance.json" % (nid, rel))
 
+    import phasing_programme
+    for error in phasing_programme.assess(pkg):
+        g12.fail(error)
+
     g12.note("Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
     gates = [G[g["id"]].out() for g in EVAL["gates"]]
     result = {

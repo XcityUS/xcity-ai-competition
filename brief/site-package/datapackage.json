@@ -125,7 +125,7 @@
       "path": "nodes/design_nodes.json",
       "mediatype": "application/json",
       "description": "Ten key nodes - choose one from each of three groups",
-      "hash": "sha256:2f80f51852d13015729c184106485ae9fa454bcca9a5c655a5660e6bedced28f"
+      "hash": "sha256:b3b005364f127786288f975dd8e8385341671cda6f572fa2bf20a3b1cd22c5ca"
     },
     {
       "name": "areas",

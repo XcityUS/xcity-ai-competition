@@ -91,7 +91,7 @@ Each issue is placed in the whole-site plan and phase one, with its phase. Relat
 
 ## 4. Given conditions
 
-- **The pilot area is not open to design**: agrivoltaic fields 01–03 (13.9 km²; the symbiotic system of jojoba, rosemary, forage cactus and alpaca under the arrays keeps its layout) and the living quarter, phase 1 (2.48 km², outline only). A scheme meets it; it does not redraw it.
+- **The pilot area is not open to design**: agrivoltaic fields 01–03 (13.9 km²; the confirmed under-panel forage grass and jojoba programme is retained; crop allocation and agronomic quantities are not supplied) and the living quarter, phase 1 (2.48 km², outline only). A scheme meets it; it does not redraw it.
 - **Compute is placed as POD clusters**: XCITY's modular data centres, near the solar connection points. Their layout, service roads, waste heat and buffers are for the design.
 - The site conditions every design answers — water, earthquakes, the Zonda, dry channels, dark sky, the missing road, phase one standing on its own — are in `brief/site-conditions.en.md`.
 

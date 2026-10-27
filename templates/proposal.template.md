@@ -55,7 +55,7 @@
 
 ## 10. Key nodes
 
-> Locate all three together before the detailed sections. For each: identify location/phase and users, explain arrival/staying/service/emergency movement, spatial organisation and normal/abnormal operation, necessary dimensions and how it tests the overall city promise. Select necessary sections/elevations for its question; combined drawings are welcome. Three nodes, exactly one from each group (brief/site-package/nodes/design_nodes.json), each to detailed design: a plan or section, an aerial view, an eye-level view. Say why these three. make_figures.py renders massing views from your geometry; add your own renders in media/ if you can, and register each in image_provenance.json.
+> Locate all three on a whole-site locator before the detailed sections; use separate insets for dispersed nodes. For each: identify location/phase and users, explain arrival/staying/service/emergency movement, spatial organisation and normal/abnormal operation, necessary dimensions and how it tests the overall city promise. Select necessary sections/elevations for its question; combined drawings are welcome. Three nodes, exactly one from each group (brief/site-package/nodes/design_nodes.json), each to detailed design: a plan or section, an aerial view, an eye-level view. Say why these three. make_figures.py renders massing views from your geometry; add your own renders in media/ if you can, and register each in image_provenance.json.
 
 ### {{node_1}}
 
@@ -99,3 +99,16 @@
 ## Final public submission language
 
 Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.
+
+
+### Independent design extents and dispersed nodes
+
+The overall plan covers the entire issued site. Distinguish (1) whole-site planning, (2) actual first-phase construction and associated facilities, (3) the urban-design enlargement, (4) each selected node and (5) rendering camera frames. These are not interchangeable boundaries. The enlargement may contain some or none of the three selected nodes. Nodes need not adjoin, share one district, fall within master_area.geojson, or all be built in the first phase. State each node’s location, phase, users and role in the whole-site plan. First-phase completeness means independently operable living and production systems, with evidenced transport, power, water, communications and other relevant connections; it does not mandate a single contiguous footprint. Keep local land-use/FAR/GFA statistics separate from off-area facilities and their indicators. Do not force a compute campus beside housing or a heat user just to group nodes; justify buffers, cooling and any actual heat network. Camera crops illustrate a design; they do not define its scope.
+
+C01 includes the **main entrance and arrival sequence**. All schemes must locate and explain main access, regional connections and people/freight separation in the overall plan even when C01 is not selected; full entrance-node detailing is required only if C01 is selected. The ten topics are optional deepening choices within three groups, not a licence to omit essential city systems from the overall plan. A01/B03/C02 is one valid selection, not a mandatory selection or adjacency model. Use a whole-site locator plus separate, consistently labelled detail insets for dispersed nodes; never crop an outlying node out or draw a fictitious direct link.
+
+### A0 construction phasing map and programme
+
+The A0 board must show a legible, labelled Phase 1/2/3 zoning map and a matching programme table. Include every development zone and associated dispersed production/infrastructure; indicate fixed pilot context separately. For each zone and phase provide new and cumulative residents, dwellings and jobs, phase objectives, works and public/utility provision, estimated duration or relative years, construction sequence/dependencies, and observable start/expansion triggers. Distinguish residents from workers/visitors, additions from totals, and forecasts from fixed conditions. Capacity ranges are allowed with assumptions. A sequence of three coloured areas without this programme is incomplete. Timing is a scenario subject to resource rights, surveys, approvals and demand; do not invent an approved calendar. Totals must reconcile by phase and with metrics.json (including phase-one residents). Areas, phases and district IDs must match geometry/phasing.geojson; separate facilities may share a phase without being adjacent.
+
+Provide `phasing_programme.json` using `templates/phasing_programme.json`; reference the map and A0 board. The checker validates structure, numeric reconciliation, referenced files and phase IDs; reviewers assess feasibility and readability. Automatic checks do not approve the construction programme.

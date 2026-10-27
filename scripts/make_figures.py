@@ -643,7 +643,7 @@ def panel_phasing(pkg, ax, compact=False):
         n = int(p.get("phase", 0) or 0)
         fill(ax, g, PHASE_COLORS.get(n, "#DDD"), ec=INK, lw=0.5, alpha=0.85, z=3 + (4 - n))
         c = g.representative_point()
-        ax.text(c.x, c.y, str(n), fontsize=11 if not compact else 22, fontweight="bold", color=INK, zorder=10,
+        ax.text(c.x, c.y, str(n)+( " · "+str(p["zone_id"]) if p.get("zone_id") else ""), fontsize=11 if not compact else 22, fontweight="bold", color=INK, zorder=10,
                 ha="center", va="center")
     channels(ax, pkg, primary=False, z=9)
     allg = unary_union([g for _, g in pkg.geo["phasing"]] + ([pkg.master] if pkg.master is not None else []))
@@ -2108,6 +2108,7 @@ def a0_board(pkg):
     panel_movement(pkg, ax3, compact=True)
     ax4 = fig.add_axes([0.77, 0.53, 0.20, 0.17])
     panel_phasing(pkg, ax4, compact=True)
+    ax4.set_title("PHASE 1 / 2 / 3 · construction zones and sequence", fontsize=13, loc="left")
     ax5 = fig.add_axes([0.45, 0.39, 0.52, 0.14])
     ax5.set_axis_off()
     m = pkg.man
@@ -2115,6 +2116,23 @@ def a0_board(pkg):
                     ("Declared trade-off", "%s. Why: %s. Who bears it: %s" % (
                         m.get("tradeoff", {}).get("objective", ""), m.get("tradeoff", {}).get("why", ""),
                         m.get("tradeoff", {}).get("who_bears", "")))], fs=17, width=150)
+    programme_path=os.path.join(pkg.dir,'phasing_programme.json')
+    if os.path.isfile(programme_path):
+        programme=xc.load_json(programme_path)
+        ax5.clear();ax5.set_axis_off()
+        rows=[]
+        def capacity(value):
+            return ('%s–%s' % (value.get('min'),value.get('max'))) if isinstance(value,dict) else str(value)
+        for phase in programme.get('phases',[]):
+            for zone in phase.get('zones',[]):
+                counts=' / '.join(capacity(zone.get('new_'+k))+' → '+capacity(zone.get('cumulative_'+k)) for k in ['residents','dwellings','jobs'])
+                delivery=phase.get('period','')+'; '+phase.get('objective','')+'; works: '+', '.join(phase.get('works',[]))+'; '+', '.join(phase.get('sequence_dependencies',[]))+'; trigger: '+phase.get('trigger','')
+                rows.append([str(phase.get('phase'))+' · '+zone.get('zone_id',''),textwrap.fill(counts,48),textwrap.fill(delivery,100)])
+        if rows:
+            table=ax5.table(cellText=rows,colLabels=['Phase / zone','Residents / dwellings / jobs: new → cumulative','Period, objective, sequence and trigger'],colWidths=[.13,.33,.54],loc='upper left',cellLoc='left')
+            table.auto_set_font_size(False);table.set_fontsize(max(7,min(13,45/(len(rows)+1))))
+            for (ri,ci),cell in table.get_celld().items():
+                cell.set_height(1/(len(rows)+1));cell.set_edgecolor('#D2CFC6');cell.set_facecolor(PAPER)
     nodes = list(pkg.nodes)[:3]
     for i, nid in enumerate(nodes):
         x = 0.03 + i * 0.32
@@ -2204,14 +2222,14 @@ def node_location_text(pkg, nid):
 
 
 def node_locator(pkg, size=A3):
-    fig = new_page(pkg, size, 'LOCATOR', 'Whole site > master design area > three nodes',
+    fig = new_page(pkg, size, 'LOCATOR', 'Whole-site locator and independent node locations',
                    'The same node IDs are used on the plans, images and technical evidence')
     a=fig.add_axes([.03,.31,.32,.55]);panel_structure(pkg,a)
     a.set_title('Whole-site location of the master design area',fontsize=8,loc='left')
     b=fig.add_axes([.38,.31,.59,.55])
     extent=unary_union([pkg.master]+[g for _,g in pkg.nodes.values()]).buffer(600)
     panel_master(pkg,b,window=fit_aspect(extent.bounds,ax_aspect(b)))
-    b.set_title('Master-area enlargement: selected nodes and movement networks',fontsize=8,loc='left')
+    b.set_title('Combined locator extent; not a single district or construction boundary',fontsize=8,loc='left')
     for i,nid in enumerate(pkg.man.get('nodes',[])):
         p,g=pkg.nodes[nid];c=g.representative_point()
         ax=fig.add_axes([.03+i*.32,.07,.30,.19])

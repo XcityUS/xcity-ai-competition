@@ -27,7 +27,7 @@ Two parts, both in the south-west parcel, both planned by XCITY. **Neither is op
 
 | | |
 |---|---|
-| Agrivoltaic fields 01–03 | 13.9 km² of outline. Under the arrays a symbiotic system of jojoba, rosemary, forage cactus and alpaca is already running; its layout is fixed |
+| Agrivoltaic fields 01–03 | 13.9 km² of outline. Forage grass and jojoba are the organiser-confirmed under-panel crops. Retain this fixed programme; planting allocation, ratios, irrigation demand and yields are not supplied |
 | Living quarter, phase 1 | 2.48 km² in the south of the south-west parcel: the city's first neighbourhood. Only its outline is published |
 
 Data: `site-package/pilot-area/`. The city grows beside the pilot area, and how it meets it is part of every design.
