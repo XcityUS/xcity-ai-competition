@@ -11,15 +11,15 @@
 | | |
 |---|---|
 | The main parcel | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
-| The south-west parcel | 172.839555 km² |
+| The south-west parcel | 174.975145 km² (current corrected geometry) |
 | The site | About 1,656 km² nominal project area; current geometric area and revision are recorded in `site-package/boundaries/boundary-revision.json`: `site-package/boundaries/scope_9_13.geojson` |
-| Slope < 2% | 1,183.6 km²; the previous hydrology screening identifies about 686 km² outside its flood-sensitive band |
+| Slope < 2% | 1,185.7 km²; the previous hydrology screening identifies about 686 km² outside its flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
 | Flood-sensitive | 503 km², along the seasonal channels |
 | Elevation | 606–2,658 m, median 675 m |
 | Roads | **No existing national or provincial road on site.** Nearest: RN 40 about 27.6 km; RP 510 about 35.6 km; RN 20 about 40.7 km |
 
-All core construction geometry lies inside the site boundary. Optional external access/resource research belongs in separate context/ evidence, labelled study_only and not_secured; it is excluded from construction and land accounts and confers no external rights. The seam closure fills two internal slivers (approximately 0.304419 km²) without moving the source parcels’ combined external outline. The added seam has terrain coverage but no rerun flood/HAND classification; it is not confirmed non-flood-sensitive land. Existing archived entries are not rewritten. See the boundary revision record and `terrain/terrain_summary_9_13.json`.
+All core construction geometry lies inside the site boundary. Optional external access/resource research belongs in separate context/ evidence, labelled study_only and not_secured; it is excluded from construction and land accounts and confers no external rights. The issued 2026-10-27-open-seam-closure revision fills the two internal seam holes (0.304419 km²) and the explicit formerly open slit (2.135589 km²), for 2.440008 km² added and 1,658.819819 km² total geometric area. Only the authorised junction correction changes the earlier outline; all other exterior edges are retained. The added land has terrain coverage but no rerun flood/HAND classification and is not confirmed non-flood-sensitive land. Archived source geometry is historical, not the current boundary. See the boundary revision record and `terrain/terrain_summary_9_13.json`.
 
 ## 2. The pilot area — protected
 

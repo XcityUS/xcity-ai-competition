@@ -57,7 +57,7 @@ def columns(items,y=143,size=11):
 base('X C I T Y · SAN JUAN, ARGENTINA','')
 image('site-context.png',375,0,467,H)
 txt('XCITY',50,151,31,INK);txt('International',50,206,26,INK);txt('Masterplanning &',50,241,26,INK);txt('Urban Design Competition',50,276,23,INK);txt('Professional Practice Track',50,331,14,GRAY)
-para('Design Brief\nApproximately 1,656 km²\nSite-wide framework · Phase 1 · Focus areas',50,409,290,10)
+para('Design Brief\nApproximately 1,656 km²\nSite-wide framework · Complete city layout · Focus areas',50,409,290,10)
 para('Initial ideas of up to 10 pages → Five shortlisted teams\nTotal design honoraria and awards: US$300,000',50,490,300,9)
 # 02
 base('CONTENTS','Contents')
@@ -66,7 +66,7 @@ for i,(n,t) in enumerate(items):
  col=i//8;row=i%8;x=50+col*385;y=131+row*46;txt(n,x,y,10,GRAY);txt(t,x+45,y,11.5,INK);line(y+30,x,352)
 # 03
 base('01 · COMPETITION OVERVIEW','Competition overview')
-para('XCITY proposes a new city in San Juan Province, Argentina, with energy, computing and productive land at its foundation. This competition invites professional practices and multidisciplinary consortia to develop a site-wide framework, a Phase 1 urban design and proposals for key places within the city.',50,121,742,11)
+para('XCITY proposes a new city in San Juan Province, Argentina, with energy, computing and productive land at its foundation. This competition invites professional practices and multidisciplinary consortia to develop a site-wide framework, a complete city layout across all proposed phases, and urban-design studies of key places.',50,121,742,11)
 table(['Item','Requirement'],[
 ['Location and site','San Juan Province, in the Andean foothills of western Argentina. Competition area: approximately 1,656 km².'],
 ['Early works area','Fixed pilots: agrivoltaic fields 01–03 (13.9 km²) and the Phase 1 living quarter (2.48 km², outline only). XCITY delivers both; proposals connect to them without redesigning them.'],
@@ -172,8 +172,8 @@ para('Common Phase 1 reference: 50,000 residents; 20,000 jobs; 200 MW computing 
 base('07 · DESIGN SCOPE','Scope and level of detail')
 table(['Level','Extent and purpose','Required evidence'],[
 ['Site-wide framework','Cover the full competition area of approximately 1,656 km². Study regional connections beyond the boundary where necessary.','Positioning, development capacity, the five systems, ecology, water, transport, utilities and phasing. Indicative drawing scales: 1:50,000–1:100,000.'],
-['Phase 1 urban design','Select and justify the location and extent. No fixed focus-area size is prescribed. Establish a complete first phase that can operate.','Masterplan, land use, streets, public services, open space, utility interfaces, density, height and delivery. Indicative scales: 1:10,000–1:5,000.'],
-['Urban design studies','Choose a coherent area or connected areas. Explain the selection, capacity and relationship to the wider systems.','Blocks, plots, building massing, public frontages, servicing, key sections and consistent metrics that test the Phase 1 plan.'],
+['Complete city layout','Locate all proposed districts and construction phases. Phase 1 must operate independently; it does not limit the design scope.','Masterplan, land use, streets, services, open space, utility interfaces, density and height; capacities and sequence for every phase. Indicative scales: 1:10,000–1:5,000.'],
+['Urban design studies','Choose a coherent area or connected areas. Explain the selection, capacity and relationship to the wider systems.','Blocks, plots, building massing, public frontages, servicing, key sections and consistent metrics that test the complete city layout.'],
 ['Focus areas and strategies','Address the topics on the following page. Combine related topics where useful; isolated landmarks do not substitute for urban design.','Local plans, sections, spatial prototypes, circulation and operational relationships. Indicative local scales: 1:1,000–1:500, with larger sections where needed.']],[132,300,310],y=139,size=10,minh=88)
 para('Choose scales to suit the drawing and its purpose. Include boundaries, north arrows, scales, legends and key dimensions. This is a concept planning and urban design competition; statutory submissions, surveys, detailed engineering and construction documents are outside its scope.',50,520,742,8,GRAY)
 #17
@@ -228,7 +228,7 @@ base('12 · SUBMISSION REQUIREMENTS','Submission requirements')
 para('Stage 1: initial ideas of up to 10 pages, submitted as a PDF, which may be exported from PowerPoint. Eligibility documents, team details and references are separate and do not count towards the 10-page limit. A full design is not required; Stage 1 is unpaid.',50,122,742,10.5)
 table(['Stage 2 deliverable','Required content'],[
 ['Site-wide framework','Regional and site analysis; spatial structure; the five systems; ecology and water; transport and logistics; utilities and phasing; development capacity and its basis.'],
-['Phase 1 urban design','Masterplan; land use and programme; streets and public transport; services and open space; utility interfaces; density, height and delivery plan.'],
+['Complete city layout','Masterplan for all phases; land use and programme; streets and public transport; services and open space; utility interfaces; density, height and delivery plan.'],
 ['Urban design studies','Blocks and plots; building massing and frontages; service routes; key sections; design guidance and metrics for the same area.'],
 ['Focus areas and strategies','Local plans; building, landscape and infrastructure interfaces; key sections; use and operating scenarios; representative spatial views.'],
 ['Technical information','Editable metrics and supporting calculations; resource and phasing analysis; assumptions and sources; the CAD/GIS files and models used, with coordinates, layers and viewing instructions.'],

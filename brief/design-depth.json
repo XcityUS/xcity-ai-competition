@@ -25,18 +25,17 @@
       ]
     },
     {
-      "id": "phase_one",
-      "title": "Complete phase-one district",
-      "question_zh": "即使后续不建设，也能完整生活和生产",
-      "question_en": "Life and production remain complete if later phases never happen",
-      "spatial_evidence": "Master plan; roads, public services, production, utilities and first works",
+      "id": "overall_layout",
+      "title": "Complete city layout and phased implementation",
+      "question_zh": "完整城市如何组织、容纳多少人，并按什么顺序建设",
+      "question_en": "How the complete city is organised, its capacities and construction sequence",
+      "spatial_evidence": "Complete district/system layout across all development phases; population and jobs by district and phase; access, services, resource networks and first works",
       "decisions": [
-        "Construction boundary and complete functions",
-        "Residents, jobs, housing and services",
-        "People, machine, logistics and emergency networks",
-        "Water, electricity, wastewater, waste and maintenance",
-        "Necessary external infrastructure and first works",
-        "Independent operation if later phases stop"
+        "Complete planned development extent and capacities across all phases",
+        "District hierarchy, living and production relationships",
+        "Public-service and utility locations, scale and connections",
+        "Phase 1/2/3 construction extents, objectives, durations, dependencies and triggers",
+        "Independent operation of the first phase if later works stop"
       ]
     },
     {
@@ -83,9 +82,10 @@
   },
   "planning_boundary": {
     "whole_site": "Fixed organiser-defined scope_9_13.geojson; the overall plan must cover the entire site.",
-    "phase_one": "Justify independently operable first-phase settlement areas and associated production/infrastructure within the whole-site structure. They may be spatially separate and require evidenced operational links; this does not reduce the overall planning boundary."
+    "phase_one": "Justify independently operable first-phase settlement areas and associated production/infrastructure within the whole-site structure. They may be spatially separate and require evidenced operational links; this does not reduce the overall planning boundary.",
+    "overall_layout": "The full planned city and associated facilities across all development phases, not only the first district. Urban-design enlargements may be one or multiple coherent areas and need not contain all nodes."
   },
-  "revision": "2026-10-27-independent-extents",
+  "revision": "2026-10-27-complete-city-layout",
   "matrix_version": 2,
   "matrix_v1_compatibility": "Only the two organiser-listed legacy paths may retain v1 matrices. New directories must use v2; entrants cannot self-declare an earlier rule version.",
   "spatial_relationships": {
@@ -127,5 +127,15 @@
     ],
     "capacity_ranges_allowed": true,
     "calendar_dates_are_not_fixed": true
+  },
+  "representation_evidence": {
+    "procedural_planting_default": false,
+    "procedural_pv_default": false,
+    "illustrative_entourage_default": false,
+    "roof_pv_requires_explicit_building_property": true,
+    "water_channel_requires_explicit_design_property": true,
+    "illustration_is_capacity_evidence": false,
+    "scene_policy_and_renderer_in_cache_fingerprint": true,
+    "visual_geometry_review_required": true
   }
 }

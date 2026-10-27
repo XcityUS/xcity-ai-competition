@@ -5,10 +5,10 @@
 
 The scene is made only from the package's own geometry plus the site package's terrain:
 buildings are extruded from buildings.geojson (floors x 3.5 m or height_m), ground from land_use.geojson,
-streets from movement.geojson, PV tables fill energy land, trees line the shaded walking routes and fill
-open space and orchards, people, delivery robots and freight are placed on their networks, and the sun is
-computed for San Juan. Entourage (trees, people, vehicles, PV tables) is generated deterministically from
-the geometry: it illustrates the design and is not evidence.
+streets from movement.geojson, and the sun is computed for San Juan. Roof PV and water channels
+require explicit source properties; a shaded route does not imply a canal. Procedural planting,
+PV tables and illustrative people/vehicles require separate manifest.scene_generation opt-ins.
+Such additions are illustrative, never measured assets, agronomic evidence or installed capacity.
 
 Open visual/index.html in any browser to orbit the scene and save views. To render the named views as
 PNG files for the drawings, run scripts/render_views.py.
@@ -211,7 +211,7 @@ class Scene:
             for pg in polys(g):
                 r = rings(pg.simplify(0.05), self.o)
                 r.update({"use": p.get("use"), "h": round(hgt, 2), "form": p.get("form", ""),
-                          "ground_shop": p.get("use") == "mixed_use", "name": p.get("name", "")})
+                          "ground_shop": p.get("use") == "mixed_use", "name": p.get("name", ""), "roof_pv": bool(p.get("roof_pv", False))})
                 if p.get("form") == "canopy":
                     r["h"] = float(p.get("height_m") or 4.5)
                     r["pv"] = "pv" in str(p.get("name", "")).lower()
@@ -231,6 +231,8 @@ class Scene:
         pv_area = [g for p, g in self.geo["land_use"] if p.get("use") == "energy"]
         ring = self.master.buffer(1500).difference(self.master)
         pv_area += [g.intersection(ring) for p, g in self.geo["structure"] if p.get("system") == "energy_compute"]
+        if not self.man.get("scene_generation", {}).get("procedural_pv", False):
+            pv_area = []  # Explicit opt-in only: energy land is not a module layout.
         bu = unary_union(self.buildings).buffer(6) if self.buildings else None
         roads_u = unary_union([g.buffer(WIDTH.get(p.get("network"), 5)) for p, g in self.geo["movement"]
                                if g.geom_type.endswith("LineString")])
@@ -258,12 +260,11 @@ class Scene:
                 if len(rows) > 60000:
                     break
         d["pv_rows"] = rows[:60000]
-        # roof PV on a share of the flat roofs (and all compute, industry and logistics roofs)
+        # Roof PV is shown only when the submitted building explicitly declares it.
         for b in d["buildings"]:
             if b.get("form") != "canopy":
                 u = b.get("use")
-                b["roof_pv"] = u in ("compute", "industry", "logistics") or (
-                    u in ("residential", "mixed_use", "civic") and self.rand.random() < 0.35)
+                b["roof_pv"] = bool(b.get("roof_pv", False))  # No random installations.
         # trees: [x, y, size, rotation, type]  type 0 broad shade tree, 1 poplar windbreak, 2 olive / orchard
         R = self.rand
         trees, shrubs = [], []
@@ -279,88 +280,89 @@ class Scene:
         def add(x, y, size, typ):
             trees.append([*self.L(x, y), round(size, 2), round(R.random() * 6, 2), typ])
 
-        for p, g in self.geo["movement"]:
-            if p.get("network") in ("people", "shared") and p.get("shaded") and g.geom_type.endswith("LineString"):
-                wd = float(p.get("width_m") or WIDTH[p["network"]])
-                offs = [1.2] if wd < 12 else [wd / 2 - 2.2, wd / 2 - 6.5] if wd >= 30 else [wd / 2 - 2.2]
-                step = 8.0 if wd >= 12 else 9.0
-                for ln in lines(g):
-                    n = int(ln.length // step)
-                    for k in range(1, n):
-                        a = ln.interpolate(k * step)
-                        b = ln.interpolate(min(ln.length, k * step + 1))
-                        dx, dy = b.x - a.x, b.y - a.y
-                        nn = math.hypot(dx, dy) or 1
-                        for off in offs:
-                            for sgn in ((-1, 1) if wd >= 12 else ((-1,) if k % 2 else (1,))):
-                                q = Point(a.x - dy / nn * off * sgn, a.y + dx / nn * off * sgn)
-                                if not bfoot.contains(q) or (wd < 12 and not bhard.contains(q)):
-                                    add(q.x, q.y, (0.85 if wd >= 12 else 0.62) + R.random() * 0.3, 0)
-        washes = unary_union([xc.to_utm(g).buffer(60 if p.get("class") == "main" else 30) for p, g in xc.channels()])
-        for p, g in self.geo["land_use"]:
-            use, nm = p.get("use"), str(p.get("name", "")).lower()
-            for pg in polys(g.intersection(W)):
-                bx0, by0, bx1, by1 = pg.bounds
-                near = pg.centroid.distance(centre) < 3500
-                if use == "agriculture" and any(k in nm for k in ("orchard", "olive", "pistachio", "vine")):
-                    sx, sy = (7.0, 6.0) if near else (14.0, 12.0)
-                    for xx in np.arange(bx0 + 3, bx1, sx):
-                        for yy in np.arange(by0 + 3, by1, sy):
-                            if pg.contains(Point(xx, yy)) and len(trees) < 90000:
-                                add(xx, yy, 0.6 + R.random() * 0.15, 2)
-                elif any(k in nm for k in ("alameda", "windbreak", "tree belt")):
-                    # poplar rows parallel to the long side, every 4 m along, rows 5 m apart
-                    long_ns = (by1 - by0) >= (bx1 - bx0)
-                    if "slope" in nm:      # a belt along the top edge of a slope park
-                        band = box(bx0, by1 - 30, bx1, by1) if not long_ns else box(bx0, by0, bx0 + 30, by1)
-                        band = band.intersection(pg)
-                    else:
-                        band = pg
-                    b0 = band.bounds if not band.is_empty else pg.bounds
-                    for r_ in range(4):
-                        for t_ in np.arange(0, (b0[3] - b0[1]) if long_ns else (b0[2] - b0[0]), 4.0):
-                            xx = (b0[0] + 6 + r_ * 5) if long_ns else (b0[0] + t_)
-                            yy = (b0[1] + t_) if long_ns else (b0[3] - 6 - r_ * 5)
-                            q = Point(xx, yy)
-                            if band.contains(q) and not moving.contains(q):
-                                add(xx, yy, 0.9 + R.random() * 0.25, 1)
-                    if "slope" in nm:
-                        for _ in range(int(pg.area / 900)):
+        if self.man.get("scene_generation", {}).get("procedural_planting", False):
+            for p, g in self.geo["movement"]:
+                if p.get("network") in ("people", "shared") and p.get("shaded") and g.geom_type.endswith("LineString"):
+                    wd = float(p.get("width_m") or WIDTH[p["network"]])
+                    offs = [1.2] if wd < 12 else [wd / 2 - 2.2, wd / 2 - 6.5] if wd >= 30 else [wd / 2 - 2.2]
+                    step = 8.0 if wd >= 12 else 9.0
+                    for ln in lines(g):
+                        n = int(ln.length // step)
+                        for k in range(1, n):
+                            a = ln.interpolate(k * step)
+                            b = ln.interpolate(min(ln.length, k * step + 1))
+                            dx, dy = b.x - a.x, b.y - a.y
+                            nn = math.hypot(dx, dy) or 1
+                            for off in offs:
+                                for sgn in ((-1, 1) if wd >= 12 else ((-1,) if k % 2 else (1,))):
+                                    q = Point(a.x - dy / nn * off * sgn, a.y + dx / nn * off * sgn)
+                                    if not bfoot.contains(q) or (wd < 12 and not bhard.contains(q)):
+                                        add(q.x, q.y, (0.85 if wd >= 12 else 0.62) + R.random() * 0.3, 0)
+            washes = unary_union([xc.to_utm(g).buffer(60 if p.get("class") == "main" else 30) for p, g in xc.channels()])
+            for p, g in self.geo["land_use"]:
+                use, nm = p.get("use"), str(p.get("name", "")).lower()
+                for pg in polys(g.intersection(W)):
+                    bx0, by0, bx1, by1 = pg.bounds
+                    near = pg.centroid.distance(centre) < 3500
+                    if use == "agriculture" and any(k in nm for k in ("orchard", "olive", "pistachio", "vine")):
+                        sx, sy = (7.0, 6.0) if near else (14.0, 12.0)
+                        for xx in np.arange(bx0 + 3, bx1, sx):
+                            for yy in np.arange(by0 + 3, by1, sy):
+                                if pg.contains(Point(xx, yy)) and len(trees) < 90000:
+                                    add(xx, yy, 0.6 + R.random() * 0.15, 2)
+                    elif any(k in nm for k in ("alameda", "windbreak", "tree belt")):
+                        # poplar rows parallel to the long side, every 4 m along, rows 5 m apart
+                        long_ns = (by1 - by0) >= (bx1 - bx0)
+                        if "slope" in nm:      # a belt along the top edge of a slope park
+                            band = box(bx0, by1 - 30, bx1, by1) if not long_ns else box(bx0, by0, bx0 + 30, by1)
+                            band = band.intersection(pg)
+                        else:
+                            band = pg
+                        b0 = band.bounds if not band.is_empty else pg.bounds
+                        for r_ in range(4):
+                            for t_ in np.arange(0, (b0[3] - b0[1]) if long_ns else (b0[2] - b0[0]), 4.0):
+                                xx = (b0[0] + 6 + r_ * 5) if long_ns else (b0[0] + t_)
+                                yy = (b0[1] + t_) if long_ns else (b0[3] - 6 - r_ * 5)
+                                q = Point(xx, yy)
+                                if band.contains(q) and not moving.contains(q):
+                                    add(xx, yy, 0.9 + R.random() * 0.25, 1)
+                        if "slope" in nm:
+                            for _ in range(int(pg.area / 900)):
+                                q = Point(R.uniform(bx0, bx1), R.uniform(by0, by1))
+                                if pg.contains(q) and not moving.contains(q):
+                                    add(q.x, q.y, 0.8 + R.random() * 0.5, 0)
+                    elif any(k in nm for k in ("paved", "sunken", "hard", "sports")):
+                        continue
+                    elif use in ("open_space", "civic") or (use in ("residential", "mixed_use") and near):
+                        dense = any(k in nm for k in ("plaza", "square", "grove", "patio", "garden", "yard", "court"))
+                        if use in ("residential", "mixed_use"):
+                            spacing = 110.0      # gardens and courtyards between the houses
+                        elif dense:
+                            spacing = 150.0
+                        elif "sport" in nm or "bluff" in nm or "river" in nm:
+                            spacing = 700.0
+                        else:
+                            spacing = 400.0
+                        n = int(pg.area / spacing)
+                        tries = 0
+                        while n > 0 and tries < n * 6 and len(trees) < 90000:
+                            tries += 1
                             q = Point(R.uniform(bx0, bx1), R.uniform(by0, by1))
-                            if pg.contains(q) and not moving.contains(q):
-                                add(q.x, q.y, 0.8 + R.random() * 0.5, 0)
-                elif any(k in nm for k in ("paved", "sunken", "hard", "sports")):
-                    continue
-                elif use in ("open_space", "civic") or (use in ("residential", "mixed_use") and near):
-                    dense = any(k in nm for k in ("plaza", "square", "grove", "patio", "garden", "yard", "court"))
-                    if use in ("residential", "mixed_use"):
-                        spacing = 110.0      # gardens and courtyards between the houses
-                    elif dense:
-                        spacing = 150.0
-                    elif "sport" in nm or "bluff" in nm or "river" in nm:
-                        spacing = 700.0
-                    else:
-                        spacing = 400.0
-                    n = int(pg.area / spacing)
-                    tries = 0
-                    while n > 0 and tries < n * 6 and len(trees) < 90000:
-                        tries += 1
-                        q = Point(R.uniform(bx0, bx1), R.uniform(by0, by1))
-                        if pg.contains(q) and not bfoot.contains(q) and not moving.contains(q) and not washes.contains(q):
-                            add(q.x, q.y, 0.75 + R.random() * 0.6, 0)
-                            n -= 1
-        desert = self.master.buffer(1500).difference(self.master).union(
-            unary_union([g for p, g in self.geo["land_use"] if p.get("use") == "reserve"]))
-        bx0, by0, bx1, by1 = desert.bounds
-        for _ in range(14000):
-            q = Point(R.uniform(bx0, bx1), R.uniform(by0, by1))
-            if desert.contains(q) and not bfoot.contains(q):
-                shrubs.append([*self.L(q.x, q.y), round(0.6 + R.random() * 1.1, 2)])
+                            if pg.contains(q) and not bfoot.contains(q) and not moving.contains(q) and not washes.contains(q):
+                                add(q.x, q.y, 0.75 + R.random() * 0.6, 0)
+                                n -= 1
+            desert = self.master.buffer(1500).difference(self.master).union(
+                unary_union([g for p, g in self.geo["land_use"] if p.get("use") == "reserve"]))
+            bx0, by0, bx1, by1 = desert.bounds
+            for _ in range(14000):
+                q = Point(R.uniform(bx0, bx1), R.uniform(by0, by1))
+                if desert.contains(q) and not bfoot.contains(q):
+                    shrubs.append([*self.L(q.x, q.y), round(0.6 + R.random() * 1.1, 2)])
         d["trees"], d["shrubs"] = trees[:90000], shrubs
         # acequias: 0.8 m channels along both sides of the shaded shared streets
         aceq = []
         for p, g in self.geo["movement"]:
-            if p.get("network") == "shared" and p.get("shaded") and g.geom_type.endswith("LineString"):
+            if p.get("water_channel_design") is True and g.geom_type.endswith("LineString"):
                 wd = float(p.get("width_m") or WIDTH["shared"])
                 for ln in lines(g.intersection(W)):
                     for sgn in (-1, 1):
@@ -453,7 +455,9 @@ class Scene:
         people = [q for q in people if clear(q, 18.0)]
         lamps = [q for q in lamps if clear(q, 12.0)]
         d["trees"] = [q for q in d["trees"] if clear(q, 10.0)]
-        d["people"], d["robots"], d["trucks"], d["lamps"] = people[:9000], robots[:600], trucks[:400], lamps[:5000]
+        if not self.man.get("scene_generation", {}).get("illustrative_entourage", False):
+            people, robots, trucks, lamps = [], [], [], []
+        d["people"], d["robots"], d["trucks"], d["lamps"] = people[:600], robots[:150], trucks[:80], lamps[:1000]
         d["views"] = self.views()
         return d
 
@@ -483,10 +487,10 @@ class Scene:
                         "shadow_radius": round(min(6000, r * 1.8))})
 
         bc = built.convex_hull.centroid
-        aerial(bc.x, bc.y, ext(built.convex_hull) * 0.42, "master-aerial", "Master design - aerial", pitch=30, fov=40)
+        aerial(bc.x, bc.y, ext(built.convex_hull) * 0.42, "master-aerial", "Complete study geometry - aerial diagram", pitch=30, fov=40)
         tc = town.convex_hull.centroid
-        aerial(tc.x, tc.y, ext(town.convex_hull) * 0.36, "city-aerial", "The city - aerial", pitch=24, fov=42)
-        aerial(tc.x, tc.y, ext(town.convex_hull) * 0.3, "city-evening", "The city - evening", time="evening",
+        aerial(tc.x, tc.y, ext(town.convex_hull) * 0.36, "city-aerial", "All proposed urban geometry - hypothetical full build-out", pitch=24, fov=42)
+        aerial(tc.x, tc.y, ext(town.convex_hull) * 0.3, "city-evening", "All proposed urban geometry - hypothetical evening", time="evening",
                az=az_eve - 25, pitch=20, fov=44)
         for p, g in self.geo["nodes"]:
             nid = str(p.get("node_id"))

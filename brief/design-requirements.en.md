@@ -32,14 +32,14 @@ For this call:
 
 ## C. Four connected levels of design depth
 
-The organiser-defined whole-site boundary is fixed. The overall plan must address the entire supplied scope; a locally selected phase-one district or urban-design enlargement does not replace or reduce that overall planning obligation. Entrants justify the location and capacity of the first complete district within that structure.
+The organiser-defined whole-site boundary is fixed. The overall plan must address the entire supplied scope; a locally selected phase-one district or urban-design enlargement does not replace or reduce that overall planning obligation. Entrants design the complete city layout across all proposed phases, justify district locations and capacities, and then demonstrate that the first phase can operate independently.
 
-Machine-readable twin: `requirements.json.design_depth` / `design-depth.json`. The existing three geometry tiers remain compatible; the urban-design enlargement is an explicit design test within the master area, not an additional mandatory geographic area.
+Machine-readable twin: `requirements.json.design_depth` / `design-depth.json`. The existing three geometry tiers remain compatible; the urban-design enlargement tests one or more coherent parts of the complete city layout, not an additional mandatory geographic area.
 
 | Level | Must explain | Spatial evidence |
 |---|---|---|
 | Whole-site structure | Settlements, production, protection, transport, resources and growth | Overall structure and system links; capacity scenarios and phasing |
-| Complete phase-one district | Life and production remain complete if later phases never happen | Master plan; roads, public services, production, utilities and first works |
+| Complete city layout and implementation | All districts, capacities, systems and construction phases form one complete design | Complete layout, phase-by-district programme, networks, public facilities and first works |
 | Urban design enlargement | How the master layout forms streets, blocks and public life | Block plan, building heights/massing, public space and decisive sections |
 | Three detailed nodes | Location, users, spatial organisation and operation | Locator, detailed plan, necessary sections/elevations, massing and concept views |
 
@@ -183,3 +183,17 @@ C01 includes the **main entrance and arrival sequence**. All schemes must locate
 The A0 board must show a legible, labelled Phase 1/2/3 zoning map and a matching programme table. Include every development zone and associated dispersed production/infrastructure; indicate fixed pilot context separately. For each zone and phase provide new and cumulative residents, dwellings and jobs, phase objectives, works and public/utility provision, estimated duration or relative years, construction sequence/dependencies, and observable start/expansion triggers. Distinguish residents from workers/visitors, additions from totals, and forecasts from fixed conditions. Capacity ranges are allowed with assumptions. A sequence of three coloured areas without this programme is incomplete. Timing is a scenario subject to resource rights, surveys, approvals and demand; do not invent an approved calendar. Totals must reconcile by phase and with metrics.json (including phase-one residents). Areas, phases and district IDs must match geometry/phasing.geojson; separate facilities may share a phase without being adjacent.
 
 Provide `phasing_programme.json` using `templates/phasing_programme.json`; reference the map and A0 board. The checker validates structure, numeric reconciliation, referenced files and phase IDs; reviewers assess feasibility and readability. Automatic checks do not approve the construction programme.
+
+
+### Complete city scope — 2026-10-27 clarification
+
+Design the complete city layout across all proposed construction phases, not only Phase 1. Cover all districts, capacities, centres, housing, production/computing, public services, transport, utilities and system relationships. Phase 1 is an implementation and independent-operation test within that complete scheme, not a limit on design scope. Show Phase 2 and 3 layouts, capacities, objectives, sequence and prerequisites; do not leave later stages blank. Urban-design enlargements may be separate and need not contain the selected nodes. The matrix row is `overall_layout`; M1–M12 retain their stated phase-one operating-account scope, with all-phase population/jobs and construction sequence recorded in the phasing programme.
+
+### Siting and view validity
+
+Do not organise the city to fit the three selected nodes into one image. Justify adjacency or separation using the relevant terrain, access, utility, noise, risk, operations and public-life conditions; no universal distance or requirement to co-locate is imposed. Identify each image as whole-site diagram, complete-city view, district/detail view or node view. Register its geographic footprint, scale/extent and, for a physical perspective, position, target, height and lens/FOV (or explicitly identify a diagrammatic orthographic/axonometric projection). A matching geometry-derived control is required for each finished perspective; an eye-level scene inferred from an aerial alone is not a verified camera view. Keep geometry checks separate from visual judgement. The picture must not silently add, relocate or resize buildings, invent topography or replace the complete layout. A local neighbourhood aerial cannot serve as evidence for the entire 1,658.82 km² site.
+
+
+### Geometry and illustrations
+
+Automatic scene generation must not silently turn energy land into installed PV, shade routes into irrigation channels, or open space into established trees. Procedural planting, PV tables and entourage are off by default. Explicit roof-PV and water-channel properties describe submitted design assumptions, not verified installations. Illustrations cannot establish capacity, planting survival or water availability. Regenerate controls and dependent images after geometry, scene policy or renderer changes; visually compare the result with the submitted plan.

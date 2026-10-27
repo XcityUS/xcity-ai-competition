@@ -18,7 +18,16 @@ def check():
  need({c['id'] for c in planting['crops']}=={'forage_grass','jojoba'} and planting['retain_both'],'fixed under-panel crops differ')
  need(depth['construction_programme']['a0_map_required'],'A0 construction phasing map missing')
  need(req['design_depth']==depth,'requirements/design-depth machine twins differ')
- need([x['id'] for x in depth['levels']]==['whole_site','phase_one','urban_design','nodes'],'four design levels changed')
+ representation=depth['representation_evidence']
+ for key in ['procedural_planting_default','procedural_pv_default','illustrative_entourage_default','illustration_is_capacity_evidence']:
+  need(representation[key] is False,'unsubstantiated scene evidence policy: '+key)
+ for key in ['roof_pv_requires_explicit_building_property','water_channel_requires_explicit_design_property','scene_policy_and_renderer_in_cache_fingerprint','visual_geometry_review_required']:
+  need(representation[key] is True,'missing rendering evidence safeguard: '+key)
+ for f in ['brief/design-requirements.zh.md','scripts/practice-brief/build_zh.py']:
+  need('| 首期完整城区 |' not in read(f) and "['一期总体城市设计'," not in read(f),f+': phase-one-only design scope returned')
+ for f in ['scripts/practice-brief/build_en.py']:
+  need("['Phase 1 urban design'," not in read(f),f+': phase-one-only design scope returned')
+ need([x['id'] for x in depth['levels']]==['whole_site','overall_layout','urban_design','nodes'],'four design levels changed')
  spatial=depth['spatial_relationships']
  for key in ['node_colocation_required','all_nodes_in_urban_design_enlargement_required','all_nodes_in_master_area_required','single_contiguous_phase_one_required','render_view_determines_design_extent']:
   need(spatial[key] is False,'removed spatial freedom: '+key)

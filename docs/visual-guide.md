@@ -10,7 +10,7 @@ Design the four connected levels first (`AGENTS.md`, `brief/design-depth.json`);
 
 | Step | Tool | Output | Needs |
 |---|---|---|---|
-| 1. 3D scene | `scripts/make_scene.py` (run by step 2) | `visual/index.html`: an offline three.js scene of your geometry on the real terrain, with sun, trees, people, robots and vehicles generated from it | Python only |
+| 1. 3D scene | `scripts/make_scene.py` (run by step 2) | `visual/index.html`: an offline three.js scene of your geometry on the real terrain, with terrain, submitted geometry and sun; optional illustrative additions require explicit opt-in | Python only |
 | 2. Massing renders | `scripts/render_views.py` | `renders/<view>.png` for the whole master area, the city, and each node (aerial, eye level by day, and evening or night); `renders/stamp.json` | Playwright + Chromium (software WebGL, no GPU) |
 | 3. Finished images (expected) | `scripts/ai_render.py` | `media/<view>.jpg`, registered in `image_provenance.json` with model, full prompt and control image | The agent's own image tool first; otherwise any tool the human uses by hand (ChatGPT, Gemini, Midjourney, Stable Diffusion), XCITY Studio, or an API key of their own |
 | 4. Drawings | `scripts/make_figures.py` | Required figures and shared locator, node sheets, main A3 booklet, technical appendix/page index and A0 board | Python only |
@@ -40,7 +40,7 @@ python scripts/ai_render.py <package> run --provider openai      # your own OPEN
 python scripts/ai_render.py <package> register media/A03-eye-day.jpg --view A03-eye-day --model "..."   # made by hand
 ```
 
-**Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. The example package happens to use ChatGPT by hand; that is one choice, not a requirement.
+**Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. Reference packages do not prescribe a provider or workflow.
 
 Each prompt asks the model to keep the control image's camera, footprints, heights, streets and trees, and to change only materials, light and life. An agent must ask its human before spending money (AGENTS.md, checkpoint 2). Keys stay in the environment or in `~/.xcity/`, never in the repository.
 
@@ -104,3 +104,14 @@ See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-
 ## Final public submission language
 
 Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.
+
+### Siting and view validity
+
+Do not organise the city to fit the three selected nodes into one image. Justify adjacency or separation using the relevant terrain, access, utility, noise, risk, operations and public-life conditions; no universal distance or requirement to co-locate is imposed. Identify each image as whole-site diagram, complete-city view, district/detail view or node view. Register its geographic footprint, scale/extent and, for a physical perspective, position, target, height and lens/FOV (or explicitly identify a diagrammatic orthographic/axonometric projection). A matching geometry-derived control is required for each finished perspective; an eye-level scene inferred from an aerial alone is not a verified camera view. Keep geometry checks separate from visual judgement. The picture must not silently add, relocate or resize buildings, invent topography or replace the complete layout. A local neighbourhood aerial cannot serve as evidence for the entire 1,658.82 km² site.
+
+
+## Evidence-safe scene defaults
+
+`scene_generation.procedural_planting`, `procedural_pv` and `illustrative_entourage` default to `false`. A land-use label, a shaded route or a building name is not a planting plan, installed PV layout or water design. Roof PV requires `roof_pv: true` on its building; a depicted water channel requires `water_channel_design: true` on its movement feature and an explained design basis. Opting into procedural illustrations does not add them to capacity or water accounts. Keep designed planting geometry, species, water allocation and maintenance assumptions explicit in the relevant drawings and proposal. Do not count automatically drawn trees as proof of shade or automatically drawn panels as installed generation.
+
+After geometry, scene policy or renderer code changes, regenerate controls and every dependent finished image. Cache fingerprints include the scene policy and renderer source. Open the actual new images and compare them with the plan: a current fingerprint confirms version linkage, not geometric fidelity or design quality. Record the geographic extent and camera of each perspective; a local aerial is not a whole-city plan.

@@ -4,7 +4,7 @@ The four levels in `brief/design-depth.json` are connected tests of the same cit
 
 ## Fill the matrix / 填写矩阵
 
-Copy `templates/design_depth_matrix.json` (the scaffolder does this). Rows are `whole_site`, `phase_one`, `urban_design`, `nodes`, and `node:<ID>` for every selected node. Each row links:
+Copy `templates/design_depth_matrix.json` (the scaffolder does this). Rows are `whole_site`, `overall_layout`, `urban_design`, `nodes`, and `node:<ID>` for every selected node. Each row links:
 
 - `drawings`: package-relative formal drawings or PDF paths. Identify page/figure and its claim in the linked proposal heading; the checker checks files, not their visual content.
 - `geometry`: package-relative submitted geometry used for that decision.
@@ -56,3 +56,8 @@ C01 includes the **main entrance and arrival sequence**. All schemes must locate
 The A0 board must show a legible, labelled Phase 1/2/3 zoning map and a matching programme table. Include every development zone and associated dispersed production/infrastructure; indicate fixed pilot context separately. For each zone and phase provide new and cumulative residents, dwellings and jobs, phase objectives, works and public/utility provision, estimated duration or relative years, construction sequence/dependencies, and observable start/expansion triggers. Distinguish residents from workers/visitors, additions from totals, and forecasts from fixed conditions. Capacity ranges are allowed with assumptions. A sequence of three coloured areas without this programme is incomplete. Timing is a scenario subject to resource rights, surveys, approvals and demand; do not invent an approved calendar. Totals must reconcile by phase and with metrics.json (including phase-one residents). Areas, phases and district IDs must match geometry/phasing.geojson; separate facilities may share a phase without being adjacent.
 
 Provide `phasing_programme.json` using `templates/phasing_programme.json`; reference the map and A0 board. The checker validates structure, numeric reconciliation, referenced files and phase IDs; reviewers assess feasibility and readability. Automatic checks do not approve the construction programme.
+
+
+### Complete city scope — 2026-10-27 clarification
+
+Design the complete city layout across all proposed construction phases, not only Phase 1. Cover all districts, capacities, centres, housing, production/computing, public services, transport, utilities and system relationships. Phase 1 is an implementation and independent-operation test within that complete scheme, not a limit on design scope. Show Phase 2 and 3 layouts, capacities, objectives, sequence and prerequisites; do not leave later stages blank. Urban-design enlargements may be separate and need not contain the selected nodes. The matrix row is `overall_layout`; M1–M12 retain their stated phase-one operating-account scope, with all-phase population/jobs and construction sequence recorded in the phasing programme.
