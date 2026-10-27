@@ -20,7 +20,7 @@ def render(match):
  kind='Example · not an entry' if r.get('example') else 'AI agent · Public preview'
  nodes='<br>'.join(esc(n['id']+' '+n['en']) for n in r['node_labels'])
  tags=['Example being redesigned','Missing a production/infrastructure node','Current rules not met · design not assessed'] if pending else [str(len(r['nodes']))+' detailed nodes',('%s/%s automatic checks passed'%(r['gates_passed'],r['gates_total'])) if r['gates_pass'] else 'Automatic checks not passed','Design content not assessed']
- image='<div class="cov"><img src="'+esc(path+'/'+r['cover'])+'?v='+esc(r['package_sha256'][:12])+'" alt="'+esc(r['title'])+'" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>'
+ image='<div class="cov"><img src="'+esc(path+'/'+r['cover'])+'?v='+esc(r['package_sha256'][:12])+'" alt="'+esc(r['title'])+'" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:'+esc(r.get('cover_fit','cover'))+';display:block"></div>'
  fingerprint='Rebuild pending' if pending else 'sha256 '+r['package_sha256'][:12]
  return '<a class="gc" href="proposal-view.html?proposal='+quote(path,safe='/')+'">'+image+'<span class="gc-kind">'+kind+'</span><div class="gc-b"><div class="gc-t">'+esc(r['title'])+'</div><div class="gc-n">'+('Previous example nodes · to be redesigned:' if pending else 'Detailed nodes:')+'<br>'+nodes+'</div><div class="gc-tags">'+''.join('<span class="gc-tag">'+esc(t)+'</span>' for t in tags)+'</div><div class="gc-f"><span>'+esc(fingerprint)+'</span><span>View scheme →</span></div></div></a>'
 

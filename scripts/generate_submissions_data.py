@@ -69,7 +69,7 @@ def main():
                 "published": bool(p and p.get("reviewed_package_sha256") == sha),
                 "featured": bool(p and p.get("featured")),
                 "example": login == "EXAMPLE-agent",
-                "cover": cover(pkg, m),
+                "cover": cover(pkg, m), "cover_fit": (m.get("booklet") or {}).get("cover_fit", "cover"),
                 "thesis": m.get("thesis", ""),
                 "files": [[f, os.path.getsize(os.path.join(pkg, f))] for f in xc.package_files(pkg)],
             })

@@ -728,6 +728,9 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
 .pw .acts{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px}
 .pw .hero{position:relative;height:min(56vw,640px);width:100%;overflow:hidden;border:1px solid var(--line-soft);background:#111}
 .pw .hero img{position:absolute;inset:0;width:100%!important;height:100%!important;max-width:none;object-fit:cover;display:block}
+.pw .hero.contain{height:auto;background:#171716}
+.pw .hero.contain img{position:static!important;height:auto!important;object-fit:contain}
+.pw .hero.contain .cap{position:static;display:block}
 .pw .hero.diagram{height:auto;background:#FCFBF6}
 .pw .hero.diagram img{position:static!important;height:auto!important;object-fit:contain}
 .pw .hero.diagram .cap{position:static;display:block;color:#687168;background:#FCFBF6}
@@ -822,7 +825,7 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
   secs.forEach(function(s){if(s)io.observe(s)});
 })();
 </script>
-<script src="submissions-data.js?v=everyday-v4-070766dbc7bf"></script><script>
+<script src="submissions-data.js?v=agua-aerial-a3e8b18165d3"></script><script>
 (function(){
 var q=new URLSearchParams(location.search).get('proposal')||'';
 var okPath=/^submissions\/[A-Za-z0-9][A-Za-z0-9-]*\/[a-z0-9][a-z0-9-]{2,63}$/.test(q);
@@ -843,6 +846,7 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
  var imgs=(prov.images||[]);
  var cover=row.cover?asset(row.cover):null;
  var diagram=!!(m.booklet&&m.booklet.cover_kind==='diagram');
+ var contain=!!(m.booklet&&m.booklet.cover_fit==='contain');
  var kinds={img:0,pdf:0,data:0,html:0,other:0};
  files.forEach(function(f){kinds[kind(f.p)]++});
  var h='<div class="crumb">'+esc(q)+(sc?' · sha256 '+esc((sc.package_sha256||'').slice(0,16)):'')+'</div>'
@@ -855,7 +859,7 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   +(files.some(function(f){return f.p==='visual/index.html'})?'<a class="btn-ghost" href="'+asset('visual/index.html')+'">'+L('3D scene ↗','Escena 3D ↗','三维场景 ↗')+'</a>':'')
   +'<a class="btn-ghost" href="'+asset('report/proposal.html')+'">'+L('Full statement ↗','Memoria completa ↗','方案正文 ↗')+'</a>'
   +'<a class="btn-ghost" href="'+REPO+'/tree/main/'+q+'">GitHub ↗</a></div>'
-  +(cover?'<div class="hero'+(diagram?' diagram':'')+'"><img src="'+esc(cover)+'" alt=""><span class="cap">'+(diagram?L('Whole-site planning diagram; future fields are conditional','Diagrama territorial; campos futuros condicionados','全域规划示意；远期扩展地块为有条件方案'):L('Illustrates the geometry; not evidence','Ilustra la geometría; no es evidencia','用于说明几何，不作为证据'))+'</span></div>':'')
+  +(cover?'<div class="hero'+(diagram?' diagram':'')+(contain?' contain':'')+'"><img src="'+esc(cover)+'" alt=""><span class="cap">'+(diagram?L('Whole-site planning diagram; future fields are conditional','Diagrama territorial; campos futuros condicionados','全域规划示意；远期扩展地块为有条件方案'):L('Illustrates the geometry; not evidence','Ilustra la geometría; no es evidencia','用于说明几何，不作为证据'))+'</span></div>':'')
   +'<div class="facts">'
   +'<div class="fact"><h3>'+L('Gives up','Renuncia','主动放弃')+'</h3><p><b>'+esc(t.objective)+'</b><br>'+esc(t.who_bears)+'</p></div>'
   +'<div class="fact"><h3>'+L('Depth','Profundidad','深化程度')+'</h3><p>'+L('Whole site · master design · nodes ','Todo el sitio · plan maestro · nodos ','整片场地 · 总体设计 · 节点 ')+esc((m.nodes||[]).join(', '))+'</p><p style="margin-top:6px;color:var(--muted)">'+esc(m.nodes_reason)+'</p></div>'

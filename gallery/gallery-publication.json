@@ -6,7 +6,7 @@
   "published": [
     {
       "path": "submissions/jingyuanhuang-design/finite-water-city",
-      "reviewed_package_sha256": "7feda01a64d0c97f87d2241963e703c8798acb53a4f2b1e89b70c1536021fe10",
+      "reviewed_package_sha256": "a3e8b18165d30010b7769117ef2130370120857ef0711f1d9b6492e3724559c2",
       "published_at": "2026-10-27",
       "featured": false,
       "design_content_review": "not_assessed",
@@ -16,7 +16,7 @@
         "previous_publication_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
         "note": "Source-map and English-display refresh only. No design content approval is implied."
       },
-      "publication_basis": "Explicit owner authorisation for direct website updating: V13 integrated renders, native A0, full-site functions and southwest road/land-use enlargement. Working preview; automatic compliance incomplete, independent design content not assessed."
+      "publication_basis": "Explicit owner direction: replace cover with whole-territory aerial render. V14 cover revision of V13 working preview; geometry and capacity unchanged. Automatic compliance incomplete; independent design content not assessed."
     },
     {
       "path": "submissions/jingyuanhuang-design/everyday-city",

@@ -80,7 +80,8 @@
     "cover": "media/v14-whole-site-aerial.png",
     "pages": [],
     "section_pages": {},
-    "cover_kind": "render"
+    "cover_kind": "render",
+    "cover_fit": "contain"
   },
   "presentation_revision": "V14 cover revision",
   "public_display_status": "authorised_preview_not_design_approval",
