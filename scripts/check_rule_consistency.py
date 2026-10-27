@@ -14,6 +14,19 @@ def check():
   try:jsonschema.Draft202012Validator.check_schema(json.loads(schema_file.read_text()))
   except (ValueError,jsonschema.SchemaError) as e:errors.append(schema_file.name+': '+str(e))
  depth=data('brief/design-depth.json');req=data('brief/requirements.json')
+ operating=depth['operational_design']
+ for language in ['en','zh']:
+  reference=operating['reference_'+language]
+  need((ROOT/reference).is_file(),'missing operating conditions: '+reference)
+  need(('production-conditions.'+language+'.md') in read('brief/design-requirements.'+language+'.md'),'missing bilingual operating reference')
+ need(data('brief/agent_taskbook.json')['operating_conditions_ref']==operating['reference_en'],'taskbook operating reference differs')
+ for key in ['compute_campus_requires_shared_infrastructure_and_gap_reasoning','power_block_is_not_it_load','phasing_requires_spatial_diagrams_not_dates_only','seasonal_park_requires_public_use_access_and_closure_design']:
+  need(operating[key] is True,'missing operational content criterion: '+key)
+ need(not operating['universal_spacing_or_coverage_ratio_prescribed'] and not operating['new_render_quota'],'unapproved numeric or render quota')
+ catalogue={n['id']:n for n in data('brief/site-package/nodes/design_nodes.json')['nodes']}
+ for code in ['B03','C02','C03']:
+  need(catalogue[code].get('brief_zh') and catalogue[code].get('operating_conditions_ref')==operating['reference_en'],'node operating explanation missing: '+code)
+
  planting=req['fixed_pilot_context']['agrivoltaic']['under_panel_planting']
  need({c['id'] for c in planting['crops']}=={'forage_grass','jojoba'} and planting['retain_both'],'fixed under-panel crops differ')
  need(depth['construction_programme']['a0_map_required'],'A0 construction phasing map missing')

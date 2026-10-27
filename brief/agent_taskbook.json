@@ -125,5 +125,6 @@
     "revise and submit"
   ],
   "design_depth_policy": "brief/design-depth.json",
-  "public_submission_language": "en"
+  "public_submission_language": "en",
+  "operating_conditions_ref": "brief/production-conditions.en.md"
 }

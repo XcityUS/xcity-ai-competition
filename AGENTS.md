@@ -265,3 +265,5 @@ Method and review basis: [docs/city-design-method-basis.md](https://github.com/X
 ### Full-site zoning and the road framework
 
 Follow [the whole-site zoning workflow](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md). The entire issued site needs an explicit base zoning proposal, not a small city plan over an unexplained background. In structure.geojson, use plan_role=base_zoning with district_id, name, primary_use and basis_ref plus system; separate optional overlapping relations as system_overlay. Draw the primary and secondary road skeleton in movement.geojson using road_class; network denotes users, not hierarchy. Recompute the full-site area account. G12 checks coverage, overlap, identifiers and road-class records, not design quality. Local enlargements and node images do not replace these full-site plans.
+
+Read `brief/production-conditions.en.md` before agrivoltaic, compute-campus, phase or seasonal-channel design. Product references are not site resource entitlements; provide actual operating layouts.

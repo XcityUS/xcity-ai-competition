@@ -71,7 +71,7 @@ XCITY希望从能源、算力、机器与人的新关系出发推导城市，而
 | A01 | 未来住宅原型 | 劳动交给机器、通勤不再定义一天时，住宅怎样组织。 |
 | B01 | 无人机起降与停靠站 | 起降、充电、分拣、维护与街区、屋顶的关系。 |
 | B02 | 物流枢纽与国际门户 | 堆场、口岸与自动分拣怎样与城市共处。 |
-| B03 | 算力园区与余热利用 | 由谁接收余热，决定设施与人居的空间关系。 |
+| B03 | 算力园区与余热利用 | 模块、共享设施、可信容量与有依据的余热接口。 |
 | C02 | 农光场与城市的边缘 | 交织、抬升，或可步行的边界如何成立。 |
 | C03 | 季节性河道公园 | 大部分时间干燥，暴雨时承担行洪的空间怎样运行。 |
 | A02 | 艺术与文化场所 | 沙漠、山地和暗夜条件如何形成值得到访的公共文化场所。 |
@@ -274,3 +274,6 @@ A0展板须包含清晰标注的一、二、三期分区图及对应的数据表
 ### 全场地分区与道路骨架
 
 按[全场地推导流程](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md)完成整个边界内的基本分区，不得以小块城区和未解释的背景替代。structure.geojson的基本分区使用plan_role=base_zoning，填写district_id、name、primary_use、basis_ref及既有system；可叠加系统另标system_overlay。movement.geojson用road_class表达主次路网，network只表示使用者。复算全场地分区面积。G12新增覆盖、重叠、字段与主次道路记录核对，但不判定设计质量；局部放大与节点图不能替代全场地图。
+
+
+生产布局与建设分期图要求：[production-conditions.zh.md](production-conditions.zh.md).

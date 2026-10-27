@@ -550,6 +550,7 @@ def check(pkg_path, write=True):
     for problem in whole_site_errors:
         g12.fail(problem)
     g12.note('Full-site base-zone coverage and explicit road classes are checked geometrically; useful district allocation, road connectivity/service, suitability and land-use decisions still require content review.')
+    g12.note('Operational content review: panel/crop/service compatibility; compute module and shared-infrastructure layout with explained gaps and distinct power/IT capacities; mapped construction stages; selected C03 public access, dry-season uses and closure. See brief/production-conditions.en.md. File presence cannot certify these decisions.')
     depth_assessment = design_depth.assess(pkg, man.get("nodes") or [])
     for problem in depth_assessment["automatic"]["errors"]:
         g12.fail(problem)

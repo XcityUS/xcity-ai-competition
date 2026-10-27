@@ -243,3 +243,6 @@ At city scale show meaningful district and block relationships; resolve the sele
 Use the A0 board to communicate the city: a dominant overall plan/axon, coordinated functional/road/landscape diagrams, legible district and centre relationships, necessary node evidence and a concise construction sequence. Keep only numbers that materially explain scale, capacity, a resource constraint or phase choice, clearly scoped and tagged. Full district-by-phase population/dwelling/job accounts, detailed metric grids, all source/evidence columns and logs remain in the technical appendix and machine files. The phase map is still required; a dense spreadsheet or dozens of numerical badges is not its replacement. There is no additional fixed number quota and fewer numbers do not excuse missing calculations. The default A0 now summarises the three stages visually rather than reproducing every district row.
 
 A0是讲清空间方案的展板：以全域总图/轴测为主，配功能、路网、景观、中心关系和必要节点图，并说明建设顺序。只保留直接支持尺度、容量、资源约束或分期判断的关键数字，标清范围与依据。完整分区分期的人口、住房、岗位、指标及来源表和日志放技术附件与机器文件；A0仍须有分期图，不用密集Excel式表格，也不改成满板数字卡片。不新增固定数字数量限制，更不取消计算义务。
+
+
+Operational design requirements: [`production-conditions.en.md`](production-conditions.en.md).

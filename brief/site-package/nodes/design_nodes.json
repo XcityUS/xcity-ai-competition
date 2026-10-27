@@ -1,6 +1,6 @@
 {
   "id": "XCITY-DESIGN-NODES",
-  "version": 5,
+  "version": 6,
   "rule_en": "Choose exactly one node from each group, three nodes total. This rule applies to all submissions.",
   "render_required_en": "Each node must include renders: at least one aerial and one eye-level render, plus a plan or section. Sequences, video and animation are encouraged.",
   "nodes": [
@@ -37,8 +37,10 @@
     {
       "id": "B03",
       "en": "A compute campus and its waste heat",
-      "brief_en": "Compute halls or multiple campuses, substations, cooling, maintenance and credible heat users. Locate by power, water, cooling, transport, operational and safety conditions. A campus may be separate from housing and other nodes; waste-heat use requires justified temperature, distance and network assumptions, not forced adjacency.",
-      "zh": "算力中心与它的余热"
+      "brief_en": "Design an operating modular compute campus, using the XCITY POD reference or an explicitly justified alternative. Show installed modules, shared power/cooling/fibre, equipment delivery and maintenance, staff/security access and phased expansion. Explain significant gaps and separate power-block rating from IT load. Campus sites may be dispersed; arbitrary intra-campus spacing is not justified by that freedom. Heat reuse needs an identified recipient and credible thermal/network assumptions.",
+      "zh": "算力中心与它的余热",
+      "brief_zh": "设计可运行的模块化算力园区，采用 XCITY POD 参考或有明确理由的其他方案。说明已安装模块、共享电力/冷却/光纤、设备运输维护、员工安防及分期扩建。解释重要间隔，分清电力模块与 IT 负载。园区可分布选址，不等于内部可任意拉开。余热利用须有实际受热对象及可信的热工和管网假设。",
+      "operating_conditions_ref": "brief/production-conditions.en.md"
     },
     {
       "id": "C01",
@@ -50,14 +52,18 @@
     {
       "id": "C02",
       "en": "The edge between agrivoltaic fields and the city",
-      "brief_en": "The edge where power-above, planting-below land meets the city: interwoven, lifted, or a boundary you can walk along.",
-      "zh": "光伏农田与城市的边缘"
+      "brief_en": "Design the real working edge between agrivoltaics and the city. Retain fixed pilot forage grass and jojoba without redesigning its protected interior. Explain farm access, maintenance, visitor separation and irrigation/service interfaces; for proposed extensions show compatible panel, plant and working envelopes in plan/section. A solar texture beside a generic green patch is insufficient.",
+      "zh": "光伏农田与城市的边缘",
+      "brief_zh": "设计农光结合与城市之间真实可用的生产边缘。保留固定试点牧草与霍霍巴，不重设计受保护的内部。交代农机进出、维护、游客分流和灌溉管线接口；对新扩展区，用平剖面说明组件、植株及作业包络兼容。光伏纹理旁放一块泛化绿地不能替代设计。",
+      "operating_conditions_ref": "brief/production-conditions.en.md"
     },
     {
       "id": "C03",
       "en": "A seasonal river park",
-      "brief_en": "Dry most of the year, a flood channel in a storm. Whose it is the rest of the time, and how it becomes public space.",
-      "zh": "季节性河道公园"
+      "brief_en": "Design a functioning seasonal-channel park: drainage corridor and safe public edge, connected accessible routes, dry-weather uses, necessary sections, warning/closure, maintenance and emergency access. An isolated shelter and a path on empty terrain are insufficient. Respect channel restrictions; do not invent a permanent lake or verified flood levels.",
+      "zh": "季节性河道公园",
+      "brief_zh": "设计可使用的季节性河道公园：排水廊道与安全公共边缘、连续可达路径、旱季用途、必要剖面、预警关闭、维护和应急入口。空地上一座棚和一条路径不构成充分设计。遵守河道限制，不虚构常年水面或已核定洪水位。",
+      "operating_conditions_ref": "brief/production-conditions.en.md"
     },
     {
       "id": "C04",

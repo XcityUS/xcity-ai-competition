@@ -237,3 +237,6 @@ A0展板须包含清晰标注的一、二、三期分区图及对应的数据表
 设计前读取并执行 `skills/xcity-city-design/SKILL.md`。功能分区须从场地、中心、交通、公服和资源关系推导，每个重要边界说明资料、假设与取舍；先预留并检验公服，再排街坊，最后深化节点。矩形、自动最近分区或机械复制住宅不能代替城市设计。
 
 A0以总图、系统图、轴测及空间关系为主，仅保留理解规模和关键判断所需的数字。完整分区分期容量、指标和来源表放技术附件及机器文件；分期图仍须保留，不以密集表格代替。详见 `docs/whole-site-zoning-workflow.md` 和 `docs/presentation-guide.md`。
+
+
+生产运营设计要求：[`production-conditions.zh.md`](production-conditions.zh.md).
