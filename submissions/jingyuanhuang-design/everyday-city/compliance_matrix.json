@@ -3,123 +3,123 @@
   "items": [
     {
       "id": "agent.1",
-      "status": "answered",
+      "status": "partial",
       "section": "## 1.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.2",
-      "status": "answered",
-      "section": "## 3.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 8.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.3",
-      "status": "answered",
-      "section": "## 4.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 8.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.4",
-      "status": "answered",
-      "section": "## 5.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 6.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.5",
-      "status": "answered",
-      "section": "## 6.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 9.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.6",
-      "status": "answered",
-      "section": "## 7.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 4.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.7",
-      "status": "answered",
-      "section": "## 8.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 14.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "agent.8",
-      "status": "answered",
+      "status": "partial",
       "section": "## 9.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M1",
-      "status": "answered",
-      "section": "## 3.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 8.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M2",
-      "status": "answered",
-      "section": "## 3.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 8.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M3",
-      "status": "answered",
-      "section": "## 4.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 8.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M4",
-      "status": "answered",
-      "section": "## 4.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 8.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M5",
-      "status": "answered",
-      "section": "## 4.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 14.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M6",
-      "status": "answered",
-      "section": "## 5.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 6.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M7",
-      "status": "answered",
-      "section": "## 5.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 6.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M8",
-      "status": "answered",
-      "section": "## 8.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 14.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M9",
-      "status": "answered",
-      "section": "## 8.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 14.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M10",
-      "status": "answered",
+      "status": "partial",
       "section": "## 9.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M11",
-      "status": "answered",
-      "section": "## 9.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 14.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     },
     {
       "id": "M12",
-      "status": "answered",
-      "section": "## 6.",
-      "note": "Concept/scenario response in referenced English section; engineering, rights and architectural gaps remain in design_depth_matrix.json. This is not an automatic gate pass."
+      "status": "partial",
+      "section": "## 9.",
+      "note": "V2 scenario/design response is documented. Survey, rights, demand/employment, engineering and operating-budget evidence remain explicit verification needs, not resolved by an automatic check."
     }
   ]
 }

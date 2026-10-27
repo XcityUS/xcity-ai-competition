@@ -1,0 +1,171 @@
+{
+  "metrics": [
+    {
+      "key": "master_area_km2",
+      "value": 2.772183358406499,
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/master_area.geojson"
+    },
+    {
+      "key": "site_coverage_pct",
+      "value": 5.3936333315802765,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "gfa_m2",
+      "value": 274546.6656519747,
+      "unit": "m2",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "far",
+      "value": 0.0990362577639125,
+      "unit": "ratio",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    },
+    {
+      "key": "open_space_pct",
+      "value": 42.62798589970035,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/land_use.geojson"
+    },
+    {
+      "key": "human_machine_interfaces",
+      "value": 33,
+      "unit": "count",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "structure_km2",
+      "value": {
+        "agri_production": 674.3189322149358,
+        "living": 15.873892430131882,
+        "energy_compute": 56.869162270436824,
+        "port": 4.749970234899729,
+        "reserve": 904.8741329360396
+      },
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/structure.geojson"
+    },
+    {
+      "key": "hourly_cfe_match_pct",
+      "value": 29.828767123287673,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "report/hourly-energy.csv"
+    },
+    {
+      "key": "peak_it_load_mw",
+      "value": 8,
+      "unit": "MW",
+      "evidence": "assumed",
+      "assumption": "A-ENERGY"
+    },
+    {
+      "key": "annual_water_demand_m3",
+      "value": 891748.4,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "water_domestic_m3",
+      "value": 183960,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "water_compute_m3",
+      "value": 788.4,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "water_agriculture_m3",
+      "value": 650000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "water_landscape_m3",
+      "value": 12000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "water_industry_m3",
+      "value": 45000,
+      "unit": "m3/yr",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "wue_l_per_kwh",
+      "value": 0.015,
+      "unit": "L/kWh",
+      "evidence": "assumed",
+      "assumption": "A-ENERGY"
+    },
+    {
+      "key": "pue",
+      "value": 1.3,
+      "unit": "ratio",
+      "evidence": "assumed",
+      "assumption": "A-ENERGY"
+    },
+    {
+      "key": "waste_heat_reuse_pct",
+      "value": 5,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-HEAT"
+    },
+    {
+      "key": "water_reuse_pct",
+      "value": 20.18506565304743,
+      "unit": "%",
+      "evidence": "assumed",
+      "assumption": "A-WATER"
+    },
+    {
+      "key": "machine_traffic_rule",
+      "value": "combined",
+      "unit": "enum",
+      "evidence": "declared",
+      "note": "Public interiors pedestrian; neighbourhood access shared; productive freight separated"
+    },
+    {
+      "key": "jobs_phase1",
+      "value": 1500,
+      "unit": "jobs",
+      "evidence": "declared",
+      "note": "Six published job groups; targets, not confirmed recruitment"
+    },
+    {
+      "key": "residents_phase1",
+      "value": 3600,
+      "unit": "persons",
+      "evidence": "declared",
+      "note": "1440 dwellings x 2.5 residents; excludes unknown fixed living-quarter population"
+    },
+    {
+      "key": "dwellings_phase1",
+      "value": 1440,
+      "unit": "units",
+      "evidence": "computed",
+      "computed_from": "geometry/buildings.geojson"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "script": "tools/register_artifacts_v2.py",
+  "script_version": "Everyday-City-V2",
+  "input_sha256": "3696dd4fbb6393f0a1399610b864f7ad36cd735641bae2c335f0740007e4c77e",
+  "generated_at": "2026-10-27",
+  "actual_authoring_scripts": [
+    "tools/redesign_v2.py",
+    "tools/diagrams_v2.py",
+    "tools/scene_v2.py",
+    "scripts/render_views.py",
+    "tools/publish_v2.py"
+  ],
+  "note": "Actual custom drawing/PDF output provenance. No claim that organiser make_figures.py authored the design; no design approval.",
+  "files": {
+    "figures/fig-01-structure.png": "cf79b09693719676ecebdc81ca508b47c614e5f8840625b6b58d73f453a2e8c7",
+    "figures/fig-02-master-plan.png": "1c6ada8e8a20d13d5cb79eee6a4a5382c8cea34e493e0f41bd7e28f3cbe1f550",
+    "figures/fig-03-land-use-density.png": "1c6ada8e8a20d13d5cb79eee6a4a5382c8cea34e493e0f41bd7e28f3cbe1f550",
+    "figures/fig-04-movement.png": "713ae7edd56b74beb052ec54ba86a506df0f77c111671cc1616fed3f4adf404f",
+    "figures/fig-05-open-space-water.png": "6a259935bd24b43fde98da24ae63c76e5ba5364e3e51c639652589d6399a2ce1",
+    "figures/fig-06-phasing.png": "c6b49b9d9e9a3f865d34dfa2a49bcb75f5abb39bb90944ac26dd67c4c29c9d3e",
+    "figures/fig-07-metrics.png": "519907000855a1bcd28e9790cc945c5819803b30b9b04b90fd26c6ef863a9a46",
+    "figures/fig-08-node-location.png": "522bb80a8e4e6a0a12e5da06d9620ca32275a4b9cc5413a86c404cb0ce1d4e65",
+    "drawings/a3-booklet.pdf": "668a70b020f7b2fa10583942f811f8600afc6f82bde9b4d2f5a7a5342d355faf",
+    "drawings/a0-board.pdf": "15f551329d7f8421aaa707c34179dfbfc2f34323b3b165b375c544964af81d2c",
+    "drawings/a3-technical-appendix.pdf": "518a6257460668f633c982fab5b45ef95bd6992ee6127bc402900060725776a2",
+    "drawings/presentation-index.json": "294c147708ecc6bdce72f6aea03844810149d947db7998ac793a05af1583e248",
+    "figures/node-A01-plan.png": "0b722a5c7c615bcde578bbf93b5eae69320291f0ed58f90c351067378057d23d",
+    "figures/node-A01-aerial.png": "1c35e0b5471bc1f8a45d5a52a8cab8d2a4b488b6b090f9dbdec5adba9e3ba4e5",
+    "figures/node-A01-eye.png": "adf3a2295f14d23809a4e2f05333b833aec3e8f0bc49b7ef6353d2fcae94e3bd",
+    "figures/node-B03-plan.png": "192a3d2e742bfd637f2313e7bc14994b053b924ed9ca70bcb751fdaebd655412",
+    "figures/node-B03-aerial.png": "06f39512ab8d7157d0b61b09b8e3e276042f2b4435da7c7fb4d2b5dcd269dfba",
+    "figures/node-B03-eye.png": "ad20ab4dd02b09e842619c195ff815a154a310e3938ee6f18efa18302beca3a2",
+    "figures/node-C02-plan.png": "0de181de5300ac053d4c3bbb0be65455fd9f8f8e0e9f3f0f5375b8d1fb5f6d72",
+    "figures/node-C02-aerial.png": "a3c49c5304387f25e5b4477d127c6d1b4ad89061b899784bda2b2db03a523d82",
+    "figures/node-C02-eye.png": "534927a2d473c06a45f6329f66ff39034e027f209e5939737f7dc4fead651809"
+  }
+}

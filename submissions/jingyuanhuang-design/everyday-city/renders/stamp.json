@@ -1,68 +1,48 @@
 {
-  "input_sha256": "6beed1bca9346d411c9c45dc4d6a569e7729665ae87575e0e3bce7d2df890101",
-  "width": 1600,
-  "height": 1000,
-  "generator": "scripts/render_views.py 1.2.0",
+  "input_sha256": "e77b995437130cdf6cbbb31119caedf78e62f5e414b47fc3c785e18abe4581a0",
+  "width": 2000,
+  "height": 1250,
+  "generator": "scripts/render_views.py 1.4.0",
   "files": {
-    "master-aerial.png": {
-      "sha256": "129f184db92c25ef366e7f702f7a7d5cea6947182bbf59803db99055a28f3246",
-      "label": "Master design - aerial",
+    "city-overall.png": {
+      "sha256": "c9f2dde37a818678d28df47cb3375ad40555ab06053be50c82783d20ef8f5a31",
+      "label": "Complete southwest settlement system / full build-out",
       "time": "day"
     },
-    "city-aerial.png": {
-      "sha256": "d8066a27d9b63604a0a02101675e0a94d1049966b7c9dacb8ddd758b4ab65ade",
-      "label": "The city - aerial",
+    "city-centre.png": {
+      "sha256": "8598342c08317e98533f39f092cc12f7cb5648972fdea7ebdd672502f43f0518",
+      "label": "Town civic band and living districts / local aerial",
       "time": "day"
-    },
-    "city-evening.png": {
-      "sha256": "4054e70e240c5855f80897ccda089991a3dc2040be0923f3419f919fae786e2d",
-      "label": "The city - evening",
-      "time": "evening"
     },
     "A01-aerial.png": {
-      "sha256": "f145cdd5f5a66aa835616c853fed19b738ed9cc201fdf937edc266fe78c84966",
-      "label": "A01 - aerial",
+      "sha256": "02d58fff705ba7ee6016e77d7221d02471aceed90d9cd2523af584a0e18f6765",
+      "label": "A01 open-court housing / local aerial",
       "time": "day"
     },
-    "A01-eye-day.png": {
-      "sha256": "3e1bba538dfdbd628b968d72a0b6b93bbe87a33c39a53c0ee0e12484e1df42e5",
-      "label": "A01 - eye level, day",
+    "A01-eye.png": {
+      "sha256": "15b4e54bb4960fdda5999d0ec74dc07a8ac087a6f27edca90eacbcf2750abb22",
+      "label": "A01 shared court / eye-level",
       "time": "day"
-    },
-    "A01-eye-night.png": {
-      "sha256": "554d72862351e2ac0e8c8e097a769ebcb4e60bcf12eee70c7a78b6fb24005515",
-      "label": "A01 - eye level, night",
-      "time": "night"
     },
     "B03-aerial.png": {
-      "sha256": "39698a0ccf706d3b4291f049f97b7cb0674ff505597e42551b30b93249d0b941",
-      "label": "B03 - aerial",
+      "sha256": "3c145925ea9c0bf7dfa39ad3cd32ed2122f7646bb26a5e91c4de11baaa3b8803",
+      "label": "B03 four staged halls and repair / local aerial",
       "time": "day"
     },
-    "B03-eye-day.png": {
-      "sha256": "55d3790788a4ff6483d697c6c3e40948d0d063211dbc411e0827d9eaed2defdc",
-      "label": "B03 - eye level, day",
+    "B03-eye.png": {
+      "sha256": "9ffb41e85787139ecaad640fd3e9cf790f77aae1758389172f4f7a4b481aeb62",
+      "label": "B03 protected worker spine / eye-level",
       "time": "day"
-    },
-    "B03-eye-evening.png": {
-      "sha256": "42bcedd8f6f57d6add2658709b7c25c483b3b910f5aed3dd9514f4186c08d91d",
-      "label": "B03 - eye level, evening",
-      "time": "evening"
     },
     "C02-aerial.png": {
-      "sha256": "75f007dbebd2f6b6cf35a4d23d05be5ba33c77270686bf8c143d02c86b1a0215",
-      "label": "C02 - aerial",
+      "sha256": "4f0f43b156e211bc92fa5f5d8f8efb760f47adf0050f6c59dd7134af40eb7c58",
+      "label": "C02 new trial field and learning edge / local aerial",
       "time": "day"
     },
-    "C02-eye-day.png": {
-      "sha256": "d2a0baaf4940bd967f7e998cc39d9d2b6c0910f25a4f53b252735ff7f25ac42d",
-      "label": "C02 - eye level, day",
+    "C02-eye.png": {
+      "sha256": "83e3eaa48464cdd613fa5d8c2e0ecf4157b3028634db9badc6846668aad7d9b8",
+      "label": "C02 public shade edge facing new trial rows / eye-level",
       "time": "day"
-    },
-    "C02-eye-evening.png": {
-      "sha256": "bc7fd3e8cdd0f98af355de9261b4253711a6fbccec30a85cab1baca17b9a736a",
-      "label": "C02 - eye level, evening",
-      "time": "evening"
     }
   }
 }

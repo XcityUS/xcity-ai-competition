@@ -2,170 +2,307 @@
   "metrics": [
     {
       "key": "master_area_km2",
-      "value": 2.772183358406499,
+      "value": 8.6407,
       "unit": "km2",
       "evidence": "computed",
       "computed_from": "geometry/master_area.geojson"
     },
     {
-      "key": "site_coverage_pct",
-      "value": 5.3936333315802765,
-      "unit": "%",
+      "key": "footprint_m2",
+      "value": 807711.1,
+      "unit": "m2",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
     },
     {
+      "key": "site_coverage_pct",
+      "value": 9.348,
+      "unit": "%",
+      "evidence": "computed",
+      "computed_from": "geometry/master_area.geojson"
+    },
+    {
       "key": "gfa_m2",
-      "value": 274546.6656519747,
+      "value": 1749511.1,
       "unit": "m2",
       "evidence": "computed",
       "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "far",
-      "value": 0.0990362577639125,
+      "value": 0.2025,
       "unit": "ratio",
       "evidence": "computed",
-      "computed_from": "geometry/buildings.geojson"
+      "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "open_space_pct",
-      "value": 42.62798589970035,
+      "value": 11.368,
       "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/land_use.geojson"
     },
     {
       "key": "human_machine_interfaces",
-      "value": 33,
+      "value": 5,
       "unit": "count",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "shaded_pedestrian_pct",
+      "value": 0.0,
+      "unit": "%",
       "evidence": "computed",
       "computed_from": "geometry/movement.geojson"
     },
     {
       "key": "structure_km2",
       "value": {
-        "agri_production": 674.3189322149358,
-        "living": 15.873892430131882,
-        "energy_compute": 56.869162270436824,
-        "port": 4.749970234899729,
-        "reserve": 904.8741329360396
+        "agri_production": 438.501,
+        "energy_compute": 465.265,
+        "living": 115.804,
+        "port": 292.117,
+        "reserve": 347.136
       },
-      "unit": "km2",
+      "unit": "mixed",
       "evidence": "computed",
       "computed_from": "geometry/structure.geojson"
     },
     {
-      "key": "hourly_cfe_match_pct",
-      "value": 29.828767123287673,
-      "unit": "%",
+      "key": "land_use_ha",
+      "value": {
+        "agriculture": 40.03,
+        "civic": 50.84,
+        "compute": 156.1,
+        "energy": 78.05,
+        "infrastructure": 127.33,
+        "mixed_use": 11.3,
+        "open_space": 98.23,
+        "reserve": 22.59,
+        "residential": 279.6
+      },
+      "unit": "mixed",
       "evidence": "computed",
-      "computed_from": "report/hourly-energy.csv"
+      "computed_from": "geometry/land_use.geojson"
+    },
+    {
+      "key": "network_km",
+      "value": {
+        "people": 8.703,
+        "machine": 10.25,
+        "shared": 196.383
+      },
+      "unit": "mixed",
+      "evidence": "computed",
+      "computed_from": "geometry/movement.geojson"
+    },
+    {
+      "key": "outside_master_gfa_m2",
+      "value": 0,
+      "unit": "m2",
+      "evidence": "computed",
+      "computed_from": "geometry/master_area.geojson"
+    },
+    {
+      "key": "residents_phase1",
+      "value": 4440.0,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "dwellings_phase1",
+      "value": 1776,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "jobs_phase1",
+      "value": 905,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "residents_phase2",
+      "value": 9720.0,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "dwellings_phase2",
+      "value": 3888,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "jobs_phase2",
+      "value": 1710,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "residents_phase3",
+      "value": 19680.0,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "dwellings_phase3",
+      "value": 7872,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "jobs_phase3",
+      "value": 2150,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/design-account.json; computed inventory with assumed occupancy/staffing"
+    },
+    {
+      "key": "students_phase1",
+      "value": 666,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "Assumed 15% of 4,440 phase-one residents; school scenario capacity 750"
+    },
+    {
+      "key": "water_demand_m3_per_year",
+      "value": 750005.4,
+      "unit": "m3/year",
+      "evidence": "declared",
+      "note": "reviews/redesign-v2/resource-scenarios.json; full-build-out gross demand assumptions"
+    },
+    {
+      "key": "freshwater_required_m3_per_year",
+      "value": 706527.6086956522,
+      "unit": "m3/year",
+      "evidence": "declared",
+      "note": "Gross use less reuse, divided by 0.92; fixed-pilot and irrigation demands additional unknown"
+    },
+    {
+      "key": "machine_traffic_rule",
+      "value": "combined",
+      "unit": "rule",
+      "evidence": "declared",
+      "note": "Registered pedestrian priority crossings require detailed design and interlocks"
+    },
+    {
+      "key": "clean_energy_share_pct",
+      "value": 0,
+      "unit": "%",
+      "evidence": "declared",
+      "note": "No audited hourly clean-energy percentage credited. This is a conservative credit, not a prediction."
+    },
+    {
+      "key": "waste_heat_reuse_mwh_per_year",
+      "value": 0,
+      "unit": "MWh/year",
+      "evidence": "declared",
+      "note": "Zero useful-heat credit until local drying demand is measured; no residential heat network"
+    },
+    {
+      "key": "water_reuse_m3_per_year",
+      "value": 100000,
+      "unit": "m3/year",
+      "evidence": "declared",
+      "note": "Declared nonpotable reuse scenario, requires treatment and end-use verification"
+    },
+    {
+      "key": "school_places_full",
+      "value": 3100,
+      "unit": "count",
+      "evidence": "declared",
+      "note": "Two x 750 and four x 400; assumed capacity from modelled school parcels"
+    },
+    {
+      "key": "hourly_cfe_match_pct",
+      "value": 0,
+      "unit": "%",
+      "evidence": "declared",
+      "note": "No audited hourly matching credited; physical PV proposed, storage credited0hours; no green grid-contract credit"
     },
     {
       "key": "peak_it_load_mw",
-      "value": 8,
+      "value": 4,
       "unit": "MW",
-      "evidence": "assumed",
-      "assumption": "A-ENERGY"
+      "evidence": "declared",
+      "note": "Two phase-one2MW halls; assumed12MW grid connection, not supplied or secured"
     },
     {
       "key": "annual_water_demand_m3",
-      "value": 891748.4,
+      "value": 177117.7,
       "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
+      "evidence": "declared",
+      "note": "Phase-one full occupancy; domestic includes civic; panel cleaning1000m3/y sits in industry; fixed-pilot demand is additional unknown"
     },
     {
       "key": "water_domestic_m3",
-      "value": 183960,
+      "value": 162060.0,
       "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
+      "evidence": "declared",
+      "note": "4440 people x100L/day including15L civic x365days"
     },
     {
       "key": "water_compute_m3",
-      "value": 788.4,
+      "value": 4555.2,
       "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
+      "evidence": "declared",
+      "note": "4MW IT x8760hours x PUE1.3 x0.1L/kWh"
     },
     {
       "key": "water_agriculture_m3",
-      "value": 650000,
+      "value": 0,
       "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
+      "evidence": "declared",
+      "note": "No new irrigation or yield credited; fixed pilot is additional unknown"
     },
     {
       "key": "water_landscape_m3",
-      "value": 12000,
+      "value": 0,
       "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
+      "evidence": "declared",
+      "note": "No irrigated planting capacity"
     },
     {
       "key": "water_industry_m3",
-      "value": 45000,
+      "value": 10502.5,
       "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
+      "evidence": "declared",
+      "note": "905jobs x35L/workday x300days plus1000m3 panel-cleaning scenario"
     },
     {
       "key": "wue_l_per_kwh",
-      "value": 0.015,
+      "value": 0.1,
       "unit": "L/kWh",
-      "evidence": "assumed",
-      "assumption": "A-ENERGY"
+      "evidence": "declared",
+      "note": "Dry-led cooling with declared small makeup allowance; PUE1.3; no metered engineering proof"
     },
     {
       "key": "pue",
       "value": 1.3,
       "unit": "ratio",
-      "evidence": "assumed",
-      "assumption": "A-ENERGY"
+      "evidence": "declared",
+      "note": "Declared dry-led compute scenario"
     },
     {
       "key": "waste_heat_reuse_pct",
-      "value": 5,
+      "value": 0,
       "unit": "%",
-      "evidence": "assumed",
-      "assumption": "A-HEAT"
-    },
-    {
-      "key": "water_reuse_pct",
-      "value": 20.18506565304743,
-      "unit": "%",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
-    },
-    {
-      "key": "machine_traffic_rule",
-      "value": "combined",
-      "unit": "enum",
       "evidence": "declared",
-      "note": "Public interiors pedestrian; neighbourhood access shared; productive freight separated"
-    },
-    {
-      "key": "jobs_phase1",
-      "value": 1500,
-      "unit": "jobs",
-      "evidence": "declared",
-      "note": "Six published job groups; targets, not confirmed recruitment"
-    },
-    {
-      "key": "residents_phase1",
-      "value": 3600,
-      "unit": "persons",
-      "evidence": "declared",
-      "note": "1440 dwellings x 2.5 residents; excludes unknown fixed living-quarter population"
-    },
-    {
-      "key": "dwellings_phase1",
-      "value": 1440,
-      "unit": "units",
-      "evidence": "computed",
-      "computed_from": "geometry/buildings.geojson"
+      "note": "No credit until the small local drying trial proves demand"
     }
+  ],
+  "metric_scope": "master_area_clipped_v2",
+  "notes": [
+    "Full-build-out and phase-one denominators are explicit; no grid/water right or employment-demand approval"
   ]
 }

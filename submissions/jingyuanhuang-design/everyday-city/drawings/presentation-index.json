@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "layout_version": 1,
+  "layout_version": 2,
   "documents": {
     "main": {
       "path": "drawings/a3-booklet.pdf",
-      "pages": 30
+      "pages": 22
     },
     "technical": {
       "path": "drawings/a3-technical-appendix.pdf",
-      "pages": 10
+      "pages": 14
     }
   },
   "sections": [
@@ -16,54 +16,166 @@
       "id": "whole_site",
       "document": "main",
       "pages": [
-        2
+        3
       ]
     },
     {
       "id": "node_locator",
       "document": "main",
       "pages": [
-        14
+        12
       ]
     },
     {
       "id": "node:A01",
       "document": "main",
       "pages": [
-        19,
-        20
+        13,
+        14
       ]
     },
     {
       "id": "node:B03",
       "document": "main",
       "pages": [
-        22,
-        23
+        15,
+        16
       ]
     },
     {
       "id": "node:C02",
       "document": "main",
       "pages": [
-        25,
-        26
+        17,
+        18
       ]
     },
     {
       "id": "phasing",
       "document": "main",
       "pages": [
-        28
+        19
       ]
     },
     {
       "id": "key_metrics",
       "document": "main",
       "pages": [
-        30
+        21
       ]
     }
   ],
-  "note": "Page-order and file checks only; design quality and image/geometry agreement require independent review."
+  "pages": [
+    {
+      "page": 1,
+      "title": "Cover",
+      "section": "cover"
+    },
+    {
+      "page": 2,
+      "title": "The organising decision",
+      "section": "argument"
+    },
+    {
+      "page": 3,
+      "title": "Whole-site zoning",
+      "section": "whole_site"
+    },
+    {
+      "page": 4,
+      "title": "Ground and alternative",
+      "section": "site_reading"
+    },
+    {
+      "page": 5,
+      "title": "Complete system layout",
+      "section": "overall_layout"
+    },
+    {
+      "page": 6,
+      "title": "Overall spatial view",
+      "section": "overall_layout"
+    },
+    {
+      "page": 7,
+      "title": "Districts, blocks and the civic band",
+      "section": "urban_design"
+    },
+    {
+      "page": 8,
+      "title": "A hierarchy of streets and public movement",
+      "section": "street_mobility"
+    },
+    {
+      "page": 9,
+      "title": "Dry commons and a shade network",
+      "section": "ecology_landscape"
+    },
+    {
+      "page": 10,
+      "title": "Schools, care and daily destinations",
+      "section": "public_space_services"
+    },
+    {
+      "page": 11,
+      "title": "Housing grammar",
+      "section": "urban_design"
+    },
+    {
+      "page": 12,
+      "title": "Three-node locator",
+      "section": "node_locator"
+    },
+    {
+      "page": 13,
+      "title": "A01 aerial",
+      "section": "node:A01"
+    },
+    {
+      "page": 14,
+      "title": "A01 eye plan section",
+      "section": "node:A01"
+    },
+    {
+      "page": 15,
+      "title": "B03 aerial",
+      "section": "node:B03"
+    },
+    {
+      "page": 16,
+      "title": "B03 eye plan section",
+      "section": "node:B03"
+    },
+    {
+      "page": 17,
+      "title": "C02 aerial",
+      "section": "node:C02"
+    },
+    {
+      "page": 18,
+      "title": "C02 eye plan section",
+      "section": "node:C02"
+    },
+    {
+      "page": 19,
+      "title": "Construction phases",
+      "section": "phasing"
+    },
+    {
+      "page": 20,
+      "title": "Independent first operation",
+      "section": "phasing_operation"
+    },
+    {
+      "page": 21,
+      "title": "Resource capacities and gates",
+      "section": "key_metrics"
+    },
+    {
+      "page": 22,
+      "title": "Choices and next verification",
+      "section": "conclusion"
+    }
+  ],
+  "note": "Visual-first A0; no dense tables. Detailed accounts and controls are separate. No design approval."
 }

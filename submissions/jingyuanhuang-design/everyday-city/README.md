@@ -1,11 +1,7 @@
-# THE EVERYDAY CITY
+# THE EVERYDAY CITY / V2
 
-Independent English concept proposal by Jingyuan Huang. Open report/index.html for the illustrated review and drawings/everyday-city-design-review.pdf for the full booklet.
+Current English public preview: report/proposal.html, drawings/a3-booklet.pdf, drawings/a0-board.pdf and drawings/a3-technical-appendix.pdf. Complete city with three living districts, a civic band and separately serviced productive/farm campuses.
 
-A/B/C node IDs only under the current organiser contract. Run scripts/finalize_submission.py for the current automatic result. Independent design content review remains separate. Public preview authorised on 27 October 2026.
+Reproduce geometry with tools/redesign_v2.py, diagrams with tools/diagrams_v2.py, scene with tools/scene_v2.py and scripts/render_views.py, presentation with tools/publish_v2.py, and public metadata with tools/integrate_v2.py. Original built-in imagegen prompts and selected/rejected review are in reviews/redesign-v2/. Original images must be supplied from their registered PNG files when reproducing.
 
-Reproduce: tools/build_design.py, tools/energy_model.py, tools/draw_design.py, tools/complete_package.py, tools/package_review.py. Finished image provenance is separately recorded.
-
-Current public outputs: drawings/a3-booklet.pdf, drawings/a3-technical-appendix.pdf and report/proposal.html. Earlier everyday-city-design-review.pdf and everyday-city-technical-appendix.pdf preserve the pre-publication concept checkpoint.
-
-Public reproduction after the original design: tools/prepare_publication.py; scripts/render_views.py; scripts/finalize_submission.py. Do not rerun the historical tools/package_review.py after finalisation: its page index belongs only to the earlier local concept review.
+V1 is withdrawn from recommendation; archival material is explicitly labelled. Automatic checks, public-preview authorisation and independent content review are separate. No design approval is claimed.

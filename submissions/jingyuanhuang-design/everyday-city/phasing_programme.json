@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "map": "figures/fig-06-phasing.png",
+  "a0_board": "drawings/a0-board.pdf",
+  "phases": [
+    {
+      "phase": 1,
+      "period": "Years 0-5 scenario",
+      "objective": "Complete western neighbourhood, civic core, utilities and first productive halls",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "zones": [
+        {
+          "zone_id": "TOWN",
+          "name": "TOWN",
+          "new_residents": 4440.0,
+          "cumulative_residents": 4440.0,
+          "new_dwellings": 1776,
+          "cumulative_dwellings": 1776,
+          "new_jobs": 655,
+          "cumulative_jobs": 655,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "WORKS",
+          "name": "WORKS",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 150,
+          "cumulative_jobs": 150,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "UTILITIES",
+          "name": "UTILITIES",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 30,
+          "cumulative_jobs": 30,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "FARM",
+          "name": "FARM",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 70,
+          "cumulative_jobs": 70,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "period": "Years 5-10 conditional",
+      "objective": "Eastern living district and additional productive capacity",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "zones": [
+        {
+          "zone_id": "TOWN",
+          "name": "TOWN",
+          "new_residents": 5280.0,
+          "cumulative_residents": 9720.0,
+          "new_dwellings": 2112,
+          "cumulative_dwellings": 3888,
+          "new_jobs": 655,
+          "cumulative_jobs": 1310,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "WORKS",
+          "name": "WORKS",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 150,
+          "cumulative_jobs": 300,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "UTILITIES",
+          "name": "UTILITIES",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 0,
+          "cumulative_jobs": 30,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "FARM",
+          "name": "FARM",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 0,
+          "cumulative_jobs": 70,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "period": "Years 10-20 conditional",
+      "objective": "Northern neighbourhoods and final staged halls",
+      "works": [
+        "Homes, school, care, shops, access and utilities before occupancy"
+      ],
+      "sequence_dependencies": [
+        "Lawful external access and water/power rights",
+        "First occupied phase independently funded"
+      ],
+      "trigger": "Demand, operating budget and audited resource margin verified; no calendar-only expansion",
+      "zones": [
+        {
+          "zone_id": "TOWN",
+          "name": "TOWN",
+          "new_residents": 9960.0,
+          "cumulative_residents": 19680.0,
+          "new_dwellings": 3984,
+          "cumulative_dwellings": 7872,
+          "new_jobs": 410,
+          "cumulative_jobs": 1720,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "WORKS",
+          "name": "WORKS",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 30,
+          "cumulative_jobs": 330,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "UTILITIES",
+          "name": "UTILITIES",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 0,
+          "cumulative_jobs": 30,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        },
+        {
+          "zone_id": "FARM",
+          "name": "FARM",
+          "new_residents": 0.0,
+          "cumulative_residents": 0.0,
+          "new_dwellings": 0,
+          "cumulative_dwellings": 0,
+          "new_jobs": 0,
+          "cumulative_jobs": 70,
+          "basis": "Computed V2 building inventory; 2.5 residents/dwelling assumed; jobs are indicative staffed places, not verified employment."
+        }
+      ]
+    }
+  ]
+}

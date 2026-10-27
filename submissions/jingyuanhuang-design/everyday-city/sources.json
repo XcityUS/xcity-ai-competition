@@ -4,15 +4,51 @@
       "id": "S-SNAPSHOT",
       "title": "XCITY issued competition site package",
       "publisher": "XCITY",
-      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/9e504de/brief/site-package",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/640062ffa5550ced7d6e79c7996dab54b6c0cd88/brief/site-package",
       "accessed": "2026-10-27",
       "used_for": "Boundary, fixed pilots, terrain and drainage screening, regional roads. Not cadastral certification, utility rights or hydraulic approval."
+    },
+    {
+      "id": "SRC-KML",
+      "title": "Parcel boundaries for the two parcels of the site",
+      "publisher": "XCITY (owner-supplied KML)",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/640062ffa5550ced7d6e79c7996dab54b6c0cd88/brief/site-package",
+      "accessed": "2026-10-27",
+      "used_for": "Issued boundaries/parcels_9_13.geojson, boundaries/scope_9_13.geojson",
+      "licence": "Provided for use in the XCITY AI Competition. Not a cadastral record; not for legal use."
+    },
+    {
+      "id": "SRC-PILOT",
+      "title": "Pilot area: fields 01-03 and the living quarter, phase 1",
+      "publisher": "XCITY",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/640062ffa5550ced7d6e79c7996dab54b6c0cd88/brief/site-package",
+      "accessed": "2026-10-27",
+      "used_for": "Issued pilot-area/pilot_area.geojson, pilot-area/pilot_living_area.geojson",
+      "licence": "Provided for use in the XCITY AI Competition."
+    },
+    {
+      "id": "SRC-DEM",
+      "title": "Copernicus DEM GLO-30 (WorldDEM-30)",
+      "publisher": "European Union / ESA, Copernicus programme",
+      "url": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/DEM/resources/license/License-COPDEM-30.pdf",
+      "accessed": "2026-10-27",
+      "used_for": "Issued terrain/dem_9_13_utm19s_60m.tif, terrain/dem_9_13_utm19s_60m.png, terrain/hillshade_9_13.png, terrain/hillshade_9_13_utm.png, terrain/terrain_summary_9_13.json, water/channels_dem.geojson, water/flood_sensitive_dem.geojson",
+      "licence": "Copernicus DEM licence (GLO-30). Derived products in this package: produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30."
+    },
+    {
+      "id": "SRC-OSM",
+      "title": "OpenStreetMap road network",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://github.com/XcityUS/xcity-ai-competition/tree/640062ffa5550ced7d6e79c7996dab54b6c0cd88/brief/site-package",
+      "accessed": "2026-10-27",
+      "used_for": "Issued access/roads_osm.geojson, access/road_distances_9_13.json",
+      "licence": "Open Database License (ODbL) 1.0; (c) OpenStreetMap contributors"
     }
   ],
   "file_checksums": [
     {
       "path": "brief/site-package/boundaries/scope_9_13.geojson",
-      "sha256": "225935fa106017e970cdc82f4910c50d7616e947c69f1a9dc62592c5a5fb3ca6"
+      "sha256": "6390ce30a2335d45dd8438b48810c3feabeaa1b4b085fd8c2b7cb655daeced10"
     },
     {
       "path": "brief/site-package/pilot-area/pilot_area.geojson",

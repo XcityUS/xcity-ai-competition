@@ -1,0 +1,154 @@
+[
+  {
+    "id": "city-overall",
+    "position_utm19s": [
+      578300,
+      6551200,
+      5100
+    ],
+    "target_utm19s": [
+      574400,
+      6554200,
+      0
+    ],
+    "fov_degrees": 44,
+    "aspect_ratio": 1.6,
+    "scope": "Complete southwest settlement system / full build-out",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/city-overall.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "city-centre",
+    "position_utm19s": [
+      575600,
+      6554300,
+      1050
+    ],
+    "target_utm19s": [
+      574500,
+      6555470,
+      0
+    ],
+    "fov_degrees": 48,
+    "aspect_ratio": 1.6,
+    "scope": "Town civic band and living districts / local aerial",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/city-centre.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "A01-aerial",
+    "position_utm19s": [
+      574319.9999999997,
+      6554560.000000003,
+      260
+    ],
+    "target_utm19s": [
+      574099.9999999997,
+      6554800.000000003,
+      0
+    ],
+    "fov_degrees": 46,
+    "aspect_ratio": 1.6,
+    "scope": "A01 open-court housing / local aerial",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/A01-aerial.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "A01-eye",
+    "position_utm19s": [
+      574071.9999999997,
+      6554770.000000003,
+      1.7
+    ],
+    "target_utm19s": [
+      574107.9999999997,
+      6554850.000000003,
+      2
+    ],
+    "fov_degrees": 63,
+    "aspect_ratio": 1.6,
+    "scope": "A01 shared court / eye-level",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/A01-eye.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "B03-aerial",
+    "position_utm19s": [
+      575650,
+      6551550,
+      1150
+    ],
+    "target_utm19s": [
+      574600,
+      6552500,
+      0
+    ],
+    "fov_degrees": 44,
+    "aspect_ratio": 1.6,
+    "scope": "B03 four staged halls and repair / local aerial",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/B03-aerial.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "B03-eye",
+    "position_utm19s": [
+      574500,
+      6552318,
+      1.7
+    ],
+    "target_utm19s": [
+      574300,
+      6552390,
+      3
+    ],
+    "fov_degrees": 64,
+    "aspect_ratio": 1.6,
+    "scope": "B03 protected worker spine / eye-level",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/B03-eye.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "C02-aerial",
+    "position_utm19s": [
+      574000,
+      6550800,
+      750
+    ],
+    "target_utm19s": [
+      573400,
+      6551300,
+      0
+    ],
+    "fov_degrees": 45,
+    "aspect_ratio": 1.6,
+    "scope": "C02 new trial field and learning edge / local aerial",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/C02-aerial.png",
+    "geometry_source": "geometry/"
+  },
+  {
+    "id": "C02-eye",
+    "position_utm19s": [
+      573410,
+      6551330,
+      1.7
+    ],
+    "target_utm19s": [
+      573290,
+      6551200,
+      2
+    ],
+    "fov_degrees": 63,
+    "aspect_ratio": 1.6,
+    "scope": "C02 public shade edge facing new trial rows / eye-level",
+    "phase": "Full build-out scenario; node core enabled in Phase 1",
+    "control_image": "renders/C02-eye.png",
+    "geometry_source": "geometry/"
+  }
+]

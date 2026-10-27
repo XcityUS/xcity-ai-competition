@@ -4,94 +4,16 @@
     {
       "id": "whole_site",
       "status": "partial",
-      "decision": "Primary city, two conditional service towns and productive backbone",
+      "decision": "Named exclusive territorial districts, source mountain reading and regional road framework",
       "scope": {
-        "extent": "Entire issued boundary",
-        "phase": "Phase1; regional reserves conditional"
+        "extent": "Whole issued site",
+        "phase": "P1-P3 capacity scenario"
       },
       "drawings": [
-        "pages/01-whole-site.png",
-        "pages/02-site-reading.png"
+        "figures/fig-01-structure.png"
       ],
       "geometry": [
-        "geometry/structure.geojson"
-      ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1"
-      ],
-      "explanation": {
-        "path": "proposal.md",
-        "heading": "## 7."
-      },
-      "gaps": [
-        {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
-        {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
-        }
-      ]
-    },
-    {
-      "id": "phase_one",
-      "status": "partial",
-      "decision": "Complete housing and public services before later expansion",
-      "scope": {
-        "extent": "Complete first district and productive trail",
-        "phase": "Phase1; regional reserves conditional"
-      },
-      "drawings": [
-        "pages/04-first-district.png",
-        "pages/14-phasing.png"
-      ],
-      "geometry": [
-        "geometry/master_area.geojson",
-        "geometry/land_use.geojson"
-      ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1"
-      ],
-      "explanation": {
-        "path": "proposal.md",
-        "heading": "## 9."
-      },
-      "gaps": [
-        {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
-        {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
-        }
-      ]
-    },
-    {
-      "id": "urban_design",
-      "status": "partial",
-      "decision": "Open-corner courts, common rooms and continuous access",
-      "scope": {
-        "extent": "One complete 240-home neighbourhood",
-        "phase": "Phase1; regional reserves conditional"
-      },
-      "drawings": [
-        "pages/05-courtyard-neighbourhood.png",
-        "pages/06-street-section.png"
-      ],
-      "geometry": [
-        "geometry/buildings.geojson",
+        "geometry/structure.geojson",
         "geometry/movement.geojson"
       ],
       "metrics": [
@@ -100,33 +22,97 @@
       ],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 7."
+        "heading": "## 3."
       },
       "gaps": [
         {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
+        }
+      ]
+    },
+    {
+      "id": "overall_layout",
+      "status": "partial",
+      "decision": "One complete town with separately serviced productive and farm campuses",
+      "scope": {
+        "extent": "Complete town and associated campuses",
+        "phase": "P1-P3 capacity scenario"
+      },
+      "drawings": [
+        "figures/fig-02-master-plan.png",
+        "figures/fig-04-movement.png",
+        "figures/fig-05-open-space-water.png",
+        "figures/fig-08-node-location.png",
+        "media/v2/city-overall.png"
+      ],
+      "geometry": [
+        "geometry/master_area.geojson",
+        "geometry/land_use.geojson",
+        "geometry/phasing.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 4."
+      },
+      "gaps": [
         {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
+        }
+      ]
+    },
+    {
+      "id": "urban_design",
+      "status": "partial",
+      "decision": "Different open-court and terrace housing, civic band, streets and services",
+      "scope": {
+        "extent": "urban_design",
+        "phase": "P1-P3 capacity scenario"
+      },
+      "drawings": [
+        "figures/fig-02-master-plan.png",
+        "reviews/redesign-v2/diagrams/A01-section.png"
+      ],
+      "geometry": [
+        "geometry/buildings.geojson",
+        "geometry/land_use.geojson"
+      ],
+      "metrics": [
+        "master_area_km2",
+        "residents_phase1"
+      ],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 5."
+      },
+      "gaps": [
+        {
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
         }
       ]
     },
     {
       "id": "nodes",
       "status": "partial",
-      "decision": "Housing, useful compute and fixed-pilot interface test a shared city promise",
+      "decision": "Three node locations test housing, production and productive landscape at their true coordinates",
       "scope": {
-        "extent": "Three first-district places",
-        "phase": "Phase1; regional reserves conditional"
+        "extent": "Complete town and associated campuses",
+        "phase": "P1-P3 capacity scenario"
       },
       "drawings": [
-        "pages/10-node-locator.png"
+        "figures/fig-08-node-location.png"
       ],
       "geometry": [
         "geometry/nodes.geojson"
@@ -141,34 +127,31 @@
       },
       "gaps": [
         {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
-        {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
         }
       ]
     },
     {
       "id": "node:A01",
       "status": "partial",
-      "decision": "Detailed place, arrival and abnormal operation",
+      "decision": "Geometry-linked A01 public life and operating interface",
       "scope": {
-        "extent": "A01",
-        "phase": "Phase1; regional reserves conditional"
+        "extent": "node:A01",
+        "phase": "P1-P3 capacity scenario"
       },
       "drawings": [
-        "pages/11-a01-plan.png",
-        "media/A01-finished.png"
+        "figures/node-A01-plan.png",
+        "media/v2/A01-aerial.png",
+        "media/v2/A01-eye.png",
+        "reviews/redesign-v2/diagrams/A01-section.png"
       ],
       "geometry": [
         "geometry/nodes.geojson",
-        "geometry/buildings.geojson"
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
       ],
       "metrics": [
         "master_area_km2",
@@ -180,34 +163,31 @@
       },
       "gaps": [
         {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
-        {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
         }
       ]
     },
     {
       "id": "node:B03",
       "status": "partial",
-      "decision": "Detailed place, arrival and abnormal operation",
+      "decision": "Geometry-linked B03 public life and operating interface",
       "scope": {
-        "extent": "B03",
-        "phase": "Phase1; regional reserves conditional"
+        "extent": "node:B03",
+        "phase": "P1-P3 capacity scenario"
       },
       "drawings": [
-        "pages/12-b03-plan.png",
-        "media/B03-finished.png"
+        "figures/node-B03-plan.png",
+        "media/v2/B03-aerial.png",
+        "media/v2/B03-eye.png",
+        "reviews/redesign-v2/diagrams/B03-section.png"
       ],
       "geometry": [
         "geometry/nodes.geojson",
-        "geometry/buildings.geojson"
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
       ],
       "metrics": [
         "master_area_km2",
@@ -215,38 +195,35 @@
       ],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 10."
+        "heading": "## 11."
       },
       "gaps": [
         {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
-        {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
         }
       ]
     },
     {
       "id": "node:C02",
       "status": "partial",
-      "decision": "Detailed place, arrival and abnormal operation",
+      "decision": "Geometry-linked C02 public life and operating interface",
       "scope": {
-        "extent": "C02",
-        "phase": "Phase1; regional reserves conditional"
+        "extent": "node:C02",
+        "phase": "P1-P3 capacity scenario"
       },
       "drawings": [
-        "pages/13-c02-plan.png",
-        "media/C02-finished.png"
+        "figures/node-C02-plan.png",
+        "media/v2/C02-aerial.png",
+        "media/v2/C02-eye.png",
+        "reviews/redesign-v2/diagrams/C02-section.png"
       ],
       "geometry": [
         "geometry/nodes.geojson",
-        "geometry/buildings.geojson"
+        "geometry/buildings.geojson",
+        "geometry/movement.geojson"
       ],
       "metrics": [
         "master_area_km2",
@@ -254,20 +231,14 @@
       ],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 10."
+        "heading": "## 12."
       },
       "gaps": [
         {
-          "kind": "professional_verification",
-          "missing": "Survey, hydrology, rights and engineering validation",
-          "next_step": "Independent site and authority verification before occupation",
-          "responsible": "Licensed specialists and rights holders"
-        },
-        {
-          "kind": "entrant_design",
-          "missing": "Actual dwelling/access details and later-town layout",
-          "next_step": "Architectural and detailed urban-design iteration",
-          "responsible": "Entrant design team"
+          "missing": "Lawful access/resource rights, demand and operating budget; detailed ground, accessible route and safety design remain unverified.",
+          "next_step": "Obtain survey and lawful supply/access evidence; commission transport/civil/environmental review and independently audit demand and service funding before occupation.",
+          "responsible": "Entrant, landholder and qualified local technical reviewers",
+          "kind": "professional_verification"
         }
       ]
     }

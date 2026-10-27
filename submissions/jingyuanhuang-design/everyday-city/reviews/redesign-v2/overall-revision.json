@@ -1,0 +1,11 @@
+{
+  "id": "city-overall-revision",
+  "prompt": "Revise the FIRST image (photorealistic overview) to remove ALL invented planted trees and green cultivated landscaping. The SECOND image is the exact approved geometry control. Preserve its camera, building footprints, FOUR compute halls, TWO farm sheds, streets, civic band and the separation between town and productive campus. Replace every visible tree row, tree canopy and planted greenery INSIDE the town, campus, farms, utility yards and beside roads with bare warm mineral/gravel ground and the existing pale paved paths. No lawns and no irrigated agriculture. Retain only sparse LOW natural scrub in the surrounding unbuilt desert; no trees. Do not add buildings, modify massing or alter the road network. Keep the refined photorealistic light and textures of the first image. It is a dry urban concept without an established planting water budget. No text/collage.",
+  "reference_images": [
+    "reviews/redesign-v2/rejected/city-overall-planted-trees.png",
+    "renders/city-overall.png"
+  ],
+  "selected_original": "/Users/jingyuanhuang/.codex/generated_images/01a173ea-21f5-7672-858a-1a589534a161/exec-06596e8c-beb4-4950-869a-f258138e8e18.png",
+  "selected_output": "media/v2/city-overall.png",
+  "rejected_reason": "First overall image invented planted trees without a water budget."
+}

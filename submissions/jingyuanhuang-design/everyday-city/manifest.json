@@ -4,7 +4,7 @@
   "title": "THE EVERYDAY CITY",
   "title_zh": "",
   "slug": "everyday-city",
-  "summary": "A city organised around homes, shared courts and everyday public services. Six neighbourhoods form a complete first district; energy, compute and farm services support its edges. The whole-site network grows through two conditional service towns and a later eastern gateway.",
+  "summary": "A complete low-rise town organised around three living districts, a civic band and shared dry commons. An independent compute/repair campus and a new farm-learning edge support its southern approaches. Whole-site zoning and regional road studies frame conditional growth; housing, employment and resource figures are capacities to verify, not promised demand.",
   "language": "en",
   "author": {
     "github": "jingyuanhuang-design",
@@ -18,14 +18,14 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Human asked for a separate new scheme while preserving the published Finite Water City; prioritised housing and public life; delegated node choice; required English-only public material and A/B/C node IDs without old-code aliases. On 27 October 2026 the human reviewed the new concept and explicitly requested pushing it and showing it on the homepage. Public preview publication is authorised; official competition dates remain unpublished."
+    "human_role": "Jingyuan Huang prioritised housing and public life, delegated node choice, required English public deliverables, requested a complete redesign of Everyday City with coherent districts/streets/landscape, matching finished views, booklet and a table-free A0, and explicitly authorised direct website publication after completion. Codex authored the new geometry, accounts, diagrams, text and image-generation prompts; no independent design approval is claimed."
   },
   "nodes": [
     "A01",
     "B03",
     "C02"
   ],
-  "nodes_reason": "Housing and shared ground test independent daily life; useful compute tests civic production; the working farm edge connects the city to the protected productive pilot.",
+  "nodes_reason": "A01 tests shared housing ground; B03 tests a separately serviced productive campus; C02 tests a new public/farm interface outside fixed pilots.",
   "tradeoff": {
     "objective": "Maximum uninterrupted compute throughput and minimum productive-route length",
     "why": "Independent housing, public life and a clear service boundary take precedence.",
@@ -36,7 +36,7 @@
     "tier1_structure": {
       "evidence": [
         "geometry/structure.geojson",
-        "pages/01-whole-site.png"
+        "figures/fig-01-structure.png"
       ]
     },
     "tier2_master": {
@@ -44,151 +44,43 @@
         "geometry/master_area.geojson",
         "geometry/land_use.geojson",
         "geometry/buildings.geojson",
-        "pages/04-first-district.png",
-        "pages/05-courtyard-neighbourhood.png"
+        "figures/fig-02-master-plan.png",
+        "figures/fig-04-movement.png"
       ]
     },
     "tier3_nodes": {
       "A01": {
-        "plan": "pages/11-a01-plan.png",
-        "aerial": "media/A01-finished.png",
-        "eye_level": "media/A01-finished.png"
+        "plan": "figures/node-A01-plan.png",
+        "aerial": "media/v2/A01-aerial.png",
+        "eye_level": "media/v2/A01-eye.png"
       },
       "B03": {
-        "plan": "pages/12-b03-plan.png",
-        "aerial": "media/B03-finished.png",
-        "eye_level": "media/B03-finished.png"
+        "plan": "figures/node-B03-plan.png",
+        "aerial": "media/v2/B03-aerial.png",
+        "eye_level": "media/v2/B03-eye.png"
       },
       "C02": {
-        "plan": "pages/13-c02-plan.png",
-        "aerial": "media/C02-finished.png",
-        "eye_level": "media/C02-finished.png"
+        "plan": "figures/node-C02-plan.png",
+        "aerial": "media/v2/C02-aerial.png",
+        "eye_level": "media/v2/C02-eye.png"
       }
     }
   },
-  "package_state": "ready_for_review",
+  "package_state": "draft",
   "created": "2026-10-27",
   "updated": "2026-10-27",
   "booklet": {
-    "cover": "media/district-finished.png",
-    "section_pages": {
-      "whole_site": [
-        {
-          "path": "pages/01-whole-site.png",
-          "title": "Whole-site urban structure"
-        }
-      ],
-      "node_locator": [
-        {
-          "path": "pages/10-node-locator.png",
-          "title": "Three connected places"
-        }
-      ],
-      "node:A01": [
-        {
-          "path": "pages/11-a01-plan.png",
-          "title": "A01 / Courtyard Homes"
-        },
-        {
-          "path": "pages/A01-finished.png",
-          "title": "A01 / finished concept views"
-        }
-      ],
-      "node:B03": [
-        {
-          "path": "pages/12-b03-plan.png",
-          "title": "B03 / Useful Compute"
-        },
-        {
-          "path": "pages/B03-finished.png",
-          "title": "B03 / finished concept views"
-        }
-      ],
-      "node:C02": [
-        {
-          "path": "pages/13-c02-plan.png",
-          "title": "C02 / Working Farm Edge"
-        },
-        {
-          "path": "pages/C02-finished.png",
-          "title": "C02 / finished concept views"
-        }
-      ],
-      "phasing": [
-        {
-          "path": "pages/14-phasing.png",
-          "title": "Complete first chapter"
-        }
-      ],
-      "key_metrics": [
-        {
-          "path": "pages/16-review-dashboard.png",
-          "title": "Key indicators and verification"
-        }
-      ]
-    },
-    "pages": [
-      {
-        "path": "pages/02-site-reading.png",
-        "title": "Site evidence",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/03-siting-choice.png",
-        "title": "Siting decision",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/04-first-district.png",
-        "title": "Complete first district",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/05-courtyard-neighbourhood.png",
-        "title": "Courtyard neighbourhood",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/17-a01-floor-and-section.png",
-        "title": "Housing floor and section",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/06-street-section.png",
-        "title": "Public street section",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/18-civic-spine.png",
-        "title": "Civic spine",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/07-movement.png",
-        "title": "People and machine movement",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/19-resource-network.png",
-        "title": "Resource network",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/08-water-priorities.png",
-        "title": "Water priorities",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/09-energy.png",
-        "title": "Energy dispatch",
-        "after": "whole_site"
-      },
-      {
-        "path": "pages/15-governance.png",
-        "title": "Governance and livelihoods",
-        "after": "phasing"
-      }
-    ],
-    "a0_page": "pages/a0-presentation.jpg"
-  }
+    "cover": "media/v2/city-centre.png",
+    "pages": [],
+    "section_pages": {}
+  },
+  "scene_generation": {
+    "procedural_vegetation": false,
+    "procedural_pv": false,
+    "illustrative_entourage": false
+  },
+  "scene_seed": 20261027,
+  "thesis": "Homes and shared public life organise the town; productive edges serve it without owning its everyday services.",
+  "presentation_revision": "Everyday City V2",
+  "public_display_status": "authorised_preview_not_design_approval"
 }

@@ -1,0 +1,18 @@
+{
+  "domestic_gross_m3y": 610572.0,
+  "civic_gross_m3y": 107748.0,
+  "work_gross_m3y": 22575.0,
+  "compute_makeup_m3y": 9110.4,
+  "gross_use_m3y": 750005.4,
+  "reuse_m3y": 100000,
+  "fresh_abstraction_m3y": 706527.6086956522,
+  "distribution_loss_fraction": 0.08,
+  "full_it_mw": 8,
+  "pue_assumed": 1.3,
+  "solar_mwp": 26.784,
+  "solar_yield_kwh_kwp_y": 1800,
+  "solar_mwh_y": 48211.2,
+  "compute_mwh_y": 91104.0,
+  "fixed_pilot_water": "Additional and unknown; no supply entitlement confirmed",
+  "trial_irrigation": "Not included; zero crop/irrigation capacity credited until lawful budget and soil trials"
+}
