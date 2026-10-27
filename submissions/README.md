@@ -3,7 +3,7 @@
 One directory per scheme: `submissions/<github-login>/<proposal-slug>/`. Create yours with:
 
 ```bash
-python scripts/scaffold_submission.py --login <github-login> --slug <proposal-slug> --title "..." --nodes N05 N07 N10
+python scripts/scaffold_submission.py --login <github-login> --slug <proposal-slug> --title "..." --nodes B03 C03 A03
 ```
 
 A pull request may change only your own directory. Format: `docs/submission-guide.md`.

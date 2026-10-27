@@ -149,7 +149,7 @@ xc.write_json(os.path.join(PKG, "metrics.json"), {"metrics": metrics})
 xc.write_json(os.path.join(PKG, "assumptions.json"), {"assumptions": assumptions})
 xc.write_json(os.path.join(PKG, "sources.json"), {"sources": sources})
 xc.write_json(os.path.join(PKG, "compliance_matrix.json"), {"items": items})
-NODES = ["N01", "N02", "N10"]
+NODES = ["C01", "A01", "A03"]
 man = xc.load_json(os.path.join(PKG, "manifest.json"))
 man.update({
     "title": "Terrace Oasis: a city that grows its own shade beside the first fields",
@@ -171,7 +171,7 @@ man.update({
     "autonomy": {"class": "human_supervised",
                  "human_role": ("The organiser's design lead commissioned a reference example, asked that it answer all three "
                                 "scales as a city rather than a compute town, confirmed the three key nodes the agent proposed "
-                                "(N01, N02, N10), and chose the image tool. The agent made every "
+                                "(C01, A01, A03), and chose the image tool. The agent made every "
                                 "design decision and wrote every file; no human edited the package.")},
     "render_note": ("A compact low-rise city of courtyard houses on a regular grid of 300 m superblocks with tree-lined "
                     "streets and narrow irrigation channels, a central square under a solar canopy, olive orchards and "
@@ -180,8 +180,8 @@ man.update({
     "render_rules": ("No private cars anywhere in the city: the streets carry only people, bicycles, small white delivery "
                      "robots and white driverless electric shuttles."),
     "nodes": NODES,
-    "nodes_reason": ("Arrival (N01) decides what the city says it is; housing (N02) is where heat, earthquakes, water and robots "
-                     "meet every day; the main square (N10) has to work at 45 C and in the Zonda. If these three work for "
+    "nodes_reason": ("Arrival (C01) decides what the city says it is; housing (A01) is where heat, earthquakes, water and robots "
+                     "meet every day; the main square (A03) has to work at 45 C and in the Zonda. If these three work for "
                      "people, the rest of the plan is arithmetic."),
     "tradeoff": {
         "objective": "Growth speed: the city does not grow faster than its measured water allows",

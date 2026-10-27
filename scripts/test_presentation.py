@@ -4,7 +4,7 @@ from pypdf import PdfWriter
 from presentation import index_errors,applies,POLICY,ROOT
 class PresentationTests(unittest.TestCase):
  def setUp(self):
-  self.tmp=tempfile.TemporaryDirectory();self.p=Path(self.tmp.name);(self.p/'drawings').mkdir();self.nodes=['N05','N07','N10']
+  self.tmp=tempfile.TemporaryDirectory();self.p=Path(self.tmp.name);(self.p/'drawings').mkdir();self.nodes=['B03','C03','A03']
   for name,count in [('a3-booklet.pdf',9),('a3-technical-appendix.pdf',2)]:
    w=PdfWriter()
    for _ in range(count):w.add_blank_page(width=842,height=595)

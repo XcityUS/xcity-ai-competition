@@ -29,5 +29,16 @@ All steps refer to this package's own `tools/` paths. The metadata script resets
 Run energy.py, whole_site_v3.py, then integrate_v3.py and repair_v3.py from the repository root. previous-submitted is a frozen archive of the original submission inputs; integration always reads it, so it does not compound changes. Current regional diagrams and initial-neighbourhood building design are distinct scales. Then regenerate scene, renders, figures and HTML; run the current self-check. Do not run legacy design.py or metadata.py over V3: they reproduce the historical rectangle and assumptions. M1 counts fully matched hours; energy-weighted CFE share is separate.
 
 
-## Current V6 reproduction
-Read current upstream site/rules. Run energy.py, whole_site_v3.py, integrate_v3.py, repair_v3.py, presentation_locator_v4.py, full_design_v6.py and write_full_narrative_v6.py in that order. Legacy generators above describe historical inputs only. Preserve registered generated images from their exact prompt/control records; stochastic output is not bitwise reproducible. Then render current scene/controls and run organiser finalize_submission.py. Main, appendix and presentation-index are generated together; do not hand-edit validation stamps. Website publication fingerprint is a separate maintainer action following explicit human publication consent.
+## Current English V6 presentation reproduction
+The saved design geometry is canonical. To update only the public language and node labels, run from the repository root:
+
+```bash
+python submissions/jingyuanhuang-design/finite-water-city/tools/render_whole_site_en.py
+python submissions/jingyuanhuang-design/finite-water-city/tools/presentation_locator_v4.py
+python submissions/jingyuanhuang-design/finite-water-city/tools/full_design_v6.py
+python submissions/jingyuanhuang-design/finite-water-city/tools/write_full_narrative_v6.py
+```
+
+These presentation steps do not rewrite geometry, metrics, the depth matrix or source claims. Historical whole_site_v3.py, integrate_v3.py, repair_v3.py and earlier layout/booklet scripts are design/work-process archives; do not run them over the current English presentation unless deliberately rebuilding a reviewed design revision. The current regional renderer reads the existing review GeoJSON instead of re-running siting or routing.
+
+Preserve registered concept images and their exact original working-language prompts/control records. Stochastic imagery is not bitwise reproducible. The maintainer separately regenerates organiser scene/controls, the main booklet, technical appendix, HTML and self-check; do not hand-edit stamps or interpret this language migration as design approval. Website publication and its fingerprint are separate authorised actions.

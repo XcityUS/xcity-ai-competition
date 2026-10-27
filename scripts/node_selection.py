@@ -10,11 +10,6 @@ def selection_errors(node_ids, package_path=None):
         policy = json.load(f)
     valid = {node["id"] for node in policy["nodes"]}
     if len(node_ids) != 3 or len(set(node_ids)) != 3 or not set(node_ids) <= valid:
-        return ["Choose three different node IDs from N01-N10."]
-    if package_path is not None:
-        path = Path(package_path).resolve()
-        legacy = {(ROOT / rel).resolve() for rel in policy["legacy_submissions"]}
-        if path in legacy:
-            return []
+        return ["Choose three different node IDs from A01-A03, B01-B03 or C01-C04."]
     return ["Choose exactly one node from %s (%s)." % (group["en"], ", ".join(group["node_ids"]))
             for group in policy["groups"] if len(set(node_ids) & set(group["node_ids"])) != 1]

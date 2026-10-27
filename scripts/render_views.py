@@ -57,7 +57,7 @@ def main():
     old = xc.load_json(stamp_p) if os.path.exists(stamp_p) else {}
     files = dict(old.get("files", {})) if a.only and old.get("input_sha256") == h else {}
     with sync_playwright() as p:
-        br = p.chromium.launch(args=ARGS)
+        br = p.chromium.launch(args=ARGS, **({"executable_path": os.environ["XCITY_CHROMIUM_EXECUTABLE"]} if os.environ.get("XCITY_CHROMIUM_EXECUTABLE") else {}))
         pg = br.new_page(viewport={"width": 1200, "height": 750})
         errs = []
         pg.on("pageerror", lambda e: errs.append(str(e)))

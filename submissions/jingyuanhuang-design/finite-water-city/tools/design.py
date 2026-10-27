@@ -65,7 +65,7 @@ for i,line in enumerate(people):
  roof=poly(line.buffer(2,cap_style=2).intersection(master).difference(flood.buffer(30)))
  if not roof.is_empty:buildings.append(ft(roof,use='civic',floors=1,name='Continuous public shade roof',form='canopy',height_m=4.5))
 write('buildings',buildings)
-nd=[('N05',box(573150,6552150,574500,6553000),'Heat without thirst','Dry cooling and cooperative herb drying share a metered heat loop',(573550,6552520),(573650,6552300)),('N07',box(571850,6554100,573350,6554850),'The absent river','Dry channel stays open and paths retreat to high ground',(573150,6554480),(572200,6554500)),('N10',box(574250,6553450,574620,6553800),'The right to shade','Public kitchen and library make a commons without ornamental water',(574420,6553660),(574480,6553510))]
+nd=[('B03',box(573150,6552150,574500,6553000),'Heat without thirst','Dry cooling and cooperative herb drying share a metered heat loop',(573550,6552520),(573650,6552300)),('C03',box(571850,6554100,573350,6554850),'The absent river','Dry channel stays open and paths retreat to high ground',(573150,6554480),(572200,6554500)),('A03',box(574250,6553450,574620,6553800),'The right to shade','Public kitchen and library make a commons without ornamental water',(574420,6553660),(574480,6553510))]
 nodes=[]
 for nid,g,n,why,eye,target in nd:
  x0,y0,x1,y1=g.bounds;cx=(x0+x1)/2;cy=(y0+y1)/2

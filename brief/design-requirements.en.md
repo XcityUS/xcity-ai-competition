@@ -136,11 +136,11 @@ New submissions choose exactly one node from each group, three nodes total:
 
 | Group | Available nodes |
 |---|---|
-| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
-| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
-| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+| Living and public space | A01 Future housing; A02 Art and culture; A03 Public space in heat and Zonda wind |
+| Production and infrastructure | B01 Drone port; B02 Logistics and international gateway; B03 Compute campus and waste heat |
+| Urban interfaces and environment | C01 Entrance and arrival; C02 Agrivoltaic/city edge; C03 Seasonal river park; C04 Street shared with driverless vehicles |
 
-A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. All submissions must cover groups A, B and C; there is no earlier-node-number or any-three exception.
 
 ## Whole-site structure: minimum design questions
 
@@ -157,3 +157,8 @@ Automatic compliance (files, numbers and evidence paths) and design content revi
 ## Metric scope and version
 
 For matrix v2, master_area_km2 is the supplied master polygon, while GFA, coverage and FAR use building portions clipped to it. Outside-master GFA is reported separately; neither value is automatically phase-one built capacity. Declare actual construction phases, first works, external infrastructure and future scenarios separately. Version-one metrics retain their historical whole-package-building numerator so existing records remain reproducible. V2 land_use partitions master_area without material overlap or omission: bookkeeping tolerance is max(100 m², 0.01% of master area), not survey accuracy. The five whole-site systems may overlap and are not subject to that land_use partition rule.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.

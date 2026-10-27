@@ -4,7 +4,7 @@
     python scripts/ai_render.py submissions/<login>/<slug> prompts              # write renders/prompts.json
     python scripts/ai_render.py submissions/<login>/<slug> run --provider xcity  # XCITY Studio (recommended)
     python scripts/ai_render.py submissions/<login>/<slug> run --provider openai # your own OpenAI key
-    python scripts/ai_render.py submissions/<login>/<slug> register media/N10-eye-day.jpg --view N10-eye-day \
+    python scripts/ai_render.py submissions/<login>/<slug> register media/A03-eye-day.jpg --view A03-eye-day \
         --model "ChatGPT image generation (web)"                                 # an image you made by hand
 
 How it works. scripts/render_views.py draws each named view from the package's own geometry (renders/<view>.png).
@@ -149,7 +149,7 @@ def register(pkg, path, view, model, prompt=None, post="none", note=""):
     nid = view.split("-")[0]
     kind = "aerial" if "aerial" in view else "eye_level" if "eye" in view else "other"
     ip["images"].append({
-        "path": rel, "node_id": nid if nid.startswith("N") else None, "view": kind, "model": model, "prompt": pr,
+        "path": rel, "node_id": nid if nid in {n["id"] for n in xc.load_json(os.path.join(xc.ROOT, "brief/site-package/nodes/design_nodes.json"))["nodes"]} else None, "view": kind, "model": model, "prompt": pr,
         "generated_at": datetime.date.today().isoformat(), "post_processing": post, "post_processing_note": note,
         "reference_images": "own_work",
         "reference_images_note": "Control image renders/%s.png, drawn by scripts/render_views.py from this package's geometry." % view,

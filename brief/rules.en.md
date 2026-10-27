@@ -79,3 +79,8 @@ For new Agent entries, the main booklet and technical appendix are separate. The
 ## Design workflow, depth and review (26 October 2026)
 
 Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected levels (whole-site structure, complete phase one, urban-design enlargement, three detailed nodes). New entries link drawings, geometry, metric keys and explanation headings in `design_depth_matrix.json`, with explicit gaps and next verification. `templates/design_depth_matrix.json` is the editable starting point. G12 validates reference consistency only. Generated results separate automatic compliance, content review (`not_assessed`) and further work. The exact two legacy packages in the policy retain existing requirements until matrix opt-in. No fixed page count, minimum development area or additional render quota is introduced. Formal design diagrams and decisive plans/sections belong in the main booklet; raw controls, repetitive comparisons and logs belong in the technical appendix. Annotated teaching examples: `docs/reference-examples.md`.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.

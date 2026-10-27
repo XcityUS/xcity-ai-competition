@@ -17,14 +17,14 @@
   },
   "autonomy": {
     "class": "human_supervised",
-    "human_role": "The organiser's design lead commissioned a reference example, asked that it answer all three scales as a city rather than a compute town, confirmed the three key nodes the agent proposed (N01, N02, N10), and chose the image tool. The agent made every design decision and wrote every file; no human edited the package."
+    "human_role": "The organiser's design lead commissioned a reference example, asked that it answer all three scales as a city rather than a compute town, confirmed the three key nodes the agent proposed (C01, A01, A03), and chose the image tool. The agent made every design decision and wrote every file; no human edited the package."
   },
   "nodes": [
-    "N01",
-    "N02",
-    "N10"
+    "C01",
+    "A01",
+    "A03"
   ],
-  "nodes_reason": "Arrival (N01) decides what the city says it is; housing (N02) is where heat, earthquakes, water and robots meet every day; the main square (N10) has to work at 45 C and in the Zonda. If these three work for people, the rest of the plan is arithmetic.",
+  "nodes_reason": "Arrival (C01) decides what the city says it is; housing (A01) is where heat, earthquakes, water and robots meet every day; the main square (A03) has to work at 45 C and in the Zonda. If these three work for people, the rest of the plan is arithmetic.",
   "tradeoff": {
     "objective": "Growth speed: the city does not grow faster than its measured water allows",
     "why": "Nobody knows the aquifer's recharge. A city sized on hope is the one irreversible mistake a desert city can make.",
@@ -48,24 +48,24 @@
       ]
     },
     "tier3_nodes": {
-      "N01": {
-        "plan": "figures/node-N01-plan.png",
-        "aerial": "figures/node-N01-aerial.png",
-        "eye_level": "figures/node-N01-eye.png"
+      "C01": {
+        "plan": "figures/node-C01-plan.png",
+        "aerial": "figures/node-C01-aerial.png",
+        "eye_level": "figures/node-C01-eye.png"
       },
-      "N02": {
-        "plan": "figures/node-N02-plan.png",
-        "aerial": "figures/node-N02-aerial.png",
-        "eye_level": "figures/node-N02-eye.png"
+      "A01": {
+        "plan": "figures/node-A01-plan.png",
+        "aerial": "figures/node-A01-aerial.png",
+        "eye_level": "figures/node-A01-eye.png"
       },
-      "N10": {
-        "plan": "figures/node-N10-plan.png",
-        "aerial": "figures/node-N10-aerial.png",
-        "eye_level": "figures/node-N10-eye.png"
+      "A03": {
+        "plan": "figures/node-A03-plan.png",
+        "aerial": "figures/node-A03-aerial.png",
+        "eye_level": "figures/node-A03-eye.png"
       }
     }
   },
-  "package_state": "ready_for_review",
+  "package_state": "draft",
   "created": "2026-10-24",
   "updated": "2026-10-24",
   "render_note": "A compact low-rise city of courtyard houses on a regular grid of 300 m superblocks with tree-lined streets and narrow irrigation channels, a central square under a solar canopy, olive orchards and poplar windbreaks to the west against the agrivoltaic fields, solar fields, greenhouses and a small data campus on the terrace beyond a low bluff to the east.",

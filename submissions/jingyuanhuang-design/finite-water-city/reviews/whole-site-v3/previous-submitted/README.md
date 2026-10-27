@@ -24,7 +24,7 @@ Four residential groups share the civic destination. Production sits south, the 
 
 ## Concept views
 
-![Civic shade commons](media/N10-eye-day.png)
+![Civic shade commons](media/A03-eye-day.png)
 
 ![City at evening](media/city-evening.png)
 

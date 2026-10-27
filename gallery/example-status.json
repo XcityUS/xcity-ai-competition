@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "path": "submissions/EXAMPLE-agent/sample-scheme",
+      "status": "rebuild_pending",
+      "reason": "Withdrawn from the active format examples while it is redesigned to cover A, B and C. Its existing selection has two A nodes and no B node. It is not a current compliant submission or a design-quality benchmark."
+    }
+  ]
+}

@@ -35,7 +35,15 @@ def check():
   need((ROOT/'brief/site-package'/r['path']).is_file(),'missing evidence resource '+r['path'])
   need(set(r['source_ids'])<=sources,'unknown source in '+r['path'])
  need('agriculture' not in req['fixed_pilot_context']['living']['land_use_labels'],'living pilot mislabelled agriculture')
- need(len(data('brief/site-package/nodes/design_nodes.json')['groups'])==3,'node groups not three')
+ nodes=data('brief/site-package/nodes/design_nodes.json')
+ need(len(nodes['groups'])==3,'node groups not three')
+ expected={'A01','A02','A03','B01','B02','B03','C01','C02','C03','C04'}
+ need({n['id'] for n in nodes['nodes']}==expected,'node catalogue differs from A/B/C policy')
+ need('legacy_submissions' not in nodes,'removed node-selection compatibility returned')
+ for f in ['AGENTS.md','README.md','docs/submission-guide.md','brief/public-brief.en.md','brief/design-requirements.en.md']:
+  need('retain the previous any-three' not in read(f),f+': removed node-selection exception returned')
+ need(data('schema/manifest.schema.json')['properties']['language'].get('const')=='en','final public submission language must be English')
+ need(req.get('public_submission_language',{}).get('code')=='en','machine language policy missing')
  for f in ['public-brief','design-requirements']:
   need((ROOT/('brief/'+f+'.zh.md')).is_file(),'missing Chinese counterpart '+f)
  return errors

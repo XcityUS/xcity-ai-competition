@@ -326,7 +326,7 @@ def new_page(pkg, size, num, title, subtitle=""):
     fs = 1.0 if size == A3 else 2.4
     fig.text(0.03, 0.965, "XCITY AI COMPETITION  ·  1,656 KM²  ·  SAN JUAN, ARGENTINA", fontsize=8 * fs,
              color=GOLD, fontweight="bold")
-    t = T(pkg.title) + (("   " + T(pkg.title_zh)) if T(pkg.title_zh) else "")
+    t = T(pkg.title)
     fig.text(0.03, 0.935, t, fontsize=15 * fs, color=INK, va="top", fontweight="bold")
     if num:
         fig.text(0.97, 0.965, "%s  ·  %s" % (num, T(title)), fontsize=8.5 * fs, color=GOLD, ha="right",
@@ -1142,7 +1142,7 @@ def draw_fig(pkg, key, num, title, sub, panel, size=A3):
 def draw_node_sheet(pkg, nid, size=A3):
     meta = pkg.node_meta.get(nid, {})
     p, g = pkg.nodes[nid]
-    fig = new_page(pkg, size, "NODE " + nid, "%s %s" % (meta.get("en", nid), ("· " + meta["zh"]) if _CJK and meta.get("zh") else ""),
+    fig = new_page(pkg, size, "NODE " + nid, meta.get("en", nid),
                    p.get("name", "") or "Scale 3 · detailed design")
     pa, _ = view_image(pkg, "%s-aerial" % nid)
     pe, _ = view_image(pkg, "%s-eye-day" % nid)
@@ -1993,7 +1993,7 @@ def city_spread(pkg, size=A3):
 def day_to_night(pkg, size=A3):
     """Eye-level views ordered from day to evening to night: how the places are used over a day."""
     order = {"day": 0, "evening": 1, "night": 2}
-    eyes = [v for v in view_ids(pkg, "N") if "-eye-" in v]
+    eyes = [v for v in [v for v in view_ids(pkg, "") if v[:1] in "ABC"] if "-eye-" in v]
     eyes.sort(key=lambda v: (order.get(v.rsplit("-", 1)[1], 9), v))
     eyes = [v for v in eyes if view_image(pkg, v)[0]][:6]
     if len(eyes) < 2:

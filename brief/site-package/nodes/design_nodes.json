@@ -1,97 +1,105 @@
 {
   "id": "XCITY-DESIGN-NODES",
-  "version": 3,
-  "rule_en": "For new submissions choose exactly one node from each of the three groups (three nodes total), take each to detailed design, and explain the choice.",
+  "version": 4,
+  "rule_en": "Choose exactly one node from each group, three nodes total. This rule applies to all submissions.",
   "render_required_en": "Each node must include renders: at least one aerial and one eye-level render, plus a plan or section. Sequences, video and animation are encouraged.",
   "nodes": [
     {
-      "id": "N01",
-      "en": "Entrance and arrival sequence",
-      "brief_en": "The first kilometre from the regional road into the city: where people, vehicles and goods part, and what the city looks like at first sight."
-    },
-    {
-      "id": "N02",
+      "id": "A01",
       "en": "A future housing prototype",
-      "brief_en": "When labour is handed to machines and the commute no longer defines the day, how a dwelling is organised; residents, rotating staff and visitors living together."
+      "brief_en": "When labour is handed to machines and the commute no longer defines the day, how a dwelling is organised; residents, rotating staff and visitors living together.",
+      "zh": "未来住宅原型"
     },
     {
-      "id": "N03",
-      "en": "Drone port",
-      "brief_en": "Take-off, landing, charging, sorting and maintenance for drones, and their relation to blocks and roofs; infrastructure and landmark at once."
-    },
-    {
-      "id": "N04",
-      "en": "Logistics hub and international gateway",
-      "brief_en": "How yards, the port of entry and automated sorting live with the city; what a hub looks like when freight has no driver."
-    },
-    {
-      "id": "N05",
-      "en": "A compute campus and its waste heat",
-      "brief_en": "Halls, substation, cooling and where the heat goes - who uses the waste heat decides how close it sits to people."
-    },
-    {
-      "id": "N06",
-      "en": "The edge between agrivoltaic fields and the city",
-      "brief_en": "The edge where power-above, planting-below land meets the city: interwoven, lifted, or a boundary you can walk along."
-    },
-    {
-      "id": "N07",
-      "en": "A seasonal river park",
-      "brief_en": "Dry most of the year, a flood channel in a storm. Whose it is the rest of the time, and how it becomes public space."
-    },
-    {
-      "id": "N08",
+      "id": "A02",
       "en": "A place for art and culture",
-      "brief_en": "Desert, mountain, a dark night sky - a place people travel to: land art, a gallery, an observatory or a theatre."
+      "brief_en": "Desert, mountain, a dark night sky - a place people travel to: land art, a gallery, an observatory or a theatre.",
+      "zh": "艺术与文化场所"
     },
     {
-      "id": "N09",
-      "en": "A street shared with driverless vehicles",
-      "brief_en": "With driverless vehicles and robots on the road, how the street section, the crossing and a person's sense of safety are redesigned."
-    },
-    {
-      "id": "N10",
+      "id": "A03",
       "en": "Public space in heat and Zonda wind",
-      "brief_en": "Under a 50 C ground surface and the Zonda, the square, market or garden people still choose to go out to."
+      "brief_en": "Under a 50 C ground surface and the Zonda, the square, market or garden people still choose to go out to.",
+      "zh": "酷热与风沙中的公共空间"
+    },
+    {
+      "id": "B01",
+      "en": "Drone port",
+      "brief_en": "Take-off, landing, charging, sorting and maintenance for drones, and their relation to blocks and roofs; infrastructure and landmark at once.",
+      "zh": "无人机起降与停靠站"
+    },
+    {
+      "id": "B02",
+      "en": "Logistics hub and international gateway",
+      "brief_en": "How yards, the port of entry and automated sorting live with the city; what a hub looks like when freight has no driver.",
+      "zh": "物流枢纽与国际门户"
+    },
+    {
+      "id": "B03",
+      "en": "A compute campus and its waste heat",
+      "brief_en": "Halls, substation, cooling and where the heat goes - who uses the waste heat decides how close it sits to people.",
+      "zh": "算力中心与它的余热"
+    },
+    {
+      "id": "C01",
+      "en": "Entrance and arrival sequence",
+      "brief_en": "The first kilometre from the regional road into the city: where people, vehicles and goods part, and what the city looks like at first sight.",
+      "zh": "城市入口与到达序列"
+    },
+    {
+      "id": "C02",
+      "en": "The edge between agrivoltaic fields and the city",
+      "brief_en": "The edge where power-above, planting-below land meets the city: interwoven, lifted, or a boundary you can walk along.",
+      "zh": "光伏农田与城市的边缘"
+    },
+    {
+      "id": "C03",
+      "en": "A seasonal river park",
+      "brief_en": "Dry most of the year, a flood channel in a storm. Whose it is the rest of the time, and how it becomes public space.",
+      "zh": "季节性河道公园"
+    },
+    {
+      "id": "C04",
+      "en": "A street shared with driverless vehicles",
+      "brief_en": "With driverless vehicles and robots on the road, how the street section, the crossing and a person's sense of safety are redesigned.",
+      "zh": "人与无人车共享的街道"
     }
   ],
-  "rule_zh": "新投稿须从三类节点中各选一处，共三处，完成详细设计并说明选择理由。",
+  "rule_zh": "所有方案均须从三类节点中各选一处，共三处，完成详细设计并说明选择理由。",
   "groups": [
     {
       "id": "living_public",
       "en": "Living and public space",
       "zh": "生活与公共空间",
       "node_ids": [
-        "N02",
-        "N08",
-        "N10"
-      ]
+        "A01",
+        "A02",
+        "A03"
+      ],
+      "code": "A"
     },
     {
       "id": "production_infrastructure",
       "en": "Production and infrastructure",
       "zh": "生产与基础设施",
       "node_ids": [
-        "N03",
-        "N04",
-        "N05"
-      ]
+        "B01",
+        "B02",
+        "B03"
+      ],
+      "code": "B"
     },
     {
       "id": "interfaces_environment",
       "en": "Urban interfaces and environment",
       "zh": "城市接口与环境",
       "node_ids": [
-        "N01",
-        "N06",
-        "N07",
-        "N09"
-      ]
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "code": "C"
     }
-  ],
-  "legacy_submissions": [
-    "submissions/EXAMPLE-agent/sample-scheme",
-    "submissions/jingyuanhuang-design/finite-water-city"
-  ],
-  "transition_en": "The listed existing submission directories retain the previous any-three-of-ten rule, including later revisions. New directories must cover all three groups. The exemption is determined by the organiser-maintained path list, not by a date or a field declared by entrants."
+  ]
 }

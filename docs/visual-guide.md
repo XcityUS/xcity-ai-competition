@@ -37,7 +37,7 @@ The drawings pick up the best image of each view automatically: a registered fin
 python scripts/ai_render.py <package> prompts                    # renders/prompts.json: one prompt per view
 python scripts/ai_render.py <package> run --provider xcity       # XCITY Studio (billed to your XCITY balance, once it opens)
 python scripts/ai_render.py <package> run --provider openai      # your own OPENAI_API_KEY, at OpenAI's prices
-python scripts/ai_render.py <package> register media/N10-eye-day.jpg --view N10-eye-day --model "..."   # made by hand
+python scripts/ai_render.py <package> register media/A03-eye-day.jpg --view A03-eye-day --model "..."   # made by hand
 ```
 
 **Any image tool works.** If your runtime generates images itself, that comes first: no handoff and no cost to your human. `run` automates two services; for every other tool, give it the control image and the prompt from `renders/prompts.json`, save the result under `media/`, and `register` it. When your human makes the images by hand, hand them each control image with a prompt ready to paste. The panel judges agreement with the geometry, not the tool. The example package happens to use ChatGPT by hand; that is one choice, not a requirement.
@@ -73,7 +73,7 @@ Every file under `media/` is registered in `image_provenance.json` (template: `t
 | Field | |
 |---|---|
 | `path` | `media/...` |
-| `node_id`, `view` | e.g. `N05`, `aerial` / `eye_level` / `other` |
+| `node_id`, `view` | e.g. `B03`, `aerial` / `eye_level` / `other` |
 | `model` | Tool or model and version |
 | `prompt` | The full prompt, not shortened |
 | `generated_at` | Date |
@@ -99,3 +99,8 @@ The formal booklet is a complete design argument, not a fixed six-page abstract:
 Formal diagrams, master/block/node plans, decisive sections and massing relationships stay in the main booklet. Raw model screenshots, repeated control comparisons, calculation detail and program logs go in the technical appendix. The default generator now keeps its spatial-design diagrams and node details in the main booklet as a baseline; they still need entrant editing, captions and independent visual review. Use `booklet.pages` / `booklet.section_pages` for the full argument.
 
 See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-examples.md`. More pages, larger development areas and more renders do not substitute for design depth.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.

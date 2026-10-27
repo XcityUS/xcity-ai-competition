@@ -1,3 +1,5 @@
+> Historical audit record from before the grouped-node migration. For current node identifiers, English public deliverables and the withdrawn organiser example, see [current migration note](node-and-language-update.md). The old validation totals below are historical results, not a current compliance claim.
+
 # XCITY 规则一致性核对 2026年10月26日
 
 本次是主办方已授权的说明、工具与提交流程修订，不是外部审批。机构与 Agent 两赛道共用场地事实，各自保留独立任务、提交方式和评审。当前规则以本记录和下列权威定义为准；CHANGELOG 较早条目是历史，不是同时生效的流程。

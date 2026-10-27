@@ -2,10 +2,10 @@
   "schema_version": 1,
   "competition": "xcity-ai-competition",
   "title": "AGUA FINITA | The Finite Water City",
-  "title_zh": "有限水城",
+  "title_zh": "",
   "slug": "finite-water-city",
   "summary": "A whole-site network of four conditional towns, productive energy/compute corridors and an eastern gateway grows only with verified water. Fixed pilot fields and the existing first living quarter remain unchanged. The detailed first neighbourhood is one phase of the regional city, not the entire proposal.",
-  "language": "zh",
+  "language": "en",
   "author": {
     "github": "jingyuanhuang-design",
     "responsible_party": "Jingyuan Huang",
@@ -21,11 +21,11 @@
     "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested a complete design argument with plans, sections, diagrams and massing rather than a six-page digest; authorised uploading the completed revision and replacing its abstract cover with a city rendering. V6 adopts the updated main/technical presentation contract and discloses unfinished engineering independently."
   },
   "nodes": [
-    "N05",
-    "N07",
-    "N10"
+    "A03",
+    "B03",
+    "C03"
   ],
-  "nodes_reason": "N05 tests whether production can accept water limits; N07 gives floods room; N10 tests whether daily public life survives heat without decorative irrigation.",
+  "nodes_reason": "B03 tests whether production can accept water limits; C03 gives floods room; A03 tests whether daily public life survives heat without decorative irrigation.",
   "tradeoff": {
     "objective": "Maximum uninterrupted compute throughput and minimum cooling electricity",
     "why": "Scarce water is reserved first for people and the existing agricultural system.",
@@ -52,26 +52,26 @@
       ]
     },
     "tier3_nodes": {
-      "N05": {
-        "plan": "figures/node-N05-plan.png",
-        "aerial": "figures/node-N05-aerial.png",
-        "eye_level": "figures/node-N05-eye.png"
+      "B03": {
+        "plan": "figures/node-B03-plan.png",
+        "aerial": "figures/node-B03-aerial.png",
+        "eye_level": "figures/node-B03-eye.png"
       },
-      "N07": {
-        "plan": "figures/node-N07-plan.png",
-        "aerial": "figures/node-N07-aerial.png",
-        "eye_level": "figures/node-N07-eye.png"
+      "C03": {
+        "plan": "figures/node-C03-plan.png",
+        "aerial": "figures/node-C03-aerial.png",
+        "eye_level": "figures/node-C03-eye.png"
       },
-      "N10": {
-        "plan": "figures/node-N10-plan.png",
-        "aerial": "figures/node-N10-aerial.png",
-        "eye_level": "figures/node-N10-eye.png"
+      "A03": {
+        "plan": "figures/node-A03-plan.png",
+        "aerial": "figures/node-A03-aerial.png",
+        "eye_level": "figures/node-A03-eye.png"
       }
     }
   },
   "package_state": "ready_for_review",
   "created": "2026-10-25",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "thesis": "The city grows only when its water ledger can support another complete neighbourhood.",
   "render_note": "A low-rise desert settlement of pale mineral plaster and aggregate; dry gravel washes, modest drip planting, shade roofs and arcades. Existing pilot untouched.",
   "render_rules": "Preserve footprints, storeys, street positions, camera and terrain. No lakes, ornamental canals, lawns, skyscrapers or lush forest. All images are concept illustrations.",
@@ -81,82 +81,82 @@
     "pages": [
       {
         "path": "reviews/full-v6/01-site-reading.png",
-        "title": "场地与限制",
+        "title": "Site evidence and constraints",
         "after": "whole_site"
       },
       {
         "path": "reviews/full-v6/02-siting-tradeoff.png",
-        "title": "起步选址取舍",
+        "title": "Initial siting trade-offs",
         "after": "whole_site"
       },
       {
         "path": "reviews/full-v6/03-five-systems.png",
-        "title": "五系统的联系",
+        "title": "Five-system relationships",
         "after": "whole_site"
       },
       {
         "path": "reviews/full-v6/04-first-neighbourhood.png",
-        "title": "首批街区总体",
+        "title": "First-district master plan",
         "after": "views"
       },
       {
         "path": "reviews/full-v6/05-housing-enlargement.png",
-        "title": "居住组团与公共路径",
+        "title": "Housing clusters and public routes",
         "after": "views"
       },
       {
         "path": "reviews/full-v6/06-height-interface.png",
-        "title": "高度与空间界面",
+        "title": "Heights and spatial interfaces",
         "after": "views"
       },
       {
         "path": "reviews/full-v6/07-human-machine.png",
-        "title": "人机交通与注册界面",
+        "title": "Human-machine routes and registered interfaces",
         "after": "views"
       },
       {
-        "path": "reviews/full-v6/N05-plan-section.png",
-        "title": "N05 详细平面与断面",
-        "after": "N05"
+        "path": "reviews/full-v6/A03-plan-section.png",
+        "title": "A03 Detailed plan and section",
+        "after": "A03"
       },
       {
-        "path": "reviews/full-v6/N05-operation.png",
-        "title": "N05 使用与运行情景",
-        "after": "N05"
+        "path": "reviews/full-v6/A03-operation.png",
+        "title": "A03 Use and operating scenarios",
+        "after": "A03"
       },
       {
-        "path": "reviews/full-v6/N07-plan-section.png",
-        "title": "N07 详细平面与断面",
-        "after": "N07"
+        "path": "reviews/full-v6/B03-plan-section.png",
+        "title": "B03 Detailed plan and section",
+        "after": "B03"
       },
       {
-        "path": "reviews/full-v6/N07-operation.png",
-        "title": "N07 使用与运行情景",
-        "after": "N07"
+        "path": "reviews/full-v6/B03-operation.png",
+        "title": "B03 Use and operating scenarios",
+        "after": "B03"
       },
       {
-        "path": "reviews/full-v6/N10-plan-section.png",
-        "title": "N10 详细平面与断面",
-        "after": "N10"
+        "path": "reviews/full-v6/C03-plan-section.png",
+        "title": "C03 Detailed plan and section",
+        "after": "C03"
       },
       {
-        "path": "reviews/full-v6/N10-operation.png",
-        "title": "N10 使用与运行情景",
-        "after": "N10"
+        "path": "reviews/full-v6/C03-operation.png",
+        "title": "C03 Use and operating scenarios",
+        "after": "C03"
       },
       {
         "path": "reviews/full-v6/08-water-budget.png",
-        "title": "水预算与短缺",
+        "title": "Water budget and shortage",
         "after": "key_metrics"
       },
       {
         "path": "reviews/full-v6/09-energy-dispatch.png",
-        "title": "逐小时能源情景",
+        "title": "Hourly energy scenario",
         "after": "key_metrics"
       },
       {
         "path": "reviews/full-v6/10-governance.png",
-        "title": "资产、责任与增长治理",
+        "title": "Assets, accountability and growth governance",
         "after": "key_metrics"
       }
     ],
@@ -164,31 +164,31 @@
       "whole_site": [
         {
           "path": "reviews/whole-site-v3/01_whole_site_plan.png",
-          "title": "全场地总体结构"
+          "title": "Whole-site spatial structure"
         }
       ],
       "node_locator": [
         {
           "path": "reviews/presentation-v4/node-locator.png",
-          "title": "全场地—首批街区—三个节点"
+          "title": "Whole site → first district → three nodes"
         }
       ],
-      "node:N05": [
+      "node:A03": [
         {
-          "path": "reviews/full-v6/N05-finished.png",
-          "title": "N05 · 算力与余热利用"
+          "path": "reviews/full-v6/A03-finished.png",
+          "title": "A03 · Public space in heat and wind"
         }
       ],
-      "node:N07": [
+      "node:B03": [
         {
-          "path": "reviews/full-v6/N07-finished.png",
-          "title": "N07 · 季节河道公园"
+          "path": "reviews/full-v6/B03-finished.png",
+          "title": "B03 · Compute and waste heat"
         }
       ],
-      "node:N10": [
+      "node:C03": [
         {
-          "path": "reviews/full-v6/N10-finished.png",
-          "title": "N10 · 遮阴公共空间"
+          "path": "reviews/full-v6/C03-finished.png",
+          "title": "C03 · Seasonal river park"
         }
       ]
     }

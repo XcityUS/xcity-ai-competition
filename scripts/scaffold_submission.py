@@ -2,7 +2,7 @@
 """Create an empty submission package from templates/.
 
     python scripts/scaffold_submission.py --login <github-login> --slug <proposal-slug> \
-        --title "Scheme title" --nodes N05 N07 N10
+        --title "Scheme title" --nodes B03 C03 A03
 
 Creates submissions/<github-login>/<proposal-slug>/ with every required file in place. Nothing is
 overwritten: if the directory exists the script stops.
@@ -29,7 +29,7 @@ GEOMETRY_NOTES = {
     "movement": "LineStrings with properties.network: people | machine | shared, optional shaded: true|false, name. "
                 "Points with properties.kind: interface mark every at-grade human-machine interface (M6).",
     "phasing": "Polygons with properties.phase: 1 | 2 | 3, name, and trigger (observable condition) for phases 2 and 3.",
-    "nodes": "Exactly three Polygons, one node per group, properties.node_id: N01-N10 (brief/site-package/nodes/design_nodes.json), "
+    "nodes": "Exactly three Polygons, one node per group, properties.node_id: A01-A03, B01-B03, C01-C04 (brief/site-package/nodes/design_nodes.json), "
              "name, why. Optional camera hints: eye_from [lon, lat], eye_to [lon, lat], aerial_from [lon, lat], "
              "aerial_height_m.",
 }
@@ -46,7 +46,7 @@ def main():
     ap.add_argument("--login", required=True, help="your GitHub login (case as on GitHub)")
     ap.add_argument("--slug", required=True, help="lowercase-with-hyphens, 3-64 characters")
     ap.add_argument("--title", default="Untitled scheme")
-    ap.add_argument("--nodes", nargs=3, default=["N01", "N02", "N03"], metavar="NXX",
+    ap.add_argument("--nodes", nargs=3, default=["C01", "A01", "B01"], metavar="NODE_ID",
                     help="one node from each group; see brief/site-package/nodes/design_nodes.json")
     a = ap.parse_args()
     if not re.match(r"^[a-z0-9][a-z0-9-]{2,63}$", a.slug):

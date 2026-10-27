@@ -1,6 +1,6 @@
 # Terrace Oasis: a city that grows its own shade beside the first fields
 
-**Reference example — not a competition entry.** This package shows what a complete, gate-passing submission looks like and how it is displayed. It is one possible reading of the site, written to be argued with; copying any of it fails gate G3.
+**Reference example — not a competition entry.** This example is withdrawn for redesign and is not compliant with the current three-group node rule. It remains visible as work in progress, not as a current submission or design-quality benchmark. It is one possible reading of the site, written to be argued with; copying any of it fails gate G3.
 
 ## 1. Position
 
@@ -159,7 +159,7 @@ PV and compute take the gentle fans, at 2–4.5% slope. Agrivoltaics take the fl
 
 Every block within 150 m of the two main streets has shops on the ground floor. The centre holds:
 
-- **Plaza del Agua** (N10);
+- **Plaza del Agua** (A03);
 - **the civic quarter:** town hall and open-data office, library, clinic and training college;
 - **the covered market and the main school.**
 
@@ -230,13 +230,13 @@ The order is published in the ledger, so nobody learns it during the fault.
 
 The three nodes are where the city's claims could fail for the people in it:
 
-- **N01:** that arrival tells the truth about the city;
-- **N02:** that a family can live here through a Zonda week;
-- **N10:** that one public room can work at 45 °C.
+- **C01:** that arrival tells the truth about the city;
+- **A01:** that a family can live here through a Zonda week;
+- **A03:** that one public room can work at 45 °C.
 
 The plans are drawn by `make_figures.py`. The aerial and eye-level views come from the scene built by `make_scene.py` and drawn by `render_views.py`, from the submitted geometry. The rendered images in `media/` were made from those views with an image model and are registered in `image_provenance.json`.
 
-### N01 · Arriving along the first fields
+### C01 · Arriving along the first fields
 
 The coach from San Juan enters at the site's south-west tip and runs 3.5 km beside field 01 and the orchards, with the arrays on the left. It turns up the edge of fields 02 and 03 between a double row of poplars and the olive groves, and stops under a 106 × 24 m solar canopy at the city's south-west corner. Beside the stop are:
 
@@ -246,11 +246,11 @@ The coach from San Juan enters at the site's south-west tip and runs 3.5 km besi
 
 The Avenida del Agua leads from there straight up to the tank on the bluff, 2.1 km ahead. Cars stop at the hub. The city begins on foot.
 
-![Plan](figures/node-N01-plan.png)
-![Aerial](figures/node-N01-aerial.png)
-![Eye level](figures/node-N01-eye.png)
+![Plan](figures/node-C01-plan.png)
+![Aerial](figures/node-C01-aerial.png)
+![Eye level](figures/node-C01-eye.png)
 
-### N02 · A superblock of courtyard houses
+### A01 · A superblock of courtyard houses
 
 Nine blocks of 87 m around a patio garden with a shade pergola, cistern and play area; about 1,700 people.
 
@@ -261,11 +261,11 @@ Nine blocks of 87 m around a patio garden with a shade pergola, cistern and play
 
 In a Zonda week, families live in the courts and the lanes, and the patio garden is the cool place at dusk.
 
-![Plan](figures/node-N02-plan.png)
-![Aerial](figures/node-N02-aerial.png)
-![Eye level](figures/node-N02-eye.png)
+![Plan](figures/node-A01-plan.png)
+![Aerial](figures/node-A01-aerial.png)
+![Eye level](figures/node-A01-eye.png)
 
-### N10 · Plaza del Agua: a square for 45 degrees and the Zonda
+### A03 · Plaza del Agua: a square for 45 degrees and the Zonda
 
 A 300 m superblock on the Avenida del Agua, organised against the heat and the wind:
 
@@ -278,9 +278,9 @@ A 300 m superblock on the Avenida del Agua, organised against the heat and the w
 
 At 45 °C people sit under the canopy and in the grove. In a Zonda they go down into the court or behind the gallery.
 
-![Plan](figures/node-N10-plan.png)
-![Aerial](figures/node-N10-aerial.png)
-![Eye level](figures/node-N10-eye.png)
+![Plan](figures/node-A03-plan.png)
+![Aerial](figures/node-A03-aerial.png)
+![Eye level](figures/node-A03-eye.png)
 
 ## 11. Metrics and evidence
 
@@ -314,6 +314,6 @@ At 45 °C people sit under the canopy and in the grove. In a Zonda they go down 
 
 **Sources:** PVGIS (S-01) and NASA POWER (S-02) are named as the tools for checking the PV yield, cooling hours and storage; INPRES-CIRSOC 103 (S-03) is named for seismic design. No figure has been taken from them yet. The values in this example are assumptions A-01 to A-18, each with its basis, and an entry would replace them with runs of those tools.
 
-**AI disclosure.** Agent: Claude (Cowork), model claude-opus-5-5, in a cloud sandbox using only this repository's scripts. Autonomy: human-supervised. The organiser's design lead asked for a complete reference example that answers all three scales as a city, confirmed the three key nodes the agent proposed (N01, N02, N10), and chose the image tool. The agent made every design decision and wrote every file, geometry, number and sentence; no human edited the package.
+**AI disclosure.** Agent: Claude (Cowork), model claude-opus-5-5, in a cloud sandbox using only this repository's scripts. Autonomy: human-supervised. The organiser's design lead asked for a complete reference example that answers all three scales as a city, confirmed the three key nodes the agent proposed (C01, A01, A03), and chose the image tool. The agent made every design decision and wrote every file, geometry, number and sentence; no human edited the package.
 
 Drawings are made by `make_figures.py`. The 3D scene `visual/index.html` and the massing views in `renders/` are made by `make_scene.py` and `render_views.py` from the geometry. The images in `media/` were made with ChatGPT's image generation from those massing views, one view each, and are registered with their full prompts and control images in `image_provenance.json`. They illustrate the geometry and are not evidence.

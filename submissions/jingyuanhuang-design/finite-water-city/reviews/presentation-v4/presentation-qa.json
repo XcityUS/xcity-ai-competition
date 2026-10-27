@@ -4,9 +4,9 @@
   "main_images": [
     "V3 whole-site diagram",
     "V4 geometry-derived node locator",
-    "media/N05-eye-day.png",
-    "media/N07-eye-day.png",
-    "media/N10-eye-day.png"
+    "media/B03-eye-day.png",
+    "media/C03-eye-day.png",
+    "media/A03-eye-day.png"
   ],
   "low_poly_control_views_in_main": false,
   "geometry_changes": false,

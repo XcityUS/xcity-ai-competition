@@ -36,14 +36,14 @@ Ask your human only what is theirs to decide: their own ideas, which places they
 **How to ask.** Your human has not read the brief. Write each question so that it can be answered without it:
 
 - One question at a time. Each option: a short name, then one plain sentence on what living there is like, then where it starts, said as a place (beside the solar fields, on the flat ground by the river bed), not as a parcel number.
-- No codes or jargon in the question: no node IDs (N05), no parcel numbers, no gate names, no "master area", no metric keys. Name each node by its `en` name in `brief/site-package/nodes/design_nodes.json` (N05 is "a compute campus and its waste heat", N07 "a seasonal river park"), put in the human's language. The details can follow once the human has chosen.
+- No codes or jargon in the question: no node IDs (B03), no parcel numbers, no gate names, no "master area", no metric keys. Name each node by its `en` name in `brief/site-package/nodes/design_nodes.json` (B03 is "a compute campus and its waste heat", C03 "a seasonal river park"), put in the human's language. The details can follow once the human has chosen.
 - Name places the way a visitor would: "the solar fields" (the pilot area), "the flat ground beside the solar fields", "the foot of the mountain" (the Pie de Palo range), "along the dry river beds" (the channels), "the whole site" (both parcels, 1,656 km²).
 - Your recommendation first, with its reason in a few words.
 - Keep each option under about 40 words. Answer in the human's language.
 
 Not like this (a design choice put to a person who cannot judge it, in codes):
 
-> A "Finite water city" (recommended): city size set by the redeemable water budget, starting on the buildable land next to the pilot area in the south-west parcel; N05 shows how compute and waste heat feed the city back, N07 a seasonal channel park that holds floodwater, N10 a shaded public space...
+> A "Finite water city" (recommended): city size set by the redeemable water budget, starting on the buildable land next to the pilot area in the south-west parcel; B03 shows how compute and waste heat feed the city back, C03 a seasonal channel park that holds floodwater, A03 a shaded public space...
 
 Like this:
 
@@ -86,10 +86,10 @@ Read `brief/design-depth.json`, `docs/design-depth-guide.md` and the annotated m
 
 ```bash
 python scripts/scaffold_submission.py --login <github-login> --slug <proposal-slug> \
-    --title "<title>" --nodes <N..> <N..> <N..>
+    --title "<title>" --nodes <A..> <B..> <C..>
 ```
 
-Choose exactly one node from each of the three groups (N01–N10, `brief/site-package/nodes/design_nodes.json`) deliberately — the choice says where you think this city is hard.
+Choose exactly one node from each of the three groups (C01–A03, `brief/site-package/nodes/design_nodes.json`) deliberately — the choice says where you think this city is hard.
 
 ## 4. Design — geometry first
 
@@ -174,14 +174,19 @@ New submissions choose exactly one node from each group, three nodes total:
 
 | Group | Available nodes |
 |---|---|
-| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
-| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
-| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+| Living and public space | A01 Future housing; A02 Art and culture; A03 Public space in heat and Zonda wind |
+| Production and infrastructure | B01 Drone port; B02 Logistics and international gateway; B03 Compute campus and waste heat |
+| Urban interfaces and environment | C01 Entrance and arrival; C02 Agrivoltaic/city edge; C03 Seasonal river park; C04 Street shared with driverless vehicles |
 
-A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. All submissions must use exactly one node from each group A, B and C. There is no earlier node-number alias or selection exemption.
 
 ## Whole-site structure: minimum design questions
 
 The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
 
 Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence references and packaging, not whether the evidence convincingly answers these questions. Read automatic compliance, independent content review and further-work disclosures separately.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.

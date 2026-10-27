@@ -376,5 +376,17 @@
     "revision": "2026-10-26-consistency-2",
     "matrix_version": 2,
     "matrix_v1_compatibility": "Only the two organiser-listed legacy paths may retain v1 matrices. New directories must use v2; entrants cannot self-declare an earlier rule version."
+  },
+  "public_submission_language": {
+    "code": "en",
+    "scope": [
+      "title",
+      "narrative",
+      "summary",
+      "booklet",
+      "drawing_annotations",
+      "legends"
+    ],
+    "working_language": "unrestricted"
   }
 }

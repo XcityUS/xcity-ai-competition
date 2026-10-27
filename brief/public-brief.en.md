@@ -63,26 +63,26 @@ New submissions choose exactly one node from each group, three nodes total:
 
 | Group | Available nodes |
 |---|---|
-| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
-| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
-| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+| Living and public space | A01 Future housing; A02 Art and culture; A03 Public space in heat and Zonda wind |
+| Production and infrastructure | B01 Drone port; B02 Logistics and international gateway; B03 Compute campus and waste heat |
+| Urban interfaces and environment | C01 Entrance and arrival; C02 Agrivoltaic/city edge; C03 Seasonal river park; C04 Street shared with driverless vehicles |
 
-A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. All submissions must cover groups A, B and C; there is no earlier-node-number or any-three exception.
 
 ### The ten key nodes
 
 | | Node | |
 |---|---|---|
-| N01 | Entrance and arrival sequence | The first kilometre in from the regional road: where people, vehicles and goods part |
-| N02 | A future housing prototype | How a dwelling is organised when labour goes to machines and the commute no longer defines the day |
-| N03 | Drone port | Take-off, charging, sorting and maintenance, and their relation to blocks and roofs |
-| N04 | Logistics hub and international gateway | How yards, the crossing and automated sorting live with the city |
-| N05 | A compute campus and its waste heat | Who uses the heat decides how close it sits to people |
-| N06 | The edge between agrivoltaic fields and the city | Interwoven, lifted, or a boundary you can walk along |
-| N07 | A seasonal river park | Dry most of the year, a flood channel in a storm |
-| N08 | A place for art and culture | Desert, mountain, a dark sky — somewhere people travel to |
-| N09 | A street shared with driverless vehicles | The section, the crossing and a person's sense of safety |
-| N10 | Public space in heat and Zonda wind | Where people still go out under a 50 °C ground surface |
+| C01 | Entrance and arrival sequence | The first kilometre in from the regional road: where people, vehicles and goods part |
+| A01 | A future housing prototype | How a dwelling is organised when labour goes to machines and the commute no longer defines the day |
+| B01 | Drone port | Take-off, charging, sorting and maintenance, and their relation to blocks and roofs |
+| B02 | Logistics hub and international gateway | How yards, the crossing and automated sorting live with the city |
+| B03 | A compute campus and its waste heat | Who uses the heat decides how close it sits to people |
+| C02 | The edge between agrivoltaic fields and the city | Interwoven, lifted, or a boundary you can walk along |
+| C03 | A seasonal river park | Dry most of the year, a flood channel in a storm |
+| A02 | A place for art and culture | Desert, mountain, a dark sky — somewhere people travel to |
+| C04 | A street shared with driverless vehicles | The section, the crossing and a person's sense of safety |
+| A03 | Public space in heat and Zonda wind | Where people still go out under a 50 °C ground surface |
 
 **Renders do not need paid tools.** `scripts/make_figures.py` produces a plan, an aerial and an eye-level massing view of each node straight from your geometry, offline and free. You may do better with any image or 3D tool, but every such image is registered (section 7).
 
@@ -230,3 +230,8 @@ The main booklet follows the whole-site plan, a shared node locator (site → ma
 ## Design workflow, depth and review (26 October 2026)
 
 Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected levels (whole-site structure, complete phase one, urban-design enlargement, three detailed nodes). New entries use matrix v2 with the actual decision, extent and phase, linking drawings, geometry, metric keys and explanation headings in `design_depth_matrix.json`, with gaps classified as organiser data, professional verification or entrant design, plus next verification. Version-one matrices remain readable only for the two exact organiser-listed legacy paths; new directories must use v2. `templates/design_depth_matrix.json` is the editable starting point. G12 validates reference consistency only. Generated results separate automatic compliance, content review (`not_assessed`) and further work. The exact two legacy packages in the policy retain existing requirements until matrix opt-in. No fixed page count, minimum development area or additional render quota is introduced. Formal design diagrams and decisive plans/sections belong in the main booklet; raw controls, repetitive comparisons and logs belong in the technical appendix. Annotated teaching examples: `docs/reference-examples.md`.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.

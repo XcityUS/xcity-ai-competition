@@ -94,3 +94,8 @@
 > Where the numbers came from (sources.json, assumptions.json). Separate organiser data gaps from unfinished entrant work: disclose scenarios, next verification and responsible role instead of inventing facts or excusing missing mandatory design. Which agent and model did what, and what any human did (manifest.json → agent, autonomy). Which images were generated and how (image_provenance.json).
 
 > Reading outline: site judgement → overall strategy → programme/capacity → movement/infrastructure → phase-one urban design → three nodes/use scenarios → implementation → indicators/trade-offs. Retain the machine-linked fourteen headings, using cross-references and freely added subheadings/figures for a continuous argument. There is no fixed page count.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.

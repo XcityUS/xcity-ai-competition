@@ -1,7 +1,7 @@
 [
   {
-    "node_id": "N05",
-    "name": "算力与余热利用",
+    "node_id": "B03",
+    "name": "Compute and waste heat",
     "centroid_utm": [
       573825.0000000006,
       6552575.000000001
@@ -14,8 +14,8 @@
     ]
   },
   {
-    "node_id": "N07",
-    "name": "季节河道公园",
+    "node_id": "C03",
+    "name": "Seasonal river park",
     "centroid_utm": [
       572599.9999999998,
       6554474.999999999
@@ -28,8 +28,8 @@
     ]
   },
   {
-    "node_id": "N10",
-    "name": "遮阴公共空间",
+    "node_id": "A03",
+    "name": "Public space in heat and wind",
     "centroid_utm": [
       574434.9999999995,
       6553625.0

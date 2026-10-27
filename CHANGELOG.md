@@ -1,5 +1,9 @@
 ## 2026-10-26 · Current consolidated rules and private materials upload
 
+## 2026-10-27 — grouped node IDs and English public deliverables
+
+All node references use A/B/C identifiers with readable names. Earlier node-number aliases and selection exemptions are removed. Final public deliverables must be English; working language remains unrestricted. The organiser example is explicitly inactive pending redesign, without a compliance pass. See [migration note](docs/node-and-language-update.md).
+
 This entry supersedes earlier same-day application/draft/email instructions below; older entries are history, not concurrent rules.
 
 - Institution flow: register on the official practice page; organiser emails a private link; complete and save the form and individual materials there, then submit online. Email does not receive application attachments. Optional Word worksheets remain preparation aids. Registration closes 31 December 2026; complete application 31 January 2027, both 23:59 UTC; select five in February 2027. Automatic sending awaits mail-provider integration.

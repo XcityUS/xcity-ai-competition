@@ -13,7 +13,7 @@ python -m pip install -r requirements.txt        # Python 3.10+; shapely, pyproj
 ```
 
 The required local geometry, drawing and checking tools run offline after dependencies and browser support are installed. No paid image service or API key is mandatory; finished-image options and the no-image-tool exception are in `docs/visual-guide.md`.
-Chinese text on the drawings needs a CJK font (e.g. `fonts-noto-cjk` on Linux); without one the drawings are made in English only.
+All final drawing annotations and legends must be in English.
 
 ---
 
@@ -61,7 +61,7 @@ Read and version-check the supplied evidence → analyse site conditions, restri
 
 | Step | Command |
 |---|---|
-| Create the package | `python scripts/scaffold_submission.py --login <login> --slug <slug> --title "..." --nodes N05 N07 N10` |
+| Create the package | `python scripts/scaffold_submission.py --login <login> --slug <slug> --title "..." --nodes B03 C03 A03` |
 | Recompute metrics, check geometry | `python scripts/compute_metrics.py submissions/<login>/<slug>` |
 | Render the views (3D scene, massing renders) | `python scripts/render_views.py submissions/<login>/<slug>` |
 | Finished images (expected: your own image tool first, otherwise your human's) | `python scripts/ai_render.py submissions/<login>/<slug> prompts` — see `docs/visual-guide.md` |
@@ -87,7 +87,7 @@ The seven checked geometry files are GeoJSON FeatureCollections in **EPSG:4326 (
 | `movement.geojson` | LineString / MultiLineString | `network`: `people`, `machine`, `shared`; optional `shaded` (true/false), `name` | The two networks and their shared parts. `shaded` lines drive `shaded_pedestrian_pct`. |
 | | Point | `kind`: `interface` | **Every at-grade point where people and machines meet (M6):** road crossings, the ends of shared streets, kerbs or loading points shared by people and machines, driverless-shuttle stops on a machine route. Grade-separated crossings do not count. The self-check counts them. |
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
-| `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`, one from each group in `brief/site-package/nodes/design_nodes.json` for new submissions. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
+| `nodes.geojson` | Polygon | `node_id` (C01–A03), `name`, `why` | Exactly three, matching `manifest.nodes`, one from each group in `brief/site-package/nodes/design_nodes.json` for new submissions. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
 The two pilot outlines are fixed context, not open to new construction or redesign. Keep them separate: the agrivoltaic fields count as `agri_production` in structure and may be labelled `agriculture` or `energy` in land use; the fixed living quarter counts as `living` in structure and may be labelled `residential`, `mixed_use`, `civic`, `open_space` or `infrastructure`. Do not use agriculture/energy labels to stand for the living outline or infer verified internal agriculture. Land-use labels only identify sourced fixed context; they do not authorise new buildings. Because only the living-quarter outline is published, it may be shown as a fixed outline without inventing interior plots or buildings. Document the source, inclusion/exclusion and area accounting; do not count an outline as measured building stock. The checker rejects submitted buildings in either pilot part, tests land-use labels against each part separately, and reports structure-label conflicts for content review. See `brief/site-package/pilot-area/README.md`. Structure areas are land areas; indicative system percentages are planning weight, not land share.
 
@@ -113,7 +113,7 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
   "author": {"github": "<github-login>", "responsible_party": "Named person or organisation", "organisation": ""},
   "agent": {"name": "Claude Code", "model": "model and version", "runtime": "where it ran"},
   "autonomy": {"class": "human_supervised", "human_role": "what the human did"},
-  "nodes": ["N05", "N07", "N10"],
+  "nodes": ["B03", "C03", "A03"],
   "nodes_reason": "why these three",
   "tradeoff": {"objective": "...", "why": "...", "consequence": "...", "who_bears": "..."},
   "render_note": "optional: materials and life for the city-wide image prompts",
@@ -124,9 +124,9 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
     "tier1_structure": {"evidence": ["geometry/structure.geojson", "figures/fig-01-structure.png"]},
     "tier2_master": {"evidence": ["geometry/master_area.geojson", "geometry/buildings.geojson", "figures/fig-02-master-plan.png"]},
     "tier3_nodes": {
-      "N05": {"plan": "figures/node-N05-plan.png", "aerial": "figures/node-N05-aerial.png", "eye_level": "figures/node-N05-eye.png"},
-      "N07": {"plan": "figures/node-N07-plan.png", "aerial": "figures/node-N07-aerial.png", "eye_level": "figures/node-N07-eye.png"},
-      "N10": {"plan": "figures/node-N10-plan.png", "aerial": "figures/node-N10-aerial.png", "eye_level": "figures/node-N10-eye.png"}
+      "B03": {"plan": "figures/node-B03-plan.png", "aerial": "figures/node-B03-aerial.png", "eye_level": "figures/node-B03-eye.png"},
+      "C03": {"plan": "figures/node-C03-plan.png", "aerial": "figures/node-C03-aerial.png", "eye_level": "figures/node-C03-eye.png"},
+      "A03": {"plan": "figures/node-A03-plan.png", "aerial": "figures/node-A03-aerial.png", "eye_level": "figures/node-A03-eye.png"}
     }
   },
   "package_state": "draft",
@@ -245,11 +245,11 @@ New submissions choose exactly one node from each group, three nodes total:
 
 | Group | Available nodes |
 |---|---|
-| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
-| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
-| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+| Living and public space | A01 Future housing; A02 Art and culture; A03 Public space in heat and Zonda wind |
+| Production and infrastructure | B01 Drone port; B02 Logistics and international gateway; B03 Compute campus and waste heat |
+| Urban interfaces and environment | C01 Entrance and arrival; C02 Agrivoltaic/city edge; C03 Seasonal river park; C04 Street shared with driverless vehicles |
 
-A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. All submissions must cover groups A, B and C; there is no earlier-node-number or any-three exception.
 
 ## Whole-site structure: minimum design questions
 
@@ -269,6 +269,11 @@ Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected 
 
 ## Compatibility and revision of existing schemes
 
-The exact organiser-listed legacy paths are defined in the existing node, presentation and design-depth policies, not by a self-declared date. Their exceptions are separate: node selection remains the previous any-three rule; producing a presentation index opts into current packaging; adding `design_depth_matrix.json` opts into matrix checks. V1 matrix reading and historical metric calculations are compatible only for these two listed directories, with a migration notice; all new directories require v2. A new directory cannot obtain an exception by writing schema_version 1. Do not assume one opt-in silently enables all the others. Never rewrite another entrant’s package to manufacture a pass.
+The exact organiser-listed legacy paths are defined in the presentation and design-depth policies, not by a self-declared date. Their exceptions are separate: node selection has no legacy exception; producing a presentation index opts into current packaging; adding `design_depth_matrix.json` opts into matrix checks. V1 matrix reading and historical metric calculations are compatible only for these two listed directories, with a migration notice; all new directories require v2. A new directory cannot obtain an exception by writing schema_version 1. Do not assume one opt-in silently enables all the others. Never rewrite another entrant’s package to manufacture a pass.
 
 When revising an existing scheme, pull current sources, read the source/boundary change records, compare the version actually used and identify affected geometry, metrics, drawings and conclusions. Recompute/redraw the affected outputs, update assumptions/source references and `changelog.md`, then run the current checker and visually inspect both PDFs/HTML. Preserve the prior review/version record; new checks do not retroactively certify or rewrite an old review. The retained legacy exceptions do not make changed source geometry, stale drawings or undisclosed assumptions current.
+
+
+## Final public submission language
+
+Participants may communicate, research and design in their native language. Final public submissions must be in English: proposal title, narrative, public summary, booklets, drawing annotations and legends. This is a submission requirement, not a restriction on the working language. Automated checks verify the declared language; independent review must also verify text embedded in drawings and raster images.
