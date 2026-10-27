@@ -9,6 +9,14 @@
       "reviewed_package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
       "published_at": "2026-10-26",
       "featured": false
+    },
+    {
+      "path": "submissions/jingyuanhuang-design/everyday-city",
+      "reviewed_package_sha256": "383157149f7fda6c33aa54e7f4acf4ddcd7ae73572c4f213579ef3815c4bf401",
+      "published_at": "2026-10-27",
+      "featured": true,
+      "publication_basis": "Explicit author/maintainer request for public preview and homepage display after reviewing the new proposal. Automatic compliance only; independent design content not assessed.",
+      "design_content_review": "not_assessed"
     }
   ]
 }
