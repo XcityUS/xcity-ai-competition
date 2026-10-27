@@ -38,3 +38,7 @@ Human explicitly authorised website updating after reviewing the finished views,
 ##2026-10-27 / V12 production-led revision
 
 Human authorised direct website updating. Added source-based territorial field planning and boundary/channel context, compacted eight industrial halls without changing capacity, rerouted shuttle outside solar fields, and added mapped phases plus crop/panel/work plans and sections. Whole-site diagram replaces housing-only hero. V11 production images superseded; rejected six-hall generated trials are not selected. This remains a draft with incomplete engineering and compliance packaging.
+
+## 2026-10-27 / V13 presentation correction
+
+Replaced the pasted-sheet A0 with two native vector boards, full-site functional and six-system overlays, and the southwest functions/road enlargement. Inserted the four registered A03/C03 concept images into the actual statement and booklet, and A03 images into A0. Retained current V12 geometry. Superseded B03 finishes remain excluded; full park and engineering review remain open.
