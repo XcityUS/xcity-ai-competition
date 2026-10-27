@@ -1,0 +1,44 @@
+{
+ "id": "XCITY-TERRAIN-SUMMARY-9-13",
+ "source": "SRC-DEM",
+ "method_en": "Copernicus DEM GLO-30 resampled to 60 m (EPSG:32719). Slope from the elevation gradient, smoothed over 5 x 5 cells (300 m). Flood-sensitive = within 1.5 km of a channel with >= 100 km2 upstream area and less than 3 m above the nearest channel bed (HAND). Raster cells are counted inside the site boundary; areas are indicative to about 1%.",
+ "site_km2": 1655.3,
+ "slope_km2": {
+  "lt_2pct": 1183.3,
+  "2_5pct": 182.2,
+  "5_15pct": 131.8,
+  "15_25pct": 31.3,
+  "ge_25pct": 126.7
+ },
+ "flood_sensitive_km2": 503.4,
+ "flat_lt2pct_not_flood_km2": 686.4,
+ "pilot_area_km2": 13.9,
+ "elevation_m": {
+  "min": 606,
+  "p5": 636,
+  "p50": 675,
+  "p95": 1354,
+  "max": 2658
+ },
+ "files": {
+  "dem": "dem_9_13_utm19s_60m.tif",
+  "hillshade": "hillshade_9_13.png",
+  "hillshade_bbox_lonlat": [
+   -68.37825,
+   -31.26315,
+   -67.61885,
+   -30.64467
+  ],
+  "hillshade_note": "8-bit grey, sun from the north-west at 45 degrees, vertical exaggeration 1.5. hillshade_9_13.png is in EPSG:4326 with bbox [west, south, east, north]; hillshade_9_13_utm.png is in EPSG:32719 with bounds [minx, miny, maxx, maxy] in metres, the same grid as the DEM.",
+  "hillshade_utm": "hillshade_9_13_utm.png",
+  "hillshade_utm_bounds_m": [
+   559572.4,
+   6541053.7,
+   631512.4,
+   6608973.7
+  ],
+  "hillshade_utm_crs": "EPSG:32719",
+  "dem_png": "dem_9_13_utm19s_60m.png",
+  "dem_png_note": "The same DEM as a 16-bit greyscale PNG: each pixel value is the elevation in metres. Same grid and bounds as hillshade_9_13_utm.png (EPSG:32719, 60 m). Readable with Pillow alone."
+ }
+}

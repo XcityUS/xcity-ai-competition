@@ -11,9 +11,9 @@ All data: `brief/site-package/` (EPSG:4326 unless stated). All areas: `brief/sit
 
 | | |
 |---|---|
-| Site | 1,656 km² = the main parcel (1,483.8) + the south-west parcel (172.5); exact boundaries from owner KML |
+| Site | 1,656 km² nominal project area; current geometry 1,656.684229 km² (Parcel A 1,483.844674; Parcel B 172.839555). Owner-KML-derived competition boundary with internal seam closure; not cadastral verification |
 | Pilot area | 3 agrivoltaic fields (13.9 km²) and a living quarter, phase 1 (2.48 km²), both in the south-west parcel; planned by XCITY; **not open to design** |
-| Slope < 2% | 1,183 km² (686 km² of it outside the flood-sensitive band) |
+| Slope < 2% | 1,183.6 km²; prior flood screening identifies about 686 km² outside its band (the newly closed seam is hydrologically unclassified) |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range in the south-east of the main parcel |
 | Flood-sensitive | 503 km² along the DEM-derived channels |
 | Elevation | 606–2,658 m, median 675 m |

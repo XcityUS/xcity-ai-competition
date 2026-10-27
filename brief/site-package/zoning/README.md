@@ -1,0 +1,5 @@
+# Indicative systems: intent, not evidence of infrastructure
+
+Source: `SRC-XCITY-INDICATIVE` in `../sources.json`; version 1 in the issued JSON. Source date and survey accuracy are not supplied. Points locate indicative preferences and `halo_km` is an approximate extent, not a land-use boundary, capacity allocation, approval or exclusion zone. Only the issued pilot outlines are fixed. A scheme may adopt, move or overturn these preferences, with reasons. Tag citations `indicative`.
+
+Phrases such as “near water and power”, “clear of flood”, or proposed port-of-entry functions describe the reference intent and its terrain-based reasoning. They do not demonstrate an available water supply, secured power connection, design-flood clearance, customs designation or approved transport link. Upstream catchments are clipped to the 2 × 2 degree DEM window. Supply capacities, rights, network routes, facilities and design-flood parameters must be sourced or explicitly assumed and verified. See `../evidence-index.json`.

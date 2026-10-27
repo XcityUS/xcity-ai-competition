@@ -35,3 +35,11 @@ Present the main population/jobs, housing, land/density, water, energy and compu
 Include geometry/massing controls, additional sections and dimensions, land-use and resource accounts, image-to-control comparisons, requirement-to-evidence index, assumptions, sources, tool/model disclosure and automatic-check limitations. Keep the original controls in `renders/` and every checked figure on disk. Use `self_check.json` as the current machine report; do not copy an old PASS into the booklet as design approval.
 
 Default commands produce `drawings/a3-booklet.pdf`, `drawings/a3-technical-appendix.pdf` and `drawings/presentation-index.json`. The index gives the page range of each required main section and the separate appendix. A custom layout must preserve those outputs and update the index truthfully. Presence/page-order checks do not assess the clarity or design quality of the pages.
+
+## Design evidence belongs in the main story
+
+The formal booklet is a complete design argument, not a fixed six-page abstract: site judgement → overall strategy → programme/capacity → movement/infrastructure → phase-one urban design → three nodes and use scenarios → implementation → indicators/trade-offs. Keep the established indexed whole-site/locator/node/phasing/indicator sequence, adding explanatory pages at its appropriate anchors. Page count follows the design.
+
+Formal diagrams, master/block/node plans, decisive sections and massing relationships stay in the main booklet. Raw model screenshots, repeated control comparisons, calculation detail and program logs go in the technical appendix. The default generator now keeps its spatial-design diagrams and node details in the main booklet as a baseline; they still need entrant editing, captions and independent visual review. Use `booklet.pages` / `booklet.section_pages` for the full argument.
+
+See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-examples.md`. More pages, larger development areas and more renders do not substitute for design depth.

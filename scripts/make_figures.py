@@ -215,13 +215,14 @@ def outline(ax, g, color=INK, lw=1.0, ls="-", z=5, alpha=1.0):
 
 def hillshade(ax, pkg, alpha=0.55):
     x0, y0, x1, y1 = pkg.hs_bounds
-    # beyond the DEM, continue in the hillshade's flat tone so the map has no blank band at its edge
-    flat = float(np.median(np.asarray(pkg.hs))) / 255.0
-    bg = matplotlib.colors.to_rgb(PAPER)
-    ax._xc_bg = tuple((1 - alpha) * c + alpha * flat for c in bg)
-    ax.set_facecolor(ax._xc_bg)
-    ax.imshow(pkg.hs, cmap="gray", vmin=0, vmax=255, extent=[x0, x1, y0, y1], alpha=alpha, zorder=0,
-              interpolation="bilinear")
+    # The topographic shading belongs to the issued competition land only.
+    # Retain a paper background outside it; never manufacture a grey raster rectangle.
+    ax._xc_bg = matplotlib.colors.to_rgb(PAPER)
+    ax.set_facecolor(PAPER)
+    image = ax.imshow(pkg.hs, cmap="gray", vmin=0, vmax=255, extent=[x0, x1, y0, y1], alpha=alpha, zorder=0,
+                      interpolation="bilinear")
+    site_path = MPath.make_compound_path(*[_path(p) for p in _polys(pkg.site)])
+    image.set_clip_path(PathPatch(site_path, transform=ax.transData))
 
 
 def channels(ax, pkg, window=None, primary=True, z=3):
@@ -2306,8 +2307,9 @@ def main():
                 put(figure('fig-01-structure'),'whole_site');extras('whole_site')
                 put(node_locator(pkg),'node_locator');extras('node_locator')
                 put(figure('fig-02-master-plan'));extras('views')
+                for key in ['fig-03-land-use-density','fig-04-movement','fig-05-open-space-water']:put(figure(key))
                 for nid in pkg.man.get('nodes',[]):
-                    put(public_node_sheet(pkg,nid),'node:'+nid);extras(nid)
+                    put(public_node_sheet(pkg,nid),'node:'+nid);put(draw_node_detail(pkg,nid));extras(nid)
                 extras('nodes')
                 put(figure('fig-06-phasing'),'phasing');extras('phasing')
                 put(key_indicators(pkg),'key_metrics');extras('key_metrics');extras('end')

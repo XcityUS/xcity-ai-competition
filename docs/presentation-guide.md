@@ -18,7 +18,7 @@ A cover and short thesis may precede the sequence. Supporting presentation pages
 
 ## Separate technical appendix
 
-`drawings/a3-technical-appendix.pdf` contains the compliance index, detailed land/resource figures, sections and dimensions, control-render comparisons, operational diagrams, assumptions, sources and image/tool disclosure. The original `renders/` controls, `figures/` and current `self_check.json` remain in the package. The main booklet need not repeat every check or every control image. Necessary plans and sections stay in the main presentation where they explain the proposal.
+`drawings/a3-technical-appendix.pdf` contains the compliance index, extended land/resource calculations, raw control-render comparisons, model/debug material, assumptions, sources and image/tool disclosure. Formal design diagrams, necessary sections/dimensions and operational diagrams that explain spatial decisions remain in the main booklet. The original `renders/` controls, `figures/` and current `self_check.json` remain in the package. The main booklet need not repeat every check or every control image. Necessary plans and sections stay in the main presentation where they explain the proposal.
 
 Default `make_figures.py` writes both PDFs and `drawings/presentation-index.json`. The main PDF is still named `a3-booklet.pdf`, so existing gallery/download routes remain usable. `figures/fig-08-node-location.png` is the new shared locator. A custom page design must preserve the named outputs and a truthful index with the mandatory sections in order. Page numbers are one-based physical PDF pages, including the cover.
 
@@ -33,3 +33,11 @@ The two organiser-listed existing packages retain the previous packaging rules. 
 ## Freely designed replacement pages
 
 To replace a default public section instead of merely adding pages, use `manifest.booklet.section_pages`, for example `{"node_locator": [{"path": "pages/my-locator.png", "title": "Where the three places belong"}]}`. Keys are `whole_site`, `node_locator`, `node:<selected ID>`, `phasing` and `key_metrics`. Each list can contain several PNG/JPG pages. The generator places them in the required reading sequence and records their page ranges automatically. All required information still applies; custom images cannot replace checked source geometry or controls. Image-model pages need provenance registration. Changing a custom page invalidates the drawing-input hash and requires a redraw. The automatic index does not prove the page actually contains the required content.
+
+## Design evidence belongs in the main story
+
+The formal booklet is a complete design argument, not a fixed six-page abstract: site judgement → overall strategy → programme/capacity → movement/infrastructure → phase-one urban design → three nodes and use scenarios → implementation → indicators/trade-offs. Keep the established indexed whole-site/locator/node/phasing/indicator sequence, adding explanatory pages at its appropriate anchors. Page count follows the design.
+
+Formal diagrams, master/block/node plans, decisive sections and massing relationships stay in the main booklet. Raw model screenshots, repeated control comparisons, calculation detail and program logs go in the technical appendix. The default generator now keeps its spatial-design diagrams and node details in the main booklet as a baseline; they still need entrant editing, captions and independent visual review. Use `booklet.pages` / `booklet.section_pages` for the full argument.
+
+See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-examples.md`. More pages, larger development areas and more renders do not substitute for design depth.

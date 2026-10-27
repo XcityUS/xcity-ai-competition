@@ -6,20 +6,20 @@
 
 ## 1. The land
 
-**Two parcels in San Juan province, Argentina, east of the Andes — joined into one piece, 1,656 km².** Both boundaries come from the owner's KML and are exact. All site data is in `brief/site-package/`.
+**Two parcels in San Juan province, Argentina, east of the Andes — joined into one piece, 1,656 km².** The issued competition boundaries derive from the owner's KML, with the authorised internal-seam topology correction recorded in `site-package/boundaries/boundary-revision.json`; survey/cadastral accuracy is not verified. All site data is in `brief/site-package/`.
 
 | | |
 |---|---|
 | The main parcel | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
-| The south-west parcel | 172.5 km² |
-| The site | 1,656.4 km² (quoted as 1,656 km²): `site-package/boundaries/scope_9_13.geojson` |
-| Slope < 2% | 1,183 km²; of which 686 km² is outside the flood-sensitive band |
+| The south-west parcel | 172.839555 km² |
+| The site | 1,656.684229 km² geometric area; 1,656 km² nominal project area: `site-package/boundaries/scope_9_13.geojson` |
+| Slope < 2% | 1,183.6 km²; the previous hydrology screening identifies about 686 km² outside its flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
 | Flood-sensitive | 503 km², along the seasonal channels |
 | Elevation | 606–2,658 m, median 675 m |
 | Roads | **No existing national or provincial road on site.** Nearest: RN 40 about 27.6 km; RP 510 about 35.6 km; RN 20 about 40.7 km |
 
-Every design lies inside the site boundary.
+Every design lies inside the site boundary. The seam closure fills two internal slivers (approximately 0.304419 km²) without moving the source parcels’ combined external outline. The added seam has terrain coverage but no rerun flood/HAND classification; it is not confirmed non-flood-sensitive land. Existing archived entries are not rewritten. See the boundary revision record and `terrain/terrain_summary_9_13.json`.
 
 ## 2. The pilot area — protected
 

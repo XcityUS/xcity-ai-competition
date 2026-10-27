@@ -1,136 +1,139 @@
 {
- "profile": "data-package",
- "name": "xcity-ai-competition-site-package",
- "title": "XCITY AI Competition - site package (the two parcels)",
- "version": "1.1.0",
- "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
- "sources_file": "sources.json",
- "resources": [
-  {
-   "name": "parcels_9_13",
-   "path": "boundaries/parcels_9_13.geojson",
-   "mediatype": "application/geo+json",
-   "description": "The two parcels, exact",
-   "hash": "sha256:92d008306b3510bdef181126123a981476a121b0166a9a7881d98e8eab46e0ce",
-   "source": "SRC-KML"
-  },
-  {
-   "name": "scope_9_13",
-   "path": "boundaries/scope_9_13.geojson",
-   "mediatype": "application/geo+json",
-   "description": "Site boundary (union)",
-   "hash": "sha256:c58759a4942543c60f6e0aa6e35a4b1a7dd34030a03ce7202e3c829f9194c42e",
-   "source": "SRC-KML"
-  },
-  {
-   "name": "pilot_area",
-   "path": "pilot-area/pilot_area.geojson",
-   "mediatype": "application/geo+json",
-   "description": "Pilot area fields 01-03 (fixed)",
-   "hash": "sha256:acc1f91588a62dc91d3fb5444dd125e62c8e5d89bd6b8346e0fa5834fd872edb",
-   "source": "SRC-PILOT"
-  },
-  {
-   "name": "pilot_living_area",
-   "path": "pilot-area/pilot_living_area.geojson",
-   "mediatype": "application/geo+json",
-   "description": "Pilot area living quarter, phase 1 (outline)",
-   "hash": "sha256:010b4f153b54afd0dbeb3ff3159a288eb72789b37591dde42095559acc7728e7",
-   "source": "SRC-PILOT"
-  },
-  {
-   "name": "roads_osm",
-   "path": "access/roads_osm.geojson",
-   "mediatype": "application/geo+json",
-   "description": "Regional roads",
-   "hash": "sha256:99a95cc87451bfd864f62314dcebf4ce4c07587a9bd3942bca03a069e8ae516a",
-   "source": "SRC-OSM"
-  },
-  {
-   "name": "road_distances",
-   "path": "access/road_distances_9_13.json",
-   "mediatype": "application/json",
-   "description": "Site-to-road distances",
-   "hash": "sha256:1247d3419a4971c1155c773e248d989769db52c4d4fd81289c8b8962c38738db",
-   "source": "SRC-OSM"
-  },
-  {
-   "name": "channels",
-   "path": "water/channels_dem.geojson",
-   "mediatype": "application/geo+json",
-   "description": "DEM-derived seasonal channels",
-   "hash": "sha256:bcc3ff8caad4c83a5187d674b893079da7361c8487bd94ae524566c7ad711283",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "flood_sensitive",
-   "path": "water/flood_sensitive_dem.geojson",
-   "mediatype": "application/geo+json",
-   "description": "DEM screening layer, not a surveyed design-flood extent or blanket permanent no-build area",
-   "hash": "sha256:67cda090c40e1413820600d658d4c0216c77bd62abe9c8b6c3429b9ab75ca4c4",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "dem",
-   "path": "terrain/dem_9_13_utm19s_60m.tif",
-   "mediatype": "image/tiff",
-   "description": "Elevation, 60 m, EPSG:32719",
-   "hash": "sha256:b5bb324a63800a9ccac4992a79d25ed5a153d3a7c2223a500d114bbb8d7115a4",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "dem_png",
-   "path": "terrain/dem_9_13_utm19s_60m.png",
-   "mediatype": "image/png",
-   "description": "Elevation as 16-bit PNG (metres), same grid as the DEM",
-   "hash": "sha256:068b49d9be9bb08a01c67a71b7be02bd720e47bbaf4891070c2a6673bc51755c",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "hillshade",
-   "path": "terrain/hillshade_9_13.png",
-   "mediatype": "image/png",
-   "description": "Hillshade in EPSG:4326 for basemaps",
-   "hash": "sha256:4b51340d8586f417a9a2ab70dabac338dc33285df9beecbca66a3c1fb43ab59e",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "hillshade_utm",
-   "path": "terrain/hillshade_9_13_utm.png",
-   "mediatype": "image/png",
-   "description": "Hillshade in EPSG:32719 (same grid as the DEM)",
-   "hash": "sha256:f875b5dd0249eb1c347d1e239d588c6495a531294e8a445c1d1bd44a71a6fa28",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "terrain_summary",
-   "path": "terrain/terrain_summary_9_13.json",
-   "mediatype": "application/json",
-   "description": "Slope, flood and elevation figures",
-   "hash": "sha256:0d8580a1f95ad0e0c5bdbefec90c43b5f1262b8b8f32e3287c6b441569dcb12c",
-   "source": "SRC-DEM"
-  },
-  {
-   "name": "indicative_systems",
-   "path": "zoning/indicative_systems_9_13.json",
-   "mediatype": "application/json",
-   "description": "Five systems, indicative",
-   "hash": "sha256:5329adda39eec7083da149ee3dc99cd98ac068f8873191a3b030c8c79273f385",
-   "source": "SRC-XCITY-INDICATIVE"
-  },
-  {
-   "name": "design_nodes",
-   "path": "nodes/design_nodes.json",
-   "mediatype": "application/json",
-   "description": "Ten key nodes - choose one from each of three groups",
-   "hash": "sha256:6645789ffc9e8efcee591025a503eac35b4b9d76d6ef66d38feaadfe21434b59"
-  },
-  {
-   "name": "areas",
-   "path": "areas.json",
-   "mediatype": "application/json",
-   "description": "Every area figure, one place",
-   "hash": "sha256:1faf3dd41bd563ead13cd11c606ee4092e6dedd95c5be6c333dae80a016eec4c"
-  }
- ]
+  "profile": "data-package",
+  "name": "xcity-ai-competition-site-package",
+  "title": "XCITY AI Competition - site package (the two parcels)",
+  "version": "1.2.0",
+  "description": "Everything the organiser supplies about the site. Coordinates are EPSG:4326 unless the file says otherwise.",
+  "sources_file": "sources.json",
+  "resources": [
+    {
+      "name": "parcels_9_13",
+      "path": "boundaries/parcels_9_13.geojson",
+      "mediatype": "application/geo+json",
+      "description": "Two issued competition parcels; internal seam closure, not cadastral verification",
+      "hash": "sha256:f9da3e6fe8e11f36a1f0abd1dd5a70bdc329d352d93ddb94af38dcf098aba0fc",
+      "source": "SRC-KML",
+      "boundary_revision": "2026-10-27-seam-closure"
+    },
+    {
+      "name": "scope_9_13",
+      "path": "boundaries/scope_9_13.geojson",
+      "mediatype": "application/geo+json",
+      "description": "Site boundary (union)",
+      "hash": "sha256:225935fa106017e970cdc82f4910c50d7616e947c69f1a9dc62592c5a5fb3ca6",
+      "source": "SRC-KML",
+      "boundary_revision": "2026-10-27-seam-closure"
+    },
+    {
+      "name": "pilot_area",
+      "path": "pilot-area/pilot_area.geojson",
+      "mediatype": "application/geo+json",
+      "description": "Pilot area fields 01-03 (fixed)",
+      "hash": "sha256:acc1f91588a62dc91d3fb5444dd125e62c8e5d89bd6b8346e0fa5834fd872edb",
+      "source": "SRC-PILOT"
+    },
+    {
+      "name": "pilot_living_area",
+      "path": "pilot-area/pilot_living_area.geojson",
+      "mediatype": "application/geo+json",
+      "description": "Pilot area living quarter, phase 1 (outline)",
+      "hash": "sha256:010b4f153b54afd0dbeb3ff3159a288eb72789b37591dde42095559acc7728e7",
+      "source": "SRC-PILOT"
+    },
+    {
+      "name": "roads_osm",
+      "path": "access/roads_osm.geojson",
+      "mediatype": "application/geo+json",
+      "description": "Regional roads",
+      "hash": "sha256:99a95cc87451bfd864f62314dcebf4ce4c07587a9bd3942bca03a069e8ae516a",
+      "source": "SRC-OSM"
+    },
+    {
+      "name": "road_distances",
+      "path": "access/road_distances_9_13.json",
+      "mediatype": "application/json",
+      "description": "Site-to-road distances",
+      "hash": "sha256:1247d3419a4971c1155c773e248d989769db52c4d4fd81289c8b8962c38738db",
+      "source": "SRC-OSM"
+    },
+    {
+      "name": "channels",
+      "path": "water/channels_dem.geojson",
+      "mediatype": "application/geo+json",
+      "description": "DEM-derived seasonal channels",
+      "hash": "sha256:bcc3ff8caad4c83a5187d674b893079da7361c8487bd94ae524566c7ad711283",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "flood_sensitive",
+      "path": "water/flood_sensitive_dem.geojson",
+      "mediatype": "application/geo+json",
+      "description": "DEM screening layer, not a surveyed design-flood extent or blanket permanent no-build area",
+      "hash": "sha256:67cda090c40e1413820600d658d4c0216c77bd62abe9c8b6c3429b9ab75ca4c4",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "dem",
+      "path": "terrain/dem_9_13_utm19s_60m.tif",
+      "mediatype": "image/tiff",
+      "description": "Elevation, 60 m, EPSG:32719",
+      "hash": "sha256:b5bb324a63800a9ccac4992a79d25ed5a153d3a7c2223a500d114bbb8d7115a4",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "dem_png",
+      "path": "terrain/dem_9_13_utm19s_60m.png",
+      "mediatype": "image/png",
+      "description": "Elevation as 16-bit PNG (metres), same grid as the DEM",
+      "hash": "sha256:068b49d9be9bb08a01c67a71b7be02bd720e47bbaf4891070c2a6673bc51755c",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "hillshade",
+      "path": "terrain/hillshade_9_13.png",
+      "mediatype": "image/png",
+      "description": "Hillshade in EPSG:4326 for basemaps",
+      "hash": "sha256:4b51340d8586f417a9a2ab70dabac338dc33285df9beecbca66a3c1fb43ab59e",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "hillshade_utm",
+      "path": "terrain/hillshade_9_13_utm.png",
+      "mediatype": "image/png",
+      "description": "Hillshade in EPSG:32719 (same grid as the DEM)",
+      "hash": "sha256:f875b5dd0249eb1c347d1e239d588c6495a531294e8a445c1d1bd44a71a6fa28",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "terrain_summary",
+      "path": "terrain/terrain_summary_9_13.json",
+      "mediatype": "application/json",
+      "description": "Slope, flood and elevation figures",
+      "hash": "sha256:a3defe4decd67fad4cbacbee0451a70c389cadcc93a3a84e8243ffe9f7c192d4",
+      "source": "SRC-DEM"
+    },
+    {
+      "name": "indicative_systems",
+      "path": "zoning/indicative_systems_9_13.json",
+      "mediatype": "application/json",
+      "description": "Five systems, indicative",
+      "hash": "sha256:5329adda39eec7083da149ee3dc99cd98ac068f8873191a3b030c8c79273f385",
+      "source": "SRC-XCITY-INDICATIVE"
+    },
+    {
+      "name": "design_nodes",
+      "path": "nodes/design_nodes.json",
+      "mediatype": "application/json",
+      "description": "Ten key nodes - choose one from each of three groups",
+      "hash": "sha256:6645789ffc9e8efcee591025a503eac35b4b9d76d6ef66d38feaadfe21434b59"
+    },
+    {
+      "name": "areas",
+      "path": "areas.json",
+      "mediatype": "application/json",
+      "description": "Every area figure, one place",
+      "hash": "sha256:fc93401e79afb066e8b9edef4ac0dfce3ff91299048f4619454ee05622a5802c"
+    }
+  ],
+  "boundary_revision": "2026-10-27-seam-closure"
 }

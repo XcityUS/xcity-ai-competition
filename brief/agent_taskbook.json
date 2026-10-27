@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/agent_taskbook.schema.json",
-  "version": 3,
+  "version": 4,
   "competition": "XCITY AI Competition",
   "site": "San Juan, Argentina - 1,656 km2",
   "note_en": "All eight tasks are mandatory. Each must appear in compliance_matrix.json with a status and a pointer to the section of proposal.md that answers it (the 'answers_in' heading number). Public presentation additionally follows brief/presentation-requirements.json and templates/presentation.template.md; controls and checks form a separate technical appendix.",
@@ -74,7 +74,8 @@
         "Whole-site settlements and centre hierarchy; all five systems with positions and approximate scales; primary transport; resource infrastructure; fixed-pilot interfaces and phasing connections. A coloured zoning diagram alone is insufficient; no minimum construction footprint or single urban form is prescribed.",
         "The master design area you drew yourself, why it is there, and its block structure, massing and density",
         "Public realm under desert conditions: shade, wind, water, ground surface",
-        "How the scheme uses the two parcels - the main parcel with the Pie de Palo range and its eastern wing, the south-west parcel with the pilot area"
+        "How the scheme uses the two parcels - the main parcel with the Pie de Palo range and its eastern wing, the south-west parcel with the pilot area",
+        "Explicit urban-design enlargement: complete blocks, building heights/massing, public space and decisive sections; do not replace spatial design with default figures."
       ],
       "answers_in": "## 7."
     },
@@ -103,5 +104,16 @@
       ],
       "answers_in": "## 9."
     }
-  ]
+  ],
+  "design_workflow": [
+    "site evidence and restrictions",
+    "suitability and uncertainty",
+    "overall structure and trade-offs",
+    "complete phase-one district",
+    "urban-design enlargement",
+    "three detailed nodes",
+    "formal booklet",
+    "technical checks"
+  ],
+  "design_depth_policy": "brief/design-depth.json"
 }
