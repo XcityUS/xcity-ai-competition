@@ -227,8 +227,8 @@
 <text x="804.5044776125724" y="539.9561538461539" font-size="14" fill="#ddd8c8">Santiago</text>
 <circle cx="747.2179104481831" cy="247.2084615384615" r="3.5" fill="#e8e2d0"/>
 <text x="756.2179104481831" y="252.2084615384615" font-size="14" fill="#ddd8c8">Coquimbo</text>
-<path d="M978.1044776133433,335.37692307692333 V294.37692307692333 H918.1044776133433" stroke="#e2bd6a" fill="none"/>
-<text x="918.1044776133433" y="282.37692307692333" font-size="18" fill="#f2ce80">XCITY SITE</text>
+<path d="M1014.6004776135105,342.70061153846177 H1044.6004776135105" stroke="#e2bd6a" fill="none"/>
+<text x="1051.6004776135105" y="348.70061153846177" font-size="18" fill="#f2ce80">XCITY</text>
 <text x="50" y="35" font-size="17" fill="#ddd8c8">SOUTH AMERICA → ARGENTINA</text>
 <text x="650" y="35" font-size="17" fill="#ddd8c8">SAN JUAN AND THE SURROUNDING REGION</text>
 <text x="50" y="660" font-size="13" fill="#9a9d8c">REGIONAL ORIENTATION · SCALES DIFFER BETWEEN VIEWS</text>
