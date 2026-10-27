@@ -15,6 +15,7 @@ def check():
   except (ValueError,jsonschema.SchemaError) as e:errors.append(schema_file.name+': '+str(e))
  depth=data('brief/design-depth.json');req=data('brief/requirements.json')
  operating=depth['operational_design']
+ need(operating['compute_built_form']=='industrial_data_centre_halls_with_modular_construction_and_equipment' and operating['standalone_container_array_is_required'] is False,'confirmed modular hall form differs')
  for language in ['en','zh']:
   reference=operating['reference_'+language]
   need((ROOT/reference).is_file(),'missing operating conditions: '+reference)
@@ -31,6 +32,8 @@ def check():
  need({c['id'] for c in planting['crops']}=={'forage_grass','jojoba'} and planting['retain_both'],'fixed under-panel crops differ')
  need(depth['construction_programme']['a0_map_required'],'A0 construction phasing map missing')
  need(req['design_depth']==depth,'requirements/design-depth machine twins differ')
+ overview=next(value['overall_spatial_view'] for value in depth.values() if isinstance(value,dict) and 'overall_spatial_view' in value)
+ need(overview['production_led_territorial_structure_required'] and overview['housing_only_view_is_not_overall_view'] and not overview['large_residential_aerial_is_default_deliverable'],'overall/local image hierarchy differs')
  representation=depth['representation_evidence']
  for key in ['procedural_planting_default','procedural_pv_default','illustrative_entourage_default','illustration_is_capacity_evidence']:
   need(representation[key] is False,'unsubstantiated scene evidence policy: '+key)

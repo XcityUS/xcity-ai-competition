@@ -1,6 +1,6 @@
 {
   "id": "XCITY-DESIGN-NODES",
-  "version": 6,
+  "version": 7,
   "rule_en": "Choose exactly one node from each group, three nodes total. This rule applies to all submissions.",
   "render_required_en": "Each node must include renders: at least one aerial and one eye-level render, plus a plan or section. Sequences, video and animation are encouraged.",
   "nodes": [
@@ -37,9 +37,9 @@
     {
       "id": "B03",
       "en": "A compute campus and its waste heat",
-      "brief_en": "Design an operating modular compute campus, using the XCITY POD reference or an explicitly justified alternative. Show installed modules, shared power/cooling/fibre, equipment delivery and maintenance, staff/security access and phased expansion. Explain significant gaps and separate power-block rating from IT load. Campus sites may be dispersed; arbitrary intra-campus spacing is not justified by that freedom. Heat reuse needs an identified recipient and credible thermal/network assumptions.",
+      "brief_en": "Design a campus of industrial data-centre halls using modular construction and modular equipment systems. Show hall architecture, internal equipment bays and maintenance space as well as the shared campus infrastructure. POD is an integration reference, not a requirement for freestanding container arrays. Show installed modules, shared power/cooling/fibre, equipment delivery and maintenance, staff/security access and phased expansion. Explain significant gaps and separate power-block rating from IT load. Campus sites may be dispersed; arbitrary intra-campus spacing is not justified by that freedom. Heat reuse needs an identified recipient and credible thermal/network assumptions.",
       "zh": "算力中心与它的余热",
-      "brief_zh": "设计可运行的模块化算力园区，采用 XCITY POD 参考或有明确理由的其他方案。说明已安装模块、共享电力/冷却/光纤、设备运输维护、员工安防及分期扩建。解释重要间隔，分清电力模块与 IT 负载。园区可分布选址，不等于内部可任意拉开。余热利用须有实际受热对象及可信的热工和管网假设。",
+      "brief_zh": "设计采用模块化建设及模块化设备系统的厂房式算力园区。落实厂房建筑、内部设备单元和检修空间，以及园区共享配套。POD 是集成参考，不是要求露天摆放独立箱体。说明已安装模块、共享电力/冷却/光纤、设备运输维护、员工安防及分期扩建。解释重要间隔，分清电力模块与 IT 负载。园区可分布选址，不等于内部可任意拉开。余热利用须有实际受热对象及可信的热工和管网假设。",
       "operating_conditions_ref": "brief/production-conditions.en.md"
     },
     {
