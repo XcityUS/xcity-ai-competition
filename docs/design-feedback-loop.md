@@ -13,6 +13,8 @@ Owner-directed corrective work on Terrace Oasis and The Everyday City. AGUA FINI
 | Automatic renderer invents planting, canals or PV | Geometry labels and random defaults were treated as designed assets | Disable procedural additions by default; require explicit design properties; cache source and policy changes | Fingerprint regression tests prevent stale reuse; visual review and resource accounts remain required |
 | Old map retains seam while download is current | Derived example imagery was not regenerated | Use the same issued boundary in all current diagrams and archives/packages; regenerate actual dependent assets | Published-byte and formerly omitted seam-point checks; archived versions clearly historical |
 
+| Permission to disperse becomes separation for its own sake; isolated local views substitute for a city | Overemphasis on node independence without coordinated city diagrams | First organise the city functions and structure; require six coordinated thematic questions and an overall axonometric/birdseye of the same layout, with no fixed page count | Reference/geometry/version checks only; content review checks actual city organisation, useful abstraction and fidelity |
+
 ## Each iteration
 
 1. Record a concrete observed problem with a figure, scope, geometry or data reference.
