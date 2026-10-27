@@ -216,7 +216,7 @@ def figure_input_hash(pkg):
     if os.path.exists(pm):
         h.update(json.dumps(proposal_headings(open(pm, encoding="utf-8").read()), ensure_ascii=False).encode())
     b = man.get("booklet") if isinstance(man.get("booklet"), dict) else {}
-    for rel in [b.get("cover")] + [pg.get("path") for pg in (b.get("pages") or []) if isinstance(pg, dict)]:
+    for rel in [b.get("cover"), b.get("a0_page")] + [pg.get("path") for pg in (b.get("pages") or []) if isinstance(pg, dict)]:
         fp = os.path.join(pkg, str(rel or ""))
         if rel and os.path.isfile(fp):
             h.update(str(rel).encode() + b"\0" + sha256_file(fp).encode())

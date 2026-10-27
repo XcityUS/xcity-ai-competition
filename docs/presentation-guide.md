@@ -61,3 +61,7 @@ The formal booklet is a complete design argument, not a fixed six-page abstract:
 Formal diagrams, master/block/node plans, decisive sections and massing relationships stay in the main booklet. Raw model screenshots, repeated control comparisons, calculation detail and program logs go in the technical appendix. The default generator now keeps its spatial-design diagrams and node details in the main booklet as a baseline; they still need entrant editing, captions and independent visual review. Use `booklet.pages` / `booklet.section_pages` for the full argument.
 
 See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-examples.md`. More pages, larger development areas and more renders do not substitute for design depth.
+
+## Authored A0 presentation board
+
+`manifest.booklet.a0_page` may point to an entrant-authored PNG/JPG board inside the package. The generator uses it for `drawings/a0-board.pdf`, while retaining all checked source figures and the separate technical appendix. Include the whole-site/first-district relationship, the selected node IDs, finished concept views and the diagrams needed to explain the design. Raw massing controls belong in the technical appendix. The board image is included in the figure-input hash; editing it requires regeneration. Paths outside the package are rejected. Omitting this option retains the default A0 layout.

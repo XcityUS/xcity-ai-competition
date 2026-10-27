@@ -40,4 +40,23 @@ class CustomPageTests(unittest.TestCase):
    man['booklet']['section_pages']['node_locator']=[{'path':'../outside.png'}]
    with self.assertRaises(ValueError):mf.section_pages(pkg,'node_locator')
 
+
+class AuthoredA0Tests(unittest.TestCase):
+ def test_authored_board_is_confined_and_invalidated_when_changed(self):
+  from PIL import Image
+  from types import SimpleNamespace
+  import matplotlib.pyplot as plt
+  import xcity_common as xc
+  import make_figures as mf
+  with tempfile.TemporaryDirectory() as directory:
+   p=Path(directory);(p/'pages').mkdir()
+   board=p/'pages/board.jpg';Image.new('RGB',(160,113),'white').save(board)
+   man={'booklet':{'a0_page':'pages/board.jpg'}};(p/'manifest.json').write_text(json.dumps(man))
+   first=xc.figure_input_hash(str(p));fig=mf.a0_board(SimpleNamespace(dir=str(p),man=man))
+   self.assertEqual(len(fig.axes),1);self.assertEqual(len(fig.axes[0].images),1);plt.close(fig)
+   Image.new('RGB',(160,113),'black').save(board)
+   self.assertNotEqual(first,xc.figure_input_hash(str(p)))
+   man['booklet']['a0_page']='../outside.jpg'
+   with self.assertRaises(ValueError):mf.a0_board(SimpleNamespace(dir=str(p),man=man))
+
 if __name__=='__main__':unittest.main()

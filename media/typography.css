@@ -1,0 +1,15 @@
+/* Keep Latin glyphs identical across language modes; CJK retains its own faces. */
+@font-face{
+  font-family:"XCITY Latin UI";
+  src:local(".SFNS-Regular"),local("Segoe UI"),local("Inter"),local("Helvetica Neue"),local("Arial");
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  unicode-range:U+0000-024F,U+1E00-1EFF,U+2000-206F,U+20A0-20CF,U+2100-214F;
+}
+:root,html[data-lang]{
+  --serif:"XCITY Latin UI","Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:"XCITY Latin UI","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+}
+/* Proposal titles remain English even when surrounding navigation is Chinese. */
+.pw h1{font-weight:200;letter-spacing:-.02em;line-height:1.08}

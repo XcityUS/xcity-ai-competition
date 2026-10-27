@@ -1,9 +1,9 @@
 {
   "script": "scripts/self_check_submission.py",
   "script_version": "1.2.0",
-  "checked_at": "2026-10-27T04:42:23+00:00",
+  "checked_at": "2026-10-27T05:02:00+00:00",
   "package": "submissions/jingyuanhuang-design/everyday-city",
-  "package_sha256": "383157149f7fda6c33aa54e7f4acf4ddcd7ae73572c4f213579ef3815c4bf401",
+  "package_sha256": "974f421d9fff574f00a7b57d102b8ea234f9a422d593a3871d402e220e110422",
   "gates_total": 12,
   "gates_passed": 12,
   "pass": true,
