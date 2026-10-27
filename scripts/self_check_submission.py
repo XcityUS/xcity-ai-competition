@@ -544,6 +544,12 @@ def check(pkg_path, write=True):
     g9.note("DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone.")
 
     # ---------------------------------------------------------------- G12 depth
+    import whole_site_plan
+    plan_geo={k:[(p,xc.to_utm(g)) for p,g in features] for k,features in geo.items()}
+    whole_site_errors=whole_site_plan.assess(plan_geo, xc.to_utm(xc.site_boundary()))
+    for problem in whole_site_errors:
+        g12.fail(problem)
+    g12.note('Full-site base-zone coverage and explicit road classes are checked geometrically; useful district allocation, road connectivity/service, suitability and land-use decisions still require content review.')
     depth_assessment = design_depth.assess(pkg, man.get("nodes") or [])
     for problem in depth_assessment["automatic"]["errors"]:
         g12.fail(problem)
@@ -574,7 +580,7 @@ def check(pkg_path, write=True):
     for error in phasing_programme.assess(pkg):
         g12.fail(error)
 
-    g12.note("Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, coordinated city-system diagrams, the overall axonometric/birdseye view, system locations and scales, transport, resource infrastructure and phasing require independent design content review; diagram paths alone do not establish their usefulness or fidelity.")
+    g12.note("Checks whole-site base-zone coverage/overlap and explicit road classes, evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order; not readability, design adequacy or finished-image quality. Settlement hierarchy, coordinated city-system diagrams, the overall axonometric/birdseye view, system locations and scales, transport, resource infrastructure and phasing require independent design content review; diagram paths alone do not establish their usefulness or fidelity.")
     gates = [G[g["id"]].out() for g in EVAL["gates"]]
     result = {
         "script": "scripts/self_check_submission.py", "script_version": xc.SCRIPT_VERSION,
@@ -585,6 +591,7 @@ def check(pkg_path, write=True):
         "automated_compliance_status": "passed" if all(g["pass"] for g in gates) else "failed",
         "design_content_review": {"status": "not_assessed", "note": "Automated gates do not establish design adequacy or organiser approval."},
         "design_depth_assessment": depth_assessment,
+        "whole_site_plan_assessment": {"automatic_status":"failed" if whole_site_errors else "geometry_records_consistent","errors":whole_site_errors,"content_review":"not_assessed"},
         "further_work": depth_assessment["further_work"],
         "recomputed": {k: computed[k] for k in xc.COMPUTED_KEYS},
         "gates": gates,

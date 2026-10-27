@@ -79,7 +79,8 @@
         "Organise city functions and structure before selecting and resolving three detailed nodes; adjacency and separation both need operational reasons.",
         "Coordinated city-scale planning structure, functional programme, street/mobility, ecology/landscape, land-use and public-space/service diagrams from the same layout; combine sheets where legible.",
         "An overall axonometric or oblique birdseye view of that same complete layout, with extent, projection and phase/scenario; a node aerial is not the complete city.",
-        "No fixed AI Agent booklet page count; useful spatial evidence, not page or image volume. See docs/city-system-diagrams.md."
+        "No fixed AI Agent booklet page count; useful spatial evidence, not page or image volume. See docs/city-system-diagrams.md.",
+        "Actual whole-site base zoning polygons with district IDs/names, physical primary uses and evidence references; explicit primary/secondary roads, whole-site land account and explained district/access relationships. See docs/whole-site-zoning-workflow.md; overlays and a local residential prototype do not replace this."
       ],
       "answers_in": "## 7."
     },

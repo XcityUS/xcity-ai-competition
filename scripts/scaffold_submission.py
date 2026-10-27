@@ -20,14 +20,14 @@ from node_selection import selection_errors  # noqa: E402
 GEOMETRY_NOTES = {
     "structure": "Scale 1, the whole site. Polygons covering the whole site at structural level. "
                  "properties.system: energy_compute | agri_production | living | industry | port | reserve. "
-                 "Optional: name, phase.",
+                 "Required base zones: plan_role=base_zoning, district_id, name, primary_use, basis_ref; cover the full issued site without overlap. Optional overlapping system relations use plan_role=system_overlay. See docs/whole-site-zoning-workflow.md.",
     "master_area": "Scale 2. Exactly one Polygon (or MultiPolygon): the master design area you drew. Inside the site.",
     "land_use": "Scale 2. Polygons inside the master area. properties.use: residential | mixed_use | civic | compute | "
                 "energy | industry | logistics | agriculture | open_space | infrastructure | reserve.",
     "buildings": "Scale 2 and 3. Building footprints. properties.floors (integer >= 1), properties.use; optional height_m, "
                  "name, and form: canopy for a roof on posts (drawn hatched, excluded from footprint and GFA).",
     "movement": "LineStrings with properties.network: people | machine | shared, optional shaded: true|false, name. "
-                "Points with properties.kind: interface mark every at-grade human-machine interface (M6).",
+                "Add road_class: primary | secondary | local; primary and secondary full-site routes are required. network describes users, not road hierarchy. Points with properties.kind: interface mark every at-grade human-machine interface (M6).",
     "phasing": "Polygons with properties.phase: 1 | 2 | 3, name, and trigger (observable condition) for phases 2 and 3.",
     "nodes": "Exactly three Polygons, one node per group, properties.node_id: A01-A03, B01-B03, C01-C04 (brief/site-package/nodes/design_nodes.json), "
              "name, why. Optional camera hints: eye_from [lon, lat], eye_to [lon, lat], aerial_from [lon, lat], "

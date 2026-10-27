@@ -400,10 +400,30 @@ def fmt(v, unit=""):
 def panel_structure(pkg, ax, compact=False):
     hillshade(ax, pkg)
     site_context(ax, pkg)
-    for p, g in pkg.geo["structure"]:
-        s = p.get("system", "reserve")
-        fill(ax, g.intersection(pkg.site.buffer(50)), SYSTEM_COLORS.get(s, "#999999"), ec="white", lw=0.4,
-             alpha=0.62, z=3)
+    base=[(p,g) for p,g in pkg.geo['structure'] if p.get('plan_role')=='base_zoning']
+    shown=base or pkg.geo['structure']
+    use_colors={'housing':'#C96B5C','mixed_use':'#BA5B43','agriculture':'#D4B567','solar_agriculture':'#E0C86D','compute':'#3F8398','industry':'#8B75A8','logistics':'#43836F','ecology':'#A8BC99','reserve':'#CBC7BA','fixed_context':'#E8D699'}
+    for p,g in shown:
+        color=use_colors.get(p.get('primary_use'),SYSTEM_COLORS.get(p.get('system','reserve'),'#999999'))
+        fill(ax,g.intersection(pkg.site),color,ec='white',lw=.5,alpha=.78,z=3)
+        if base and not compact:
+            q=g.representative_point()
+            ax.text(q.x,q.y,p.get('district_id',''),fontsize=7,color=INK,ha='center',zorder=10)
+    # Draw submitted roads; the renderer must not omit the whole-site skeleton.
+    classes={'primary':(INK,2.0),'secondary':('#685E4C',1.15),'local':('#A39B8B',0.45)}
+    road_classes=set()
+    for props, route in pkg.geo['movement']:
+        if route.geom_type not in ('LineString','MultiLineString'):continue
+        level=props.get('road_class')
+        if level in classes:
+            color,width=classes[level];road_classes.add(level)
+            outline(ax,route.intersection(pkg.site),color=color,lw=width,z=7)
+        elif props.get('network') in ('shared','machine'):
+            outline(ax,route.intersection(pkg.site),color='#A7A29A',lw=.35,z=6)
+    if not any(p.get('plan_role')=='base_zoning' for p,g in pkg.geo['structure']):
+        ax.text(.01,.985,'SYSTEM OVERLAY ONLY - FULL-SITE BASE ZONING MISSING',transform=ax.transAxes,
+                va='top',fontsize=7 if not compact else 10,color=RED,zorder=20,
+                bbox=dict(facecolor=PAPER,edgecolor='none',alpha=.9))
     channels(ax, pkg, primary=not compact, z=4)
     if pkg.master is not None:
         outline(ax, pkg.master, color=INK, lw=1.6, ls="--", z=9)
@@ -421,6 +441,13 @@ def panel_structure(pkg, ax, compact=False):
     km2 = pkg.computed["structure_km2"]
     items = [("patch", SYSTEM_COLORS.get(s, "#999"), "%s  %s km²" % (SYSTEM_LABEL.get(s, s), fmt(round(v, 1))))
              for s, v in sorted(km2.items(), key=lambda kv: -kv[1])]
+    if base:
+        uses={}
+        for props,area in base:
+            key=props.get('primary_use','reserve');uses[key]=uses.get(key,0)+area.intersection(pkg.site).area/1e6
+        items=[('patch',use_colors.get(key,'#999999'),key.replace('_',' ').title()+'  '+fmt(round(area,1))+' km²') for key,area in sorted(uses.items(),key=lambda row:-row[1])]
+    if 'primary' in road_classes:items += [('line', INK, 'Proposed primary road', {'lw':2})]
+    if 'secondary' in road_classes:items += [('line', '#685E4C', 'Proposed secondary road', {'lw':1.15})]
     items += [("line", RED, "Site boundary (1,656 km²)", {"lw": 1.4}),
               ("patch", "#E4C87A", "Pilot area - fixed, not designed", "#8A7440"),
               ("line", INK, "Master design area", {"lw": 1.6, "ls": "--"}),

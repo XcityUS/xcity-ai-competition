@@ -97,3 +97,8 @@ Link these drawings in the existing `overall_layout` row of `design_depth_matrix
 
 
 Method and review basis: [docs/city-design-method-basis.md](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/city-design-method-basis.md). Define district boundaries/IDs, functional allocations, land-use units and construction phases distinctly; relate them through the same geometry and accounts. At city scale show principal/secondary streets and readable district/block structure, with local detail in appropriate enlargements. Required planning diagrams and plans cannot be replaced by renders.
+
+
+### Full-site zoning and the road framework
+
+Follow [the whole-site zoning workflow](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md). The entire issued site needs an explicit base zoning proposal, not a small city plan over an unexplained background. In structure.geojson, use plan_role=base_zoning with district_id, name, primary_use and basis_ref plus system; separate optional overlapping relations as system_overlay. Draw the primary and secondary road skeleton in movement.geojson using road_class; network denotes users, not hierarchy. Recompute the full-site area account. G12 checks coverage, overlap, identifiers and road-class records, not design quality. Local enlargements and node images do not replace these full-site plans.

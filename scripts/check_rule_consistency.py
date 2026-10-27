@@ -28,6 +28,9 @@ def check():
  for f in ['scripts/practice-brief/build_en.py']:
   need("['Phase 1 urban design'," not in read(f),f+': phase-one-only design scope returned')
  need([x['id'] for x in depth['levels']]==['whole_site','overall_layout','urban_design','nodes'],'four design levels changed')
+ whole=depth['whole_site_plan']
+ need(whole['base_covers_entire_issued_site'] and whole['base_area_account_exclusive'] and whole['network_is_not_road_hierarchy'],'whole-site zoning/road contract differs')
+ need((ROOT/'docs/whole-site-zoning-workflow.md').is_file(),'whole-site workflow missing')
  diagrams=depth['city_system_diagrams']
  need({x['id'] for x in diagrams['themes']}=={'planning_structure','functional_programme','street_mobility','ecology_landscape','land_use','public_space_services'},'city diagram themes differ from organiser instruction')
  need(diagrams['shared_city_geometry_required'] and diagrams['separation_is_not_an_objective'],'city diagrams lost layout/adjacency basis')

@@ -15,6 +15,8 @@ Owner-directed corrective work on Terrace Oasis and The Everyday City. AGUA FINI
 
 | Permission to disperse becomes separation for its own sake; isolated local views substitute for a city | Overemphasis on node independence without coordinated city diagrams | First organise the city functions and structure; require six coordinated thematic questions and an overall axonometric/birdseye of the same layout, with no fixed page count | Reference/geometry/version checks only; content review checks actual city organisation, useful abstraction and fidelity |
 
+| Whole-site map omits roads and substitutes system overlays for a district plan | Default panel did not render submitted movement; role/hierarchy fields and coverage checks were absent | Draw submitted base zoning and explicit road classes; label system-only fallback; check full-site base coverage separately from overlapping systems | Regression tests catch local-only coverage, overlapping base zones and absent hierarchy; content review still checks allocation, route logic and access |
+
 ## Each iteration
 
 1. Record a concrete observed problem with a figure, scope, geometry or data reference.

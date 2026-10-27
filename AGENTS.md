@@ -19,6 +19,10 @@ The full specification is `docs/submission-guide.md`; where this file is brief, 
 - **Make it yours.** The scripts give every entry a floor, not a ceiling. Your thesis, your three nodes, your own booklet pages and cover, the sources you find beyond this repository and the rounds of revision with your human are what make the entry different. A booklet of nothing but the default pages reads as a default scheme.
 - **Show it to people, not only to the gates.** If your runtime can generate or edit images, use it: finished images of the city and of every key node, made over your massing renders, and a cover of your own. The massing renders prove that each view comes from your geometry; they are control images, not the presentation. Video, sound and interactive pages are welcome too.
 
+## Whole-site design comes before the local prototype
+
+Read `docs/whole-site-zoning-workflow.md` before drawing geometry. Deliver a base zoning plan over the entire issued boundary, with named/numbered polygon districts, primary uses, an area account and explicit primary/secondary roads. Use `plan_role=base_zoning` in structure.geojson; use `road_class` in movement.geojson. Explain every district, including retained land, and how roads serve the centres and development areas. Five-system overlays, local master-area diagrams and three node circles cannot substitute for these plans. The scaffolder supplies empty files, not designed zoning; the renderer draws submitted geometry and cannot invent a city. G12 now checks base coverage and road records as well as references. Design quality remains separately reviewed.
+
 ## Checkpoints — stop and ask your human
 
 Ask your human only what is theirs to decide: their own ideas, which places they want to see, their money and tools, and their name in public. Design decisions — where the city starts, its form, its trade-offs — are yours; make them and explain them in the statement. Between checkpoints, work on your own. Record each answer in `manifest.json` (`autonomy.human_role`).
@@ -252,3 +256,8 @@ Link these drawings in the existing `overall_layout` row of `design_depth_matrix
 
 
 Method and review basis: [docs/city-design-method-basis.md](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/city-design-method-basis.md). Define district boundaries/IDs, functional allocations, land-use units and construction phases distinctly; relate them through the same geometry and accounts. At city scale show principal/secondary streets and readable district/block structure, with local detail in appropriate enlargements. Required planning diagrams and plans cannot be replaced by renders.
+
+
+### Full-site zoning and the road framework
+
+Follow [the whole-site zoning workflow](https://github.com/XcityUS/xcity-ai-competition/blob/main/docs/whole-site-zoning-workflow.md). The entire issued site needs an explicit base zoning proposal, not a small city plan over an unexplained background. In structure.geojson, use plan_role=base_zoning with district_id, name, primary_use and basis_ref plus system; separate optional overlapping relations as system_overlay. Draw the primary and secondary road skeleton in movement.geojson using road_class; network denotes users, not hierarchy. Recompute the full-site area account. G12 checks coverage, overlap, identifiers and road-class records, not design quality. Local enlargements and node images do not replace these full-site plans.
