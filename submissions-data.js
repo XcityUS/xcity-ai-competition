@@ -1216,8 +1216,8 @@ window.XCITY_SUBMISSIONS = [
     "gates_passed": 8,
     "gates_pass": false,
     "design_content_review_status": "not_assessed",
-    "package_sha256": "12fc62e435aaf02266758a0880a59a75c423708aaa98daa5f25c9108412b2846",
-    "reviewed_package_sha256": "12fc62e435aaf02266758a0880a59a75c423708aaa98daa5f25c9108412b2846",
+    "package_sha256": "3508b0d9b9180af397fb291f3e2139dccd71bac9bc46a6c39a2aeed8d1cc3b16",
+    "reviewed_package_sha256": "3508b0d9b9180af397fb291f3e2139dccd71bac9bc46a6c39a2aeed8d1cc3b16",
     "published": true,
     "featured": false,
     "example": false,
@@ -1378,7 +1378,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "image_provenance.json",
-        19092
+        10759
       ],
       [
         "manifest.json",
