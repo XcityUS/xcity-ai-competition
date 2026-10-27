@@ -118,7 +118,8 @@
       },
       "minItems": 3,
       "maxItems": 3,
-      "uniqueItems": true
+      "uniqueItems": true,
+      "description": "Exactly three unique nodes. New submission directories must cover the three groups in brief/site-package/nodes/design_nodes.json; gate G9 checks this policy and listed legacy exceptions."
     },
     "nodes_reason": {
       "type": "string",

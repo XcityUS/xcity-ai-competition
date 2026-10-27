@@ -122,7 +122,7 @@
    "name": "design_nodes",
    "path": "nodes/design_nodes.json",
    "mediatype": "application/json",
-   "description": "Ten key nodes - choose three",
+   "description": "Ten key nodes - choose one from each of three groups",
    "hash": "sha256:8b5080b837829fbc9c2229db112eb0677d03937893a31a546936fdf4ab284a4f"
   },
   {

@@ -16,6 +16,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import xcity_common as xc  # noqa: E402
+from node_selection import selection_errors  # noqa: E402
 from shapely.geometry import Point  # noqa: E402
 from shapely.ops import unary_union  # noqa: E402
 
@@ -449,6 +450,8 @@ def check(pkg_path, write=True):
         g9.fail("nodes.geojson must hold three different node_id values from N01-N10 (found %s)" % ids)
     if set(ids) != set(man.get("nodes") or []):
         g9.fail("nodes.geojson ids %s do not match manifest.nodes %s" % (sorted(ids), man.get("nodes")))
+    for error in selection_errors(ids, pkg):
+        g9.fail(error)
     g9.note("Content review by the organiser completes this gate (prohibited items B1-B5).")
 
     # ---------------------------------------------------------------- G10 figures

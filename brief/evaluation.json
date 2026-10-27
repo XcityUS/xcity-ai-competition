@@ -63,7 +63,7 @@
     {
       "id": "GATE-G9-BOUNDARIES",
       "title": "Site boundaries respected",
-      "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
+      "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate. New submissions select exactly one node from each group in nodes/design_nodes.json; listed existing submissions retain any three of ten.",
       "automated": false,
       "partly_manual": true
     },
