@@ -42,3 +42,7 @@ Human authorised direct website updating. Added source-based territorial field p
 ## 2026-10-27 / V13 presentation correction
 
 Replaced the pasted-sheet A0 with two native vector boards, full-site functional and six-system overlays, and the southwest functions/road enlargement. Inserted the four registered A03/C03 concept images into the actual statement and booklet, and A03 images into A0. Retained current V12 geometry. Superseded B03 finishes remain excluded; full park and engineering review remain open.
+
+## 2026-10-27 / V14 aerial cover
+
+Owner required an aerial render instead of the diagram cover. Generated a whole-territory concept from a native spatial control; revised framing to retain both site tips. Registered prompt, source and limitations. Replaced web/card cover and inserted the same image at the booklet opening and report. Geometry and capacities unchanged; V13 and V12 remain the underlying design.

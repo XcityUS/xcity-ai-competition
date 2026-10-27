@@ -1,6 +1,10 @@
 # AGUA FINITA | The Finite Water City
 
-V13 public working preview. Whole-site functions and roads, a southwest enlargement and architectural views are now read together. Source boundary and seasonal channels are retained. Future fields remain conditional proposals.
+V14 cover revision of the V13 public working preview. Whole-site functions and roads, a southwest enlargement and architectural views are now read together. Source boundary and seasonal channels are retained. Future fields remain conditional proposals.
+
+![Whole-territory aerial concept render](media/v14-whole-site-aerial.png)
+
+Whole-territory aerial concept render of a conditional long-term proposal. Use the source plans for geometry and dimensions; this image does not represent installed assets.
 
 ## 1. Design thesis
 
