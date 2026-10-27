@@ -1,11 +1,11 @@
 {
   "script": "scripts/self_check_submission.py",
-  "script_version": "1.3.0",
-  "checked_at": "2026-10-27T13:36:05+00:00",
+  "script_version": "1.4.0",
+  "checked_at": "2026-10-27T16:08:35+00:00",
   "package": "submissions/jingyuanhuang-design/finite-water-city",
-  "package_sha256": "3d9a0529bb1ad6b5e9857252b260219e6b65f36ceef8386246b54b9d2b16d903",
+  "package_sha256": "e66ec033dc48020fe4e0fe8ea306eb06b0e9bb5db07ca6476181ff06b55db068",
   "gates_total": 12,
-  "gates_passed": 7,
+  "gates_passed": 8,
   "pass": false,
   "automated_compliance_status": "failed",
   "design_content_review": {
@@ -201,15 +201,8 @@
     {
       "id": "GATE-G1-PACKAGE",
       "title": "Package completeness and schema validity",
-      "pass": false,
-      "messages": [
-        "movement.geojson feature 11: a Point must have kind = interface",
-        "movement.geojson feature 132: network None is not one of ['machine', 'people', 'shared']",
-        "movement.geojson feature 133: network None is not one of ['machine', 'people', 'shared']",
-        "movement.geojson feature 134: network None is not one of ['machine', 'people', 'shared']",
-        "movement.geojson feature 135: network None is not one of ['machine', 'people', 'shared']",
-        "report/proposal.html is out of date - run scripts/render_proposal_html.py"
-      ],
+      "pass": true,
+      "messages": [],
       "notes": [
         "English is required for the public title, narrative, summary, booklet, drawing labels and legends; the language of raster images needs human review."
       ]
@@ -257,14 +250,6 @@
       "title": "Every quantitative claim carries an evidence tag",
       "pass": false,
       "messages": [
-        "metric master_area_km2: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric site_coverage_pct: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric gfa_m2: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric far: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric open_space_pct: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric human_machine_interfaces: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric shaded_pedestrian_pct: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
-        "metric structure_km2: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
         "M1 requires metric hourly_cfe_match_pct in metrics.json",
         "M2 requires metric peak_it_load_mw in metrics.json",
         "M3 requires metric water_domestic_m3 in metrics.json",
@@ -330,7 +315,7 @@
         "media/city-aerial.png is not registered in image_provenance.json",
         "media/city-evening.png is not registered in image_provenance.json",
         "media/cover-render-v5.png is not registered in image_provenance.json",
-        "visual/index.html is out of date with the geometry - run scripts/make_scene.py",
+        "image_provenance media/v12-whole-site-axon.png: reference_images must be none_text_only_prompt | own_work | third_party",
         "renders/ are out of date with the geometry - run scripts/render_views.py",
         "image_provenance media/v11-city-overall.png: control_image renders/v11-city-overall.png is not a render made by render_views.py",
         "image_provenance media/v11-A03-aerial.png: control_image renders/v11-A03-aerial.png is not a render made by render_views.py",
@@ -338,7 +323,8 @@
         "image_provenance media/v11-B03-aerial.png: control_image renders/v11-B03-aerial.png is not a render made by render_views.py",
         "image_provenance media/v11-B03-eye.png: control_image renders/v11-B03-eye.png is not a render made by render_views.py",
         "image_provenance media/v11-C03-aerial.png: control_image renders/v11-C03-aerial.png is not a render made by render_views.py",
-        "image_provenance media/v11-C03-eye.png: control_image renders/v11-C03-eye.png is not a render made by render_views.py"
+        "image_provenance media/v11-C03-eye.png: control_image renders/v11-C03-eye.png is not a render made by render_views.py",
+        "image_provenance media/v12-whole-site-axon.png: control_image reviews/production-v12/overall-energy-axon.png is not a render made by render_views.py"
       ]
     },
     {
@@ -357,6 +343,7 @@
       ],
       "notes": [
         "Full-site base-zone coverage and explicit road classes are checked geometrically; useful district allocation, road connectivity/service, suitability and land-use decisions still require content review.",
+        "Operational content review: panel/crop/service compatibility; compute module and shared-infrastructure layout with explained gaps and distinct power/IT capacities; mapped construction stages; selected C03 public access, dry-season uses and closure. See brief/production-conditions.en.md. File presence cannot certify these decisions.",
         "Checks whole-site base-zone coverage/overlap and explicit road classes, evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order; not readability, design adequacy or finished-image quality. Settlement hierarchy, coordinated city-system diagrams, the overall axonometric/birdseye view, system locations and scales, transport, resource infrastructure and phasing require independent design content review; diagram paths alone do not establish their usefulness or fidelity."
       ]
     }

@@ -4,7 +4,7 @@
   "title": "AGUA FINITA | The Finite Water City",
   "title_zh": "",
   "slug": "finite-water-city",
-  "summary": "A six-region whole-site planning proposal combines a continuous residential district, a compact public centre, independent compute/repair and solar facilities, conditional agricultural services and an eastern gateway. V11 restores explicit zoning, road hierarchy, public anchors and dry-landscape links. Public preview; resource rights and professional design verification remain open.",
+  "summary": "A photovoltaic-agriculture-led whole-site proposal with source channels and the issued boundary, conditional future fields, compact modular compute halls and separate living/public districts. V12 is a working design preview; rights and engineering remain unresolved.",
   "language": "en",
   "author": {
     "github": "jingyuanhuang-design",
@@ -18,7 +18,7 @@
   },
   "autonomy": {
     "class": "human_directed",
-    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested a complete design argument with plans, sections, diagrams and massing rather than a six-page digest; authorised uploading the completed revision and replacing its abstract cover with a city rendering. V6 adopts the updated main/technical presentation contract and discloses unfinished engineering independently. On 2026-10-27 the human rejected V7's miniature all-functions town and asked to continue with continuous residential districts and separately justified production. V7 is withdrawn from recommendation. V8 is a district-structure review in reviews/district-structure-v8, not a ready submission; older core geometry and imagery are retained as history pending a full rebuild. On 2026-10-27 the human reviewed the V10 images, explicitly authorised direct website updating, then required V11 spatial composite diagrams and no spreadsheet-style A0 table. Codex retained full numeric accounts in the booklet/technical records and kept the display as a public design preview, not an approval."
+    "human_role": "Human selected Finite Water City and the three nodes, confirmed jingyuanhuang-design / Jingyuan Huang, requested clearer overall layout, reviewed the V2 diagrams, and then explicitly requested public publication on 2026-10-25. Codex authored geometry, calculations, text and visuals. Public preview publication is authorised; formal competition entry awaits the organiser opening submissions. The new V2 walking spine and arrival point remain explicitly identified proposals. On 2026-10-26 the human requested a whole-site redesign under the updated brief, questioned the excessive flood reserve depiction and directed Codex to revise only this entry while other agents handle repository rules. V3 distinguishes flood screening from permanent restrictions. The human has not yet reviewed the integrated V3 package. Human requested a complete design argument with plans, sections, diagrams and massing rather than a six-page digest; authorised uploading the completed revision and replacing its abstract cover with a city rendering. V6 adopts the updated main/technical presentation contract and discloses unfinished engineering independently. On 2026-10-27 the human rejected V7's miniature all-functions town and asked to continue with continuous residential districts and separately justified production. V7 is withdrawn from recommendation. V8 is a district-structure review in reviews/district-structure-v8, not a ready submission; older core geometry and imagery are retained as history pending a full rebuild. On 2026-10-27 the human reviewed the V10 images, explicitly authorised direct website updating, then required V11 spatial composite diagrams and no spreadsheet-style A0 table. Codex retained full numeric accounts in the booklet/technical records and kept the display as a public design preview, not an approval. On 27 October 2026 the human paused Everyday City, authorised continuing Agua Finita and direct website updating, then required whole-site boundary/channel context and a continuous meaningful photovoltaic landscape. V12 adds a conditional territorial field layout, tighter hall arrangement, a solar-edge shuttle route and agrivoltaic operating drawings. Two generated local production images were rejected for showing six rather than eight compute halls; neither is selected."
   },
   "nodes": [
     "A03",
@@ -72,15 +72,15 @@
   "package_state": "draft",
   "created": "2026-10-25",
   "updated": "2026-10-27",
-  "thesis": "Continuous living districts and independent production grow through verified water, access and funded public services.",
+  "thesis": "Solar agriculture organises the productive territory; compact halls, service networks and living districts follow the ground and resource gates.",
   "render_note": "A low-rise desert settlement of pale mineral plaster and aggregate; dry gravel washes, modest drip planting, shade roofs and arcades. Existing pilot untouched.",
   "render_rules": "Preserve footprints, storeys, street positions, camera and terrain. No lakes, ornamental canals, lawns, skyscrapers or lush forest. All images are concept illustrations.",
   "scene_seed": 245,
   "booklet": {
-    "cover": "media/v11-A03-aerial.png",
+    "cover": "media/v12-whole-site-axon.png",
     "pages": [],
     "section_pages": {}
   },
-  "presentation_revision": "V11",
+  "presentation_revision": "V12",
   "public_display_status": "authorised_preview_not_design_approval"
 }

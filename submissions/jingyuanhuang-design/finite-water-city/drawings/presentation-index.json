@@ -1,99 +1,68 @@
 {
-  "status": "design_presentation_review_not_final_submission",
-  "main_pages": 23,
-  "sections": [
+  "revision": "V12",
+  "status": "working_design_preview",
+  "pages": [
     {
       "page": 1,
-      "section": "cover"
+      "id": "overall-energy-axon",
+      "path": "reviews/production-v12/overall-energy-axon.png"
     },
     {
       "page": 2,
-      "section": "whole_site_regions_and_road_framework"
+      "id": "whole-site-fields",
+      "path": "reviews/production-v12/territorial-fields-plan.png"
     },
     {
       "page": 3,
-      "section": "whole_site_framework"
+      "id": "whole-site-functions",
+      "path": "reviews/presentation-v11/drawings/diagram-whole-site-composite.png"
     },
     {
       "page": 4,
-      "section": "complete_urban_plan"
+      "id": "city-structure",
+      "path": "reviews/presentation-v11/drawings/diagram-composite.png"
     },
     {
       "page": 5,
-      "section": "overall_spatial_view"
+      "id": "city-mobility",
+      "path": "reviews/presentation-v11/drawings/diagram-movement.png"
     },
     {
       "page": 6,
-      "section": "planning_structure"
+      "id": "city-landscape",
+      "path": "reviews/presentation-v11/drawings/diagram-green.png"
     },
     {
       "page": 7,
-      "section": "functional_programme"
+      "id": "compute-plan",
+      "path": "reviews/production-v12/compute-plan.png"
     },
     {
       "page": 8,
-      "section": "streets_mobility"
+      "id": "compute-phases",
+      "path": "reviews/production-v12/compute-phases.png"
     },
     {
       "page": 9,
-      "section": "ecology_landscape"
+      "id": "agrivoltaic-plan",
+      "path": "reviews/production-v12/agrivoltaic-plan.png"
     },
     {
       "page": 10,
-      "section": "land_use"
+      "id": "agrivoltaic-section",
+      "path": "reviews/production-v12/agrivoltaic-section.png"
     },
     {
       "page": 11,
-      "section": "public_space_services"
+      "id": "public-space-node",
+      "path": "reviews/presentation-v11/drawings/A03-detail-plan.png"
     },
     {
       "page": 12,
-      "section": "overall_axonometric"
-    },
-    {
-      "page": 13,
-      "section": "shared_node_locator"
-    },
-    {
-      "page": 14,
-      "section": "node_A03_aerial"
-    },
-    {
-      "page": 15,
-      "section": "node_A03_eye_plan"
-    },
-    {
-      "page": 16,
-      "section": "node_B03_aerial"
-    },
-    {
-      "page": 17,
-      "section": "node_B03_eye_plan"
-    },
-    {
-      "page": 18,
-      "section": "node_C03_aerial"
-    },
-    {
-      "page": 19,
-      "section": "node_C03_eye_plan"
-    },
-    {
-      "page": 20,
-      "section": "phasing_map_and_totals"
-    },
-    {
-      "page": 21,
-      "section": "zone_phase_programme"
-    },
-    {
-      "page": 22,
-      "section": "resources_and_independent_operation"
-    },
-    {
-      "page": 23,
-      "section": "key_indicators"
+      "id": "seasonal-wash-node",
+      "path": "reviews/presentation-v11/drawings/C03-detail-plan.png"
     }
   ],
-  "technical_separate": true
+  "capacity_basis": "Prior declared programme retained; no new IT/solar/water entitlement",
+  "superseded": "Earlier production layouts, B03 finished images and local housing hero no longer represent this revision"
 }

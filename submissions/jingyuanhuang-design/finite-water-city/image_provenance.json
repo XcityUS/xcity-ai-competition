@@ -104,6 +104,20 @@
       "control_sha256": "44025e8eed49cf2bd468f29bb438d4491b619b9d69b6829d6dde2bdb9118d257",
       "image_sha256": "e5ad8dd39144a8164d5983db402f454315e5c52efda7b50920752d0d972a809c",
       "caption": "AI-finished concept image illustrating submitted design geometry. Materials, entourage and background surface textures are illustrative, not evidence or installed capacity."
+    },
+    {
+      "path": "media/v12-whole-site-axon.png",
+      "node_id": null,
+      "view": "whole-site axonometric diagram",
+      "model": "Python / Matplotlib; deterministic source geometry; no generative finish",
+      "prompt": "Derived source terrain and current geometry, with issued boundary, source channels and conditional future fields. See tools/overall_axon_v12.py.",
+      "generated_at": "2026-10-27",
+      "post_processing": "None",
+      "reference_images": [],
+      "control_image": "reviews/production-v12/overall-energy-axon.png",
+      "control_sha256": "db200537f143ce0a736e210a390115d5bb7d7ff26eb536a4d39973f341e419c0",
+      "image_sha256": "db200537f143ce0a736e210a390115d5bb7d7ff26eb536a4d39973f341e419c0",
+      "caption": "Whole-site source-based axon. Conditional fields are not installed photovoltaic capacity."
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "field_count": 929,
+  "conditional_area_km2": 542.01,
+  "outside_scope_m2": 0.0,
+  "fixed_overlap_m2": 0.0,
+  "channel_study_buffer_overlap_m2": 0.0,
+  "capacity_status": "No installed MW, plant yield or water entitlement inferred",
+  "limits": "60m DEM screening; route buffers and slopes are proposal assumptions; geotechnical, hydrological, ecology, title, irrigation, equipment and power verification remain open"
+}

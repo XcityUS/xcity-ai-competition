@@ -1,0 +1,68 @@
+{
+  "revision": "V12",
+  "status": "working_design_preview",
+  "pages": [
+    {
+      "page": 1,
+      "id": "overall-energy-axon",
+      "path": "reviews/production-v12/overall-energy-axon.png"
+    },
+    {
+      "page": 2,
+      "id": "whole-site-fields",
+      "path": "reviews/production-v12/territorial-fields-plan.png"
+    },
+    {
+      "page": 3,
+      "id": "whole-site-functions",
+      "path": "reviews/presentation-v11/drawings/diagram-whole-site-composite.png"
+    },
+    {
+      "page": 4,
+      "id": "city-structure",
+      "path": "reviews/presentation-v11/drawings/diagram-composite.png"
+    },
+    {
+      "page": 5,
+      "id": "city-mobility",
+      "path": "reviews/presentation-v11/drawings/diagram-movement.png"
+    },
+    {
+      "page": 6,
+      "id": "city-landscape",
+      "path": "reviews/presentation-v11/drawings/diagram-green.png"
+    },
+    {
+      "page": 7,
+      "id": "compute-plan",
+      "path": "reviews/production-v12/compute-plan.png"
+    },
+    {
+      "page": 8,
+      "id": "compute-phases",
+      "path": "reviews/production-v12/compute-phases.png"
+    },
+    {
+      "page": 9,
+      "id": "agrivoltaic-plan",
+      "path": "reviews/production-v12/agrivoltaic-plan.png"
+    },
+    {
+      "page": 10,
+      "id": "agrivoltaic-section",
+      "path": "reviews/production-v12/agrivoltaic-section.png"
+    },
+    {
+      "page": 11,
+      "id": "public-space-node",
+      "path": "reviews/presentation-v11/drawings/A03-detail-plan.png"
+    },
+    {
+      "page": 12,
+      "id": "seasonal-wash-node",
+      "path": "reviews/presentation-v11/drawings/C03-detail-plan.png"
+    }
+  ],
+  "capacity_basis": "Prior declared programme retained; no new IT/solar/water entitlement",
+  "superseded": "Earlier production layouts, B03 finished images and local housing hero no longer represent this revision"
+}

@@ -65,6 +65,27 @@
       "topic": "Landscape graphics",
       "value": "Green lines indicate proposed walking/shade and dry-landscape roles, not existing planted forest or a new irrigation commitment",
       "basis": "Current geometry plus reviews/presentation-v11/concept-layers.geojson"
+    },
+    {
+      "id": "v12-territorial_fields",
+      "topic": "territorial_fields",
+      "value": "Long-term resource-gated opportunity in Z3/Z4; not installed panels; 5% p95 DEM slope screen, 150m channel study buffer, 24m corridor buffer, 1200x600m working blocks and12m edges are proposal assumptions, not legal standards.",
+      "basis": "V12 entrant design scenario, not an organiser requirement or verified engineering",
+      "source": "reviews/production-v12/geometry-audit.json; reviews/production-v12/territorial-field-audit.json"
+    },
+    {
+      "id": "v12-agrivoltaic_prototype",
+      "topic": "agrivoltaic_prototype",
+      "value": "18m repeat:4m row envelope,8m forage/worked strip,6m lane. 4.1m low panel edge and2.2m pruned jojoba envelope are provisional design choices; equipment and agronomy not verified.",
+      "basis": "V12 entrant design scenario, not an organiser requirement or verified engineering",
+      "source": "reviews/production-v12/geometry-audit.json; reviews/production-v12/territorial-field-audit.json"
+    },
+    {
+      "id": "v12-compute",
+      "topic": "compute",
+      "value": "Existing eight96x48m industrial halls and declared2/4/8MW IT scenarios retained;36m lateral and72m cross-row gaps are design choices. Shared plant plots are un-sized reserves.",
+      "basis": "V12 entrant design scenario, not an organiser requirement or verified engineering",
+      "source": "reviews/production-v12/geometry-audit.json; reviews/production-v12/territorial-field-audit.json"
     }
   ]
 }

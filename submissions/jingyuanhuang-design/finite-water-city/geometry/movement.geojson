@@ -279,25 +279,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.20289316692758,
-          -31.122938494223543
-        ]
-      },
-      "properties": {
-        "id": "R-NS-576000",
-        "district": "R",
-        "phase": 2,
-        "network": "shared",
-        "hierarchy": "local",
-        "width_m": 20,
-        "road_class": "local"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "LineString",
         "coordinates": [
           [
@@ -867,131 +848,6 @@
         "network": "machine",
         "hierarchy": "production",
         "width_m": 16,
-        "road_class": "secondary"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -68.23162329418132,
-            -31.16281267036654
-          ],
-          [
-            -68.23168517448673,
-            -31.15514381021657
-          ]
-        ]
-      },
-      "properties": {
-        "id": "P-yard-573230",
-        "district": "P",
-        "phase": 1,
-        "network": "machine",
-        "hierarchy": "production",
-        "width_m": 12,
-        "road_class": "secondary"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -68.22900033282347,
-            -31.162796989984592
-          ],
-          [
-            -68.22906242431506,
-            -31.15512813454907
-          ]
-        ]
-      },
-      "properties": {
-        "id": "P-yard-573480",
-        "district": "P",
-        "phase": 1,
-        "network": "machine",
-        "hierarchy": "production",
-        "width_m": 12,
-        "road_class": "secondary"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -68.22637737352011,
-            -31.16278125617698
-          ],
-          [
-            -68.22643967619717,
-            -31.155112405471975
-          ]
-        ]
-      },
-      "properties": {
-        "id": "P-yard-573730",
-        "district": "P",
-        "phase": 1,
-        "network": "machine",
-        "hierarchy": "production",
-        "width_m": 12,
-        "road_class": "secondary"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -68.22375441627818,
-            -31.16276546894385
-          ],
-          [
-            -68.22381693014006,
-            -31.15509662298543
-          ]
-        ]
-      },
-      "properties": {
-        "id": "P-yard-573980",
-        "district": "P",
-        "phase": 1,
-        "network": "machine",
-        "hierarchy": "production",
-        "width_m": 12,
-        "road_class": "secondary"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -68.22092162478039,
-            -31.162748358724702
-          ],
-          [
-            -68.22098436672107,
-            -31.155079517910636
-          ]
-        ]
-      },
-      "properties": {
-        "id": "P-yard-574250",
-        "district": "P",
-        "phase": 1,
-        "network": "machine",
-        "hierarchy": "production",
-        "width_m": 12,
         "road_class": "secondary"
       }
     },
@@ -3930,7 +3786,8 @@
         "length_km": 7.83,
         "flood_screen_km": 2.33,
         "channel_intersection": "Point",
-        "road_class": "local"
+        "road_class": "local",
+        "network": "machine"
       }
     },
     {
@@ -4057,7 +3914,8 @@
         "length_km": 8.79,
         "flood_screen_km": 0.74,
         "channel_intersection": "Point",
-        "road_class": "local"
+        "road_class": "local",
+        "network": "shared"
       }
     },
     {
@@ -4075,7 +3933,7 @@
           ],
           [
             -68.2225493075476,
-            -31.12735609275876
+            -31.127356092758752
           ],
           [
             -68.22567370247961,
@@ -4094,40 +3952,20 @@
             -31.13820169605636
           ],
           [
-            -68.22558573847981,
-            -31.140908356884747
+            -68.23192641022078,
+            -31.13823682194453
           ],
           [
-            -68.2255637400573,
-            -31.143615016560485
+            -68.23180100064336,
+            -31.153791106876717
           ],
           [
-            -68.22554173866506,
-            -31.146321675083534
-          ],
-          [
-            -68.22866683058744,
-            -31.14904722012266
-          ],
-          [
-            -68.22864491265972,
-            -31.151753878345136
-          ],
-          [
-            -68.23177026983916,
-            -31.15447935018601
-          ],
-          [
-            -68.23174843542319,
-            -31.157186008099952
-          ],
-          [
-            -68.23172659805988,
-            -31.15989266486113
+            -68.23176097131523,
+            -31.158753312738426
           ],
           [
             -68.23091801571577,
-            -31.159199411653475
+            -31.15919941165349
           ]
         ]
       },
@@ -4136,15 +3974,13 @@
         "kind": "shuttle_study",
         "name": "Worker shuttle between independent districts",
         "phase": 1,
-        "channel_intersection_empty": true,
-        "channel_overlap_m": 0.0,
         "status": "study_only",
         "authority": "not_secured",
-        "basis": "300 m source DEM least-cost alignment; not engineering or right of way",
-        "length_km": 4.52,
-        "flood_screen_km": 0.0,
-        "channel_intersection": "LineString",
-        "road_class": "local"
+        "basis": "Rerouted outside proposed panel fields; terrain, drainage and right of way require fresh verification",
+        "length_km": 4.738,
+        "revision": "V12 solar-edge shuttle study",
+        "road_class": "local",
+        "network": "shared"
       }
     },
     {
@@ -4335,7 +4171,8 @@
         "length_km": 14.82,
         "flood_screen_km": 0.0,
         "channel_intersection": "LineString",
-        "road_class": "local"
+        "road_class": "local",
+        "network": "shared"
       }
     },
     {
@@ -4934,6 +4771,110 @@
         "network": "shared",
         "control": "Proposed pedestrian-priority interlock; operational and crossing detail remains unverified",
         "phase": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23172821267826,
+            -31.16281329647057
+          ],
+          [
+            -68.22532819037558,
+            -31.16277494769479
+          ],
+          [
+            -68.22536122183932,
+            -31.158714970066946
+          ]
+        ]
+      },
+      "properties": {
+        "id": "P-v12-east-loop",
+        "network": "machine",
+        "hierarchy": "production",
+        "road_class": "secondary",
+        "width_m": 12,
+        "phase": 1,
+        "design_status": "Proposed concept; swept paths/fire and road engineering unverified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23172821267826,
+            -31.16281329647057
+          ],
+          [
+            -68.23176097131523,
+            -31.158753312738426
+          ]
+        ]
+      },
+      "properties": {
+        "id": "P-v12-west-loop",
+        "network": "machine",
+        "hierarchy": "production",
+        "road_class": "secondary",
+        "width_m": 12,
+        "phase": 1,
+        "design_status": "Proposed concept; swept paths/fire and road engineering unverified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23173694896329,
+            -31.161730634395628
+          ],
+          [
+            -68.22533699941982,
+            -31.161692287247707
+          ]
+        ]
+      },
+      "properties": {
+        "id": "P-v12-shared-service",
+        "network": "machine",
+        "hierarchy": "production",
+        "road_class": "secondary",
+        "width_m": 12,
+        "phase": 1,
+        "design_status": "Proposed concept; swept paths/fire and road engineering unverified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23174422884053,
+            -31.16082841585893
+          ],
+          [
+            -68.22534433992672,
+            -31.160790070067534
+          ]
+        ]
+      },
+      "properties": {
+        "id": "P-v12-plant-access",
+        "network": "machine",
+        "hierarchy": "production",
+        "road_class": "secondary",
+        "width_m": 12,
+        "phase": 1,
+        "design_status": "Proposed concept; swept paths/fire and road engineering unverified"
       }
     }
   ]

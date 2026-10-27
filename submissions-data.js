@@ -377,10 +377,10 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "design_content_review_status": "not_assessed",
-    "package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
+    "design_content_review_status": "not_recorded_for_current_version",
+    "package_sha256": "91e9dff4318debe08a7a9ff3d20a73bb775fe5c1a7183d3c3bb5ba799ad10343",
     "reviewed_package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
-    "published": true,
+    "published": false,
     "featured": true,
     "example": false,
     "cover": "media/v2/C02-aerial.png",
@@ -1071,22 +1071,6 @@ window.XCITY_SUBMISSIONS = [
         5183
       ],
       [
-        "tools/__pycache__/design_graphics.cpython-312.pyc",
-        11373
-      ],
-      [
-        "tools/__pycache__/diagrams_v2.cpython-312.pyc",
-        21924
-      ],
-      [
-        "tools/__pycache__/draw_design.cpython-312.pyc",
-        41780
-      ],
-      [
-        "tools/__pycache__/redesign_v2.cpython-312.pyc",
-        34560
-      ],
-      [
         "tools/a0_presentation.py",
         4282
       ],
@@ -1182,7 +1166,7 @@ window.XCITY_SUBMISSIONS = [
     "path": "submissions/jingyuanhuang-design/finite-water-city",
     "title": "AGUA FINITA | The Finite Water City",
     "title_zh": "",
-    "summary": "A six-region whole-site planning proposal combines a continuous residential district, a compact public centre, independent compute/repair and solar facilities, conditional agricultural services and an eastern gateway. V11 restores explicit zoning, road hierarchy, public anchors and dry-landscape links. Public preview; resource rights and professional design verification remain open.",
+    "summary": "A photovoltaic-agriculture-led whole-site proposal with source channels and the issued boundary, conditional future fields, compact modular compute halls and separate living/public districts. V12 is a working design preview; rights and engineering remain unresolved.",
     "language": "en",
     "agent": "Codex",
     "model": "GPT-6 family (serving version unavailable)",
@@ -1213,16 +1197,16 @@ window.XCITY_SUBMISSIONS = [
     ],
     "example_status": null,
     "gates_total": 12,
-    "gates_passed": 7,
+    "gates_passed": 8,
     "gates_pass": false,
     "design_content_review_status": "not_assessed",
-    "package_sha256": "ab11a4eb2344f492918e63b4bfe7213104cb5abddb540ab5ae0ac9ff82349a8c",
-    "reviewed_package_sha256": "ab11a4eb2344f492918e63b4bfe7213104cb5abddb540ab5ae0ac9ff82349a8c",
+    "package_sha256": "e66ec033dc48020fe4e0fe8ea306eb06b0e9bb5db07ca6476181ff06b55db068",
+    "reviewed_package_sha256": "e66ec033dc48020fe4e0fe8ea306eb06b0e9bb5db07ca6476181ff06b55db068",
     "published": true,
     "featured": false,
     "example": false,
-    "cover": "media/v11-A03-aerial.png",
-    "thesis": "Continuous living districts and independent production grow through verified water, access and funded public services.",
+    "cover": "media/v12-whole-site-axon.png",
+    "thesis": "Solar agriculture organises the productive territory; compact halls, service networks and living districts follow the ground and resource gates.",
     "files": [
       [
         "CURRENT_DESIGN_REVIEW.md",
@@ -1234,11 +1218,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "assumptions.json",
-        3218
+        4744
       ],
       [
         "changelog.md",
-        5309
+        5845
       ],
       [
         "compliance_matrix.json",
@@ -1254,11 +1238,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        8240909
+        1109682
       ],
       [
         "drawings/a3-booklet.pdf",
-        17194396
+        2794028
       ],
       [
         "drawings/a3-technical-appendix.pdf",
@@ -1266,7 +1250,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/presentation-index.json",
-        1726
+        1844
       ],
       [
         "figures/fig-01-structure.png",
@@ -1342,7 +1326,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "geometry/buildings.geojson",
-        713003
+        714490
       ],
       [
         "geometry/land_use.geojson",
@@ -1354,7 +1338,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "geometry/movement.geojson",
-        106597
+        105647
       ],
       [
         "geometry/nodes.geojson",
@@ -1365,16 +1349,24 @@ window.XCITY_SUBMISSIONS = [
         174355
       ],
       [
+        "geometry/shared_plant.geojson",
+        783
+      ],
+      [
         "geometry/structure.geojson",
         99639
       ],
       [
+        "geometry/territorial_fields.geojson",
+        931259
+      ],
+      [
         "image_provenance.json",
-        18243
+        19092
       ],
       [
         "manifest.json",
-        5515
+        5903
       ],
       [
         "media/A03-aerial-v6.png",
@@ -1441,8 +1433,12 @@ window.XCITY_SUBMISSIONS = [
         3740002
       ],
       [
+        "media/v12-whole-site-axon.png",
+        529764
+      ],
+      [
         "metrics.json",
-        5500
+        5307
       ],
       [
         "pages/access.png",
@@ -1462,7 +1458,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "proposal.md",
-        4348
+        7289
       ],
       [
         "renders/A03-aerial.png",
@@ -1554,7 +1550,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "report/proposal.html",
-        8063
+        12381
       ],
       [
         "reviews/complete-city-v9/00-whole-site-regions.png",
@@ -2369,6 +2365,82 @@ window.XCITY_SUBMISSIONS = [
         761
       ],
       [
+        "reviews/production-v12/STATUS.txt",
+        376
+      ],
+      [
+        "reviews/production-v12/agrivoltaic-plan.png",
+        192387
+      ],
+      [
+        "reviews/production-v12/agrivoltaic-section.png",
+        123923
+      ],
+      [
+        "reviews/production-v12/agua-finita-v12-a0.pdf",
+        1109682
+      ],
+      [
+        "reviews/production-v12/agua-finita-v12-booklet.pdf",
+        2794028
+      ],
+      [
+        "reviews/production-v12/compute-phases.png",
+        123059
+      ],
+      [
+        "reviews/production-v12/compute-plan.png",
+        154200
+      ],
+      [
+        "reviews/production-v12/geometry-audit.json",
+        570
+      ],
+      [
+        "reviews/production-v12/geometry/buildings.geojson",
+        335270
+      ],
+      [
+        "reviews/production-v12/geometry/movement.geojson",
+        43882
+      ],
+      [
+        "reviews/production-v12/geometry/shared-plant.geojson",
+        783
+      ],
+      [
+        "reviews/production-v12/geometry/territorial-fields.geojson",
+        931259
+      ],
+      [
+        "reviews/production-v12/overall-energy-axon.png",
+        529764
+      ],
+      [
+        "reviews/production-v12/presentation-index.json",
+        1844
+      ],
+      [
+        "reviews/production-v12/production-aerial-control.png",
+        117443
+      ],
+      [
+        "reviews/production-v12/production-structure-review.png",
+        322404
+      ],
+      [
+        "reviews/production-v12/rejected-generation-record.json",
+        3284
+      ],
+      [
+        "reviews/production-v12/territorial-field-audit.json",
+        424
+      ],
+      [
+        "reviews/production-v12/territorial-fields-plan.png",
+        447385
+      ],
+      [
         "reviews/redesign-v7/01-whole-site.png",
         519143
       ],
@@ -2589,18 +2661,6 @@ window.XCITY_SUBMISSIONS = [
         4660
       ],
       [
-        "tools/__pycache__/concept_diagrams_v11.cpython-312.pyc",
-        18634
-      ],
-      [
-        "tools/__pycache__/presentation_v10.cpython-312.pyc",
-        12731
-      ],
-      [
-        "tools/__pycache__/publish_v10.cpython-312.pyc",
-        50041
-      ],
-      [
         "tools/complete_city_v9.py",
         60670
       ],
@@ -2661,6 +2721,10 @@ window.XCITY_SUBMISSIONS = [
         14486
       ],
       [
+        "tools/overall_axon_v12.py",
+        5357
+      ],
+      [
         "tools/presentation_booklet_v4.py",
         12602
       ],
@@ -2673,8 +2737,20 @@ window.XCITY_SUBMISSIONS = [
         7709
       ],
       [
+        "tools/production_control_v12.py",
+        1058
+      ],
+      [
+        "tools/production_v12.py",
+        3141
+      ],
+      [
         "tools/publish_preview_v11.py",
         20099
+      ],
+      [
+        "tools/publish_production_v12.py",
+        13413
       ],
       [
         "tools/publish_v10.py",
@@ -2687,6 +2763,10 @@ window.XCITY_SUBMISSIONS = [
       [
         "tools/reconcile_shade.py",
         1250
+      ],
+      [
+        "tools/redesign_production_v12.py",
+        10343
       ],
       [
         "tools/redesign_v7.py",
@@ -2717,6 +2797,10 @@ window.XCITY_SUBMISSIONS = [
         13820
       ],
       [
+        "tools/territorial_fields_v12.py",
+        5005
+      ],
+      [
         "tools/whole_site_v3.py",
         18884
       ],
@@ -2726,7 +2810,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "visual/index.html",
-        1342542
+        3515910
       ]
     ]
   }

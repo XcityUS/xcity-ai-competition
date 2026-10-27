@@ -1,0 +1,16 @@
+{
+  "hall_count": 8,
+  "hall_footprint_m2": 36864.0,
+  "previous_hall_footprint_m2": 36864.00000020396,
+  "declared_it_mw": 8,
+  "capacity_status": "Retained declared scenario, not manufacturer-verified rack or resource entitlement",
+  "outside_scope_m2": 0.0,
+  "fixed_pilot_overlap_m2": 0.0,
+  "new_service_road_overlap_m2": 0.0,
+  "hall_overlap_m2": 0.0,
+  "old_hall_envelope_m2": 167508.00000196765,
+  "new_hall_envelope_m2": 82656.0,
+  "shuttle_panel_field_overlap_m": 0.0,
+  "shuttle_fixed_pilot_overlap_m": 0.0,
+  "shuttle_source_channel_screen_overlap_m": 0.0
+}

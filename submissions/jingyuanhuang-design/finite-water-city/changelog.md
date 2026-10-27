@@ -34,3 +34,7 @@ Human rejected V7's miniature all-functions town and asked to continue with cont
 ## 2026-10-27 / V11 authorised public preview
 
 Human explicitly authorised website updating after reviewing the finished views, then required no spreadsheet-style A0 table and restored spatial diagrams. V11 publishes the current PDFs, registered images, current canonical geometry/phase scenarios and a current English statement. Whole-site zoning, road hierarchy, public centres and dry-landscape/shade links remain coordinated. Numeric accounts remain in the booklet/technical records. No design approval or manufactured automatic pass is claimed.
+
+##2026-10-27 / V12 production-led revision
+
+Human authorised direct website updating. Added source-based territorial field planning and boundary/channel context, compacted eight industrial halls without changing capacity, rerouted shuttle outside solar fields, and added mapped phases plus crop/panel/work plans and sections. Whole-site diagram replaces housing-only hero. V11 production images superseded; rejected six-hall generated trials are not selected. This remains a draft with incomplete engineering and compliance packaging.

@@ -5,49 +5,49 @@
       "value": 13.4142,
       "unit": "km2",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/master_area.geojson"
     },
     {
       "key": "site_coverage_pct",
       "value": 5.384,
       "unit": "%",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "gfa_m2",
       "value": 1612768.4,
       "unit": "m2",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/buildings.geojson"
     },
     {
       "key": "far",
       "value": 0.1202,
       "unit": "ratio",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry"
     },
     {
       "key": "open_space_pct",
       "value": 5.834,
       "unit": "%",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/land_use.geojson"
     },
     {
       "key": "human_machine_interfaces",
       "value": 2,
       "unit": "count",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/movement.geojson"
     },
     {
       "key": "shaded_pedestrian_pct",
       "value": 0.0,
       "unit": "%",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/movement.geojson"
     },
     {
       "key": "structure_km2",
@@ -61,7 +61,7 @@
       },
       "unit": "km2",
       "evidence": "computed",
-      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
+      "computed_from": "geometry/structure.geojson"
     },
     {
       "key": "residents_phase1",
@@ -118,6 +118,14 @@
       "unit": "jobs",
       "evidence": "declared",
       "note": "Design capacity, not signed jobs"
+    },
+    {
+      "key": "conditional_agrivoltaic_opportunity_km2",
+      "value": 542.01,
+      "unit": "km2",
+      "evidence": "computed",
+      "computed_from": "geometry/territorial_fields.geojson",
+      "note": "Resource-gated future field opportunity; not installed capacity, irrigated area or an entitlement. Proposal assumptions in field properties."
     }
   ],
   "status": "public_design_preview",
