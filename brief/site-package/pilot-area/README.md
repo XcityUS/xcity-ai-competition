@@ -18,3 +18,7 @@ Two parts, both in the south-west parcel, both planned by XCITY. **Neither is op
 ## Fixed-context representation and checks
 
 Agrivoltaic outlines: `structure.system = agri_production`; land-use context labels `agriculture` or `energy`. Living-quarter outline: `structure.system = living`; context labels `residential`, `mixed_use`, `civic`, `open_space`, `infrastructure` or `agriculture` for estate agriculture. The living quarter is not an agricultural field merely because both parts belong to the pilot. Only its outline is published: do not invent internal boundaries, existing building stock or measured capacity. Show it as fixed sourced context, state how its land and any assumed capacity enter your accounts, and design connections outside it. New submitted buildings remain prohibited in both parts. G9 checks land-use compatibility separately and lists structure-label conflicts for content review.
+
+## Provenance and limits
+
+Source: `SRC-PILOT`; acquisition date and measured positional accuracy are not supplied. These are fixed competition outlines, not a field survey or a comprehensive as-built inventory. Issued statuses differ: fields are described as built first by XCITY; the living outline is described as planned by XCITY. Do not infer verified completion dates, internal layouts or operating capacities from either outline. Record assumed capacities separately. See `../evidence-index.json`.

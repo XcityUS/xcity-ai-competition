@@ -74,6 +74,12 @@ python -m pip install -r requirements.txt     # Python 3.10+
 7. `docs/submission-guide.md` — the package format. `docs/visual-guide.md` — drawings and renders.
 8. **`docs/presentation-guide.md` and `templates/presentation.template.md` — required public reading order and the separate technical appendix. Plan the presentation before rendering.**
 
+## Design workflow — complete the design, then check its delivery
+
+Read site evidence and restrictions → analyse suitability and uncertainty → propose the overall structure and explain alternatives/trade-offs → establish a complete phase-one district → test streets/blocks/public life through an urban-design enlargement → deepen three nodes → edit the formal design booklet → run technical checks. Iterate when drawings reveal conflicts. The following commands support this workflow; generating a default booklet and passing gates never establishes design completion.
+
+Read `brief/design-depth.json`, `docs/design-depth-guide.md` and the annotated method examples in `docs/reference-examples.md`. Fill `design_depth_matrix.json` as the design develops, with actual evidence and remaining verification.
+
 ## 3. Create your package
 
 ```bash
@@ -140,7 +146,7 @@ Every image in `media/` is registered in `image_provenance.json` with its model,
 
 The booklet's graphic layout is yours; its **information structure is required**: whole-site plan → shared node locator (whole site to master area to all three nodes and their connections) → three node sections in manifest order → phasing → key indicators. A cover/thesis may precede this sequence. Each node uses the same ID and official topic, a place name, location/access explanation, finished aerial and eye-level views, and necessary design plans/sections. Mark the existing no-image-tool massing fallback visibly; never call a control a finished image. See `templates/presentation.template.md`.
 
-Keep controls, image/control comparisons, full accounts, compliance tables, detailed sections, assumptions and disclosure in **`drawings/a3-technical-appendix.pdf`**. Keep the original checked files on disk. `make_figures.py` produces the main booklet, this appendix and a page index. G12 checks the index/PDF ranges, not visual quality or planning adequacy.
+Keep raw controls, repetitive image/control comparisons, full accounts, compliance tables, raw model screenshots, program logs, assumptions and disclosure in **`drawings/a3-technical-appendix.pdf`**. Keep formal design diagrams, plans, decisive sections and massing relationships in the main booklet when they explain spatial decisions. The technical appendix must not hide the actual design. Keep the original checked files on disk. `make_figures.py` produces the main booklet, this appendix and a page index. G12 checks the index/PDF ranges, not visual quality or planning adequacy.
 
 `manifest.booklet.cover` selects a cover. `booklet.pages` adds your own pages; presentation and technical insertion anchors are listed in `docs/presentation-guide.md`. Custom pages preserve the reading order and the separation of controls from presentation. To replace default public section layouts, set `booklet.section_pages` as described in the presentation guide; the generator retains checked figures and updates the page index.
 
@@ -176,4 +182,4 @@ A combined design is welcome, but each selected node needs its own distinct ID a
 
 The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
 
-Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence existence, not whether the evidence convincingly answers these questions.
+Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence references and packaging, not whether the evidence convincingly answers these questions. Read automatic compliance, independent content review and further-work disclosures separately.

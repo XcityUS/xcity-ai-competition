@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "rows": [
+    {
+      "id": "whole_site",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/structure.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 7."
+      },
+      "gaps": [
+        {
+          "missing": "Replace with actual missing design/data or explain remaining uncertainty",
+          "next_step": "State how it will be resolved or verified",
+          "responsible": "Entrant / named specialist role"
+        }
+      ]
+    },
+    {
+      "id": "phase_one",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/master_area.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 9."
+      },
+      "gaps": [
+        {
+          "missing": "Replace with actual missing design/data or explain remaining uncertainty",
+          "next_step": "State how it will be resolved or verified",
+          "responsible": "Entrant / named specialist role"
+        }
+      ]
+    },
+    {
+      "id": "urban_design",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/buildings.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 7."
+      },
+      "gaps": [
+        {
+          "missing": "Replace with actual missing design/data or explain remaining uncertainty",
+          "next_step": "State how it will be resolved or verified",
+          "responsible": "Entrant / named specialist role"
+        }
+      ]
+    },
+    {
+      "id": "nodes",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/nodes.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Replace with actual missing design/data or explain remaining uncertainty",
+          "next_step": "State how it will be resolved or verified",
+          "responsible": "Entrant / named specialist role"
+        }
+      ]
+    },
+    {
+      "id": "node:{{node_1}}",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/nodes.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Fill actual node evidence and uncertainty",
+          "next_step": "Verify against users, movement and selected design question",
+          "responsible": "Entrant"
+        }
+      ]
+    },
+    {
+      "id": "node:{{node_2}}",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/nodes.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Fill actual node evidence and uncertainty",
+          "next_step": "Verify against users, movement and selected design question",
+          "responsible": "Entrant"
+        }
+      ]
+    },
+    {
+      "id": "node:{{node_3}}",
+      "status": "partial",
+      "drawings": [],
+      "geometry": [
+        "geometry/nodes.geojson"
+      ],
+      "metrics": [],
+      "explanation": {
+        "path": "proposal.md",
+        "heading": "## 10."
+      },
+      "gaps": [
+        {
+          "missing": "Fill actual node evidence and uncertainty",
+          "next_step": "Verify against users, movement and selected design question",
+          "responsible": "Entrant"
+        }
+      ]
+    }
+  ]
+}

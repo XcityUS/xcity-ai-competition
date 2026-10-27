@@ -29,6 +29,24 @@ For this call:
 
 ---
 
+
+## C. Four connected levels of design depth
+
+The organiser-defined whole-site boundary is fixed. The overall plan must address the entire supplied scope; a locally selected phase-one district or urban-design enlargement does not replace or reduce that overall planning obligation. Entrants justify the location and capacity of the first complete district within that structure.
+
+Machine-readable twin: `requirements.json.design_depth` / `design-depth.json`. The existing three geometry tiers remain compatible; the urban-design enlargement is an explicit design test within the master area, not an additional mandatory geographic area.
+
+| Level | Must explain | Spatial evidence |
+|---|---|---|
+| Whole-site structure | Settlements, production, protection, transport, resources and growth | Overall structure and system links; capacity scenarios and phasing |
+| Complete phase-one district | Life and production remain complete if later phases never happen | Master plan; roads, public services, production, utilities and first works |
+| Urban design enlargement | How the master layout forms streets, blocks and public life | Block plan, building heights/massing, public space and decisive sections |
+| Three detailed nodes | Location, users, spatial organisation and operation | Locator, detailed plan, necessary sections/elevations, massing and concept views |
+
+Combine drawings where useful. Choose sections/elevations for the actual spatial or operational question; do not mechanically produce identical sets for every node. No fixed booklet length, minimum development footprint or additional render quota is introduced. The three-node selection and existing view requirements remain unchanged.
+
+Each new entry supplies `design_depth_matrix.json` (template in `templates/`), linking each level and each selected node to drawings, geometry, metric keys and proposal headings. A declared gap needs a reason, next verification and responsible role. A missing organiser dataset is not itself a failing design claim; identify the gap honestly. File existence and reference consistency can be checked automatically; design adequacy remains unassessed until independent review.
+
 ## D. Mandatory M1–M12
 
 Each one gets a status in `compliance_matrix.json` pointing at the section of `proposal.md` that answers it. Where a metric key is given, declare the value, unit and evidence tag (computed / sourced / assumed / indicative / declared) in `metrics.json` as well. **Unless stated otherwise, M1–M12 describe phase one at full build-out and occupancy.**

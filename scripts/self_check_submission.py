@@ -16,6 +16,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import presentation
+import design_depth
 import xcity_common as xc  # noqa: E402
 from node_selection import selection_errors  # noqa: E402
 from shapely.geometry import Point  # noqa: E402
@@ -536,6 +537,9 @@ def check(pkg_path, write=True):
     g9.note("DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone.")
 
     # ---------------------------------------------------------------- G12 depth
+    depth_assessment = design_depth.assess(pkg, man.get("nodes") or [])
+    for problem in depth_assessment["automatic"]["errors"]:
+        g12.fail(problem)
     for problem in presentation.index_errors(pkg, man.get("nodes") or []):
         g12.fail(problem)
     dd = man.get("design_depth") or {}
@@ -559,7 +563,7 @@ def check(pkg_path, write=True):
             elif rel.startswith("media/") and rel not in reg:
                 g12.fail("node %s: %s is not registered in image_provenance.json" % (nid, rel))
 
-    g12.note("Checks evidence existence and presentation packaging/page order only; not readability or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
+    g12.note("Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
     gates = [G[g["id"]].out() for g in EVAL["gates"]]
     result = {
         "script": "scripts/self_check_submission.py", "script_version": xc.SCRIPT_VERSION,
@@ -569,6 +573,8 @@ def check(pkg_path, write=True):
         "pass": all(g["pass"] for g in gates),
         "automated_compliance_status": "passed" if all(g["pass"] for g in gates) else "failed",
         "design_content_review": {"status": "not_assessed", "note": "Automated gates do not establish design adequacy or organiser approval."},
+        "design_depth_assessment": depth_assessment,
+        "further_work": depth_assessment["further_work"],
         "recomputed": {k: computed[k] for k in xc.COMPUTED_KEYS},
         "gates": gates,
     }
@@ -580,6 +586,7 @@ def check(pkg_path, write=True):
 def report(r):
     print("%s  %d/%d gates  %s" % ("PASS" if r["pass"] else "FAIL", r["gates_passed"], r["gates_total"], r["package"]))
     print("  Automated compliance only; design content review: NOT ASSESSED (not approval).")
+    print("  Further work: %s (entrant disclosure; not automatically resolved)." % r.get("further_work", {}).get("status", "not_declared"))
     for g in r["gates"]:
         print("  [%s] %s  %s" % ("x" if g["pass"] else " ", g["id"], g["title"]))
         for m in g["messages"][:12]:

@@ -1,6 +1,6 @@
 # Climate
 
-The organiser **does not supply** a climate series. Below: what the climate means for design, where to get data, and how to declare it. Write the dataset, years and station or grid cell you used into `assumptions.json` and `sources.json`. **A gap in the data the organiser supplied is never a reason to mark an entry down.**
+The organiser **does not supply** a climate series. Below: what the climate means for design, where to get data, and how to declare it. Write the dataset, years and station or grid cell you used into `assumptions.json` and `sources.json`. **A gap in organiser-supplied data is not itself a reason to mark an entry down.** Disclosing an assumption satisfies traceability, not proof that its performance is adequate.
 
 ## Conditions a scheme must answer
 
@@ -22,3 +22,7 @@ The organiser **does not supply** a climate series. Below: what the climate mean
 | Station observations | SMN Argentina, San Juan Aero station |
 
 The site centre is about 30.95° S, 68.05° W.
+
+## Evidence status
+
+The conditions above are qualitative design context, not a supplied observation series or verified numerical design parameters. No acquisition period, station record, measured precision or return period is supplied here. For any dataset you obtain, record publisher, product/version, station/grid cell, observation period, retrieval date, units/resolution, intended use, missing values and representativeness limits. Station/grid values do not become site measurements. Distinguish observed values, derived values and participant scenarios. See `../evidence-index.json` for the issued-data gaps.

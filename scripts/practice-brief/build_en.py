@@ -121,9 +121,9 @@ base('05 · EXISTING CONDITIONS','Terrain and slope')
 image('elevation.png',50,130,348,300);image('slope.png',444,130,348,300)
 txt('Elevation: approximately 636–1,354 m',50,436,10,INK);txt('5th–95th percentiles; maximum approximately 2,658 m',50,461,9);txt('Minimum DEM elevation: approximately 606 m',50,484,9)
 txt('Slope classes within the competition area',444,436,10,INK)
-for i,(col,t) in enumerate([('#DAD7AD','<2%: ~1,183 km²'),('#A7B790','2–5%: ~182 km²'),('#A88B61','5–15%: ~132 km²'),('#666254','>15%: ~158 km²')]):
+for i,(col,t) in enumerate([('#DAD7AD','<2%: ~1,183.6 km²'),('#A7B790','2–5%: ~182 km²'),('#A88B61','5–15%: ~132 km²'),('#666254','>15%: ~158 km²')]):
  x=444+(i%2)*177;y=465+(i//2)*26;rect(x,y+3,10,8,col);txt(t,x+16,y,9)
-para('Issued site package: Copernicus GLO-30 DEM, 60 m grid, 300 m slope smoothing. Figures use the official package summary; rounded values may not sum exactly. The owner-supplied boundary does not replace a cadastral record or a survey.',50,520,742,7.7,GRAY)
+para('Boundary seams closed; external outline unchanged. Geometry 1,656.684 km²; project nominal area 1,656 km². This is not cadastral verification. Terrain: Copernicus GLO-30 DEM, 60 m grid, 300 m slope smoothing; raster areas are indicative.',50,520,742,7.7,GRAY)
 #11
 base('05 · EXISTING CONDITIONS','Hydrology and preliminary development suitability')
 for i,(name,title) in enumerate([('drainage.png','Seasonal drainage'),('flood-screen.png','Flood sensitivity screening'),('buildable-screen.png','Preliminary suitability screening')]):
@@ -131,7 +131,7 @@ for i,(name,title) in enumerate([('drainage.png','Seasonal drainage'),('flood-sc
 para('Drainage lines are classified by DEM-derived upstream catchment area. They show potential flow paths and connectivity, not perennial water availability.',50,425,232,9.5)
 para('Approximately 503 km² falls within 1.5 km of channels draining at least 100 km², and less than 3 m above the channel bed.',305,425,232,9.5)
 para('Approximately 686 km² has slopes below 2% outside the issued sensitivity screen. This screening does not establish development rights or exclude all other land from design.',560,425,232,9.5)
-para('Issued package method: 60 m DEM, D8 flow routing and height above nearest drainage (HAND). Upstream flows beyond the analysis extent are excluded. The 503 km² screen is not a surveyed flood limit or a blanket no-build zone. Check water, geology, ecology, land rights and hazards; keep permanent buildings out of dry channel beds.',50,509,742,8,GRAY)
+para('Issued package method: 60 m DEM, D8 flow routing and height above nearest drainage (HAND). Upstream flows beyond the analysis extent are excluded. The 503 km² screen is not a surveyed flood limit or a blanket no-build zone. Newly closed seams are unclassified by this prior flood screen. Check water, geology, ecology, land rights and hazards; keep permanent buildings out of dry channel beds.',50,509,742,8,GRAY)
 #12
 base('06 · VISION AND OBJECTIVES','Five urban systems')
 image('systems-overview.png',50,125,302,385)

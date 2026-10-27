@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap,BoundaryNorm
-from matplotlib.patches import Polygon as Patch,Circle
+from matplotlib.patches import Polygon as Patch,Circle,PathPatch
 from matplotlib.path import Path as MPath
 from shapely.geometry import shape
 from shapely.ops import transform
@@ -45,7 +45,10 @@ def fill(ax,gs,color,alpha=1,z=3):
    if p.geom_type=='Polygon':ax.add_patch(Patch(np.asarray(p.exterior.coords),facecolor=color,edgecolor='none',alpha=alpha,zorder=z))
 def base(wh=(5,5.6),streams=True,road=True):
  fig,ax=plt.subplots(figsize=wh,dpi=220);fig.subplots_adjust(left=.01,right=.99,bottom=.01,top=.99);ax.set_facecolor(BG)
- ax.imshow(hill,extent=ext,cmap='Greys_r',vmin=-80,vmax=330,origin='upper',zorder=0)
+ image=ax.imshow(hill,extent=ext,cmap='Greys_r',vmin=-80,vmax=330,origin='upper',zorder=0)
+ # Clip the image itself, not merely a translucent overlay: no grey raster rectangle outside the issued site.
+ paths=[MPath(np.asarray(p.exterior.coords)) for p in parts(site)]
+ image.set_clip_path(PathPatch(MPath.make_compound_path(*paths),transform=ax.transData))
  if road:lines(ax,roads,'#8C7B60',.55)
  if streams:lines(ax,channels,'#4E8DB8',.6)
  lines(ax,[site],INK,.9,6);ax.set_xlim(x0,x1);ax.set_ylim(y0,y1);ax.set_aspect('equal');ax.axis('off');return fig,ax
@@ -65,7 +68,11 @@ for name,data,cmap,norm in [('elevation.png',dem,'terrain',None),('slope.png',sl
  fig,ax=base(streams=False,road=False);ax.imshow(np.ma.masked_where(~mask,data),extent=ext,cmap=cmap,norm=norm,zorder=3);lines(ax,[site],INK,.9,6);embellish(ax);save(fig,name)
 fig,ax=base(road=False);embellish(ax);save(fig,'drainage.png')
 fig,ax=base(streams=False,road=False);fill(ax,flood,'#78A5C2',.85);embellish(ax);save(fig,'flood-screen.png')
-fig,ax=base(streams=False,road=False);flat=mask&(slope<2);ax.imshow(np.ma.masked_where(~flat,np.ones(dem.shape)),extent=ext,cmap=ListedColormap(['#84A478']),vmin=0,vmax=1,zorder=3);fill(ax,flood,BG,1,4);lines(ax,[site],INK,.9,6);embellish(ax);save(fig,'buildable-screen.png')
+fig,ax=base(streams=False,road=False);flat=mask&(slope<2);
+# Newly closed seam land has no rerun HAND classification: do not colour it confirmed flat/non-flood.
+original_scope=transform(to_utm,geometries('boundaries/archive/2026-10-26/scope_9_13.geojson')[0])
+for gap in original_scope.interiors:flat &= ~MPath(np.asarray(gap.coords)).contains_points(np.c_[gx.ravel(),gy.ravel()]).reshape(dem.shape)
+ax.imshow(np.ma.masked_where(~flat,np.ones(dem.shape)),extent=ext,cmap=ListedColormap(['#84A478']),vmin=0,vmax=1,zorder=3);fill(ax,flood,BG,1,4);lines(ax,[site],INK,.9,6);embellish(ax);save(fig,'buildable-screen.png')
 systems=read('zoning/indicative_systems_9_13.json')['systems']
 def drawsystem(ax,name):
  obj=systems[name]
