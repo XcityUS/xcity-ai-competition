@@ -1,0 +1,28 @@
+{
+  "script": "scripts/make_figures.py",
+  "script_version": "1.2.0",
+  "input_sha256": "4dff6f418fc2a0b253817a8eb28b2898ec2c1e8adbda5bba7668008ff497da69",
+  "files": {
+    "figures/fig-01-structure.png": "80ea20a03abbd5a7582f05001e240a1563d9dab39893af58f7b24c55bed27692",
+    "figures/fig-02-master-plan.png": "bd6b162273adee04e944416ab047677ca0b1a4b63d32ec8b806db70e99c2753a",
+    "figures/fig-03-land-use-density.png": "605668c3cf0a95f76ca1d1abe073c3b9f7a9ce4963ed976fd661985f74b2a920",
+    "figures/fig-04-movement.png": "fb093ef9553abc8682bc80ef0940295608d324dbe80c80f9120b51d93fbc857c",
+    "figures/fig-05-open-space-water.png": "c93e5b4e3e8a5508305caa7e3c17017c447ddb92b2f1c80f21239fd7f05ae237",
+    "figures/fig-06-phasing.png": "ccee5a8b05438802ba304036adcd576f3441e8161cb87f6aabbfce18f0e7db10",
+    "figures/fig-07-metrics.png": "b91dc13424cf173d64fc8e01373a56fb5b9b4b834783b817b12727f5bc8a1e30",
+    "figures/fig-08-node-location.png": "67983c8bcc8e8310caa5785ee52e4123c6830650c8d11a4b1175d08e81d9d1b8",
+    "figures/node-A01-plan.png": "75b2457f17a19229e4790c98e4b0fc45166aed502fae331fecee53f8ac467548",
+    "figures/node-A01-aerial.png": "d16e648b67f3699620fdbe9d8487e0a6caa0915bfd8aee29931a587a3c6f46c3",
+    "figures/node-A01-eye.png": "db2f1abc6ed3a30e9eca6495aa1cfa0bdd5f444612019d9937c860b580ebab48",
+    "figures/node-B03-plan.png": "1eabc56726be161435aefd1aa5d6f6875824da567727d595a978af2ebd52b068",
+    "figures/node-B03-aerial.png": "159e8bcce6987e1ffbc7bf24a7a878bc9f752539e16fef649df8ef49d2247a5c",
+    "figures/node-B03-eye.png": "0bb2883fef47fe3c13b5bc0597f14fd9f31f0d02733b1c05b6848b13b80485d9",
+    "figures/node-C02-plan.png": "6b8793eeee90796fe6a3b8e9f94234f57ac0a6783e1088032f574a960ef30915",
+    "figures/node-C02-aerial.png": "e6234874fdd7b43db6fab92656e19bd7f5788d2f46bbea1ef1614d09d13c2b80",
+    "figures/node-C02-eye.png": "ddea07e48a958efe89b886c23cffb02a2bdb0878200accf24a6876423fbdd80d",
+    "drawings/a3-booklet.pdf": "b7c4931798dd97c71834204dc577b2ac66ae2d33b56e1a9dadda7ce2abfc42fd",
+    "drawings/a3-technical-appendix.pdf": "85ca0dcae61cdc2af1a94798d84753082e7f4239e9343b61b1f3f32ae3ae504c",
+    "drawings/presentation-index.json": "38451ef65f960de0eea9d9d42cece9bb8cfc82684eaf3681f7d296d52014d0c7",
+    "drawings/a0-board.pdf": "83e140f5f0ea0937788e9ce8900f30352af2940e9aa3c1bdb7ece6a39564db90"
+  }
+}

@@ -1,0 +1,1616 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": false,
+        "name": "Productive trail to fixed farm edge / enabling works"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22928441133571,
+            -31.166588188118144
+          ],
+          [
+            -68.2422004189468,
+            -31.17480823684733
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23276940008657,
+            -31.16381199312609
+          ],
+          [
+            -68.23278030599923,
+            -31.162458665382967
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23119560608349,
+            -31.163802605047117
+          ],
+          [
+            -68.2312065343617,
+            -31.162449277802136
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23278030599923,
+            -31.162458665382967
+          ],
+          [
+            -68.23279121117592,
+            -31.161105337351646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2312065343617,
+            -31.162449277802136
+          ],
+          [
+            -68.23121746190245,
+            -31.161095950268926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Neighbourhood 1 low-speed access loop",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23318907861176,
+            -31.16381449336539
+          ],
+          [
+            -68.22962181281792,
+            -31.163793197734112
+          ],
+          [
+            -68.22964663321622,
+            -31.16072565669646
+          ],
+          [
+            -68.23321378410574,
+            -31.160746949766565
+          ],
+          [
+            -68.23318907861176,
+            -31.16381449336539
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22899229571856,
+            -31.163789429423396
+          ],
+          [
+            -68.22900325530848,
+            -31.162436102877507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22741850348807,
+            -31.163779995182797
+          ],
+          [
+            -68.22742948544347,
+            -31.162426669137492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22900325530848,
+            -31.162436102877507
+          ],
+          [
+            -68.22901421415884,
+            -31.161082776043376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22742948544347,
+            -31.162426669137492
+          ],
+          [
+            -68.22744046665775,
+            -31.161073342803938
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Neighbourhood 2 low-speed access loop",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22941197377165,
+            -31.163791941972473
+          ],
+          [
+            -68.22584471199872,
+            -31.163770541708256
+          ],
+          [
+            -68.22586965405984,
+            -31.160703003395373
+          ],
+          [
+            -68.22943680092901,
+            -31.16072440108584
+          ],
+          [
+            -68.22941197377165,
+            -31.163791941972473
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22521519561084,
+            -31.163766754932936
+          ],
+          [
+            -68.22522620887781,
+            -31.162413429590156
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22364140516164,
+            -31.163757274530905
+          ],
+          [
+            -68.22365244079396,
+            -31.16240394969116
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22522620887781,
+            -31.162413429590156
+          ],
+          [
+            -68.22523722140156,
+            -31.1610601039591
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22365244079396,
+            -31.16240394969116
+          ],
+          [
+            -68.22366347568156,
+            -31.161050624563124
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Neighbourhood 3 low-speed access loop",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22563487318955,
+            -31.163769279791747
+          ],
+          [
+            -68.22206761545722,
+            -31.163747774895
+          ],
+          [
+            -68.22209267918058,
+            -31.160680239320214
+          ],
+          [
+            -68.22565982200969,
+            -31.16070174163063
+          ],
+          [
+            -68.22563487318955,
+            -31.163769279791747
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23279702696922,
+            -31.160383562283762
+          ],
+          [
+            -68.2328079310175,
+            -31.159030233810533
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23122328962263,
+            -31.160374175466696
+          ],
+          [
+            -68.23123421603266,
+            -31.15902084749157
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2328079310175,
+            -31.159030233810533
+          ],
+          [
+            -68.23281883432993,
+            -31.157676905049108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23123421603266,
+            -31.15902084749157
+          ],
+          [
+            -68.23124514170532,
+            -31.15766751922822
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Neighbourhood 4 low-speed access loop",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.233216690386,
+            -31.160386062186994
+          ],
+          [
+            -68.22964955301346,
+            -31.160364769418194
+          ],
+          [
+            -68.22967436916866,
+            -31.157297226725454
+          ],
+          [
+            -68.23324139165653,
+            -31.157318516933284
+          ],
+          [
+            -68.233216690386,
+            -31.160386062186994
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22902005857662,
+            -31.16036100161399
+          ],
+          [
+            -68.229031016293,
+            -31.159007674337904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22744632300235,
+            -31.160351568641516
+          ],
+          [
+            -68.22745730308037,
+            -31.158998241865966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.229031016293,
+            -31.159007674337904
+          ],
+          [
+            -68.2290419732699,
+            -31.157654346773587
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22745730308037,
+            -31.158998241865966
+          ],
+          [
+            -68.22746828241739,
+            -31.15764491480219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Neighbourhood 5 low-speed access loop",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22943972152137,
+            -31.160363513825345
+          ],
+          [
+            -68.22587258816912,
+            -31.160342116437658
+          ],
+          [
+            -68.22589752596636,
+            -31.157274576469504
+          ],
+          [
+            -68.22946454443448,
+            -31.157295971283627
+          ],
+          [
+            -68.22943972152137,
+            -31.160363513825345
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22524309444367,
+            -31.160338330171335
+          ],
+          [
+            -68.22525410582791,
+            -31.15898500409828
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22366936065043,
+            -31.16032885104363
+          ],
+          [
+            -68.2236803943962,
+            -31.15897552547356
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22525410582791,
+            -31.15898500409828
+          ],
+          [
+            -68.22526511646903,
+            -31.157631677736948
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Courtyard walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2236803943962,
+            -31.15897552547356
+          ],
+          [
+            -68.22369142739736,
+            -31.15762219961522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Neighbourhood 6 low-speed access loop",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2256627569141,
+            -31.160340854690784
+          ],
+          [
+            -68.22209562760186,
+            -31.16031935268462
+          ],
+          [
+            -68.22212068704054,
+            -31.157251815454376
+          ],
+          [
+            -68.22568770146921,
+            -31.15727331487438
+          ],
+          [
+            -68.2256627569141,
+            -31.160340854690784
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "School and home walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23319997856025,
+            -31.16246116548961
+          ],
+          [
+            -68.21714754063149,
+            -31.162364562069726
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Library and home walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23322758847114,
+            -31.15903273358111
+          ],
+          [
+            -68.21717572839472,
+            -31.158936143146576
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Civic spine"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22132801499193,
+            -31.164374886297377
+          ],
+          [
+            -68.22139294119175,
+            -31.15643538158362
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Productive buffer walk"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23244954946166,
+            -31.16444166985071
+          ],
+          [
+            -68.21713121919736,
+            -31.164349435337318
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Neighbourhood connector west"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22951178204397,
+            -31.164424122263238
+          ],
+          [
+            -68.22957602604112,
+            -31.15648460222426
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Neighbourhood connector east"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22573465629277,
+            -31.16440146259886
+          ],
+          [
+            -68.22579921515357,
+            -31.156461949612947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "people",
+        "shaded": true,
+        "name": "Farm-edge promenade"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23243791053872,
+            -31.165885218876035
+          ],
+          [
+            -68.22509338548505,
+            -31.165841221752146
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Utility and freight edge"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23336767584757,
+            -31.167695281475428
+          ],
+          [
+            -68.21437650045442,
+            -31.16758078985054
+          ],
+          [
+            -68.21447104085061,
+            -31.156122662584924
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Public arrival and emergency edge"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23336767584757,
+            -31.167695281475428
+          ],
+          [
+            -68.23345993143506,
+            -31.156237102784512
+          ],
+          [
+            -68.21719872010618,
+            -31.15613927370715
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "machine",
+        "shaded": false,
+        "name": "Compute service loop"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22402946003415,
+            -31.16763933451304
+          ],
+          [
+            -68.22405115520417,
+            -31.164977796748865
+          ],
+          [
+            -68.21723131712234,
+            -31.164936513003315
+          ],
+          [
+            -68.21720943132007,
+            -31.167598046459414
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Farm servicing loop"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23294798019674,
+            -31.167692781539774
+          ],
+          [
+            -68.23296942607597,
+            -31.165031238198797
+          ],
+          [
+            -68.22510036230666,
+            -31.16498411603639
+          ],
+          [
+            -68.22507869646483,
+            -31.16764565446001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "South neighbourhood access",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23339891789396,
+            -31.163815742972144
+          ],
+          [
+            -68.22206761545722,
+            -31.163747774895
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "North neighbourhood access",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2334512166266,
+            -31.15731976622178
+          ],
+          [
+            -68.22212068704054,
+            -31.157251815454376
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "West emergency spine",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.23315782801562,
+            -31.167694031678597
+          ],
+          [
+            -68.23325010884992,
+            -31.15623585354905
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Middle access link",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22943680092901,
+            -31.16072440108584
+          ],
+          [
+            -68.22943972152137,
+            -31.160363513825345
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "East access link",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22565982200969,
+            -31.16070174163063
+          ],
+          [
+            -68.2256627569141,
+            -31.160340854690784
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "network": "shared",
+        "shaded": false,
+        "name": "Civic service and emergency spine",
+        "speed_kmh": 10
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.21710450791123,
+            -31.167597408437206
+          ],
+          [
+            -68.21719872010618,
+            -31.15613927370715
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 1",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23100154825073,
+          -31.16768116964448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 2",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23276940008657,
+          -31.16381199312609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 3",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23119560608349,
+          -31.163802605047117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 4",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22899229571856,
+          -31.163789429423396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 5",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22741850348807,
+          -31.163779995182797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 6",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22521519561084,
+          -31.163766754932936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 7",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22364140516164,
+          -31.163757274530905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 8",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23279702696922,
+          -31.160383562283762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 9",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23122328962263,
+          -31.160374175466696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 10",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22902005857662,
+          -31.16036100161399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 11",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22744632300235,
+          -31.160351568641516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 12",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22524309444367,
+          -31.160338330171335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 13",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22366936065043,
+          -31.16032885104363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 14",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22963276346167,
+          -31.16243987098828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 15",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23319997856025,
+          -31.16246116548961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 16",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22585571631953,
+          -31.162417216164553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 17",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22942292739747,
+          -31.162438615293276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 18",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22207867345483,
+          -31.1623944505593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 19",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22564588049242,
+          -31.162415954315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 20",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21714754063149,
+          -31.162364562069726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 21",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22966050178519,
+          -31.159011441942166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 22",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.23322758847114,
+          -31.15903273358111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 23",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22588359060875,
+          -31.15898879016368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 24",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22945067327466,
+          -31.159010186415955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 25",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22210668370911,
+          -31.15896602761857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 26",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22567376233526,
+          -31.158987528483756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 27",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21717572839472,
+          -31.158936143146576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 28",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.21713121919736,
+          -31.164349435337318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 29",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22951689329315,
+          -31.16379256989604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 30",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22956945679994,
+          -31.157296599047275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 31",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22573979259249,
+          -31.16376991079274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 32",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22579261371612,
+          -31.157273945714675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "interface",
+        "name": "Controlled crossing 33",
+        "rule": "Human priority; machine stop; manual release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.22509338548505,
+          -31.165841221752146
+        ]
+      }
+    }
+  ]
+}

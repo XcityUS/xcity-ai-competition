@@ -1,0 +1,380 @@
+{
+  "script": "scripts/self_check_submission.py",
+  "script_version": "1.2.0",
+  "checked_at": "2026-10-27T04:42:23+00:00",
+  "package": "submissions/jingyuanhuang-design/everyday-city",
+  "package_sha256": "383157149f7fda6c33aa54e7f4acf4ddcd7ae73572c4f213579ef3815c4bf401",
+  "gates_total": 12,
+  "gates_passed": 12,
+  "pass": true,
+  "automated_compliance_status": "passed",
+  "design_content_review": {
+    "status": "not_assessed",
+    "note": "Automated gates do not establish design adequacy or organiser approval."
+  },
+  "design_depth_assessment": {
+    "automatic": {
+      "status": "references_consistent",
+      "errors": []
+    },
+    "content_review": {
+      "status": "not_assessed",
+      "questions": [
+        "Settlements, production, protection, transport, resources and growth",
+        "Life and production remain complete if later phases never happen",
+        "How the master layout forms streets, blocks and public life",
+        "Location, users, spatial organisation and operation"
+      ]
+    },
+    "further_work": {
+      "status": "declared",
+      "items": [
+        {
+          "level": "whole_site",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "whole_site",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        },
+        {
+          "level": "phase_one",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "phase_one",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        },
+        {
+          "level": "urban_design",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "urban_design",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        },
+        {
+          "level": "nodes",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "nodes",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        },
+        {
+          "level": "node:A01",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "node:A01",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        },
+        {
+          "level": "node:B03",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "node:B03",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        },
+        {
+          "level": "node:C02",
+          "kind": "professional_verification",
+          "missing": "Survey, hydrology, rights and engineering validation",
+          "next_step": "Independent site and authority verification before occupation",
+          "responsible": "Licensed specialists and rights holders"
+        },
+        {
+          "level": "node:C02",
+          "kind": "entrant_design",
+          "missing": "Actual dwelling/access details and later-town layout",
+          "next_step": "Architectural and detailed urban-design iteration",
+          "responsible": "Entrant design team"
+        }
+      ]
+    },
+    "rows": [
+      {
+        "id": "whole_site",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      },
+      {
+        "id": "phase_one",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      },
+      {
+        "id": "urban_design",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      },
+      {
+        "id": "nodes",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      },
+      {
+        "id": "node:A01",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      },
+      {
+        "id": "node:B03",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      },
+      {
+        "id": "node:C02",
+        "entrant_status": "partial",
+        "content_status": "not_assessed"
+      }
+    ],
+    "migration": "current_v2"
+  },
+  "further_work": {
+    "status": "declared",
+    "items": [
+      {
+        "level": "whole_site",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "whole_site",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      },
+      {
+        "level": "phase_one",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "phase_one",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      },
+      {
+        "level": "urban_design",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "urban_design",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      },
+      {
+        "level": "nodes",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "nodes",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      },
+      {
+        "level": "node:A01",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "node:A01",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      },
+      {
+        "level": "node:B03",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "node:B03",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      },
+      {
+        "level": "node:C02",
+        "kind": "professional_verification",
+        "missing": "Survey, hydrology, rights and engineering validation",
+        "next_step": "Independent site and authority verification before occupation",
+        "responsible": "Licensed specialists and rights holders"
+      },
+      {
+        "level": "node:C02",
+        "kind": "entrant_design",
+        "missing": "Actual dwelling/access details and later-town layout",
+        "next_step": "Architectural and detailed urban-design iteration",
+        "responsible": "Entrant design team"
+      }
+    ]
+  },
+  "recomputed": {
+    "master_area_km2": 2.7722,
+    "site_coverage_pct": 5.394,
+    "gfa_m2": 274546.7,
+    "far": 0.099,
+    "open_space_pct": 42.628,
+    "human_machine_interfaces": 33,
+    "shaded_pedestrian_pct": 38.084,
+    "structure_km2": {
+      "agri_production": 674.319,
+      "energy_compute": 56.869,
+      "living": 15.874,
+      "port": 4.75,
+      "reserve": 904.874
+    }
+  },
+  "gates": [
+    {
+      "id": "GATE-G1-PACKAGE",
+      "title": "Package completeness and schema validity",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "English is required for the public title, narrative, summary, booklet, drawing labels and legends; the language of raster images needs human review."
+      ]
+    },
+    {
+      "id": "GATE-G2-PATH",
+      "title": "Path ownership - only your own submission directory",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "In a pull request, CI also checks that nothing outside this directory changed (scripts/check_pr_paths.py)."
+      ]
+    },
+    {
+      "id": "GATE-G3-SAMPLE-DATA",
+      "title": "Example and indicative data not presented as fact",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G4-RECONCILE",
+      "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G5-OFFLINE",
+      "title": "HTML artefacts make no network calls",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G6-TASKBOOK",
+      "title": "All eight agent tasks and twelve mandatory requirements answered",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G7-EVIDENCE",
+      "title": "Every quantitative claim carries an evidence tag",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G8-DISCLOSURE",
+      "title": "Autonomy disclosure present and consistent",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G9-BOUNDARIES",
+      "title": "Site boundaries respected",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "Content review by the organiser completes this gate (prohibited items B1-B5).",
+        "DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone."
+      ]
+    },
+    {
+      "id": "GATE-G10-FIGURES",
+      "title": "Required figures present and current; every render declared",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "media/ images have no control_image: they are not tied to a view of the geometry"
+      ]
+    },
+    {
+      "id": "GATE-G11-TRADEOFF",
+      "title": "Declared trade-off present and complete",
+      "pass": true,
+      "messages": []
+    },
+    {
+      "id": "GATE-G12-DEPTH",
+      "title": "Design evidence and presentation packaging (quality not assessed automatically)",
+      "pass": true,
+      "messages": [],
+      "notes": [
+        "Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review."
+      ]
+    }
+  ]
+}

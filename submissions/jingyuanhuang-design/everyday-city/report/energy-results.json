@@ -1,0 +1,8 @@
+{
+  "fully_matched_hours_pct": 29.828767123287673,
+  "clean_energy_share_pct": 54.380216713320124,
+  "total_mwh": 78840.0000000067,
+  "grid_import_mwh": 35966.63714321495,
+  "peak_grid_mw": 11.799999999999999,
+  "limits": "Synthetic hourly PV profile, not measured climate; starting battery at protected reserve, no clean credit from grid"
+}

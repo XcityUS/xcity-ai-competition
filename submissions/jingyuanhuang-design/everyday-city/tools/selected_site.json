@@ -1,0 +1,36 @@
+{
+  "origin_utm_m": [
+    573000,
+    6551500
+  ],
+  "choice": "Closer productive interface, despite higher mean screened slope; no flood-band overlap in coarse test. Detailed grading remains required.",
+  "comparison": [
+    {
+      "origin_utm_m": [
+        573000,
+        6551500
+      ],
+      "mean_slope_pct": 2.64,
+      "distance_to_pilot_m": 1103,
+      "selected": true
+    },
+    {
+      "origin_utm_m": [
+        573500,
+        6553500
+      ],
+      "mean_slope_pct": 1.26,
+      "distance_to_pilot_m": 3043,
+      "selected": false
+    },
+    {
+      "origin_utm_m": [
+        573500,
+        6553000
+      ],
+      "mean_slope_pct": 1.86,
+      "distance_to_pilot_m": 2601,
+      "selected": false
+    }
+  ]
+}

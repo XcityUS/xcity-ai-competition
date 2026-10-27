@@ -1,0 +1,97 @@
+[
+  {
+    "number": 1,
+    "path": "pages/01-whole-site.png",
+    "title": "Whole Site"
+  },
+  {
+    "number": 2,
+    "path": "pages/02-site-reading.png",
+    "title": "Site Reading"
+  },
+  {
+    "number": 3,
+    "path": "pages/03-siting-choice.png",
+    "title": "Siting Choice"
+  },
+  {
+    "number": 4,
+    "path": "pages/04-first-district.png",
+    "title": "First District"
+  },
+  {
+    "number": 5,
+    "path": "pages/05-courtyard-neighbourhood.png",
+    "title": "Courtyard Neighbourhood"
+  },
+  {
+    "number": 6,
+    "path": "pages/06-street-section.png",
+    "title": "Street Section"
+  },
+  {
+    "number": 7,
+    "path": "pages/07-movement.png",
+    "title": "Movement"
+  },
+  {
+    "number": 8,
+    "path": "pages/08-water-priorities.png",
+    "title": "Water Priorities"
+  },
+  {
+    "number": 9,
+    "path": "pages/09-energy.png",
+    "title": "Energy"
+  },
+  {
+    "number": 10,
+    "path": "pages/10-node-locator.png",
+    "title": "Node Locator"
+  },
+  {
+    "number": 11,
+    "path": "pages/11-a01-plan.png",
+    "title": "A01 Plan"
+  },
+  {
+    "number": 12,
+    "path": "pages/12-b03-plan.png",
+    "title": "B03 Plan"
+  },
+  {
+    "number": 13,
+    "path": "pages/13-c02-plan.png",
+    "title": "C02 Plan"
+  },
+  {
+    "number": 14,
+    "path": "pages/14-phasing.png",
+    "title": "Phasing"
+  },
+  {
+    "number": 15,
+    "path": "pages/15-governance.png",
+    "title": "Governance"
+  },
+  {
+    "number": 16,
+    "path": "pages/16-review-dashboard.png",
+    "title": "Review Dashboard"
+  },
+  {
+    "number": 17,
+    "path": "pages/17-a01-floor-and-section.png",
+    "title": "A01 Floor And Section"
+  },
+  {
+    "number": 18,
+    "path": "pages/18-civic-spine.png",
+    "title": "Civic Spine"
+  },
+  {
+    "number": 19,
+    "path": "pages/19-resource-network.png",
+    "title": "Resource Network"
+  }
+]
