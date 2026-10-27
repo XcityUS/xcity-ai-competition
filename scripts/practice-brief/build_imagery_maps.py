@@ -38,8 +38,7 @@ for filename,bbox,size in [('satellite-region.jpg',[west-.55,south-.5,east+.4,no
  for polygon in ([site] if site.geom_type=='Polygon' else site.geoms):
   points=[pixel(p) for p in polygon.exterior.coords];draw.line(points,fill='#231c0d',width=9,joint='curve');draw.line(points,fill='#ffda52',width=5,joint='curve')
  # Label only what is actually supplied; no invented road alignments or cities.
- title='Regional context — current site outline' if 'region' in filename else 'Current competition boundary'
- draw.rectangle((10,10,image.width-10,48),fill='#181a18');draw.text((22,17),title,font=font,fill='white')
+ # Page headings identify the map; keep satellite imagery free of redundant title bars.
  footer_lines=[*textwrap.wrap(credit,width=85 if image.width>1300 else 70),f'Accessed {ACCESSED} | multi-date mosaic, not a site survey',f'Boundary: {revision}']
  footer_height=24*len(footer_lines)+14
  output=Image.new('RGB',(image.width,image.height+footer_height),'#f7f5f0');output.paste(image,(0,0));fd=ImageDraw.Draw(output)
