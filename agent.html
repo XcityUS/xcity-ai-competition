@@ -808,6 +808,9 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
   var g=document.getElementById('langBtn'); if(!g) return; var L=["en", "zh"];
   function set(l){ if(L.indexOf(l)<0) l='en'; var h=document.documentElement;
     h.setAttribute('data-lang',l); h.setAttribute('lang',l);
+    var current=new URL(location.href);current.searchParams.set('lang',l);history.replaceState(null,'',current);
+    document.querySelectorAll('a[href]').forEach(function(a){var raw=a.getAttribute('href');if(!raw||raw.charAt(0)==='#')return;var u=new URL(raw,location.href);if(u.origin===location.origin&&(/\.html$/.test(u.pathname)||u.pathname.endsWith('/'))){u.searchParams.set('lang',l);a.setAttribute('href',u.pathname+u.search+u.hash);}});
+
     [].forEach.call(g.querySelectorAll('button'),function(b){
       b.setAttribute('aria-pressed', b.getAttribute('data-l')===l ? 'true' : 'false')});
     try{localStorage.setItem('xcity-lang',l)}catch(e){}
