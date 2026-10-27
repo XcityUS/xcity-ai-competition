@@ -296,3 +296,8 @@ Follow [the whole-site zoning workflow](https://github.com/XcityUS/xcity-ai-comp
 
 
 Read the operating layout and construction diagram requirements: [production-conditions.en.md](production-conditions.en.md).
+
+
+### Functional balance: common starting point
+
+The five-function approximate 60/30/5/3/2 reference comes from XCITY Whitepaper V7, page 5. Every scheme responds to it; justified alternative distributions are encouraged. Distinguish exclusive base land, overlapping functional coverage and phased serviced/built works. Older absolute areas/capacities do not transfer to this issued boundary. Read [the balance workflow](../docs/functional-balance-workflow.md) and use `scripts/analyse_functional_balance.py` for an advisory area/programme review.

@@ -277,3 +277,8 @@ A0展板须包含清晰标注的一、二、三期分区图及对应的数据表
 
 
 生产布局与建设分期图要求：[production-conditions.zh.md](production-conditions.zh.md).
+
+
+### 功能配置：共同起点，允许有依据的探索
+
+五大功能及约60／30／5／3／2来自《XCITY白皮书V7》第5页，所有方案须先回应这一共同起点，鼓励说明理由后调整。互斥土地账户、复合功能覆盖和分期配套／建设面积分别统计；旧范围的绝对面积与目标容量不能直接套用本轮边界。读取[功能配置流程](../docs/functional-balance-workflow.md)，使用 `scripts/analyse_functional_balance.py` 辅助核算面积与容量输入；脚本不代替设计论证。
