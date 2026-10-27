@@ -35,6 +35,20 @@ def run(destination,source_fixture=None):
  remaining=xc.polygons_only(master.difference(used))
  if not remaining.is_empty:features.append({'type':'Feature','properties':{'use':'open_space','note':'QA-only unallocated-account remainder; not a design recommendation'},'geometry':mapping(remaining)})
  write('geometry/land_use.geojson',{'type':'FeatureCollection','features':features})
+ # Synthetic base-zoning/road records exercise the new full-site contract only.
+ # No original entry is modified, and these records are not an accepted design.
+ structure=read('geometry/structure.geojson');whole=xc.to_utm(xc.site_boundary());occupied=whole.difference(whole);base=[]
+ for i,feature in enumerate(structure['features']):
+  part=xc.polygons_only(xc.to_utm(shape(feature['geometry'])).intersection(whole).difference(occupied))
+  if part is None or part.is_empty:continue
+  props=dict(feature['properties'],plan_role='base_zoning',district_id='QA-'+str(i),primary_use='test_area',name='Synthetic QA base area',basis_ref='proposal.md#qa-fixture-not-a-design')
+  base.append({'type':'Feature','properties':props,'geometry':mapping(xc.to_lonlat(part))});occupied=unary_union([occupied,part])
+ remainder=xc.polygons_only(whole.difference(occupied))
+ if remainder is not None and not remainder.is_empty:base.append({'type':'Feature','properties':{'plan_role':'base_zoning','district_id':'QA-REMAINDER','primary_use':'reserve','system':'reserve','name':'Synthetic QA remainder','basis_ref':'proposal.md#qa-fixture-not-a-design'},'geometry':mapping(xc.to_lonlat(remainder))})
+ write('geometry/structure.geojson',{'type':'FeatureCollection','features':base})
+ movement=read('geometry/movement.geojson');route_features=[f for f in movement['features'] if f['geometry']['type'] in ['LineString','MultiLineString']]
+ for level,feature in zip(['primary','secondary'],route_features):feature['properties']['road_class']=level
+ write('geometry/movement.geojson',movement)
  man=read('manifest.json');man['booklet']={};man['design_depth']={'tier1_structure':{'evidence':['geometry/structure.geojson','figures/fig-01-structure.png']},'tier2_master':{'evidence':['geometry/master_area.geojson','figures/fig-02-master-plan.png']},'tier3_nodes':{n:{'plan':'figures/node-'+n+'-plan.png','aerial':'figures/node-'+n+'-aerial.png','eye_level':'figures/node-'+n+'-eye.png'} for n in man['nodes']}};man['slug']='v2-city';man['author']['github']='qa-validation';man['title']='QA only — rule integration fixture';man['thesis']='Technical integration fixture based on credited Finite Water City, not an approved or new competition entry.';man['autonomy']['human_role']='Organiser QA transformation only. No external image-generation tool used; massing fallback is labelled. Original design credit retained in proposal.';write('manifest.json',man)
  write('image_provenance.json',{'images':[]})
  template=json.loads((ROOT/'templates/design_depth_matrix.json').read_text());ids=['whole_site','overall_layout','urban_design','nodes']+['node:'+x for x in man['nodes']]

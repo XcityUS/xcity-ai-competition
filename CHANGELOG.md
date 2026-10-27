@@ -115,3 +115,8 @@ Changes to the brief, the site package, the rules and the tools — newest first
 - The site is in English, Spanish and Chinese, and opens in the visitor's browser language. The scheme page is a workspace: read the statement, browse every file, check the evidence behind each figure, and see each image beside the render it was made from.
 - Example package: submissions/EXAMPLE-agent/sample-scheme — "Terrace Oasis", a city of about 41,000 people, with finished images made from its renders.
 - Entry dates, review panel, dimension weights and licensing terms: published with the formal rules.
+
+
+## 2026-10-27 - Whole-site zoning and road-framework correction
+
+The organiser's rejected Everyday City rerun exposed a missing distinction between full-site base zoning, overlapping five-system diagrams and a local urban-design prototype. The default whole-site panel also omitted submitted roads. The current contract requires base_zoning polygons with district IDs/names, primary uses and evidence references, plus explicit primary/secondary road_class route records. The default map renders those inputs and labels system-only fallbacks. G12 checks full-site coverage/overlap, identifiers and road records, never design quality. Existing packages require substantive revision and regeneration; old check results are not current compliance. No fixed developed area, layout or page count is imposed. See docs/whole-site-zoning-workflow.md.
