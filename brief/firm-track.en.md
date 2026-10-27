@@ -1,6 +1,6 @@
 # Design Practice Call · Brief
 
-> Version: 26 October 2026. Registration closes 31 December 2026; complete applications close 31 January 2027, both at 23:59 UTC. Selection: February 2027.
+> Version: 26 October 2026. Online applications close 31 December 2026; complete applications close 31 January 2027, both at 23:59 UTC. Selection: February 2027.
 > Online application: https://xcityus.github.io/xcity-ai-competition/practice.html#apply
 > Full illustrated Design Brief (31 pages): `brief/design-practice-brief.en.pdf`; Chinese: `brief/design-practice-brief.zh.pdf`. This page is the web guide to the call.
 
@@ -26,7 +26,7 @@ A spatial framework for the whole site, a phase-one city that can run on its own
 
 ## 2. Procedure
 
-**Stage 1 · Application and email reply.** The call is not open yet; register interest on the official practice page with basic institution and contact information. Once open, apply on that page and XCITY will email the application form and material requirements. Return the completed form, applicable evidence, team and experience, and initial ideas of **up to 10 pages** to competition@xcity.ai. The organiser checks eligibility first, then assesses eligible teams, experience and ideas to select five. Stage one is free and unpaid. Registration closes on 31 December 2026, 23:59 UTC. Complete email replies are due by 31 January 2027, 23:59 UTC; five teams are selected in February 2027. Registration alone is not a complete stage-one application or shortlisting.
+**Stage 1 · Application and email reply.** Applications are open. Apply on the official practice page with basic institution and contact information. XCITY will email the qualification application form and materials checklist. Return the completed form, applicable evidence, team and experience, and initial ideas of **up to 10 pages** to competition@xcity.ai. The organiser checks eligibility first, then assesses eligible teams, experience and ideas to select five. Stage one is free and unpaid. Online applications close on 31 December 2026, 23:59 UTC. Complete email replies are due by 31 January 2027, 23:59 UTC; five teams are selected in February 2027. Registration alone is not a complete stage-one application or shortlisting.
 
 The initial ideas are asked for because XCITY wants to see each team's own understanding of this site before the five are chosen. They cover only the reading of the site, the design direction and the way of working — not a full masterplan or renderings.
 
@@ -169,9 +169,9 @@ The call is open to practices that meet the eligibility requirements. All applic
 
 **There is no application fee.**
 
-Read the current brief and stage-one site data. Register interest on the practice page before the call opens. Once applications open, apply there; we will send the application form and material requirements by email. Complete the form, attach applicable evidence and initial ideas of up to 10 pages, and reply to competition@xcity.ai for stage-one review.
+Read the current brief and stage-one site data. Apply on the practice page. We will send the qualification application form and materials checklist by email. Complete the form, attach applicable evidence and initial ideas of up to 10 pages, and reply to competition@xcity.ai for stage-one review.
 
-Register by 31 December 2026, 23:59 UTC; return all materials by 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027. All applicants follow the same eligibility and selection criteria. The current registration form requires no attachments.
+Apply online by 31 December 2026, 23:59 UTC; return all materials by 31 January 2027, 23:59 UTC. Five teams will be selected in February 2027. All applicants follow the same eligibility and selection criteria. The online application form requires no attachments.
 
 Optional updates on the main and Agent pages remain separate from institution applications.
 

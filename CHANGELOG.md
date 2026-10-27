@@ -1,3 +1,9 @@
+## 2026-10-26 · Applications open and consistent navigation
+
+- Open the institution online application now. Collect basic details, then send the qualification application form and materials checklist by email; complete replies enter stage-one review. Keep the December and January deadlines.
+- Label the entry “在线申请 / Apply online”. Normal application.html visits return to the practice page application section, preserving the original navigation and language; embedded forms and existing private links remain compatible.
+- Carry the current language through internal page links and mark the selected application section. Clarify the homepage update subscription covers both tracks and is separate from applications; automatic mail is still pending integration.
+
 ## 2026-10-26 · Simplified institution registration and email materials
 
 - Keep the two-track homepage free of institution-specific materials, dates and forms. Embed the brief contact form in the practice page only.

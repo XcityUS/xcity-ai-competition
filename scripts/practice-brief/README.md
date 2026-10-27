@@ -9,9 +9,9 @@ Dependencies: Python, reportlab and pypdf; Arial and Arial Unicode fonts from ma
 Release decisions, 26 October 2026:
 
 - Keep: full design task, maps, fourteen chapters, four design layers, eleven institution-track topics, five shortlisted teams, US$50,000 per valid Stage 2 submission and US$50,000 additional winner award.
-- Change: release without internal-discussion labels; one application process and common eligibility/selection criteria, without statements about recruitment routes or invitations; initial ideas **up to 10 pages**; register interest before opening; once open, apply on the practice page, receive the application form by email and reply with the form, evidence and ideas.
+- Change: release without internal-discussion labels; one application process and common eligibility/selection criteria, without statements about recruitment routes or invitations; initial ideas **up to 10 pages**; applications are open; apply on the practice page, receive the qualification application form and checklist by email and reply with the form, evidence and ideas.
 - Synchronise: fixed agrivoltaic and living-quarter pilots; issued terrain/hydrology summary and maps; English and Chinese downloads and previews.
 - Remove: password distribution and public online draft/upload steps, exact-five-page requirement, recruitment-route descriptions, and the condensed thirteen-page PDF as the full Design Brief.
-- Schedule: registration to 31 December 2026 and complete applications to 31 January 2027, both at 23:59 UTC; selection in February 2027. Interest registration is open; the application opening is still to be announced. Complete applications are returned by email. Registration is not eligibility approval or shortlisting. The form stays on the official website.
+- Schedule: registration to 31 December 2026 and complete applications to 31 January 2027, both at 23:59 UTC; selection in February 2027. Online applications are open. Complete applications are returned by email. Registration is not eligibility approval or shortlisting. The form stays on the official website.
 
 The AI Agent track retains its independent node rules; the institution track's eleven topics are not replaced by the Agent's three-group selection rule.

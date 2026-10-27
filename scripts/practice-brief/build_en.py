@@ -66,7 +66,7 @@ table(['Item','Requirement'],[
 ['Location and site','San Juan Province, in the Andean foothills of western Argentina. Competition area: approximately 1,656 km².'],
 ['Early works area','Fixed pilots: agrivoltaic fields 01–03 (13.9 km²) and the Phase 1 living quarter (2.48 km², outline only). XCITY delivers both; proposals connect to them without redesigning them.'],
 ['Participation','Registration is free. All applicants follow the same application requirements, eligibility review and selection criteria.'],
-['Stage 1','Apply on the official website when the call opens, then return the emailed application form with evidence and initial ideas of up to 10 pages. Eligibility is checked before ideas, experience and team are assessed to select five teams.'],
+['Stage 1','Apply online, then return the emailed qualification application form with evidence and initial ideas of up to 10 pages. Eligibility is checked before ideas, experience and team are assessed to select five teams.'],
 ['Stage 2','The five shortlisted teams develop full proposals after appointment and receipt of the brief and common site information package. Briefings and Q&A will be online.'],
 ['Honoraria and award','Each valid Stage 2 submission earns US$50,000. One winner receives an additional US$50,000. Total: US$300,000.'],
 ['Further services','Any subsequent design commission, fees and rights to adapt or implement the work will be negotiated under a separate agreement.']],[115,627],y=184,size=9.6,minh=41)
@@ -252,13 +252,13 @@ table(['Requirement','Evidence'],[
 para('Credentials establish professional standing. References, the proposed team and initial ideas of up to 10 pages inform selection. All information must be truthful and verifiable. Disclose relationships or interests involving the organiser or panel members.',50,518,742,8.5,GRAY)
 #26
 base('14 · COMPETITION PROCEDURE','Registration and email application')
-para('Official registration: xcityus.github.io/xcity-ai-competition/practice.html#apply',50,139,742,11,INK)
+para('Apply online: xcityus.github.io/xcity-ai-competition/practice.html#apply',50,139,742,11,INK)
 c.linkURL('https://xcityus.github.io/xcity-ai-competition/practice.html#apply',(50,H-167,792,H-137))
 for i,(a,b) in enumerate([
-('Register interest','The call is not open yet. Leave the institution, country or jurisdiction, contact and email on the official practice page. No attachments are required.'),
-('Receive the application form','Once applications open, apply on the official practice page. We will email the application form and material requirements to the address provided.'),
+('Apply online','Applications are open. Complete institution, country or jurisdiction, contact and email on the official practice page. No attachments are needed in this form.'),
+('Receive the application form','We will email the qualification application form and materials checklist to the address provided. Complete the form and gather the applicable evidence and initial ideas.'),
 ('Reply with the form and materials','Complete the emailed form. Attach registration evidence or registry URL, applicable professional evidence or an explanation, team and portfolio or project references, and an ideas PDF of up to 10 pages. Reply to competition@xcity.ai.'),
-('Stage-one review','Register by 31 December 2026, 23:59 UTC. Return the complete form and materials by 31 January 2027, 23:59 UTC. Five teams are selected in February 2027. Registration alone does not complete stage one or mean shortlisting.')]):
+('Stage-one review','Apply online by 31 December 2026, 23:59 UTC. Return the complete form and materials by 31 January 2027, 23:59 UTC. Five teams are selected in February 2027. Completing the online form alone does not complete stage one or mean shortlisting.')]):
  y=207+i*76;txt(f'0{i+1}',50,y,18,GRAY);txt(a,93,y,12,INK);para(b,93,y+25,699,9.6)
 para('Ordinary electronic copies or scans are accepted; no notarisation is requested. Follow the attachment instructions in the application email. Contact: competition@xcity.ai.',50,526,742,8,GRAY)
 #27
@@ -297,7 +297,7 @@ para('Site information, answers and amendments will be issued through a common c
 #31
 base('CONTACT','Contact')
 txt('XCITY',50,193,32,INK);txt('International Masterplanning and Urban Design Competition',50,254,17)
-para('Register interest on the official practice page. When applications open, apply there and return the emailed form with supporting materials. All applicants follow the same application requirements, eligibility review and selection criteria. Common documents, clarifications and notices are issued through the official competition channels. Contact the competition team below for questions.',50,325,650,12)
+para('Online applications are open on the official practice page. Apply there and return the emailed qualification application form with supporting materials. All applicants follow the same application requirements, eligibility review and selection criteria. Common documents, clarifications and notices are issued through the official competition channels. Contact the competition team below for questions.',50,325,650,12)
 para('Online application: xcityus.github.io/xcity-ai-competition/practice.html#apply',50,414,742,10)
 c.linkURL('https://xcityus.github.io/xcity-ai-competition/practice.html#apply',(50,H-434,792,H-412))
 txt('Email:',50,465,10,GRAY);txt('competition@xcity.ai',83,463,12,INK);c.linkURL('mailto:competition@xcity.ai',(83,H-460,333,H-440))
