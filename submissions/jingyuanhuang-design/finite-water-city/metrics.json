@@ -2,180 +2,183 @@
   "metrics": [
     {
       "key": "master_area_km2",
-      "value": 40.5893,
+      "value": 13.4142,
       "unit": "km2",
       "evidence": "computed",
-      "computed_from": "geometry/master_area.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "site_coverage_pct",
-      "value": 0.397,
+      "value": 5.384,
       "unit": "%",
       "evidence": "computed",
-      "computed_from": "geometry/buildings.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "gfa_m2",
-      "value": 311343.1,
+      "value": 1612768.4,
       "unit": "m2",
       "evidence": "computed",
-      "computed_from": "geometry/buildings.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "far",
-      "value": 0.0077,
+      "value": 0.1202,
       "unit": "ratio",
       "evidence": "computed",
-      "computed_from": "geometry/buildings.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "open_space_pct",
-      "value": 17.382,
+      "value": 5.834,
       "unit": "%",
       "evidence": "computed",
-      "computed_from": "geometry/land_use.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "human_machine_interfaces",
-      "value": 7,
+      "value": 2,
       "unit": "count",
       "evidence": "computed",
-      "computed_from": "geometry/movement.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "shaded_pedestrian_pct",
-      "value": 84.429,
+      "value": 0.0,
       "unit": "%",
       "evidence": "computed",
-      "computed_from": "geometry/movement.geojson"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "structure_km2",
       "value": {
-        "agri_production": 481.567,
-        "energy_compute": 186.111,
-        "industry": 1.081,
-        "living": 26.634,
-        "port": 2.165,
-        "reserve": 959.128
+        "agri_production": 355.373,
+        "energy_compute": 392.519,
+        "industry": 238.299,
+        "living": 235.201,
+        "port": 227.629,
+        "reserve": 226.187
       },
       "unit": "km2",
       "evidence": "computed",
-      "computed_from": "geometry/structure.geojson"
-    },
-    {
-      "key": "hourly_cfe_match_pct",
-      "value": 62.432,
-      "unit": "%",
-      "evidence": "computed",
-      "assumption": "A-ENERGY",
-      "computed_from": "tools/hourly_dispatch.csv",
-      "note": "Fraction of 8760 hours with zero unmatched grid import; synthetic scenario, not measured performance"
-    },
-    {
-      "key": "peak_it_load_mw",
-      "value": 12,
-      "unit": "MW",
-      "evidence": "assumed",
-      "assumption": "A-COOL"
-    },
-    {
-      "key": "annual_water_demand_m3",
-      "value": 1000000,
-      "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-WATER"
-    },
-    {
-      "key": "water_domestic_m3",
-      "value": 140160,
-      "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-RATES"
-    },
-    {
-      "key": "water_compute_m3",
-      "value": 1576.8,
-      "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-COOL"
-    },
-    {
-      "key": "water_agriculture_m3",
-      "value": 778263.2,
-      "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-RATES"
-    },
-    {
-      "key": "water_landscape_m3",
-      "value": 20000,
-      "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-RETURN"
-    },
-    {
-      "key": "water_industry_m3",
-      "value": 60000,
-      "unit": "m3/yr",
-      "evidence": "assumed",
-      "assumption": "A-RETURN"
-    },
-    {
-      "key": "wue_l_per_kwh",
-      "value": 0.02,
-      "unit": "L/kWh",
-      "evidence": "assumed",
-      "assumption": "A-COOL"
-    },
-    {
-      "key": "pue",
-      "value": 1.25,
-      "unit": "ratio",
-      "evidence": "assumed",
-      "assumption": "A-COOL"
-    },
-    {
-      "key": "water_reuse_pct",
-      "value": 20,
-      "unit": "%",
-      "evidence": "assumed",
-      "assumption": "A-RETURN"
-    },
-    {
-      "key": "waste_heat_reuse_pct",
-      "value": 5,
-      "unit": "%",
-      "evidence": "assumed",
-      "assumption": "A-HEAT"
-    },
-    {
-      "key": "jobs_phase1",
-      "value": 1200,
-      "unit": "jobs",
-      "evidence": "declared",
-      "note": "Programme staffing across six work groups; see section 6"
+      "computed_from": "Current canonical geometry; system overlays overlap and are not summed as a base land account"
     },
     {
       "key": "residents_phase1",
-      "value": 2400,
-      "unit": "persons",
+      "value": 7040.0,
+      "unit": "people",
       "evidence": "declared",
-      "note": "960 units times assumed household size 2.5"
+      "note": "2.5 people per designed dwelling; conditional occupancy, not observed demand"
     },
     {
       "key": "dwellings_phase1",
-      "value": 960,
-      "unit": "units",
+      "value": 2816,
+      "unit": "dwellings",
       "evidence": "declared",
-      "note": "96 residential bars with ten dwellings each"
+      "note": "Geometry-linked dwelling design capacity"
     },
     {
-      "key": "machine_traffic_rule",
-      "value": "separated",
-      "unit": "enum",
+      "key": "jobs_phase1",
+      "value": 783,
+      "unit": "jobs",
       "evidence": "declared",
-      "note": "Separate public paths and regional/service corridors; 7 registered gated interfaces"
+      "note": "Uncontracted job-space design scenario"
+    },
+    {
+      "key": "annual_water_demand_m3",
+      "value": 382711,
+      "unit": "m3/year",
+      "evidence": "declared",
+      "note": "New programme gross demand scenario; existing fixed demand is additional and unverified"
+    },
+    {
+      "key": "annual_fresh_requirement_m3",
+      "value": 409590,
+      "unit": "m3/year",
+      "evidence": "declared",
+      "note": "Scenario after reuse substitution and assumed losses; not a secured water right"
+    },
+    {
+      "key": "residents_all_phases",
+      "value": 25600.0,
+      "unit": "people",
+      "evidence": "declared",
+      "note": "Full-build-out scenario"
+    },
+    {
+      "key": "dwellings_all_phases",
+      "value": 10240,
+      "unit": "dwellings",
+      "evidence": "declared",
+      "note": "Full-build-out capacity"
+    },
+    {
+      "key": "jobs_all_phases",
+      "value": 4461,
+      "unit": "jobs",
+      "evidence": "declared",
+      "note": "Design capacity, not signed jobs"
+    }
+  ],
+  "status": "public_design_preview",
+  "phase_accounts": "phasing_programme.json",
+  "resource_scenarios": [
+    {
+      "phase": 1,
+      "water_gross_m3_y": 382711,
+      "reclaimed_substitution_m3_y": 14080,
+      "fresh_requirement_m3_y": 409590,
+      "water_components": {
+        "domestic": 308352.0,
+        "public_services": 64240.0,
+        "industry": 5872.500000000001,
+        "trial_irrigation": 0,
+        "pv_cleaning": 4000,
+        "cooling": 246.54
+      },
+      "it_peak_mw": 2,
+      "pv_mwp": 16,
+      "school_places": 1080,
+      "school_need_assumed": 1056,
+      "fixed_pilot_and_quarter": "Demand unknown and additional; source rights not supplied"
+    },
+    {
+      "phase": 2,
+      "water_gross_m3_y": 795314,
+      "reclaimed_substitution_m3_y": 80557,
+      "fresh_requirement_m3_y": 794174,
+      "water_components": {
+        "domestic": 590424.0,
+        "public_services": 123005.0,
+        "industry": 19867.500000000004,
+        "trial_irrigation": 53596.72529282634,
+        "pv_cleaning": 8000,
+        "cooling": 420.48
+      },
+      "it_peak_mw": 4,
+      "pv_mwp": 33,
+      "school_places": 2160,
+      "school_need_assumed": 2022,
+      "fixed_pilot_and_quarter": "Demand unknown and additional; source rights not supplied"
+    },
+    {
+      "phase": 3,
+      "water_gross_m3_y": 1454775,
+      "reclaimed_substitution_m3_y": 104797,
+      "fresh_requirement_m3_y": 1499976,
+      "water_components": {
+        "domestic": 1121280.0,
+        "public_services": 233600.0,
+        "industry": 33457.5,
+        "trial_irrigation": 53596.72529282634,
+        "pv_cleaning": 12000,
+        "cooling": 840.96
+      },
+      "it_peak_mw": 8,
+      "pv_mwp": 53,
+      "school_places": 4320,
+      "school_need_assumed": 3840,
+      "fixed_pilot_and_quarter": "Demand unknown and additional; source rights not supplied"
     }
   ]
 }

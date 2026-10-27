@@ -1,0 +1,6 @@
+{
+  "input_sha256": "4363a7295d527a092ce2c45b74fc2f1ce4ed865d6e9596741ac531743786813a",
+  "renderer_sha256": "35181de5d4166b7fbcc05eba27464c36501be2819507547d5ef3a0c61f0c43db",
+  "rendering_assumption": "Building platforms referenced to maximum sampled corner elevation to prevent clipping; grading/plinths are conceptual and require civil design. Explicit PV rows follow source east-west alignments.",
+  "scene_policy": "No procedural vegetation, PV or entourage; PV rows are explicit V9 assets. Four new open canopies and two pedestrian links are declared V10 details; capacity unchanged."
+}

@@ -6,8 +6,8 @@
   "published": [
     {
       "path": "submissions/jingyuanhuang-design/finite-water-city",
-      "reviewed_package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
-      "published_at": "2026-10-26",
+      "reviewed_package_sha256": "ab11a4eb2344f492918e63b4bfe7213104cb5abddb540ab5ae0ac9ff82349a8c",
+      "published_at": "2026-10-27",
       "featured": false,
       "design_content_review": "not_assessed",
       "administrative_refresh": {
@@ -16,7 +16,7 @@
         "previous_publication_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
         "note": "Source-map and English-display refresh only. No design content approval is implied."
       },
-      "publication_basis": "Organiser-authorised public display. Current source maps and English deliverables refreshed; independent design review not assessed."
+      "publication_basis": "Explicit owner/maintainer authorisation for V11 public preview, including coordinated diagrams and a table-free A0. Automatic checks are not passed; independent design content not assessed."
     },
     {
       "path": "submissions/jingyuanhuang-design/everyday-city",

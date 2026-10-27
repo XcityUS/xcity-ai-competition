@@ -1,100 +1,70 @@
 {
   "assumptions": [
     {
-      "id": "A-WATER",
-      "topic": "Water envelope",
-      "value": "1,000,000 m3/year gross use: 840,000 new freshwater plus 200,000 internally reclaimed water; not an awarded abstraction right. 40,000 m3/year upstream distribution loss; 800,000 fresh reaches uses.",
-      "basis": "No supplied water right or supply design. Reuse is an internal transfer. Construction requires lawful reliable fresh supply."
+      "id": "V11-01",
+      "topic": "Design scenario and verification",
+      "value": "2.5 residents per dwelling at full occupancy",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-PILOT",
-      "topic": "Existing pilot accounting",
-      "value": "600,000 m3/year of agriculture envelope provisionally reserved for existing pilot; owner metering must replace this before operation. No fixed arrays, plants or grazing arrangements changed.",
-      "basis": "Existing use is unmetered here. Higher verified demand reduces new discretionary uses first; existing operations remain unchanged."
+      "id": "V11-02",
+      "topic": "Design scenario and verification",
+      "value": "Residential bars: 24 dwellings in 2880 m2 GFA; terraces: 8 dwellings in 960 m2 GFA",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-RATES",
-      "topic": "Domestic and new agriculture",
-      "value": "2,400 residents at 160 L/person/day = 140,160 m3/year; new irrigation 170,000 m3/year; panel washing 8,263.2 m3/year. Total agriculture including pilot 778,263.2 m3/year.",
-      "basis": "Assumed rates, not local measurements. New irrigation is capped at 30 ha plus nursery; reserved farmland is not all irrigated."
+      "id": "V11-03",
+      "topic": "Design scenario and verification",
+      "value": "Mixed-use building: 20 dwellings in upper 2400 m2; 70 design jobs in lower 2400 m2",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-COOL",
-      "topic": "Cooling basis",
-      "value": "Average IT 9 MW (12 MW for 12 hours, 6 MW for 12 hours); annual IT 78,840 MWh. PUE 1.25; site WUE 0.02 L/kWh; annual compute water 1,576.8 m3.",
-      "basis": "Closed-loop chip cooling with dry heat rejection and air-cooled mechanical trim; WUE includes makeup and facility uses, no evaporative tower. Performance targets require supplier confirmation at 44 C."
+      "id": "V11-04",
+      "topic": "Design scenario and verification",
+      "value": "Education demand 15% of residents; 360 places per 2160 m2 wing; operations and local standards to verify",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-ENERGY",
-      "topic": "Hourly energy scenario",
-      "value": "40 MW PV; synthetic annual capacity factor 25%; 480 MWh battery, 75 MW converter, 95% efficiency each direction; 216 MWh delivered reserve held for 72 hours at 3 MW critical load. Grid import capacity assumed 30 MW; no export.",
-      "basis": "Illustrative 8760-hour sinusoidal profile, 22% seasonal variation and three dust days each 60 days. No site weather series, tariff or connection offer supplied. tools/energy.py is reproducible, not validated forecasting."
+      "id": "V11-05",
+      "topic": "Design scenario and verification",
+      "value": "School/block terrain screen uses 60 m DEM; housing blocks over median 3.5% or P95 8% held for terrain review",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-RETURN",
-      "topic": "Reuse mass balance",
-      "value": "200,000 m3/year treated reuse: 100,000 domestic return + 50,000 industrial return + 50,000 captured agricultural drainage; dispatched 180,000 agriculture and 20,000 landscape. Of annual 840,000 fresh input, 40,000 is distribution loss and 800,000 terminal consumption/losses.",
-      "basis": "Assumed recoverable returns require treatment, disinfection and salinity checks. No rain or condensate yield credited. Concentrates require contained handling and licensed removal."
+      "id": "V11-06",
+      "topic": "Design scenario and verification",
+      "value": "Water 120 L/resident/day + 25 L/resident/day services; employment water 25 L/job/day for 300 days; losses 10%; sewage recovery 65%",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-SHORT",
-      "topic": "30 percent gross-use reduction",
-      "value": "From 1,000,000 to 700,000 m3/year: landscape 20,000 cut; new irrigation and washing 178,263.2 cut; industry 40,000 cut; domestic/community nonessential use 61,736.8 cut. Existing pilot 600,000 and compute makeup 1,576.8 protected.",
-      "basis": "Gross-use shortage specified by brief, distinct from fresh-water shortage. Domestic/community residual is 78,423.2 m3/year (89.52 L/person/day including communal uses), an emergency assumption requiring verified essential-use sufficiency; if insufficient, secure emergency import or defer occupancy rather than deprive essential use."
+      "id": "V11-07",
+      "topic": "Design scenario and verification",
+      "value": "Compute cooling WUE 0.02 L/kWh, PUE 1.25, no credited heat reuse; independent nearby production receiver remains a later optional trial",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-FLOOD",
-      "topic": "Screening buffers",
-      "value": "Existing permanent buildings retain conservative exclusion of mapped flood band plus 30 m and channels plus 150 m. Whole-site flood-sensitive screening is shown separately from mountain/flow corridors; it is not a confirmed legal no-build boundary.",
-      "basis": "Screening offsets, not hydraulic standards. Minor washes and external inflows are missing; ground survey and 2D modelling required."
+      "id": "V11-08",
+      "topic": "Design scenario and verification",
+      "value": "Annual IT energy after Phase 1 uses 60% utilisation scenario; Phase 1 uses the explicit synthetic dispatch",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-SEISMIC",
-      "topic": "Structural concept",
-      "value": "One to three storeys; regular reinforced concrete frames and ductile walls, braced light roofs; conceptual separation gaps 100 mm minimum subject to drift calculation; design reference INPRES-CIRSOC 103 Part I 2018 with applicable addenda to be confirmed by local engineer.",
-      "basis": "No soil class, spectra or geotechnical report supplied. Geometry is urban design, not structural certification."
+      "id": "V11-09",
+      "topic": "Design scenario and verification",
+      "value": "Job totals are floor-space/programme capacity, not existing or contracted employment; household livelihood verification gates actual housing release",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-ACCESS",
-      "topic": "Access allowance",
-      "value": "Retire the arbitrary 80 km external road allowance. Regional RN40 approach shown as unverified directional context; internal candidate corridors are measured in the V3 GeoJSON. Actual external route, easements and cost remain phase-one prerequisites.",
-      "basis": "Actual route, easements and crossings unresolved. The nearest-site distance is not the settlement access length. Phase one requires funded access."
+      "id": "V11-10",
+      "topic": "Design scenario and verification",
+      "value": "Fixed arrays keep forage grass/jojoba; their demand is unknown and not silently counted as zero",
+      "basis": "Declared design scenario; not an organiser-confirmed parameter"
     },
     {
-      "id": "A-SHADE",
-      "topic": "Heat and light",
-      "value": "Shade share counts actual proposed roof coverage; thermal comfort requires testing. 2200 K shielded night lighting; no facade uplighting; 10 lux route design target subject to engineering.",
-      "basis": "No outdoor comfort simulation or illuminance survey available. Enclosed cooled refuges are required at 44 C; shade is not a guarantee of safe conditions."
-    },
-    {
-      "id": "A-HOUSING",
-      "topic": "Population and employment",
-      "value": "960 dwellings; 2.5 persons per dwelling = 2,400 residents; 1,200 local jobs. 1,080 resident workers, 120 inbound specialists; 120 resident remote workers, 600 children/students, 300 retired adults, 300 unpaid carers or job-seekers.",
-      "basis": "Programme targets, not labour-market estimates. Resident categories sum to 2,400; remote-worker income, pensions and household transfers support nonlocal-job households."
-    },
-    {
-      "id": "A-HEAT",
-      "topic": "Heat receivers",
-      "value": "Drying cooperative accepts annual 3,942 MWh usable heat, equal to 5% of IT electricity, via a metered insulated loop and temperature-lift heat pump if required.",
-      "basis": "Declared contracted-use target; herb drying and process wash-water preheat are named receivers, not assumed continuous demand. Reject all unused heat to air; no winter greenhouse demand invented."
-    },
-    {
-      "id": "A-GROWTH",
-      "topic": "Growth ceiling",
-      "value": "Four conditional town reservations A/B/C/D plus the fixed first living quarter; only the detailed first neighbourhood has 960 proposed dwellings / 2400 residents. No 7200-person whole-site ceiling or final regional population is asserted.",
-      "basis": "A deliberately modest ceiling, not a population forecast. Reservations confer no development entitlement."
-    },
-    {
-      "id": "A-COST",
-      "topic": "Funding order",
-      "value": "Infrastructure escrow and 12 months public-service operating reserve precede dwelling occupation; compute concession pays annual fixed community service charge independent of runtime.",
-      "basis": "No prices or financing terms supplied; these are proposed enforceable contract conditions, not existing agreements."
-    },
-    {
-      "id": "A-V3",
-      "topic": "Whole-site planning screen",
-      "value": "300m block-mean DEM; mountain/steep screen slope >=5% or elevation >=850m; channel research corridor 150m each side; four towns and two compute reservations clipped by conservative flood and terrain screens.",
-      "basis": "Regional design choices, not statutory restrictions; the source flood band is a sensitivity screen. Eastern gateway strict-screen candidate about 2.64 km2 remains below the brief's about 7km2 intent. Regional capacity, fixed living-quarter demand, water sources, road engineering and resources remain unverified."
+      "id": "V11-green",
+      "topic": "Landscape graphics",
+      "value": "Green lines indicate proposed walking/shade and dry-landscape roles, not existing planted forest or a new irrigation commitment",
+      "basis": "Current geometry plus reviews/presentation-v11/concept-layers.geojson"
     }
   ]
 }

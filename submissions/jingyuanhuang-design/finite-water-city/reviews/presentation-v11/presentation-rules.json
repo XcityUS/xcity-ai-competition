@@ -1,0 +1,16 @@
+{
+  "a0": {
+    "no_spreadsheet_grids": true,
+    "required": [
+      "Finished local hero with explicit extent",
+      "Whole-site boundary, named zoning and road framework",
+      "Coordinated composite or separate diagrams for land use, road hierarchy, public centres and landscape links",
+      "Three node aerial/eye pairs with stable IDs",
+      "Spatial phasing diagram and concise stage statements"
+    ],
+    "detailed_accounts": "Retain in the main booklet and technical records; never remove underlying numbers"
+  },
+  "language": "English public presentation",
+  "landscape": "Green lines indicate proposed dry-landscape and walking/shade roles; do not imply installed trees, lawns or available irrigation",
+  "human_direction": "2026-10-27: no Excel-like A0 table; restore road, zoning and greenery diagrams, either composite or as coordinated panels."
+}

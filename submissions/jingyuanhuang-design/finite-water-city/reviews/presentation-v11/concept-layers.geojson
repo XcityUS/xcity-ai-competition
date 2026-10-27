@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.2215607707686,
+            -31.123052631006075
+          ],
+          [
+            -68.22173891250226,
+            -31.101218827766733
+          ]
+        ]
+      },
+      "properties": {
+        "id": "walk-shade-opportunity-0",
+        "kind": "concept_overlay",
+        "basis": "Existing street alignment; proposed walking/shade opportunity, not existing continuous tree cover",
+        "capacity_credit": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.22920799134016,
+            -31.111188671430515
+          ],
+          [
+            -68.20404129740776,
+            -31.111035690464735
+          ]
+        ]
+      },
+      "properties": {
+        "id": "walk-shade-opportunity-1",
+        "kind": "concept_overlay",
+        "basis": "Existing street alignment; proposed walking/shade opportunity, not existing continuous tree cover",
+        "capacity_credit": 0
+      }
+    }
+  ]
+}

@@ -377,10 +377,10 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 10,
     "gates_pass": false,
-    "design_content_review_status": "not_recorded_for_current_version",
-    "package_sha256": "e989166479031d03d7a505ed67f04aea12af570d74e56863ef9aca4aa0361934",
+    "design_content_review_status": "not_assessed",
+    "package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
     "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
-    "published": false,
+    "published": true,
     "featured": true,
     "example": false,
     "cover": "media/district-finished.png",
@@ -775,6 +775,14 @@ window.XCITY_SUBMISSIONS = [
         1597
       ],
       [
+        "tools/__pycache__/design_graphics.cpython-312.pyc",
+        11373
+      ],
+      [
+        "tools/__pycache__/draw_design.cpython-312.pyc",
+        41780
+      ],
+      [
         "tools/a0_presentation.py",
         4282
       ],
@@ -830,13 +838,13 @@ window.XCITY_SUBMISSIONS = [
     "path": "submissions/jingyuanhuang-design/finite-water-city",
     "title": "AGUA FINITA | The Finite Water City",
     "title_zh": "",
-    "summary": "A whole-site network of four conditional towns, productive energy/compute corridors and an eastern gateway grows only with verified water. Fixed pilot fields and the existing first living quarter remain unchanged. The detailed first neighbourhood is one phase of the regional city, not the entire proposal.",
+    "summary": "A six-region whole-site planning proposal combines a continuous residential district, a compact public centre, independent compute/repair and solar facilities, conditional agricultural services and an eastern gateway. V11 restores explicit zoning, road hierarchy, public anchors and dry-landscape links. Public preview; resource rights and professional design verification remain open.",
     "language": "en",
     "agent": "Codex",
     "model": "GPT-6 family (serving version unavailable)",
     "autonomy": "human_directed",
     "automatic_compliance_note": "Gate results are not design approval; design content review is recorded separately.",
-    "state": "ready_for_review",
+    "state": "draft",
     "nodes": [
       "A03",
       "B03",
@@ -861,120 +869,128 @@ window.XCITY_SUBMISSIONS = [
     ],
     "example_status": null,
     "gates_total": 12,
-    "gates_passed": 11,
+    "gates_passed": 7,
     "gates_pass": false,
     "design_content_review_status": "not_assessed",
-    "package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
-    "reviewed_package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
+    "package_sha256": "ab11a4eb2344f492918e63b4bfe7213104cb5abddb540ab5ae0ac9ff82349a8c",
+    "reviewed_package_sha256": "ab11a4eb2344f492918e63b4bfe7213104cb5abddb540ab5ae0ac9ff82349a8c",
     "published": true,
     "featured": false,
     "example": false,
-    "cover": "media/city-aerial.png",
-    "thesis": "The city grows only when its water ledger can support another complete neighbourhood.",
+    "cover": "media/v11-A03-aerial.png",
+    "thesis": "Continuous living districts and independent production grow through verified water, access and funded public services.",
     "files": [
+      [
+        "CURRENT_DESIGN_REVIEW.md",
+        1184
+      ],
       [
         "README.md",
         1644
       ],
       [
         "assumptions.json",
-        7964
+        3218
       ],
       [
         "changelog.md",
-        3901
+        5309
       ],
       [
         "compliance_matrix.json",
         2986
       ],
       [
+        "context/access_studies.geojson",
+        12232
+      ],
+      [
         "design_depth_matrix.json",
-        6794
+        7275
       ],
       [
         "drawings/a0-board.pdf",
-        3812337
+        8240909
       ],
       [
         "drawings/a3-booklet.pdf",
-        4480412
+        17194396
       ],
       [
         "drawings/a3-technical-appendix.pdf",
-        4582686
+        11485064
       ],
       [
         "drawings/presentation-index.json",
-        1083
+        1726
       ],
       [
         "figures/fig-01-structure.png",
-        579025
+        511877
       ],
       [
         "figures/fig-02-master-plan.png",
-        332111
+        161436
       ],
       [
         "figures/fig-03-land-use-density.png",
-        157860
+        229712
       ],
       [
         "figures/fig-04-movement.png",
-        280475
+        145924
       ],
       [
         "figures/fig-05-open-space-water.png",
-        280850
+        137042
       ],
       [
         "figures/fig-06-phasing.png",
-        393820
+        46572
       ],
       [
         "figures/fig-07-metrics.png",
-        171460
+        309873
       ],
       [
         "figures/fig-08-node-location.png",
-        493146
+        85247
       ],
       [
         "figures/node-A03-aerial.png",
-        2712964
+        3260404
       ],
       [
         "figures/node-A03-eye.png",
-        2236377
+        2402037
       ],
       [
         "figures/node-A03-plan.png",
-        24473
+        56857
       ],
       [
         "figures/node-B03-aerial.png",
-        2433435
+        4017141
       ],
       [
         "figures/node-B03-eye.png",
-        1891249
+        2739145
       ],
       [
         "figures/node-B03-plan.png",
-        29510
+        29025
       ],
       [
         "figures/node-C03-aerial.png",
-        2685571
+        4105947
       ],
       [
         "figures/node-C03-eye.png",
-        1822167
+        2539754
       ],
       [
         "figures/node-C03-plan.png",
-        41403
+        49850
       ],
       [
         "figures/stamp.json",
@@ -982,39 +998,39 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "geometry/buildings.geojson",
-        52310
+        713003
       ],
       [
         "geometry/land_use.geojson",
-        96980
+        479838
       ],
       [
         "geometry/master_area.geojson",
-        125772
+        25113
       ],
       [
         "geometry/movement.geojson",
-        27908
+        106597
       ],
       [
         "geometry/nodes.geojson",
-        4028
+        3504
       ],
       [
         "geometry/phasing.geojson",
-        112448
+        174355
       ],
       [
         "geometry/structure.geojson",
-        10950817
+        99639
       ],
       [
         "image_provenance.json",
-        33794
+        18243
       ],
       [
         "manifest.json",
-        7861
+        5515
       ],
       [
         "media/A03-aerial-v6.png",
@@ -1053,8 +1069,36 @@ window.XCITY_SUBMISSIONS = [
         3448358
       ],
       [
+        "media/v11-A03-aerial.png",
+        3260404
+      ],
+      [
+        "media/v11-A03-eye.png",
+        2402037
+      ],
+      [
+        "media/v11-B03-aerial.png",
+        4017141
+      ],
+      [
+        "media/v11-B03-eye.png",
+        2739145
+      ],
+      [
+        "media/v11-C03-aerial.png",
+        4105947
+      ],
+      [
+        "media/v11-C03-eye.png",
+        2539754
+      ],
+      [
+        "media/v11-city-overall.png",
+        3740002
+      ],
+      [
         "metrics.json",
-        4284
+        5500
       ],
       [
         "pages/access.png",
@@ -1069,8 +1113,12 @@ window.XCITY_SUBMISSIONS = [
         134188
       ],
       [
+        "phasing_programme.json",
+        37562
+      ],
+      [
         "proposal.md",
-        29342
+        4348
       ],
       [
         "renders/A03-aerial.png",
@@ -1129,12 +1177,264 @@ window.XCITY_SUBMISSIONS = [
         2302
       ],
       [
+        "renders/v11-A03-aerial.png",
+        3514216
+      ],
+      [
+        "renders/v11-A03-eye.png",
+        1603984
+      ],
+      [
+        "renders/v11-B03-aerial.png",
+        3300728
+      ],
+      [
+        "renders/v11-B03-eye.png",
+        1664092
+      ],
+      [
+        "renders/v11-C03-aerial.png",
+        3359702
+      ],
+      [
+        "renders/v11-C03-eye.png",
+        1338148
+      ],
+      [
+        "renders/v11-city-overall.png",
+        2137827
+      ],
+      [
         "report/copyright_statement.md",
         553
       ],
       [
         "report/proposal.html",
-        36842
+        8063
+      ],
+      [
+        "reviews/complete-city-v9/00-whole-site-regions.png",
+        465156
+      ],
+      [
+        "reviews/complete-city-v9/01-whole-site.png",
+        426385
+      ],
+      [
+        "reviews/complete-city-v9/02-complete-city-plan.png",
+        237610
+      ],
+      [
+        "reviews/complete-city-v9/03-planning-structure.png",
+        231821
+      ],
+      [
+        "reviews/complete-city-v9/04-functional-programme.png",
+        177583
+      ],
+      [
+        "reviews/complete-city-v9/05-streets-and-mobility.png",
+        276094
+      ],
+      [
+        "reviews/complete-city-v9/06-ecology-landscape.png",
+        269024
+      ],
+      [
+        "reviews/complete-city-v9/07-land-use-and-accounts.png",
+        229712
+      ],
+      [
+        "reviews/complete-city-v9/08-public-space-and-services.png",
+        217860
+      ],
+      [
+        "reviews/complete-city-v9/09-overall-axonometric.png",
+        669720
+      ],
+      [
+        "reviews/complete-city-v9/10-A03-plan-section.png",
+        178595
+      ],
+      [
+        "reviews/complete-city-v9/11-B03-plan-section.png",
+        179919
+      ],
+      [
+        "reviews/complete-city-v9/12-C03-plan-section.png",
+        197355
+      ],
+      [
+        "reviews/complete-city-v9/13-phasing-and-capacities.png",
+        181941
+      ],
+      [
+        "reviews/complete-city-v9/14-resource-and-delivery.png",
+        309873
+      ],
+      [
+        "reviews/complete-city-v9/README.md",
+        2653
+      ],
+      [
+        "reviews/complete-city-v9/a0-planning-review.jpg",
+        1004205
+      ],
+      [
+        "reviews/complete-city-v9/agua-finita-v9-a0-planning-review.pdf",
+        237937
+      ],
+      [
+        "reviews/complete-city-v9/agua-finita-v9-complete-city-review.pdf",
+        1108382
+      ],
+      [
+        "reviews/complete-city-v9/assumptions.json",
+        1168
+      ],
+      [
+        "reviews/complete-city-v9/geometry/assets.geojson",
+        28101
+      ],
+      [
+        "reviews/complete-city-v9/geometry/buildings.geojson",
+        331986
+      ],
+      [
+        "reviews/complete-city-v9/geometry/districts.geojson",
+        25742
+      ],
+      [
+        "reviews/complete-city-v9/geometry/land_use.geojson",
+        191985
+      ],
+      [
+        "reviews/complete-city-v9/geometry/master_area.geojson",
+        25113
+      ],
+      [
+        "reviews/complete-city-v9/geometry/movement.geojson",
+        43423
+      ],
+      [
+        "reviews/complete-city-v9/geometry/nodes.geojson",
+        1075
+      ],
+      [
+        "reviews/complete-city-v9/geometry/phasing.geojson",
+        67978
+      ],
+      [
+        "reviews/complete-city-v9/geometry/planning_regions.geojson",
+        35905
+      ],
+      [
+        "reviews/complete-city-v9/geometry/structure.geojson",
+        2960606
+      ],
+      [
+        "reviews/complete-city-v9/metrics.json",
+        39129
+      ],
+      [
+        "reviews/complete-city-v9/phase1-synthetic-dispatch.csv",
+        333381
+      ],
+      [
+        "reviews/complete-city-v9/phasing_programme.json",
+        35972
+      ],
+      [
+        "reviews/complete-city-v9/qa.json",
+        1736
+      ],
+      [
+        "reviews/complete-city-v9/regional-programme.json",
+        2618
+      ],
+      [
+        "reviews/complete-city-v9/source-freeze.json",
+        1800
+      ],
+      [
+        "reviews/complete-city-v9/view-registry.json",
+        6704
+      ],
+      [
+        "reviews/district-structure-v8/01-whole-site-hierarchy.png",
+        464628
+      ],
+      [
+        "reviews/district-structure-v8/02-district-relationships.png",
+        390323
+      ],
+      [
+        "reviews/district-structure-v8/03-continuous-residential-district.png",
+        320123
+      ],
+      [
+        "reviews/district-structure-v8/04-movement-and-interfaces.png",
+        382531
+      ],
+      [
+        "reviews/district-structure-v8/05-service-hierarchy-and-phasing.png",
+        315249
+      ],
+      [
+        "reviews/district-structure-v8/README.md",
+        4810
+      ],
+      [
+        "reviews/district-structure-v8/access-gate.geojson",
+        377
+      ],
+      [
+        "reviews/district-structure-v8/access-studies.geojson",
+        12232
+      ],
+      [
+        "reviews/district-structure-v8/agua-finita-v8-district-structure.pdf",
+        799904
+      ],
+      [
+        "reviews/district-structure-v8/districts.geojson",
+        2769
+      ],
+      [
+        "reviews/district-structure-v8/image_provenance.json",
+        2513
+      ],
+      [
+        "reviews/district-structure-v8/nodes.geojson",
+        2367
+      ],
+      [
+        "reviews/district-structure-v8/qa.json",
+        5610
+      ],
+      [
+        "reviews/district-structure-v8/release-candidates.geojson",
+        2478
+      ],
+      [
+        "reviews/district-structure-v8/requirements-review-ac96714.md",
+        4413
+      ],
+      [
+        "reviews/district-structure-v8/residential-backbone.geojson",
+        2619
+      ],
+      [
+        "reviews/district-structure-v8/service-reservations.geojson",
+        2692
+      ],
+      [
+        "reviews/district-structure-v8/source-freeze.json",
+        1782
+      ],
+      [
+        "reviews/district-structure-v8/whole-site-roles.geojson",
+        7555972
       ],
       [
         "reviews/full-v6/01-site-reading.png",
@@ -1293,6 +1593,398 @@ window.XCITY_SUBMISSIONS = [
         1514
       ],
       [
+        "reviews/presentation-v10/README.md",
+        2430
+      ],
+      [
+        "reviews/presentation-v10/camera-registry.json",
+        4035
+      ],
+      [
+        "reviews/presentation-v10/controls/A03-aerial.png",
+        3514216
+      ],
+      [
+        "reviews/presentation-v10/controls/A03-eye.png",
+        1603984
+      ],
+      [
+        "reviews/presentation-v10/controls/B03-aerial.png",
+        3300728
+      ],
+      [
+        "reviews/presentation-v10/controls/B03-eye.png",
+        1664092
+      ],
+      [
+        "reviews/presentation-v10/controls/C03-aerial.png",
+        3359702
+      ],
+      [
+        "reviews/presentation-v10/controls/C03-eye.png",
+        1338148
+      ],
+      [
+        "reviews/presentation-v10/controls/city-overall.png",
+        2137827
+      ],
+      [
+        "reviews/presentation-v10/drawings/A03-detail-plan.png",
+        56857
+      ],
+      [
+        "reviews/presentation-v10/drawings/B03-detail-plan.png",
+        29025
+      ],
+      [
+        "reviews/presentation-v10/drawings/C03-detail-plan.png",
+        49850
+      ],
+      [
+        "reviews/presentation-v10/drawings/a0-preview.png",
+        2565161
+      ],
+      [
+        "reviews/presentation-v10/drawings/agua-finita-v10-a0.pdf",
+        7635262
+      ],
+      [
+        "reviews/presentation-v10/drawings/agua-finita-v10-booklet.pdf",
+        16655259
+      ],
+      [
+        "reviews/presentation-v10/drawings/agua-finita-v10-technical-appendix.pdf",
+        11485064
+      ],
+      [
+        "reviews/presentation-v10/drawings/cover-preview.png",
+        2275540
+      ],
+      [
+        "reviews/presentation-v10/drawings/locator.png",
+        85247
+      ],
+      [
+        "reviews/presentation-v10/drawings/phase.png",
+        46572
+      ],
+      [
+        "reviews/presentation-v10/drawings/presentation-index.json",
+        1707
+      ],
+      [
+        "reviews/presentation-v10/drawings/productive-phase.png",
+        18790
+      ],
+      [
+        "reviews/presentation-v10/drawings/productive.png",
+        18901
+      ],
+      [
+        "reviews/presentation-v10/drawings/urban.png",
+        53350
+      ],
+      [
+        "reviews/presentation-v10/drawings/whole-site-regions.png",
+        276584
+      ],
+      [
+        "reviews/presentation-v10/generation-record.json",
+        14422
+      ],
+      [
+        "reviews/presentation-v10/image_provenance.json",
+        17260
+      ],
+      [
+        "reviews/presentation-v10/media/A03-aerial.png",
+        3260404
+      ],
+      [
+        "reviews/presentation-v10/media/A03-eye.png",
+        2402037
+      ],
+      [
+        "reviews/presentation-v10/media/B03-aerial.png",
+        4017141
+      ],
+      [
+        "reviews/presentation-v10/media/B03-eye.png",
+        2739145
+      ],
+      [
+        "reviews/presentation-v10/media/C03-aerial.png",
+        4105947
+      ],
+      [
+        "reviews/presentation-v10/media/C03-eye.png",
+        2539754
+      ],
+      [
+        "reviews/presentation-v10/media/city-overall.png",
+        3740002
+      ],
+      [
+        "reviews/presentation-v10/renderer-v10.js",
+        30988
+      ],
+      [
+        "reviews/presentation-v10/scene-fingerprint.json",
+        593
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/assets.geojson",
+        28101
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/buildings.geojson",
+        333930
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/districts.geojson",
+        25742
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/land_use.geojson",
+        190451
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/master_area.geojson",
+        410
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/movement.geojson",
+        43918
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/nodes.geojson",
+        1529
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/phasing.geojson",
+        66460
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/planning_regions.geojson",
+        35905
+      ],
+      [
+        "reviews/presentation-v10/scene/geometry/structure.geojson",
+        2875917
+      ],
+      [
+        "reviews/presentation-v10/scene/manifest.json",
+        176
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/A03-aerial.png",
+        3514216
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/A03-eye.png",
+        1603984
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/B03-aerial.png",
+        3300728
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/B03-eye.png",
+        1664092
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/C03-aerial.png",
+        3359702
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/C03-eye.png",
+        1338148
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/city-core-aerial.png",
+        2902109
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/city-overall.png",
+        2137827
+      ],
+      [
+        "reviews/presentation-v10/scene/renders/stamp.json",
+        1707
+      ],
+      [
+        "reviews/presentation-v10/scene/visual/index.html",
+        1342546
+      ],
+      [
+        "reviews/presentation-v10/trials/A03-aerial-first-pass.png",
+        3498568
+      ],
+      [
+        "reviews/presentation-v10/trials/B03-aerial-first-pass.png",
+        3812743
+      ],
+      [
+        "reviews/presentation-v10/trials/C03-aerial-first-pass.png",
+        4007038
+      ],
+      [
+        "reviews/presentation-v10/trials/city-overall-first-pass.png",
+        3955896
+      ],
+      [
+        "reviews/presentation-v10/visual-review.json",
+        2800
+      ],
+      [
+        "reviews/presentation-v11/camera-registry.json",
+        4035
+      ],
+      [
+        "reviews/presentation-v11/concept-layers.geojson",
+        1179
+      ],
+      [
+        "reviews/presentation-v11/controls/A03-aerial.png",
+        3514216
+      ],
+      [
+        "reviews/presentation-v11/controls/A03-eye.png",
+        1603984
+      ],
+      [
+        "reviews/presentation-v11/controls/B03-aerial.png",
+        3300728
+      ],
+      [
+        "reviews/presentation-v11/controls/B03-eye.png",
+        1664092
+      ],
+      [
+        "reviews/presentation-v11/controls/C03-aerial.png",
+        3359702
+      ],
+      [
+        "reviews/presentation-v11/controls/C03-eye.png",
+        1338148
+      ],
+      [
+        "reviews/presentation-v11/controls/city-overall.png",
+        2137827
+      ],
+      [
+        "reviews/presentation-v11/drawings/A03-detail-plan.png",
+        56857
+      ],
+      [
+        "reviews/presentation-v11/drawings/B03-detail-plan.png",
+        29025
+      ],
+      [
+        "reviews/presentation-v11/drawings/C03-detail-plan.png",
+        49850
+      ],
+      [
+        "reviews/presentation-v11/drawings/agua-finita-v11-a0.pdf",
+        8240909
+      ],
+      [
+        "reviews/presentation-v11/drawings/agua-finita-v11-booklet.pdf",
+        17194396
+      ],
+      [
+        "reviews/presentation-v11/drawings/agua-finita-v11-technical-appendix.pdf",
+        11485064
+      ],
+      [
+        "reviews/presentation-v11/drawings/diagram-composite.png",
+        161436
+      ],
+      [
+        "reviews/presentation-v11/drawings/diagram-green.png",
+        137042
+      ],
+      [
+        "reviews/presentation-v11/drawings/diagram-movement.png",
+        145924
+      ],
+      [
+        "reviews/presentation-v11/drawings/diagram-whole-site-composite.png",
+        511877
+      ],
+      [
+        "reviews/presentation-v11/drawings/locator.png",
+        85247
+      ],
+      [
+        "reviews/presentation-v11/drawings/phase.png",
+        46572
+      ],
+      [
+        "reviews/presentation-v11/drawings/presentation-index.json",
+        1726
+      ],
+      [
+        "reviews/presentation-v11/drawings/productive-phase.png",
+        18790
+      ],
+      [
+        "reviews/presentation-v11/drawings/productive.png",
+        18901
+      ],
+      [
+        "reviews/presentation-v11/drawings/urban.png",
+        53350
+      ],
+      [
+        "reviews/presentation-v11/drawings/whole-site-regions.png",
+        276584
+      ],
+      [
+        "reviews/presentation-v11/generation-record.json",
+        14422
+      ],
+      [
+        "reviews/presentation-v11/image_provenance.json",
+        17260
+      ],
+      [
+        "reviews/presentation-v11/media/A03-aerial.png",
+        3260404
+      ],
+      [
+        "reviews/presentation-v11/media/A03-eye.png",
+        2402037
+      ],
+      [
+        "reviews/presentation-v11/media/B03-aerial.png",
+        4017141
+      ],
+      [
+        "reviews/presentation-v11/media/B03-eye.png",
+        2739145
+      ],
+      [
+        "reviews/presentation-v11/media/C03-aerial.png",
+        4105947
+      ],
+      [
+        "reviews/presentation-v11/media/C03-eye.png",
+        2539754
+      ],
+      [
+        "reviews/presentation-v11/media/city-overall.png",
+        3740002
+      ],
+      [
+        "reviews/presentation-v11/presentation-rules.json",
+        868
+      ],
+      [
+        "reviews/presentation-v11/scene-fingerprint.json",
+        593
+      ],
+      [
         "reviews/presentation-v4/AGUA-FINITA-presentation-v4.pdf",
         13298504
       ],
@@ -1331,6 +2023,94 @@ window.XCITY_SUBMISSIONS = [
       [
         "reviews/presentation-v4/reference-adaptation.json",
         761
+      ],
+      [
+        "reviews/redesign-v7/01-whole-site.png",
+        519143
+      ],
+      [
+        "reviews/redesign-v7/02-extents-and-nodes.png",
+        233108
+      ],
+      [
+        "reviews/redesign-v7/03-first-town.png",
+        233424
+      ],
+      [
+        "reviews/redesign-v7/04-three-nodes.png",
+        245545
+      ],
+      [
+        "reviews/redesign-v7/05-phasing-ledger.png",
+        290728
+      ],
+      [
+        "reviews/redesign-v7/06-water-and-operation.png",
+        241857
+      ],
+      [
+        "reviews/redesign-v7/07-audit.png",
+        270969
+      ],
+      [
+        "reviews/redesign-v7/README.md",
+        5316
+      ],
+      [
+        "reviews/redesign-v7/agua-finita-v7-planning-review.pdf",
+        223645
+      ],
+      [
+        "reviews/redesign-v7/candidate-blocks.geojson",
+        19935
+      ],
+      [
+        "reviews/redesign-v7/candidate-buildings.geojson",
+        58627
+      ],
+      [
+        "reviews/redesign-v7/candidate-canopies.geojson",
+        3010
+      ],
+      [
+        "reviews/redesign-v7/candidate-extents.geojson",
+        62121
+      ],
+      [
+        "reviews/redesign-v7/candidate-metrics.json",
+        1613
+      ],
+      [
+        "reviews/redesign-v7/candidate-movement.geojson",
+        12586
+      ],
+      [
+        "reviews/redesign-v7/candidate-nodes.geojson",
+        2377
+      ],
+      [
+        "reviews/redesign-v7/image_provenance.json",
+        2987
+      ],
+      [
+        "reviews/redesign-v7/node-links.geojson",
+        1546
+      ],
+      [
+        "reviews/redesign-v7/phasing-programme-draft.json",
+        6817
+      ],
+      [
+        "reviews/redesign-v7/regional-corridors.geojson",
+        13905
+      ],
+      [
+        "reviews/redesign-v7/review-status.json",
+        760
+      ],
+      [
+        "reviews/redesign-v7/source-freeze.json",
+        949
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.png",
@@ -1465,12 +2245,36 @@ window.XCITY_SUBMISSIONS = [
         4660
       ],
       [
+        "tools/__pycache__/concept_diagrams_v11.cpython-312.pyc",
+        18634
+      ],
+      [
+        "tools/__pycache__/presentation_v10.cpython-312.pyc",
+        12731
+      ],
+      [
+        "tools/__pycache__/publish_v10.cpython-312.pyc",
+        50041
+      ],
+      [
+        "tools/complete_city_v9.py",
+        60670
+      ],
+      [
+        "tools/concept_diagrams_v11.py",
+        8989
+      ],
+      [
         "tools/cover-render-v5-provenance.json",
         2312
       ],
       [
         "tools/design.py",
         9430
+      ],
+      [
+        "tools/district_structure_v8.py",
+        30342
       ],
       [
         "tools/energy.py",
@@ -1521,8 +2325,28 @@ window.XCITY_SUBMISSIONS = [
         5770
       ],
       [
+        "tools/presentation_v10.py",
+        7709
+      ],
+      [
+        "tools/publish_preview_v11.py",
+        20099
+      ],
+      [
+        "tools/publish_v10.py",
+        27627
+      ],
+      [
+        "tools/publish_v11.py",
+        30331
+      ],
+      [
         "tools/reconcile_shade.py",
         1250
+      ],
+      [
+        "tools/redesign_v7.py",
+        32135
       ],
       [
         "tools/refine_views.py",
@@ -1558,7 +2382,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "visual/index.html",
-        2338955
+        1342542
       ]
     ]
   }

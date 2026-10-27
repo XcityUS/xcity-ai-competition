@@ -1,202 +1,208 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "rows": [
     {
       "id": "whole_site",
       "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/structure.geojson",
-        "geometry/movement.geojson",
-        "geometry/phasing.geojson"
+        "geometry/structure.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
         "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     },
     {
-      "id": "phase_one",
+      "id": "overall_layout",
       "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/master_area.geojson",
-        "geometry/land_use.geojson",
-        "geometry/buildings.geojson",
-        "geometry/movement.geojson"
+        "geometry/master_area.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 9."
+        "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     },
     {
       "id": "urban_design",
       "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/buildings.geojson",
-        "geometry/movement.geojson",
-        "geometry/land_use.geojson"
+        "geometry/buildings.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 7."
+        "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     },
     {
       "id": "nodes",
-      "status": "documented",
+      "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/nodes.geojson",
-        "geometry/buildings.geojson",
-        "geometry/movement.geojson"
+        "geometry/nodes.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 10."
+        "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     },
     {
-      "id": "node:B03",
-      "status": "documented",
+      "id": "node:{{node_1}}",
+      "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/nodes.geojson",
-        "geometry/buildings.geojson",
-        "geometry/movement.geojson"
+        "geometry/nodes.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 10."
+        "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     },
     {
-      "id": "node:C03",
-      "status": "documented",
+      "id": "node:{{node_2}}",
+      "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/nodes.geojson",
-        "geometry/buildings.geojson",
-        "geometry/movement.geojson"
+        "geometry/nodes.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 10."
+        "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     },
     {
-      "id": "node:A03",
-      "status": "documented",
+      "id": "node:{{node_3}}",
+      "status": "partial",
       "drawings": [
-        "drawings/a3-booklet.pdf"
+        "drawings/a3-booklet.pdf",
+        "drawings/a0-board.pdf"
       ],
       "geometry": [
-        "geometry/nodes.geojson",
-        "geometry/buildings.geojson",
-        "geometry/movement.geojson"
+        "geometry/nodes.geojson"
       ],
-      "metrics": [
-        "master_area_km2",
-        "residents_phase1",
-        "annual_water_demand_m3"
-      ],
+      "metrics": [],
       "explanation": {
         "path": "proposal.md",
-        "heading": "## 10."
+        "heading": "## 2."
       },
       "gaps": [
         {
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
-      ]
+      ],
+      "decision": "Continuous living districts, independent production and a whole-site regional structure with explicit road/landscape diagrams",
+      "scope": {
+        "extent": "Issued whole site and registered local enlargements/views",
+        "phase": "Conditional phases 1-3"
+      }
     }
   ]
 }

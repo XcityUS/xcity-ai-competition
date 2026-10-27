@@ -1,11 +1,11 @@
 {
   "script": "scripts/self_check_submission.py",
-  "script_version": "1.2.0",
-  "checked_at": "2026-10-27T05:21:58+00:00",
+  "script_version": "1.3.0",
+  "checked_at": "2026-10-27T13:36:05+00:00",
   "package": "submissions/jingyuanhuang-design/finite-water-city",
-  "package_sha256": "9098d45cc8602fa3dfd62a960b193bbb3a383c41e05874d366c9df3006e67b8d",
+  "package_sha256": "3d9a0529bb1ad6b5e9857252b260219e6b65f36ceef8386246b54b9d2b16d903",
   "gates_total": 12,
-  "gates_passed": 11,
+  "gates_passed": 7,
   "pass": false,
   "automated_compliance_status": "failed",
   "design_content_review": {
@@ -14,14 +14,16 @@
   },
   "design_depth_assessment": {
     "automatic": {
-      "status": "references_consistent",
-      "errors": []
+      "status": "failed",
+      "errors": [
+        "matrix rows must exactly cover four levels and every selected node, without duplicates"
+      ]
     },
     "content_review": {
       "status": "not_assessed",
       "questions": [
         "Settlements, production, protection, transport, resources and growth",
-        "Life and production remain complete if later phases never happen",
+        "How the complete city is organised, its capacities and construction sequence",
         "How the master layout forms streets, blocks and public life",
         "Location, users, spatial organisation and operation"
       ]
@@ -31,45 +33,52 @@
       "items": [
         {
           "level": "whole_site",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         },
         {
-          "level": "phase_one",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "level": "overall_layout",
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         },
         {
           "level": "urban_design",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         },
         {
           "level": "nodes",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         },
         {
-          "level": "node:B03",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "level": "node:{{node_1}}",
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         },
         {
-          "level": "node:C03",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "level": "node:{{node_2}}",
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         },
         {
-          "level": "node:A03",
-          "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-          "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-          "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+          "level": "node:{{node_3}}",
+          "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+          "next_step": "Verify with source operators and licensed specialists before implementation",
+          "responsible": "Jingyuan Huang and named specialist team to be appointed",
+          "kind": "organiser_data"
         }
       ]
     },
@@ -80,7 +89,7 @@
         "content_status": "not_assessed"
       },
       {
-        "id": "phase_one",
+        "id": "overall_layout",
         "entrant_status": "partial",
         "content_status": "not_assessed"
       },
@@ -91,97 +100,116 @@
       },
       {
         "id": "nodes",
-        "entrant_status": "documented",
+        "entrant_status": "partial",
         "content_status": "not_assessed"
       },
       {
-        "id": "node:B03",
-        "entrant_status": "documented",
+        "id": "node:{{node_1}}",
+        "entrant_status": "partial",
         "content_status": "not_assessed"
       },
       {
-        "id": "node:C03",
-        "entrant_status": "documented",
+        "id": "node:{{node_2}}",
+        "entrant_status": "partial",
         "content_status": "not_assessed"
       },
       {
-        "id": "node:A03",
-        "entrant_status": "documented",
+        "id": "node:{{node_3}}",
+        "entrant_status": "partial",
         "content_status": "not_assessed"
       }
     ],
-    "migration": "v1_compatible_use_v2_for_next_revision"
+    "migration": "current_v2"
+  },
+  "whole_site_plan_assessment": {
+    "automatic_status": "geometry_records_consistent",
+    "errors": [],
+    "content_review": "not_assessed"
   },
   "further_work": {
     "status": "declared",
     "items": [
       {
         "level": "whole_site",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       },
       {
-        "level": "phase_one",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "level": "overall_layout",
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       },
       {
         "level": "urban_design",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       },
       {
         "level": "nodes",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       },
       {
-        "level": "node:B03",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "level": "node:{{node_1}}",
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       },
       {
-        "level": "node:C03",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "level": "node:{{node_2}}",
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       },
       {
-        "level": "node:A03",
-        "missing": "Reliable water rights, road/hydraulic engineering and existing living-quarter demand remain unverified; wider expansion reserve lacks complete block-level design.",
-        "next_step": "Obtain source/operator data and specialist survey; verify each extension before committing construction or population.",
-        "responsible": "Jingyuan Huang with licensed water, transport, civil and urban-design specialists"
+        "level": "node:{{node_3}}",
+        "missing": "Independent engineering, water/access rights, livelihoods and detailed crossing validation remain outstanding",
+        "next_step": "Verify with source operators and licensed specialists before implementation",
+        "responsible": "Jingyuan Huang and named specialist team to be appointed",
+        "kind": "organiser_data"
       }
     ]
   },
   "recomputed": {
-    "master_area_km2": 40.5893,
-    "site_coverage_pct": 0.397,
-    "gfa_m2": 311343.1,
-    "far": 0.0077,
-    "open_space_pct": 17.382,
-    "human_machine_interfaces": 7,
-    "shaded_pedestrian_pct": 84.429,
+    "master_area_km2": 13.4142,
+    "site_coverage_pct": 5.384,
+    "gfa_m2": 1612768.4,
+    "far": 0.1202,
+    "open_space_pct": 5.834,
+    "human_machine_interfaces": 2,
+    "shaded_pedestrian_pct": 0.0,
     "structure_km2": {
-      "agri_production": 481.567,
-      "energy_compute": 186.111,
-      "industry": 1.081,
-      "living": 26.634,
-      "port": 2.165,
-      "reserve": 959.128
+      "agri_production": 355.373,
+      "energy_compute": 392.519,
+      "industry": 238.299,
+      "living": 235.201,
+      "port": 227.629,
+      "reserve": 226.187
     }
   },
   "gates": [
     {
       "id": "GATE-G1-PACKAGE",
       "title": "Package completeness and schema validity",
-      "pass": true,
-      "messages": [],
+      "pass": false,
+      "messages": [
+        "movement.geojson feature 11: a Point must have kind = interface",
+        "movement.geojson feature 132: network None is not one of ['machine', 'people', 'shared']",
+        "movement.geojson feature 133: network None is not one of ['machine', 'people', 'shared']",
+        "movement.geojson feature 134: network None is not one of ['machine', 'people', 'shared']",
+        "movement.geojson feature 135: network None is not one of ['machine', 'people', 'shared']",
+        "report/proposal.html is out of date - run scripts/render_proposal_html.py"
+      ],
       "notes": [
         "English is required for the public title, narrative, summary, booklet, drawing labels and legends; the language of raster images needs human review."
       ]
@@ -204,8 +232,13 @@
     {
       "id": "GATE-G4-RECONCILE",
       "title": "Declared metrics reconcile with submitted geometry (2% tolerance)",
-      "pass": true,
-      "messages": []
+      "pass": false,
+      "messages": [
+        "land_use.geojson features [173] lie outside the master area"
+      ],
+      "notes": [
+        "1 buildings lie outside the master area; their treatment follows the declared metric version; v2 clips master-area metrics and reports outside buildings separately"
+      ]
     },
     {
       "id": "GATE-G5-OFFLINE",
@@ -222,8 +255,26 @@
     {
       "id": "GATE-G7-EVIDENCE",
       "title": "Every quantitative claim carries an evidence tag",
-      "pass": true,
-      "messages": []
+      "pass": false,
+      "messages": [
+        "metric master_area_km2: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric site_coverage_pct: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric gfa_m2: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric far: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric open_space_pct: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric human_machine_interfaces: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric shaded_pedestrian_pct: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "metric structure_km2: computed_from 'Current canonical geometry; system overlays overlap and are not summed as a base land account' does not exist",
+        "M1 requires metric hourly_cfe_match_pct in metrics.json",
+        "M2 requires metric peak_it_load_mw in metrics.json",
+        "M3 requires metric water_domestic_m3 in metrics.json",
+        "M3 requires metric water_compute_m3 in metrics.json",
+        "M3 requires metric water_agriculture_m3 in metrics.json",
+        "M3 requires metric water_landscape_m3 in metrics.json",
+        "M3 requires metric water_industry_m3 in metrics.json",
+        "M4 requires metric wue_l_per_kwh in metrics.json",
+        "M7 requires metric machine_traffic_rule in metrics.json"
+      ]
     },
     {
       "id": "GATE-G8-DISCLOSURE",
@@ -237,6 +288,8 @@
       "pass": true,
       "messages": [],
       "notes": [
+        "Fixed agrivoltaic pilot context is labelled living in structure.geojson; expected agri_production. Context classification requires content review; do not redesign its interior.",
+        "1 buildings are inside the DEM-derived flood-sensitive band - listed for the reviewers; say in proposal.md how they are protected",
         "Content review by the organiser completes this gate (prohibited items B1-B5).",
         "DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone."
       ]
@@ -244,8 +297,49 @@
     {
       "id": "GATE-G10-FIGURES",
       "title": "Required figures present and current; every render declared",
-      "pass": true,
-      "messages": []
+      "pass": false,
+      "messages": [
+        "drawings are out of date with the package (geometry, metrics, assumptions, sources, image provenance or manifest) - run scripts/make_figures.py",
+        "figures/fig-01-structure.png was changed after make_figures.py drew it",
+        "figures/fig-02-master-plan.png was changed after make_figures.py drew it",
+        "figures/fig-03-land-use-density.png was changed after make_figures.py drew it",
+        "figures/fig-04-movement.png was changed after make_figures.py drew it",
+        "figures/fig-05-open-space-water.png was changed after make_figures.py drew it",
+        "figures/fig-06-phasing.png was changed after make_figures.py drew it",
+        "figures/fig-07-metrics.png was changed after make_figures.py drew it",
+        "figures/fig-08-node-location.png was changed after make_figures.py drew it",
+        "figures/node-B03-plan.png was changed after make_figures.py drew it",
+        "figures/node-B03-aerial.png was changed after make_figures.py drew it",
+        "figures/node-B03-eye.png was changed after make_figures.py drew it",
+        "figures/node-C03-plan.png was changed after make_figures.py drew it",
+        "figures/node-C03-aerial.png was changed after make_figures.py drew it",
+        "figures/node-C03-eye.png was changed after make_figures.py drew it",
+        "figures/node-A03-plan.png was changed after make_figures.py drew it",
+        "figures/node-A03-aerial.png was changed after make_figures.py drew it",
+        "figures/node-A03-eye.png was changed after make_figures.py drew it",
+        "drawings/a3-booklet.pdf was changed after make_figures.py drew it",
+        "drawings/a3-technical-appendix.pdf was changed after make_figures.py drew it",
+        "drawings/presentation-index.json was changed after make_figures.py drew it",
+        "drawings/a0-board.pdf was changed after make_figures.py drew it",
+        "media/A03-aerial-v6.png is not registered in image_provenance.json",
+        "media/A03-eye-day.png is not registered in image_provenance.json",
+        "media/B03-aerial-v6.png is not registered in image_provenance.json",
+        "media/B03-eye-day.png is not registered in image_provenance.json",
+        "media/C03-aerial-v6.png is not registered in image_provenance.json",
+        "media/C03-eye-day.png is not registered in image_provenance.json",
+        "media/city-aerial.png is not registered in image_provenance.json",
+        "media/city-evening.png is not registered in image_provenance.json",
+        "media/cover-render-v5.png is not registered in image_provenance.json",
+        "visual/index.html is out of date with the geometry - run scripts/make_scene.py",
+        "renders/ are out of date with the geometry - run scripts/render_views.py",
+        "image_provenance media/v11-city-overall.png: control_image renders/v11-city-overall.png is not a render made by render_views.py",
+        "image_provenance media/v11-A03-aerial.png: control_image renders/v11-A03-aerial.png is not a render made by render_views.py",
+        "image_provenance media/v11-A03-eye.png: control_image renders/v11-A03-eye.png is not a render made by render_views.py",
+        "image_provenance media/v11-B03-aerial.png: control_image renders/v11-B03-aerial.png is not a render made by render_views.py",
+        "image_provenance media/v11-B03-eye.png: control_image renders/v11-B03-eye.png is not a render made by render_views.py",
+        "image_provenance media/v11-C03-aerial.png: control_image renders/v11-C03-aerial.png is not a render made by render_views.py",
+        "image_provenance media/v11-C03-eye.png: control_image renders/v11-C03-eye.png is not a render made by render_views.py"
+      ]
     },
     {
       "id": "GATE-G11-TRADEOFF",
@@ -258,10 +352,12 @@
       "title": "Design evidence and presentation packaging (quality not assessed automatically)",
       "pass": false,
       "messages": [
-        "Missing/invalid phasing_programme.json; use the template and provide actual phase/zone capacity and sequence data"
+        "matrix rows must exactly cover four levels and every selected node, without duplicates",
+        "presentation index/PDF cannot be read: unsupported presentation index"
       ],
       "notes": [
-        "Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review."
+        "Full-site base-zone coverage and explicit road classes are checked geometrically; useful district allocation, road connectivity/service, suitability and land-use decisions still require content review.",
+        "Checks whole-site base-zone coverage/overlap and explicit road classes, evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order; not readability, design adequacy or finished-image quality. Settlement hierarchy, coordinated city-system diagrams, the overall axonometric/birdseye view, system locations and scales, transport, resource infrastructure and phasing require independent design content review; diagram paths alone do not establish their usefulness or fidelity."
       ]
     }
   ]

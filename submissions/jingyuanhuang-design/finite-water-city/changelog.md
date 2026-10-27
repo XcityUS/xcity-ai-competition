@@ -30,3 +30,7 @@ Reference maps now read the open-seam closure boundary. The added junction slit 
 ## 2026-10-27 — V8 district-structure redesign / review stage
 
 Human rejected V7's miniature all-functions town and asked to continue with continuous residential districts and independent production siting. Withdraw V7 from recommendation and mark the submission draft. Add CURRENT_DESIGN_REVIEW.md and a separate V8 source-frozen geometry/PDF review. R is a continuous residential planning envelope; C is a compact mixed-use transition with a distinct first core; P is a separate production precinct. Recompute western-boundary access studies, freight exclusion, district accounts and full-cell source slope distributions. Retire V7 dwelling/population quotas and unverified heat credits. Current core geometry, old PDFs/images and stored gates remain historical until the full rebuild; no new final render, ready-package claim or website publication.
+
+## 2026-10-27 / V11 authorised public preview
+
+Human explicitly authorised website updating after reviewing the finished views, then required no spreadsheet-style A0 table and restored spatial diagrams. V11 publishes the current PDFs, registered images, current canonical geometry/phase scenarios and a current English statement. Whole-site zoning, road hierarchy, public centres and dry-landscape/shade links remain coordinated. Numeric accounts remain in the booklet/technical records. No design approval or manufactured automatic pass is claimed.

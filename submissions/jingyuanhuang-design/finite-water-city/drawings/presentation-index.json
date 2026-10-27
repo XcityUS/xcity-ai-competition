@@ -1,66 +1,99 @@
 {
-  "schema_version": 1,
-  "layout_version": 1,
-  "documents": {
-    "main": {
-      "path": "drawings/a3-booklet.pdf",
-      "pages": 31
-    },
-    "technical": {
-      "path": "drawings/a3-technical-appendix.pdf",
-      "pages": 11
-    }
-  },
+  "status": "design_presentation_review_not_final_submission",
+  "main_pages": 23,
   "sections": [
     {
-      "id": "whole_site",
-      "document": "main",
-      "pages": [
-        2
-      ]
+      "page": 1,
+      "section": "cover"
     },
     {
-      "id": "node_locator",
-      "document": "main",
-      "pages": [
-        6
-      ]
+      "page": 2,
+      "section": "whole_site_regions_and_road_framework"
     },
     {
-      "id": "node:A03",
-      "document": "main",
-      "pages": [
-        15
-      ]
+      "page": 3,
+      "section": "whole_site_framework"
     },
     {
-      "id": "node:B03",
-      "document": "main",
-      "pages": [
-        19
-      ]
+      "page": 4,
+      "section": "complete_urban_plan"
     },
     {
-      "id": "node:C03",
-      "document": "main",
-      "pages": [
-        23
-      ]
+      "page": 5,
+      "section": "overall_spatial_view"
     },
     {
-      "id": "phasing",
-      "document": "main",
-      "pages": [
-        27
-      ]
+      "page": 6,
+      "section": "planning_structure"
     },
     {
-      "id": "key_metrics",
-      "document": "main",
-      "pages": [
-        28
-      ]
+      "page": 7,
+      "section": "functional_programme"
+    },
+    {
+      "page": 8,
+      "section": "streets_mobility"
+    },
+    {
+      "page": 9,
+      "section": "ecology_landscape"
+    },
+    {
+      "page": 10,
+      "section": "land_use"
+    },
+    {
+      "page": 11,
+      "section": "public_space_services"
+    },
+    {
+      "page": 12,
+      "section": "overall_axonometric"
+    },
+    {
+      "page": 13,
+      "section": "shared_node_locator"
+    },
+    {
+      "page": 14,
+      "section": "node_A03_aerial"
+    },
+    {
+      "page": 15,
+      "section": "node_A03_eye_plan"
+    },
+    {
+      "page": 16,
+      "section": "node_B03_aerial"
+    },
+    {
+      "page": 17,
+      "section": "node_B03_eye_plan"
+    },
+    {
+      "page": 18,
+      "section": "node_C03_aerial"
+    },
+    {
+      "page": 19,
+      "section": "node_C03_eye_plan"
+    },
+    {
+      "page": 20,
+      "section": "phasing_map_and_totals"
+    },
+    {
+      "page": 21,
+      "section": "zone_phase_programme"
+    },
+    {
+      "page": 22,
+      "section": "resources_and_independent_operation"
+    },
+    {
+      "page": 23,
+      "section": "key_indicators"
     }
   ],
-  "note": "Page-order and file checks only; design quality and image/geometry agreement require independent review."
+  "technical_separate": true
 }

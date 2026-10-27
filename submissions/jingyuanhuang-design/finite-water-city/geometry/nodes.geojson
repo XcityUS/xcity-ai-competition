@@ -1,1 +1,143 @@
-{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-68.21830237564006, -31.162281352621267], [-68.21836532734793, -31.15461251604257], [-68.23252809028085, -31.154697705352717], [-68.23246627894567, -31.162366567552297], [-68.21830237564006, -31.162281352621267]]]}, "properties": {"node_id": "B03", "name": "Heat without thirst", "why": "Dry cooling and cooperative herb drying share a metered heat loop", "eye_from": [-68.22756221727151, -31.158998871295708], "eye_to": [-68.22839933764612, -31.15927456909503], "aerial_from": [-68.2151250978306, -31.165871062768723], "section": [[-68.23249718756807, -31.15853213760928], [-68.21833385450333, -31.15844693548919]], "section_b": [[-68.22538431976936, -31.162324154819128], [-68.2254467012934, -31.15465530537145]], "render_note": "Mineral plaster, pale aggregate, dry gravel, deep shade, accessible paths. No lawns, canals or lush forest. Children, elders and shift workers use the public spaces.", "day": [{"time": "06:00", "people": "Morning market and shaded walk", "machines": "Freight remains in service yard"}, {"time": "14:00", "people": "Cooled refuge opens; wash closes on flood warning", "machines": "Flexible compute sheds load"}, {"time": "21:00", "people": "Kitchen and sheltered paths remain open", "machines": "Deliveries transfer at gates"}]}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-68.23051007398743, -31.144760764217498], [-68.2305647157375, -31.137994106172833], [-68.24629842301104, -31.138087129826587], [-68.24624489833587, -31.144853812564428], [-68.23051007398743, -31.144760764217498]]]}, "properties": {"node_id": "C03", "name": "The absent river", "why": "Dry channel stays open and paths retreat to high ground", "eye_from": [-68.23221898668383, -31.140981451839803], "eye_to": [-68.23263347860338, -31.141615507303303], "aerial_from": [-68.22733384893053, -31.148350802589444], "section": [[-68.24627166293138, -31.14147047209546], [-68.2305373971675, -31.141377436095542]], "section_b": [[-68.23837747703442, -31.144807528638694], [-68.23843156024974, -31.138040858183697]], "render_note": "Mineral plaster, pale aggregate, dry gravel, deep shade, accessible paths. No lawns, canals or lush forest. Children, elders and shift workers use the public spaces.", "day": [{"time": "06:00", "people": "Morning market and shaded walk", "machines": "Freight remains in service yard"}, {"time": "14:00", "people": "Cooled refuge opens; wash closes on flood warning", "machines": "Flexible compute sheds load"}, {"time": "21:00", "people": "Kitchen and sheltered paths remain open", "machines": "Deliveries transfer at gates"}]}}, {"type": "Feature", "geometry": {"type": "Polygon", "coordinates": [[[-68.21713978928729, -31.15054489345288], [-68.21716574005465, -31.147387133452696], [-68.22104708467143, -31.14741066783967], [-68.22102126253792, -31.15056843075458], [-68.21713978928729, -31.15054489345288]]]}, "properties": {"node_id": "A03", "name": "The right to shade", "why": "Public kitchen and library make a commons without ornamental water", "eye_from": [-68.219253411601, -31.148662974085173], "eye_to": [-68.21861289495453, -31.15001248285102], "aerial_from": [-68.21396286992444, -31.154134587224284], "section": [[-68.22103417411297, -31.148989549493287], [-68.21715276518181, -31.14896601364898]], "section_b": [[-68.21908052534309, -31.150556676724545], [-68.2191064117936, -31.147398915265182]], "render_note": "Mineral plaster, pale aggregate, dry gravel, deep shade, accessible paths. No lawns, canals or lush forest. Children, elders and shift workers use the public spaces.", "day": [{"time": "06:00", "people": "Morning market and shaded walk", "machines": "Freight remains in service yard"}, {"time": "14:00", "people": "Cooled refuge opens; wash closes on flood warning", "machines": "Flexible compute sheds load"}, {"time": "21:00", "people": "Kitchen and sheltered paths remain open", "machines": "Deliveries transfer at gates"}]}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.22263694464502,
+              -31.12612683325829
+            ],
+            [
+              -68.2226428292967,
+              -31.125405055997142
+            ],
+            [
+              -68.2234818461261,
+              -31.1254101155386
+            ],
+            [
+              -68.22347596782429,
+              -31.126131892943032
+            ],
+            [
+              -68.22263694464502,
+              -31.12612683325829
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "node_id": "A03",
+        "name": "Public space in heat and Zonda wind",
+        "phase": 1,
+        "official_topic": "Public space in heat and Zonda wind",
+        "eye_from": [
+          -68.22327824327063,
+          -31.12594122521075
+        ],
+        "eye_to": [
+          -68.22292658569216,
+          -31.125334586467638
+        ],
+        "place_name": "Market commons and climate refuge",
+        "why": "Tests engineered shade and daily public life at the town-level centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.21619288328961,
+              -31.1636219181588
+            ],
+            [
+              -68.21627456975607,
+              -31.153697546725958
+            ],
+            [
+              -68.23305990360772,
+              -31.15379861080226
+            ],
+            [
+              -68.23297996622755,
+              -31.16372302157172
+            ],
+            [
+              -68.21619288328961,
+              -31.1636219181588
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "node_id": "B03",
+        "name": "A compute campus and its waste heat",
+        "phase": 1,
+        "official_topic": "A compute campus and its waste heat",
+        "eye_from": [
+          -68.22678041596252,
+          -31.15837161817575
+        ],
+        "eye_to": [
+          -68.2280809370976,
+          -31.159723791585392
+        ],
+        "place_name": "Compute and repair precinct",
+        "why": "Tests controlled production, worker access, dry cooling and an honest uncredited heat-reuse claim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -68.24171825361506,
+              -31.120466034794095
+            ],
+            [
+              -68.24183299305436,
+              -31.1060303966549
+            ],
+            [
+              -68.22977454421155,
+              -31.105958898359063
+            ],
+            [
+              -68.22965798030772,
+              -31.120394495981724
+            ],
+            [
+              -68.24171825361506,
+              -31.120466034794095
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "node_id": "C03",
+        "name": "A seasonal river park",
+        "phase": 2,
+        "official_topic": "A seasonal river park",
+        "eye_from": [
+          -68.23458192426648,
+          -31.117130561465956
+        ],
+        "eye_to": [
+          -68.23655128210385,
+          -31.117412924958188
+        ],
+        "place_name": "Seasonal wash park",
+        "why": "Tests dry-season visitor access without blocking seasonal conveyance"
+      }
+    }
+  ]
+}
