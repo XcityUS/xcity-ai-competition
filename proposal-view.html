@@ -118,7 +118,7 @@ a{color:inherit;text-decoration:none}
 .nav-links a.live{color:var(--ink);display:inline-flex;align-items:center;gap:7px}
 .nav-links a.live::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);
   flex:none;box-shadow:0 0 0 3px rgba(201,169,97,.16)}
-.nav-right{display:flex;align-items:center;gap:var(--sp-4);flex:none}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:var(--sp-4);flex:none}
 .lang{font-size:var(--fs-sm);color:var(--muted);letter-spacing:.05em;cursor:pointer;
   border:1px solid var(--line-soft);padding:5px 10px;border-radius:2px;background:none;font-family:var(--sans)}
 .lang b{color:var(--ink);font-weight:500}
@@ -778,7 +778,7 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
 .nav .crumb .home{font-family:var(--mono);font-size:var(--fs-sm);letter-spacing:.2em;color:var(--muted)}
 .nav .crumb .home:hover{color:var(--gold)}
 .nav .crumb .sep{color:var(--line);font-size:var(--fs-sm)}
-@media(max-width:720px){.nav .tswitch,.nav .nav-links{display:none}.pt-table{table-layout:fixed;width:100%;min-width:0}.pt-table th{width:30%}.pt-table td,.pt-table th{word-break:break-word;overflow-wrap:anywhere}.nav .crumb{gap:6px}.nav .crumb .home,.nav .brand.call{letter-spacing:.08em}}
+@media(max-width:720px){.nav .tswitch,.nav .nav-links{display:none}.pt-table{table-layout:fixed;width:100%;min-width:0}.pt-table th{width:30%;white-space:normal}.pt-table td,.pt-table th{word-break:break-word;overflow-wrap:anywhere}.nav .crumb{gap:6px;min-width:0}.nav .crumb .home{flex-shrink:0}.nav .crumb .brand{min-width:0;white-space:normal;line-height:1.3}.nav .crumb .home,.nav .brand.call{letter-spacing:.08em}}
 
 [data-lang="es"] .zh-only,[data-lang="es"] .en-only{display:none}
 :root:not([data-lang]) .es-only,[data-lang="en"] .es-only,[data-lang="zh"] .es-only{display:none}
@@ -805,9 +805,9 @@ html{scroll-padding-top:calc(var(--pbar-h) + var(--gnav-h) + var(--nav-h) + var(
     if(d&&d.type==='xcity-lang'&&typeof d.lang==='string') set(d.lang)});
 })();
 (function(){
-  var links=[].slice.call(document.querySelectorAll('#anchors a'));
+  var links=[].slice.call(document.querySelectorAll('#anchors a[href^="#"]'));
   if(!links.length) return;
-  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){
     if(!e.isIntersecting)return;
     links.forEach(function(a,i){a.classList.toggle('on',secs[i]===e.target)})})},
@@ -851,8 +851,9 @@ Promise.all([j('manifest.json'),j('self_check.json'),j('metrics.json'),j('assump
   +'<div class="fact"><h3>'+L('Gives up','Renuncia','主动放弃')+'</h3><p><b>'+esc(t.objective)+'</b><br>'+esc(t.who_bears)+'</p></div>'
   +'<div class="fact"><h3>'+L('Depth','Profundidad','深化程度')+'</h3><p>'+L('Whole site · master design · nodes ','Todo el sitio · plan maestro · nodos ','整片场地 · 总体设计 · 节点 ')+esc((m.nodes||[]).join(', '))+'</p><p style="margin-top:6px;color:var(--muted)">'+esc(m.nodes_reason)+'</p></div>'
   +'<div class="fact"><h3>'+L('Who and how','Quién y cómo','谁、怎样做的')+'</h3><p>'+esc(au2.responsible_party)+'<br>'+esc(ag.name)+' · '+esc(ag.model)+'<br>'+esc(au.class)+'</p><p style="margin-top:6px;color:var(--muted)">'+esc(au.human_role)+'</p></div>'
-  +'<div class="fact"><h3>'+L('Gates','Controles','门禁')+'</h3><p>'+(sc?esc(sc.gates_passed+'/'+sc.gates_total)+(sc.pass?L(' passed',' superados',' 通过'):''):'-')+'</p></div>'
+  +'<div class="fact"><h3>'+L('Automatic compliance','Controles automáticos','自动合规检查')+'</h3><p>'+(sc?esc(sc.gates_passed+'/'+sc.gates_total)+(sc.pass?L(' passed',' superados',' 通过'):''):'-')+'</p></div>'
   +'</div>'
+  +'<p class="note">'+L('Automatic checks do not assess planning adequacy or grant design approval. Design content review is recorded separately.','Los controles automáticos no equivalen a la aprobación del diseño.','自动检查不证明总体规划充分，也不代表设计获批。设计内容评审另行记录。')+'</p>'
   +'<div class="tabs" role="tablist">'
   +tab('read','01',L('Read the scheme','Leer la propuesta','阅读方案','b'),'<span class="sm">'+L('The statement with its figures','La memoria con sus figuras','正文与配图')+'</span>')
   +tab('lib','02',L('All materials','Todos los materiales','浏览方案资料','b'),'<span class="sm">'+files.length+L(' files · ',' archivos · ',' 个文件 · ')+kinds.img+L(' images · ',' imágenes · ',' 图像 · ')+kinds.pdf+' PDF · '+kinds.data+L(' data',' datos',' 数据')+'</span>')

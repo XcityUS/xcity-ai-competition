@@ -17,6 +17,7 @@ import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import presentation
 import xcity_common as xc  # noqa: E402
 import self_check_submission as sc  # noqa: E402
 
@@ -46,7 +47,7 @@ def main():
     if not stale:
         st = xc.load_json(stamp_p)
         files = st.get("files") or {}
-        need = xc.REQUIRED_FIGURES + ["drawings/a3-booklet.pdf", "drawings/a0-board.pdf"]
+        need = xc.REQUIRED_FIGURES + ["drawings/a3-booklet.pdf", "drawings/a0-board.pdf"] + presentation.required_outputs(pkg)
         stale = (st.get("input_sha256") != xc.figure_input_hash(pkg) or any(r not in files for r in need)
                  or any(not os.path.exists(os.path.join(pkg, r)) or xc.sha256_file(os.path.join(pkg, r)) != h
                         for r, h in files.items()))
@@ -58,6 +59,7 @@ def main():
     r = sc.check(pkg, write=True)
     sc.report(r)
     if r["pass"]:
+        print("\nAutomatic checks passed; the package is ready for independent design review, not design approval.")
         print("\nready: open a pull request that changes only submissions/%s/%s/" % (login, slug))
     sys.exit(0 if r["pass"] else 1)
 

@@ -15,6 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import xcity_common as xc  # noqa: E402
+from node_selection import selection_errors  # noqa: E402
 
 GEOMETRY_NOTES = {
     "structure": "Scale 1, the whole site. Polygons covering the whole site at structural level. "
@@ -28,7 +29,7 @@ GEOMETRY_NOTES = {
     "movement": "LineStrings with properties.network: people | machine | shared, optional shaded: true|false, name. "
                 "Points with properties.kind: interface mark every at-grade human-machine interface (M6).",
     "phasing": "Polygons with properties.phase: 1 | 2 | 3, name, and trigger (observable condition) for phases 2 and 3.",
-    "nodes": "Exactly three Polygons, properties.node_id: N01-N10 (brief/site-package/nodes/design_nodes.json), "
+    "nodes": "Exactly three Polygons, one node per group, properties.node_id: N01-N10 (brief/site-package/nodes/design_nodes.json), "
              "name, why. Optional camera hints: eye_from [lon, lat], eye_to [lon, lat], aerial_from [lon, lat], "
              "aerial_height_m.",
 }
@@ -46,13 +47,13 @@ def main():
     ap.add_argument("--slug", required=True, help="lowercase-with-hyphens, 3-64 characters")
     ap.add_argument("--title", default="Untitled scheme")
     ap.add_argument("--nodes", nargs=3, default=["N01", "N02", "N03"], metavar="NXX",
-                    help="the three key nodes you will design (N01-N10)")
+                    help="one node from each group; see brief/site-package/nodes/design_nodes.json")
     a = ap.parse_args()
     if not re.match(r"^[a-z0-9][a-z0-9-]{2,63}$", a.slug):
         raise SystemExit("slug must be lowercase letters, digits and hyphens, 3-64 characters")
-    valid = {n["id"] for n in xc.site_json("nodes/design_nodes.json")["nodes"]}
-    if len(set(a.nodes)) != 3 or not set(a.nodes) <= valid:
-        raise SystemExit("--nodes needs three different ids from %s" % ", ".join(sorted(valid)))
+    errors = selection_errors(a.nodes)
+    if errors:
+        raise SystemExit("--nodes: " + " ".join(errors))
     pkg = os.path.join(xc.ROOT, "submissions", a.login, a.slug)
     if os.path.exists(pkg):
         raise SystemExit("already exists: %s" % os.path.relpath(pkg, xc.ROOT))
@@ -64,7 +65,7 @@ def main():
     for d in ("geometry", "figures", "drawings", "report", "media"):
         os.makedirs(os.path.join(pkg, d), exist_ok=True)
     for name in ("manifest.json", "metrics.json", "compliance_matrix.json", "assumptions.json", "sources.json",
-                 "image_provenance.json", "changelog.md"):
+                 "image_provenance.json", "changelog.md", "design_depth_matrix.json"):
         with open(os.path.join(tpl, name), encoding="utf-8") as f:
             text = fill(f.read(), ctx)
         with open(os.path.join(pkg, name), "w", encoding="utf-8") as f:
@@ -77,6 +78,9 @@ def main():
         text = fill(f.read(), ctx)
     with open(os.path.join(pkg, "report", "copyright_statement.md"), "w", encoding="utf-8") as f:
         f.write(text)
+    with open(os.path.join(tpl, "presentation.template.md"), encoding="utf-8") as f:
+        with open(os.path.join(pkg, "report", "presentation-plan.md"), "w", encoding="utf-8") as out:
+            out.write(f.read())
     for name, note in GEOMETRY_NOTES.items():
         xc.write_json(os.path.join(pkg, "geometry", name + ".geojson"),
                       {"type": "FeatureCollection", "name": name, "_note": note, "features": []})

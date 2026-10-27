@@ -29,6 +29,24 @@ For this call:
 
 ---
 
+
+## C. Four connected levels of design depth
+
+The organiser-defined whole-site boundary is fixed. The overall plan must address the entire supplied scope; a locally selected phase-one district or urban-design enlargement does not replace or reduce that overall planning obligation. Entrants justify the location and capacity of the first complete district within that structure.
+
+Machine-readable twin: `requirements.json.design_depth` / `design-depth.json`. The existing three geometry tiers remain compatible; the urban-design enlargement is an explicit design test within the master area, not an additional mandatory geographic area.
+
+| Level | Must explain | Spatial evidence |
+|---|---|---|
+| Whole-site structure | Settlements, production, protection, transport, resources and growth | Overall structure and system links; capacity scenarios and phasing |
+| Complete phase-one district | Life and production remain complete if later phases never happen | Master plan; roads, public services, production, utilities and first works |
+| Urban design enlargement | How the master layout forms streets, blocks and public life | Block plan, building heights/massing, public space and decisive sections |
+| Three detailed nodes | Location, users, spatial organisation and operation | Locator, detailed plan, necessary sections/elevations, massing and concept views |
+
+Combine drawings where useful. Choose sections/elevations for the actual spatial or operational question; do not mechanically produce identical sets for every node. No fixed booklet length, minimum development footprint or additional render quota is introduced. The three-node selection and existing view requirements remain unchanged.
+
+Each new entry supplies `design_depth_matrix.json` (template in `templates/`), linking each level and each selected node to drawings, geometry, metric keys and proposal headings. A declared gap needs a reason, next verification and responsible role. A missing organiser dataset is not itself a failing design claim; identify the gap honestly. File existence and reference consistency can be checked automatically; design adequacy remains unassessed until independent review.
+
 ## D. Mandatory M1–M12
 
 Each one gets a status in `compliance_matrix.json` pointing at the section of `proposal.md` that answers it. Where a metric key is given, declare the value, unit and evidence tag (computed / sourced / assumed / indicative / declared) in `metrics.json` as well. **Unless stated otherwise, M1–M12 describe phase one at full build-out and occupancy.**
@@ -110,3 +128,28 @@ These **do not count as answers**: an adjective without a number; a reduction cl
 ## G. Deliverables
 
 Format and commands: `docs/submission-guide.md`. Drawings and renders: `docs/visual-guide.md`.
+
+
+### Node selection: one per group (26 October 2026)
+
+New submissions choose exactly one node from each group, three nodes total:
+
+| Group | Available nodes |
+|---|---|
+| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
+| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
+| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+
+## Whole-site structure: minimum design questions
+
+The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
+
+Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence existence, not whether the evidence convincingly answers these questions.
+
+## Flood data: screening versus verified restrictions
+
+- **Seasonal channels:** `water/channels_dem.geojson` contains DEM-derived channel lines, not surveyed banks. Permanent construction on an actual dry channel is prohibited. The checker uses indicative line buffers to flag possible conflicts for review; those buffers are not statutory setbacks. Smaller washes are not comprehensively mapped.
+- **Flood-sensitive screening:** `water/flood_sensitive_dem.geojson` is a terrain screening model (within 1.5 km of a mapped channel and HAND less than 3 m, using a 60 m DEM), approximately 503 km². It is not a surveyed design-flood extent, a verified hazard zoning instrument, or a blanket permanent no-build area. “Outside the screening band” does not establish flood safety.
+- **Verified restrictions:** no surveyed design-flood boundary, design discharge/return period or verified flood setback is supplied. Do not invent one. State assumptions and explain proposed avoidance, conveyance and protection; identify the hydraulic and field verification needed before implementation. Buildings in the screening layer are reported for content review, not failed merely for being in that layer.

@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/requirements.schema.json",
-  "version": 1,
+  "version": 3,
   "note_en": "Machine-readable twin of brief/design-requirements.en.md. If the two ever disagree, this file wins. 'mandatory' items must each be answered (compliance_matrix.json) and, where a metric key is given, declared in metrics.json. 'computed' metrics are recomputed by the self-check from your geometry; a declared value more than 2% away fails GATE-G4.",
   "evidence_tags": {
     "computed": "Recomputed from the submitted geometry. Must name the geometry file in 'computed_from'.",
@@ -237,5 +237,105 @@
     "A jobs figure with no skills mix and no named trainer"
   ],
   "scope_en": "Unless a requirement says otherwise, M1-M12 describe phase one at full build-out and full occupancy. Long-term figures may be added under keys of your own (e.g. long_term_residents).",
-  "structure_note_en": "structure.geojson areas are land areas. The brief's system percentages are planning weight, not land share, so they will not match. The pilot area counts as agri_production."
+  "structure_note_en": "structure.geojson areas are land areas, not planning weights. Fixed agrivoltaic context is agri_production; fixed living context is living; see fixed_pilot_context.",
+  "whole_site_structure": {
+    "review_method": "design_content_review",
+    "minimum_questions": [
+      "settlement and centre hierarchy, including undeveloped land",
+      "five system locations, approximate scales and relationships",
+      "primary internal and external transport and human-machine connections",
+      "resource infrastructure and declared capacities or assumptions",
+      "connections to both pilot parts and both parcels",
+      "phasing relationships and observable expansion triggers"
+    ],
+    "not_sufficient": "A coloured zoning diagram covering the whole site alone.",
+    "no_prescribed_minimum_construction_area": true,
+    "no_prescribed_urban_form": true
+  },
+  "flood_data_interpretation": {
+    "seasonal_channels": "Permanent construction on actual dry channels is prohibited; supplied lines and check buffers are DEM-derived indicators for review.",
+    "flood_sensitive_screening": "Approximately 503 km2; not a verified design-flood boundary, statutory setback or blanket permanent no-build zone. Outside screening does not establish flood safety.",
+    "verified_design_flood_boundary_supplied": false
+  },
+  "fixed_pilot_context": {
+    "agrivoltaic": {
+      "file": "pilot-area/pilot_area.geojson",
+      "structure_system": "agri_production",
+      "land_use_labels": [
+        "agriculture",
+        "energy"
+      ],
+      "new_buildings_allowed": false
+    },
+    "living": {
+      "file": "pilot-area/pilot_living_area.geojson",
+      "structure_system": "living",
+      "land_use_labels": [
+        "residential",
+        "mixed_use",
+        "civic",
+        "open_space",
+        "infrastructure",
+        "agriculture"
+      ],
+      "new_buildings_allowed": false,
+      "interior_layout_supplied": false
+    }
+  },
+  "review_status_note": "Automatic compliance is separate from design content review; G12 checks evidence existence only.",
+  "design_depth": {
+    "schema_version": 1,
+    "version": "2026-10-26",
+    "scope": "Open Agent Call only",
+    "matrix": "design_depth_matrix.json",
+    "legacy_submissions": [
+      "submissions/EXAMPLE-agent/sample-scheme",
+      "submissions/jingyuanhuang-design/finite-water-city"
+    ],
+    "levels": [
+      {
+        "id": "whole_site",
+        "title": "Whole-site structure",
+        "question_zh": "城镇、生产、保护、交通、资源与增长的关系",
+        "question_en": "Settlements, production, protection, transport, resources and growth",
+        "spatial_evidence": "Overall structure and system links; capacity scenarios and phasing"
+      },
+      {
+        "id": "phase_one",
+        "title": "Complete phase-one district",
+        "question_zh": "即使后续不建设，也能完整生活和生产",
+        "question_en": "Life and production remain complete if later phases never happen",
+        "spatial_evidence": "Master plan; roads, public services, production, utilities and first works"
+      },
+      {
+        "id": "urban_design",
+        "title": "Urban design enlargement",
+        "question_zh": "总体布局如何形成街道、街区和公共生活",
+        "question_en": "How the master layout forms streets, blocks and public life",
+        "spatial_evidence": "Block plan, building heights/massing, public space and decisive sections"
+      },
+      {
+        "id": "nodes",
+        "title": "Three detailed nodes",
+        "question_zh": "位置、使用者、空间组织与运行方式",
+        "question_en": "Location, users, spatial organisation and operation",
+        "spatial_evidence": "Locator, detailed plan, necessary sections/elevations, massing and concept views"
+      }
+    ],
+    "freedom": {
+      "fixed_page_count": false,
+      "minimum_development_area": false,
+      "additional_render_quota": false,
+      "combined_drawings_allowed": true
+    },
+    "review_states": {
+      "automatic": "File, geometry, numeric and version checks only",
+      "content": "Independent review; never automatically passed",
+      "further_work": "Entrant-declared gaps, next verification and responsibility"
+    },
+    "planning_boundary": {
+      "whole_site": "Fixed organiser-defined scope_9_13.geojson; the overall plan must cover the entire site.",
+      "phase_one": "Justify the first complete district within the whole-site structure; this does not reduce the overall planning boundary."
+    }
+  }
 }

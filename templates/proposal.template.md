@@ -11,7 +11,7 @@
 
 ## 2. Site reading
 
-> Read the site before you design it: water, slope, the Pie de Palo range, the Zonda, seismic risk, the dry channels, the pilot area, the 27.6 km to the nearest road. Which of these decided your structure, and how? A scheme that would look the same on another site scores low on D1.
+> Read the site before you design it: water, slope, the Pie de Palo range, the Zonda, seismic risk, the dry channels, the pilot area, the 27.6 km to the nearest road. Separate mapped seasonal channels, the DEM flood-sensitive screening band and any verified restrictions. The approximately 503 km² screening band is not a blanket permanent no-build zone. Distinguish fixed agrivoltaic and living pilot outlines; do not invent their interiors. Which of these decided your structure, and how? A scheme that would look the same on another site scores low on D1.
 
 ![Structure](figures/fig-01-structure.png)
 
@@ -37,7 +37,7 @@
 
 ## 7. Urban form
 
-> agent.6. Three scales. (1) The whole site: where the five systems sit. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Public realm under desert conditions: shade, wind, water, ground. How the scheme uses the main parcel (with the range and its eastern wing) and the south-west parcel (with the pilot area).
+> agent.6. Three scales. (1) The whole site: settlements and centre hierarchy, all five systems with locations and approximate scales, primary transport, resource infrastructure, connections to both fixed pilot parts, and phasing relationships. Explain how these form a city or settlement system; a coloured zoning diagram alone is insufficient. No minimum construction footprint is imposed. (2) Your master design area: why it is there — write down how water, slope, wind, the way out and the pilot area pushed you there — and its blocks, massing, heights and density (recomputed from your geometry). (3) Urban-design enlargement: explain how complete streets and blocks, building heights/massing, services and decisive sections create public life. (4) Three nodes test these overall decisions. Public realm under desert conditions: shade, wind, water, ground. How the scheme uses the main parcel (with the range and its eastern wing) and the south-west parcel (with the pilot area).
 
 ![Master plan](figures/fig-02-master-plan.png)
 
@@ -55,7 +55,7 @@
 
 ## 10. Key nodes
 
-> Three of the ten (brief/site-package/nodes/design_nodes.json), each to detailed design: a plan or section, an aerial view, an eye-level view. Say why these three. make_figures.py renders massing views from your geometry; add your own renders in media/ if you can, and register each in image_provenance.json.
+> Locate all three together before the detailed sections. For each: identify users, explain access and spatial/operational organisation, and show how it tests the overall city promise. Select necessary sections/elevations for its question; combined drawings are welcome. Three nodes, exactly one from each group (brief/site-package/nodes/design_nodes.json), each to detailed design: a plan or section, an aerial view, an eye-level view. Say why these three. make_figures.py renders massing views from your geometry; add your own renders in media/ if you can, and register each in image_provenance.json.
 
 ### {{node_1}}
 
@@ -92,3 +92,5 @@
 ## 14. Sources, assumptions and AI disclosure
 
 > Where the numbers came from (sources.json, assumptions.json). Which agent and model did what, and what any human did (manifest.json → agent, autonomy). Which images were generated and how (image_provenance.json).
+
+> Reading outline: site judgement → overall strategy → programme/capacity → movement/infrastructure → phase-one urban design → three nodes/use scenarios → implementation → indicators/trade-offs. Retain the machine-linked fourteen headings, using cross-references and freely added subheadings/figures for a continuous argument. There is no fixed page count.

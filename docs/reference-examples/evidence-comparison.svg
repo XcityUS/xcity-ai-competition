@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="t d">
+<title id="t">Evidence comparison: disconnected zoning and connected design questions</title><desc id="d">Invented teaching diagram. Left: coloured zones alone. Right: first district and production connected to services, resource assumptions, access and later growth.</desc>
+<rect width="1000" height="500" fill="#f6f2e8"/>
+<g font-family="Arial,sans-serif" fill="#222"><text x="30" y="35" font-size="20">TEACHING SCHEMATIC — not XCITY geography</text><text x="30" y="75" font-size="18">Insufficient: labels without relationships</text><text x="520" y="75" font-size="18">Useful: claims with spatial relationships</text>
+<path d="M30 110H450V400H30Z" fill="#dae4d1" stroke="#555"/><path d="M30 110H240V260H30Z" fill="#dfc684"/><path d="M240 110H450V260H240Z" fill="#b5c8d5"/>
+<text x="65" y="185">Living</text><text x="290" y="185">Energy</text><text x="180" y="330">Reserve</text>
+<path d="M520 110H970V400H520Z" fill="#dae4d1" stroke="#555"/>
+<rect x="550" y="150" width="130" height="95" fill="#dfc684" stroke="#555"/><rect x="790" y="150" width="145" height="95" fill="#b5c8d5" stroke="#555"/>
+<rect x="550" y="300" width="130" height="60" fill="#eee" stroke="#555"/><rect x="790" y="300" width="145" height="60" fill="none" stroke="#555" stroke-dasharray="6 4"/>
+<g fill="none" stroke="#504731" stroke-width="4"><path d="M680 195H790M615 245V300M680 330H790"/></g>
+<text x="560" y="175">First district</text><text x="560" y="198">homes + work</text><text x="560" y="221">daily services</text><text x="800" y="175">Production</text><text x="800" y="198">+ power</text><text x="800" y="221">capacity scenario</text><text x="560" y="325">Water + access</text><text x="560" y="345">verify supply</text><text x="800" y="325">Later growth</text><text x="800" y="345">trigger required</text>
+<text x="30" y="450" font-size="16">Review claims, links and dependencies; no prescribed shape, density or development area.</text><text x="30" y="479" font-size="13">XCITY organiser-authored illustration · 26 October 2026 · explanatory relationships only</text></g></svg>

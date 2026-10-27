@@ -1,4 +1,45 @@
+## 2026-10-26 · Applications open and consistent navigation
+
+- Open the institution online application now. Collect basic details, then send the qualification application form and materials checklist by email; complete replies enter stage-one review. Keep the December and January deadlines.
+- Label the entry “在线申请 / Apply online”. Normal application.html visits return to the practice page application section, preserving the original navigation and language; embedded forms and existing private links remain compatible.
+- Carry the current language through internal page links and mark the selected application section. Clarify the homepage update subscription covers both tracks and is separate from applications; automatic mail is still pending integration.
+
+## 2026-10-26 · Simplified institution registration and email materials
+
+- Keep the two-track homepage free of institution-specific materials, dates and forms. Embed the brief contact form in the practice page only.
+- Before opening: register interest. Once open: apply on the practice page, receive the application form by email, and reply with the completed form, evidence and up-to-ten-page ideas PDF for stage-one review.
+- Remove public draft/upload steps and duplicated checklists. Preserve existing private management links and records.
+- Keep registration to 31 December 2026 and complete replies to 31 January 2027, both 23:59 UTC; select five in February. Automatic mail is not configured; operational sending remains manual until integrated.
+- Synchronise the bilingual full brief, previews and web guide.
+
+## 2026-10-26 · Official application page, schedule and Agent presentation
+
+- Keep the application form at the official website's `application.html`; private intake/storage stays behind the API. Existing private management links remain compatible.
+- Registration and drafts are open; final submission remains closed until a separately announced opening. Registration deadline: 31 December 2026; complete application deadline: 31 January 2027, both 23:59 UTC. Select five teams in February 2027.
+- Practice pages prioritise formal application; passive email-update interest stays separate on the home and Agent pages. No applicant is automatically subscribed to marketing updates.
+- Synchronise the full bilingual Design Brief's application link and schedule.
+- Agent entries follow a shared sequence: whole site, shared node locator, three node sections, phasing and key indicators. Default generation separates the public booklet and technical appendix, retains controls/checked figures, and emits a checked PDF page index. Listed legacy packages are preserved until opt-in. Packaging checks do not approve design quality.
+
+## 2026-10-26 · Full illustrated Design Brief
+
+- Restore the complete 31-page professional practice Design Brief in English and Chinese, with fourteen chapters and the original illustrated layout, replacing the condensed PDF mistakenly used as the full brief.
+- Apply a common application, eligibility review and selection process without recruitment-route or invitation promises. Release without internal-discussion labels.
+- Synchronise up to ten pages of ideas, online registration and private drafts, separate evidence, and final submission after the window is announced. No preparation period or final date is set.
+- Align maps and figures with the issued site package and show both fixed pilots. Publish language-matched previews and both downloads.
+
 # Changelog
+
+## 2026-10-26 · Design Practice online application
+
+Replace the email/two-PDF application flow with online registration, a private draft management link, separate applicable evidence and an initial-ideas PDF of up to ten pages. Registration does not require ideas or attachments. Drafts can be prepared; final submission stays closed pending the formal timing policy and dates. Electronic copies or official registry/project links are accepted as specified; no notarisation is requested. Refresh the downloadable brief and its web previews from the current source. Agent submissions remain on GitHub.
+
+## 2026-10-26 · Agent planning-rule consistency
+
+Clarify whole-site minimum design questions without imposing construction area or urban form; distinguish seasonal channels, DEM flood screening and verified restrictions; split fixed pilot agricultural and living context labels and checks. Automatic compliance and design content review are reported separately. Script version 1.1.0. Existing submissions are not rewritten; classification conflicts are listed for review.
+
+## 2026-10-26 · Grouped node selection
+
+New Agent submissions select one node from each of three groups: living/public space, production/infrastructure, and urban interfaces/environment. The two existing submission directories retain the previous any-three-of-ten rule, including revisions. Website, brief, Agent instructions, scaffolder and gate G9 use the same policy.
 
 Changes to the brief, the site package, the rules and the tools — newest first. Entrants: if a change affects your scheme, note it in your own `changelog.md`.
 

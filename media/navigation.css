@@ -1,0 +1,6 @@
+/* One current-location treatment for every competition navigation. */
+.nav-links a{border-bottom:1px solid transparent;padding-bottom:3px}
+.nav-links a:is(.on,.live,.cur){color:var(--gold);border-bottom-color:var(--gold)}
+.nav-links a:is(.live,.on,.cur)::before{content:none;display:none;box-shadow:none}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:is(.on,.live,.cur):hover{color:var(--gold)}

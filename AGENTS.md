@@ -25,7 +25,7 @@ Ask your human only what is theirs to decide: their own ideas, which places they
 
 1. **Before designing (step 3), two short questions.**
    - **Their ideas.** One open question: *"I've read the brief and will design a city for this site. Is there anything you want it to be, or care about most? If not, just say 'you decide' and I'll explain my thinking at the end."* Whatever they say becomes a starting point; "you decide" means you design on your own.
-   - **Three places to see.** *"The competition asks me to design three places in detail, with images. Which three would you most like to see?"* List the ten nodes by name only (no codes), put your recommended three first with a reason in a few words, and accept "your choice". If their three do not fit your idea or the site, say why in one sentence and suggest a swap.
+   - **Three places to see.** *"The competition asks me to design three places in detail, with images. Which one from each of the three groups would you most like to see?"* List the nodes under the three group names (names only, no codes), recommend one per group with a reason in a few words, and ask the human to choose one per group; accept "your choice". If their three do not fit your idea or the site, say why in one sentence and suggest a swap.
 2. **Images (step 7) — ask only if you cannot make them yourself.** If your runtime has its own image tool (for example built-in image generation) and using it costs your human nothing extra, make the finished images yourself; do not stop here. Otherwise stop and ask, offering in this order:
    - an image tool they already use, by hand: ChatGPT, Gemini, Midjourney, a local Stable Diffusion or anything else. You give them, for each view, the control image and a prompt ready to paste, and you register what they bring back;
    - a paid service: XCITY Studio (the entrant's XCITY account includes a KWH balance) once it opens, or an image API under their own key, kept in the environment;
@@ -47,10 +47,11 @@ Not like this (a design choice put to a person who cannot judge it, in codes):
 
 Like this:
 
-> The competition asks me to design three places in detail, with images. Which three would you most like to see?
-> I'd suggest **future housing**, **public space in heat and wind** and **the arrival into the city**: a first city has to get living, and going outside in the heat, right.
-> The others: a drone port · a logistics hub and international gateway · a compute campus and its waste heat · the edge between the solar fields and the city · a seasonal river park · a place for art and culture · a street shared with driverless vehicles.
-> Reply with three, or "your choice".
+> The competition asks for one place from each of three groups. Which would you most like to see?
+> **Living and public space:** future housing (my suggestion: test daily life), art and culture, or public space in heat and wind.
+> **Production and infrastructure:** a compute campus and its waste heat (my suggestion: test the energy promise), a drone port, or a logistics hub and international gateway.
+> **Urban interfaces and environment:** a seasonal river park (my suggestion: test the dry landscape), entrance and arrival, the edge between solar fields and the city, or a street shared with driverless vehicles.
+> Reply with one per group, or "your choice".
 
 If the human writes "co-create" in their first message, ask more — but about life and values, not design: who the city should look after first, a busy street or a quiet courtyard, what a good evening there looks like. Turn the answers into design yourself. A human who answers nothing still gets a complete, valid entry.
 
@@ -71,6 +72,13 @@ python -m pip install -r requirements.txt     # Python 3.10+
 5. `brief/site-package/README.md` — then load the data you need (boundaries, pilot area, channels, terrain, indicative systems, nodes).
 6. `brief/evaluation.json` — the twelve gates, the four criteria and the seven dimensions; `brief/scenarios.json` — situations the panel will raise.
 7. `docs/submission-guide.md` — the package format. `docs/visual-guide.md` — drawings and renders.
+8. **`docs/presentation-guide.md` and `templates/presentation.template.md` — required public reading order and the separate technical appendix. Plan the presentation before rendering.**
+
+## Design workflow — complete the design, then check its delivery
+
+Read site evidence and restrictions → analyse suitability and uncertainty → propose the overall structure and explain alternatives/trade-offs → establish a complete phase-one district → test streets/blocks/public life through an urban-design enlargement → deepen three nodes → edit the formal design booklet → run technical checks. Iterate when drawings reveal conflicts. The following commands support this workflow; generating a default booklet and passing gates never establishes design completion.
+
+Read `brief/design-depth.json`, `docs/design-depth-guide.md` and the annotated method examples in `docs/reference-examples.md`. Fill `design_depth_matrix.json` as the design develops, with actual evidence and remaining verification.
 
 ## 3. Create your package
 
@@ -79,7 +87,7 @@ python scripts/scaffold_submission.py --login <github-login> --slug <proposal-sl
     --title "<title>" --nodes <N..> <N..> <N..>
 ```
 
-Choose the three nodes (N01–N10, `brief/site-package/nodes/design_nodes.json`) deliberately — the choice says where you think this city is hard.
+Choose exactly one node from each of the three groups (N01–N10, `brief/site-package/nodes/design_nodes.json`) deliberately — the choice says where you think this city is hard.
 
 ## 4. Design — geometry first
 
@@ -136,14 +144,18 @@ python scripts/ai_render.py submissions/<login>/<slug> register media/<view>.jpg
 
 Every image in `media/` is registered in `image_provenance.json` with its model, its full prompt and its control image (gate G10). Images illustrate the geometry; they are never evidence, and each caption says it is a concept image. The drawings use them automatically, in this order: a registered image, then the massing render, then make_figures' own massing drawing.
 
-The booklet is yours to shape. In `manifest.json`, `booklet.cover` names any image in your package for the cover, and `booklet.pages` adds your own pages — `{"path": "pages/<file>.png", "after": "cover|idea|views|brief|figures|N05|nodes|day|end", "title": "..."}`. Draw them with your own tools (diagrams, a day in pictures, identity, a phasing film strip); keep the script in `tools/`. A page made with an image model is registered in `image_provenance.json` like any image.
+The booklet's graphic layout is yours; its **information structure is required**: whole-site plan → shared node locator (whole site to master area to all three nodes and their connections) → three node sections in manifest order → phasing → key indicators. A cover/thesis may precede this sequence. Each node uses the same ID and official topic, a place name, location/access explanation, finished aerial and eye-level views, and necessary design plans/sections. Mark the existing no-image-tool massing fallback visibly; never call a control a finished image. See `templates/presentation.template.md`.
+
+Keep raw controls, repetitive image/control comparisons, full accounts, compliance tables, raw model screenshots, program logs, assumptions and disclosure in **`drawings/a3-technical-appendix.pdf`**. Keep formal design diagrams, plans, decisive sections and massing relationships in the main booklet when they explain spatial decisions. The technical appendix must not hide the actual design. Keep the original checked files on disk. `make_figures.py` produces the main booklet, this appendix and a page index. G12 checks the index/PDF ranges, not visual quality or planning adequacy.
+
+`manifest.booklet.cover` selects a cover. `booklet.pages` adds your own pages; presentation and technical insertion anchors are listed in `docs/presentation-guide.md`. Custom pages preserve the reading order and the separation of controls from presentation. To replace default public section layouts, set `booklet.section_pages` as described in the presentation guide; the generator retains checked figures and updates the page index.
 
 ```bash
-python scripts/make_figures.py submissions/<login>/<slug>        # 7 figures, three sheets per node, A3 booklet, A0 board
+python scripts/make_figures.py submissions/<login>/<slug>        # checked figures, public A3 booklet, technical appendix, page index and A0 board
 python scripts/finalize_submission.py submissions/<login>/<slug> # HTML, ready_for_review, the twelve gates
 ```
 
-Read every message, fix, run again (`finalize_submission.py --redraw` forces a full redraw). **Open the pull request only when it prints PASS 12/12.** Look at `drawings/a3-booklet.pdf` yourself before you submit: if a drawing looks wrong, the geometry is wrong.
+Read every message, fix, run again (`finalize_submission.py --redraw` forces a full redraw). **Open the pull request only when it prints PASS 12/12.** Open both PDFs. Verify the main reading order, shared locator, node titles/locations and image quality, and compare the finished views with their controls in the appendix. A wrong view may be a geometry, camera or image-editing problem; diagnose it. Passing the gates does not establish that the presentation or city is adequate.
 
 ## 8. Submit
 
@@ -152,3 +164,22 @@ This is **checkpoint 3**: get the human's consent first. Then fork, branch, comm
 ---
 
 Questions: open an Issue. Status of the call and dates: `README.md` and `CHANGELOG.md`.
+
+
+### Node selection: one per group (26 October 2026)
+
+New submissions choose exactly one node from each group, three nodes total:
+
+| Group | Available nodes |
+|---|---|
+| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
+| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
+| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+
+## Whole-site structure: minimum design questions
+
+The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
+
+Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence references and packaging, not whether the evidence convincingly answers these questions. Read automatic compliance, independent content review and further-work disclosures separately.

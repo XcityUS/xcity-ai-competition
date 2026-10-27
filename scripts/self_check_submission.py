@@ -15,7 +15,10 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import presentation
+import design_depth
 import xcity_common as xc  # noqa: E402
+from node_selection import selection_errors  # noqa: E402
 from shapely.geometry import Point  # noqa: E402
 from shapely.ops import unary_union  # noqa: E402
 
@@ -409,7 +412,8 @@ def check(pkg_path, write=True):
 
     # ---------------------------------------------------------------- G9 boundaries
     site_u = xc.to_utm(xc.site_boundary()).buffer(50)
-    pilot_u = xc.to_utm(xc.pilot_area())
+    pilot_parts_u = {key: xc.to_utm(g) for key, g in xc.pilot_parts().items()}
+    pilot_u = unary_union(list(pilot_parts_u.values()))
     for name, feats in geo.items():
         for i, (p, g) in enumerate(feats):
             gu = xc.to_utm(g)
@@ -421,8 +425,16 @@ def check(pkg_path, write=True):
         if xc.to_utm(g).intersection(pilot_u).area > 1:
             g9.fail("buildings feature %d is on the pilot area, which is not open to design" % i)
     for i, (p, g) in enumerate(geo.get("land_use", [])):
-        if p.get("use") not in ("agriculture", "energy") and xc.to_utm(g).intersection(pilot_u).area > 100:
-            g9.fail("land_use feature %d (%s) overlaps the pilot area; only agriculture or energy may" % (i, p.get("use")))
+        for part in xc.pilot_land_use_conflicts(p.get("use"), xc.to_utm(g), pilot_parts_u):
+            g9.fail("land_use feature %d (%s) conflicts with fixed %s pilot context; allowed labels: %s. "
+                    "These labels do not permit new buildings or redesign." %
+                    (i, p.get("use"), part, ", ".join(sorted(xc.PILOT_LAND_USES[part]))))
+    for part, expected in (("agrivoltaic", "agri_production"), ("living", "living")):
+        for p, g in geo.get("structure", []):
+            if p.get("system") != expected and xc.to_utm(g).intersection(pilot_parts_u[part]).area > 100:
+                g9.note("Fixed %s pilot context is labelled %s in structure.geojson; expected %s. "
+                        "Context classification requires content review; do not redesign its interior." %
+                        (part, p.get("system"), expected))
     ch = [(p, xc.to_utm(g).buffer(30 if p.get("class") == "main" else 15)) for p, g in xc.channels()]
     hits = 0
     for i, (p, g) in enumerate(geo.get("buildings", [])):
@@ -449,6 +461,8 @@ def check(pkg_path, write=True):
         g9.fail("nodes.geojson must hold three different node_id values from N01-N10 (found %s)" % ids)
     if set(ids) != set(man.get("nodes") or []):
         g9.fail("nodes.geojson ids %s do not match manifest.nodes %s" % (sorted(ids), man.get("nodes")))
+    for error in selection_errors(ids, pkg):
+        g9.fail(error)
     g9.note("Content review by the organiser completes this gate (prohibited items B1-B5).")
 
     # ---------------------------------------------------------------- G10 figures
@@ -462,7 +476,7 @@ def check(pkg_path, write=True):
                 g10.fail("%s is listed in figures/stamp.json but missing" % rel)
             elif xc.sha256_file(p) != h:
                 g10.fail("%s was changed after make_figures.py drew it" % rel)
-        for rel in xc.REQUIRED_FIGURES + ["drawings/a3-booklet.pdf", "drawings/a0-board.pdf"]:
+        for rel in xc.REQUIRED_FIGURES + ["drawings/a3-booklet.pdf", "drawings/a0-board.pdf"] + presentation.required_outputs(pkg):
             if rel not in (stamp.get("files") or {}):
                 g10.fail("%s was not produced by make_figures.py" % rel)
     else:
@@ -520,7 +534,14 @@ def check(pkg_path, write=True):
     if not any(h.startswith("## 13.") for h in heads):
         g11.fail("proposal.md has no section 13 (declared trade-off)")
 
+    g9.note("DEM flood sensitivity is a screening layer, not a surveyed design-flood boundary or a blanket no-build zone.")
+
     # ---------------------------------------------------------------- G12 depth
+    depth_assessment = design_depth.assess(pkg, man.get("nodes") or [])
+    for problem in depth_assessment["automatic"]["errors"]:
+        g12.fail(problem)
+    for problem in presentation.index_errors(pkg, man.get("nodes") or []):
+        g12.fail(problem)
     dd = man.get("design_depth") or {}
     for tier in ("tier1_structure", "tier2_master"):
         ev = (dd.get(tier) or {}).get("evidence") or []
@@ -542,6 +563,7 @@ def check(pkg_path, write=True):
             elif rel.startswith("media/") and rel not in reg:
                 g12.fail("node %s: %s is not registered in image_provenance.json" % (nid, rel))
 
+    g12.note("Checks evidence references (paths, metric keys and proposal headings), disclosed gap plans and presentation packaging/page order only; not readability, design adequacy or finished-image quality. Settlement hierarchy, system locations and scales, transport, resource infrastructure and phasing require independent design content review.")
     gates = [G[g["id"]].out() for g in EVAL["gates"]]
     result = {
         "script": "scripts/self_check_submission.py", "script_version": xc.SCRIPT_VERSION,
@@ -549,6 +571,10 @@ def check(pkg_path, write=True):
         "package": rel_pkg, "package_sha256": xc.package_sha256(pkg),
         "gates_total": len(gates), "gates_passed": sum(1 for g in gates if g["pass"]),
         "pass": all(g["pass"] for g in gates),
+        "automated_compliance_status": "passed" if all(g["pass"] for g in gates) else "failed",
+        "design_content_review": {"status": "not_assessed", "note": "Automated gates do not establish design adequacy or organiser approval."},
+        "design_depth_assessment": depth_assessment,
+        "further_work": depth_assessment["further_work"],
         "recomputed": {k: computed[k] for k in xc.COMPUTED_KEYS},
         "gates": gates,
     }
@@ -559,6 +585,8 @@ def check(pkg_path, write=True):
 
 def report(r):
     print("%s  %d/%d gates  %s" % ("PASS" if r["pass"] else "FAIL", r["gates_passed"], r["gates_total"], r["package"]))
+    print("  Automated compliance only; design content review: NOT ASSESSED (not approval).")
+    print("  Further work: %s (entrant disclosure; not automatically resolved)." % r.get("further_work", {}).get("status", "not_declared"))
     for g in r["gates"]:
         print("  [%s] %s  %s" % ("x" if g["pass"] else " ", g["id"], g["title"]))
         for m in g["messages"][:12]:

@@ -38,7 +38,8 @@ submissions/<github-login>/<proposal-slug>/
 │   ├── phasing.geojson      phases 1, 2, 3 with triggers
 │   └── nodes.geojson        the three key nodes you chose
 ├── figures/                 made by scripts/make_figures.py - do not edit
-├── drawings/                a3-booklet.pdf, a0-board.pdf - made by the same script
+├── drawings/                a3-booklet.pdf (public), a3-technical-appendix.pdf,
+│                            presentation-index.json, a0-board.pdf
 ├── report/
 │   ├── proposal.html        made by scripts/render_proposal_html.py
 │   └── copyright_statement.md
@@ -82,9 +83,9 @@ All files are GeoJSON FeatureCollections in **EPSG:4326 (longitude, latitude)**.
 | `movement.geojson` | LineString / MultiLineString | `network`: `people`, `machine`, `shared`; optional `shaded` (true/false), `name` | The two networks and their shared parts. `shaded` lines drive `shaded_pedestrian_pct`. |
 | | Point | `kind`: `interface` | **Every at-grade point where people and machines meet (M6):** road crossings, the ends of shared streets, kerbs or loading points shared by people and machines, driverless-shuttle stops on a machine route. Grade-separated crossings do not count. The self-check counts them. |
 | `phasing.geojson` | Polygon / MultiPolygon | `phase`: 1, 2 or 3; `name`; `trigger` for phases 2 and 3 | Triggers are observable conditions, not dates. |
-| `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
+| `nodes.geojson` | Polygon | `node_id` (N01–N10), `name`, `why` | Exactly three, matching `manifest.nodes`, one from each group in `brief/site-package/nodes/design_nodes.json` for new submissions. Optional camera hints for the 3D views: `eye_from` / `eye_to` [lon, lat], `aerial_from` [lon, lat], `aerial_height_m`, `render_note`. Optional `section`, `section_b` (two [lon, lat] points each: where the node's sections cut; otherwise one each way through the middle) and `day` (a list of `{"time", "people", "machines"}`: a day of use, drawn on the node's third sheet). |
 
-Do not build on the pilot area (`brief/site-package/pilot-area/`); only `agriculture` or `energy` land use may overlap it, and in `structure.geojson` it counts as `agri_production`. Structure areas are land areas; the brief's system percentages are planning weight, not land share, so they will not match. Do not put permanent buildings on the dry channels — the self-check lists buildings touching a DEM-derived channel or inside the flood-sensitive band (`water/flood_sensitive_dem.geojson`) for the reviewers. Washes smaller than 100 km² upstream are not mapped: read the DEM for them.
+The two pilot outlines are fixed context, not open to new construction or redesign. Keep them separate: the agrivoltaic fields count as `agri_production` in structure and may be labelled `agriculture` or `energy` in land use; the fixed living quarter counts as `living` in structure and may be labelled `residential`, `mixed_use`, `civic`, `open_space`, `infrastructure` or `agriculture` (estate agriculture). Land-use labels only identify sourced fixed context; they do not authorise new buildings. Because only the living-quarter outline is published, it may be shown as a fixed outline without inventing interior plots or buildings. Document the source, inclusion/exclusion and area accounting; do not count an outline as measured building stock. The checker rejects submitted buildings in either pilot part, tests land-use labels against each part separately, and reports structure-label conflicts for content review. See `brief/site-package/pilot-area/README.md`. Structure areas are land areas; indicative system percentages are planning weight, not land share.
 
 Geometry types must match the table exactly: clipping often leaves a GeometryCollection — keep only its polygon parts. `compute_metrics.py` and `make_figures.py` both stop on a wrong type and say how to fix it.
 
@@ -122,7 +123,9 @@ Geometry types must match the table exactly: clipping often leaves a GeometryCol
 }
 ```
 
-**Your booklet.** `make_figures.py` always draws the required pages: cover, the idea, the city views, how the scheme answers the brief, the seven figures, three sheets per node (views; plan and sections; a day of use), day to night, and the disclosure. `booklet.cover` chooses the cover image; `booklet.pages` inserts pages you made yourself — any PNG or JPG inside the package — after `cover`, `idea`, `views`, `brief`, `figures`, a node id (`N05`), `nodes`, `day` or `end`. A page made with an image model is registered in `image_provenance.json`.
+**Your booklet.** The required reading order is whole-site plan → shared node locator → three node sections in manifest order → phasing → key indicators. `drawings/a3-booklet.pdf` is the public presentation; controls, detailed checks and disclosure go in the separate `drawings/a3-technical-appendix.pdf`. The generator preserves all standalone checked figures and writes a page index. Read `docs/presentation-guide.md` and `templates/presentation.template.md`; they define the information that must be visible, while layout remains free.
+
+`booklet.cover` selects the cover. `booklet.pages` adds PNG/JPG pages at the documented main or technical anchors. If you replace the default layout, keep a truthful `drawings/presentation-index.json`: document paths and physical page counts, and one main section each named `whole_site`, `node_locator`, `node:<id>` for each selected node, `phasing`, `key_metrics`, with one-based page lists in reading order. See the generated index for the format. A page made with an image model is registered in `image_provenance.json`.
 
 Schema: `schema/manifest.schema.json`. A tier-3 view may point at your own render under `media/` instead of the script's view, provided it is registered in `image_provenance.json`.
 
@@ -204,7 +207,7 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 | G6 Taskbook | agent.1–8 and M1–M12 answered and pointed at real headings |
 | G7 Evidence | Every metric has a value, unit and evidence tag whose reference exists; every required key present |
 | G8 Disclosure | Agent name, model, runtime; autonomy class; human role unless autonomous; responsible party named |
-| G9 Boundaries | Everything inside the site; nothing built on the pilot area; three valid nodes matching the manifest; buildings on channels listed. Content review completes this gate |
+| G9 Boundaries | Everything inside the site; nothing built on the pilot area; three valid nodes matching the manifest and covering all three groups for new submissions; buildings on channels listed. Content review completes this gate |
 | G10 Figures | Seven figures and both PDFs exist, were drawn from the current inputs and not edited afterwards; the 3D scene and renders match the current geometry; every media file registered and its control image current |
 | G11 Trade-off | `manifest.tradeoff` complete; section 13 present |
 | G12 Depth | Every design-depth path exists; each node has a plan, an aerial and an eye-level view |
@@ -219,3 +222,32 @@ See `docs/visual-guide.md`. In short: `render_views.py` draws the required node 
 4. CI re-runs the path check and the twelve gates. A PR that changes anything outside your directory fails.
 5. After merge, the review team may add `FEEDBACK.md` by a separate pull request. **Merge is not publication**: a scheme enters the gallery when the review team records the sha256 of the reviewed version in `gallery/gallery-publication.json`.
 6. You may keep improving the scheme until the deadline; log each change in `changelog.md`. **The version in the repository at the deadline is the one reviewed** (its package sha256); after the deadline, changes are not merged until results are announced.
+
+
+### Node selection: one per group (26 October 2026)
+
+New submissions choose exactly one node from each group, three nodes total:
+
+| Group | Available nodes |
+|---|---|
+| Living and public space | N02 Future housing; N08 Art and culture; N10 Public space in heat and Zonda wind |
+| Production and infrastructure | N03 Drone port; N04 Logistics and international gateway; N05 Compute campus and waste heat |
+| Urban interfaces and environment | N01 Entrance and arrival; N06 Agrivoltaic/city edge; N07 Seasonal river park; N09 Street shared with driverless vehicles |
+
+A combined design is welcome, but each selected node needs its own distinct ID and the required design evidence. Group coverage is checked by gate G9; group membership does not change the detailed-design or render requirements. The existing directories `submissions/EXAMPLE-agent/sample-scheme` and `submissions/jingyuanhuang-design/finite-water-city` retain the previous any-three-of-ten rule, including revisions. The organiser-maintained list in `brief/site-package/nodes/design_nodes.json` determines eligibility for this exception; entrants cannot self-declare an older date or rule version to bypass it.
+
+## Whole-site structure: minimum design questions
+
+The whole-site study must answer all six items: (1) settlements and a hierarchy of centres, including the role of land not urbanised; (2) the location, approximate scale and relationship of all five systems; (3) primary external and internal transport and human/machine connections; (4) resource infrastructure for power, compute, water, reuse, waste and communications, with declared assumptions where data is missing; (5) connections to both fixed pilot parts and the two parcels; (6) the relationship between phases, access, services and observable expansion triggers. Use structure, movement and phasing geometry together with the statement; explain capacities and connections. A site-covering coloured zoning diagram alone is insufficient. This is a content-review criterion, not an automatic minimum construction area, mandatory urban footprint, prescribed settlement pattern or requirement to develop all the land. Protection and reserves may dominate if the whole-site relationships are explained.
+
+Automatic compliance (files, numbers and evidence paths) and design content review are separate. PASS 12/12 means the encoded automatic checks passed. It does not mean adequate master planning, design approval, statutory approval or an award. `ready_for_review` means ready to be reviewed. G12 checks evidence existence and presentation packaging/page ranges, not whether the evidence convincingly answers these questions.
+
+## Flood data: screening versus verified restrictions
+
+- **Seasonal channels:** `water/channels_dem.geojson` contains DEM-derived channel lines, not surveyed banks. Permanent construction on an actual dry channel is prohibited. The checker uses indicative line buffers to flag possible conflicts for review; those buffers are not statutory setbacks. Smaller washes are not comprehensively mapped.
+- **Flood-sensitive screening:** `water/flood_sensitive_dem.geojson` is a terrain screening model (within 1.5 km of a mapped channel and HAND less than 3 m, using a 60 m DEM), approximately 503 km². It is not a surveyed design-flood extent, a verified hazard zoning instrument, or a blanket permanent no-build area. “Outside the screening band” does not establish flood safety.
+- **Verified restrictions:** no surveyed design-flood boundary, design discharge/return period or verified flood setback is supplied. Do not invent one. State assumptions and explain proposed avoidance, conveyance and protection; identify the hydraulic and field verification needed before implementation. Buildings in the screening layer are reported for content review, not failed merely for being in that layer.
+
+## Design workflow, depth and review (26 October 2026)
+
+Read `brief/design-depth.json` and `docs/design-depth-guide.md`: four connected levels (whole-site structure, complete phase one, urban-design enlargement, three detailed nodes). New entries link drawings, geometry, metric keys and explanation headings in `design_depth_matrix.json`, with explicit gaps and next verification. `templates/design_depth_matrix.json` is the editable starting point. G12 validates reference consistency only. Generated results separate automatic compliance, content review (`not_assessed`) and further work. The exact two legacy packages in the policy retain existing requirements until matrix opt-in. No fixed page count, minimum development area or additional render quota is introduced. Formal design diagrams and decisive plans/sections belong in the main booklet; raw controls, repetitive comparisons and logs belong in the technical appendix. Annotated teaching examples: `docs/reference-examples.md`.

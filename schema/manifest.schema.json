@@ -118,7 +118,8 @@
       },
       "minItems": 3,
       "maxItems": 3,
-      "uniqueItems": true
+      "uniqueItems": true,
+      "description": "Exactly three unique nodes. New submission directories must cover the three groups in brief/site-package/nodes/design_nodes.json; gate G9 checks this policy and listed legacy exceptions."
     },
     "nodes_reason": {
       "type": "string",
@@ -181,13 +182,38 @@
               },
               "after": {
                 "type": "string",
-                "description": "cover | idea | views | brief | figures | N01-N10 | nodes | day | end"
+                "description": "Main: cover | idea | whole_site | node_locator | views | N01-N10 | nodes | phasing | key_metrics | end. Technical appendix: brief | figures | day."
               },
               "title": {
                 "type": "string"
               },
               "subtitle": {
                 "type": "string"
+              }
+            }
+          }
+        },
+        "section_pages": {
+          "type": "object",
+          "description": "Optional authored image pages replacing a public section; keys: whole_site, node_locator, node:Nxx, phasing, key_metrics. Order and index are generated automatically.",
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "path"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "subtitle": {
+                  "type": "string"
+                }
               }
             }
           }

@@ -63,7 +63,7 @@
     {
       "id": "GATE-G9-BOUNDARIES",
       "title": "Site boundaries respected",
-      "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate.",
+      "checks": "All geometry lies inside the site (50 m tolerance), the master area and nodes lie inside it, nothing is built on the pilot area. Buildings on DEM-derived channels are listed for the reviewers. Content review completes this gate. New submissions select exactly one node from each group in nodes/design_nodes.json; listed existing submissions retain any three of ten.",
       "automated": false,
       "partly_manual": true
     },
@@ -83,10 +83,11 @@
     },
     {
       "id": "GATE-G12-DEPTH",
-      "title": "Declared design depth points at evidence that exists",
-      "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view.",
+      "title": "Design evidence and presentation packaging (quality not assessed automatically)",
+      "checks": "Every evidence path in manifest.design_depth exists, and each of the three chosen nodes has a plan or section, an aerial view and an eye-level view. This only checks evidence presence. Whole-site planning adequacy and spatial design are assessed separately by reviewers; automatic PASS is not design approval. New entries additionally supply the four-level design_depth_matrix.json: validate safe evidence paths, metric keys, proposal headings and disclosed gaps/verification plans. Matrix references_consistent is not content approval; generated content review stays not_assessed. Exact legacy paths are exempt until matrix opt-in.",
       "automated": true,
-      "partly_manual": false
+      "partly_manual": true,
+      "presentation_note": "New packages supply separate main/technical PDFs and a truthful page index in the required reading order. See brief/presentation-requirements.json; organiser-listed legacy packages retain prior packaging until opt-in."
     }
   ],
   "blocking_conditions": [
@@ -277,5 +278,6 @@
   "organiser_data_gaps": {
     "rule_en": "A gap in the data the organiser supplied is never a reason to mark an entry down. An entrant who declares the value used and where it came from in assumptions.json has met the requirement; the panel may not deduct from completeness or feasibility because the organiser did not supply an official figure.",
     "checked_by": "gates check that a declaration exists, not that the number is official"
-  }
+  },
+  "review_status_note": "Automatic compliance and independent design content review are separate. No automatic gate certifies the quality or completeness of master planning."
 }

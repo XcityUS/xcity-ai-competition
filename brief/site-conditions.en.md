@@ -6,20 +6,20 @@
 
 ## 1. The land
 
-**Two parcels in San Juan province, Argentina, east of the Andes — joined into one piece, 1,656 km².** Both boundaries come from the owner's KML and are exact. All site data is in `brief/site-package/`.
+**Two parcels in San Juan province, Argentina, east of the Andes — joined into one piece, 1,656 km².** The issued competition boundaries derive from the owner's KML, with the authorised internal-seam topology correction recorded in `site-package/boundaries/boundary-revision.json`; survey/cadastral accuracy is not verified. All site data is in `brief/site-package/`.
 
 | | |
 |---|---|
 | The main parcel | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
-| The south-west parcel | 172.5 km² |
-| The site | 1,656.4 km² (quoted as 1,656 km²): `site-package/boundaries/scope_9_13.geojson` |
-| Slope < 2% | 1,183 km²; of which 686 km² is outside the flood-sensitive band |
+| The south-west parcel | 172.839555 km² |
+| The site | 1,656.684229 km² geometric area; 1,656 km² nominal project area: `site-package/boundaries/scope_9_13.geojson` |
+| Slope < 2% | 1,183.6 km²; the previous hydrology screening identifies about 686 km² outside its flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
 | Flood-sensitive | 503 km², along the seasonal channels |
 | Elevation | 606–2,658 m, median 675 m |
 | Roads | **No existing national or provincial road on site.** Nearest: RN 40 about 27.6 km; RP 510 about 35.6 km; RN 20 about 40.7 km |
 
-Every design lies inside the site boundary.
+Every design lies inside the site boundary. The seam closure fills two internal slivers (approximately 0.304419 km²) without moving the source parcels’ combined external outline. The added seam has terrain coverage but no rerun flood/HAND classification; it is not confirmed non-flood-sensitive land. Existing archived entries are not rewritten. See the boundary revision record and `terrain/terrain_summary_9_13.json`.
 
 ## 2. The pilot area — protected
 
@@ -55,3 +55,9 @@ Phase one must work as a place if nothing after it is built: water, power, servi
 | Exact parcel boundaries and the site; the pilot area; terrain (DEM 60 m, hillshade, slope and flood band); terrain-derived channels; regional roads and distances; indicative positions of five urban systems; ten key nodes. See `site-package/README.md` | Official cadastre (Dirección de Geodesia y Catastro, San Juan) · grid connection and capacity (provincial utility) · water rights and abstraction (provincial water authority) · seismic code edition (INPRES / CIRSOC) · climate series (see `site-package/climate/README.md`) |
 
 Indicative positions are a direction, not a land-use boundary. Where data is not supplied, assume — and state the value, its source and the reason. **A gap in the data the organiser supplied is never a reason to mark a design down.**
+
+## Flood data: screening versus verified restrictions
+
+- **Seasonal channels:** `water/channels_dem.geojson` contains DEM-derived channel lines, not surveyed banks. Permanent construction on an actual dry channel is prohibited. The checker uses indicative line buffers to flag possible conflicts for review; those buffers are not statutory setbacks. Smaller washes are not comprehensively mapped.
+- **Flood-sensitive screening:** `water/flood_sensitive_dem.geojson` is a terrain screening model (within 1.5 km of a mapped channel and HAND less than 3 m, using a 60 m DEM), approximately 503 km². It is not a surveyed design-flood extent, a verified hazard zoning instrument, or a blanket permanent no-build area. “Outside the screening band” does not establish flood safety.
+- **Verified restrictions:** no surveyed design-flood boundary, design discharge/return period or verified flood setback is supplied. Do not invent one. State assumptions and explain proposed avoidance, conveyance and protection; identify the hydraulic and field verification needed before implementation. Buildings in the screening layer are reported for content review, not failed merely for being in that layer.

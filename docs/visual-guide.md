@@ -54,12 +54,15 @@ Each prompt asks the model to keep the control image's camera, footprints, heigh
 | `fig-06-phasing.png` | Phases 1–3 with areas and triggers |
 | `fig-07-metrics.png` | Every declared metric, its evidence tag, and the recomputed value where there is one |
 | `node-<id>-plan.png`, `-aerial.png`, `-eye.png` | For each node: the plan, and the best aerial and eye-level image |
-| `drawings/a3-booklet.pdf` | The cover (your choice of image), the idea (thesis and the three scales on one page), the city views, how the scheme answers the brief, the seven figures, three sheets per node — views; plan with dimensions and numbers plus sections and street sections at true scale; a day of use with people and machines — day to night at eye level, your own pages, and assumptions, sources and AI disclosure |
+| `fig-08-node-location.png` | Whole-site location of the master area and a shared enlarged locator for all three nodes and their network relationships |
+| `drawings/a3-booklet.pdf` | Public presentation: cover; whole site; shared node locator and master plan; three named/located node sections; phasing; key indicators; optional custom presentation pages |
+| `drawings/a3-technical-appendix.pdf` | Compliance matrix, detailed figures, geometry controls and image comparisons, detailed node sections/operations, sources, assumptions and disclosure |
+| `drawings/presentation-index.json` | Document page counts and one-based page ranges for the required public sections |
 | `drawings/a0-board.pdf` | One A0 board |
 
 Every sheet carries a title, sources, the script version and a hash of its inputs, which include the renders and the registered images. The drawings say nothing your data does not.
 
-**Make the booklet yours.** The required pages are a floor. `manifest.booklet.cover` picks the cover; `manifest.booklet.pages` adds pages you draw yourself (see `docs/submission-guide.md` §5). In `nodes.geojson`, `section` / `section_b` place the cuts and `day` writes the day of use; a land use with `level_m` is drawn at its level. The example's identity page comes from its own `tools/make_pages.py`.
+**Make the layout yours; preserve the reading order.** The required information is in `docs/presentation-guide.md` and `templates/presentation.template.md`. Controls and checks stay in the technical appendix. `manifest.booklet.cover` picks the cover; `manifest.booklet.pages` adds pages you draw yourself (see `docs/submission-guide.md` §5). In `nodes.geojson`, `section` / `section_b` place the cuts and `day` writes the day of use; a land use with `level_m` is drawn at its level. The example's identity page comes from its own `tools/make_pages.py`.
 
 ## 5. Registering media
 
@@ -86,3 +89,11 @@ Every file under `media/` is registered in `image_provenance.json` (template: `t
 ## 7. Cost
 
 Every required output is free and offline. Finished images need not cost anything either: an agent's built-in image tool, or a free tier used by hand, is enough. Paying earns no points, and an image that disagrees with the geometry costs points. Your XCITY account comes with a KWH balance that can be spent on images.
+
+## Design evidence belongs in the main story
+
+The formal booklet is a complete design argument, not a fixed six-page abstract: site judgement → overall strategy → programme/capacity → movement/infrastructure → phase-one urban design → three nodes and use scenarios → implementation → indicators/trade-offs. Keep the established indexed whole-site/locator/node/phasing/indicator sequence, adding explanatory pages at its appropriate anchors. Page count follows the design.
+
+Formal diagrams, master/block/node plans, decisive sections and massing relationships stay in the main booklet. Raw model screenshots, repeated control comparisons, calculation detail and program logs go in the technical appendix. The default generator now keeps its spatial-design diagrams and node details in the main booklet as a baseline; they still need entrant editing, captions and independent visual review. Use `booklet.pages` / `booklet.section_pages` for the full argument.
+
+See `brief/design-depth.json`, `docs/design-depth-guide.md` and `docs/reference-examples.md`. More pages, larger development areas and more renders do not substitute for design depth.
