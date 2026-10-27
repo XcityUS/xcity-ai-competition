@@ -344,7 +344,7 @@ window.XCITY_SUBMISSIONS = [
     "path": "submissions/jingyuanhuang-design/everyday-city",
     "title": "THE EVERYDAY CITY",
     "title_zh": "",
-    "summary": "A city organised around homes, shared courts and everyday public services. Six neighbourhoods form a complete first district; energy, compute and farm services support its edges. The whole-site network grows through two conditional service towns and a later eastern gateway.",
+    "summary": "A complete low-rise town organised around three living districts, a civic band and shared dry commons. An independent compute/repair campus and a new farm-learning edge support its southern approaches. Whole-site zoning and regional road studies frame conditional growth; housing, employment and resource figures are capacities to verify, not promised demand.",
     "language": "en",
     "agent": "Codex",
     "model": "GPT-6 family; exact serving version unavailable",
@@ -375,32 +375,40 @@ window.XCITY_SUBMISSIONS = [
     ],
     "example_status": null,
     "gates_total": 12,
-    "gates_passed": 10,
-    "gates_pass": false,
+    "gates_passed": 12,
+    "gates_pass": true,
     "design_content_review_status": "not_assessed",
-    "package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
-    "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
+    "package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
+    "reviewed_package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
     "published": true,
     "featured": true,
     "example": false,
-    "cover": "media/district-finished.png",
-    "thesis": "",
+    "cover": "media/v2/C02-aerial.png",
+    "thesis": "Homes and shared public life organise the town; productive edges serve it without owning its everyday services.",
     "files": [
       [
+        "BUILD_V2.md",
+        1356
+      ],
+      [
+        "CURRENT_DESIGN_REVIEW.md",
+        452
+      ],
+      [
         "README.md",
-        1115
+        880
       ],
       [
         "assumptions.json",
-        3573
+        3262
       ],
       [
         "changelog.md",
-        1371
+        2367
       ],
       [
         "compliance_matrix.json",
-        5722
+        6106
       ],
       [
         "context/external-access-study.geojson",
@@ -408,279 +416,191 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "design_depth_matrix.json",
-        8482
+        9014
       ],
       [
         "drawings/a0-board.pdf",
-        1859643
+        9183114
       ],
       [
         "drawings/a3-booklet.pdf",
-        3611297
+        10093945
       ],
       [
         "drawings/a3-technical-appendix.pdf",
-        2282023
-      ],
-      [
-        "drawings/everyday-city-design-review.pdf",
-        10563695
-      ],
-      [
-        "drawings/everyday-city-technical-appendix.pdf",
-        417720
+        15009635
       ],
       [
         "drawings/presentation-index.json",
-        1120
+        3771
       ],
       [
         "figures/fig-01-structure.png",
-        577247
+        294327
       ],
       [
         "figures/fig-02-master-plan.png",
-        256586
+        64197
       ],
       [
         "figures/fig-03-land-use-density.png",
-        187876
+        64197
       ],
       [
         "figures/fig-04-movement.png",
-        216964
+        61093
       ],
       [
         "figures/fig-05-open-space-water.png",
-        189268
+        69018
       ],
       [
         "figures/fig-06-phasing.png",
-        393881
+        34260
       ],
       [
         "figures/fig-07-metrics.png",
-        180675
+        288730
       ],
       [
         "figures/fig-08-node-location.png",
-        472922
+        60974
       ],
       [
         "figures/node-A01-aerial.png",
-        1624157
+        3323347
       ],
       [
         "figures/node-A01-eye.png",
-        536078
+        2312923
       ],
       [
         "figures/node-A01-plan.png",
-        31427
+        35124
       ],
       [
         "figures/node-B03-aerial.png",
-        1302506
+        3736942
       ],
       [
         "figures/node-B03-eye.png",
-        508486
+        2774788
       ],
       [
         "figures/node-B03-plan.png",
-        23752
+        31751
       ],
       [
         "figures/node-C02-aerial.png",
-        1423884
+        3906365
       ],
       [
         "figures/node-C02-eye.png",
-        468229
+        2853639
       ],
       [
         "figures/node-C02-plan.png",
-        62180
+        29899
       ],
       [
         "figures/stamp.json",
-        2347
+        2826
+      ],
+      [
+        "geometry/assets.geojson",
+        53014
       ],
       [
         "geometry/buildings.geojson",
-        245794
+        236915
+      ],
+      [
+        "geometry/crops.geojson",
+        39416
+      ],
+      [
+        "geometry/interfaces.geojson",
+        1408
       ],
       [
         "geometry/land_use.geojson",
-        13800
+        155627
       ],
       [
         "geometry/master_area.geojson",
-        1168
+        1210
       ],
       [
         "geometry/movement.geojson",
-        34722
+        38241
       ],
       [
         "geometry/nodes.geojson",
-        3382
+        3798
       ],
       [
         "geometry/phasing.geojson",
-        17228
+        8657
       ],
       [
         "geometry/structure.geojson",
-        3839041
+        67395
       ],
       [
         "image_provenance.json",
-        12084
+        16151
       ],
       [
         "manifest.json",
-        6050
+        3586
       ],
       [
-        "media/A01-finished.png",
-        3511519
+        "media/v2/A01-aerial.png",
+        3323347
       ],
       [
-        "media/B03-finished.png",
-        3411517
+        "media/v2/A01-eye.png",
+        2312923
       ],
       [
-        "media/C02-finished.png",
-        3403643
+        "media/v2/B03-aerial.png",
+        3736942
       ],
       [
-        "media/controls/A01-aerial.png",
-        125541
+        "media/v2/B03-eye.png",
+        2774788
       ],
       [
-        "media/controls/B03-aerial.png",
-        78802
+        "media/v2/C02-aerial.png",
+        3906365
       ],
       [
-        "media/controls/C02-aerial.png",
-        51926
+        "media/v2/C02-eye.png",
+        2853639
       ],
       [
-        "media/controls/district-aerial.png",
-        231302
+        "media/v2/city-centre.png",
+        3817175
       ],
       [
-        "media/district-finished.png",
-        3588170
+        "media/v2/city-overall.png",
+        3120973
       ],
       [
         "metrics.json",
-        4109
+        9281
       ],
       [
-        "pages/00-cover.png",
-        3385542
-      ],
-      [
-        "pages/01-whole-site.png",
-        523685
-      ],
-      [
-        "pages/02-site-reading.png",
-        459963
-      ],
-      [
-        "pages/03-siting-choice.png",
-        213417
-      ],
-      [
-        "pages/04-first-district.png",
-        195962
-      ],
-      [
-        "pages/05-courtyard-neighbourhood.png",
-        215853
-      ],
-      [
-        "pages/06-street-section.png",
-        185576
-      ],
-      [
-        "pages/07-movement.png",
-        219924
-      ],
-      [
-        "pages/08-water-priorities.png",
-        231808
-      ],
-      [
-        "pages/09-energy.png",
-        287393
-      ],
-      [
-        "pages/10-node-locator.png",
-        226684
-      ],
-      [
-        "pages/11-a01-plan.png",
-        200198
-      ],
-      [
-        "pages/12-b03-plan.png",
-        197407
-      ],
-      [
-        "pages/13-c02-plan.png",
-        200160
-      ],
-      [
-        "pages/14-phasing.png",
-        155144
-      ],
-      [
-        "pages/15-governance.png",
-        252031
-      ],
-      [
-        "pages/16-review-dashboard.png",
-        266563
-      ],
-      [
-        "pages/17-a01-floor-and-section.png",
-        217269
-      ],
-      [
-        "pages/18-civic-spine.png",
-        193503
-      ],
-      [
-        "pages/19-resource-network.png",
-        137121
-      ],
-      [
-        "pages/A01-finished.png",
-        3292361
-      ],
-      [
-        "pages/B03-finished.png",
-        3215974
-      ],
-      [
-        "pages/C02-finished.png",
-        3162968
-      ],
-      [
-        "pages/a0-presentation.jpg",
-        6004480
+        "phasing_programme.json",
+        7277
       ],
       [
         "proposal.md",
-        21309
+        13724
       ],
       [
         "renders/A01-aerial.png",
-        3047623
+        3681369
       ],
       [
         "renders/A01-eye-day.png",
@@ -691,8 +611,12 @@ window.XCITY_SUBMISSIONS = [
         937139
       ],
       [
+        "renders/A01-eye.png",
+        2130007
+      ],
+      [
         "renders/B03-aerial.png",
-        2666193
+        4017135
       ],
       [
         "renders/B03-eye-day.png",
@@ -703,8 +627,12 @@ window.XCITY_SUBMISSIONS = [
         1383713
       ],
       [
+        "renders/B03-eye.png",
+        2118378
+      ],
+      [
         "renders/C02-aerial.png",
-        2755694
+        4213931
       ],
       [
         "renders/C02-eye-day.png",
@@ -715,12 +643,24 @@ window.XCITY_SUBMISSIONS = [
         1318200
       ],
       [
+        "renders/C02-eye.png",
+        1682541
+      ],
+      [
         "renders/city-aerial.png",
         2558306
       ],
       [
+        "renders/city-centre.png",
+        3247949
+      ],
+      [
         "renders/city-evening.png",
         2849062
+      ],
+      [
+        "renders/city-overall.png",
+        2814414
       ],
       [
         "renders/master-aerial.png",
@@ -728,7 +668,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "renders/stamp.json",
-        2296
+        1788
       ],
       [
         "report/centres.geojson",
@@ -739,52 +679,420 @@ window.XCITY_SUBMISSIONS = [
         202
       ],
       [
-        "report/energy-results.json",
-        341
-      ],
-      [
-        "report/geometry-qa.json",
-        1645
-      ],
-      [
-        "report/hourly-energy.csv",
-        463321
-      ],
-      [
-        "report/independent-qa.json",
-        445
+        "report/geometry-qa-v2.json",
+        8045
       ],
       [
         "report/index.html",
-        23541075
-      ],
-      [
-        "report/page-index.json",
-        1827
+        182
       ],
       [
         "report/proposal.html",
-        26480
+        22461
       ],
       [
         "report/regional-corridors.geojson",
         33392
       ],
       [
+        "reviews/redesign-v2/agriculture-account.json",
+        912
+      ],
+      [
+        "reviews/redesign-v2/artifact-build-record.json",
+        2826
+      ],
+      [
+        "reviews/redesign-v2/camera-registry.json",
+        3553
+      ],
+      [
+        "reviews/redesign-v2/design-account.json",
+        8045
+      ],
+      [
+        "reviews/redesign-v2/diagrams/A01-plan.png",
+        35124
+      ],
+      [
+        "reviews/redesign-v2/diagrams/A01-section.png",
+        27799
+      ],
+      [
+        "reviews/redesign-v2/diagrams/B03-hall-elevation.png",
+        32720
+      ],
+      [
+        "reviews/redesign-v2/diagrams/B03-module-group.png",
+        46070
+      ],
+      [
+        "reviews/redesign-v2/diagrams/B03-operating-plan.png",
+        72606
+      ],
+      [
+        "reviews/redesign-v2/diagrams/B03-plan.png",
+        31751
+      ],
+      [
+        "reviews/redesign-v2/diagrams/B03-section.png",
+        29477
+      ],
+      [
+        "reviews/redesign-v2/diagrams/C02-operating-plan.png",
+        66693
+      ],
+      [
+        "reviews/redesign-v2/diagrams/C02-operating-section.png",
+        66823
+      ],
+      [
+        "reviews/redesign-v2/diagrams/C02-plan.png",
+        29899
+      ],
+      [
+        "reviews/redesign-v2/diagrams/C02-section.png",
+        66823
+      ],
+      [
+        "reviews/redesign-v2/diagrams/city-composite.png",
+        64197
+      ],
+      [
+        "reviews/redesign-v2/diagrams/city-landscape.png",
+        69018
+      ],
+      [
+        "reviews/redesign-v2/diagrams/city-mobility.png",
+        61093
+      ],
+      [
+        "reviews/redesign-v2/diagrams/city-phasing.png",
+        34260
+      ],
+      [
+        "reviews/redesign-v2/diagrams/city-services.png",
+        61476
+      ],
+      [
+        "reviews/redesign-v2/diagrams/commissioning-P1.png",
+        76230
+      ],
+      [
+        "reviews/redesign-v2/diagrams/commissioning-P2.png",
+        77412
+      ],
+      [
+        "reviews/redesign-v2/diagrams/commissioning-P3.png",
+        64210
+      ],
+      [
+        "reviews/redesign-v2/diagrams/system-layout.png",
+        60974
+      ],
+      [
+        "reviews/redesign-v2/diagrams/whole-site.png",
+        294327
+      ],
+      [
+        "reviews/redesign-v2/districts.geojson",
+        1365
+      ],
+      [
+        "reviews/redesign-v2/final-spatial-review.json",
+        1373
+      ],
+      [
+        "reviews/redesign-v2/generation-record-initial.json",
+        9809
+      ],
+      [
+        "reviews/redesign-v2/generation-record.json",
+        16501
+      ],
+      [
+        "reviews/redesign-v2/module-positions.geojson",
+        19155
+      ],
+      [
+        "reviews/redesign-v2/operational-conditions.json",
+        2670
+      ],
+      [
+        "reviews/redesign-v2/overall-revision.json",
+        1348
+      ],
+      [
+        "reviews/redesign-v2/rejected/city-overall-planted-trees.png",
+        4142985
+      ],
+      [
+        "reviews/redesign-v2/renderer.js",
+        31371
+      ],
+      [
+        "reviews/redesign-v2/residential-blocks.geojson",
+        36825
+      ],
+      [
+        "reviews/redesign-v2/resource-scenarios.json",
+        652
+      ],
+      [
+        "reviews/redesign-v2/scene-fingerprint.json",
+        568
+      ],
+      [
+        "reviews/redesign-v2/visual-review.md",
+        467
+      ],
+      [
+        "reviews/withdrawn-v1/STATUS.md",
+        141
+      ],
+      [
+        "reviews/withdrawn-v1/drawings/a0-board.pdf",
+        1859643
+      ],
+      [
+        "reviews/withdrawn-v1/drawings/a3-booklet.pdf",
+        3611297
+      ],
+      [
+        "reviews/withdrawn-v1/drawings/a3-technical-appendix.pdf",
+        2282023
+      ],
+      [
+        "reviews/withdrawn-v1/drawings/everyday-city-design-review.pdf",
+        10563695
+      ],
+      [
+        "reviews/withdrawn-v1/drawings/everyday-city-technical-appendix.pdf",
+        417720
+      ],
+      [
+        "reviews/withdrawn-v1/drawings/presentation-index.json",
+        1120
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/buildings.geojson",
+        245794
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/land_use.geojson",
+        13800
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/master_area.geojson",
+        1168
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/movement.geojson",
+        34722
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/nodes.geojson",
+        3382
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/phasing.geojson",
+        17228
+      ],
+      [
+        "reviews/withdrawn-v1/geometry/structure.geojson",
+        3839041
+      ],
+      [
+        "reviews/withdrawn-v1/image_provenance.json",
+        12084
+      ],
+      [
+        "reviews/withdrawn-v1/manifest.json",
+        6050
+      ],
+      [
+        "reviews/withdrawn-v1/media/A01-finished.png",
+        3511519
+      ],
+      [
+        "reviews/withdrawn-v1/media/B03-finished.png",
+        3411517
+      ],
+      [
+        "reviews/withdrawn-v1/media/C02-finished.png",
+        3403643
+      ],
+      [
+        "reviews/withdrawn-v1/media/controls/A01-aerial.png",
+        125541
+      ],
+      [
+        "reviews/withdrawn-v1/media/controls/B03-aerial.png",
+        78802
+      ],
+      [
+        "reviews/withdrawn-v1/media/controls/C02-aerial.png",
+        51926
+      ],
+      [
+        "reviews/withdrawn-v1/media/controls/district-aerial.png",
+        231302
+      ],
+      [
+        "reviews/withdrawn-v1/media/district-finished.png",
+        3588170
+      ],
+      [
+        "reviews/withdrawn-v1/metrics.json",
+        4109
+      ],
+      [
+        "reviews/withdrawn-v1/pages/00-cover.png",
+        3385542
+      ],
+      [
+        "reviews/withdrawn-v1/pages/01-whole-site.png",
+        523685
+      ],
+      [
+        "reviews/withdrawn-v1/pages/02-site-reading.png",
+        459963
+      ],
+      [
+        "reviews/withdrawn-v1/pages/03-siting-choice.png",
+        213417
+      ],
+      [
+        "reviews/withdrawn-v1/pages/04-first-district.png",
+        195962
+      ],
+      [
+        "reviews/withdrawn-v1/pages/05-courtyard-neighbourhood.png",
+        215853
+      ],
+      [
+        "reviews/withdrawn-v1/pages/06-street-section.png",
+        185576
+      ],
+      [
+        "reviews/withdrawn-v1/pages/07-movement.png",
+        219924
+      ],
+      [
+        "reviews/withdrawn-v1/pages/08-water-priorities.png",
+        231808
+      ],
+      [
+        "reviews/withdrawn-v1/pages/09-energy.png",
+        287393
+      ],
+      [
+        "reviews/withdrawn-v1/pages/10-node-locator.png",
+        226684
+      ],
+      [
+        "reviews/withdrawn-v1/pages/11-a01-plan.png",
+        200198
+      ],
+      [
+        "reviews/withdrawn-v1/pages/12-b03-plan.png",
+        197407
+      ],
+      [
+        "reviews/withdrawn-v1/pages/13-c02-plan.png",
+        200160
+      ],
+      [
+        "reviews/withdrawn-v1/pages/14-phasing.png",
+        155144
+      ],
+      [
+        "reviews/withdrawn-v1/pages/15-governance.png",
+        252031
+      ],
+      [
+        "reviews/withdrawn-v1/pages/16-review-dashboard.png",
+        266563
+      ],
+      [
+        "reviews/withdrawn-v1/pages/17-a01-floor-and-section.png",
+        217269
+      ],
+      [
+        "reviews/withdrawn-v1/pages/18-civic-spine.png",
+        193503
+      ],
+      [
+        "reviews/withdrawn-v1/pages/19-resource-network.png",
+        137121
+      ],
+      [
+        "reviews/withdrawn-v1/pages/A01-finished.png",
+        3292361
+      ],
+      [
+        "reviews/withdrawn-v1/pages/B03-finished.png",
+        3215974
+      ],
+      [
+        "reviews/withdrawn-v1/pages/C02-finished.png",
+        3162968
+      ],
+      [
+        "reviews/withdrawn-v1/pages/a0-presentation.jpg",
+        6004480
+      ],
+      [
+        "reviews/withdrawn-v1/proposal.md",
+        21309
+      ],
+      [
+        "reviews/withdrawn-v1/report/energy-results.json",
+        341
+      ],
+      [
+        "reviews/withdrawn-v1/report/geometry-qa.json",
+        1645
+      ],
+      [
+        "reviews/withdrawn-v1/report/hourly-energy.csv",
+        463321
+      ],
+      [
+        "reviews/withdrawn-v1/report/independent-qa.json",
+        445
+      ],
+      [
+        "reviews/withdrawn-v1/report/page-index.json",
+        1827
+      ],
+      [
         "sources.json",
-        1597
+        5183
       ],
       [
         "tools/__pycache__/design_graphics.cpython-312.pyc",
         11373
       ],
       [
+        "tools/__pycache__/diagrams_v2.cpython-312.pyc",
+        21924
+      ],
+      [
         "tools/__pycache__/draw_design.cpython-312.pyc",
         41780
       ],
       [
+        "tools/__pycache__/redesign_v2.cpython-312.pyc",
+        34560
+      ],
+      [
         "tools/a0_presentation.py",
         4282
+      ],
+      [
+        "tools/agriculture_revision_v2.py",
+        3211
       ],
       [
         "tools/build_design.py",
@@ -803,6 +1111,10 @@ window.XCITY_SUBMISSIONS = [
         5145
       ],
       [
+        "tools/diagrams_v2.py",
+        9763
+      ],
+      [
         "tools/draw_design.py",
         24440
       ],
@@ -811,12 +1123,44 @@ window.XCITY_SUBMISSIONS = [
         1193
       ],
       [
+        "tools/finalize_v2.py",
+        7944
+      ],
+      [
+        "tools/integrate_v2.py",
+        35269
+      ],
+      [
+        "tools/operating_diagrams_v2.py",
+        6213
+      ],
+      [
+        "tools/operating_revision_v2.py",
+        8455
+      ],
+      [
         "tools/package_review.py",
         9163
       ],
       [
         "tools/prepare_publication.py",
         6287
+      ],
+      [
+        "tools/publish_v2.py",
+        34543
+      ],
+      [
+        "tools/redesign_v2.py",
+        18446
+      ],
+      [
+        "tools/register_artifacts_v2.py",
+        2852
+      ],
+      [
+        "tools/scene_v2.py",
+        4946
       ],
       [
         "tools/selected_site.json",
@@ -828,7 +1172,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "visual/index.html",
-        1790793
+        1372667
       ]
     ]
   },

@@ -66,11 +66,11 @@
       }
     }
   },
-  "package_state": "draft",
+  "package_state": "ready_for_review",
   "created": "2026-10-27",
   "updated": "2026-10-27",
   "booklet": {
-    "cover": "media/v2/city-centre.png",
+    "cover": "media/v2/C02-aerial.png",
     "pages": [],
     "section_pages": {}
   },
@@ -81,6 +81,6 @@
   },
   "scene_seed": 20261027,
   "thesis": "Homes and shared public life organise the town; productive edges serve it without owning its everyday services.",
-  "presentation_revision": "Everyday City V2",
+  "presentation_revision": "Everyday City V2 / agrivoltaic and industrial-hall revision",
   "public_display_status": "authorised_preview_not_design_approval"
 }

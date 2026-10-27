@@ -20,16 +20,16 @@
     },
     {
       "path": "submissions/jingyuanhuang-design/everyday-city",
-      "reviewed_package_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
+      "reviewed_package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
       "published_at": "2026-10-27",
       "featured": true,
-      "publication_basis": "Explicit author/maintainer request for public preview and homepage display after reviewing the new proposal. Automatic compliance only; independent design content not assessed.",
+      "publication_basis": "Explicit author/maintainer direction to publish the complete V2 redesign: whole-site zoning, coordinated city, industrial halls, under-panel forage/jojoba, staged commissioning,25-page booklet, visual-first A0 and registered finishes. Automatic compliance passed; independent design content not assessed.",
       "design_content_review": "not_assessed",
       "administrative_refresh": {
         "date": "2026-10-27",
-        "boundary_revision": "2026-10-27-open-seam-closure",
-        "previous_publication_sha256": "383157149f7fda6c33aa54e7f4acf4ddcd7ae73572c4f213579ef3815c4bf401",
-        "note": "Source-map and English-display refresh only. No design content approval is implied."
+        "previous_publication_sha256": "7ac668d5c454c1763cedf9b1a878dc5b3213d617abae167b8f0cbff608aa844a",
+        "brief_commit": "2043777",
+        "note": "Complete authored V2 design replacement, not a source-only refresh. Earlier V1 retained and withdrawn. Explicit publication authorisation; no design approval."
       }
     }
   ]

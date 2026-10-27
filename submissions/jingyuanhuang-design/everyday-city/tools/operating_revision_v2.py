@@ -13,7 +13,7 @@ new=[];pods=[]
 for g,p in b:
  id=p['id']
  if id.startswith('P-HALL'):
-  j,i=map(int,id.split('-')[-2:]);xx=574170+i*130;yy=6552300+j*100;g=box(xx,yy,xx+80,yy+40);p.update(height_m=8,form='',modular_positions=8,operating_it_mw=2,rack_nameplate_mw=2.688,power_block_nameplate_mw=8,alternative_basis='Covered modular-service group; 8 conceptual dual-container positions at assumed250kW operating IT each. XPOD reference rack-nameplate sum336kW is not an operating guarantee; 1MW power-block rating is not IT.')
+  j,i=map(int,id.split('-')[-2:]);xx=574170+i*130;yy=6552300+j*100;g=box(xx,yy,xx+80,yy+40);p.update(height_m=8,form='',modular_positions=8,operating_it_mw=2,rack_nameplate_mw=2.688,power_block_nameplate_mw=8,alternative_basis='Enclosed industrial hall with modular equipment; 8 conceptual dual-container positions at assumed250kW operating IT each. XPOD reference rack-nameplate sum336kW is not an operating guarantee; 1MW power-block rating is not IT.')
   for rr in range(2):
    for cc in range(4):
     q=box(xx+7+cc*18,yy+7+rr*18,xx+19.2+cc*18,yy+13+rr*18);pods.append((q,dict(id=id+f'-POS-{rr}-{cc}',type='conceptual_dual_container_position',phase=p['phase'],assumed_length_m=12.2,assumed_width_m=6,operating_it_kw=250,reference_rack_nameplate_kw=336,power_block_nameplate_kw=1000,reference='https://xcity.ai/computepod',status='conceptual_position_not_certified_vendor_layout')))
@@ -28,6 +28,7 @@ for id,g,h in [('P-SHARED-FIBRE-SECURITY',box(574160,6552780,574200,6552800),4),
 # Former oversize plot becomes explicitly unserviced future land, with no installed capacity credit.
 ll=[]
 for g,p in land:
+ if p.get('id')=='P-FUTURE-RESERVE':continue
  if p.get('id')=='P-WORKS':
   pp=dict(p);pp.update(name='Compact serviced modular campus',use='compute',programme_use='compute');ll.append((active,pp));pp=dict(p);pp.update(id='P-FUTURE-RESERVE',name='Unserviced productive estate reserve / no capacity',use='reserve',programme_use='reserve',phase=3,capacity_basis='No additional IT, homes or jobs credited');ll.append((gross.difference(active),pp))
  else:ll.append((g,p))

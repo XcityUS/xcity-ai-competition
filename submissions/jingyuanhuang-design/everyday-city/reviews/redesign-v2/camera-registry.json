@@ -2,16 +2,16 @@
   {
     "id": "city-overall",
     "position_utm19s": [
-      578300,
-      6551200,
-      5100
+      572100,
+      6550500,
+      2300
     ],
     "target_utm19s": [
-      574400,
-      6554200,
+      574100,
+      6553000,
       0
     ],
-    "fov_degrees": 44,
+    "fov_degrees": 52,
     "aspect_ratio": 1.6,
     "scope": "Complete southwest settlement system / full build-out",
     "phase": "Full build-out scenario; node core enabled in Phase 1",
@@ -89,7 +89,7 @@
     ],
     "fov_degrees": 44,
     "aspect_ratio": 1.6,
-    "scope": "B03 four staged halls and repair / local aerial",
+    "scope": "B03 four modular industrial halls and repair / local aerial",
     "phase": "Full build-out scenario; node core enabled in Phase 1",
     "control_image": "renders/B03-aerial.png",
     "geometry_source": "geometry/"

@@ -79,7 +79,7 @@
         "infrastructure": 127.33,
         "mixed_use": 11.3,
         "open_space": 98.23,
-        "reserve": 506.91,
+        "reserve": 143.67,
         "residential": 279.6
       },
       "unit": "mixed",
@@ -176,14 +176,14 @@
     },
     {
       "key": "water_demand_m3_per_year",
-      "value": 772973.4,
+      "value": 773973.4,
       "unit": "m3/year",
       "evidence": "declared",
       "note": "V2 explicit crop scenario:7.656ha new forage/jojoba bands require22968m3/year assumed irrigation. Fixed-pilot consumption additional unknown; no lawful supply or commercial yield established."
     },
     {
       "key": "freshwater_required_m3_per_year",
-      "value": 731492.8260869565,
+      "value": 732579.7826086957,
       "unit": "m3/year",
       "evidence": "declared",
       "note": "V2 explicit crop scenario:7.656ha new forage/jojoba bands require22968m3/year assumed irrigation. Fixed-pilot consumption additional unknown; no lawful supply or commercial yield established."

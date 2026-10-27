@@ -20,8 +20,17 @@ def run_operating():
  group=box(574170,6552300,574250,6552340);f,a=canvas(group.buffer(8).bounds,(10,6));fill(a,group,'#DCE2DF',edge=INK,lw=1)
  for g,p in load(O/'module-positions.geojson'):
   if g.intersects(group):fill(a,g,'#D4C28F',edge=INK,lw=.4);label(a,g,'250 kW\nIT assumed',7)
- label(a,Point(574210,6552320),'8 m central replacement aisle / assumed',8)
+ label(a,Point(574210,6552320),'12 m central service aisle / assumed',8)
  save(f,'B03-module-group')
+ # Hall architecture: assumed repeatable 10m structural bays and enclosed 8m envelope.
+ f,a=plt.subplots(figsize=(12,4),facecolor=BG);a.axis('off');a.set(xlim=(-3,83),ylim=(-3,14));a.set_aspect('equal')
+ a.add_patch(Rectangle((0,0),80,8,facecolor='#DDD6C7',edgecolor=INK,lw=1))
+ for x in range(0,81,10):a.plot([x,x],[0,8],color='#737F7A',lw=1)
+ for x in [8,28,48,68]:a.add_patch(Rectangle((x,0),4,4.5,facecolor='#A7B6B8',edgecolor=INK,lw=.6))
+ a.text(40,11,'80m x40m enclosed industrial hall / 8m assumed height / 10m repeatable frame bays',ha='center',color=INK,fontsize=10)
+ a.text(40,-2,'Four delivery doors shown diagrammatically; equipment modules and shared services inside / supplier and fire engineering pending',ha='center',color=INK,fontsize=8)
+ save(f,'B03-hall-elevation')
+
  # Trial plot envelopes, showing service headlands and segregated visitor ground, not green planting.
  bb=(573000,6551090,573800,6551550);f,a=canvas(bb,(11,7));base(a,bb)
  for g,p in assets:
