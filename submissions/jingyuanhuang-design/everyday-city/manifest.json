@@ -83,5 +83,6 @@
   "scene_seed": 20261027,
   "thesis": "Homes and shared public life organise the town; productive edges serve it without owning its everyday services.",
   "presentation_revision": "Everyday City V3 / compact farm forecourts and close framing",
-  "public_display_status": "authorised_preview_not_design_approval"
+  "public_display_status": "authorised_preview_not_design_approval",
+  "render_note": " | explicit-geometry-sha256:944661ba7850bbf4f27a3c6230d67cecc2d6a821329de57bda3ae3280284c148"
 }

@@ -1,7 +1,7 @@
 {
   "script": "tools/register_artifacts_v2.py",
   "script_version": "Everyday-City-V3",
-  "input_sha256": "ea51cb97506db03d5f2ec517bd2ed719281932fcfad90b0165326fb6b66a8da6",
+  "input_sha256": "0514f0ebca6a6f312d6a4acdff15d0235fc8baf95b7a6c39cbbb9882e4b950ee",
   "generated_at": "2026-10-27",
   "actual_authoring_scripts": [
     "tools/redesign_v2.py",
@@ -25,9 +25,9 @@
     "figures/fig-06-phasing.png": "c6b49b9d9e9a3f865d34dfa2a49bcb75f5abb39bb90944ac26dd67c4c29c9d3e",
     "figures/fig-07-metrics.png": "2fbb4bfcbb61c3c4c68bcb6c39cf09b6375873403d44e58afcfb6104157ab774",
     "figures/fig-08-node-location.png": "4b050fd6d52fcd20bf0d20f68e3426269abff0a0bddff400424e5a1f8a12c7e3",
-    "drawings/a3-booklet.pdf": "51f08e8d4c0a46518252cde34371cdd1343d130fc42dd0c55507c093c8092fee",
-    "drawings/a0-board.pdf": "c8028469d3dda032390415c7c178a28718777e9ec9dc44948d0a4f313d676b8f",
-    "drawings/a3-technical-appendix.pdf": "efb6c26a5a1c3f1221c648ae70cfc7cf53480d714b5d4b7b657083b4d84dc597",
+    "drawings/a3-booklet.pdf": "8f453c0436b31404e3378a6f408f4c139c30a802e033aaee23dfe916635fef89",
+    "drawings/a0-board.pdf": "42cb2c4615b46cf6ad02f875c6b3a159f4ab9f8a1b5b4bea402627c4603e8307",
+    "drawings/a3-technical-appendix.pdf": "9b87c93b29fe2a8d0d5ac47f6b5170ea32496d56b2c7c5c46276262b04763aae",
     "drawings/presentation-index.json": "a78c2a1c815a033a64c47cf4184bb1ad5444e4860126ae1146b556fbf60fd2d8",
     "figures/node-A01-plan.png": "0b722a5c7c615bcde578bbf93b5eae69320291f0ed58f90c351067378057d23d",
     "figures/node-A01-aerial.png": "1c35e0b5471bc1f8a45d5a52a8cab8d2a4b488b6b090f9dbdec5adba9e3ba4e5",

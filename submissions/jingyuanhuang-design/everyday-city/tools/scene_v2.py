@@ -5,7 +5,11 @@ from shapely.ops import transform
 from pyproj import Transformer
 P=Path(__file__).resolve().parents[1];R=P.parents[2];O=P/'reviews/redesign-v2';T=Transformer.from_crs(4326,32719,always_xy=True).transform;I=Transformer.from_crs(32719,4326,always_xy=True).transform
 sys.path.insert(0,str(R/'scripts'));import make_scene as ms;import xcity_common as xc
-m=json.loads((P/'manifest.json').read_text());m['scene_generation']=dict(procedural_vegetation=False,procedural_pv=False,illustrative_entourage=False);m['scene_seed']=20261027;(P/'manifest.json').write_text(json.dumps(m,indent=2)+'\n')
+m=json.loads((P/'manifest.json').read_text())
+extra_sources=['geometry/assets.geojson','geometry/crops.geojson','geometry/courtyard_details.geojson','tools/scene_v2.py']
+extra_hash=hashlib.sha256(b''.join((P/f).read_bytes() for f in extra_sources)).hexdigest()
+m['render_note']=m.get('render_note','').split(' | explicit-geometry-sha256:')[0]+' | explicit-geometry-sha256:'+extra_hash
+m['scene_generation']=dict(procedural_vegetation=False,procedural_pv=False,illustrative_entourage=False);m['scene_seed']=20261027;(P/'manifest.json').write_text(json.dumps(m,indent=2)+'\n')
 a=next(transform(T,shape(f['geometry'])).centroid for f in json.loads((P/'geometry/nodes.geojson').read_text())['features'] if f['properties']['node_id']=='A01');ax,ay=a.coords[0]
 class Controlled(ms.Scene):
  def views(self):
