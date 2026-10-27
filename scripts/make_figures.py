@@ -2085,6 +2085,17 @@ def disclosure(pkg, size=A3):
 
 
 def a0_board(pkg):
+    # Entrant-authored presentation board; checked geometry/figures are still generated.
+    authored = booklet_cfg(pkg).get("a0_page")
+    if authored:
+        path = os.path.realpath(os.path.join(pkg.dir, str(authored)))
+        if os.path.commonpath([os.path.realpath(pkg.dir), path]) != os.path.realpath(pkg.dir) or not os.path.isfile(path):
+            raise ValueError("booklet.a0_page must be an existing image inside the package")
+        fig = plt.figure(figsize=A0, facecolor=PAPER)
+        ax = fig.add_axes([0, 0, 1, 1])
+        ax.imshow(Image.open(path).convert("RGB"))
+        ax.set_axis_off()
+        return fig
     fig = new_page(pkg, A0, "A0 BOARD", "Overall study · master design · key nodes")
     ax1 = fig.add_axes([0.03, 0.40, 0.30, 0.49])
     it1 = panel_structure(pkg, ax1, compact=True)

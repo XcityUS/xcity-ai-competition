@@ -106,6 +106,16 @@
       "reference_images": "own_work",
       "reference_images_note": "Original geometry/buildings.geojson and geometry/nodes.geojson produced by tools/build_design.py.",
       "caption": "Original source-derived massing reference. This control is not a finished image."
+    },
+    {
+      "path": "pages/a0-presentation.jpg",
+      "model": "Matplotlib authored A0 composition / tools/a0_presentation.py",
+      "prompt": "Compose an English A0 presentation using the four registered finished concept images and formal diagrams drawn from the submitted geometry. Raw massing controls are excluded. Preserve the whole-site / first-district relationship and A01, B03, C02 identities.",
+      "generated_at": "2026-10-27",
+      "post_processing": "composite",
+      "reference_images": "own_work",
+      "reference_images_note": "Original registered media/*-finished.png plus geometry and source-derived site diagrams; original entrant work.",
+      "caption": "Authored A0 presentation, concept illustrations and formal diagrams; not a surveyed or approved development."
     }
   ]
 }
