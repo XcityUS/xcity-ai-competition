@@ -9,9 +9,14 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.utils import ImageReader
 from pypdf import PdfReader,PdfWriter
 ROOT=Path(__file__).resolve().parents[2]; O=Path(__file__).resolve().parent; F=O/'assets/zh'; IMG=O/'assets/products'
+# Read the issued boundary revision at build time; do not freeze geometry area in prose.
+BOUNDARY_REVISION=json.loads((ROOT/'brief/site-package/boundaries/boundary-revision.json').read_text())
+BOUNDARY_AREA=float(BOUNDARY_REVISION['revised_scope_geodesic_km2'])
+BOUNDARY_VERSION=BOUNDARY_REVISION['revision']
+
 for n,f in [('CN','Arial Unicode.ttf'),('EN','Arial.ttf')]:pdfmetrics.registerFont(TTFont(n,str(Path('/System/Library/Fonts/Supplemental')/f)))
 W,H=841.92,595.92; BG='#F7F5F0';INK='#262626';BODY='#363634';GRAY='#8A877F';LINE='#D2CFC6'; BLUE='#5E92BE'; checks=[];page=0
-OUT=ROOT/'brief/design-practice-brief.zh.pdf'; temp=O/'replacement.pdf'; c=canvas.Canvas(str(temp),pagesize=(W,H)); LABEL='XCITY 机构赛道 · 设计任务书 · 2026-10-26'
+OUT=ROOT/'brief/design-practice-brief.zh.pdf'; temp=O/'replacement.pdf'; c=canvas.Canvas(str(temp),pagesize=(W,H)); LABEL='XCITY 机构赛道 · 设计任务书 · 2026-10-27'
 def rect(x,y,w,h,col,stroke=None):
  c.setFillColor(HexColor(col));c.setStrokeColor(HexColor(stroke or col));c.setLineWidth(.5);c.rect(x,H-y-h,w,h,fill=1,stroke=bool(stroke))
 def txt(s,x,y,size=11,color=BODY):
@@ -103,7 +108,7 @@ rows=[(a,b,f'{roads[k]:.1f} km') for a,b,k in [('RN 40','南北向区域干线',
 for i,(a,b,d) in enumerate(rows):
  y=330+i*30;txt(a,425,y,9);txt(b,491,y,9);txt(d,724,y,9);line(y+23,425,367)
 para('距离为本轮场地边缘至现有道路的最近直线距离，并非实际行驶距离。各方向进场道路的路由、权属及工程量由方案论证。',425,491,367,8.5)
-para('真实卫星拼接影像：Esri World Imagery；署名见图内。访问：2026-10-26；不同位置拍摄日期不同，非同期现场测绘。黄色线为竞赛展示轮廓。',50,512,345,7.5,GRAY)
+para('真实卫星拼接影像：Esri World Imagery；署名见图内。访问：2026-10-27；不同位置拍摄日期不同，非同期现场测绘。黄色线直接采用本次开放接缝闭合后的同源边界。',50,512,345,7.5,GRAY)
 c.linkURL('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',(50,H-540,395,H-510))
 #08
 base('04 · 场地','先行区')
@@ -125,7 +130,7 @@ txt('高程 · 约636–1,354 m（5%–95%分位）',50,436,10,INK);txt('最高�
 txt('坡度分级 · 本轮范围重新计算',444,436,10,INK)
 for i,(col,t) in enumerate([('#DAD7AD','<2% 约1,183.6 km²'),('#A7B790','2–5% 约182 km²'),('#A88B61','5–15% 约132 km²'),('#666254','>15% 约158 km²')]):
  x=444+(i%2)*177;y=465+(i//2)*26;rect(x,y+3,10,8,col);txt(t,x+16,y,9)
-para('竞赛边界已封闭内部接缝，外轮廓未变；几何面积约1,656.684 km²，项目标称1,656 km²，不替代地籍核实。地形采用Copernicus GLO-30 DEM，60 m网格、300 m坡度平滑；栅格面积为近似值。',50,520,742,7.7,GRAY)
+para(f'仅修复9/13地块接合处获授权的开放狭缝，其他外边保留；几何面积{BOUNDARY_AREA:,.6f} km²（{BOUNDARY_VERSION}），项目名义面积仍约1,656 km²，不替代地籍核实。地形采用Copernicus GLO-30 DEM，60 m网格、300 m坡度平滑；栅格面积为近似值。',50,520,742,7.7,GRAY)
 #11
 base('05 · 现状条件','水文与可建设用地')
 for i,(name,title) in enumerate([('drainage.png','季节性沟道'),('flood-screen.png','洪泛敏感性筛查'),('buildable-screen.png','初步适建条件筛查')]):

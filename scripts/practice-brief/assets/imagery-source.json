@@ -1,0 +1,57 @@
+{
+  "service": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+  "copyright": "Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+  "accessed": "2026-10-27",
+  "boundary_revision": "2026-10-27-open-seam-closure",
+  "limitations": "Multi-date satellite mosaic; acquisition dates differ. Not a site survey or cadastral evidence. Outline generated from the current issued scope GeoJSON. No roads or infrastructure are invented.",
+  "images": [
+    {
+      "file": "satellite-region.jpg",
+      "input_bbox_wgs84": [
+        -68.89614,
+        -31.73422,
+        -67.25265999999999,
+        -30.426436
+      ],
+      "output_image_extent": {
+        "xmin": -7669483.222422088,
+        "ymin": -3743269.6718116035,
+        "xmax": -7486531.865693158,
+        "ymax": -3543686.3735618615,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "source_image_pixels": [
+        1100,
+        1200
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-68.89614%2C-31.73422%2C-67.25265999999999%2C-30.426436&bboxSR=4326&imageSR=3857&size=1100%2C1200&format=jpg&f=pjson"
+    },
+    {
+      "file": "satellite-site.jpg",
+      "input_bbox_wgs84": [
+        -68.39114000000001,
+        -31.279220000000002,
+        -67.60766,
+        -30.631435999999997
+      ],
+      "output_image_extent": {
+        "xmin": -7650707.725480572,
+        "ymin": -3669064.514327743,
+        "xmax": -7488609.43901568,
+        "ymax": -3584976.0282240803,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "source_image_pixels": [
+        1600,
+        830
+      ],
+      "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-68.39114000000001%2C-31.279220000000002%2C-67.60766%2C-30.631435999999997&bboxSR=4326&imageSR=3857&size=1600%2C830&format=jpg&f=pjson"
+    }
+  ]
+}

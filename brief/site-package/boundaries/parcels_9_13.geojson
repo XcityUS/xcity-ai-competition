@@ -9,9 +9,9 @@
         "parcel_id": "main",
         "name_en": "Parcel A",
         "area_km2": 1483.844674,
-        "geometry_source": "owner-supplied KML; organiser-authorised internal seam closure, external union outline unchanged",
+        "geometry_source": "owner-supplied KML; organiser-authorised internal and open-seam closure, only the explicitly recorded seam patch changes the external outline",
         "confidence": "issued competition boundary; not surveyed/cadastral verification",
-        "boundary_revision": "2026-10-27-seam-closure"
+        "boundary_revision": "2026-10-27-open-seam-closure"
       },
       "geometry": {
         "type": "Polygon",
@@ -210,19 +210,15 @@
       "properties": {
         "parcel_id": "south-west",
         "name_en": "Parcel B",
-        "area_km2": 172.839555,
-        "geometry_source": "owner-supplied KML; organiser-authorised internal seam closure, external union outline unchanged",
+        "area_km2": 174.975145,
+        "geometry_source": "owner-supplied KML; organiser-authorised internal and open-seam closure, only the explicitly recorded seam patch changes the external outline",
         "confidence": "issued competition boundary; not surveyed/cadastral verification",
-        "boundary_revision": "2026-10-27-seam-closure"
+        "boundary_revision": "2026-10-27-open-seam-closure"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [
-              -68.072032,
-              -31.222793
-            ],
             [
               -68.087368,
               -31.230044
@@ -304,8 +300,12 @@
               -31.140587
             ],
             [
-              -68.25995938054892,
-              -31.14003067028796
+              -68.260011,
+              -31.133475
+            ],
+            [
+              -68.225034,
+              -31.085134
             ],
             [
               -68.224809,
@@ -322,6 +322,10 @@
             [
               -68.072032,
               -31.222793
+            ],
+            [
+              -68.087368,
+              -31.230044
             ]
           ]
         ]

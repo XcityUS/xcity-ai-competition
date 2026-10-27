@@ -844,7 +844,7 @@ window.XCITY_SUBMISSIONS = [
     "gates_passed": 12,
     "gates_pass": true,
     "design_content_review_status": "not_recorded_for_current_version",
-    "package_sha256": "b5d24f9643c6d2e20ebd1d5abb4c9926296f206d2cca61c94cf53e09829bd55a",
+    "package_sha256": "81039e38a45b7b48bdec83071b88716ed9fe5e30d26d52744cfdd3926d7a172a",
     "reviewed_package_sha256": "6daa1fc59136409f46eb1c83e907b4332e4f74a0250af343eff86d7fa6795ca2",
     "published": false,
     "featured": false,
@@ -862,7 +862,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "changelog.md",
-        3574
+        3901
       ],
       [
         "compliance_matrix.json",
@@ -874,15 +874,15 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "drawings/a0-board.pdf",
-        3812505
+        3812335
       ],
       [
         "drawings/a3-booklet.pdf",
-        4496821
+        4495971
       ],
       [
         "drawings/a3-technical-appendix.pdf",
-        4582697
+        4582691
       ],
       [
         "drawings/presentation-index.json",
@@ -890,35 +890,35 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "figures/fig-01-structure.png",
-        579663
+        579199
       ],
       [
         "figures/fig-02-master-plan.png",
-        340220
+        332284
       ],
       [
         "figures/fig-03-land-use-density.png",
-        157960
+        158033
       ],
       [
         "figures/fig-04-movement.png",
-        282997
+        280645
       ],
       [
         "figures/fig-05-open-space-water.png",
-        283478
+        281030
       ],
       [
         "figures/fig-06-phasing.png",
-        395594
+        393992
       ],
       [
         "figures/fig-07-metrics.png",
-        171560
+        171632
       ],
       [
         "figures/fig-08-node-location.png",
-        498911
+        493297
       ],
       [
         "figures/node-A03-aerial.png",
@@ -1118,7 +1118,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/full-v6/01-site-reading.png",
-        388357
+        386835
       ],
       [
         "reviews/full-v6/02-siting-tradeoff.png",
@@ -1298,11 +1298,11 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/presentation-v4/node-locator.png",
-        253907
+        252464
       ],
       [
         "reviews/presentation-v4/node-locator.svg",
-        120583
+        120535
       ],
       [
         "reviews/presentation-v4/presentation-qa.json",
@@ -1314,27 +1314,27 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.png",
-        858031
+        857030
       ],
       [
         "reviews/whole-site-v3/01_whole_site_plan.svg",
-        3149530
+        3150191
       ],
       [
         "reviews/whole-site-v3/02_corridors_and_phases.png",
-        828047
+        826958
       ],
       [
         "reviews/whole-site-v3/02_corridors_and_phases.svg",
-        3151440
+        3152101
       ],
       [
         "reviews/whole-site-v3/03_source_geometry.png",
-        843059
+        842333
       ],
       [
         "reviews/whole-site-v3/03_source_geometry.svg",
-        3205697
+        3206358
       ],
       [
         "reviews/whole-site-v3/README.md",
@@ -1510,7 +1510,7 @@ window.XCITY_SUBMISSIONS = [
       ],
       [
         "tools/render_whole_site_en.py",
-        11991
+        12205
       ],
       [
         "tools/repair_geometry.py",

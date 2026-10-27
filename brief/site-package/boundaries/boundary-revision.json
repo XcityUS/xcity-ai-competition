@@ -1,18 +1,59 @@
 {
-  "revision": "2026-10-27-seam-closure",
-  "authorisation": "Organiser instruction: close the gap between the two supplied parcels and update every issued format. This is a competition-data topology revision, not cadastral certification.",
-  "method": "Retain the exact existing union exterior, fill its two internal seam holes, retain Parcel A, assign the filled seam to Parcel B and remove the original overlap from Parcel B. No buffering or external outline movement.",
+  "revision": "2026-10-27-open-seam-closure",
+  "authorisation": "Organiser explicitly instructed closure of the visible open seam between the two supplied parcels and synchronisation of every issued format. Competition-data topology correction, not cadastral certification.",
+  "method": "Start from archived owner-supplied parcels; fill original two enclosed seam holes, then union the explicitly recorded four-point open-seam patch. Retain Parcel A unchanged, assign all corrected seam land to Parcel B and remove original overlap. No buffering. All land outside the original scope plus these authorised seam patches is unchanged.",
   "original_parcel_ids": {
     "main": "Parcel A (original 9)",
     "south-west": "Parcel B (original 13)"
   },
   "original_scope_geodesic_km2": 1656.3798107486482,
-  "revised_scope_geodesic_km2": 1656.6842294864746,
+  "previous_internal_only_scope_geodesic_km2": 1656.6842294864746,
+  "revised_scope_geodesic_km2": 1658.8198189675963,
   "added_internal_seam_geodesic_km2": 0.3044187378263814,
+  "added_open_seam_geodesic_km2": 2.1355894811217695,
+  "added_total_geodesic_km2": 2.440008218948151,
+  "open_seam_patch": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -68.225034,
+          -31.085134
+        ],
+        [
+          -68.260011,
+          -31.133475
+        ],
+        [
+          -68.25995938054892,
+          -31.140030670287963
+        ],
+        [
+          -68.224809,
+          -31.089706
+        ],
+        [
+          -68.225034,
+          -31.085134
+        ]
+      ]
+    ]
+  },
+  "open_seam_mouth_lonlat": [
+    [
+      -68.225034,
+      -31.085134
+    ],
+    [
+      -68.224809,
+      -31.089706
+    ]
+  ],
+  "open_seam_patch_sources": "A original vertices 22,23; intersection of A original edge 23-24 with B original edge 20-21; B original vertex 21. Zero-based indexes refer to archive/2026-10-26/parcels_9_13.geojson.",
   "removed_external_area_km2": 0,
-  "projected_exchange_note": "SHP/DXF are EPSG:32719 metre-coordinate chord representations of the WGS84 rings. The shared seam is re-reconciled in that CRS to remove millimetre-width projection self-intersections; symmetric-difference tolerance against directly projected WGS84 polygons is 20 m2. Scope and parcel union coincide and parcel overlap is zero within 0.01 m2 in the export CRS.",
-  "external_outline_unchanged": true,
-  "external_outline_reference": "Exact union exterior of archived owner-supplied parcel coordinates. Previous scope file rounded intersection coordinates; numerical exterior difference is below 0.1 m.",
+  "projected_exchange_note": "SHP/DXF EPSG:32719 chord representation; shared seam reconciled in that CRS. Symmetric-difference tolerance against directly projected WGS84 parcels is 20 m2. Exported parcel union equals scope and parcel overlap is zero within 0.01 m2.",
+  "external_outline_unchanged": false,
+  "external_outline_change_limit": "Only the authorised open-seam patch connects the previous open mouth; every other exterior edge is retained. Internal-hole closure alone was insufficient and is superseded.",
   "original_hole_count": 2,
   "revised_hole_count": 0,
   "original_holes_projected_m2": [
@@ -23,12 +64,12 @@
   "revised_overlap_m2": 0,
   "parcels_geodesic_km2": [
     1483.8446740603436,
-    172.83955541471775
+    174.97514490725277
   ],
   "archive": "archive/2026-10-26",
-  "legacy_submissions": "Existing submissions are not rewritten; original boundary files remain archived. New generated outputs use this revision.",
+  "superseded_revision_archive": "archive/2026-10-27-v1.4.0",
   "sha256": {
-    "parcels_9_13.geojson": "f9da3e6fe8e11f36a1f0abd1dd5a70bdc329d352d93ddb94af38dcf098aba0fc",
-    "scope_9_13.geojson": "225935fa106017e970cdc82f4910c50d7616e947c69f1a9dc62592c5a5fb3ca6"
+    "parcels_9_13.geojson": "9022b5b26d1b23f9188c4d63cc4b3bf142c47442a2d801388615809b7a881c97",
+    "scope_9_13.geojson": "6390ce30a2335d45dd8438b48810c3feabeaa1b4b085fd8c2b7cb655daeced10"
   }
 }

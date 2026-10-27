@@ -2,9 +2,9 @@
   "id": "XCITY-TERRAIN-SUMMARY-9-13",
   "source": "SRC-DEM",
   "method_en": "Copernicus DEM GLO-30 resampled to 60 m (EPSG:32719). Slope from the elevation gradient, smoothed over 5 x 5 cells (300 m). Flood-sensitive = within 1.5 km of a channel with >= 100 km2 upstream area and less than 3 m above the nearest channel bed (HAND). Raster cells are counted inside the site boundary; areas are indicative to about 1%.",
-  "site_km2": 1655.6,
+  "site_km2": 1657.7,
   "slope_km2": {
-    "lt_2pct": 1183.6,
+    "lt_2pct": 1185.7,
     "2_5pct": 182.2,
     "5_15pct": 131.8,
     "15_25pct": 31.3,
@@ -41,17 +41,17 @@
     "dem_png": "dem_9_13_utm19s_60m.png",
     "dem_png_note": "The same DEM as a 16-bit greyscale PNG: each pixel value is the elevation in metres. Same grid and bounds as hillshade_9_13_utm.png (EPSG:32719, 60 m). Readable with Pillow alone."
   },
-  "boundary_revision": "2026-10-27-seam-closure",
-  "boundary_revision_note_en": "Original terrain classification retained; added cell centres inside the closed internal seam classified from the same issued 60 m DEM. Flood-sensitive/HAND screening was not rerun; newly included seam land is hydrologically unclassified. Flat-not-flood area remains the pre-revision screening result, not an expanded developable-land claim.",
-  "seam_added_cells_60m": 84,
-  "seam_added_raster_km2": 0.3024,
+  "boundary_revision": "2026-10-27-open-seam-closure",
+  "boundary_revision_note_en": "Original terrain classification retained; added cell centres inside the closed internal seam classified from the same issued 60 m DEM. Flood-sensitive/HAND screening was not rerun; newly included internal and open-seam land is hydrologically unclassified. Flat-not-flood area remains the pre-revision screening result, not an expanded developable-land claim.",
+  "seam_added_cells_60m": 675,
+  "seam_added_raster_km2": 2.4299999999999997,
   "seam_slope_increments_km2": {
-    "lt_2pct": 0.3024,
+    "lt_2pct": 2.4299999999999997,
     "2_5pct": 0.0,
     "5_15pct": 0.0,
     "15_25pct": 0.0,
     "ge_25pct": 0.0
   },
   "flood_screen_boundary_revision": "original-before-seam-closure",
-  "flood_screen_unclassified_added_km2": 0.3044187378263814
+  "flood_screen_unclassified_added_km2": 2.440008218948151
 }

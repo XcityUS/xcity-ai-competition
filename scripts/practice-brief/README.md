@@ -6,7 +6,7 @@ Dependencies: Python, reportlab and pypdf; Arial and Arial Unicode fonts from ma
 
 `build_maps.py` regenerates site, pilot, terrain, water and system diagrams from **this repository's issued site package**. Additional dependencies: numpy, Pillow, matplotlib, shapely and pyproj. The flood diagram uses the supplied flood-sensitive geometry; it does not recalculate or redefine that screen. Quantities in the brief follow `terrain_summary_9_13.json` (503.4 km² screened, 686.4 km² flat outside it), replacing the earlier draft's different 297 km² analysis. Both fixed pilot areas are shown. Climate and regional/satellite illustrations retain the previous full brief's credited sources and observation dates; they are context, not site survey data.
 
-Release decisions, 26 October 2026:
+Historical release decisions, 26 October 2026 (the application-flow descriptions below are superseded by the private online-materials workflow):
 
 - Keep: full design task, maps, fourteen chapters, four design layers, eleven institution-track topics, five shortlisted teams, US$50,000 per valid Stage 2 submission and US$50,000 additional winner award.
 - Change: release without internal-discussion labels; one application process and common eligibility/selection criteria, without statements about recruitment routes or invitations; initial ideas **up to 10 pages**; applications are open; apply on the practice page, receive the qualification application form and checklist by email and reply with the form, evidence and ideas.

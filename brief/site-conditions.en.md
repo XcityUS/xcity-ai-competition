@@ -12,7 +12,7 @@
 |---|---|
 | The main parcel | 1,483.8 km². The Pie de Palo range occupies its south-east; east of the range is about 7 km² of continuous flat ground (the eastern wing) |
 | The south-west parcel | 172.839555 km² |
-| The site | 1,656.684229 km² geometric area; 1,656 km² nominal project area: `site-package/boundaries/scope_9_13.geojson` |
+| The site | About 1,656 km² nominal project area; current geometric area and revision are recorded in `site-package/boundaries/boundary-revision.json`: `site-package/boundaries/scope_9_13.geojson` |
 | Slope < 2% | 1,183.6 km²; the previous hydrology screening identifies about 686 km² outside its flood-sensitive band |
 | Slope ≥ 25% | 127 km², mostly the Pie de Palo range |
 | Flood-sensitive | 503 km², along the seasonal channels |

@@ -12,10 +12,10 @@
       "evidence_class": "fixed_condition",
       "observation_or_source_date": null,
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
-      "precision": "Owner-derived topology normalisation: combined exterior retained; two internal seam holes filled; Parcel A retained, Parcel B adjusted to remove overlap and include the seam. Survey positional accuracy not supplied.",
+      "precision": "Owner-derived competition topology correction: two enclosed holes and the externally connected seam are filled using the recorded four-point patch. Parcel A unchanged; only the open-seam patch changes the previous exterior, all other exterior edges retained. Survey accuracy not supplied.",
       "intended_use": "Competition extent, clipping and land accounts.",
       "limitations": "Topology revision is not cadastral or legal certification. Original acquisition date remains unknown; revision date is not a survey date.",
-      "boundary_revision": "2026-10-27-seam-closure",
+      "boundary_revision": "2026-10-27-open-seam-closure",
       "revision_record": "boundaries/boundary-revision.json",
       "crs": "EPSG:4326",
       "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
@@ -32,10 +32,10 @@
       "evidence_class": "fixed_condition",
       "observation_or_source_date": null,
       "date_status": "Not supplied in issued file/source registry; repository modification time is not an observation date.",
-      "precision": "Owner-derived topology normalisation: combined exterior retained; two internal seam holes filled; Parcel A retained, Parcel B adjusted to remove overlap and include the seam. Survey positional accuracy not supplied.",
+      "precision": "Owner-derived competition topology correction: two enclosed holes and the externally connected seam are filled using the recorded four-point patch. Parcel A unchanged; only the open-seam patch changes the previous exterior, all other exterior edges retained. Survey accuracy not supplied.",
       "intended_use": "Competition extent, clipping and land accounts.",
       "limitations": "Topology revision is not cadastral or legal certification. Original acquisition date remains unknown; revision date is not a survey date.",
-      "boundary_revision": "2026-10-27-seam-closure",
+      "boundary_revision": "2026-10-27-open-seam-closure",
       "revision_record": "boundaries/boundary-revision.json",
       "crs": "EPSG:4326",
       "units": "longitude/latitude degrees; areas/distances use units explicitly labelled in the resource",
@@ -331,6 +331,6 @@
     }
   ],
   "nominal_area_km2": 1656,
-  "geometry_area_km2": 1656.6842294864746,
-  "boundary_revision": "2026-10-27-seam-closure"
+  "geometry_area_km2": 1658.8198189675963,
+  "boundary_revision": "2026-10-27-open-seam-closure"
 }
