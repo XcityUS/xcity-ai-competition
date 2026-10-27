@@ -377,10 +377,10 @@ window.XCITY_SUBMISSIONS = [
     "gates_total": 12,
     "gates_passed": 12,
     "gates_pass": true,
-    "design_content_review_status": "not_recorded_for_current_version",
-    "package_sha256": "91e9dff4318debe08a7a9ff3d20a73bb775fe5c1a7183d3c3bb5ba799ad10343",
+    "design_content_review_status": "not_assessed",
+    "package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
     "reviewed_package_sha256": "299d22ef924df29d16da7da40dd153637092af68fd9f18d6acd96b08844e6540",
-    "published": false,
+    "published": true,
     "featured": true,
     "example": false,
     "cover": "media/v2/C02-aerial.png",
@@ -1069,6 +1069,22 @@ window.XCITY_SUBMISSIONS = [
       [
         "sources.json",
         5183
+      ],
+      [
+        "tools/__pycache__/design_graphics.cpython-312.pyc",
+        11373
+      ],
+      [
+        "tools/__pycache__/diagrams_v2.cpython-312.pyc",
+        21924
+      ],
+      [
+        "tools/__pycache__/draw_design.cpython-312.pyc",
+        41780
+      ],
+      [
+        "tools/__pycache__/redesign_v2.cpython-312.pyc",
+        34560
       ],
       [
         "tools/a0_presentation.py",
